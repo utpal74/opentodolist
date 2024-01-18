@@ -1,0 +1,10 @@
+nav:
+    - index.md
+    - library.md
+    - todolist.md
+    - todo.md
+    - task.md
+    - note.md
+    - page.md
+    - image.md
+    - ...
