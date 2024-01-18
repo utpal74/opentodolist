@@ -1,0 +1,8 @@
+nav:
+    - index.md
+    - nextcloud.md
+    - owncloud.md
+    - webdav.md
+    - dropbox.md
+    - local_library.md
+    - ...

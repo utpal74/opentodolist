@@ -6,6 +6,8 @@ theme:
   name: material
   logo: assets/OpenTodoList-Transparent.svg
   favicon: assets/OpenTodoList-Transparent.svg
+  features:
+    - navigation.indexes
 
   palette:
 
@@ -37,8 +39,12 @@ theme:
 
 plugins:
   - social
+  - search
+  - awesome-pages
+  - glightbox
 
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - attr_list
