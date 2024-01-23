@@ -285,12 +285,12 @@
     <message>
         <location filename="../Utils/DeepLinkHandler.qml" line="56"/>
         <source>Uuups... seems that&apos;s a dead end...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Упс... похоже, это тупик...</translation>
     </message>
     <message>
         <location filename="../Utils/DeepLinkHandler.qml" line="62"/>
         <source>Sorry, that link does not lead to any page or item that is present on this device. Check if the library or item to which the link points is synchronized on this device and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Извините, эта ссылка не ведет ни на одну страницу или элемент, присутствующий на этом устройстве. Проверьте, синхронизирована ли библиотека или элемент, на который указывает ссылка, на этом устройстве, и повторите попытку.</translation>
     </message>
 </context>
 <context>
@@ -1339,12 +1339,12 @@
     <message>
         <location filename="../Windows/RecurrenceDialog.qml" line="117"/>
         <source>Number of weeks:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Количество недель:</translation>
     </message>
     <message>
         <location filename="../Windows/RecurrenceDialog.qml" line="119"/>
         <source>Number of months:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Количество месяцев:</translation>
     </message>
     <message>
         <location filename="../Windows/RecurrenceDialog.qml" line="141"/>

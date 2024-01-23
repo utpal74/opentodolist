@@ -6,17 +6,17 @@
     <message>
         <location filename="../Pages/AboutPage.qml" line="15"/>
         <source>About...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">O aplikaci</translation>
     </message>
     <message>
         <location filename="../Pages/AboutPage.qml" line="33"/>
         <source>OpenTodoList</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">OpenTodoList</translation>
     </message>
     <message>
         <location filename="../Pages/AboutPage.qml" line="40"/>
         <source>A todo and task managing application.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Aplikace pro správu úkolů a událostí.</translation>
     </message>
     <message>
         <location filename="../Pages/AboutPage.qml" line="68"/>
@@ -177,22 +177,22 @@
     <message>
         <location filename="../Widgets/Attachments.qml" line="37"/>
         <source>Attach File</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Přiložit soubor</translation>
     </message>
     <message>
         <location filename="../Widgets/Attachments.qml" line="52"/>
         <source>Delete Attachment?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Smazat přílohu?</translation>
     </message>
     <message>
         <location filename="../Widgets/Attachments.qml" line="56"/>
         <source>Are you sure you want to delete the attachment &lt;strong&gt;%1&lt;/strong&gt;? This action cannot be undone.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Opravdu chcete smazat přílohu &lt;strong&gt;%1&lt;/strong&gt;? Tuto akci nelze vrátit zpět.</translation>
     </message>
     <message>
         <location filename="../Widgets/Attachments.qml" line="70"/>
         <source>Attachments</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Přílohy</translation>
     </message>
 </context>
 <context>
@@ -200,42 +200,42 @@
     <message>
         <location filename="../Menues/ColorMenu.qml" line="15"/>
         <source>Color</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Barva</translation>
     </message>
     <message>
         <location filename="../Menues/ColorMenu.qml" line="19"/>
         <source>White</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Bílá</translation>
     </message>
     <message>
         <location filename="../Menues/ColorMenu.qml" line="26"/>
         <source>Red</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Červená</translation>
     </message>
     <message>
         <location filename="../Menues/ColorMenu.qml" line="33"/>
         <source>Green</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Zelená</translation>
     </message>
     <message>
         <location filename="../Menues/ColorMenu.qml" line="40"/>
         <source>Blue</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Modrá</translation>
     </message>
     <message>
         <location filename="../Menues/ColorMenu.qml" line="47"/>
         <source>Yellow</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Žlutá</translation>
     </message>
     <message>
         <location filename="../Menues/ColorMenu.qml" line="54"/>
         <source>Orange</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Oranžová</translation>
     </message>
     <message>
         <location filename="../Menues/ColorMenu.qml" line="61"/>
         <source>Lilac</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Lila</translation>
     </message>
 </context>
 <context>
@@ -345,32 +345,32 @@
     <message>
         <location filename="../Windows/DeleteItemDialog.qml" line="19"/>
         <source>Delete Item?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Smazat položku?</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteItemDialog.qml" line="32"/>
         <source>Do you really want to delete the image &lt;strong&gt;%1&lt;/strong&gt;? This cannot be undone.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Opravdu chcete smazat obrázek &lt;strong&gt;%1&lt;/strong&gt;? Tuto akci nelze vrátit zpět.</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteItemDialog.qml" line="36"/>
         <source>Do you really want to delete the todo list &lt;strong&gt;%1&lt;/strong&gt;? This cannot be undone.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Opravdu chcete smazat seznam úkolů &lt;strong&gt;%1&lt;/strong&gt;? Tuto akci nelze vrátit zpět.</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteItemDialog.qml" line="40"/>
         <source>Do you really want to delete the todo &lt;strong&gt;%1&lt;/strong&gt;? This cannot be undone.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Opravdu chcete smazat úkol &lt;strong&gt;%1&lt;/strong&gt;? Tuto akci nelze vrátit zpět.</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteItemDialog.qml" line="44"/>
         <source>Do you really want to delete the task &lt;strong&gt;%1&lt;/strong&gt;? This cannot be undone.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Opravdu chcete smazat událost &lt;strong&gt;%1&lt;/strong&gt;? Tuto akci nelze vrátit zpět.</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteItemDialog.qml" line="48"/>
         <source>Do you really want to delete the note &lt;strong&gt;%1&lt;/strong&gt;? This cannot be undone.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Opravdu chcete smazat poznámku &lt;strong&gt;%1&lt;/strong&gt;? Tuto akci nelze vrátit zpět.</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteItemDialog.qml" line="52"/>
@@ -383,12 +383,12 @@
     <message>
         <location filename="../Windows/DeleteLibraryDialog.qml" line="19"/>
         <source>Delete Library?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Smazat knihovnu?</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteLibraryDialog.qml" line="33"/>
         <source>Do you really want to remove the library &lt;strong&gt;%1&lt;/strong&gt; from  the application? &lt;em&gt;This will remove any files belonging to the library.&lt;/em&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Opravdu chcete z aplikace odebrat knihovnu &lt;strong&gt;%1&lt;/strong&gt;? &lt;em&gt;Tímto odstraníte všechny soubory patřící do této knihovny.&lt;/em&gt;</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteLibraryDialog.qml" line="40"/>

@@ -2732,10 +2732,10 @@ msgstr "Aantal maanden:"
 #: ../Utils/DeepLinkHandler.qml:56
 msgctxt "DeepLinkHandler|"
 msgid "Uuups... seems that's a dead end..."
-msgstr ""
+msgstr "Oeps, dit is een doodlopend einde…"
 
 #: ../Utils/DeepLinkHandler.qml:62
 msgctxt "DeepLinkHandler|"
 msgid "Sorry, that link does not lead to any page or item that is present on this device. Check if the library or item to which the link points is synchronized on this device and try again."
-msgstr ""
+msgstr "De link lijkt niet naar een pagina of item op het apparaat te verwijzen. Controleer of de verzameling of het item in kwestie gesynchroniseerd is en probeer het opnieuw."
 

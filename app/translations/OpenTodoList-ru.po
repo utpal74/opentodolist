@@ -2720,20 +2720,20 @@ msgstr "Монохромная икона"
 #: ../Windows/RecurrenceDialog.qml:117
 msgctxt "RecurrenceDialog|"
 msgid "Number of weeks:"
-msgstr ""
+msgstr "Количество недель:"
 
 #: ../Windows/RecurrenceDialog.qml:119
 msgctxt "RecurrenceDialog|"
 msgid "Number of months:"
-msgstr ""
+msgstr "Количество месяцев:"
 
 #: ../Utils/DeepLinkHandler.qml:56
 msgctxt "DeepLinkHandler|"
 msgid "Uuups... seems that's a dead end..."
-msgstr ""
+msgstr "Упс... похоже, это тупик..."
 
 #: ../Utils/DeepLinkHandler.qml:62
 msgctxt "DeepLinkHandler|"
 msgid "Sorry, that link does not lead to any page or item that is present on this device. Check if the library or item to which the link points is synchronized on this device and try again."
-msgstr ""
+msgstr "Извините, эта ссылка не ведет ни на одну страницу или элемент, присутствующий на этом устройстве. Проверьте, синхронизирована ли библиотека или элемент, на который указывает ссылка, на этом устройстве, и повторите попытку."
 

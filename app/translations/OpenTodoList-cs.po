@@ -10,17 +10,17 @@ msgstr ""
 #: ../Pages/AboutPage.qml:15
 msgctxt "AboutPage|"
 msgid "About..."
-msgstr ""
+msgstr "O aplikaci"
 
 #: ../Pages/AboutPage.qml:33
 msgctxt "AboutPage|"
 msgid "OpenTodoList"
-msgstr ""
+msgstr "OpenTodoList"
 
 #: ../Pages/AboutPage.qml:40
 msgctxt "AboutPage|"
 msgid "A todo and task managing application."
-msgstr ""
+msgstr "Aplikace pro správu úkolů a událostí."
 
 #: ../Pages/AboutPage.qml:60
 msgctxt "AboutPage|"
@@ -30,122 +30,122 @@ msgstr ""
 #: ../Pages/AboutThirdPartyPage.qml:11
 msgctxt "AboutThirdPartyPage|"
 msgid "Used Libraries and Resources"
-msgstr ""
+msgstr "Použité knihovny a zdroje"
 
 #: ../Pages/AboutThirdPartyPage.qml:47
 msgctxt "AboutThirdPartyPage|"
 msgid "Author: <a href='%2'>%1</a>"
-msgstr ""
+msgstr "Autor: <a href='%2'>%1</a>"
 
 #: ../Pages/AboutThirdPartyPage.qml:54
 msgctxt "AboutThirdPartyPage|"
 msgid "License: <a href='%1'>%2</a>"
-msgstr ""
+msgstr "Licence: <a href='%1'>%2</a>"
 
 #: ../Pages/AboutThirdPartyPage.qml:61
 msgctxt "AboutThirdPartyPage|"
 msgid "Download: <a href='%1'>%1</a>"
-msgstr ""
+msgstr "Stáhnout: <a href='%1'>%1</a>"
 
 #: ../Widgets/Attachments.qml:37
 msgctxt "Attachments|"
 msgid "Attach File"
-msgstr ""
+msgstr "Přiložit soubor"
 
 #: ../Widgets/Attachments.qml:52
 msgctxt "Attachments|"
 msgid "Delete Attachment?"
-msgstr ""
+msgstr "Smazat přílohu?"
 
 #: ../Widgets/Attachments.qml:56
 msgctxt "Attachments|"
 msgid "Are you sure you want to delete the attachment <strong>%1</strong>? This action cannot be undone."
-msgstr ""
+msgstr "Opravdu chcete smazat přílohu <strong>%1</strong>? Tuto akci nelze vrátit zpět."
 
 #: ../Widgets/Attachments.qml:70
 msgctxt "Attachments|"
 msgid "Attachments"
-msgstr ""
+msgstr "Přílohy"
 
 #: ../Menues/ColorMenu.qml:15
 msgctxt "ColorMenu|"
 msgid "Color"
-msgstr ""
+msgstr "Barva"
 
 #: ../Menues/ColorMenu.qml:19
 msgctxt "ColorMenu|"
 msgid "White"
-msgstr ""
+msgstr "Bílá"
 
 #: ../Menues/ColorMenu.qml:26
 msgctxt "ColorMenu|"
 msgid "Red"
-msgstr ""
+msgstr "Červená"
 
 #: ../Menues/ColorMenu.qml:33
 msgctxt "ColorMenu|"
 msgid "Green"
-msgstr ""
+msgstr "Zelená"
 
 #: ../Menues/ColorMenu.qml:40
 msgctxt "ColorMenu|"
 msgid "Blue"
-msgstr ""
+msgstr "Modrá"
 
 #: ../Menues/ColorMenu.qml:47
 msgctxt "ColorMenu|"
 msgid "Yellow"
-msgstr ""
+msgstr "Žlutá"
 
 #: ../Menues/ColorMenu.qml:54
 msgctxt "ColorMenu|"
 msgid "Orange"
-msgstr ""
+msgstr "Oranžová"
 
 #: ../Menues/ColorMenu.qml:61
 msgctxt "ColorMenu|"
 msgid "Lilac"
-msgstr ""
+msgstr "Lila"
 
 #: ../Windows/DeleteItemDialog.qml:19
 msgctxt "DeleteItemDialog|"
 msgid "Delete Item?"
-msgstr ""
+msgstr "Smazat položku?"
 
 #: ../Windows/DeleteItemDialog.qml:32
 msgctxt "DeleteItemDialog|"
 msgid "Do you really want to delete the image <strong>%1</strong>? This cannot be undone."
-msgstr ""
+msgstr "Opravdu chcete smazat obrázek <strong>%1</strong>? Tuto akci nelze vrátit zpět."
 
 #: ../Windows/DeleteItemDialog.qml:36
 msgctxt "DeleteItemDialog|"
 msgid "Do you really want to delete the todo list <strong>%1</strong>? This cannot be undone."
-msgstr ""
+msgstr "Opravdu chcete smazat seznam úkolů <strong>%1</strong>? Tuto akci nelze vrátit zpět."
 
 #: ../Windows/DeleteItemDialog.qml:40
 msgctxt "DeleteItemDialog|"
 msgid "Do you really want to delete the todo <strong>%1</strong>? This cannot be undone."
-msgstr ""
+msgstr "Opravdu chcete smazat úkol <strong>%1</strong>? Tuto akci nelze vrátit zpět."
 
 #: ../Windows/DeleteItemDialog.qml:44
 msgctxt "DeleteItemDialog|"
 msgid "Do you really want to delete the task <strong>%1</strong>? This cannot be undone."
-msgstr ""
+msgstr "Opravdu chcete smazat událost <strong>%1</strong>? Tuto akci nelze vrátit zpět."
 
 #: ../Windows/DeleteItemDialog.qml:48
 msgctxt "DeleteItemDialog|"
 msgid "Do you really want to delete the note <strong>%1</strong>? This cannot be undone."
-msgstr ""
+msgstr "Opravdu chcete smazat poznámku <strong>%1</strong>? Tuto akci nelze vrátit zpět."
 
 #: ../Windows/DeleteLibraryDialog.qml:19
 msgctxt "DeleteLibraryDialog|"
 msgid "Delete Library?"
-msgstr ""
+msgstr "Smazat knihovnu?"
 
 #: ../Windows/DeleteLibraryDialog.qml:33
 msgctxt "DeleteLibraryDialog|"
 msgid "Do you really want to remove the library <strong>%1</strong> from  the application? <em>This will remove any files belonging to the library.</em>"
-msgstr ""
+msgstr "Opravdu chcete z aplikace odebrat knihovnu <strong>%1</strong>? <em>Tímto odstraníte všechny soubory patřící do této knihovny.</em>"
 
 #: ../Windows/DeleteLibraryDialog.qml:40
 msgctxt "DeleteLibraryDialog|"

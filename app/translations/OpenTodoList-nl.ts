@@ -285,12 +285,12 @@
     <message>
         <location filename="../Utils/DeepLinkHandler.qml" line="56"/>
         <source>Uuups... seems that&apos;s a dead end...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Oeps, dit is een doodlopend einde…</translation>
     </message>
     <message>
         <location filename="../Utils/DeepLinkHandler.qml" line="62"/>
         <source>Sorry, that link does not lead to any page or item that is present on this device. Check if the library or item to which the link points is synchronized on this device and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">De link lijkt niet naar een pagina of item op het apparaat te verwijzen. Controleer of de verzameling of het item in kwestie gesynchroniseerd is en probeer het opnieuw.</translation>
     </message>
 </context>
 <context>
