@@ -26,11 +26,11 @@ These items are organized in **Libraries** - think of them as a kind of folder
 which can be configured for synchronization (or not!) and also be shared with
 other people.
 
-![Libraries are used to organize items](assets/library.png){: width=200}
-![Todo lists group several tasks together](assets/todolist.png){: width=200}
-![Todos represent a single item of work](assets/todo.png){: width=200}
-![Notes are collections of text](assets/note.png){: width=200}
-![Images prominently render a picture](assets/image.png){: width=200}
+![Libraries are used to organize items](assets/screenshots/iPhone 15 Pro Max/library.png){: width=200}
+![Todo lists group several tasks together](assets/screenshots/iPhone 15 Pro Max/todolist.png){: width=200}
+![Todos represent a single item of work](assets/screenshots/iPhone 15 Pro Max/todo.png){: width=200}
+![Notes are collections of text](assets/screenshots/iPhone 15 Pro Max/note.png){: width=200}
+![Images prominently render a picture](assets/screenshots/iPhone 15 Pro Max/image.png){: width=200}
 
 See the [Features](#features) section for a brief overview of all supported
 features that the app provides.
