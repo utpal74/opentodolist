@@ -180,7 +180,7 @@ msgstr "筆記"
 #: ../Widgets/LibrariesSideBar.qml:62 ../Widgets/LibrariesSideBar.qml:262
 msgctxt "LibrariesSideBar|"
 msgid "Schedule"
-msgstr "時程表"
+msgstr "時間表"
 
 #: ../Widgets/LibrariesSideBar.qml:74
 msgctxt "LibrariesSideBar|"
@@ -305,22 +305,22 @@ msgstr ""
 #: ../Windows/MainWindow.qml:451
 msgctxt "MainWindow|"
 msgid "New &Library"
-msgstr "新＆書庫"
+msgstr "新的＆書庫"
 
 #: ../Windows/MainWindow.qml:462
 msgctxt "MainWindow|"
 msgid "New &Note"
-msgstr "新＆筆記"
+msgstr "新的＆筆記"
 
 #: ../Windows/MainWindow.qml:470
 msgctxt "MainWindow|"
 msgid "New &Todo List"
-msgstr "新＆待辦事項清單"
+msgstr "新的＆待辦事項清單"
 
 #: ../Windows/MainWindow.qml:478
 msgctxt "MainWindow|"
 msgid "New &Image"
-msgstr "新＆圖片"
+msgstr "新的＆圖片"
 
 #: ../Windows/MainWindow.qml:486
 msgctxt "MainWindow|"
@@ -697,7 +697,7 @@ msgstr "加入新的任務"
 #: ../Widgets/TodosWidget.qml:215
 msgctxt "TodosWidget|"
 msgid "Due on: %1"
-msgstr "截止期限 %1"
+msgstr "截止期限： %1"
 
 #: ../Utils/Colors.qml:15
 msgctxt "Colors|"
@@ -1205,7 +1205,7 @@ msgstr "關閉證明確認"
 #: ../Pages/NewWebDAVAccountPageForm.ui.qml:97
 msgctxt "NewWebDAVAccountPageForm.ui|"
 msgid "Name:"
-msgstr "名稱"
+msgstr "名稱："
 
 #: ../Pages/NewWebDAVAccountPageForm.ui.qml:111
 msgctxt "NewWebDAVAccountPageForm.ui|"
@@ -1470,82 +1470,82 @@ msgstr "反復發生："
 #: ../Windows/RecurrenceDialog.qml:115
 msgctxt "RecurrenceDialog|"
 msgid "Number of days:"
-msgstr ""
+msgstr "天數："
 
 #: ../Windows/RecurrenceDialog.qml:141
 msgctxt "RecurrenceDialog|"
 msgid "Recur relative to the date when marking as done"
-msgstr ""
+msgstr "當標示為做完，反復發生相關的日期"
 
 #: ../Actions/RenameItem.qml:11
 msgctxt "RenameItem|"
 msgid "Rename"
-msgstr ""
+msgstr "重新命名"
 
 #: ../Actions/SetDueNextWeek.qml:8
 msgctxt "SetDueNextWeek|"
 msgid "Set Due This Week"
-msgstr ""
+msgstr "設定本週的截止期限"
 
 #: ../Actions/SetDueThisWeek.qml:8
 msgctxt "SetDueThisWeek|"
 msgid "Set Due Next Week"
-msgstr ""
+msgstr "設定下週的截止期限"
 
 #: ../Actions/SetDueTo.qml:11
 msgctxt "SetDueTo|"
 msgid "Select Due Date"
-msgstr ""
+msgstr "選擇截止日期"
 
 #: ../Actions/SetDueToday.qml:8
 msgctxt "SetDueToday|"
 msgid "Set Due Today"
-msgstr ""
+msgstr "設定今天的截止期限"
 
 #: ../Actions/SetDueTomorrow.qml:8
 msgctxt "SetDueTomorrow|"
 msgid "Set Due Tomorrow"
-msgstr ""
+msgstr "設定明天的截止期限"
 
 #: ../Widgets/TodosWidgetDelegate.qml:286
 msgctxt "TodosWidgetDelegate|"
 msgid "Swipe to mark undone"
-msgstr ""
+msgstr "滑動標示以消除"
 
 #: ../Widgets/TodosWidgetDelegate.qml:288
 msgctxt "TodosWidgetDelegate|"
 msgid "Swipe to mark done"
-msgstr ""
+msgstr "滑動標示為做完"
 
 #: ../Menues/LibraryPageActions.qml:39
 msgctxt "LibraryPageActions|"
 msgid "Sync Now"
-msgstr ""
+msgstr "現在同步"
 
 #: ../Menues/LibraryPageActions.qml:56
 msgctxt "LibraryPageActions|"
 msgid "Sync Log"
-msgstr ""
+msgstr "同步日誌"
 
 #: ../Pages/SettingsPageForm.ui.qml:65
 msgctxt "SettingsPageForm.ui|"
 msgid "Font Size:"
-msgstr ""
+msgstr "字型大小："
 
 #: ../Utils/Translations.qml:52
 msgctxt "Translations|"
 msgid "Basque"
-msgstr ""
+msgstr "巴斯克語"
 
 #: ../Pages/AccountTypeSelectionPage.qml:21
 msgctxt "AccountTypeSelectionPage|"
 msgid "Select Account Type"
-msgstr ""
+msgstr "選擇帳號類型"
 
 #: ../Pages/AccountTypeSelectionPage.qml:56
 msgctxt "AccountTypeSelectionPage|"
 msgid "Account Type"
-msgstr ""
+msgstr "帳號類型"
 
 #: ../Pages/AccountTypeSelectionPage.qml:62
 msgctxt "AccountTypeSelectionPage|"
@@ -1565,7 +1565,7 @@ msgstr ""
 #: ../appstartup.cpp:198
 msgctxt "AppStartup|"
 msgid "Manage your personal data."
-msgstr ""
+msgstr "管理你的個人資料。"
 
 #: ../appstartup.cpp:204
 msgctxt "AppStartup|"
@@ -1590,22 +1590,22 @@ msgstr ""
 #: ../appstartup.cpp:365
 msgctxt "AppStartup|"
 msgid "Open"
-msgstr ""
+msgstr "開啟"
 
 #: ../appstartup.cpp:431
 msgctxt "AppStartup|"
 msgid "Quit"
-msgstr ""
+msgstr "離開"
 
 #: ../Actions/DeleteCompletedChildren.qml:11
 msgctxt "DeleteCompletedChildren|"
 msgid "Delete Completed Items"
-msgstr ""
+msgstr "刪除完成的項目"
 
 #: ../Windows/DeleteCompletedItemsDialog.qml:18
 msgctxt "DeleteCompletedItemsDialog|"
 msgid "Delete Completed Items?"
-msgstr ""
+msgstr "要刪除完成的項目嗎？"
 
 #: ../Windows/DeleteCompletedItemsDialog.qml:42
 msgctxt "DeleteCompletedItemsDialog|"

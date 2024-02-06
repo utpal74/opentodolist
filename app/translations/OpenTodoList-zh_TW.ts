@@ -152,7 +152,7 @@
     <message>
         <location filename="../appstartup.cpp" line="431"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">離開</translation>
     </message>
 </context>
 <context>
@@ -170,7 +170,7 @@
     <message>
         <location filename="../../lib/application.cpp" line="226"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">離開</translation>
     </message>
 </context>
 <context>
@@ -312,7 +312,7 @@
     <message>
         <location filename="../Actions/DeleteCompletedChildren.qml" line="11"/>
         <source>Delete Completed Items</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">刪除完成的項目</translation>
     </message>
 </context>
 <context>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../Windows/DeleteCompletedItemsDialog.qml" line="18"/>
         <source>Delete Completed Items?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">要刪除完成的項目嗎？</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteCompletedItemsDialog.qml" line="42"/>
@@ -443,7 +443,7 @@
     <message>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="125"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">名稱：</translation>
     </message>
     <message>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="132"/>
@@ -462,7 +462,7 @@
     <message>
         <location filename="../Pages/EditNextCloudAccountPage.qml" line="65"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">名稱：</translation>
     </message>
     <message>
         <location filename="../Pages/EditNextCloudAccountPage.qml" line="76"/>
@@ -521,7 +521,7 @@
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="124"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">名稱：</translation>
     </message>
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="135"/>
@@ -780,7 +780,7 @@
     <message>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="115"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">名稱：</translation>
     </message>
     <message>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="122"/>
@@ -924,7 +924,7 @@
     <message>
         <location filename="../Pages/NewLibraryInFolderPage.qml" line="129"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">名稱：</translation>
     </message>
     <message>
         <location filename="../Pages/NewLibraryInFolderPage.qml" line="134"/>
@@ -976,7 +976,7 @@
     <message>
         <location filename="../Pages/NewLocalLibraryPage.qml" line="80"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">名稱：</translation>
     </message>
     <message>
         <location filename="../Pages/NewLocalLibraryPage.qml" line="85"/>
@@ -1070,7 +1070,7 @@
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="212"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">名稱：</translation>
     </message>
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="225"/>
@@ -1152,7 +1152,7 @@
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="150"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">名稱：</translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="163"/>
@@ -1335,7 +1335,7 @@
     <message>
         <location filename="../Windows/RecurrenceDialog.qml" line="115"/>
         <source>Number of days:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">天數：</translation>
     </message>
     <message>
         <location filename="../Windows/RecurrenceDialog.qml" line="117"/>
@@ -1350,7 +1350,7 @@
     <message>
         <location filename="../Windows/RecurrenceDialog.qml" line="141"/>
         <source>Recur relative to the date when marking as done</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">當標示為做完，反復發生相關的日期</translation>
     </message>
 </context>
 <context>
@@ -1400,7 +1400,7 @@
     <message>
         <location filename="../Pages/ScheduleViewPage.qml" line="53"/>
         <source>Schedule</source>
-        <translation type="unfinished">時程表</translation>
+        <translation type="unfinished">時間表</translation>
     </message>
     <message>
         <location filename="../Pages/ScheduleViewPage.qml" line="124"/>
@@ -1459,7 +1459,7 @@
     <message>
         <location filename="../Actions/SetDueNextWeek.qml" line="8"/>
         <source>Set Due This Week</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">設定本週的截止期限</translation>
     </message>
 </context>
 <context>
@@ -1467,7 +1467,7 @@
     <message>
         <location filename="../Actions/SetDueThisWeek.qml" line="8"/>
         <source>Set Due Next Week</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">設定下週的截止期限</translation>
     </message>
 </context>
 <context>
@@ -1475,7 +1475,7 @@
     <message>
         <location filename="../Actions/SetDueTo.qml" line="11"/>
         <source>Select Due Date</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">選擇截止日期</translation>
     </message>
 </context>
 <context>
@@ -1483,7 +1483,7 @@
     <message>
         <location filename="../Actions/SetDueToday.qml" line="8"/>
         <source>Set Due Today</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">設定今天的截止期限</translation>
     </message>
 </context>
 <context>
@@ -1491,7 +1491,7 @@
     <message>
         <location filename="../Actions/SetDueTomorrow.qml" line="8"/>
         <source>Set Due Tomorrow</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">設定明天的截止期限</translation>
     </message>
 </context>
 <context>
@@ -1542,7 +1542,7 @@
     <message>
         <location filename="../Pages/SettingsPage.qml" line="162"/>
         <source>Font Size:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">字型大小：</translation>
     </message>
     <message>
         <location filename="../Pages/SettingsPage.qml" line="179"/>
@@ -1699,7 +1699,7 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../Widgets/TodosWidget.qml" line="215"/>
         <source>Due on: %1</source>
-        <translation type="unfinished">截止期限 %1</translation>
+        <translation type="unfinished">截止期限： %1</translation>
     </message>
 </context>
 <context>
