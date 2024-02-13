@@ -30,42 +30,42 @@ msgstr ""
 #: ../Pages/AboutThirdPartyPage.qml:11
 msgctxt "AboutThirdPartyPage|"
 msgid "Used Libraries and Resources"
-msgstr ""
+msgstr "کتابخانه ها و منابع استفاده شده"
 
 #: ../Pages/AboutThirdPartyPage.qml:47
 msgctxt "AboutThirdPartyPage|"
 msgid "Author: <a href='%2'>%1</a>"
-msgstr ""
+msgstr "نویسنده: <a href='%2'>%1</a>"
 
 #: ../Pages/AboutThirdPartyPage.qml:54
 msgctxt "AboutThirdPartyPage|"
 msgid "License: <a href='%1'>%2</a>"
-msgstr ""
+msgstr "مجوز: <a href='%1'>%2</a>"
 
 #: ../Pages/AboutThirdPartyPage.qml:61
 msgctxt "AboutThirdPartyPage|"
 msgid "Download: <a href='%1'>%1</a>"
-msgstr ""
+msgstr "دانلود: <a href='%1'>%1</a>"
 
 #: ../Widgets/Attachments.qml:37
 msgctxt "Attachments|"
 msgid "Attach File"
-msgstr "اتچ فایل"
+msgstr "فایل ضمیمه"
 
 #: ../Widgets/Attachments.qml:52
 msgctxt "Attachments|"
 msgid "Delete Attachment?"
-msgstr "فایل اتچ پاک شود؟"
+msgstr "حذف ضمیمه"
 
 #: ../Widgets/Attachments.qml:56
 msgctxt "Attachments|"
 msgid "Are you sure you want to delete the attachment <strong>%1</strong>? This action cannot be undone."
-msgstr ""
+msgstr "برای حذف ضمیمه مطمئن هستید <strong>%1</strong> ؟ این اقدام قابل برگشت نمی باشد"
 
 #: ../Widgets/Attachments.qml:70
 msgctxt "Attachments|"
 msgid "Attachments"
-msgstr "اتچ ها"
+msgstr "ضمائم"
 
 #: ../Menues/ColorMenu.qml:15
 msgctxt "ColorMenu|"
@@ -110,17 +110,17 @@ msgstr "یاسی"
 #: ../Windows/DeleteItemDialog.qml:19
 msgctxt "DeleteItemDialog|"
 msgid "Delete Item?"
-msgstr ""
+msgstr "حذف شود ؟"
 
 #: ../Windows/DeleteItemDialog.qml:32
 msgctxt "DeleteItemDialog|"
 msgid "Do you really want to delete the image <strong>%1</strong>? This cannot be undone."
-msgstr ""
+msgstr "آیا از حذف این تصویر مطمئن هستید <strong>%1</strong> ؟ این اقدام قابل برگشت نیست."
 
 #: ../Windows/DeleteItemDialog.qml:36
 msgctxt "DeleteItemDialog|"
 msgid "Do you really want to delete the todo list <strong>%1</strong>? This cannot be undone."
-msgstr ""
+msgstr "آیا از حذف این لیست کار روزانه مطمئن هستید <strong>%1</strong> ؟ این اقدام قابل برگشت نیست."
 
 #: ../Windows/DeleteItemDialog.qml:40
 msgctxt "DeleteItemDialog|"
@@ -140,7 +140,7 @@ msgstr ""
 #: ../Windows/DeleteLibraryDialog.qml:19
 msgctxt "DeleteLibraryDialog|"
 msgid "Delete Library?"
-msgstr ""
+msgstr "کتابخانه حذف شود ؟"
 
 #: ../Windows/DeleteLibraryDialog.qml:33
 msgctxt "DeleteLibraryDialog|"
@@ -155,67 +155,67 @@ msgstr ""
 #: ../Windows/FolderSelectionDialog.qml:18
 msgctxt "FolderSelectionDialog|"
 msgid "Select a Folder"
-msgstr ""
+msgstr "انتخاب یک پوشه"
 
 #: ../Widgets/ItemCreatedNotification.qml:66
 msgctxt "ItemCreatedNotification|"
 msgid "<strong>%1</strong> has been created."
-msgstr ""
+msgstr "<strong>%1</strong> ایجاد شد"
 
 #: ../Widgets/ItemCreatedNotification.qml:72
 msgctxt "ItemCreatedNotification|"
 msgid "Open"
-msgstr ""
+msgstr "باز کردن"
 
 #: ../Widgets/ItemDueDateEditor.qml:32
 msgctxt "ItemDueDateEditor|"
 msgid "Due on"
-msgstr ""
+msgstr "موعد "
 
 #: ../Widgets/ItemNotesEditor.qml:32
 msgctxt "ItemNotesEditor|"
 msgid "Notes"
-msgstr ""
+msgstr "نکات"
 
 #: ../Widgets/LibrariesSideBar.qml:62 ../Widgets/LibrariesSideBar.qml:262
 msgctxt "LibrariesSideBar|"
 msgid "Schedule"
-msgstr ""
+msgstr "زمانبندی"
 
 #: ../Widgets/LibrariesSideBar.qml:74
 msgctxt "LibrariesSideBar|"
 msgid "New Library"
-msgstr ""
+msgstr "کتابخانه جدید"
 
 #: ../Widgets/LibrariesSideBar.qml:115
 msgctxt "LibrariesSideBar|"
 msgid "About..."
-msgstr ""
+msgstr "درباره..."
 
 #: ../Pages/LibraryPage.qml:201
 msgctxt "LibraryPage|"
 msgid "Red"
-msgstr ""
+msgstr "قرمز"
 
 #: ../Pages/LibraryPage.qml:208
 msgctxt "LibraryPage|"
 msgid "Green"
-msgstr ""
+msgstr "سبز"
 
 #: ../Pages/LibraryPage.qml:215
 msgctxt "LibraryPage|"
 msgid "Blue"
-msgstr ""
+msgstr "آبی"
 
 #: ../Pages/LibraryPage.qml:222
 msgctxt "LibraryPage|"
 msgid "Yellow"
-msgstr ""
+msgstr "زرد"
 
 #: ../Pages/LibraryPage.qml:229
 msgctxt "LibraryPage|"
 msgid "Orange"
-msgstr ""
+msgstr "نارنجی"
 
 #: ../Pages/LibraryPage.qml:236
 msgctxt "LibraryPage|"
@@ -225,32 +225,32 @@ msgstr ""
 #: ../Pages/LibraryPage.qml:243
 msgctxt "LibraryPage|"
 msgid "White"
-msgstr ""
+msgstr "سفید"
 
 #: ../Pages/LibraryPage.qml:253
 msgctxt "LibraryPage|"
 msgid "Rename"
-msgstr ""
+msgstr "تغییر نام"
 
 #: ../Pages/LibraryPage.qml:263
 msgctxt "LibraryPage|"
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: ../Pages/LibraryPage.qml:344
 msgctxt "LibraryPage|"
 msgid "Note Title"
-msgstr ""
+msgstr "عنوان یادآوری"
 
 #: ../Pages/LibraryPage.qml:357
 msgctxt "LibraryPage|"
 msgid "Todo List Title"
-msgstr ""
+msgstr "عنوان لیست کاری"
 
 #: ../Pages/LibraryPage.qml:370
 msgctxt "LibraryPage|"
 msgid "Search term 1, search term 2, ..."
-msgstr ""
+msgstr "شرط جستجو 1، شرط جستجو 2، ..."
 
 #: ../Pages/LibraryPage.qml:447
 msgctxt "LibraryPage|"
@@ -260,17 +260,17 @@ msgstr ""
 #: ../Menues/LibraryPageMenu.qml:18
 msgctxt "LibraryPageMenu|"
 msgid "Edit Sync Settings"
-msgstr ""
+msgstr "ویرایش تنظیمات اتصال"
 
 #: ../Menues/LibraryPageMenu.qml:20
 msgctxt "LibraryPageMenu|"
 msgid "Sync Now"
-msgstr ""
+msgstr "متصل شوید"
 
 #: ../Menues/LibraryPageMenu.qml:29
 msgctxt "LibraryPageMenu|"
 msgid "Sync Log"
-msgstr ""
+msgstr "گزارش اتصال"
 
 #: ../Widgets/LibrarySecretsMissingNotificationBar.qml:36
 msgctxt "LibrarySecretsMissingNotificationBar|"
@@ -280,27 +280,27 @@ msgstr ""
 #: ../Widgets/LibrarySecretsMissingNotificationBar.qml:41
 msgctxt "LibrarySecretsMissingNotificationBar|"
 msgid "Ignore"
-msgstr ""
+msgstr "رد کردن"
 
 #: ../Widgets/LibrarySecretsMissingNotificationBar.qml:45
 msgctxt "LibrarySecretsMissingNotificationBar|"
 msgid "Enter Secrets"
-msgstr ""
+msgstr "رمز را وارد کنید"
 
 #: ../Pages/LogViewPage.qml:14
 msgctxt "LogViewPage|"
 msgid "Synchronization Log"
-msgstr ""
+msgstr "گزارش اتصال"
 
 #: ../Pages/LogViewPage.qml:22
 msgctxt "LogViewPage|"
 msgid "Copy Log"
-msgstr ""
+msgstr "کپی گزارش"
 
 #: ../Windows/MainWindow.qml:24
 msgctxt "MainWindow|"
 msgid "OpenTodoList"
-msgstr ""
+msgstr "باز کردن لیست کاری"
 
 #: ../Windows/MainWindow.qml:451
 msgctxt "MainWindow|"

@@ -11,7 +11,7 @@
     <message>
         <location filename="../Pages/AboutPage.qml" line="33"/>
         <source>OpenTodoList</source>
-        <translation type="unfinished">اپن تودو لیست</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Pages/AboutPage.qml" line="40"/>
@@ -141,7 +141,7 @@
     <message>
         <location filename="../appstartup.cpp" line="365"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">باز کردن</translation>
     </message>
     <message>
         <location filename="../appstartup.cpp" line="373"/>
@@ -177,22 +177,22 @@
     <message>
         <location filename="../Widgets/Attachments.qml" line="37"/>
         <source>Attach File</source>
-        <translation type="unfinished">اتچ فایل</translation>
+        <translation type="unfinished">فایل ضمیمه</translation>
     </message>
     <message>
         <location filename="../Widgets/Attachments.qml" line="52"/>
         <source>Delete Attachment?</source>
-        <translation type="unfinished">فایل اتچ پاک شود؟</translation>
+        <translation type="unfinished">حذف ضمیمه</translation>
     </message>
     <message>
         <location filename="../Widgets/Attachments.qml" line="56"/>
         <source>Are you sure you want to delete the attachment &lt;strong&gt;%1&lt;/strong&gt;? This action cannot be undone.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">برای حذف ضمیمه مطمئن هستید &lt;strong&gt;%1&lt;/strong&gt; ؟ این اقدام قابل برگشت نمی باشد</translation>
     </message>
     <message>
         <location filename="../Widgets/Attachments.qml" line="70"/>
         <source>Attachments</source>
-        <translation type="unfinished">اتچ ها</translation>
+        <translation type="unfinished">ضمائم</translation>
     </message>
 </context>
 <context>
@@ -337,7 +337,7 @@
     <message>
         <location filename="../Actions/DeleteItem.qml" line="11"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">حذف</translation>
     </message>
 </context>
 <context>
@@ -345,17 +345,17 @@
     <message>
         <location filename="../Windows/DeleteItemDialog.qml" line="19"/>
         <source>Delete Item?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">حذف شود ؟</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteItemDialog.qml" line="32"/>
         <source>Do you really want to delete the image &lt;strong&gt;%1&lt;/strong&gt;? This cannot be undone.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">آیا از حذف این تصویر مطمئن هستید &lt;strong&gt;%1&lt;/strong&gt; ؟ این اقدام قابل برگشت نیست.</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteItemDialog.qml" line="36"/>
         <source>Do you really want to delete the todo list &lt;strong&gt;%1&lt;/strong&gt;? This cannot be undone.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">آیا از حذف این لیست کار روزانه مطمئن هستید &lt;strong&gt;%1&lt;/strong&gt; ؟ این اقدام قابل برگشت نیست.</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteItemDialog.qml" line="40"/>
@@ -383,7 +383,7 @@
     <message>
         <location filename="../Windows/DeleteLibraryDialog.qml" line="19"/>
         <source>Delete Library?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">کتابخانه حذف شود ؟</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteLibraryDialog.qml" line="33"/>
@@ -568,12 +568,12 @@
     <message>
         <location filename="../Widgets/ItemCreatedNotification.qml" line="66"/>
         <source>&lt;strong&gt;%1&lt;/strong&gt; has been created.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&lt;strong&gt;%1&lt;/strong&gt; ایجاد شد</translation>
     </message>
     <message>
         <location filename="../Widgets/ItemCreatedNotification.qml" line="72"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">باز کردن</translation>
     </message>
     <message>
         <location filename="../Widgets/ItemCreatedNotification.qml" line="77"/>
@@ -586,7 +586,7 @@
     <message>
         <location filename="../Widgets/ItemDueDateEditor.qml" line="32"/>
         <source>Due on</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">موعد </translation>
     </message>
     <message>
         <location filename="../Widgets/ItemDueDateEditor.qml" line="71"/>
@@ -672,7 +672,7 @@
     <message>
         <location filename="../Pages/LogViewPage.qml" line="14"/>
         <source>Synchronization Log</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">گزارش اتصال</translation>
     </message>
     <message>
         <location filename="../Pages/LogViewPage.qml" line="70"/>
@@ -893,7 +893,7 @@
     <message>
         <location filename="../Pages/NewLibraryInFolderPage.qml" line="74"/>
         <source>Select a Folder</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">انتخاب یک پوشه</translation>
     </message>
     <message>
         <location filename="../Pages/NewLibraryInFolderPage.qml" line="101"/>
@@ -1357,7 +1357,7 @@
     <message>
         <location filename="../Actions/RenameItem.qml" line="11"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">تغییر نام</translation>
     </message>
 </context>
 <context>
@@ -1399,7 +1399,7 @@
     <message>
         <location filename="../Pages/ScheduleViewPage.qml" line="53"/>
         <source>Schedule</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">زمانبندی</translation>
     </message>
     <message>
         <location filename="../Pages/ScheduleViewPage.qml" line="124"/>
@@ -1636,7 +1636,7 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../Widgets/SyncErrorNotificationBar.qml" line="49"/>
         <source>Ignore</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">رد کردن</translation>
     </message>
     <message>
         <location filename="../Widgets/SyncErrorNotificationBar.qml" line="53"/>
@@ -1670,7 +1670,7 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../Pages/TodoPage.qml" line="182"/>
         <source>Search term 1, search term 2, ...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">شرط جستجو 1، شرط جستجو 2، ...</translation>
     </message>
     <message>
         <location filename="../Pages/TodoPage.qml" line="208"/>
@@ -1711,7 +1711,7 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../Widgets/UpdateNotificationBar.qml" line="50"/>
         <source>Ignore</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">رد کردن</translation>
     </message>
     <message>
         <location filename="../Widgets/UpdateNotificationBar.qml" line="54"/>
