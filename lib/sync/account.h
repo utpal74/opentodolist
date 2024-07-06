@@ -79,7 +79,7 @@ public:
      */
     virtual void setAccountSecrets(const QString& secrets) = 0;
 
-    QString name() const;
+    const QString& name() const;
     void setName(const QString& name);
 
     /**

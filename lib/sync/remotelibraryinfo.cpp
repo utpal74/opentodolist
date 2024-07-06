@@ -30,7 +30,7 @@ RemoteLibraryInfo::RemoteLibraryInfo() : m_name(), m_path(), m_uid()
 /**
  * @brief The name of the library.
  */
-QString RemoteLibraryInfo::name() const
+const QString& RemoteLibraryInfo::name() const
 {
     return m_name;
 }
@@ -46,7 +46,7 @@ void RemoteLibraryInfo::setName(const QString& name)
 /**
  * @brief The path (relative to the account's remote directory).
  */
-QString RemoteLibraryInfo::path() const
+const QString& RemoteLibraryInfo::path() const
 {
     return m_path;
 }

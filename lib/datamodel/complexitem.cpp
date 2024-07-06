@@ -119,7 +119,7 @@ void ComplexItem::setDueTo(const QDateTime& dueTo)
 /**
  * @brief Return the notes (as HTML) attached to the item.
  */
-QString ComplexItem::notes()
+const QString& ComplexItem::notes()
 {
     return m_notes;
 }
@@ -148,7 +148,7 @@ void ComplexItem::setNotes(const QString& notes)
     }
 }
 
-QStringList ComplexItem::attachments() const
+const QStringList& ComplexItem::attachments() const
 {
     return m_attachments;
 }

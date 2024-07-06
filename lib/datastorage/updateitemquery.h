@@ -41,7 +41,7 @@ public:
     QUuid uid() const;
     void setUid(const QUuid& newUid);
 
-    QString script() const;
+    const QString& script() const;
     void setScript(const QString& newScript);
 
 signals:

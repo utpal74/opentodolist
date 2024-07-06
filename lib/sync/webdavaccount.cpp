@@ -55,7 +55,7 @@ WebDAVAccount::WebDAVAccount(QObject* parent)
 /**
  * @brief The username to use to log in.
  */
-QString WebDAVAccount::username() const
+const QString& WebDAVAccount::username() const
 {
     return m_username;
 }
@@ -74,7 +74,7 @@ void WebDAVAccount::setUsername(const QString& username)
 /**
  * @brief The password used to log in to the server.
  */
-QString WebDAVAccount::password() const
+const QString& WebDAVAccount::password() const
 {
     return m_password;
 }
@@ -95,7 +95,7 @@ void WebDAVAccount::setPassword(const QString& password)
  *
  * This is the URL without the protocol part of the server to connect to.
  */
-QString WebDAVAccount::baseUrl() const
+const QString& WebDAVAccount::baseUrl() const
 {
     return m_baseUrl;
 }

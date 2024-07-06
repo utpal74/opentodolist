@@ -80,10 +80,10 @@ public:
 
     bool synchronizing() const;
 
-    QString directory() const;
+    const QString& directory() const;
     void setDirectory(const QString& directory);
 
-    QString remoteDirectory() const;
+    const QString& remoteDirectory() const;
     void setRemoteDirectory(const QString& remoteDirectory);
 
     bool isNull() const;
@@ -135,7 +135,7 @@ public:
     QDebug error();
     QDebug writeLog(LogType type);
 
-    QList<LogEntry> log() const;
+    const QList<LogEntry>& log() const;
     bool loadLog();
     bool saveLog();
 

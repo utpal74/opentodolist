@@ -1181,7 +1181,9 @@ QUrl Application::getParentDirectory(const QUrl& url) const
     auto path = url.toLocalFile();
     QDir dir(path);
     if (!dir.isRoot()) {
-        dir.cdUp();
+        if (!dir.cdUp()) {
+            return QUrl();
+        }
     }
     return QUrl::fromLocalFile(dir.absolutePath());
 }
@@ -1459,7 +1461,7 @@ QVariantMap Application::syncProgress() const
 /**
  * @brief The list of directories in which a sync is currently running.
  */
-QStringList Application::directoriesWithRunningSync() const
+const QStringList& Application::directoriesWithRunningSync() const
 {
     return m_directoriesWithRunningSync;
 }

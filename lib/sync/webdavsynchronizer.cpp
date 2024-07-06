@@ -163,7 +163,7 @@ void WebDAVSynchronizer::setDisableCertificateCheck(bool disableCertificateCheck
     }
 }
 
-QString WebDAVSynchronizer::username() const
+const QString& WebDAVSynchronizer::username() const
 {
     return m_username;
 }
@@ -176,7 +176,7 @@ void WebDAVSynchronizer::setUsername(const QString& username)
     }
 }
 
-QString WebDAVSynchronizer::password() const
+const QString& WebDAVSynchronizer::password() const
 {
     return m_password;
 }
@@ -192,7 +192,7 @@ void WebDAVSynchronizer::setPassword(const QString& password)
 /**
  * @brief The URL to connect to.
  */
-QUrl WebDAVSynchronizer::url() const
+const QUrl& WebDAVSynchronizer::url() const
 {
     return m_url;
 }

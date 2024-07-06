@@ -448,7 +448,7 @@ QUuid Library::uid() const
  *
  * This returns the list of tags - sorted alphabetically - used within the library.
  */
-QStringList Library::tags() const
+const QStringList& Library::tags() const
 {
     return m_tags;
 }

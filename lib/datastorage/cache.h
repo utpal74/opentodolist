@@ -63,7 +63,7 @@ public:
     explicit Cache(QObject* parent = nullptr);
     virtual ~Cache();
 
-    QString cacheDirectory() const;
+    const QString& cacheDirectory() const;
     void setCacheDirectory(const QString& cacheDirectory);
 
     size_t cacheSize() const;

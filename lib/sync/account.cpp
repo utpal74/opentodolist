@@ -167,7 +167,7 @@ int Account::preferredSyncIntervalInSec() const
  * This is the human readable name of the account. It is used inside
  * the application to identify the account.
  */
-QString Account::name() const
+const QString& Account::name() const
 {
     return m_name;
 }

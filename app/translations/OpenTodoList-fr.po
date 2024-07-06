@@ -2669,90 +2669,90 @@ msgstr "Ajouter un compte"
 #: ../Pages/LogViewPage.qml:70
 msgctxt "LogViewPage|"
 msgid "Debugging information"
-msgstr ""
+msgstr "Informations de debug"
 
 #: ../Pages/LogViewPage.qml:72
 msgctxt "LogViewPage|"
 msgid "Warning"
-msgstr ""
+msgstr "Alerte"
 
 #: ../Pages/LogViewPage.qml:74
 msgctxt "LogViewPage|"
 msgid "Error"
-msgstr ""
+msgstr "Erreur"
 
 #: ../Pages/LogViewPage.qml:76
 msgctxt "LogViewPage|"
 msgid "Download"
-msgstr ""
+msgstr "Télécharger"
 
 #: ../Pages/LogViewPage.qml:78
 msgctxt "LogViewPage|"
 msgid "Upload"
-msgstr ""
+msgstr "Téléverser"
 
 #: ../Pages/LogViewPage.qml:80
 msgctxt "LogViewPage|"
 msgid "Create local folder"
-msgstr ""
+msgstr "Créer un dossier local"
 
 #: ../Pages/LogViewPage.qml:82
 msgctxt "LogViewPage|"
 msgid "Create remote folder"
-msgstr ""
+msgstr "Créer un dossier distant"
 
 #: ../Pages/LogViewPage.qml:84
 msgctxt "LogViewPage|"
 msgid "Deleting locally"
-msgstr ""
+msgstr "Suppression de l'élément locale"
 
 #: ../Pages/LogViewPage.qml:86
 msgctxt "LogViewPage|"
 msgid "Deleting remotely"
-msgstr ""
+msgstr "Suppression de l'élément distant"
 
 #: ../Pages/LogViewPage.qml:88
 msgctxt "LogViewPage|"
 msgid "Unknown log message type"
-msgstr ""
+msgstr "Type de message de debug inconnu"
 
 #: ../Widgets/TodosWidgetDelegate.qml:238
 msgctxt "TodosWidgetDelegate|"
 msgid "More Actions..."
-msgstr ""
+msgstr "Autres actions..."
 
 #: ../Menues/LibraryPageActions.qml:66
 msgctxt "LibraryPageActions|"
 msgid "Open Library Folder"
-msgstr ""
+msgstr "Ouvrir le dossier"
 
 #: ../Pages/ProblemsPage.qml:91
 msgctxt "ProblemsPage|"
 msgid "Retry Sync"
-msgstr ""
+msgstr "Relancer la synchro"
 
 #: ../Pages/SettingsPage.qml:148
 msgctxt "SettingsPage|"
 msgid "Monochrome Icon"
-msgstr ""
+msgstr "Icône monochrome"
 
 #: ../Windows/RecurrenceDialog.qml:117
 msgctxt "RecurrenceDialog|"
 msgid "Number of weeks:"
-msgstr ""
+msgstr "Nombre de semaines"
 
 #: ../Windows/RecurrenceDialog.qml:119
 msgctxt "RecurrenceDialog|"
 msgid "Number of months:"
-msgstr ""
+msgstr "Nombre de mois"
 
 #: ../Utils/DeepLinkHandler.qml:56
 msgctxt "DeepLinkHandler|"
 msgid "Uuups... seems that's a dead end..."
-msgstr ""
+msgstr "Ouuups... le lien semble rompu..."
 
 #: ../Utils/DeepLinkHandler.qml:62
 msgctxt "DeepLinkHandler|"
 msgid "Sorry, that link does not lead to any page or item that is present on this device. Check if the library or item to which the link points is synchronized on this device and try again."
-msgstr ""
+msgstr "Désolé, ce lien mène à aucune page ou élément présent sur cet appareil. Vérifiez que la bibliothèque ou l'élément est bien synchronisé sur cet appareil et réessayez."
 

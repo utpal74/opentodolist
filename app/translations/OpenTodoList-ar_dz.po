@@ -5,71 +5,67 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
 "Project-Id-Version: OpenTodoList\n"
-"Language: ar-eg\n"
+"Language: ar-dz\n"
 
 #: ../Pages/AboutPage.qml:15
 msgctxt "AboutPage|"
 msgid "About..."
-msgstr "عن البرنامج"
+msgstr "فيما يخص"
 
 #: ../Pages/AboutPage.qml:33
 msgctxt "AboutPage|"
 msgid "OpenTodoList"
-msgstr "قائمة المهام المفتوحة"
+msgstr "قائمة أشياء للإنجاز"
 
 #: ../Pages/AboutPage.qml:40
 msgctxt "AboutPage|"
 msgid "A todo and task managing application."
-msgstr "تطبيق لإدارة المهام"
+msgstr "تطبيق خاص بـ تنظيم قوائم مهام و أشياء للإنجاز"
 
 #: ../Pages/AboutPage.qml:60
 msgctxt "AboutPage|"
 msgid "OpenTodoList is released under the terms of the GNU General Public License version 3 or (at your choice) any later version. You can find a copy of the license below. Additionally, several libraries and resources are used. For detailed information about their license terms, please refer to the <a href='3rdparty'>3rd Party Software</a> page."
-msgstr "يتم إصدار OpenTodoList بموجب شروط رخصة جنو العمومية الإصدار 3 أو (حسب اختيارك) أي إصدار أحدث. يمكنك العثور على نسخة من الترخيص أدناه. بالإضافة إلى ذلك ، يتم استخدام العديد من المكتبات والموارد. للحصول على معلومات مفصلة حول شروط الترخيص الخاصة بهم ، يرجى الرجوع إلى صفحة برامج الطرف الثالث <a href='3rdparty'>3rd</a>."
+msgstr ""
 
 #: ../Pages/AboutThirdPartyPage.qml:11
 msgctxt "AboutThirdPartyPage|"
 msgid "Used Libraries and Resources"
-msgstr "المكتبات  والموارد المستخدمة"
+msgstr "المصادر و المكتبات المستعملة"
 
 #: ../Pages/AboutThirdPartyPage.qml:47
 msgctxt "AboutThirdPartyPage|"
 msgid "Author: <a href='%2'>%1</a>"
-msgstr "\n"
-"المؤلف: < href='٪2'>٪1</a>"
+msgstr "المؤلف:"
 
 #: ../Pages/AboutThirdPartyPage.qml:54
 msgctxt "AboutThirdPartyPage|"
 msgid "License: <a href='%1'>%2</a>"
-msgstr "\n"
-"الترخيص :: <a href='%1'>%2</a>"
+msgstr "رخصة إستغلال: <a href='%1'>%2</a>"
 
 #: ../Pages/AboutThirdPartyPage.qml:61
 msgctxt "AboutThirdPartyPage|"
 msgid "Download: <a href='%1'>%1</a>"
-msgstr "تنزيل: <a href='%1'>%1</a>"
+msgstr "التحميل:"
 
 #: ../Widgets/Attachments.qml:37
 msgctxt "Attachments|"
 msgid "Attach File"
-msgstr "\n"
-"إرفاق ملف"
+msgstr "إضافة ملحق"
 
 #: ../Widgets/Attachments.qml:52
 msgctxt "Attachments|"
 msgid "Delete Attachment?"
-msgstr "حذف الملف المرفق ؟"
+msgstr "حذف ملحق"
 
 #: ../Widgets/Attachments.qml:56
 msgctxt "Attachments|"
 msgid "Are you sure you want to delete the attachment <strong>%1</strong>? This action cannot be undone."
-msgstr "هل قصدت حذف المرفق<strong>%1</strong>?\n"
-"لن يمكنك التراجع ."
+msgstr "هل انت متأكد من حذف الملف الملحق <strong>%1</strong> ؟ هذه العملية لا تستدرك بالرجوع للخلف."
 
 #: ../Widgets/Attachments.qml:70
 msgctxt "Attachments|"
 msgid "Attachments"
-msgstr "المرفقات"
+msgstr "الملحقات"
 
 #: ../Menues/ColorMenu.qml:15
 msgctxt "ColorMenu|"
@@ -109,82 +105,82 @@ msgstr "برتقالي"
 #: ../Menues/ColorMenu.qml:61
 msgctxt "ColorMenu|"
 msgid "Lilac"
-msgstr "أُرجواني"
+msgstr "بنفسجي"
 
 #: ../Windows/DeleteItemDialog.qml:19
 msgctxt "DeleteItemDialog|"
 msgid "Delete Item?"
-msgstr "حذف العنصر؟"
+msgstr "حذف الوحدة؟"
 
 #: ../Windows/DeleteItemDialog.qml:32
 msgctxt "DeleteItemDialog|"
 msgid "Do you really want to delete the image <strong>%1</strong>? This cannot be undone."
-msgstr "هل تريد حقا حذف الصورة <strong>٪1</strong>؟ لن يمكنك التراجع."
+msgstr "هل حقا تريد حذف الصورة <strong>%1</strong> ؟ هذه العملية غير قابلة للإستدراك."
 
 #: ../Windows/DeleteItemDialog.qml:36
 msgctxt "DeleteItemDialog|"
 msgid "Do you really want to delete the todo list <strong>%1</strong>? This cannot be undone."
-msgstr "هل تريد حقًا حذف قائمة المهام TODO <strong> ٪ 1 </strong>؟ هذا لا يمكن التراجع عنها."
+msgstr "هل حقا تريد حذف القائمة <strong>%1</strong>؟ هذه العملية غير قابلة للإستدراك."
 
 #: ../Windows/DeleteItemDialog.qml:40
 msgctxt "DeleteItemDialog|"
 msgid "Do you really want to delete the todo <strong>%1</strong>? This cannot be undone."
-msgstr "هل تريد حقًا حذف قائمة المهام <strong> ٪ 1 </strong>؟ لن يمكنك التراجع."
+msgstr "هل حقا تريد حذف المذكرة <strong>%1</strong>؟ هذه العملية غير قابلة للإستدراك."
 
 #: ../Windows/DeleteItemDialog.qml:44
 msgctxt "DeleteItemDialog|"
 msgid "Do you really want to delete the task <strong>%1</strong>? This cannot be undone."
-msgstr "هل تريد حقًا حذف المهمة <strong> ٪ 1 </strong>؟ لن يمكنك التراجع."
+msgstr "هل حقا تريد حذف المهمة <strong>%1</strong>؟ هذه العملية غير قابلة للإستدراك."
 
 #: ../Windows/DeleteItemDialog.qml:48
 msgctxt "DeleteItemDialog|"
 msgid "Do you really want to delete the note <strong>%1</strong>? This cannot be undone."
-msgstr "هل تريد حقًا حذف الملاحظة <strong> ٪ 1 </strong>؟ لن يمكنك التراجع."
+msgstr "هل حقا تريد حذف الملحوظة <strong>%1</strong>؟ هذه العملية غير قابلة للإستدراك."
 
 #: ../Windows/DeleteLibraryDialog.qml:19
 msgctxt "DeleteLibraryDialog|"
 msgid "Delete Library?"
-msgstr "هل أحذف المكتبة؟"
+msgstr "أحذف المكتبة؟"
 
 #: ../Windows/DeleteLibraryDialog.qml:33
 msgctxt "DeleteLibraryDialog|"
 msgid "Do you really want to remove the library <strong>%1</strong> from  the application? <em>This will remove any files belonging to the library.</em>"
-msgstr "هل تريد حقًا إزالة المكتبة <strong> ٪ 1 </strong> من التطبيق؟"
+msgstr "هل حقا تريد حذف المكتبة <strong>%1</strong>؟ من التطبيق؟ <em> هذا يؤدي إلى حذف كل ملف مرتبط بالمكتبة."
 
 #: ../Windows/DeleteLibraryDialog.qml:40
 msgctxt "DeleteLibraryDialog|"
 msgid "Do you really want to remove the library <strong>%1</strong> from the application? Note that the files inside the library will not be removed, so you can restore the library later on."
-msgstr "هل تريد حقًا إزالة المكتبة <strong> ٪ 1 </strong> من التطبيق؟ لاحظ أنه لن تتم إزالة الملفات الموجودة داخل المكتبة ، حتى تتمكن من استعادة المكتبة لاحقًا."
+msgstr "هل حقا تريد حذف المكتبة <strong>%1</strong>؟ من التطبيق؟ لاحظ أن الملفات داخل هذه المكتبة لن تحذف، لهذا يمكنك استعادة المكتبة لاحقا."
 
 #: ../Windows/FolderSelectionDialog.qml:18
 msgctxt "FolderSelectionDialog|"
 msgid "Select a Folder"
-msgstr "اختر مجلد"
+msgstr "حدد مجلد"
 
 #: ../Widgets/ItemCreatedNotification.qml:66
 msgctxt "ItemCreatedNotification|"
 msgid "<strong>%1</strong> has been created."
-msgstr "<strong>%1</strong> has been created."
+msgstr "<strong>%1</strong> قد تم انشاؤه."
 
 #: ../Widgets/ItemCreatedNotification.qml:72
 msgctxt "ItemCreatedNotification|"
 msgid "Open"
-msgstr "فتح"
+msgstr "أفتح"
 
 #: ../Widgets/ItemDueDateEditor.qml:32
 msgctxt "ItemDueDateEditor|"
 msgid "Due on"
-msgstr "واجب فى"
+msgstr "مبرمج في"
 
 #: ../Widgets/ItemNotesEditor.qml:32
 msgctxt "ItemNotesEditor|"
 msgid "Notes"
-msgstr "ملحوظات"
+msgstr "ملحوظة"
 
 #: ../Widgets/LibrariesSideBar.qml:62 ../Widgets/LibrariesSideBar.qml:262
 msgctxt "LibrariesSideBar|"
 msgid "Schedule"
-msgstr "جدول"
+msgstr "رزنامة"
 
 #: ../Widgets/LibrariesSideBar.qml:74
 msgctxt "LibrariesSideBar|"
@@ -194,17 +190,17 @@ msgstr "مكتبة جديدة"
 #: ../Widgets/LibrariesSideBar.qml:115
 msgctxt "LibrariesSideBar|"
 msgid "About..."
-msgstr "عن"
+msgstr "فيما يخص..."
 
 #: ../Pages/LibraryPage.qml:201
 msgctxt "LibraryPage|"
 msgid "Red"
-msgstr "احمر"
+msgstr "أحمر"
 
 #: ../Pages/LibraryPage.qml:208
 msgctxt "LibraryPage|"
 msgid "Green"
-msgstr "أخر"
+msgstr "أخضر"
 
 #: ../Pages/LibraryPage.qml:215
 msgctxt "LibraryPage|"
@@ -224,7 +220,7 @@ msgstr "برتقالي"
 #: ../Pages/LibraryPage.qml:236
 msgctxt "LibraryPage|"
 msgid "Lilac"
-msgstr "أرجواني"
+msgstr "بنفسجي"
 
 #: ../Pages/LibraryPage.qml:243
 msgctxt "LibraryPage|"
@@ -244,23 +240,22 @@ msgstr "حذف"
 #: ../Pages/LibraryPage.qml:344
 msgctxt "LibraryPage|"
 msgid "Note Title"
-msgstr "عنوان الملاحظة"
+msgstr "ملحوظة عنوان"
 
 #: ../Pages/LibraryPage.qml:357
 msgctxt "LibraryPage|"
 msgid "Todo List Title"
-msgstr "عنوان قائمة المهام "
+msgstr "عنوان قائمة إنجازات"
 
 #: ../Pages/LibraryPage.qml:370
 msgctxt "LibraryPage|"
 msgid "Search term 1, search term 2, ..."
-msgstr "تعبير البحث 1, تعبير البحث2, ..."
+msgstr "بحث عن كلمة1, بحث عن كلمة2, ..."
 
-#. تحتاج للتجريب عملياً
 #: ../Pages/LibraryPage.qml:447
 msgctxt "LibraryPage|"
 msgid "Nothing here yet! Start by adding a <a href='#note'>note</a>, <a href='#todolist'>todo list</a> or <a href='#image'>image</a>."
-msgstr "لا شيء هنا بعد! ابدأ بإضافة <a href='#note'> ملاحظة </an> ، <a href='#todolist'> todolist </a> أو <a href='#image'> صورة </a>."
+msgstr "لا شيئ هنا بعد! إبدأ بإظافة <a href='#note'>note</a>, <a href='#todolist'>todo list</a> or <a href='#image'>image</a>."
 
 #: ../Menues/LibraryPageMenu.qml:18
 msgctxt "LibraryPageMenu|"

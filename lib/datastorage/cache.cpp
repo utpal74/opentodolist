@@ -114,7 +114,7 @@ Cache::~Cache()
 /**
  * @brief The directory where the on-disk cache is stored.
  */
-QString Cache::cacheDirectory() const
+const QString& Cache::cacheDirectory() const
 {
     return m_cacheDirectory;
 }

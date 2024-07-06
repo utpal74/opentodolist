@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ko">
+<TS version="2.1" language="ar_dz">
 <context>
     <name>AboutPage</name>
     <message>
@@ -11,12 +11,12 @@
     <message>
         <location filename="../Pages/AboutPage.qml" line="33"/>
         <source>OpenTodoList</source>
-        <translation type="unfinished">OpenTodoList</translation>
+        <translation type="unfinished">قائمة أشياء للإنجاز</translation>
     </message>
     <message>
         <location filename="../Pages/AboutPage.qml" line="40"/>
         <source>A todo and task managing application.</source>
-        <translation type="unfinished">할일 및 작업 관리 응용 프로그램입니다.</translation>
+        <translation type="unfinished">تطبيق خاص بـ تنظيم قوائم مهام و أشياء للإنجاز</translation>
     </message>
     <message>
         <location filename="../Pages/AboutPage.qml" line="68"/>
@@ -159,7 +159,7 @@
     <message>
         <location filename="../appstartup.cpp" line="365"/>
         <source>Open</source>
-        <translation type="unfinished">열림</translation>
+        <translation type="unfinished">أفتح</translation>
     </message>
     <message>
         <location filename="../appstartup.cpp" line="373"/>
@@ -238,7 +238,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="52"/>
         <source>Attach File</source>
-        <translation type="unfinished">첨부 파일</translation>
+        <translation type="unfinished">إضافة ملحق</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="60"/>
@@ -263,7 +263,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="132"/>
         <source>Delete</source>
-        <translation type="unfinished">삭제</translation>
+        <translation type="unfinished">حذف</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="140"/>
@@ -308,7 +308,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="218"/>
         <source>New Library</source>
-        <translation type="unfinished">신규 라이브러리</translation>
+        <translation type="unfinished">مكتبة جديدة</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="226"/>
@@ -333,7 +333,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="253"/>
         <source>Rename</source>
-        <translation type="unfinished">다른 이름으로</translation>
+        <translation type="unfinished">إعادة تسمية</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="261"/>
@@ -368,12 +368,12 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="318"/>
         <source>Sync Now</source>
-        <translation type="unfinished">동기 시작</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="331"/>
         <source>Sync Log</source>
-        <translation type="unfinished">동기 기록</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="342"/>
@@ -394,22 +394,22 @@
     <message>
         <location filename="../Widgets/Attachments.qml" line="37"/>
         <source>Attach File</source>
-        <translation type="unfinished">첨부 파일</translation>
+        <translation type="unfinished">إضافة ملحق</translation>
     </message>
     <message>
         <location filename="../Widgets/Attachments.qml" line="52"/>
         <source>Delete Attachment?</source>
-        <translation type="unfinished">첨부를 삭제할까요?</translation>
+        <translation type="unfinished">حذف ملحق</translation>
     </message>
     <message>
         <location filename="../Widgets/Attachments.qml" line="56"/>
         <source>Are you sure you want to delete the attachment &lt;strong&gt;%1&lt;/strong&gt;? This action cannot be undone.</source>
-        <translation type="unfinished">첨부를 삭제하시겠습니까&lt;strong&gt; % 1 &lt;/ strong&gt; ? 이 작업은 취소 할 수 없습니다.</translation>
+        <translation type="unfinished">هل انت متأكد من حذف الملف الملحق &lt;strong&gt;%1&lt;/strong&gt; ؟ هذه العملية لا تستدرك بالرجوع للخلف.</translation>
     </message>
     <message>
         <location filename="../Widgets/Attachments.qml" line="70"/>
         <source>Attachments</source>
-        <translation type="unfinished">첨부</translation>
+        <translation type="unfinished">الملحقات</translation>
     </message>
 </context>
 <context>
@@ -417,22 +417,22 @@
     <message>
         <location filename="../Menues/ColorMenu.qml" line="15"/>
         <source>Color</source>
-        <translation type="unfinished">색</translation>
+        <translation type="unfinished">اللون</translation>
     </message>
     <message>
         <location filename="../Menues/ColorMenu.qml" line="19"/>
         <source>White</source>
-        <translation type="unfinished">흰</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Menues/ColorMenu.qml" line="26"/>
         <source>Red</source>
-        <translation type="unfinished">빨강</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Menues/ColorMenu.qml" line="33"/>
         <source>Green</source>
-        <translation type="unfinished">초록</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Menues/ColorMenu.qml" line="40"/>
@@ -447,12 +447,12 @@
     <message>
         <location filename="../Menues/ColorMenu.qml" line="54"/>
         <source>Orange</source>
-        <translation type="unfinished">주황</translation>
+        <translation type="unfinished">برتقالي</translation>
     </message>
     <message>
         <location filename="../Menues/ColorMenu.qml" line="61"/>
         <source>Lilac</source>
-        <translation type="unfinished">옅은 자주</translation>
+        <translation type="unfinished">بنفسجي</translation>
     </message>
 </context>
 <context>
@@ -554,7 +554,7 @@
     <message>
         <location filename="../Actions/DeleteItem.qml" line="11"/>
         <source>Delete</source>
-        <translation type="unfinished">삭제</translation>
+        <translation type="unfinished">حذف</translation>
     </message>
 </context>
 <context>
@@ -562,32 +562,32 @@
     <message>
         <location filename="../Windows/DeleteItemDialog.qml" line="19"/>
         <source>Delete Item?</source>
-        <translation type="unfinished">항목을 삭제할까요?</translation>
+        <translation type="unfinished">حذف الوحدة؟</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteItemDialog.qml" line="32"/>
         <source>Do you really want to delete the image &lt;strong&gt;%1&lt;/strong&gt;? This cannot be undone.</source>
-        <translation type="unfinished">이 그림을 진짜로 삭제하실건가요&lt;strong&gt;%1&lt;/strong&gt;? 되돌릴 수 없어요.</translation>
+        <translation type="unfinished">هل حقا تريد حذف الصورة &lt;strong&gt;%1&lt;/strong&gt; ؟ هذه العملية غير قابلة للإستدراك.</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteItemDialog.qml" line="36"/>
         <source>Do you really want to delete the todo list &lt;strong&gt;%1&lt;/strong&gt;? This cannot be undone.</source>
-        <translation type="unfinished">할 일 목록 &lt;strong&gt; % 1 &lt;/ strong&gt;을 진짜로 삭제하실래요? 되돌릴 수 없어요.</translation>
+        <translation type="unfinished">هل حقا تريد حذف القائمة &lt;strong&gt;%1&lt;/strong&gt;؟ هذه العملية غير قابلة للإستدراك.</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteItemDialog.qml" line="40"/>
         <source>Do you really want to delete the todo &lt;strong&gt;%1&lt;/strong&gt;? This cannot be undone.</source>
-        <translation type="unfinished">할 일 &lt;strong&gt; % 1 &lt;/ strong&gt;을 진짜로 삭제하실래요? 되돌릴 수 없어요.</translation>
+        <translation type="unfinished">هل حقا تريد حذف المذكرة &lt;strong&gt;%1&lt;/strong&gt;؟ هذه العملية غير قابلة للإستدراك.</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteItemDialog.qml" line="44"/>
         <source>Do you really want to delete the task &lt;strong&gt;%1&lt;/strong&gt;? This cannot be undone.</source>
-        <translation type="unfinished">작업 &lt;strong&gt; % 1 &lt;/ strong&gt;을 진짜로 삭제하실래요? 되돌릴 수 없어요.</translation>
+        <translation type="unfinished">هل حقا تريد حذف المهمة &lt;strong&gt;%1&lt;/strong&gt;؟ هذه العملية غير قابلة للإستدراك.</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteItemDialog.qml" line="48"/>
         <source>Do you really want to delete the note &lt;strong&gt;%1&lt;/strong&gt;? This cannot be undone.</source>
-        <translation type="unfinished">노트&lt;strong&gt; % 1 &lt;/ strong&gt;를 진짜로 삭제하실래요? 되돌릴 수 없어요.</translation>
+        <translation type="unfinished">هل حقا تريد حذف الملحوظة &lt;strong&gt;%1&lt;/strong&gt;؟ هذه العملية غير قابلة للإستدراك.</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteItemDialog.qml" line="52"/>
@@ -600,17 +600,17 @@
     <message>
         <location filename="../Windows/DeleteLibraryDialog.qml" line="19"/>
         <source>Delete Library?</source>
-        <translation type="unfinished">라이브러리를 삭제하나요?</translation>
+        <translation type="unfinished">أحذف المكتبة؟</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteLibraryDialog.qml" line="33"/>
         <source>Do you really want to remove the library &lt;strong&gt;%1&lt;/strong&gt; from  the application? &lt;em&gt;This will remove any files belonging to the library.&lt;/em&gt;</source>
-        <translation type="unfinished">응용 프로그램에서 라이브러리 &lt;strong&gt; % 1 &lt;/ strong&gt;를 제거하시나요? &lt;em&gt; 이러면 라이브러리에 속한 모든 파일이 제거되요. &lt;/ em&gt;</translation>
+        <translation type="unfinished">هل حقا تريد حذف المكتبة &lt;strong&gt;%1&lt;/strong&gt;؟ من التطبيق؟ &lt;em&gt; هذا يؤدي إلى حذف كل ملف مرتبط بالمكتبة.</translation>
     </message>
     <message>
         <location filename="../Windows/DeleteLibraryDialog.qml" line="40"/>
         <source>Do you really want to remove the library &lt;strong&gt;%1&lt;/strong&gt; from the application? Note that the files inside the library will not be removed, so you can restore the library later on.</source>
-        <translation type="unfinished">응용 프로그램에서 라이브러리 &lt;strong&gt; % 1 &lt;/ strong&gt;을 (를) 제거하시나요? 라이브러리 내의 파일은 제거되지 않으므로 나중에 라이브러리를 복원 할 수 있어요.</translation>
+        <translation type="unfinished">هل حقا تريد حذف المكتبة &lt;strong&gt;%1&lt;/strong&gt;؟ من التطبيق؟ لاحظ أن الملفات داخل هذه المكتبة لن تحذف، لهذا يمكنك استعادة المكتبة لاحقا.</translation>
     </message>
 </context>
 <context>
@@ -785,12 +785,12 @@
     <message>
         <location filename="../Widgets/ItemCreatedNotification.qml" line="66"/>
         <source>&lt;strong&gt;%1&lt;/strong&gt; has been created.</source>
-        <translation type="unfinished">&lt;strong&gt;%1&lt;/strong&gt; 생성되었음.</translation>
+        <translation type="unfinished">&lt;strong&gt;%1&lt;/strong&gt; قد تم انشاؤه.</translation>
     </message>
     <message>
         <location filename="../Widgets/ItemCreatedNotification.qml" line="72"/>
         <source>Open</source>
-        <translation type="unfinished">열림</translation>
+        <translation type="unfinished">أفتح</translation>
     </message>
     <message>
         <location filename="../Widgets/ItemCreatedNotification.qml" line="77"/>
@@ -803,7 +803,7 @@
     <message>
         <location filename="../Widgets/ItemDueDateEditor.qml" line="32"/>
         <source>Due on</source>
-        <translation type="unfinished">기한</translation>
+        <translation type="unfinished">مبرمج في</translation>
     </message>
     <message>
         <location filename="../Widgets/ItemDueDateEditor.qml" line="71"/>
@@ -866,7 +866,7 @@
     <message>
         <location filename="../Widgets/ItemNotesEditor.qml" line="30"/>
         <source>Notes</source>
-        <translation type="unfinished">노트</translation>
+        <translation type="unfinished">ملحوظة</translation>
     </message>
     <message>
         <location filename="../Widgets/ItemNotesEditor.qml" line="75"/>
@@ -933,7 +933,7 @@
         <location filename="../Widgets/LibrariesSideBar.qml" line="56"/>
         <location filename="../Widgets/LibrariesSideBar.qml" line="224"/>
         <source>Schedule</source>
-        <translation type="unfinished">일정</translation>
+        <translation type="unfinished">رزنامة</translation>
     </message>
     <message>
         <location filename="../Widgets/LibrariesSideBar.qml" line="79"/>
@@ -981,12 +981,12 @@
     <message>
         <location filename="../Pages/LibraryPage.qml" line="207"/>
         <source>Red</source>
-        <translation type="unfinished">빨강</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Pages/LibraryPage.qml" line="214"/>
         <source>Green</source>
-        <translation type="unfinished">초록</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Pages/LibraryPage.qml" line="221"/>
@@ -1001,22 +1001,22 @@
     <message>
         <location filename="../Pages/LibraryPage.qml" line="235"/>
         <source>Orange</source>
-        <translation type="unfinished">주황</translation>
+        <translation type="unfinished">برتقالي</translation>
     </message>
     <message>
         <location filename="../Pages/LibraryPage.qml" line="242"/>
         <source>Lilac</source>
-        <translation type="unfinished">옅은 자주</translation>
+        <translation type="unfinished">بنفسجي</translation>
     </message>
     <message>
         <location filename="../Pages/LibraryPage.qml" line="249"/>
         <source>White</source>
-        <translation type="unfinished">흰</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Pages/LibraryPage.qml" line="259"/>
         <source>Rename</source>
-        <translation type="unfinished">다른 이름으로</translation>
+        <translation type="unfinished">إعادة تسمية</translation>
     </message>
     <message>
         <location filename="../Pages/LibraryPage.qml" line="264"/>
@@ -1026,7 +1026,7 @@
     <message>
         <location filename="../Pages/LibraryPage.qml" line="270"/>
         <source>Delete</source>
-        <translation type="unfinished">삭제</translation>
+        <translation type="unfinished">حذف</translation>
     </message>
     <message>
         <location filename="../Pages/LibraryPage.qml" line="282"/>
@@ -1036,22 +1036,22 @@
     <message>
         <location filename="../Pages/LibraryPage.qml" line="352"/>
         <source>Note Title</source>
-        <translation type="unfinished">노트 제목</translation>
+        <translation type="unfinished">ملحوظة عنوان</translation>
     </message>
     <message>
         <location filename="../Pages/LibraryPage.qml" line="365"/>
         <source>Todo List Title</source>
-        <translation type="unfinished">할일 목록 제목</translation>
+        <translation type="unfinished">عنوان قائمة إنجازات</translation>
     </message>
     <message>
         <location filename="../Pages/LibraryPage.qml" line="378"/>
         <source>Search term 1, search term 2, ...</source>
-        <translation type="unfinished">1 항목 찾음, 2항목 찾음</translation>
+        <translation type="unfinished">بحث عن كلمة1, بحث عن كلمة2, ...</translation>
     </message>
     <message>
         <location filename="../Pages/LibraryPage.qml" line="455"/>
         <source>Nothing here yet! Start by adding a &lt;a href=&apos;#note&apos;&gt;note&lt;/a&gt;, &lt;a href=&apos;#todolist&apos;&gt;todo list&lt;/a&gt; or &lt;a href=&apos;#image&apos;&gt;image&lt;/a&gt;.</source>
-        <translation type="unfinished">아직 아무것도 없음! &lt;a href=&apos;#note&apos;&gt; 메모 &lt;/a&gt;, &lt;a href=&apos;#todolist&apos;&gt; 할 일 목록 &lt;/a&gt; 또는 &lt;a href=&apos;#image&apos;&gt; 이미지 &lt;/a&gt;를 추가하여 시작하세요.</translation>
+        <translation type="unfinished">لا شيئ هنا بعد! إبدأ بإظافة &lt;a href=&apos;#note&apos;&gt;note&lt;/a&gt;, &lt;a href=&apos;#todolist&apos;&gt;todo list&lt;/a&gt; or &lt;a href=&apos;#image&apos;&gt;image&lt;/a&gt;.</translation>
     </message>
     <message>
         <location filename="../Pages/LibraryPage.qml" line="511"/>
@@ -1089,7 +1089,7 @@
     <message>
         <location filename="../Pages/LogViewPage.qml" line="14"/>
         <source>Synchronization Log</source>
-        <translation type="unfinished">동기화 기록</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Pages/LogViewPage.qml" line="70"/>
@@ -1147,7 +1147,7 @@
     <message>
         <location filename="../Windows/MainWindow.qml" line="25"/>
         <source>OpenTodoList</source>
-        <translation type="unfinished">OpenTodoList</translation>
+        <translation type="unfinished">قائمة أشياء للإنجاز</translation>
     </message>
     <message>
         <location filename="../Windows/MainWindow.qml" line="195"/>
@@ -1341,7 +1341,7 @@
     <message>
         <location filename="../Pages/NewLibraryInFolderPage.qml" line="74"/>
         <source>Select a Folder</source>
-        <translation type="unfinished">폴더를 선택</translation>
+        <translation type="unfinished">حدد مجلد</translation>
     </message>
     <message>
         <location filename="../Pages/NewLibraryInFolderPage.qml" line="101"/>
@@ -1818,7 +1818,7 @@
     <message>
         <location filename="../Actions/RenameItem.qml" line="11"/>
         <source>Rename</source>
-        <translation type="unfinished">다른 이름으로</translation>
+        <translation type="unfinished">إعادة تسمية</translation>
     </message>
 </context>
 <context>
@@ -1860,7 +1860,7 @@
     <message>
         <location filename="../Pages/ScheduleViewPage.qml" line="53"/>
         <source>Schedule</source>
-        <translation type="unfinished">일정</translation>
+        <translation type="unfinished">رزنامة</translation>
     </message>
     <message>
         <location filename="../Pages/ScheduleViewPage.qml" line="124"/>
@@ -2077,7 +2077,7 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../Windows/StackViewWindow.qml" line="21"/>
         <source>OpenTodoList</source>
-        <translation type="unfinished">OpenTodoList</translation>
+        <translation type="unfinished">قائمة أشياء للإنجاز</translation>
     </message>
 </context>
 <context>
@@ -2113,7 +2113,7 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../Widgets/SyncErrorNotificationBar.qml" line="49"/>
         <source>Ignore</source>
-        <translation type="unfinished">무시</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Widgets/SyncErrorNotificationBar.qml" line="53"/>
@@ -2147,7 +2147,7 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../Pages/TodoListPage.qml" line="167"/>
         <source>Search term 1, search term 2, ...</source>
-        <translation type="unfinished">1 항목 찾음, 2항목 찾음</translation>
+        <translation type="unfinished">بحث عن كلمة1, بحث عن كلمة2, ...</translation>
     </message>
     <message>
         <location filename="../Pages/TodoListPage.qml" line="179"/>
@@ -2200,7 +2200,7 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../Pages/TodoPage.qml" line="182"/>
         <source>Search term 1, search term 2, ...</source>
-        <translation type="unfinished">1 항목 찾음, 2항목 찾음</translation>
+        <translation type="unfinished">بحث عن كلمة1, بحث عن كلمة2, ...</translation>
     </message>
     <message>
         <location filename="../Pages/TodoPage.qml" line="208"/>
@@ -2249,7 +2249,7 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../Widgets/UpdateNotificationBar.qml" line="50"/>
         <source>Ignore</source>
-        <translation type="unfinished">무시</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Widgets/UpdateNotificationBar.qml" line="54"/>

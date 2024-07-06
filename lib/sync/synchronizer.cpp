@@ -175,7 +175,7 @@ bool Synchronizer::saveLog()
 /**
  * @brief Returns the log of the synchronizer.
  */
-QList<Synchronizer::LogEntry> Synchronizer::log() const
+const QList<Synchronizer::LogEntry>& Synchronizer::log() const
 {
     return m_log;
 }
@@ -267,7 +267,7 @@ void Synchronizer::setCreateDirs(bool createDirs)
  *
  * @sa isNull
  */
-QString Synchronizer::directory() const
+const QString& Synchronizer::directory() const
 {
     return m_directory;
 }
@@ -283,7 +283,7 @@ void Synchronizer::setDirectory(const QString& directory)
 /**
  * @brief The remote directory where to sync into.
  */
-QString Synchronizer::remoteDirectory() const
+const QString& Synchronizer::remoteDirectory() const
 {
     return m_remoteDirectory;
 }

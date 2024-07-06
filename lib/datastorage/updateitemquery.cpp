@@ -87,7 +87,7 @@ void UpdateItemQuery::setUid(const QUuid& newUid)
  * The function will be called for the item set in the query and all or its children. Hence,
  * it should check on the type of the item it gets.
  */
-QString UpdateItemQuery::script() const
+const QString& UpdateItemQuery::script() const
 {
     return m_script;
 }

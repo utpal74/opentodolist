@@ -91,7 +91,7 @@ void TopLevelItem::setColor(const QString& color)
  * This is a list of tags that have been attached to the item. Tags can be used for filtering
  * items. The tags are sorted alphabetically.
  */
-QStringList TopLevelItem::tags() const
+const QStringList& TopLevelItem::tags() const
 {
     return m_tags;
 }

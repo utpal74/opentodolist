@@ -69,7 +69,7 @@ public:
 
     QVariantMap problemTypes() const;
 
-    QString message() const;
+    const QString& message() const;
     void setMessage(const QString& message);
 
 private:
