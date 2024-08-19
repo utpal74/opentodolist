@@ -62,13 +62,13 @@ public:
     bool disableCertificateCheck() const;
     void setDisableCertificateCheck(bool disableCertificateCheck);
 
-    QString username() const;
+    const QString& username() const;
     void setUsername(const QString& username);
 
-    QString password() const;
+    const QString& password() const;
     void setPassword(const QString& password);
 
-    QUrl url() const;
+    const QUrl& url() const;
     void setUrl(const QUrl& url);
 
     WebDAVServerType serverType() const;

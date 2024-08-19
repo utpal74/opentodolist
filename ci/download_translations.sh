@@ -23,11 +23,19 @@ fi
 
 export QT_QPA_PLATFORM=minimal
 
-pip install poeditor fire
-./bin/poeditor-client.py download $POEDITOR_TOKEN app/translations
+pip3 install poeditor fire
+python3 ./bin/poeditor-client.py download $POEDITOR_TOKEN app/translations
 
-./bin/po-to-ts.sh /usr/lib64/qt5/bin/lconvert
-./bin/update-translations.sh /usr/lib64/qt5/bin/lupdate
+if [ -z "$QT_PATH" ]; then
+    QT_PATH=/usr/lib64/qt5/bin
+    OS=$(uname -s)
+    if [ $OS == "Darwin" ]; then
+        QT_PATH=$(echo $HOME/Qt/*/macos/bin | sort --version-sort | tail -n1)
+    fi
+ fi
+
+./bin/po-to-ts.sh $QT_PATH/lconvert
+./bin/update-translations.sh $QT_PATH/lupdate
 
 if [ -n "$CI" ]; then
     eval $(ssh-agent -s)

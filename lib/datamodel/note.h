@@ -38,7 +38,7 @@ public:
     explicit Note(QObject* parent = nullptr);
     explicit Note(const QString& filename, QObject* parent = nullptr);
     explicit Note(const QDir& dir, QObject* parent = nullptr);
-    virtual ~Note();
+    ~Note() override;
 };
 
 typedef QSharedPointer<Note> NotePtr;

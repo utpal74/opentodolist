@@ -137,7 +137,7 @@ public:
     /**
      * @brief The title of the item as shown in the user interface.
      */
-    QString title() const { return m_title; }
+    const QString& title() const { return m_title; }
 
     void setTitle(const QString& title);
 
@@ -147,7 +147,7 @@ public:
      * The filename property holds the name of the file containing the item's data
      * on disk.
      */
-    QString filename() const { return m_filename; }
+    const QString& filename() const { return m_filename; }
 
     /**
      * @brief The globally unique ID of the item.

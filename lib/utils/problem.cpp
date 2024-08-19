@@ -94,7 +94,7 @@ QObject* Problem::getContextObject() const
 /**
  * @brief An optional message, holding further information about the problem.
  */
-QString Problem::message() const
+const QString& Problem::message() const
 {
     return m_message;
 }

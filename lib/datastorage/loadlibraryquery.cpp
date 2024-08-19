@@ -77,7 +77,7 @@ void LoadLibraryQuery::setLibraryId(const QUuid& newLibraryId)
 /**
  * @brief The directory to load the library from.
  */
-QString LoadLibraryQuery::directory() const
+const QString& LoadLibraryQuery::directory() const
 {
     return m_directory;
 }

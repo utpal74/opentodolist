@@ -178,7 +178,7 @@ public:
 
     Cache* cache() const;
 
-    QStringList directoriesWithRunningSync() const;
+    const QStringList& directoriesWithRunningSync() const;
     void setDirectoriesWithRunningSync(const QStringList& directoriesWithRunningSync);
 
     QVariantMap syncErrors() const;

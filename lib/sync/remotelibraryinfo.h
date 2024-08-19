@@ -40,10 +40,10 @@ class RemoteLibraryInfo
 public:
     RemoteLibraryInfo();
 
-    QString name() const;
+    const QString& name() const;
     void setName(const QString& name);
 
-    QString path() const;
+    const QString& path() const;
     void setPath(const QString& path);
 
     QUuid uid() const;

@@ -53,7 +53,7 @@ public:
     void setColor(const Color& color);
     void setColor(const QString& color);
 
-    QStringList tags() const;
+    const QStringList& tags() const;
     void setTags(const QStringList& tags);
     Q_INVOKABLE void addTag(const QString& tag);
     Q_INVOKABLE void removeTagAt(int index);

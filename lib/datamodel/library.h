@@ -99,13 +99,13 @@ public:
     /**
      * @brief The name of the libary as used in the user interface.
      */
-    QString name() const { return m_name; }
+    const QString& name() const { return m_name; }
     void setName(const QString& name);
 
     /**
      * @brief Returns the directory which the library encapsulates.
      */
-    QString directory() const { return m_directory; }
+    const QString& directory() const { return m_directory; }
 
     void deleteLibrary();
     Q_INVOKABLE bool load();
@@ -122,7 +122,7 @@ public:
     bool isInDefaultLocation() const;
 
     QUuid uid() const;
-    QStringList tags() const;
+    const QStringList& tags() const;
     void setTags(const QStringList& tags);
 
     void fromJson(const QByteArray& data);

@@ -45,13 +45,13 @@ class WebDAVAccount : public Account
 public:
     explicit WebDAVAccount(QObject* parent = nullptr);
 
-    QString username() const;
+    const QString& username() const;
     void setUsername(const QString& username);
 
-    QString password() const;
+    const QString& password() const;
     void setPassword(const QString& password);
 
-    QString baseUrl() const;
+    const QString& baseUrl() const;
     void setBaseUrl(const QString& baseUrl);
 
     bool disableCertificateChecks() const;

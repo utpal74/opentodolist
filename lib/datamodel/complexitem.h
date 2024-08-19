@@ -93,10 +93,10 @@ public:
     QDateTime dueTo() const;
     void setDueTo(const QDateTime& dueTo);
 
-    QString notes();
+    const QString& notes();
     void setNotes(const QString& notes);
 
-    QStringList attachments() const;
+    const QStringList& attachments() const;
     Q_INVOKABLE QString attachmentFileName(const QString& filename);
 
     // Item interface

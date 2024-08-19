@@ -188,7 +188,7 @@ void ItemsModel::setParentItem(const QUuid& parentItem)
 /**
  * @brief Only include items which match the given search string.
  */
-QString ItemsModel::searchString() const
+const QString& ItemsModel::searchString() const
 {
     return m_searchString;
 }
@@ -208,7 +208,7 @@ void ItemsModel::setSearchString(const QString& searchString)
 /**
  * @brief Only include items which have the given tag.
  */
-QString ItemsModel::tag() const
+const QString& ItemsModel::tag() const
 {
     return m_tag;
 }
@@ -337,7 +337,7 @@ void ItemsModel::setRecursive(bool recursive)
 /**
  * @brief The label used for overdue items.
  */
-QString ItemsModel::overdueLabel() const
+const QString& ItemsModel::overdueLabel() const
 {
     return m_overdueLabel;
 }
@@ -398,7 +398,7 @@ int ItemsModel::roleFromName(const QString& roleName) const
  *
  * Multiple types can be separated via a comma (',').
  */
-QString ItemsModel::itemType() const
+const QString& ItemsModel::itemType() const
 {
     return m_itemType;
 }

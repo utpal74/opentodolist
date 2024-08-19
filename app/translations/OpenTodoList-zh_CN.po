@@ -2470,138 +2470,138 @@ msgstr ""
 #: ../Pages/AccountTypeSelectionPage.qml:71
 msgctxt "AccountTypeSelectionPage|"
 msgid "Dropbox"
-msgstr ""
+msgstr "Dropbox"
 
 #: ../../lib/application.cpp:218
 msgctxt "Application|"
 msgid "Background Sync"
-msgstr ""
+msgstr "后台同步"
 
 #: ../../lib/application.cpp:222
 msgctxt "Application|"
 msgid "App continues to sync your data in the background"
-msgstr ""
+msgstr "应用将继续在后台同步数据"
 
 #: ../../lib/application.cpp:226
 msgctxt "Application|"
 msgid "Quit"
-msgstr ""
+msgstr "退出"
 
 #: ../../lib/datastorage/copyitemquery.cpp:120
 msgctxt "CopyItemQuery|"
 msgid "Copy of"
-msgstr ""
+msgstr "副本"
 
 #: ../Pages/EditDropboxAccountPage.qml:27
 #: ../Pages/EditDropboxAccountPage.qml:67
 msgctxt "EditDropboxAccountPage|"
 msgid "Connection Settings"
-msgstr ""
+msgstr "连接设置"
 
 #: ../Pages/EditDropboxAccountPage.qml:75
 msgctxt "EditDropboxAccountPage|"
 msgid "Trouble Signing In?"
-msgstr ""
+msgstr "登录遇到问题？"
 
 #: ../Pages/EditDropboxAccountPage.qml:86
 msgctxt "EditDropboxAccountPage|"
 msgid "We have tried to open your browser to log you in to your Dropbox account. Please log in and grant access to OpenTodoList in order to proceed."
-msgstr ""
+msgstr "我们正尝试打开浏览器来使你登录到Dropbox，请登录并授权给OpenTodoList来继续"
 
 #: ../Pages/EditDropboxAccountPage.qml:93
 msgctxt "EditDropboxAccountPage|"
 msgid "Didn't your browser open? You can retry opening it or copy the required URL manually to your browser."
-msgstr ""
+msgstr "浏览器未打开？你可以重新打开或者复制手动链接到你的浏览器"
 
 #: ../Pages/EditDropboxAccountPage.qml:97
 msgctxt "EditDropboxAccountPage|"
 msgid "Authorize..."
-msgstr ""
+msgstr "认证"
 
 #: ../Pages/EditDropboxAccountPage.qml:106
 msgctxt "EditDropboxAccountPage|"
 msgid "Open Browser"
-msgstr ""
+msgstr "打开浏览器"
 
 #: ../Pages/EditDropboxAccountPage.qml:112
 msgctxt "EditDropboxAccountPage|"
 msgid "Copy Link"
-msgstr ""
+msgstr "复制链接"
 
 #: ../Pages/EditDropboxAccountPage.qml:116
 msgctxt "EditDropboxAccountPage|"
 msgid "Copied!"
-msgstr ""
+msgstr "已复制！"
 
 #: ../Pages/EditDropboxAccountPage.qml:125
 msgctxt "EditDropboxAccountPage|"
 msgid "Name:"
-msgstr ""
+msgstr "名字："
 
 #: ../Pages/EditDropboxAccountPage.qml:132
 msgctxt "EditDropboxAccountPage|"
 msgid "Dropbox"
-msgstr ""
+msgstr "Dropbox"
 
 #: ../Pages/NewDropboxAccountPage.qml:21 ../Pages/NewDropboxAccountPage.qml:55
 msgctxt "NewDropboxAccountPage|"
 msgid "Connection Settings"
-msgstr ""
+msgstr "连接设置"
 
 #: ../Pages/NewDropboxAccountPage.qml:63
 msgctxt "NewDropboxAccountPage|"
 msgid "Trouble Signing In?"
-msgstr ""
+msgstr "登录遇到问题？"
 
 #: ../Pages/NewDropboxAccountPage.qml:74
 msgctxt "NewDropboxAccountPage|"
 msgid "We have tried to open your browser to log you in to your Dropbox account. Please log in and grant access to OpenTodoList in order to proceed."
-msgstr ""
+msgstr "我们正尝试打开浏览器来使你登录到Dropbox，请登录并授权给OpenTodoList来继续"
 
 #: ../Pages/NewDropboxAccountPage.qml:81
 msgctxt "NewDropboxAccountPage|"
 msgid "Didn't your browser open? You can retry opening it or copy the required URL manually to your browser."
-msgstr ""
+msgstr "浏览器未打开？你可以重新打开或者复制手动链接到你的浏览器"
 
 #: ../Pages/NewDropboxAccountPage.qml:87
 msgctxt "NewDropboxAccountPage|"
 msgid "Authorize..."
-msgstr ""
+msgstr "认证"
 
 #: ../Pages/NewDropboxAccountPage.qml:96
 msgctxt "NewDropboxAccountPage|"
 msgid "Open Browser"
-msgstr ""
+msgstr "打开浏览器"
 
 #: ../Pages/NewDropboxAccountPage.qml:102
 msgctxt "NewDropboxAccountPage|"
 msgid "Copy Link"
-msgstr ""
+msgstr "复制链接"
 
 #: ../Pages/NewDropboxAccountPage.qml:106
 msgctxt "NewDropboxAccountPage|"
 msgid "Copied!"
-msgstr ""
+msgstr "已复制"
 
 #: ../Pages/NewDropboxAccountPage.qml:115
 msgctxt "NewDropboxAccountPage|"
 msgid "Name:"
-msgstr ""
+msgstr "名字："
 
 #: ../Pages/NewDropboxAccountPage.qml:122
 msgctxt "NewDropboxAccountPage|"
 msgid "Dropbox"
-msgstr ""
+msgstr "Dropbox"
 
 #: ../../lib/utils/translations.cpp:91
 msgctxt "OpenTodoList::Translations|"
 msgid "System Language"
-msgstr ""
+msgstr "系统语言"
 
 #: ../Windows/EmbeddedWebViewDialog/EmbeddedWebViewDialog.qml:15
 msgctxt "EmbeddedWebViewDialog|"
 msgid "Loading..."
-msgstr ""
+msgstr "加载中..."
 
 #: ../Pages/SettingsPage.qml:283
 msgctxt "SettingsPage|"
@@ -2621,97 +2621,97 @@ msgstr ""
 #: ../Windows/NewItemWithDueDateDialog.qml:150
 msgctxt "NewItemWithDueDateDialog|"
 msgid "Library"
-msgstr ""
+msgstr "库"
 
 #: ../Pages/ScheduleViewPage.qml:53
 msgctxt "ScheduleViewPage|"
 msgid "Schedule"
-msgstr ""
+msgstr "安排"
 
 #: ../Pages/StartPage.qml:46
 msgctxt "StartPage|"
 msgid "Libraries"
-msgstr ""
+msgstr "所有库"
 
 #: ../Pages/StartPage.qml:71
 msgctxt "StartPage|"
 msgid "Add a new library"
-msgstr ""
+msgstr "添加库"
 
 #: ../Pages/StartPage.qml:90
 msgctxt "StartPage|"
 msgid "Accounts"
-msgstr ""
+msgstr "账户"
 
 #: ../Pages/StartPage.qml:112
 msgctxt "StartPage|"
 msgid "Add an account"
-msgstr ""
+msgstr "添加账户"
 
 #: ../Pages/LogViewPage.qml:70
 msgctxt "LogViewPage|"
 msgid "Debugging information"
-msgstr ""
+msgstr "Debug 信息"
 
 #: ../Pages/LogViewPage.qml:72
 msgctxt "LogViewPage|"
 msgid "Warning"
-msgstr ""
+msgstr "警告"
 
 #: ../Pages/LogViewPage.qml:74
 msgctxt "LogViewPage|"
 msgid "Error"
-msgstr ""
+msgstr "错误"
 
 #: ../Pages/LogViewPage.qml:76
 msgctxt "LogViewPage|"
 msgid "Download"
-msgstr ""
+msgstr "下载"
 
 #: ../Pages/LogViewPage.qml:78
 msgctxt "LogViewPage|"
 msgid "Upload"
-msgstr ""
+msgstr "上传"
 
 #: ../Pages/LogViewPage.qml:80
 msgctxt "LogViewPage|"
 msgid "Create local folder"
-msgstr ""
+msgstr "创建本地文件夹"
 
 #: ../Pages/LogViewPage.qml:82
 msgctxt "LogViewPage|"
 msgid "Create remote folder"
-msgstr ""
+msgstr "创建远程文件夹"
 
 #: ../Pages/LogViewPage.qml:84
 msgctxt "LogViewPage|"
 msgid "Deleting locally"
-msgstr ""
+msgstr "删除本地"
 
 #: ../Pages/LogViewPage.qml:86
 msgctxt "LogViewPage|"
 msgid "Deleting remotely"
-msgstr ""
+msgstr "删除远程"
 
 #: ../Pages/LogViewPage.qml:88
 msgctxt "LogViewPage|"
 msgid "Unknown log message type"
-msgstr ""
+msgstr "未知日志信息"
 
 #: ../Widgets/TodosWidgetDelegate.qml:238
 msgctxt "TodosWidgetDelegate|"
 msgid "More Actions..."
-msgstr ""
+msgstr "更多动作"
 
 #: ../Menues/LibraryPageActions.qml:66
 msgctxt "LibraryPageActions|"
 msgid "Open Library Folder"
-msgstr ""
+msgstr "打开库文件夹"
 
 #: ../Pages/ProblemsPage.qml:91
 msgctxt "ProblemsPage|"
 msgid "Retry Sync"
-msgstr ""
+msgstr "重试同步"
 
 #: ../Pages/SettingsPage.qml:148
 msgctxt "SettingsPage|"
@@ -2721,17 +2721,17 @@ msgstr ""
 #: ../Windows/RecurrenceDialog.qml:117
 msgctxt "RecurrenceDialog|"
 msgid "Number of weeks:"
-msgstr ""
+msgstr "周数"
 
 #: ../Windows/RecurrenceDialog.qml:119
 msgctxt "RecurrenceDialog|"
 msgid "Number of months:"
-msgstr ""
+msgstr "月数"
 
 #: ../Utils/DeepLinkHandler.qml:56
 msgctxt "DeepLinkHandler|"
 msgid "Uuups... seems that's a dead end..."
-msgstr ""
+msgstr "哎呀...看起来有问题..."
 
 #: ../Utils/DeepLinkHandler.qml:62
 msgctxt "DeepLinkHandler|"

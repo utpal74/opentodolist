@@ -7,11 +7,18 @@
         "updated": ""
     },
     {
+        "name": "Arabic (DZ)",
+        "code": "ar-dz",
+        "translations": 49,
+        "percentage": 9.02,
+        "updated": "2024-06-28T19:28:40+0000"
+    },
+    {
         "name": "Arabic (EG)",
         "code": "ar-eg",
-        "translations": 20,
-        "percentage": 3.68,
-        "updated": "2022-07-09T16:08:33+0000"
+        "translations": 50,
+        "percentage": 9.21,
+        "updated": "2024-04-21T13:55:31+0000"
     },
     {
         "name": "Basque",
@@ -37,9 +44,9 @@
     {
         "name": "Chinese",
         "code": "zh-CN",
-        "translations": 488,
-        "percentage": 89.87,
-        "updated": "2022-01-13T09:42:22+0000"
+        "translations": 537,
+        "percentage": 98.9,
+        "updated": "2024-05-06T07:33:37+0000"
     },
     {
         "name": "Chinese (simplified)",
@@ -107,9 +114,9 @@
     {
         "name": "French",
         "code": "fr",
-        "translations": 525,
-        "percentage": 96.69,
-        "updated": "2022-11-06T21:12:42+0000"
+        "translations": 543,
+        "percentage": 100,
+        "updated": "2024-04-11T20:38:24+0000"
     },
     {
         "name": "Georgian",

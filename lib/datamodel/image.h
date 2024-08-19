@@ -40,7 +40,7 @@ public:
     /**
      * @brief The path to the image relative to the item's directory.
      */
-    QString image() const { return m_image; }
+    const QString& image() const { return m_image; }
     void setImage(const QString& image);
 
     QUrl imageUrl() const;

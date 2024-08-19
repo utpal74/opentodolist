@@ -33,7 +33,7 @@ public:
     explicit LoadLibraryQuery(QObject* parent = nullptr);
 
     // ItemsQuery interface
-    QString directory() const;
+    const QString& directory() const;
     void setDirectory(const QString& newDirectory);
 
     QUuid libraryId() const;

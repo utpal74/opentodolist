@@ -21,4 +21,5 @@ cppcheck  \
     --library=qt \
     --std=c++11 \
     --quiet \
+    --check-level=exhaustive \
     app lib

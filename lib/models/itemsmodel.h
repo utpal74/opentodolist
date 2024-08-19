@@ -95,10 +95,10 @@ public:
     QUuid parentItem() const;
     void setParentItem(const QUuid& parent);
 
-    QString searchString() const;
+    const QString& searchString() const;
     void setSearchString(const QString& searchString);
 
-    QString tag() const;
+    const QString& tag() const;
     void setTag(const QString& tag);
 
     bool onlyDone() const;
@@ -116,7 +116,7 @@ public:
     bool recursive() const;
     void setRecursive(bool recursive);
 
-    QString overdueLabel() const;
+    const QString& overdueLabel() const;
     void setOverdueLabel(const QString& overdueLabel);
 
     QVariantMap timeSpans() const;
@@ -124,7 +124,7 @@ public:
 
     Q_INVOKABLE int roleFromName(const QString& roleName) const;
 
-    QString itemType() const;
+    const QString& itemType() const;
     void setItemType(const QString& itemType);
 
     const QList<QUuid>& itemsToExclude() const;

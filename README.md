@@ -1,5 +1,8 @@
 # OpenTodoList - A Todo and Task Management Application
 
+[![Documentation Status](https://readthedocs.org/projects/opentodolist/badge/?version=latest)](https://opentodolist.readthedocs.io/en/latest/?badge=latest)
+
+
 ## About
 
 OpenTodoList is a todo list and note taking application. Organize todo lists,

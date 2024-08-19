@@ -57,9 +57,8 @@ do
 
     # cmake --build . --config Release -- "$XCODEBUILD_FLAGS" ## Leads to "Archive Failed" errors in next step - but we need at least CMake 3.25.0
 
-    if xcodebuild -project OpenTodoList.xcodeproj -scheme opentodolist-common -destination generic/platform=iOS -quiet -configuration Release -allowProvisioningUpdates && \
-        xcodebuild -project OpenTodoList.xcodeproj -scheme OpenTodoList -archivePath OpenTodoList.xcarchive -destination generic/platform=iOS archive -quiet -configuration Release -allowProvisioningUpdates && \
-        xcodebuild -exportArchive -archivePath OpenTodoList.xcarchive -exportOptionsPlist ../app/ExportOptions.plist -exportPath OpenTodoList.ipa -quiet -configuration Release -allowProvisioningUpdates; then
+    if xcodebuild -scheme OpenTodoList -sdk iphoneos -configuration Release archive -archivePath OpenTodoList.xcarchive -allowProvisioningUpdates && \
+        xcodebuild -exportArchive -archivePath OpenTodoList.xcarchive -exportOptionsPlist ../app/ExportOptions.plist -exportPath OpenTodoList.ipa -allowProvisioningUpdates; then
         exit 0
     else
         echo "Build attempt $i failed"

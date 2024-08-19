@@ -40,7 +40,7 @@ public:
     explicit TodoList(QObject* parent = nullptr);
     explicit TodoList(const QString& filename, QObject* parent = nullptr);
     explicit TodoList(const QDir& dir, QObject* parent = nullptr);
-    virtual ~TodoList();
+    ~TodoList() override;
 
     // Item interface
     void applyCalculatedProperties(const QVariantMap& properties) override;
