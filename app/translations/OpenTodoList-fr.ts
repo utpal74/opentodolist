@@ -112,24 +112,6 @@
     </message>
 </context>
 <context>
-    <name>AllSubtasksDone</name>
-    <message>
-        <location filename="../Components/Tooltips/AllSubtasksDone.qml" line="25"/>
-        <source>Everything in %1 done! Do you want to mark it as well as done?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/Tooltips/AllSubtasksDone.qml" line="38"/>
-        <source>Mark as Done</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/Tooltips/AllSubtasksDone.qml" line="48"/>
-        <source>Keep Open</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>AppStartup</name>
     <message>
         <location filename="../appstartup.cpp" line="198"/>
@@ -188,205 +170,6 @@
         <location filename="../../lib/application.cpp" line="226"/>
         <source>Quit</source>
         <translation type="unfinished">Quitter</translation>
-    </message>
-</context>
-<context>
-    <name>ApplicationMenu</name>
-    <message>
-        <location filename="../Widgets/ApplicationMenu.qml" line="37"/>
-        <source>File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ApplicationMenu.qml" line="84"/>
-        <source>Edit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ApplicationMenu.qml" line="155"/>
-        <source>Navigate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ApplicationMenu.qml" line="194"/>
-        <source>Help</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>ApplicationShortcuts</name>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="19"/>
-        <source>About</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="28"/>
-        <source>About Qt</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="36"/>
-        <source>Accounts</source>
-        <translation type="unfinished">Comptes</translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="44"/>
-        <source>Add Tag</source>
-        <translation type="unfinished">Ajouter un tag</translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="52"/>
-        <source>Attach File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="60"/>
-        <source>Close</source>
-        <translation type="unfinished">Fermer</translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="67"/>
-        <source>Copy</source>
-        <translation type="unfinished">Copier</translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="75"/>
-        <source>Copy Link To Page</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="83"/>
-        <source>Create Sample Library</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="132"/>
-        <source>Delete</source>
-        <translation type="unfinished">Supprimer</translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="140"/>
-        <source>Delete Completed Items</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="148"/>
-        <source>Due Date</source>
-        <translation type="unfinished">Date d&apos;échéance</translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="156"/>
-        <source>Find</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="163"/>
-        <source>Back</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="180"/>
-        <source>Left Sidebar</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="186"/>
-        <source>Mark all items as done</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="198"/>
-        <source>Mark all items as undone</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="210"/>
-        <source>Move</source>
-        <translation type="unfinished">Déplacer</translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="218"/>
-        <source>New Library</source>
-        <translation type="unfinished">Nouvelle bibliothèque</translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="226"/>
-        <source>Open Created Item</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="233"/>
-        <source>Open In New Window</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="241"/>
-        <source>Open Library Folder</source>
-        <translation type="unfinished">Ouvrir le dossier</translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="247"/>
-        <source>Quit</source>
-        <translation type="unfinished">Quitter</translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="253"/>
-        <source>Rename</source>
-        <translation type="unfinished">Renommer</translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="261"/>
-        <source>Preferences</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="282"/>
-        <source>Scroll to Top</source>
-        <translation type="unfinished">Défiler vers le haut</translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="289"/>
-        <source>Scroll to Bottom</source>
-        <translation type="unfinished">Défiler vers le bas</translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="296"/>
-        <source>Set Color</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="303"/>
-        <source>Set Progress</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="310"/>
-        <source>Sort</source>
-        <translation type="unfinished">Trier</translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="318"/>
-        <source>Sync Now</source>
-        <translation type="unfinished">Synchroniser maintenant</translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="331"/>
-        <source>Sync Log</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/ApplicationShortcuts.qml" line="342"/>
-        <source>Translate The App...</source>
-        <translation type="unfinished">Traduire l&apos;appli...</translation>
-    </message>
-</context>
-<context>
-    <name>ApplicationToolBar</name>
-    <message>
-        <location filename="../Components/ApplicationToolBar.qml" line="79"/>
-        <source>Problems</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -862,49 +645,6 @@
     </message>
 </context>
 <context>
-    <name>ItemNotesEditor</name>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="30"/>
-        <source>Notes</source>
-        <translation type="unfinished">Notes</translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="75"/>
-        <source>No notes added yet - click here to add some.</source>
-        <translation type="unfinished">Aucune note n&apos;a encore été ajoutée - cliquez ici pour en ajouter.</translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="109"/>
-        <source>Copy</source>
-        <translation type="unfinished">Copier</translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="116"/>
-        <source>Copy Formatted Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="132"/>
-        <source>Copy Plain Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="163"/>
-        <source>Export to File...</source>
-        <translation type="unfinished">Exporter vers le fichier...</translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="166"/>
-        <source>Markdown files</source>
-        <translation type="unfinished">Fichiers Markdown</translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="166"/>
-        <source>All files</source>
-        <translation type="unfinished">Tous les fichiers</translation>
-    </message>
-</context>
-<context>
     <name>ItemUtils</name>
     <message>
         <location filename="../Utils/ItemUtils.qml" line="173"/>
@@ -925,163 +665,6 @@
         <location filename="../Utils/ItemUtils.qml" line="221"/>
         <source>Copy Todo Into...</source>
         <translation type="unfinished">Copier la tâche dans...</translation>
-    </message>
-</context>
-<context>
-    <name>LibrariesSideBar</name>
-    <message>
-        <location filename="../Widgets/LibrariesSideBar.qml" line="56"/>
-        <location filename="../Widgets/LibrariesSideBar.qml" line="224"/>
-        <source>Schedule</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/LibrariesSideBar.qml" line="79"/>
-        <source>Edit List</source>
-        <translation type="unfinished">Editer la liste</translation>
-    </message>
-    <message>
-        <location filename="../Widgets/LibrariesSideBar.qml" line="86"/>
-        <source>Settings</source>
-        <translation type="unfinished">Paramètres</translation>
-    </message>
-    <message>
-        <location filename="../Widgets/LibrariesSideBar.qml" line="94"/>
-        <source>Donate</source>
-        <translation type="unfinished">Donner</translation>
-    </message>
-    <message>
-        <location filename="../Widgets/LibrariesSideBar.qml" line="191"/>
-        <source>Hide Schedule</source>
-        <translation type="unfinished">Cacher le calendrier</translation>
-    </message>
-    <message>
-        <location filename="../Widgets/LibrariesSideBar.qml" line="191"/>
-        <source>Show Schedule</source>
-        <translation type="unfinished">Voir le calendrier</translation>
-    </message>
-    <message>
-        <location filename="../Widgets/LibrariesSideBar.qml" line="202"/>
-        <source>Move Up</source>
-        <translation type="unfinished">Vers le haut</translation>
-    </message>
-    <message>
-        <location filename="../Widgets/LibrariesSideBar.qml" line="211"/>
-        <source>Move Down</source>
-        <translation type="unfinished">Vers le bas</translation>
-    </message>
-    <message>
-        <location filename="../Widgets/LibrariesSideBar.qml" line="294"/>
-        <source>Untagged</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>LibraryPage</name>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="207"/>
-        <source>Red</source>
-        <translation type="unfinished">Rouge</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="214"/>
-        <source>Green</source>
-        <translation type="unfinished">Vert</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="221"/>
-        <source>Blue</source>
-        <translation type="unfinished">Bleu</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="228"/>
-        <source>Yellow</source>
-        <translation type="unfinished">Jaune</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="235"/>
-        <source>Orange</source>
-        <translation type="unfinished">Orange</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="242"/>
-        <source>Lilac</source>
-        <translation type="unfinished">Lilas</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="249"/>
-        <source>White</source>
-        <translation type="unfinished">Blanc</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="259"/>
-        <source>Rename</source>
-        <translation type="unfinished">Renommer</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="264"/>
-        <source>Copy</source>
-        <translation type="unfinished">Copier</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="270"/>
-        <source>Delete</source>
-        <translation type="unfinished">Supprimer</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="282"/>
-        <source>Select Image</source>
-        <translation type="unfinished">Choisir une image</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="352"/>
-        <source>Note Title</source>
-        <translation type="unfinished">Titre de la note</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="365"/>
-        <source>Todo List Title</source>
-        <translation type="unfinished">Titre de la todo list</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="378"/>
-        <source>Search term 1, search term 2, ...</source>
-        <translation type="unfinished">Terme de recherche 1, terme de recherche 2, ....</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="455"/>
-        <source>Nothing here yet! Start by adding a &lt;a href=&apos;#note&apos;&gt;note&lt;/a&gt;, &lt;a href=&apos;#todolist&apos;&gt;todo list&lt;/a&gt; or &lt;a href=&apos;#image&apos;&gt;image&lt;/a&gt;.</source>
-        <translation type="unfinished">Rien pour l&apos;instant ! Commencez par ajouter une &lt;a href=&apos;#note&apos;&gt;note&lt;/a&gt;, &lt;a href=&apos;#todolist&apos;&gt;todo list&lt;/a&gt; ou &lt;a href=&apos;#image&apos;&gt;image&lt;/a&gt;.</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="511"/>
-        <source>Sort By</source>
-        <translation type="unfinished">Trier par</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="515"/>
-        <source>Manually</source>
-        <translation type="unfinished">Manuellement</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="522"/>
-        <source>Title</source>
-        <translation type="unfinished">Titre</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="529"/>
-        <source>Due To</source>
-        <translation type="unfinished">Échéance</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="536"/>
-        <source>Created At</source>
-        <translation type="unfinished">Créé à</translation>
-    </message>
-    <message>
-        <location filename="../Pages/LibraryPage.qml" line="543"/>
-        <source>Updated At</source>
-        <translation type="unfinished">Mis à jour à</translation>
     </message>
 </context>
 <context>
@@ -1140,37 +723,6 @@
         <location filename="../Pages/LogViewPage.qml" line="88"/>
         <source>Unknown log message type</source>
         <translation type="unfinished">Type de message de debug inconnu</translation>
-    </message>
-</context>
-<context>
-    <name>MainWindow</name>
-    <message>
-        <location filename="../Windows/MainWindow.qml" line="25"/>
-        <source>OpenTodoList</source>
-        <translation type="unfinished">OpenTodoList</translation>
-    </message>
-    <message>
-        <location filename="../Windows/MainWindow.qml" line="195"/>
-        <source>Start by &lt;a href=&apos;#newLibrary&apos;&gt;creating a new library&lt;/a&gt;. Libraries are used to store different kinds of items like notes, todo lists and images.</source>
-        <translation type="unfinished">Commencez par &lt;a href=&apos;#newLibrary&apos;&gt;créer une nouvelle bibliothèque&lt;/a&gt;. Les bibliothèques sont utilisées pour stocker différents types d&apos;éléments comme des notes, des listes de tâches et des images.</translation>
-    </message>
-</context>
-<context>
-    <name>MarkFutureInstanceAsDone</name>
-    <message>
-        <location filename="../Components/Tooltips/MarkFutureInstanceAsDone.qml" line="26"/>
-        <source>%1 is scheduled for the future - do you want to mark that future instance as done?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/Tooltips/MarkFutureInstanceAsDone.qml" line="39"/>
-        <source>Mark as Done</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Components/Tooltips/MarkFutureInstanceAsDone.qml" line="49"/>
-        <source>Keep Open</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1621,19 +1173,6 @@
     </message>
 </context>
 <context>
-    <name>NotePage</name>
-    <message>
-        <location filename="../Pages/NotePage.qml" line="172"/>
-        <source>Main Page</source>
-        <translation type="unfinished">Page principale</translation>
-    </message>
-    <message>
-        <location filename="../Pages/NotePage.qml" line="239"/>
-        <source>New Page</source>
-        <translation type="unfinished">Nouvelle page</translation>
-    </message>
-</context>
-<context>
     <name>OpenTodoList::Translations</name>
     <message>
         <location filename="../../lib/utils/translations.cpp" line="91"/>
@@ -1907,14 +1446,6 @@
     </message>
 </context>
 <context>
-    <name>SelectTodoListDialog</name>
-    <message>
-        <location filename="../Windows/SelectTodoListDialog.qml" line="24"/>
-        <source>Select Todo List</source>
-        <translation type="unfinished">Sélectionnez la Todo Liste</translation>
-    </message>
-</context>
-<context>
     <name>SelectTopLevelItemDialog</name>
     <message>
         <location filename="../Windows/SelectTopLevelItemDialog.qml" line="22"/>
@@ -2077,14 +1608,6 @@ Cela nécessite un redémarrage de l&apos;application.</translation>
     </message>
 </context>
 <context>
-    <name>StackViewWindow</name>
-    <message>
-        <location filename="../Windows/StackViewWindow.qml" line="21"/>
-        <source>OpenTodoList</source>
-        <translation type="unfinished">OpenTodoList</translation>
-    </message>
-</context>
-<context>
     <name>StartPage</name>
     <message>
         <location filename="../Pages/StartPage.qml" line="46"/>
@@ -2147,59 +1670,6 @@ Cela nécessite un redémarrage de l&apos;application.</translation>
     </message>
 </context>
 <context>
-    <name>TodoListPage</name>
-    <message>
-        <location filename="../Pages/TodoListPage.qml" line="167"/>
-        <source>Search term 1, search term 2, ...</source>
-        <translation type="unfinished">Terme de recherche 1, terme de recherche 2, ....</translation>
-    </message>
-    <message>
-        <location filename="../Pages/TodoListPage.qml" line="179"/>
-        <source>Manually</source>
-        <translation type="unfinished">Manuellement</translation>
-    </message>
-    <message>
-        <location filename="../Pages/TodoListPage.qml" line="185"/>
-        <source>Name</source>
-        <translation type="unfinished">Nom</translation>
-    </message>
-    <message>
-        <location filename="../Pages/TodoListPage.qml" line="191"/>
-        <source>Due Date</source>
-        <translation type="unfinished">Date d&apos;échéance</translation>
-    </message>
-    <message>
-        <location filename="../Pages/TodoListPage.qml" line="197"/>
-        <source>Created At</source>
-        <translation type="unfinished">Créé à</translation>
-    </message>
-    <message>
-        <location filename="../Pages/TodoListPage.qml" line="203"/>
-        <source>Updated At</source>
-        <translation type="unfinished">Mis à jour à</translation>
-    </message>
-    <message>
-        <location filename="../Pages/TodoListPage.qml" line="216"/>
-        <source>Show Completed</source>
-        <translation type="unfinished">Montrer les terminés</translation>
-    </message>
-    <message>
-        <location filename="../Pages/TodoListPage.qml" line="224"/>
-        <source>Show At The End</source>
-        <translation type="unfinished">Afficher à la fin</translation>
-    </message>
-    <message>
-        <location filename="../Pages/TodoListPage.qml" line="255"/>
-        <source>Todos</source>
-        <translation type="unfinished">Todos</translation>
-    </message>
-    <message>
-        <location filename="../Pages/TodoListPage.qml" line="275"/>
-        <source>Add new todo...</source>
-        <translation type="unfinished">Ajouter un nouveau todo...</translation>
-    </message>
-</context>
-<context>
     <name>TodoPage</name>
     <message>
         <location filename="../Pages/TodoPage.qml" line="182"/>
@@ -2233,14 +1703,6 @@ Cela nécessite un redémarrage de l&apos;application.</translation>
         <location filename="../Widgets/TodosWidget.qml" line="215"/>
         <source>Due on: %1</source>
         <translation type="unfinished">Pour le: %1</translation>
-    </message>
-</context>
-<context>
-    <name>TodosWidgetDelegate</name>
-    <message>
-        <location filename="../Widgets/TodosWidgetDelegate.qml" line="243"/>
-        <source>More Actions...</source>
-        <translation type="unfinished">Autres actions...</translation>
     </message>
 </context>
 <context>

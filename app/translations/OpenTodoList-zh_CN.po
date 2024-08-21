@@ -2736,5 +2736,5 @@ msgstr "哎呀...看起来有问题..."
 #: ../Utils/DeepLinkHandler.qml:62
 msgctxt "DeepLinkHandler|"
 msgid "Sorry, that link does not lead to any page or item that is present on this device. Check if the library or item to which the link points is synchronized on this device and try again."
-msgstr ""
+msgstr "抱歉，该链接不指向此设备上存在的任何页面或项目。请检查链接指向的库或项目是否已在此设备上同步，然后重试。"
 
