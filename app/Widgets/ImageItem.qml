@@ -17,8 +17,6 @@ MouseArea {
 
     readonly property bool hovered: containsMouse
 
-    signal clicked(var mouse)
-
     hoverEnabled: true
     GridView.delayRemove: moveButton.dragging
     acceptedButtons: Qt.LeftButton | Qt.RightButton

@@ -33,7 +33,6 @@ C.Page {
 
         GridLayout {
             implicitWidth: childrenRect.width
-            implicitHeight: childrenRect.height
             width: scrollView.availableWidth
             columns: 2
 

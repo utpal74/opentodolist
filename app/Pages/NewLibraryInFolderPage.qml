@@ -95,7 +95,6 @@ C.Page {
             width: page.width - 2 * Utils.AppSettings.mediumSpace
             columns: 3
             implicitWidth: width
-            implicitHeight: childrenRect.height
 
             Components.Heading {
                 text: qsTr("Open a Folder as a Library")

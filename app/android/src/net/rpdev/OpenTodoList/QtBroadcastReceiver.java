@@ -31,10 +31,6 @@ public class QtBroadcastReceiver extends BroadcastReceiver {
 
         Log.i(TAG, "Received request to start background service");
         Intent startServiceIntent = new Intent(context, BackgroundService.class);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            context.startForegroundService(startServiceIntent);
-        } else {
-            context.startService(startServiceIntent);
-        }
+        context.startService(startServiceIntent);
     }
 }
