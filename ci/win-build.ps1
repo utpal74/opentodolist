@@ -1,22 +1,34 @@
 $ErrorActionPreference = "Stop"
 
-# Configuration:
-$QT_ARCHIVE_URL="https://gitlab.com/api/v4/projects/46171955/packages/generic/Qt6/$env:QT_VERSION/Qt-mingw-w64.zip"
+if(-not $env:QT_INSTALL_ROOT) {
+    $qt_root = "C:\Qt"
+} else {
+    $qt_root = $env:QT_INSTALL_ROOT
+}
+
+if (-not $env:QT_VERSION) { 
+    $qt_versions = Get-ChildItem "$qt_root" | Where-Object {$_.name -like "*.*.*"} | Select-Object name | Sort-Object { $_ -as [version] }
+    $env:QT_VERSION = $qt_versions[0].Name
+}
 
 # Expected paths:
-$CMAKE_PATH="C:\Qt\Tools\CMake_64\bin"
-$NINJA_PATH="C:\Qt\Tools\Ninja"
-$MINGW_PATH="C:\Qt\Tools\mingw1120_64\bin\"
-$QT_PATH="C:\Qt\$env:QT_VERSION\mingw_64\"
+$CMAKE_PATH="$qt_root\Tools\CMake_64\bin"
+$NINJA_PATH="$qt_root\Tools\Ninja"
+$MINGW_PATH="$qt_root\Tools\llvm-mingw1706_64\bin\"
+$QT_PATH="$qt_root\$env:QT_VERSION\llvm-mingw_64\"
 $PERL_PATH="C:\Strawberry\perl\bin"
 $NSIS_PATH="C:\Program Files (x86)\NSIS"
+
+# Configuration:
+$QT_ARCHIVE_URL="https://gitlab.com/api/v4/projects/46171955/packages/generic/Qt6/$env:QT_VERSION/Qt-llvm-mingw-w64.zip"
 
 
 if(-Not (Test-Path -Path "$QT_PATH")) {
     # Install Qt
+    Write-Output "Qt installation not found in $QT_PATH - downloading and installing Qt $env:QT_VERSION"
     Invoke-WebRequest -o "Qt-mingw-w64.zip" $QT_ARCHIVE_URL
-    New-Item -Path 'C:\Qt' -ItemType Directory
-    Expand-Archive -Path "Qt-mingw-w64.zip" -DestinationPath "C:\Qt"
+    New-Item -Path '$qt_root' -ItemType Directory
+    Expand-Archive -Path "Qt-mingw-w64.zip" -DestinationPath "$qt_root"
 }
 
 if(-Not (Test-Path -Path "$PERL_PATH")) {
@@ -26,6 +38,9 @@ if(-Not (Test-Path -Path "$PERL_PATH")) {
     if (-not $?) {
         Write-Error -Message "Failed to install Perl."
     }
+    if(-Not (Test-Path -Path "$PERL_PATH")) {
+        Write-Error -Message "Installation of Perl did not yield desired installation folder."
+    }
 }
 
 if(-Not (Test-Path -Path "$NSIS_PATH")) {
@@ -34,6 +49,9 @@ if(-Not (Test-Path -Path "$NSIS_PATH")) {
 
     if (-not $?) {
         Write-Error -Message "Failed to install NSIS."
+    }
+    if(-Not (Test-Path -Path "$PERL_PATH")) {
+        Write-Error -Message "Installation of NSIS did not yield desired installation folder."
     }
 }
 
@@ -65,14 +83,18 @@ if (-not $?) {
     Write-Error -Message "Failed to install OpenTodoList."
 }
 
-windeployqt --qmldir app --compiler-runtime  deploy-win64\bin
+windeployqt --qmldir app deploy-win64\bin
 
 if (-not $?) {
     Write-Error -Message "Failed to deploy Qt binaries for OpenTodoList."
 }
 
+Copy-Item -Path "$MINGW_PATH/libc++.dll" -Destination deploy-win64\bin
+Copy-Item -Path "$MINGW_PATH/libunwind.dll" -Destination deploy-win64\bin
+
 # Prepare portable version of the app:
 $OPENTODOLIST_VERSION = git describe --tags
+Remove-Item -Path OpenTodoList-$OPENTODOLIST_VERSION-Windows-64bit -Recurse -ErrorAction Ignore
 New-Item -Type Directory -Path OpenTodoList-$OPENTODOLIST_VERSION-Windows-64bit
 Copy-Item -Path deploy-win64\bin\* -Destination .\OpenTodoList-$OPENTODOLIST_VERSION-Windows-64bit\ -Recurse
 Compress-Archive `

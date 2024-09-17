@@ -67,7 +67,6 @@ C.Page {
             columnSpacing: 10
             rowSpacing: 10
             implicitWidth: childrenRect.width
-            implicitHeight: childrenRect.height
 
             Components.Heading {
                 text: qsTr("Connection Settings")

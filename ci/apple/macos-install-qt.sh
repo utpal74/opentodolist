@@ -16,17 +16,20 @@ if [ -n "$CI" ]; then
     QT_URL_IOS="https://gitlab.com/api/v4/projects/46171955/packages/generic/Qt6/$QT_VERSION/Qt-iOS.zip"
     QT_URL_TOOLS="https://gitlab.com/api/v4/projects/46171955/packages/generic/Qt6/$QT_VERSION/Qt-Tools.zip"
 
-    curl -L -o "$QT_ARCHIVE_MACOS" "$QT_URL_MACOS"
-    curl -L -o "$QT_ARCHIVE_TOOLS" "$QT_URL_TOOLS"
-    if [ -n "$QT_INSTALL_IOS" ]; then
-        curl -L -o "$QT_ARCHIVE_IOS" "$QT_URL_IOS"
-    fi
-    
     cd $HOME
     mkdir -p Qt
-    unzip -q $QT_ARCHIVE_MACOS
-    unzip -q $QT_ARCHIVE_TOOLS
+
+    curl -L -o archive.zip "$QT_URL_MACOS"
+    unzip -q archive.zip
+    rm archive.zip
+
+    curl -L -o archive.zip "$QT_URL_TOOLS"
+    unzip -q archive.zip
+    rm archive.zip
+
     if [ -n "$QT_INSTALL_IOS" ]; then
-        unzip -q $QT_ARCHIVE_IOS
+        curl -L -o archive.zip "$QT_URL_IOS"
+        unzip -q archive.zip
+        rm archive.zip
     fi
 fi

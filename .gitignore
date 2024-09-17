@@ -35,3 +35,4 @@ app/android/.idea/
 __pycache__
 .venv*
 .cache
+/OpenTodoList-*-Windows-64bit/

@@ -37,8 +37,8 @@ public class BackgroundService extends QtService
     public void onCreate() {
         super.onCreate();
         Log.i(TAG, "Creating OpenTodoList background service");
-        Notification notification = showForegroundNotification(getApplicationContext(), 1);
-        startForeground(1, notification);
+        //Notification notification = showForegroundNotification(getApplicationContext(), 1);
+        //startForeground(1, notification);
     }
 
     @Override
@@ -56,11 +56,7 @@ public class BackgroundService extends QtService
 
     public static void startQtAndroidService(Context context) {
         Log.i(TAG, "Starting OpenTodoList Background Service");
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            context.startForegroundService(new Intent(context, BackgroundService.class));
-        } else {
-            context.startService(new Intent(context, BackgroundService.class));
-        }
+        context.startService(new Intent(context, BackgroundService.class));
     }
 
     private Notification showForegroundNotification(Context context, int notificationId) {

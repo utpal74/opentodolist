@@ -2,12 +2,14 @@
 
 set -e
 
-# Install secrets when running in CI:
-. ci/apple/get-secrets.sh
+# Workaround for https://gitlab.com/gitlab-org/ci-cd/shared-runners/infrastructure/-/issues/244
+# Until this is solved, we have to build locally:
+# # Install secrets when running in CI:
+# . ci/apple/get-secrets.sh
 
-# Install Qt in CI if needed
-export QT_INSTALL_IOS="1"
-bash ci/apple/macos-install-qt.sh
+# # Install Qt in CI if needed
+# export QT_INSTALL_IOS="1"
+# bash ci/apple/macos-install-qt.sh
 
 if [ ! -d "$QT_INSTALLATION_DIR" ]; then
     if [ -d "$HOME/Qt" ]; then
@@ -41,9 +43,11 @@ do
     mkdir -p build-ios-cmake
     cd build-ios-cmake
 
-    $QT_DIR_IOS/bin/qt-cmake \
+    cmake \
         -S .. \
         -B . \
+        -GXcode \
+        -DCMAKE_TOOLCHAIN_FILE=$QT_DIR_IOS/lib/cmake/Qt6/qt.toolchain.cmake \
         -DCMAKE_BUILD_TYPE=Release \
         -DQT_QMAKE_EXECUTABLE:FILEPATH=$QT_DIR_IOS/bin/qmake \
         -DCMAKE_PREFIX_PATH:PATH=$QT_DIR_IOS \

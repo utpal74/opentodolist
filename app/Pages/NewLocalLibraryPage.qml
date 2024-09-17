@@ -56,7 +56,6 @@ C.Page {
             width: page.width - 2 * 10
             columns: 2
             implicitWidth: childrenRect.width
-            implicitHeight: childrenRect.height
 
             Components.Heading {
                 text: qsTr("Create a Local Library")
