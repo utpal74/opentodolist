@@ -4,6 +4,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
+"X-Language: en\n"
+"X-Qt-Contexts: true\n"
 "Project-Id-Version: OpenTodoList\n"
 "Language: et\n"
 
@@ -1155,7 +1157,7 @@ msgctxt "NewLocalLibraryPageForm.ui|"
 msgid "My Local Library Name"
 msgstr "Minu Kohaliku Teegi Nimi"
 
-#: ../Pages/NewWebDAVAccountPage.qml:163
+#: ../Pages/NewWebDAVAccountPage.qml:162
 msgctxt "NewWebDAVAccountPage|"
 msgid "Account Name"
 msgstr "Konto Nimi"
@@ -1617,57 +1619,57 @@ msgid "Do you really want to delete all done tasks in the todo <strong>%1</stron
 msgstr "Kas te tõesti soovite kustutada kõik tehtud ülesanded töös <strong>%1</strong>? Seda ei saa tagasi teha."
 
 #: ../Pages/EditNextCloudAccountPage.qml:23
-#: ../Pages/EditNextCloudAccountPage.qml:59
+#: ../Pages/EditNextCloudAccountPage.qml:58
 msgctxt "EditNextCloudAccountPage|"
 msgid "Edit Account"
 msgstr "Muuda Konto"
 
-#: ../Pages/EditNextCloudAccountPage.qml:65
+#: ../Pages/EditNextCloudAccountPage.qml:64
 msgctxt "EditNextCloudAccountPage|"
 msgid "Name:"
 msgstr "Nimi:"
 
-#: ../Pages/EditNextCloudAccountPage.qml:76
+#: ../Pages/EditNextCloudAccountPage.qml:75
 msgctxt "EditNextCloudAccountPage|"
 msgid "Server Address:"
 msgstr "Serveri Aadress:"
 
-#: ../Pages/EditNextCloudAccountPage.qml:83
+#: ../Pages/EditNextCloudAccountPage.qml:82
 msgctxt "EditNextCloudAccountPage|"
 msgid "https://myserver.example.com"
 msgstr " https://myserver.example.com "
 
-#: ../Pages/EditNextCloudAccountPage.qml:91
+#: ../Pages/EditNextCloudAccountPage.qml:90
 msgctxt "EditNextCloudAccountPage|"
 msgid "Login"
 msgstr "Login"
 
-#: ../Pages/EditNextCloudAccountPage.qml:104
+#: ../Pages/EditNextCloudAccountPage.qml:103
 msgctxt "EditNextCloudAccountPage|"
 msgid "User:"
 msgstr "Kasutaja:"
 
-#: ../Pages/EditNextCloudAccountPage.qml:111
+#: ../Pages/EditNextCloudAccountPage.qml:110
 msgctxt "EditNextCloudAccountPage|"
 msgid "User Name"
 msgstr "Kasutajanimi"
 
-#: ../Pages/EditNextCloudAccountPage.qml:117
+#: ../Pages/EditNextCloudAccountPage.qml:116
 msgctxt "EditNextCloudAccountPage|"
 msgid "Password:"
 msgstr "Parool:"
 
-#: ../Pages/EditNextCloudAccountPage.qml:124
+#: ../Pages/EditNextCloudAccountPage.qml:123
 msgctxt "EditNextCloudAccountPage|"
 msgid "Password"
 msgstr "Parool"
 
-#: ../Pages/EditNextCloudAccountPage.qml:133
+#: ../Pages/EditNextCloudAccountPage.qml:132
 msgctxt "EditNextCloudAccountPage|"
 msgid "Disable Certificate Checks"
 msgstr "Lülitage Sertifikaadi Kontrollimine Välja"
 
-#: ../Pages/EditNextCloudAccountPage.qml:142
+#: ../Pages/EditNextCloudAccountPage.qml:141
 msgctxt "EditNextCloudAccountPage|"
 msgid "Failed to connect to the server. Please check your user name, password and the server address and retry."
 msgstr "Serveriga ühenduse loomine ebaõnnestus. Palun kontrollige oma kasutajanime, parooli ja serveri aadressi ning proovige uuesti."
@@ -1708,97 +1710,97 @@ msgid "Close"
 msgstr "Pane Kinni"
 
 #: ../Pages/NewNextCloudAccountPage.qml:20
-#: ../Pages/NewNextCloudAccountPage.qml:73
+#: ../Pages/NewNextCloudAccountPage.qml:72
 msgctxt "NewNextCloudAccountPage|"
 msgid "Connection Settings"
 msgstr "Ühenduse Sätted"
 
-#: ../Pages/NewNextCloudAccountPage.qml:79
+#: ../Pages/NewNextCloudAccountPage.qml:78
 msgctxt "NewNextCloudAccountPage|"
 msgid "Server Address:"
 msgstr "Serveri Aadress:"
 
-#: ../Pages/NewNextCloudAccountPage.qml:93
+#: ../Pages/NewNextCloudAccountPage.qml:92
 msgctxt "NewNextCloudAccountPage|"
 msgid "Login"
 msgstr "Login"
 
-#: ../Pages/NewNextCloudAccountPage.qml:109
+#: ../Pages/NewNextCloudAccountPage.qml:108
 msgctxt "NewNextCloudAccountPage|"
 msgid "Trouble Signing In?"
 msgstr "Probleemid sisselogimisega?"
 
-#: ../Pages/NewNextCloudAccountPage.qml:120
+#: ../Pages/NewNextCloudAccountPage.qml:119
 msgctxt "NewNextCloudAccountPage|"
 msgid "We have tried to open your browser to log you in to your NextCloud instance. Please log in and grant access to OpenTodoList in order to proceed. Trouble accessing your NextCloud in the browser? You can manually enter your username and password as well."
 msgstr "Me oleme püüdnud avada teie brauseri, et teid oma NextCloudi instantsi sisse logida. Palun logige sisse ja andke juurdepääs OpenTodoListile, et jätkata. Kas teil on probleeme NextCloudi ligipääsuga brauseris? Võite sisestada oma kasutajanime ja parooli ka käsitsi."
 
-#: ../Pages/NewNextCloudAccountPage.qml:128
+#: ../Pages/NewNextCloudAccountPage.qml:127
 msgctxt "NewNextCloudAccountPage|"
 msgid "Log in Manually"
 msgstr "Logige sisse Käsitsi"
 
-#: ../Pages/NewNextCloudAccountPage.qml:134
+#: ../Pages/NewNextCloudAccountPage.qml:133
 msgctxt "NewNextCloudAccountPage|"
 msgid "Ideally, you use app specific passwords instead of your user password. In case your login is protected with 2 Factor Authentication (2FA) you even must use app specific passwords to access your NextCloud. You can create such passwords in your user settings."
 msgstr "Ideaalis kasutatakse kasutajaparooli asemel rakendusspetsiifilisi paroole. Kui teie sisselogimine on kaitstud 2-tegurilise autentimisega (2FA), peate NextCloudile juurdepääsuks kasutama isegi rakendusspetsiifilisi paroole. Selliseid paroole saate luua oma kasutaja seadetes."
 
-#: ../Pages/NewNextCloudAccountPage.qml:143
+#: ../Pages/NewNextCloudAccountPage.qml:142
 msgctxt "NewNextCloudAccountPage|"
 msgid "Create App Password"
 msgstr "Loo Rakenduse Parool"
 
-#: ../Pages/NewNextCloudAccountPage.qml:152
+#: ../Pages/NewNextCloudAccountPage.qml:151
 msgctxt "NewNextCloudAccountPage|"
 msgid "Account Settings"
 msgstr "Konto Sätted"
 
-#: ../Pages/NewNextCloudAccountPage.qml:162
+#: ../Pages/NewNextCloudAccountPage.qml:161
 msgctxt "NewNextCloudAccountPage|"
 msgid "Copy Link"
 msgstr "Kopeeri Link"
 
-#: ../Pages/NewNextCloudAccountPage.qml:168
+#: ../Pages/NewNextCloudAccountPage.qml:167
 msgctxt "NewNextCloudAccountPage|"
 msgid "Copied!"
 msgstr "Kopeeritud!"
 
-#: ../Pages/NewNextCloudAccountPage.qml:177
+#: ../Pages/NewNextCloudAccountPage.qml:176
 msgctxt "NewNextCloudAccountPage|"
 msgid "User:"
 msgstr "Kasutaja:"
 
-#: ../Pages/NewNextCloudAccountPage.qml:184
+#: ../Pages/NewNextCloudAccountPage.qml:183
 msgctxt "NewNextCloudAccountPage|"
 msgid "User Name"
 msgstr "Kasutajanimi"
 
-#: ../Pages/NewNextCloudAccountPage.qml:191
+#: ../Pages/NewNextCloudAccountPage.qml:190
 msgctxt "NewNextCloudAccountPage|"
 msgid "Password:"
 msgstr "Parool:"
 
-#: ../Pages/NewNextCloudAccountPage.qml:198
+#: ../Pages/NewNextCloudAccountPage.qml:197
 msgctxt "NewNextCloudAccountPage|"
 msgid "Password"
 msgstr "Parool"
 
-#: ../Pages/NewNextCloudAccountPage.qml:208
+#: ../Pages/NewNextCloudAccountPage.qml:207
 msgctxt "NewNextCloudAccountPage|"
 msgid "Disable Certificate Checks"
 msgstr "Lülitage Sertifikaadi Kontrollimine Välja"
 
-#: ../Pages/NewNextCloudAccountPage.qml:212
+#: ../Pages/NewNextCloudAccountPage.qml:211
 msgctxt "NewNextCloudAccountPage|"
 msgid "Name:"
 msgstr "Nimi:"
 
-#: ../Pages/NewNextCloudAccountPage.qml:225
+#: ../Pages/NewNextCloudAccountPage.qml:224
 msgctxt "NewNextCloudAccountPage|"
 msgid "Account Name"
 msgstr "Kontonimi"
 
-#: ../Pages/NewNextCloudAccountPage.qml:235
+#: ../Pages/NewNextCloudAccountPage.qml:234
 msgctxt "NewNextCloudAccountPage|"
 msgid "Failed to connect to the server. Please check your user name, password and the server address and retry."
 msgstr "Serveriga ühenduse loomine ebaõnnestus. Palun kontrollige oma kasutajanime, parooli ja serveri aadressi ning proovige uuesti."
@@ -1808,53 +1810,53 @@ msgctxt "AccountsPage|"
 msgid "Accounts"
 msgstr "Kontod"
 
-#: ../Pages/EditWebDAVAccountPage.qml:33 ../Pages/EditWebDAVAccountPage.qml:118
+#: ../Pages/EditWebDAVAccountPage.qml:33 ../Pages/EditWebDAVAccountPage.qml:117
 msgctxt "EditWebDAVAccountPage|"
 msgid "Edit Account"
 msgstr "Muuda Konto"
 
-#: ../Pages/EditWebDAVAccountPage.qml:124
+#: ../Pages/EditWebDAVAccountPage.qml:123
 msgctxt "EditWebDAVAccountPage|"
 msgid "Name:"
 msgstr "Nimi:"
 
-#: ../Pages/EditWebDAVAccountPage.qml:135
+#: ../Pages/EditWebDAVAccountPage.qml:134
 msgctxt "EditWebDAVAccountPage|"
 msgid "Server Address:"
 msgstr "Serveri Aadress:"
 
-#: ../Pages/EditWebDAVAccountPage.qml:141
+#: ../Pages/EditWebDAVAccountPage.qml:140
 msgctxt "EditWebDAVAccountPage|"
 msgid "https://myserver.example.com"
 msgstr "\n"
 "https://myserver.example.com "
 
-#: ../Pages/EditWebDAVAccountPage.qml:148
+#: ../Pages/EditWebDAVAccountPage.qml:147
 msgctxt "EditWebDAVAccountPage|"
 msgid "User:"
 msgstr "Nimi:"
 
-#: ../Pages/EditWebDAVAccountPage.qml:154
+#: ../Pages/EditWebDAVAccountPage.qml:153
 msgctxt "EditWebDAVAccountPage|"
 msgid "User Name"
 msgstr "Kasutajanimi"
 
-#: ../Pages/EditWebDAVAccountPage.qml:161
+#: ../Pages/EditWebDAVAccountPage.qml:160
 msgctxt "EditWebDAVAccountPage|"
 msgid "Password:"
 msgstr "Parool:"
 
-#: ../Pages/EditWebDAVAccountPage.qml:168
+#: ../Pages/EditWebDAVAccountPage.qml:167
 msgctxt "EditWebDAVAccountPage|"
 msgid "Password"
 msgstr "Parool"
 
-#: ../Pages/EditWebDAVAccountPage.qml:178
+#: ../Pages/EditWebDAVAccountPage.qml:177
 msgctxt "EditWebDAVAccountPage|"
 msgid "Disable Certificate Checks"
 msgstr "Lülitage Sertifikaadi Kontrollimine Välja"
 
-#: ../Pages/EditWebDAVAccountPage.qml:186
+#: ../Pages/EditWebDAVAccountPage.qml:185
 msgctxt "EditWebDAVAccountPage|"
 msgid "Failed to connect to the server. Please check your user name, password and the server address and retry."
 msgstr "Serveriga ühenduse loomine ebaõnnestus. Palun kontrollige oma kasutajanime, parooli ja serveri aadressi ning proovige uuesti."
@@ -1879,82 +1881,82 @@ msgctxt "MoveTodo|"
 msgid "Move"
 msgstr "Liiguta"
 
-#: ../Pages/NewLibraryFromAccountPage.qml:82
+#: ../Pages/NewLibraryFromAccountPage.qml:81
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Create Library in Account"
 msgstr "Loo Teek Kontos"
 
-#: ../Pages/NewLibraryFromAccountPage.qml:91
+#: ../Pages/NewLibraryFromAccountPage.qml:90
 msgctxt "NewLibraryFromAccountPage|"
 msgid "A library created in an account is synchronized with it. This allows to easily back up a library to a server and later on restore it from there. Additionally, such libraries can be shared with other users (if the server allows this)."
 msgstr "Kontol loodud teek sünkroniseeritakse sellega. See võimaldab hõlpsasti varundada teegi serverisse ja hiljem sealt taastada. Lisaks saab selliseid teeke jagada teiste kasutajatega (kui server seda lubab)."
 
-#: ../Pages/NewLibraryFromAccountPage.qml:99
+#: ../Pages/NewLibraryFromAccountPage.qml:98
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Existing Libraries"
 msgstr "Olemasolevad Teegid"
 
-#: ../Pages/NewLibraryFromAccountPage.qml:107
+#: ../Pages/NewLibraryFromAccountPage.qml:106
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Select an existing library on the server to add it to the app."
 msgstr "Valige serveris olemasolev teek, et lisada see rakendusse."
 
-#: ../Pages/NewLibraryFromAccountPage.qml:113
+#: ../Pages/NewLibraryFromAccountPage.qml:112
 msgctxt "NewLibraryFromAccountPage|"
 msgid "No libraries were found on the server."
 msgstr "Serverist ei leitud ühtegi teeki."
 
-#: ../Pages/NewLibraryFromAccountPage.qml:122
+#: ../Pages/NewLibraryFromAccountPage.qml:121
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Searching existing libraries..."
 msgstr "Olemasolevate teekide otsing..."
 
-#: ../Pages/NewLibraryFromAccountPage.qml:165
+#: ../Pages/NewLibraryFromAccountPage.qml:164
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Create a New Library"
 msgstr "Loo Uus Teek"
 
-#: ../Pages/NewLibraryFromAccountPage.qml:173
+#: ../Pages/NewLibraryFromAccountPage.qml:172
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Create a new library, which will be synchronized with the server. Such a library can be added to the app on other devices as well to synchronize data."
 msgstr "Looge uus teek, mis sünkroniseeritakse serveriga. Sellise teegi saab lisada rakendusse ka teistes seadmetes andmete sünkroniseerimiseks."
 
-#: ../Pages/NewLibraryFromAccountPage.qml:187
+#: ../Pages/NewLibraryFromAccountPage.qml:186
 msgctxt "NewLibraryFromAccountPage|"
 msgid "My new library's name"
 msgstr "Minu uue teegi nimi"
 
-#: ../Pages/NewLibraryInFolderPage.qml:101
+#: ../Pages/NewLibraryInFolderPage.qml:100
 msgctxt "NewLibraryInFolderPage|"
 msgid "Open a Folder as a Library"
 msgstr "Ava Kaust Teegina"
 
-#: ../Pages/NewLibraryInFolderPage.qml:109
+#: ../Pages/NewLibraryInFolderPage.qml:108
 msgctxt "NewLibraryInFolderPage|"
 msgid "You can use any folder as a location for a library.<br/><br/>This is especially useful when you want to use another tool (like a sync client of a cloud provider) to sync your data with a server."
 msgstr "Teegi asukohana saate kasutada ükskõik millist kausta.<br/><br/>See on eriti kasulik, kui soovite oma andmete sünkroonimiseks serveriga kasutada mõnda muud vahendit (näiteks pilveteenuse pakkuja sünkroonimisklienti)."
 
-#: ../Pages/NewLibraryInFolderPage.qml:113
+#: ../Pages/NewLibraryInFolderPage.qml:112
 msgctxt "NewLibraryInFolderPage|"
 msgid "Folder:"
 msgstr "Kaust:"
 
-#: ../Pages/NewLibraryInFolderPage.qml:118
+#: ../Pages/NewLibraryInFolderPage.qml:117
 msgctxt "NewLibraryInFolderPage|"
 msgid "Path to a folder to use as a library"
 msgstr "Teegina kasutatava kausta tee"
 
-#: ../Pages/NewLibraryInFolderPage.qml:124
+#: ../Pages/NewLibraryInFolderPage.qml:123
 msgctxt "NewLibraryInFolderPage|"
 msgid "Select"
 msgstr "Vali"
 
-#: ../Pages/NewLibraryInFolderPage.qml:129
+#: ../Pages/NewLibraryInFolderPage.qml:128
 msgctxt "NewLibraryInFolderPage|"
 msgid "Name:"
 msgstr "Nimi:"
 
-#: ../Pages/NewLibraryInFolderPage.qml:134
+#: ../Pages/NewLibraryInFolderPage.qml:133
 msgctxt "NewLibraryInFolderPage|"
 msgid "My Local Library Name"
 msgstr "Minu Kohaliku Teegi Nimi"
@@ -1979,72 +1981,72 @@ msgctxt "NewLibraryPage|"
 msgid "Add Account"
 msgstr "Lisa Konto"
 
-#: ../Pages/NewLocalLibraryPage.qml:62
+#: ../Pages/NewLocalLibraryPage.qml:61
 msgctxt "NewLocalLibraryPage|"
 msgid "Create a Local Library"
 msgstr "Loo Kohalik Teek"
 
-#: ../Pages/NewLocalLibraryPage.qml:70
+#: ../Pages/NewLocalLibraryPage.qml:69
 msgctxt "NewLocalLibraryPage|"
 msgid "A local library is stored solely on your device - this makes it perfect for the privacy concise!<br/><br/>Use it when you want to store information only locally and back up all your data regularly via other mechanisms. If you need to access your information across several devices, create a library which is synced instead."
 msgstr "Kohalik teek salvestatakse ainult teie seadmesse - see teeb selle ideaalseks privaatsuse seisukohast!<br/><br/>Kasutage seda, kui soovite salvestada teavet ainult lokaalselt ja varundada kõiki andmeid regulaarselt muude viiside abil. Kui teil on vaja juurdepääsu oma teabele mitmes seadmes, looge selle asemel teek, mis on sünkroonitud."
 
-#: ../Pages/NewLocalLibraryPage.qml:80
+#: ../Pages/NewLocalLibraryPage.qml:79
 msgctxt "NewLocalLibraryPage|"
 msgid "Name:"
 msgstr "Nimi:"
 
-#: ../Pages/NewLocalLibraryPage.qml:85
+#: ../Pages/NewLocalLibraryPage.qml:84
 msgctxt "NewLocalLibraryPage|"
 msgid "My Local Library Name"
 msgstr "Minu Kohaliku Teegi Nimi"
 
-#: ../Pages/NewWebDAVAccountPage.qml:29 ../Pages/NewWebDAVAccountPage.qml:101
+#: ../Pages/NewWebDAVAccountPage.qml:29 ../Pages/NewWebDAVAccountPage.qml:100
 msgctxt "NewWebDAVAccountPage|"
 msgid "Connection Settings"
 msgstr "Ühenduse Sätted"
 
-#: ../Pages/NewWebDAVAccountPage.qml:107
+#: ../Pages/NewWebDAVAccountPage.qml:106
 msgctxt "NewWebDAVAccountPage|"
 msgid "Server Address:"
 msgstr "Serveri Aadress:"
 
-#: ../Pages/NewWebDAVAccountPage.qml:113
+#: ../Pages/NewWebDAVAccountPage.qml:112
 msgctxt "NewWebDAVAccountPage|"
 msgid "https://myserver.example.com"
 msgstr "https://myserver.example.com"
 
-#: ../Pages/NewWebDAVAccountPage.qml:119
+#: ../Pages/NewWebDAVAccountPage.qml:118
 msgctxt "NewWebDAVAccountPage|"
 msgid "User:"
 msgstr "Kasutaja:"
 
-#: ../Pages/NewWebDAVAccountPage.qml:125
+#: ../Pages/NewWebDAVAccountPage.qml:124
 msgctxt "NewWebDAVAccountPage|"
 msgid "User Name"
 msgstr "Kasutajanimi"
 
-#: ../Pages/NewWebDAVAccountPage.qml:131
+#: ../Pages/NewWebDAVAccountPage.qml:130
 msgctxt "NewWebDAVAccountPage|"
 msgid "Password:"
 msgstr "Parool:"
 
-#: ../Pages/NewWebDAVAccountPage.qml:137
+#: ../Pages/NewWebDAVAccountPage.qml:136
 msgctxt "NewWebDAVAccountPage|"
 msgid "Password"
 msgstr "Parool"
 
-#: ../Pages/NewWebDAVAccountPage.qml:146
+#: ../Pages/NewWebDAVAccountPage.qml:145
 msgctxt "NewWebDAVAccountPage|"
 msgid "Disable Certificate Checks"
 msgstr "Lülitage Sertifikaadi Kontrollimine Välja"
 
-#: ../Pages/NewWebDAVAccountPage.qml:150
+#: ../Pages/NewWebDAVAccountPage.qml:149
 msgctxt "NewWebDAVAccountPage|"
 msgid "Name:"
 msgstr "Nimi:"
 
-#: ../Pages/NewWebDAVAccountPage.qml:173
+#: ../Pages/NewWebDAVAccountPage.qml:172
 msgctxt "NewWebDAVAccountPage|"
 msgid "Failed to connect to the server. Please check your user name, password and the server address and retry."
 msgstr "Serveriga ühenduse loomine ebaõnnestus. Palun kontrollige oma kasutajanime, parooli ja serveri aadressi ning proovige uuesti."
@@ -2059,27 +2061,27 @@ msgctxt "SelectTodoListDialog|"
 msgid "Select Todo List"
 msgstr "Vali Tehaolevate Tööde Loend"
 
-#: ../Pages/SettingsPage.qml:41
+#: ../Pages/SettingsPage.qml:40
 msgctxt "SettingsPage|"
 msgid "Settings"
 msgstr "Sätted"
 
-#: ../Pages/SettingsPage.qml:47
+#: ../Pages/SettingsPage.qml:46
 msgctxt "SettingsPage|"
 msgid "User Interface"
 msgstr "Kasutajaliides"
 
-#: ../Pages/SettingsPage.qml:55
+#: ../Pages/SettingsPage.qml:54
 msgctxt "SettingsPage|"
 msgid "Language:"
 msgstr "Keel:"
 
-#: ../Pages/SettingsPage.qml:119
+#: ../Pages/SettingsPage.qml:118
 msgctxt "SettingsPage|"
 msgid "Theme:"
 msgstr "Teema:"
 
-#: ../Pages/SettingsPage.qml:162
+#: ../Pages/SettingsPage.qml:161
 msgctxt "SettingsPage|"
 msgid "Font Size:"
 msgstr "Kirjasuurus:"
@@ -2104,17 +2106,17 @@ msgctxt "SetManualProgressAction|"
 msgid "Set Progress"
 msgstr "Määra edasiminek"
 
-#: ../Pages/SettingsPage.qml:179
+#: ../Pages/SettingsPage.qml:178
 msgctxt "SettingsPage|"
 msgid "Use custom font size"
 msgstr "Kasuta kohandatud kirjasuurust"
 
-#: ../Pages/SettingsPage.qml:197
+#: ../Pages/SettingsPage.qml:196
 msgctxt "SettingsPage|"
 msgid "Use Compact Style"
 msgstr "Kasuta kompaktset stiili"
 
-#: ../Pages/SettingsPage.qml:206
+#: ../Pages/SettingsPage.qml:205
 msgctxt "SettingsPage|"
 msgid "Reduce space between components and reduce the font size.\n"
 "\n"
@@ -2123,27 +2125,27 @@ msgstr "Vähendage komponentide vahelist ruumi ja vähendage kirjasuurust.\n"
 "\n"
 "<em>Vajab rakenduse taaskäivitamist.</em>"
 
-#: ../Pages/SettingsPage.qml:214
+#: ../Pages/SettingsPage.qml:213
 msgctxt "SettingsPage|"
 msgid "Use compact todo lists"
 msgstr "Kasuta kompaktseid tehaolevate tööde loendeid"
 
-#: ../Pages/SettingsPage.qml:224
+#: ../Pages/SettingsPage.qml:223
 msgctxt "SettingsPage|"
 msgid "Reduce the padding in todo and task listings to fit more items on the screen."
 msgstr "Vähendage tööde ja ülesannete nimekirjade polsterdust, et ekraanile mahuks rohkem elemente."
 
-#: ../Pages/SettingsPage.qml:231
+#: ../Pages/SettingsPage.qml:230
 msgctxt "SettingsPage|"
 msgid "Override Scaling Factor"
 msgstr "Skaleerimisteguri Ületamine"
 
-#: ../Pages/SettingsPage.qml:238
+#: ../Pages/SettingsPage.qml:237
 msgctxt "SettingsPage|"
 msgid "Scale Factor:"
 msgstr "Skaleerimisteguri:"
 
-#: ../Pages/SettingsPage.qml:258
+#: ../Pages/SettingsPage.qml:257
 msgctxt "SettingsPage|"
 msgid "Use this to manually scale the user interface. By default, the app should adapt automatically according to your device configuration. If this does not work properly, you can set a custom scaling factor here.\n"
 "\n"
@@ -2177,7 +2179,7 @@ msgctxt "PromoteTask|"
 msgid "Promote"
 msgstr "Edenda"
 
-#: ../Pages/SettingsPage.qml:267
+#: ../Pages/SettingsPage.qml:266
 msgctxt "SettingsPage|"
 msgid "Library Item Size:"
 msgstr "Teegi Elemendi Suurus:"
@@ -2292,12 +2294,12 @@ msgctxt "RecurrenceDialog|"
 msgid "Every N Months"
 msgstr "Iga N Kuud"
 
-#: ../Pages/SettingsPage.qml:143
+#: ../Pages/SettingsPage.qml:142
 msgctxt "SettingsPage|"
 msgid "System Tray:"
 msgstr "Süsteemiriiul:"
 
-#: ../Pages/SettingsPage.qml:156
+#: ../Pages/SettingsPage.qml:155
 msgctxt "SettingsPage|"
 msgid "Open Quick Notes Editor on Click"
 msgstr "Ava Kiirmärkmete Toimetaja Klikiga"
@@ -2418,7 +2420,7 @@ msgctxt "ApplicationToolBarActions|"
 msgid "Set Progress"
 msgstr "Määra edasiminek"
 
-#: ../Pages/SettingsPage.qml:188
+#: ../Pages/SettingsPage.qml:187
 msgctxt "SettingsPage|"
 msgid "Desktop Mode"
 msgstr "Töölaua Režiim"
@@ -2494,102 +2496,102 @@ msgid "Copy of"
 msgstr "Koopia"
 
 #: ../Pages/EditDropboxAccountPage.qml:27
-#: ../Pages/EditDropboxAccountPage.qml:67
+#: ../Pages/EditDropboxAccountPage.qml:66
 msgctxt "EditDropboxAccountPage|"
 msgid "Connection Settings"
 msgstr "Ühenduse Sätted"
 
-#: ../Pages/EditDropboxAccountPage.qml:75
+#: ../Pages/EditDropboxAccountPage.qml:74
 msgctxt "EditDropboxAccountPage|"
 msgid "Trouble Signing In?"
 msgstr "Probleemid sisselogimisega?"
 
-#: ../Pages/EditDropboxAccountPage.qml:86
+#: ../Pages/EditDropboxAccountPage.qml:85
 msgctxt "EditDropboxAccountPage|"
 msgid "We have tried to open your browser to log you in to your Dropbox account. Please log in and grant access to OpenTodoList in order to proceed."
 msgstr "Oleme proovinud avada teie brauseri, et teid Dropboxi kontole sisse logida. Palun logige sisse ja andke juurdepääs OpenTodoListile, et jätkata."
 
-#: ../Pages/EditDropboxAccountPage.qml:93
+#: ../Pages/EditDropboxAccountPage.qml:92
 msgctxt "EditDropboxAccountPage|"
 msgid "Didn't your browser open? You can retry opening it or copy the required URL manually to your browser."
 msgstr "Kas teie brauser ei avanenud? Võite proovida selle avamist uuesti või kopeerida vajaliku URL-aadressi käsitsi oma brauserisse."
 
-#: ../Pages/EditDropboxAccountPage.qml:97
+#: ../Pages/EditDropboxAccountPage.qml:96
 msgctxt "EditDropboxAccountPage|"
 msgid "Authorize..."
 msgstr "Luba..."
 
-#: ../Pages/EditDropboxAccountPage.qml:106
+#: ../Pages/EditDropboxAccountPage.qml:105
 msgctxt "EditDropboxAccountPage|"
 msgid "Open Browser"
 msgstr "Ava Brauser"
 
-#: ../Pages/EditDropboxAccountPage.qml:112
+#: ../Pages/EditDropboxAccountPage.qml:111
 msgctxt "EditDropboxAccountPage|"
 msgid "Copy Link"
 msgstr "Kopeeri Link"
 
-#: ../Pages/EditDropboxAccountPage.qml:116
+#: ../Pages/EditDropboxAccountPage.qml:115
 msgctxt "EditDropboxAccountPage|"
 msgid "Copied!"
 msgstr "Kopeeritud!"
 
-#: ../Pages/EditDropboxAccountPage.qml:125
+#: ../Pages/EditDropboxAccountPage.qml:124
 msgctxt "EditDropboxAccountPage|"
 msgid "Name:"
 msgstr "Nimi:"
 
-#: ../Pages/EditDropboxAccountPage.qml:132
+#: ../Pages/EditDropboxAccountPage.qml:131
 msgctxt "EditDropboxAccountPage|"
 msgid "Dropbox"
 msgstr "Dropbox"
 
-#: ../Pages/NewDropboxAccountPage.qml:21 ../Pages/NewDropboxAccountPage.qml:55
+#: ../Pages/NewDropboxAccountPage.qml:21 ../Pages/NewDropboxAccountPage.qml:54
 msgctxt "NewDropboxAccountPage|"
 msgid "Connection Settings"
 msgstr "Ühenduse Sätted"
 
-#: ../Pages/NewDropboxAccountPage.qml:63
+#: ../Pages/NewDropboxAccountPage.qml:62
 msgctxt "NewDropboxAccountPage|"
 msgid "Trouble Signing In?"
 msgstr "Probleemid sisselogimisega?"
 
-#: ../Pages/NewDropboxAccountPage.qml:74
+#: ../Pages/NewDropboxAccountPage.qml:73
 msgctxt "NewDropboxAccountPage|"
 msgid "We have tried to open your browser to log you in to your Dropbox account. Please log in and grant access to OpenTodoList in order to proceed."
 msgstr "Oleme proovinud avada teie brauseri, et teid Dropboxi kontole sisse logida. Palun logige sisse ja andke juurdepääs OpenTodoListile, et jätkata."
 
-#: ../Pages/NewDropboxAccountPage.qml:81
+#: ../Pages/NewDropboxAccountPage.qml:80
 msgctxt "NewDropboxAccountPage|"
 msgid "Didn't your browser open? You can retry opening it or copy the required URL manually to your browser."
 msgstr "Kas teie brauser ei avanenud? Võite proovida selle avamist uuesti või kopeerida vajaliku URL-aadressi käsitsi oma brauserisse."
 
-#: ../Pages/NewDropboxAccountPage.qml:87
+#: ../Pages/NewDropboxAccountPage.qml:86
 msgctxt "NewDropboxAccountPage|"
 msgid "Authorize..."
 msgstr "Luba..."
 
-#: ../Pages/NewDropboxAccountPage.qml:96
+#: ../Pages/NewDropboxAccountPage.qml:95
 msgctxt "NewDropboxAccountPage|"
 msgid "Open Browser"
 msgstr "Ava Brauser"
 
-#: ../Pages/NewDropboxAccountPage.qml:102
+#: ../Pages/NewDropboxAccountPage.qml:101
 msgctxt "NewDropboxAccountPage|"
 msgid "Copy Link"
 msgstr "Kopeeri Link"
 
-#: ../Pages/NewDropboxAccountPage.qml:106
+#: ../Pages/NewDropboxAccountPage.qml:105
 msgctxt "NewDropboxAccountPage|"
 msgid "Copied!"
 msgstr "Kopeeritud!"
 
-#: ../Pages/NewDropboxAccountPage.qml:115
+#: ../Pages/NewDropboxAccountPage.qml:114
 msgctxt "NewDropboxAccountPage|"
 msgid "Name:"
 msgstr "Nimi:"
 
-#: ../Pages/NewDropboxAccountPage.qml:122
+#: ../Pages/NewDropboxAccountPage.qml:121
 msgctxt "NewDropboxAccountPage|"
 msgid "Dropbox"
 msgstr "Dropbox"
@@ -2604,7 +2606,7 @@ msgctxt "EmbeddedWebViewDialog|"
 msgid "Loading..."
 msgstr "Laadimine..."
 
-#: ../Pages/SettingsPage.qml:283
+#: ../Pages/SettingsPage.qml:282
 msgctxt "SettingsPage|"
 msgid "Show notes excerpt in listings"
 msgstr "Näita märkmeid väljavõte nimekirjades"
@@ -2714,7 +2716,7 @@ msgctxt "ProblemsPage|"
 msgid "Retry Sync"
 msgstr "Proovi Sünkroniseerida Uuesti"
 
-#: ../Pages/SettingsPage.qml:148
+#: ../Pages/SettingsPage.qml:147
 msgctxt "SettingsPage|"
 msgid "Monochrome Icon"
 msgstr "Monokroomne ikoon"

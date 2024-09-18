@@ -59,8 +59,6 @@ download_translations:
     - if: $CI_COMMIT_BRANCH == 'development'
       allow_failure: true
       when: manual
-    - if: $CI_COMMIT_BRANCH == '660-automated-translation-downloading-not-working'
-      allow_failure: true
 
 
 ################################################################################
