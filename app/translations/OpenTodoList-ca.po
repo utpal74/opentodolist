@@ -4,6 +4,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
+"X-Language: en\n"
+"X-Qt-Contexts: true\n"
 "Project-Id-Version: OpenTodoList\n"
 "Language: ca\n"
 
@@ -1155,7 +1157,7 @@ msgctxt "NewLocalLibraryPageForm.ui|"
 msgid "My Local Library Name"
 msgstr "Nom de la meva biblioteca local"
 
-#: ../Pages/NewWebDAVAccountPage.qml:163
+#: ../Pages/NewWebDAVAccountPage.qml:162
 msgctxt "NewWebDAVAccountPage|"
 msgid "Account Name"
 msgstr "Nom del compte"
@@ -1617,57 +1619,57 @@ msgid "Do you really want to delete all done tasks in the todo <strong>%1</stron
 msgstr "Esteu segur que voleu suprimir definitivament totes les tasques fetes a la llista <strong>%1</strong>? Això no es pot desfer."
 
 #: ../Pages/EditNextCloudAccountPage.qml:23
-#: ../Pages/EditNextCloudAccountPage.qml:59
+#: ../Pages/EditNextCloudAccountPage.qml:58
 msgctxt "EditNextCloudAccountPage|"
 msgid "Edit Account"
 msgstr "Edita el compte"
 
-#: ../Pages/EditNextCloudAccountPage.qml:65
+#: ../Pages/EditNextCloudAccountPage.qml:64
 msgctxt "EditNextCloudAccountPage|"
 msgid "Name:"
 msgstr "Nom:"
 
-#: ../Pages/EditNextCloudAccountPage.qml:76
+#: ../Pages/EditNextCloudAccountPage.qml:75
 msgctxt "EditNextCloudAccountPage|"
 msgid "Server Address:"
 msgstr "Adreça del servidor:"
 
-#: ../Pages/EditNextCloudAccountPage.qml:83
+#: ../Pages/EditNextCloudAccountPage.qml:82
 msgctxt "EditNextCloudAccountPage|"
 msgid "https://myserver.example.com"
 msgstr "https://elmeuservidor.exemple.com"
 
-#: ../Pages/EditNextCloudAccountPage.qml:91
+#: ../Pages/EditNextCloudAccountPage.qml:90
 msgctxt "EditNextCloudAccountPage|"
 msgid "Login"
 msgstr "Entra"
 
-#: ../Pages/EditNextCloudAccountPage.qml:104
+#: ../Pages/EditNextCloudAccountPage.qml:103
 msgctxt "EditNextCloudAccountPage|"
 msgid "User:"
 msgstr "Usuari:"
 
-#: ../Pages/EditNextCloudAccountPage.qml:111
+#: ../Pages/EditNextCloudAccountPage.qml:110
 msgctxt "EditNextCloudAccountPage|"
 msgid "User Name"
 msgstr "Nom d'usuari"
 
-#: ../Pages/EditNextCloudAccountPage.qml:117
+#: ../Pages/EditNextCloudAccountPage.qml:116
 msgctxt "EditNextCloudAccountPage|"
 msgid "Password:"
 msgstr "Contrasenya:"
 
-#: ../Pages/EditNextCloudAccountPage.qml:124
+#: ../Pages/EditNextCloudAccountPage.qml:123
 msgctxt "EditNextCloudAccountPage|"
 msgid "Password"
 msgstr "Contrasenya"
 
-#: ../Pages/EditNextCloudAccountPage.qml:133
+#: ../Pages/EditNextCloudAccountPage.qml:132
 msgctxt "EditNextCloudAccountPage|"
 msgid "Disable Certificate Checks"
 msgstr "Deshabilita la comprobació del certificat"
 
-#: ../Pages/EditNextCloudAccountPage.qml:142
+#: ../Pages/EditNextCloudAccountPage.qml:141
 msgctxt "EditNextCloudAccountPage|"
 msgid "Failed to connect to the server. Please check your user name, password and the server address and retry."
 msgstr "La connexió amb el servidor ha fallat. Comproveu el non d'usuari, contrasenya i adreça del servidor, i torneu-ho a provar."
@@ -1708,97 +1710,97 @@ msgid "Close"
 msgstr "Tanca"
 
 #: ../Pages/NewNextCloudAccountPage.qml:20
-#: ../Pages/NewNextCloudAccountPage.qml:73
+#: ../Pages/NewNextCloudAccountPage.qml:72
 msgctxt "NewNextCloudAccountPage|"
 msgid "Connection Settings"
 msgstr "Ajusts de connexió"
 
-#: ../Pages/NewNextCloudAccountPage.qml:79
+#: ../Pages/NewNextCloudAccountPage.qml:78
 msgctxt "NewNextCloudAccountPage|"
 msgid "Server Address:"
 msgstr "Adreça del servidor:"
 
-#: ../Pages/NewNextCloudAccountPage.qml:93
+#: ../Pages/NewNextCloudAccountPage.qml:92
 msgctxt "NewNextCloudAccountPage|"
 msgid "Login"
 msgstr "Entra"
 
-#: ../Pages/NewNextCloudAccountPage.qml:109
+#: ../Pages/NewNextCloudAccountPage.qml:108
 msgctxt "NewNextCloudAccountPage|"
 msgid "Trouble Signing In?"
 msgstr "Problemes per iniciar la sessió?"
 
-#: ../Pages/NewNextCloudAccountPage.qml:120
+#: ../Pages/NewNextCloudAccountPage.qml:119
 msgctxt "NewNextCloudAccountPage|"
 msgid "We have tried to open your browser to log you in to your NextCloud instance. Please log in and grant access to OpenTodoList in order to proceed. Trouble accessing your NextCloud in the browser? You can manually enter your username and password as well."
 msgstr "Hem intentat obrir el navegador per iniciar sessió a la instància de NextCloud. Inicieu la sessió i concediu accés a OpenTodoList per continuar. Teniu problemes per accedir al teu NextCloud al navegador? També podeu introduir manualment el vostre nom d'usuari i contrasenya."
 
-#: ../Pages/NewNextCloudAccountPage.qml:128
+#: ../Pages/NewNextCloudAccountPage.qml:127
 msgctxt "NewNextCloudAccountPage|"
 msgid "Log in Manually"
 msgstr "Inicia la sessió manualment"
 
-#: ../Pages/NewNextCloudAccountPage.qml:134
+#: ../Pages/NewNextCloudAccountPage.qml:133
 msgctxt "NewNextCloudAccountPage|"
 msgid "Ideally, you use app specific passwords instead of your user password. In case your login is protected with 2 Factor Authentication (2FA) you even must use app specific passwords to access your NextCloud. You can create such passwords in your user settings."
 msgstr "Idealment, utilitzeu contrasenyes específiques de l'aplicació en lloc de la contrasenya d'usuari. En cas que el teu inici de sessió estigui protegit amb autenticació de 2 factors (2FA) fins i tot hauràs d'utilitzar contrasenyes específiques de l'aplicació per accedir al teu NextCloud. Podeu crear aquestes contrasenyes a la configuració de l'usuari."
 
-#: ../Pages/NewNextCloudAccountPage.qml:143
+#: ../Pages/NewNextCloudAccountPage.qml:142
 msgctxt "NewNextCloudAccountPage|"
 msgid "Create App Password"
 msgstr "Crea una contrasenya d'aplicació"
 
-#: ../Pages/NewNextCloudAccountPage.qml:152
+#: ../Pages/NewNextCloudAccountPage.qml:151
 msgctxt "NewNextCloudAccountPage|"
 msgid "Account Settings"
 msgstr "Ajusts del compte"
 
-#: ../Pages/NewNextCloudAccountPage.qml:162
+#: ../Pages/NewNextCloudAccountPage.qml:161
 msgctxt "NewNextCloudAccountPage|"
 msgid "Copy Link"
 msgstr "Copia l'enllaç"
 
-#: ../Pages/NewNextCloudAccountPage.qml:168
+#: ../Pages/NewNextCloudAccountPage.qml:167
 msgctxt "NewNextCloudAccountPage|"
 msgid "Copied!"
 msgstr "S'ha copiat!"
 
-#: ../Pages/NewNextCloudAccountPage.qml:177
+#: ../Pages/NewNextCloudAccountPage.qml:176
 msgctxt "NewNextCloudAccountPage|"
 msgid "User:"
 msgstr "Usuari:"
 
-#: ../Pages/NewNextCloudAccountPage.qml:184
+#: ../Pages/NewNextCloudAccountPage.qml:183
 msgctxt "NewNextCloudAccountPage|"
 msgid "User Name"
 msgstr "Nom d'usuari"
 
-#: ../Pages/NewNextCloudAccountPage.qml:191
+#: ../Pages/NewNextCloudAccountPage.qml:190
 msgctxt "NewNextCloudAccountPage|"
 msgid "Password:"
 msgstr "Contrasenya:"
 
-#: ../Pages/NewNextCloudAccountPage.qml:198
+#: ../Pages/NewNextCloudAccountPage.qml:197
 msgctxt "NewNextCloudAccountPage|"
 msgid "Password"
 msgstr "Contrasenya"
 
-#: ../Pages/NewNextCloudAccountPage.qml:208
+#: ../Pages/NewNextCloudAccountPage.qml:207
 msgctxt "NewNextCloudAccountPage|"
 msgid "Disable Certificate Checks"
 msgstr "Deshabilita la comprobació del certificat"
 
-#: ../Pages/NewNextCloudAccountPage.qml:212
+#: ../Pages/NewNextCloudAccountPage.qml:211
 msgctxt "NewNextCloudAccountPage|"
 msgid "Name:"
 msgstr "Nom:"
 
-#: ../Pages/NewNextCloudAccountPage.qml:225
+#: ../Pages/NewNextCloudAccountPage.qml:224
 msgctxt "NewNextCloudAccountPage|"
 msgid "Account Name"
 msgstr "Nom del compte"
 
-#: ../Pages/NewNextCloudAccountPage.qml:235
+#: ../Pages/NewNextCloudAccountPage.qml:234
 msgctxt "NewNextCloudAccountPage|"
 msgid "Failed to connect to the server. Please check your user name, password and the server address and retry."
 msgstr "No s'ha pogut connectar al servidor. Comproveu el nom d'usuari, la contrasenya i l'adreça del servidor i torneu-ho a provar."
@@ -1808,52 +1810,52 @@ msgctxt "AccountsPage|"
 msgid "Accounts"
 msgstr "Comptes"
 
-#: ../Pages/EditWebDAVAccountPage.qml:33 ../Pages/EditWebDAVAccountPage.qml:118
+#: ../Pages/EditWebDAVAccountPage.qml:33 ../Pages/EditWebDAVAccountPage.qml:117
 msgctxt "EditWebDAVAccountPage|"
 msgid "Edit Account"
 msgstr "Edita el compte"
 
-#: ../Pages/EditWebDAVAccountPage.qml:124
+#: ../Pages/EditWebDAVAccountPage.qml:123
 msgctxt "EditWebDAVAccountPage|"
 msgid "Name:"
 msgstr "Nom:"
 
-#: ../Pages/EditWebDAVAccountPage.qml:135
+#: ../Pages/EditWebDAVAccountPage.qml:134
 msgctxt "EditWebDAVAccountPage|"
 msgid "Server Address:"
 msgstr "Adreça del servidor:"
 
-#: ../Pages/EditWebDAVAccountPage.qml:141
+#: ../Pages/EditWebDAVAccountPage.qml:140
 msgctxt "EditWebDAVAccountPage|"
 msgid "https://myserver.example.com"
 msgstr "https://elmeuservidor.exemple.com"
 
-#: ../Pages/EditWebDAVAccountPage.qml:148
+#: ../Pages/EditWebDAVAccountPage.qml:147
 msgctxt "EditWebDAVAccountPage|"
 msgid "User:"
 msgstr "Usuari:"
 
-#: ../Pages/EditWebDAVAccountPage.qml:154
+#: ../Pages/EditWebDAVAccountPage.qml:153
 msgctxt "EditWebDAVAccountPage|"
 msgid "User Name"
 msgstr "Nom d'usuari"
 
-#: ../Pages/EditWebDAVAccountPage.qml:161
+#: ../Pages/EditWebDAVAccountPage.qml:160
 msgctxt "EditWebDAVAccountPage|"
 msgid "Password:"
 msgstr "Contrasenya:"
 
-#: ../Pages/EditWebDAVAccountPage.qml:168
+#: ../Pages/EditWebDAVAccountPage.qml:167
 msgctxt "EditWebDAVAccountPage|"
 msgid "Password"
 msgstr "Contrasenya"
 
-#: ../Pages/EditWebDAVAccountPage.qml:178
+#: ../Pages/EditWebDAVAccountPage.qml:177
 msgctxt "EditWebDAVAccountPage|"
 msgid "Disable Certificate Checks"
 msgstr "Deshabilita la comprobació del certificat"
 
-#: ../Pages/EditWebDAVAccountPage.qml:186
+#: ../Pages/EditWebDAVAccountPage.qml:185
 msgctxt "EditWebDAVAccountPage|"
 msgid "Failed to connect to the server. Please check your user name, password and the server address and retry."
 msgstr "No s'ha pogut connectar al servidor. Comproveu el nom d'usuari, la contrasenya i l'adreça del servidor i torneu-ho a provar."
@@ -1878,82 +1880,82 @@ msgctxt "MoveTodo|"
 msgid "Move"
 msgstr "Mou"
 
-#: ../Pages/NewLibraryFromAccountPage.qml:82
+#: ../Pages/NewLibraryFromAccountPage.qml:81
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Create Library in Account"
 msgstr "Crea una biblioteca al compte"
 
-#: ../Pages/NewLibraryFromAccountPage.qml:91
+#: ../Pages/NewLibraryFromAccountPage.qml:90
 msgctxt "NewLibraryFromAccountPage|"
 msgid "A library created in an account is synchronized with it. This allows to easily back up a library to a server and later on restore it from there. Additionally, such libraries can be shared with other users (if the server allows this)."
 msgstr "Una biblioteca creada en un compte se sincronitza amb ella. Això permet fer una còpia de seguretat d'una biblioteca a un servidor i restaurar-la des d'allà. A més, aquestes biblioteques es poden compartir amb altres usuaris (si el servidor ho permet)."
 
-#: ../Pages/NewLibraryFromAccountPage.qml:99
+#: ../Pages/NewLibraryFromAccountPage.qml:98
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Existing Libraries"
 msgstr "Biblioteques existents"
 
-#: ../Pages/NewLibraryFromAccountPage.qml:107
+#: ../Pages/NewLibraryFromAccountPage.qml:106
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Select an existing library on the server to add it to the app."
 msgstr "Seleccioneu una biblioteca existent al servidor per afegir-la a l'aplicació."
 
-#: ../Pages/NewLibraryFromAccountPage.qml:113
+#: ../Pages/NewLibraryFromAccountPage.qml:112
 msgctxt "NewLibraryFromAccountPage|"
 msgid "No libraries were found on the server."
 msgstr "No s'ha trobat cap biblioteca al servidor."
 
-#: ../Pages/NewLibraryFromAccountPage.qml:122
+#: ../Pages/NewLibraryFromAccountPage.qml:121
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Searching existing libraries..."
 msgstr "S'estan cercant les biblioteques existents..."
 
-#: ../Pages/NewLibraryFromAccountPage.qml:165
+#: ../Pages/NewLibraryFromAccountPage.qml:164
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Create a New Library"
 msgstr "Crea una biblioteca nova"
 
-#: ../Pages/NewLibraryFromAccountPage.qml:173
+#: ../Pages/NewLibraryFromAccountPage.qml:172
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Create a new library, which will be synchronized with the server. Such a library can be added to the app on other devices as well to synchronize data."
 msgstr "Crea una biblioteca nova, que se sincronitzarà amb el servidor. Aquesta biblioteca es pot afegir a l'aplicació en altres dispositius, així com per sincronitzar dades."
 
-#: ../Pages/NewLibraryFromAccountPage.qml:187
+#: ../Pages/NewLibraryFromAccountPage.qml:186
 msgctxt "NewLibraryFromAccountPage|"
 msgid "My new library's name"
 msgstr "Nom de la meva nova biblioteca"
 
-#: ../Pages/NewLibraryInFolderPage.qml:101
+#: ../Pages/NewLibraryInFolderPage.qml:100
 msgctxt "NewLibraryInFolderPage|"
 msgid "Open a Folder as a Library"
 msgstr "Obrir una carpeta com a biblioteca"
 
-#: ../Pages/NewLibraryInFolderPage.qml:109
+#: ../Pages/NewLibraryInFolderPage.qml:108
 msgctxt "NewLibraryInFolderPage|"
 msgid "You can use any folder as a location for a library.<br/><br/>This is especially useful when you want to use another tool (like a sync client of a cloud provider) to sync your data with a server."
 msgstr "Podeu utilitzar qualsevol carpeta com a ubicació per a una biblioteca.<br/><br/>Això és especialment útil quan voleu utilitzar una altra eina (com un client de sincronització d'un proveïdor de núvol) per sincronitzar les vostres dades amb un servidor."
 
-#: ../Pages/NewLibraryInFolderPage.qml:113
+#: ../Pages/NewLibraryInFolderPage.qml:112
 msgctxt "NewLibraryInFolderPage|"
 msgid "Folder:"
 msgstr "Carpeta:"
 
-#: ../Pages/NewLibraryInFolderPage.qml:118
+#: ../Pages/NewLibraryInFolderPage.qml:117
 msgctxt "NewLibraryInFolderPage|"
 msgid "Path to a folder to use as a library"
 msgstr "Ruta a una carpeta per utilitzar-la com a biblioteca"
 
-#: ../Pages/NewLibraryInFolderPage.qml:124
+#: ../Pages/NewLibraryInFolderPage.qml:123
 msgctxt "NewLibraryInFolderPage|"
 msgid "Select"
 msgstr "Selecciona"
 
-#: ../Pages/NewLibraryInFolderPage.qml:129
+#: ../Pages/NewLibraryInFolderPage.qml:128
 msgctxt "NewLibraryInFolderPage|"
 msgid "Name:"
 msgstr "Nom:"
 
-#: ../Pages/NewLibraryInFolderPage.qml:134
+#: ../Pages/NewLibraryInFolderPage.qml:133
 msgctxt "NewLibraryInFolderPage|"
 msgid "My Local Library Name"
 msgstr "Nom de la meva biblioteca local"
@@ -1978,72 +1980,72 @@ msgctxt "NewLibraryPage|"
 msgid "Add Account"
 msgstr "Afegeix un compte"
 
-#: ../Pages/NewLocalLibraryPage.qml:62
+#: ../Pages/NewLocalLibraryPage.qml:61
 msgctxt "NewLocalLibraryPage|"
 msgid "Create a Local Library"
 msgstr "Crear una biblioteca local"
 
-#: ../Pages/NewLocalLibraryPage.qml:70
+#: ../Pages/NewLocalLibraryPage.qml:69
 msgctxt "NewLocalLibraryPage|"
 msgid "A local library is stored solely on your device - this makes it perfect for the privacy concise!<br/><br/>Use it when you want to store information only locally and back up all your data regularly via other mechanisms. If you need to access your information across several devices, create a library which is synced instead."
 msgstr "Una biblioteca local s'emmagatzema únicament al vostre dispositiu, això fa que sigui perfecte per a la privadesa concisa!<br/><br/>Utilitzeu-lo quan vulgueu emmagatzemar informació només localment i fer una còpia de seguretat de totes les vostres dades regularment a través d'altres mecanismes. Si heu d'accedir a la informació en diversos dispositius, creeu una biblioteca sincronitzada."
 
-#: ../Pages/NewLocalLibraryPage.qml:80
+#: ../Pages/NewLocalLibraryPage.qml:79
 msgctxt "NewLocalLibraryPage|"
 msgid "Name:"
 msgstr "Nom:"
 
-#: ../Pages/NewLocalLibraryPage.qml:85
+#: ../Pages/NewLocalLibraryPage.qml:84
 msgctxt "NewLocalLibraryPage|"
 msgid "My Local Library Name"
 msgstr "El meu nom de biblioteca local"
 
-#: ../Pages/NewWebDAVAccountPage.qml:29 ../Pages/NewWebDAVAccountPage.qml:101
+#: ../Pages/NewWebDAVAccountPage.qml:29 ../Pages/NewWebDAVAccountPage.qml:100
 msgctxt "NewWebDAVAccountPage|"
 msgid "Connection Settings"
 msgstr "Ajusts de connexió"
 
-#: ../Pages/NewWebDAVAccountPage.qml:107
+#: ../Pages/NewWebDAVAccountPage.qml:106
 msgctxt "NewWebDAVAccountPage|"
 msgid "Server Address:"
 msgstr "Adreça del servidor:"
 
-#: ../Pages/NewWebDAVAccountPage.qml:113
+#: ../Pages/NewWebDAVAccountPage.qml:112
 msgctxt "NewWebDAVAccountPage|"
 msgid "https://myserver.example.com"
 msgstr "https://elmeuservidor.exemple.com"
 
-#: ../Pages/NewWebDAVAccountPage.qml:119
+#: ../Pages/NewWebDAVAccountPage.qml:118
 msgctxt "NewWebDAVAccountPage|"
 msgid "User:"
 msgstr "Usuari:"
 
-#: ../Pages/NewWebDAVAccountPage.qml:125
+#: ../Pages/NewWebDAVAccountPage.qml:124
 msgctxt "NewWebDAVAccountPage|"
 msgid "User Name"
 msgstr "Nom d'usuari"
 
-#: ../Pages/NewWebDAVAccountPage.qml:131
+#: ../Pages/NewWebDAVAccountPage.qml:130
 msgctxt "NewWebDAVAccountPage|"
 msgid "Password:"
 msgstr "Contrasenya:"
 
-#: ../Pages/NewWebDAVAccountPage.qml:137
+#: ../Pages/NewWebDAVAccountPage.qml:136
 msgctxt "NewWebDAVAccountPage|"
 msgid "Password"
 msgstr "Contrasenya"
 
-#: ../Pages/NewWebDAVAccountPage.qml:146
+#: ../Pages/NewWebDAVAccountPage.qml:145
 msgctxt "NewWebDAVAccountPage|"
 msgid "Disable Certificate Checks"
 msgstr "Deshabilita la comprovació del certificat"
 
-#: ../Pages/NewWebDAVAccountPage.qml:150
+#: ../Pages/NewWebDAVAccountPage.qml:149
 msgctxt "NewWebDAVAccountPage|"
 msgid "Name:"
 msgstr "Nom:"
 
-#: ../Pages/NewWebDAVAccountPage.qml:173
+#: ../Pages/NewWebDAVAccountPage.qml:172
 msgctxt "NewWebDAVAccountPage|"
 msgid "Failed to connect to the server. Please check your user name, password and the server address and retry."
 msgstr "No s'ha pogut connectar al servidor. Comproveu el nom d'usuari, la contrasenya i l'adreça del servidor i torneu-ho a provar."
@@ -2058,27 +2060,27 @@ msgctxt "SelectTodoListDialog|"
 msgid "Select Todo List"
 msgstr "Selecciona la llista de coses per fer"
 
-#: ../Pages/SettingsPage.qml:41
+#: ../Pages/SettingsPage.qml:40
 msgctxt "SettingsPage|"
 msgid "Settings"
 msgstr "Ajusts"
 
-#: ../Pages/SettingsPage.qml:47
+#: ../Pages/SettingsPage.qml:46
 msgctxt "SettingsPage|"
 msgid "User Interface"
 msgstr "Interfície de l'usuari"
 
-#: ../Pages/SettingsPage.qml:55
+#: ../Pages/SettingsPage.qml:54
 msgctxt "SettingsPage|"
 msgid "Language:"
 msgstr "Idioma:"
 
-#: ../Pages/SettingsPage.qml:119
+#: ../Pages/SettingsPage.qml:118
 msgctxt "SettingsPage|"
 msgid "Theme:"
 msgstr "Tema:"
 
-#: ../Pages/SettingsPage.qml:162
+#: ../Pages/SettingsPage.qml:161
 msgctxt "SettingsPage|"
 msgid "Font Size:"
 msgstr "Mida de la tipografía:"
@@ -2103,17 +2105,17 @@ msgctxt "SetManualProgressAction|"
 msgid "Set Progress"
 msgstr "Defineix el progrés"
 
-#: ../Pages/SettingsPage.qml:179
+#: ../Pages/SettingsPage.qml:178
 msgctxt "SettingsPage|"
 msgid "Use custom font size"
 msgstr "Utilitza la mida del tipus de lletra personalitzada"
 
-#: ../Pages/SettingsPage.qml:197
+#: ../Pages/SettingsPage.qml:196
 msgctxt "SettingsPage|"
 msgid "Use Compact Style"
 msgstr "Utilitza l'estil compacte"
 
-#: ../Pages/SettingsPage.qml:206
+#: ../Pages/SettingsPage.qml:205
 msgctxt "SettingsPage|"
 msgid "Reduce space between components and reduce the font size.\n"
 "\n"
@@ -2122,27 +2124,27 @@ msgstr "Reduïu l'espai entre components i reduïu la mida del tipus de lletra.\
 "\n"
 "<em>Requereix reiniciar l'aplicació.</em>"
 
-#: ../Pages/SettingsPage.qml:214
+#: ../Pages/SettingsPage.qml:213
 msgctxt "SettingsPage|"
 msgid "Use compact todo lists"
 msgstr "Utilitza llistes compactes de coses per fer"
 
-#: ../Pages/SettingsPage.qml:224
+#: ../Pages/SettingsPage.qml:223
 msgctxt "SettingsPage|"
 msgid "Reduce the padding in todo and task listings to fit more items on the screen."
 msgstr "Reduïu el farciment en les llistes de coses per fer i tasques per ajustar-lo a més elements de la pantalla."
 
-#: ../Pages/SettingsPage.qml:231
+#: ../Pages/SettingsPage.qml:230
 msgctxt "SettingsPage|"
 msgid "Override Scaling Factor"
 msgstr "Substitueix el factor d'escalat"
 
-#: ../Pages/SettingsPage.qml:238
+#: ../Pages/SettingsPage.qml:237
 msgctxt "SettingsPage|"
 msgid "Scale Factor:"
 msgstr "Factor d'escalat:"
 
-#: ../Pages/SettingsPage.qml:258
+#: ../Pages/SettingsPage.qml:257
 msgctxt "SettingsPage|"
 msgid "Use this to manually scale the user interface. By default, the app should adapt automatically according to your device configuration. If this does not work properly, you can set a custom scaling factor here.\n"
 "\n"
@@ -2176,7 +2178,7 @@ msgctxt "PromoteTask|"
 msgid "Promote"
 msgstr "Promou"
 
-#: ../Pages/SettingsPage.qml:267
+#: ../Pages/SettingsPage.qml:266
 msgctxt "SettingsPage|"
 msgid "Library Item Size:"
 msgstr "Mida de l'element de la biblioteca:"
@@ -2291,12 +2293,12 @@ msgctxt "RecurrenceDialog|"
 msgid "Every N Months"
 msgstr "Cada N mesos"
 
-#: ../Pages/SettingsPage.qml:143
+#: ../Pages/SettingsPage.qml:142
 msgctxt "SettingsPage|"
 msgid "System Tray:"
 msgstr "Safata del sistema:"
 
-#: ../Pages/SettingsPage.qml:156
+#: ../Pages/SettingsPage.qml:155
 msgctxt "SettingsPage|"
 msgid "Open Quick Notes Editor on Click"
 msgstr "Obre l'editor de notes ràpides en fer clic"
@@ -2417,7 +2419,7 @@ msgctxt "ApplicationToolBarActions|"
 msgid "Set Progress"
 msgstr "Defineix el progrés"
 
-#: ../Pages/SettingsPage.qml:188
+#: ../Pages/SettingsPage.qml:187
 msgctxt "SettingsPage|"
 msgid "Desktop Mode"
 msgstr "Mode d'escriptori"
@@ -2493,102 +2495,102 @@ msgid "Copy of"
 msgstr ""
 
 #: ../Pages/EditDropboxAccountPage.qml:27
-#: ../Pages/EditDropboxAccountPage.qml:67
+#: ../Pages/EditDropboxAccountPage.qml:66
 msgctxt "EditDropboxAccountPage|"
 msgid "Connection Settings"
 msgstr ""
 
-#: ../Pages/EditDropboxAccountPage.qml:75
+#: ../Pages/EditDropboxAccountPage.qml:74
 msgctxt "EditDropboxAccountPage|"
 msgid "Trouble Signing In?"
 msgstr ""
 
-#: ../Pages/EditDropboxAccountPage.qml:86
+#: ../Pages/EditDropboxAccountPage.qml:85
 msgctxt "EditDropboxAccountPage|"
 msgid "We have tried to open your browser to log you in to your Dropbox account. Please log in and grant access to OpenTodoList in order to proceed."
 msgstr ""
 
-#: ../Pages/EditDropboxAccountPage.qml:93
+#: ../Pages/EditDropboxAccountPage.qml:92
 msgctxt "EditDropboxAccountPage|"
 msgid "Didn't your browser open? You can retry opening it or copy the required URL manually to your browser."
 msgstr ""
 
-#: ../Pages/EditDropboxAccountPage.qml:97
+#: ../Pages/EditDropboxAccountPage.qml:96
 msgctxt "EditDropboxAccountPage|"
 msgid "Authorize..."
 msgstr ""
 
-#: ../Pages/EditDropboxAccountPage.qml:106
+#: ../Pages/EditDropboxAccountPage.qml:105
 msgctxt "EditDropboxAccountPage|"
 msgid "Open Browser"
 msgstr ""
 
-#: ../Pages/EditDropboxAccountPage.qml:112
+#: ../Pages/EditDropboxAccountPage.qml:111
 msgctxt "EditDropboxAccountPage|"
 msgid "Copy Link"
 msgstr ""
 
-#: ../Pages/EditDropboxAccountPage.qml:116
+#: ../Pages/EditDropboxAccountPage.qml:115
 msgctxt "EditDropboxAccountPage|"
 msgid "Copied!"
 msgstr ""
 
-#: ../Pages/EditDropboxAccountPage.qml:125
+#: ../Pages/EditDropboxAccountPage.qml:124
 msgctxt "EditDropboxAccountPage|"
 msgid "Name:"
 msgstr ""
 
-#: ../Pages/EditDropboxAccountPage.qml:132
+#: ../Pages/EditDropboxAccountPage.qml:131
 msgctxt "EditDropboxAccountPage|"
 msgid "Dropbox"
 msgstr ""
 
-#: ../Pages/NewDropboxAccountPage.qml:21 ../Pages/NewDropboxAccountPage.qml:55
+#: ../Pages/NewDropboxAccountPage.qml:21 ../Pages/NewDropboxAccountPage.qml:54
 msgctxt "NewDropboxAccountPage|"
 msgid "Connection Settings"
 msgstr ""
 
-#: ../Pages/NewDropboxAccountPage.qml:63
+#: ../Pages/NewDropboxAccountPage.qml:62
 msgctxt "NewDropboxAccountPage|"
 msgid "Trouble Signing In?"
 msgstr ""
 
-#: ../Pages/NewDropboxAccountPage.qml:74
+#: ../Pages/NewDropboxAccountPage.qml:73
 msgctxt "NewDropboxAccountPage|"
 msgid "We have tried to open your browser to log you in to your Dropbox account. Please log in and grant access to OpenTodoList in order to proceed."
 msgstr ""
 
-#: ../Pages/NewDropboxAccountPage.qml:81
+#: ../Pages/NewDropboxAccountPage.qml:80
 msgctxt "NewDropboxAccountPage|"
 msgid "Didn't your browser open? You can retry opening it or copy the required URL manually to your browser."
 msgstr ""
 
-#: ../Pages/NewDropboxAccountPage.qml:87
+#: ../Pages/NewDropboxAccountPage.qml:86
 msgctxt "NewDropboxAccountPage|"
 msgid "Authorize..."
 msgstr ""
 
-#: ../Pages/NewDropboxAccountPage.qml:96
+#: ../Pages/NewDropboxAccountPage.qml:95
 msgctxt "NewDropboxAccountPage|"
 msgid "Open Browser"
 msgstr ""
 
-#: ../Pages/NewDropboxAccountPage.qml:102
+#: ../Pages/NewDropboxAccountPage.qml:101
 msgctxt "NewDropboxAccountPage|"
 msgid "Copy Link"
 msgstr ""
 
-#: ../Pages/NewDropboxAccountPage.qml:106
+#: ../Pages/NewDropboxAccountPage.qml:105
 msgctxt "NewDropboxAccountPage|"
 msgid "Copied!"
 msgstr ""
 
-#: ../Pages/NewDropboxAccountPage.qml:115
+#: ../Pages/NewDropboxAccountPage.qml:114
 msgctxt "NewDropboxAccountPage|"
 msgid "Name:"
 msgstr ""
 
-#: ../Pages/NewDropboxAccountPage.qml:122
+#: ../Pages/NewDropboxAccountPage.qml:121
 msgctxt "NewDropboxAccountPage|"
 msgid "Dropbox"
 msgstr ""
@@ -2603,7 +2605,7 @@ msgctxt "EmbeddedWebViewDialog|"
 msgid "Loading..."
 msgstr ""
 
-#: ../Pages/SettingsPage.qml:283
+#: ../Pages/SettingsPage.qml:282
 msgctxt "SettingsPage|"
 msgid "Show notes excerpt in listings"
 msgstr ""
@@ -2713,7 +2715,7 @@ msgctxt "ProblemsPage|"
 msgid "Retry Sync"
 msgstr ""
 
-#: ../Pages/SettingsPage.qml:148
+#: ../Pages/SettingsPage.qml:147
 msgctxt "SettingsPage|"
 msgid "Monochrome Icon"
 msgstr ""
