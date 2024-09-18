@@ -8,8 +8,8 @@ cd ..
 
 if [ -n "$CI" ]; then
     dnf install -y \
-        qt5-qtbase-devel \
-        qt5-linguist \
+        qt6-qtbase-devel \
+        qt6-linguist \
         python3 \
         python3-pip \
         openssh-clients \
@@ -27,7 +27,7 @@ pip3 install poeditor fire
 python3 ./bin/poeditor-client.py download $POEDITOR_TOKEN app/translations
 
 if [ -z "$QT_PATH" ]; then
-    QT_PATH=/usr/lib64/qt5/bin
+    QT_PATH=/usr/lib64/qt6/bin
     OS=$(uname -s)
     if [ $OS == "Darwin" ]; then
         QT_PATH=$(echo $HOME/Qt/*/macos/bin | sort --version-sort | tail -n1)
