@@ -1,5 +1,5 @@
 import QtQuick 2.10
-import QtQuick.Controls 2.3 as QQC2
+import QtQuick.Controls as QQC2
 
 import "../Utils" as Utils
 
@@ -9,9 +9,9 @@ QQC2.ToolTip {
     visible: {
         if (Utils.AppSettings.desktopMode) {
             if (parent && parent.hovered !== undefined) {
-                return parent.hovered;
+                return parent.hovered
             }
         }
-        return false;
+        return false
     }
 }

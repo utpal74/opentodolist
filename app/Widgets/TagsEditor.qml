@@ -78,7 +78,7 @@ Column {
         spacing: AppSettings.smallSpace
 
         Repeater {
-            model: editor.item.tags
+            model: editor.item?.tags ?? []
             delegate: C.Frame {
                 leftPadding: 10
                 rightPadding: 0

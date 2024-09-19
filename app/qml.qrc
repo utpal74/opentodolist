@@ -173,5 +173,7 @@
         <file>Controls/ProgressBar.qml</file>
         <file>Windows/StackViewWindow.qml</file>
         <file>Utils/DeepLinkHandler.qml</file>
+        <file>Components/Tooltips/ActionableToolTip.qml</file>
+        <file>Controls/Overlay.qml</file>
     </qresource>
 </RCC>

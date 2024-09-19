@@ -142,7 +142,7 @@ ItemPage {
         id: moveTodoAction
         library: page.library
         item: page.item
-        itemUtils: page.C.ApplicationWindow.window.itemUtils
+        itemUtils: page.C.ApplicationWindow.window?.itemUtils ?? null
     }
 
     Actions.SetManualProgressAction {
@@ -203,7 +203,6 @@ ItemPage {
 
             width: scrollView.contentItem.width
             implicitWidth: childrenRect.width
-            implicitHeight: childrenRect.height
             itemsModel: tasks
             title: qsTr("Tasks")
             library: page.library
@@ -278,7 +277,7 @@ ItemPage {
 
     PullToRefreshOverlay {
         anchors.fill: scrollView
-        refreshEnabled: page.library.hasSynchronizer
+        refreshEnabled: page.library?.hasSynchronizer ?? false
         flickable: todosWidget
         onRefresh: OTL.Application.syncLibrary(page.library)
     }
@@ -321,7 +320,7 @@ ItemPage {
     Actions.CopyTodo {
         id: copyTodoAction
         item: page.item
-        itemUtils: page.C.ApplicationWindow.window.itemUtils
+        itemUtils: page.C.ApplicationWindow.window?.itemUtils ?? null
     }
 
     Connections {

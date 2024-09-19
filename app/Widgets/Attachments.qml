@@ -68,7 +68,7 @@ Item {
 
         level: 2
         text: qsTr("Attachments")
-        visible: item.item.attachments.length > 0
+        visible: item.item?.attachments.length > 0 ?? false
     }
 
     Column {
@@ -78,7 +78,7 @@ Item {
             top: header.bottom
         }
         Repeater {
-            model: item.item.attachments
+            model: item.item?.attachments ?? []
             delegate: MouseArea {
                 width: parent.width
                 height: childrenRect.height

@@ -102,7 +102,7 @@ ItemPage {
 
     restoreUrl: Qt.resolvedUrl("./TodoListPage.qml")
 
-    title: Markdown.markdownToPlainText(item.title)
+    title: Markdown.markdownToPlainText(item?.title ?? "")
     topLevelItem: item
 
     QtObject {
@@ -156,7 +156,7 @@ ItemPage {
         groupDone: AppSettings.todoListPageSettings.groupDone
         sourceModel: OTL.ItemsModel {
             cache: OTL.Application.cache
-            parentItem: page.item.uid
+            parentItem: page.item?.uid ?? ""
             searchString: filterBar.text
             onlyUndone: !AppSettings.todoListPageSettings.showUndone
         }
@@ -249,7 +249,6 @@ ItemPage {
             width: scrollView.availableWidth
             height: scrollView.availableHeight
             contentWidth: scrollView.availableWidth
-            contentHeight: contentItem.childrenRect.height
             itemsModel: todosModel
             library: page.library
             title: qsTr("Todos")
@@ -298,8 +297,8 @@ ItemPage {
                 spacing: AppSettings.smallSpace
 
                 ItemPageHeader {
-                    counter: page.item.numDoneTodos
-                    total: page.item.numTodos
+                    counter: page.item?.numDoneTodos ?? 0
+                    total: page.item?.numTodos ?? 0
                     item: page.item
                 }
 
@@ -377,7 +376,7 @@ ItemPage {
     Actions.CopyTopLevelItem {
         id: copyTopLevelItemAction
         item: page.item
-        itemUtils: page.C.ApplicationWindow.window.itemUtils
+        itemUtils: page.C.ApplicationWindow.window?.itemUtils ?? null
     }
 
     Connections {

@@ -197,7 +197,7 @@ ItemPage {
     Actions.CopyTopLevelItem {
         id: copyTopLevelItemAction
         item: page.item
-        itemUtils: page.C.ApplicationWindow.window.itemUtils
+        itemUtils: page.C.ApplicationWindow.window?.itemUtils ?? null
     }
 
     Connections {
