@@ -14,12 +14,12 @@ Column {
 
     property OTL.ComplexItem item: null
 
-    visible: DateUtils.validDate(item.dueTo)
+    visible: DateUtils.validDate(item?.dueTo)
 
     QtObject {
         id: d
 
-        property bool validDate: DateUtils.validDate(root.item.dueTo)
+        property bool validDate: DateUtils.validDate(root.item?.dueTo)
     }
 
     C.ItemDelegate {
@@ -29,7 +29,7 @@ Column {
 
         contentItem: Heading {
             level: 2
-            text: qsTr("Due on") + " " + root.item.effectiveDueTo.toLocaleDateString()
+            text: qsTr("Due on") + " " + root.item?.effectiveDueTo.toLocaleDateString()
             wrapMode: "WrapAtWordBoundaryOrAnywhere"
             Layout.fillWidth: true
 
@@ -61,13 +61,13 @@ Column {
         id: firstDueItem
 
         width: parent.width
-        visible: root.item.isRecurring
+        visible: root.item?.isRecurring ?? false
         enabled: false
 
         contentItem: C.Label {
             text: {
                 let result = ""
-                if (root.item.isRecurring) {
+                if (root.item?.isRecurring) {
                     result = qsTr("First due on %1.").arg(
                                 root.item.dueTo.toLocaleDateString())
                 }
@@ -85,7 +85,7 @@ Column {
 
         contentItem: C.Label {
             text: {
-                switch (root.item.recurrencePattern) {
+                switch (root.item?.recurrencePattern) {
                 case OTL.ComplexItem.NoRecurrence:
                     return qsTr("No recurrence pattern set...")
                 case OTL.ComplexItem.RecurDaily:
@@ -107,7 +107,7 @@ Column {
                                 root.item.recurInterval)
                 default:
                     console.warn("Warning: Unhandled recurrence pattern",
-                                 root.item.recurrencePattern)
+                                 root.item?.recurrencePattern)
                     return ""
                 }
             }
@@ -136,11 +136,11 @@ Column {
         id: recurUntilItem
 
         width: parent.width
-        visible: root.item.isRecurring
+        visible: root.item?.isRecurring ?? false
 
         contentItem: C.Label {
             text: {
-                if (DateUtils.validDate(root.item.recurUntil)) {
+                if (DateUtils.validDate(root.item?.recurUntil)) {
                     return qsTr("Recurs until %1.").arg(
                                 root.item.recurUntil.toLocaleDateString())
                 } else {

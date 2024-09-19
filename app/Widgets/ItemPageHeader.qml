@@ -18,7 +18,7 @@ Item {
     Heading {
         id: pageHeading
         text: Markdown.markdownToHtml(
-                  "%1%2".arg(root.item.title).arg(
+                  "%1%2".arg(root.item?.title).arg(
                       root.total > 0 ? " (%1/%2)".arg(root.counter).arg(
                                            root.total) : ""))
         width: parent.width

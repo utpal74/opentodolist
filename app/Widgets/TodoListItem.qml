@@ -100,8 +100,9 @@ MouseArea {
                 interactive: false
                 clip: true
                 model: OTL.ItemsSortFilterModel {
-                    sortRole: item.C.ApplicationWindow.window.itemUtils.todosSortRoleFromString(
+                    sortRole: item.C.ApplicationWindow.window?.itemUtils.todosSortRoleFromString(
                                   AppSettings.todoListPageSettings.sortTodosBy)
+                              ?? OTL.ItemsModel.TitleRole
                     sourceModel: OTL.ItemsModel {
                         cache: OTL.Application.cache
                         parentItem: item.libraryItem.uid
