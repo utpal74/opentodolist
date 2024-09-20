@@ -36,13 +36,9 @@ ActionableToolTip {
         target: tooltip.item
 
         function onNumDoneTodosChanged() {
-            console.log("!!")
             let item = tooltip.item
-            console.log(item, item?.numTodos, item?.numDoneTodos,
-                        item?.canBeMarkedAsDone())
             if (item.numTodos === item.numDoneTodos
                     && item.canBeMarkedAsDone()) {
-                console.log("!!!")
                 tooltip.visible = true
             }
         }
