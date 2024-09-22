@@ -114,17 +114,17 @@
 <context>
     <name>AllSubtasksDone</name>
     <message>
-        <location filename="../Components/Tooltips/AllSubtasksDone.qml" line="25"/>
+        <location filename="../Components/Tooltips/AllSubtasksDone.qml" line="13"/>
         <source>Everything in %1 done! Do you want to mark it as well as done?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Components/Tooltips/AllSubtasksDone.qml" line="38"/>
+        <location filename="../Components/Tooltips/AllSubtasksDone.qml" line="20"/>
         <source>Mark as Done</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Components/Tooltips/AllSubtasksDone.qml" line="48"/>
+        <location filename="../Components/Tooltips/AllSubtasksDone.qml" line="30"/>
         <source>Keep Open</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1158,17 +1158,17 @@
 <context>
     <name>MarkFutureInstanceAsDone</name>
     <message>
-        <location filename="../Components/Tooltips/MarkFutureInstanceAsDone.qml" line="26"/>
+        <location filename="../Components/Tooltips/MarkFutureInstanceAsDone.qml" line="13"/>
         <source>%1 is scheduled for the future - do you want to mark that future instance as done?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Components/Tooltips/MarkFutureInstanceAsDone.qml" line="39"/>
+        <location filename="../Components/Tooltips/MarkFutureInstanceAsDone.qml" line="20"/>
         <source>Mark as Done</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Components/Tooltips/MarkFutureInstanceAsDone.qml" line="49"/>
+        <location filename="../Components/Tooltips/MarkFutureInstanceAsDone.qml" line="29"/>
         <source>Keep Open</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2136,7 +2136,7 @@ Wymaga restartu aplikacji.</translation>
 <context>
     <name>TodoListItem</name>
     <message>
-        <location filename="../Widgets/TodoListItem.qml" line="132"/>
+        <location filename="../Widgets/TodoListItem.qml" line="133"/>
         <source>✔ No open todos - everything done</source>
         <translation>✔ Żadnych otwartych spraw - wszystko zrobione</translation>
     </message>
@@ -2154,12 +2154,12 @@ Wymaga restartu aplikacji.</translation>
         <translation>Wyszukiwanie terminu 1, wyszukiwania terminu 2, ...</translation>
     </message>
     <message>
-        <location filename="../Pages/TodoListPage.qml" line="255"/>
+        <location filename="../Pages/TodoListPage.qml" line="254"/>
         <source>Todos</source>
         <translation>Do zrobienia</translation>
     </message>
     <message>
-        <location filename="../Pages/TodoListPage.qml" line="275"/>
+        <location filename="../Pages/TodoListPage.qml" line="274"/>
         <source>Add new todo...</source>
         <translation>Dodaj nowe do zrobienia...</translation>
     </message>
@@ -2207,22 +2207,22 @@ Wymaga restartu aplikacji.</translation>
         <translation>Wyszukiwanie terminu 1, wyszukiwania terminu 2, ...</translation>
     </message>
     <message>
-        <location filename="../Pages/TodoPage.qml" line="208"/>
+        <location filename="../Pages/TodoPage.qml" line="207"/>
         <source>Tasks</source>
         <translation>Zadania</translation>
     </message>
     <message>
-        <location filename="../Pages/TodoPage.qml" line="214"/>
+        <location filename="../Pages/TodoPage.qml" line="213"/>
         <source>Add new task...</source>
         <translation>Dodaj nowe zadanie...</translation>
     </message>
     <message>
-        <location filename="../Pages/TodoPage.qml" line="305"/>
+        <location filename="../Pages/TodoPage.qml" line="304"/>
         <source>Show Completed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Pages/TodoPage.qml" line="312"/>
+        <location filename="../Pages/TodoPage.qml" line="311"/>
         <source>Show At The End</source>
         <translation type="unfinished"></translation>
     </message>
