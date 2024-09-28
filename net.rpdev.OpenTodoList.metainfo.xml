@@ -28,8 +28,8 @@
 
   <!-- Used for backgrounds in Flathub and other store apps: -->
   <branding>
-    <color type="primary" scheme_preference="light">#dbd9db</color>
-    <color type="primary" scheme_preference="dark">#484b5b</color>
+    <color type="primary" scheme_preference="light">#F4F1DE</color>
+    <color type="primary" scheme_preference="dark">#272932</color>
   </branding>
 
   <screenshots>

@@ -27,6 +27,7 @@
 #include <QMutexLocker>
 #include <QVariantList>
 #include <QVariantMap>
+#include <QGuiApplication>
 
 static Q_LOGGING_CATEGORY(log, "OpenTodoList.Colors", QtDebugMsg);
 
@@ -80,6 +81,12 @@ const QString& Color::name() const
 Colors::Colors(QObject* parent) : QObject { parent }
 {
     qRegisterMetaType<QList<Color>>();
+    if (qGuiApp) {
+        m_styleHints = qGuiApp->styleHints();
+        connect(m_styleHints, &QStyleHints::colorSchemeChanged, this,
+                &Colors::systemUsesDarkThemeChanged);
+        ;
+    }
 }
 
 /**
@@ -159,4 +166,15 @@ QList<Color> Colors::loadColors() const
         result = loadQtColors();
     }
     return result;
+}
+
+/**
+ * @brief Indicates if the system uses a dark color scheme.
+ */
+bool Colors::systemUsesDarkTheme() const
+{
+    if (m_styleHints) {
+        return m_styleHints->colorScheme() == Qt::ColorScheme::Dark;
+    }
+    return false;
 }

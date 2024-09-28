@@ -22,6 +22,9 @@
 
 #include <QObject>
 #include <QColor>
+#include <QPalette>
+#include <QStyleHints>
+#include <QPointer>
 
 class Color
 {
@@ -47,12 +50,23 @@ private:
 class Colors : public QObject
 {
     Q_OBJECT
+    Q_PROPERTY(bool systemUsesDarkTheme READ systemUsesDarkTheme NOTIFY systemUsesDarkThemeChanged
+                       FINAL)
 public:
     explicit Colors(QObject* parent = nullptr);
 
     Q_INVOKABLE QList<Color> loadRALColors() const;
     Q_INVOKABLE QList<Color> loadQtColors() const;
     Q_INVOKABLE QList<Color> loadColors() const;
+
+    bool systemUsesDarkTheme() const;
+
+signals:
+
+    void systemUsesDarkThemeChanged();
+
+private:
+    QPointer<QStyleHints> m_styleHints;
 };
 
 Q_DECLARE_METATYPE(Color);

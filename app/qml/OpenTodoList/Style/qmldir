@@ -1,0 +1,27 @@
+module Style
+
+import QtQuick.Controls.Basic
+
+singleton ColorTheme 1.0 ColorTheme.qml
+singleton Fonts 1.0 Fonts.qml
+singleton Icons 1.0 Icons.qml
+singleton StyleSettings 1.0 StyleSettings.qml
+
+Action 1.0 Action.qml
+ApplicationWindow 1.0 ApplicationWindow.qml
+Button 1.0 Button.qml
+DropShadow 1.0 DropShadow.qml
+ErrorLabel 1.0 ErrorLabel.qml
+Label 1.0 Label.qml
+Menu 1.0 Menu.qml
+MenuItem 1.0 MenuItem.qml
+Page 1.0 Page.qml
+PasswordField 1.0 PasswordField.qml
+RoundButton 1.0 RoundButton.qml
+StackView 1.0 StackView.qml
+Symbol 1.0 Symbol.qml
+TextArea 1.0 TextArea.qml
+TextField 1.0 TextField.qml
+ToolBar 1.0 ToolBar.qml
+ToolButton 1.0 ToolButton.qml
+ToolTip 1.0 ToolTip.qml

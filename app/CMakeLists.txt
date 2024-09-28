@@ -13,7 +13,7 @@ if(WIN32)
 endif()
 
 set(APP_RESOURCES
-    ./qml.qrc
+    ./qml/qml.qrc
     ./res.qrc
 )
 
@@ -34,7 +34,8 @@ if(APPLE)
 endif()
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(OpenTodoList ${APP_FLAGS} ${PROJECT_SOURCES} ${APP_RESOURCES})
+    qt_add_executable(OpenTodoList ${APP_FLAGS} ${PROJECT_SOURCES} ${APP_RESOURCES}
+        )
 
     # Include Assets and special config for iOS
     if(IOS)
@@ -188,7 +189,7 @@ if(APPLE)
                 string(REPLACE "." ";" _ts_name "${_ts_name}")
                 list(GET _ts_name 1 _ts_lang)
                 add_custom_command(
-                    TARGET OpenTodoList 
+                    TARGET OpenTodoList
                     POST_BUILD
                     COMMAND
                         ${CMAKE_COMMAND} -E make_directory "$<TARGET_BUNDLE_DIR:OpenTodoList>/Contents/Resources/${_ts_lang}.lproj"
@@ -204,7 +205,7 @@ if(APPLE)
             get_filename_component(_qt_dir "${_qt_bin_dir}" DIRECTORY)
             file(GLOB _qm_files ${_qt_dir}/translations/qt*.qm)
             add_custom_command(
-                TARGET OpenTodoList 
+                TARGET OpenTodoList
                 POST_BUILD
                 COMMAND
                     ${CMAKE_COMMAND} -E make_directory "$<TARGET_BUNDLE_DIR:OpenTodoList>/Contents/translations"
@@ -348,11 +349,30 @@ install(
     DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
-set(QML_IMPORT_PATH ${CMAKE_CURRENT_SOURCE_DIR}
+set(QML_IMPORT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/qml
     CACHE PATH "QML search path for project local files")
 
 if (ANDROID)
     set(Qt6_VERSION "${QT_VERSION}")
     set(CMAKE_ANDROID_ARCH_ABI "${ANDROID_ABI}")
     add_android_openssl_libraries(OpenTodoList)
+endif()
+
+
+# Add Gallery example:
+if(NOT ANDROID AND NOT IOS)
+    qt_add_executable(gallery gallery.cpp)
+    target_link_libraries(
+        gallery
+        PRIVATE
+            Qt::Gui
+            Qt::Qml
+            Qt::Quick
+            opentodolist-common
+    )
+    target_compile_definitions(
+        gallery
+        PRIVATE
+            SOURCE_DIR="${CMAKE_CURRENT_SOURCE_DIR}"
+    )
 endif()

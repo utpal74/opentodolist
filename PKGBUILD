@@ -6,8 +6,8 @@ pkgdesc="Maintain todo lists, notes and images in libraries, which can be synced
 arch=('x86_64')
 url="https://opentodolist.rpdev.net/"
 license=('GPL')
-depends=('qt6-base' 'qt6-quickcontrols2' 'qt6-remoteobjects' 'qt6-networkauth' 'libsecret' 'ttf-roboto' 'noto-fonts' 'qtkeychain-qt6')
-makedepends=('git' 'cmake' 'ninja' 'qt6-tools')
+depends=('qt6-base' 'qt6-declarative' 'qt6-remoteobjects' 'qt6-networkauth' 'libsecret' 'ttf-roboto' 'noto-fonts' 'qtkeychain-qt6')
+makedepends=('git' 'git-lfs' 'cmake' 'ninja' 'qt6-tools')
 provides=("${pkgname%}")
 conflicts=("${pkgname%}")
 source=("${pkgname}::git+https://gitlab.com/rpdev/opentodolist.git#commit=${pkgver}")
