@@ -9,17 +9,17 @@ msgstr ""
 "Project-Id-Version: OpenTodoList\n"
 "Language: zh-CN\n"
 
-#: ../Pages/AboutPage.qml:15
+#: ../qml/Pages/AboutPage.qml:15
 msgctxt "AboutPage|"
 msgid "About..."
 msgstr "关于..."
 
-#: ../Pages/AboutPage.qml:33
+#: ../qml/Pages/AboutPage.qml:33
 msgctxt "AboutPage|"
 msgid "OpenTodoList"
 msgstr "OpenTodoList"
 
-#: ../Pages/AboutPage.qml:40
+#: ../qml/Pages/AboutPage.qml:40
 msgctxt "AboutPage|"
 msgid "A todo and task managing application."
 msgstr "一个待办事项和任务管理应用。"
@@ -69,87 +69,87 @@ msgctxt "Attachments|"
 msgid "Attachments"
 msgstr "附件"
 
-#: ../Menues/ColorMenu.qml:15
+#: ../qml/Menues/ColorMenu.qml:15
 msgctxt "ColorMenu|"
 msgid "Color"
 msgstr "颜色"
 
-#: ../Menues/ColorMenu.qml:19
+#: ../qml/Menues/ColorMenu.qml:19
 msgctxt "ColorMenu|"
 msgid "White"
 msgstr "白"
 
-#: ../Menues/ColorMenu.qml:26
+#: ../qml/Menues/ColorMenu.qml:26
 msgctxt "ColorMenu|"
 msgid "Red"
 msgstr "红"
 
-#: ../Menues/ColorMenu.qml:33
+#: ../qml/Menues/ColorMenu.qml:33
 msgctxt "ColorMenu|"
 msgid "Green"
 msgstr "绿"
 
-#: ../Menues/ColorMenu.qml:40
+#: ../qml/Menues/ColorMenu.qml:40
 msgctxt "ColorMenu|"
 msgid "Blue"
 msgstr "蓝"
 
-#: ../Menues/ColorMenu.qml:47
+#: ../qml/Menues/ColorMenu.qml:47
 msgctxt "ColorMenu|"
 msgid "Yellow"
 msgstr "黄"
 
-#: ../Menues/ColorMenu.qml:54
+#: ../qml/Menues/ColorMenu.qml:54
 msgctxt "ColorMenu|"
 msgid "Orange"
 msgstr "橙"
 
-#: ../Menues/ColorMenu.qml:61
+#: ../qml/Menues/ColorMenu.qml:61
 msgctxt "ColorMenu|"
 msgid "Lilac"
 msgstr "紫"
 
-#: ../Windows/DeleteItemDialog.qml:19
+#: ../qml/Windows/DeleteItemDialog.qml:18
 msgctxt "DeleteItemDialog|"
 msgid "Delete Item?"
 msgstr "删除项目？"
 
-#: ../Windows/DeleteItemDialog.qml:32
+#: ../qml/Windows/DeleteItemDialog.qml:31
 msgctxt "DeleteItemDialog|"
 msgid "Do you really want to delete the image <strong>%1</strong>? This cannot be undone."
 msgstr "您是否真的要删除图像<strong>%1</strong>？这不能被撤消。"
 
-#: ../Windows/DeleteItemDialog.qml:36
+#: ../qml/Windows/DeleteItemDialog.qml:35
 msgctxt "DeleteItemDialog|"
 msgid "Do you really want to delete the todo list <strong>%1</strong>? This cannot be undone."
 msgstr "您是否真的要删除待办事项列表<strong>%1</strong>？这不能被撤消。"
 
-#: ../Windows/DeleteItemDialog.qml:40
+#: ../qml/Windows/DeleteItemDialog.qml:40
 msgctxt "DeleteItemDialog|"
 msgid "Do you really want to delete the todo <strong>%1</strong>? This cannot be undone."
 msgstr "您是否真的要删除待办事项<strong>%1</strong>？这不能被撤消。"
 
-#: ../Windows/DeleteItemDialog.qml:44
+#: ../qml/Windows/DeleteItemDialog.qml:43
 msgctxt "DeleteItemDialog|"
 msgid "Do you really want to delete the task <strong>%1</strong>? This cannot be undone."
 msgstr "您是否真的要删除任务<strong>%1</strong>？这不能被撤消。"
 
-#: ../Windows/DeleteItemDialog.qml:48
+#: ../qml/Windows/DeleteItemDialog.qml:46
 msgctxt "DeleteItemDialog|"
 msgid "Do you really want to delete the note <strong>%1</strong>? This cannot be undone."
 msgstr "您是否真的要删除笔记 <strong>%1</strong>？这不能被撤消。"
 
-#: ../Windows/DeleteLibraryDialog.qml:19
+#: ../qml/Windows/DeleteLibraryDialog.qml:18
 msgctxt "DeleteLibraryDialog|"
 msgid "Delete Library?"
 msgstr "删除资料库？"
 
-#: ../Windows/DeleteLibraryDialog.qml:33
+#: ../qml/Windows/DeleteLibraryDialog.qml:32
 msgctxt "DeleteLibraryDialog|"
 msgid "Do you really want to remove the library <strong>%1</strong> from  the application? <em>This will remove any files belonging to the library.</em>"
 msgstr "您是否真的要从应用程序中删除资料库<strong>%1</strong>？ <em>这将删除该资料库中的所有文件。</em>"
 
-#: ../Windows/DeleteLibraryDialog.qml:40
+#: ../qml/Windows/DeleteLibraryDialog.qml:38
 msgctxt "DeleteLibraryDialog|"
 msgid "Do you really want to remove the library <strong>%1</strong> from the application? Note that the files inside the library will not be removed, so you can restore the library later on."
 msgstr "您是否真的要从应用程序中删除资料库<strong>%1</strong>？请注意，库中的文件不会被删除，因此您以后可以还原该库。"
@@ -159,12 +159,12 @@ msgctxt "FolderSelectionDialog|"
 msgid "Select a Folder"
 msgstr "选择一个文件夹"
 
-#: ../Widgets/ItemCreatedNotification.qml:66
+#: ../qml/Widgets/ItemCreatedNotification.qml:68
 msgctxt "ItemCreatedNotification|"
 msgid "<strong>%1</strong> has been created."
 msgstr "<strong>%1</strong>已创建。"
 
-#: ../Widgets/ItemCreatedNotification.qml:72
+#: ../qml/Widgets/ItemCreatedNotification.qml:74
 msgctxt "ItemCreatedNotification|"
 msgid "Open"
 msgstr "打开"
@@ -289,7 +289,7 @@ msgctxt "LibrarySecretsMissingNotificationBar|"
 msgid "Enter Secrets"
 msgstr "输入密钥"
 
-#: ../Pages/LogViewPage.qml:14
+#: ../qml/Pages/LogViewPage.qml:13
 msgctxt "LogViewPage|"
 msgid "Synchronization Log"
 msgstr "同步日志"
@@ -349,7 +349,7 @@ msgctxt "MainWindow|"
 msgid "Start by <a href='#newLibrary'>creating a new library</a>. Libraries are used to store different kinds of items like notes, todo lists and images."
 msgstr "首先<a href='#newLibrary'>创建一个新资料库</a>。资料库用于存储各种项目，例如笔记、待办事项列表和图像。"
 
-#: ../Pages/NewLibraryPage.qml:23 ../Pages/NewLibraryPage.qml:63
+#: ../qml/Pages/NewLibraryPage.qml:22 ../qml/Pages/NewLibraryPage.qml:62
 msgctxt "NewLibraryPage|"
 msgid "Create Library"
 msgstr "创建资料库"
@@ -394,17 +394,17 @@ msgctxt "NewLibraryPage|"
 msgid "Please select a library location"
 msgstr "请选择资料库位置"
 
-#: ../Widgets/NewTopLevelItemButton.qml:54
+#: ../qml/Widgets/NewTopLevelItemButton.qml:52
 msgctxt "NewTopLevelItemButton|"
 msgid "Note"
 msgstr "笔记"
 
-#: ../Widgets/NewTopLevelItemButton.qml:43
+#: ../qml/Widgets/NewTopLevelItemButton.qml:41
 msgctxt "NewTopLevelItemButton|"
 msgid "Todo List"
 msgstr "待办事项清单"
 
-#: ../Widgets/NewTopLevelItemButton.qml:58
+#: ../qml/Widgets/NewTopLevelItemButton.qml:56
 msgctxt "NewTopLevelItemButton|"
 msgid "Image"
 msgstr "图片"
@@ -419,72 +419,72 @@ msgctxt "OpenImageDialog|"
 msgid "Select Image"
 msgstr "选择图片"
 
-#: ../Windows/RenameItemDialog.qml:22
+#: ../qml/Windows/RenameItemDialog.qml:21
 msgctxt "RenameItemDialog|"
 msgid "Rename Item"
 msgstr "重命名项目"
 
-#: ../Windows/RenameItemDialog.qml:33
+#: ../qml/Windows/RenameItemDialog.qml:32
 msgctxt "RenameItemDialog|"
 msgid "Enter item title..."
 msgstr "输入项目标题..."
 
-#: ../Windows/RenameLibraryDialog.qml:20
+#: ../qml/Windows/RenameLibraryDialog.qml:19
 msgctxt "RenameLibraryDialog|"
 msgid "Rename Library"
 msgstr "重命名资料库"
 
-#: ../Windows/RenameLibraryDialog.qml:37
+#: ../qml/Windows/RenameLibraryDialog.qml:36
 msgctxt "RenameLibraryDialog|"
 msgid "Enter library title..."
 msgstr "输入资料库标题..."
 
-#: ../Pages/ScheduleViewPage.qml:148
+#: ../qml/Pages/ScheduleViewPage.qml:147
 msgctxt "ScheduleViewPage|"
 msgid "Today"
 msgstr "今天"
 
-#: ../Pages/ScheduleViewPage.qml:149
+#: ../qml/Pages/ScheduleViewPage.qml:148
 msgctxt "ScheduleViewPage|"
 msgid "Tomorrow"
 msgstr "明天"
 
-#: ../Pages/ScheduleViewPage.qml:185
+#: ../qml/Pages/ScheduleViewPage.qml:184
 msgctxt "ScheduleViewPage|"
 msgid "Later This Week"
 msgstr "本周晚些时候"
 
-#: ../Pages/ScheduleViewPage.qml:187
+#: ../qml/Pages/ScheduleViewPage.qml:186
 msgctxt "ScheduleViewPage|"
 msgid "Next Week"
 msgstr "下周"
 
-#: ../Pages/ScheduleViewPage.qml:188
+#: ../qml/Pages/ScheduleViewPage.qml:187
 msgctxt "ScheduleViewPage|"
 msgid "Coming Next"
 msgstr "下一步"
 
-#: ../Pages/ScheduleViewPage.qml:267
+#: ../qml/Pages/ScheduleViewPage.qml:266
 msgctxt "ScheduleViewPage|"
 msgid "Nothing scheduled... Add a due date to items for them to appear here."
 msgstr "尚未安排任何时间...在项目中添加截止日期，以便它们出现在此处。"
 
-#: ../Pages/ScheduleViewPage.qml:124
+#: ../qml/Pages/ScheduleViewPage.qml:123
 msgctxt "ScheduleViewPage|"
 msgid "Overdue"
 msgstr "逾期"
 
-#: ../Widgets/SyncErrorNotificationBar.qml:43
+#: ../qml/Widgets/SyncErrorNotificationBar.qml:42
 msgctxt "SyncErrorNotificationBar|"
 msgid "There were errors when synchronizing the library. Please ensure that the library settings are up to date."
 msgstr "同步资料库时出错。请确保资料库设置是最新的。"
 
-#: ../Widgets/SyncErrorNotificationBar.qml:49
+#: ../qml/Widgets/SyncErrorNotificationBar.qml:48
 msgctxt "SyncErrorNotificationBar|"
 msgid "Ignore"
 msgstr "忽略"
 
-#: ../Widgets/SyncErrorNotificationBar.qml:53
+#: ../qml/Widgets/SyncErrorNotificationBar.qml:52
 msgctxt "SyncErrorNotificationBar|"
 msgid "View"
 msgstr "视图"
@@ -581,17 +581,17 @@ msgctxt "TodoPage|"
 msgid "Tasks"
 msgstr "任务"
 
-#: ../Widgets/UpdateNotificationBar.qml:44
+#: ../qml/Widgets/UpdateNotificationBar.qml:44
 msgctxt "UpdateNotificationBar|"
 msgid "An update to OpenTodoList %1 is available."
 msgstr "一个 OpenTodoList %1的新版本可供使用。"
 
-#: ../Widgets/UpdateNotificationBar.qml:50
+#: ../qml/Widgets/UpdateNotificationBar.qml:50
 msgctxt "UpdateNotificationBar|"
 msgid "Ignore"
 msgstr "忽略"
 
-#: ../Widgets/UpdateNotificationBar.qml:54
+#: ../qml/Widgets/UpdateNotificationBar.qml:54
 msgctxt "UpdateNotificationBar|"
 msgid "Download"
 msgstr "下载"
@@ -696,22 +696,22 @@ msgctxt "TodoPage|"
 msgid "Add new task..."
 msgstr "添加新任务..."
 
-#: ../Widgets/TodosWidget.qml:215
+#: ../qml/Widgets/TodosWidget.qml:211
 msgctxt "TodosWidget|"
 msgid "Due on: %1"
 msgstr "到期于: %1"
 
-#: ../Utils/Colors.qml:15
+#: ../qml/Utils/Colors.qml:15
 msgctxt "Colors|"
 msgid "System"
 msgstr "系统"
 
-#: ../Utils/Colors.qml:16
+#: ../qml/Utils/Colors.qml:16
 msgctxt "Colors|"
 msgid "Light"
 msgstr "明亮"
 
-#: ../Utils/Colors.qml:17
+#: ../qml/Utils/Colors.qml:17
 msgctxt "Colors|"
 msgid "Dark"
 msgstr "黑暗"
@@ -886,47 +886,47 @@ msgctxt "AboutPage|"
 msgid "(c) RPdev 2013-2020, version %1"
 msgstr "（c）RPdev 2013-2020，版本 %1"
 
-#: ../Pages/AboutPage.qml:68
+#: ../qml/Pages/AboutPage.qml:68
 msgctxt "AboutPage|"
 msgid "OpenTodoList is released under the terms of the <a href='app-license'>GNU General Public License</a> version 3 or (at your choice) any later version."
 msgstr "OpenTodoList 是根据<a href='app-license'> GNU通用公共许可证</a>第3版或（根据您的选择）任何更高版本的条款发行的。"
 
-#: ../Pages/AboutPage.qml:85
+#: ../qml/Pages/AboutPage.qml:85
 msgctxt "AboutPage|"
 msgid "Report an Issue"
 msgstr "报告问题"
 
-#: ../Pages/AboutPage.qml:114
+#: ../qml/Pages/AboutPage.qml:114
 msgctxt "AboutPage|"
 msgid "Third Party Libraries and Resources"
 msgstr "第三方库和资源"
 
-#: ../Pages/AboutPage.qml:151
+#: ../qml/Pages/AboutPage.qml:151
 msgctxt "AboutPage|"
 msgid "Author:"
 msgstr "作者:"
 
-#: ../Pages/AboutPage.qml:156
+#: ../qml/Pages/AboutPage.qml:156
 msgctxt "AboutPage|"
 msgid "<a href='%2'>%1</a>"
 msgstr "<a href='%2'>%1</a>"
 
-#: ../Pages/AboutPage.qml:163
+#: ../qml/Pages/AboutPage.qml:163
 msgctxt "AboutPage|"
 msgid "License:"
 msgstr "许可:"
 
-#: ../Pages/AboutPage.qml:168
+#: ../qml/Pages/AboutPage.qml:168
 msgctxt "AboutPage|"
 msgid "<a href='%1'>%2</a>"
 msgstr "<a href='%1'>%2</a> "
 
-#: ../Pages/AboutPage.qml:174
+#: ../qml/Pages/AboutPage.qml:174
 msgctxt "AboutPage|"
 msgid "Download:"
 msgstr "下载："
 
-#: ../Pages/AboutPage.qml:178
+#: ../qml/Pages/AboutPage.qml:178
 msgctxt "AboutPage|"
 msgid "<a href='%1'>%1</a>"
 msgstr "<a href='%1'>%1 </a>"
@@ -961,12 +961,12 @@ msgctxt "AccountsPageForm.ui|"
 msgid "Accounts"
 msgstr "账户"
 
-#: ../Windows/DeleteAccountDialog.qml:19
+#: ../qml/Windows/DeleteAccountDialog.qml:18
 msgctxt "DeleteAccountDialog|"
 msgid "Delete Account?"
 msgstr "删除账户？"
 
-#: ../Windows/DeleteAccountDialog.qml:36
+#: ../qml/Windows/DeleteAccountDialog.qml:35
 msgctxt "DeleteAccountDialog|"
 msgid "Do you really want to remove the account <strong>%1</strong>? This will remove all libraries belonging to the account from your device?<br/><br/><i>Note: You can restore them from the server by adding back the account.</i>"
 msgstr "您是否真的要删除账户<strong>%1</strong>？这样会从您的设备中删除属于该账户的所有资料库吗？<br/><br/><i>注意: 您可以在服务器端通过添加回账户的方式恢复它们。</i>"
@@ -1157,7 +1157,7 @@ msgctxt "NewLocalLibraryPageForm.ui|"
 msgid "My Local Library Name"
 msgstr "我的本地图书馆名称"
 
-#: ../Pages/NewWebDAVAccountPage.qml:162
+#: ../qml/Pages/NewWebDAVAccountPage.qml:161
 msgctxt "NewWebDAVAccountPage|"
 msgid "Account Name"
 msgstr "账户名"
@@ -1213,7 +1213,7 @@ msgctxt "NewWebDAVAccountPageForm.ui|"
 msgid "Failed to connect to the server. Please check your user name, password and the server address and retry."
 msgstr "未能连接到服务器。请检查您的用户名、密码和服务器地址，然后重试。"
 
-#: ../Windows/DeleteItemDialog.qml:52
+#: ../qml/Windows/DeleteItemDialog.qml:49
 msgctxt "DeleteItemDialog|"
 msgid "Do you really want to delete the page <strong>%1</strong>? This cannot be undone."
 msgstr "您是否真的要删除页面<strong>％1 </ strong>？这不能被撤消。"
@@ -1248,7 +1248,7 @@ msgctxt "ItemNotesEditor|"
 msgid "All files"
 msgstr "所有的文件"
 
-#: ../Pages/ProblemsPage.qml:42
+#: ../qml/Pages/ProblemsPage.qml:42
 msgctxt "ProblemsPage|"
 msgid "Missing secrets for account"
 msgstr "账户缺少密钥"
@@ -1323,7 +1323,7 @@ msgctxt "Translations|"
 msgid "Turkish"
 msgstr "土耳其语"
 
-#: ../Widgets/ItemCreatedNotification.qml:77
+#: ../qml/Widgets/ItemCreatedNotification.qml:79
 msgctxt "ItemCreatedNotification|"
 msgid "Dismiss"
 msgstr "解散"
@@ -1348,7 +1348,7 @@ msgctxt "Translations|"
 msgid "Turkmen"
 msgstr "土库曼人"
 
-#: ../Actions/DeleteItem.qml:11
+#: ../qml/Actions/DeleteItem.qml:10
 msgctxt "DeleteItem|"
 msgid "Delete"
 msgstr "删除"
@@ -1383,127 +1383,127 @@ msgctxt "ItemDueDateEditor|"
 msgid "Recurs every %1 days."
 msgstr "每 %1 天重复一次。"
 
-#: ../Windows/NewItemWithDueDateDialog.qml:105
+#: ../qml/Windows/NewItemWithDueDateDialog.qml:104
 msgctxt "NewItemWithDueDateDialog|"
 msgid "Today"
 msgstr "今天"
 
-#: ../Windows/NewItemWithDueDateDialog.qml:106
+#: ../qml/Windows/NewItemWithDueDateDialog.qml:105
 msgctxt "NewItemWithDueDateDialog|"
 msgid "Tomorrow"
 msgstr "明天"
 
-#: ../Windows/NewItemWithDueDateDialog.qml:107
+#: ../qml/Windows/NewItemWithDueDateDialog.qml:106
 msgctxt "NewItemWithDueDateDialog|"
 msgid "This Week"
 msgstr "本周"
 
-#: ../Windows/NewItemWithDueDateDialog.qml:108
+#: ../qml/Windows/NewItemWithDueDateDialog.qml:107
 msgctxt "NewItemWithDueDateDialog|"
 msgid "Next Week"
 msgstr "下周"
 
-#: ../Windows/NewItemWithDueDateDialog.qml:109
+#: ../qml/Windows/NewItemWithDueDateDialog.qml:108
 msgctxt "NewItemWithDueDateDialog|"
 msgid "Select..."
 msgstr "选择..."
 
-#: ../Windows/NewItemWithDueDateDialog.qml:139
+#: ../qml/Windows/NewItemWithDueDateDialog.qml:138
 msgctxt "NewItemWithDueDateDialog|"
 msgid "Title:"
 msgstr "标题:"
 
-#: ../Windows/NewItemWithDueDateDialog.qml:144
+#: ../qml/Windows/NewItemWithDueDateDialog.qml:143
 msgctxt "NewItemWithDueDateDialog|"
 msgid "The title for your new item..."
 msgstr "新项目的标题..."
 
-#: ../Windows/NewItemWithDueDateDialog.qml:186
+#: ../qml/Windows/NewItemWithDueDateDialog.qml:185
 msgctxt "NewItemWithDueDateDialog|"
 msgid "Create in:"
 msgstr "创建于:"
 
-#: ../Windows/NewItemWithDueDateDialog.qml:227
+#: ../qml/Windows/NewItemWithDueDateDialog.qml:226
 msgctxt "NewItemWithDueDateDialog|"
 msgid "Due on:"
 msgstr "到期于:"
 
-#: ../Widgets/NewTopLevelItemButton.qml:48
+#: ../qml/Widgets/NewTopLevelItemButton.qml:46
 msgctxt "NewTopLevelItemButton|"
 msgid "Todo"
 msgstr "待办事项"
 
-#: ../Windows/RecurrenceDialog.qml:29
+#: ../qml/Windows/RecurrenceDialog.qml:29
 msgctxt "RecurrenceDialog|"
 msgid "Edit Recurrence"
 msgstr "编辑重复"
 
-#: ../Windows/RecurrenceDialog.qml:43
+#: ../qml/Windows/RecurrenceDialog.qml:43
 msgctxt "RecurrenceDialog|"
 msgid "Never"
 msgstr "决不"
 
-#: ../Windows/RecurrenceDialog.qml:47
+#: ../qml/Windows/RecurrenceDialog.qml:47
 msgctxt "RecurrenceDialog|"
 msgid "Daily"
 msgstr "每日"
 
-#: ../Windows/RecurrenceDialog.qml:51
+#: ../qml/Windows/RecurrenceDialog.qml:51
 msgctxt "RecurrenceDialog|"
 msgid "Weekly"
 msgstr "每周"
 
-#: ../Windows/RecurrenceDialog.qml:55
+#: ../qml/Windows/RecurrenceDialog.qml:55
 msgctxt "RecurrenceDialog|"
 msgid "Monthly"
 msgstr "每月"
 
-#: ../Windows/RecurrenceDialog.qml:63
+#: ../qml/Windows/RecurrenceDialog.qml:63
 msgctxt "RecurrenceDialog|"
 msgid "Every N Days"
 msgstr "每 N 天"
 
-#: ../Windows/RecurrenceDialog.qml:97
+#: ../qml/Windows/RecurrenceDialog.qml:97
 msgctxt "RecurrenceDialog|"
 msgid "Recurs:"
 msgstr "重复出现:"
 
-#: ../Windows/RecurrenceDialog.qml:115
+#: ../qml/Windows/RecurrenceDialog.qml:115
 msgctxt "RecurrenceDialog|"
 msgid "Number of days:"
 msgstr "天数:"
 
-#: ../Windows/RecurrenceDialog.qml:141
+#: ../qml/Windows/RecurrenceDialog.qml:141
 msgctxt "RecurrenceDialog|"
 msgid "Recur relative to the date when marking as done"
 msgstr "相对于标记为完成的日期重复"
 
-#: ../Actions/RenameItem.qml:11
+#: ../qml/Actions/RenameItem.qml:10
 msgctxt "RenameItem|"
 msgid "Rename"
 msgstr "重命名"
 
-#: ../Actions/SetDueNextWeek.qml:8
+#: ../qml/Actions/SetDueNextWeek.qml:8
 msgctxt "SetDueNextWeek|"
 msgid "Set Due This Week"
 msgstr "定于本周到期"
 
-#: ../Actions/SetDueThisWeek.qml:8
+#: ../qml/Actions/SetDueThisWeek.qml:8
 msgctxt "SetDueThisWeek|"
 msgid "Set Due Next Week"
 msgstr "定于下周到期"
 
-#: ../Actions/SetDueTo.qml:11
+#: ../qml/Actions/SetDueTo.qml:10
 msgctxt "SetDueTo|"
 msgid "Select Due Date"
 msgstr "选择到期日"
 
-#: ../Actions/SetDueToday.qml:8
+#: ../qml/Actions/SetDueToday.qml:8
 msgctxt "SetDueToday|"
 msgid "Set Due Today"
 msgstr "定于今天到期"
 
-#: ../Actions/SetDueTomorrow.qml:8
+#: ../qml/Actions/SetDueTomorrow.qml:8
 msgctxt "SetDueTomorrow|"
 msgid "Set Due Tomorrow"
 msgstr "定于明日到期"
@@ -1538,27 +1538,27 @@ msgctxt "Translations|"
 msgid "Basque"
 msgstr "巴斯克语"
 
-#: ../Pages/AccountTypeSelectionPage.qml:21
+#: ../qml/Pages/AccountTypeSelectionPage.qml:20
 msgctxt "AccountTypeSelectionPage|"
 msgid "Select Account Type"
 msgstr "选择账户类型"
 
-#: ../Pages/AccountTypeSelectionPage.qml:56
+#: ../qml/Pages/AccountTypeSelectionPage.qml:55
 msgctxt "AccountTypeSelectionPage|"
 msgid "Account Type"
 msgstr "账户类型"
 
-#: ../Pages/AccountTypeSelectionPage.qml:62
+#: ../qml/Pages/AccountTypeSelectionPage.qml:61
 msgctxt "AccountTypeSelectionPage|"
 msgid "NextCloud"
 msgstr "NextCloud"
 
-#: ../Pages/AccountTypeSelectionPage.qml:65
+#: ../qml/Pages/AccountTypeSelectionPage.qml:64
 msgctxt "AccountTypeSelectionPage|"
 msgid "ownCloud"
 msgstr "ownCloud"
 
-#: ../Pages/AccountTypeSelectionPage.qml:68
+#: ../qml/Pages/AccountTypeSelectionPage.qml:67
 msgctxt "AccountTypeSelectionPage|"
 msgid "WebDAV"
 msgstr "WebDAV"
@@ -1598,78 +1598,78 @@ msgctxt "AppStartup|"
 msgid "Quit"
 msgstr "退出"
 
-#: ../Actions/DeleteCompletedChildren.qml:11
+#: ../qml/Actions/DeleteCompletedChildren.qml:10
 msgctxt "DeleteCompletedChildren|"
 msgid "Delete Completed Items"
 msgstr "删除已完成的项目"
 
-#: ../Windows/DeleteCompletedItemsDialog.qml:18
+#: ../qml/Windows/DeleteCompletedItemsDialog.qml:18
 msgctxt "DeleteCompletedItemsDialog|"
 msgid "Delete Completed Items?"
 msgstr "删除已完成的项目？"
 
-#: ../Windows/DeleteCompletedItemsDialog.qml:42
+#: ../qml/Windows/DeleteCompletedItemsDialog.qml:42
 msgctxt "DeleteCompletedItemsDialog|"
 msgid "Do you really want to delete all done todos in the todo list <strong>%1</strong>? This cannot be undone."
 msgstr "您是否真的要删除待办事项列表<strong>%1</strong>中所有的已完成项目？这不能被撤消。"
 
-#: ../Windows/DeleteCompletedItemsDialog.qml:43
+#: ../qml/Windows/DeleteCompletedItemsDialog.qml:43
 msgctxt "DeleteCompletedItemsDialog|"
 msgid "Do you really want to delete all done tasks in the todo <strong>%1</strong>? This cannot be undone."
 msgstr "您是否真的要删除待办事项列表<strong>%1</strong>中所有的已完成项目？这不能被撤消。"
 
-#: ../Pages/EditNextCloudAccountPage.qml:23
-#: ../Pages/EditNextCloudAccountPage.qml:58
+#: ../qml/Pages/EditNextCloudAccountPage.qml:22
+#: ../qml/Pages/EditNextCloudAccountPage.qml:57
 msgctxt "EditNextCloudAccountPage|"
 msgid "Edit Account"
 msgstr "编辑账户"
 
-#: ../Pages/EditNextCloudAccountPage.qml:64
+#: ../qml/Pages/EditNextCloudAccountPage.qml:63
 msgctxt "EditNextCloudAccountPage|"
 msgid "Name:"
 msgstr "名称:"
 
-#: ../Pages/EditNextCloudAccountPage.qml:75
+#: ../qml/Pages/EditNextCloudAccountPage.qml:74
 msgctxt "EditNextCloudAccountPage|"
 msgid "Server Address:"
 msgstr "服务器地址:"
 
-#: ../Pages/EditNextCloudAccountPage.qml:82
+#: ../qml/Pages/EditNextCloudAccountPage.qml:81
 msgctxt "EditNextCloudAccountPage|"
 msgid "https://myserver.example.com"
 msgstr "https://myserver.example.com"
 
-#: ../Pages/EditNextCloudAccountPage.qml:90
+#: ../qml/Pages/EditNextCloudAccountPage.qml:89
 msgctxt "EditNextCloudAccountPage|"
 msgid "Login"
 msgstr "登录"
 
-#: ../Pages/EditNextCloudAccountPage.qml:103
+#: ../qml/Pages/EditNextCloudAccountPage.qml:102
 msgctxt "EditNextCloudAccountPage|"
 msgid "User:"
 msgstr "用户:"
 
-#: ../Pages/EditNextCloudAccountPage.qml:110
+#: ../qml/Pages/EditNextCloudAccountPage.qml:109
 msgctxt "EditNextCloudAccountPage|"
 msgid "User Name"
 msgstr "用户名"
 
-#: ../Pages/EditNextCloudAccountPage.qml:116
+#: ../qml/Pages/EditNextCloudAccountPage.qml:115
 msgctxt "EditNextCloudAccountPage|"
 msgid "Password:"
 msgstr "密码:"
 
-#: ../Pages/EditNextCloudAccountPage.qml:123
+#: ../qml/Pages/EditNextCloudAccountPage.qml:122
 msgctxt "EditNextCloudAccountPage|"
 msgid "Password"
 msgstr "密码"
 
-#: ../Pages/EditNextCloudAccountPage.qml:132
+#: ../qml/Pages/EditNextCloudAccountPage.qml:131
 msgctxt "EditNextCloudAccountPage|"
 msgid "Disable Certificate Checks"
 msgstr "禁用证书检查"
 
-#: ../Pages/EditNextCloudAccountPage.qml:141
+#: ../qml/Pages/EditNextCloudAccountPage.qml:140
 msgctxt "EditNextCloudAccountPage|"
 msgid "Failed to connect to the server. Please check your user name, password and the server address and retry."
 msgstr "未能连接到服务器。请检查您的用户名、密码和服务器地址，然后重试。"
@@ -1709,158 +1709,159 @@ msgctxt "MainWindow|"
 msgid "Close"
 msgstr "关闭"
 
-#: ../Pages/NewNextCloudAccountPage.qml:20
-#: ../Pages/NewNextCloudAccountPage.qml:72
+#: ../qml/Pages/NewNextCloudAccountPage.qml:19
+#: ../qml/Pages/NewNextCloudAccountPage.qml:71
 msgctxt "NewNextCloudAccountPage|"
 msgid "Connection Settings"
 msgstr "连接设定"
 
-#: ../Pages/NewNextCloudAccountPage.qml:78
+#: ../qml/Pages/NewNextCloudAccountPage.qml:77
 msgctxt "NewNextCloudAccountPage|"
 msgid "Server Address:"
 msgstr "服务器地址:"
 
-#: ../Pages/NewNextCloudAccountPage.qml:92
+#: ../qml/Pages/NewNextCloudAccountPage.qml:91
 msgctxt "NewNextCloudAccountPage|"
 msgid "Login"
 msgstr "登录"
 
-#: ../Pages/NewNextCloudAccountPage.qml:108
+#: ../qml/Pages/NewNextCloudAccountPage.qml:107
 msgctxt "NewNextCloudAccountPage|"
 msgid "Trouble Signing In?"
 msgstr "注册遇到困难？"
 
-#: ../Pages/NewNextCloudAccountPage.qml:119
+#: ../qml/Pages/NewNextCloudAccountPage.qml:118
 msgctxt "NewNextCloudAccountPage|"
 msgid "We have tried to open your browser to log you in to your NextCloud instance. Please log in and grant access to OpenTodoList in order to proceed. Trouble accessing your NextCloud in the browser? You can manually enter your username and password as well."
 msgstr "我们已尝试打开您的浏览器来登录您的 NextCloud 实例。请登录并授予 OpenTodoList 访问权限来继续。在浏览器中访问您的 NextCloud 遇到困难？您也可以手动输入您的用户名和密码。"
 
-#: ../Pages/NewNextCloudAccountPage.qml:127
+#: ../qml/Pages/NewNextCloudAccountPage.qml:126
 msgctxt "NewNextCloudAccountPage|"
 msgid "Log in Manually"
 msgstr "手动登录"
 
-#: ../Pages/NewNextCloudAccountPage.qml:133
+#: ../qml/Pages/NewNextCloudAccountPage.qml:132
 msgctxt "NewNextCloudAccountPage|"
 msgid "Ideally, you use app specific passwords instead of your user password. In case your login is protected with 2 Factor Authentication (2FA) you even must use app specific passwords to access your NextCloud. You can create such passwords in your user settings."
 msgstr "理想情况下，您可以使用特定的应用程序密码而不是您的用户密码。在您使用二次因素认证(2FA)保护您的登录的情况下，您甚至必须使用应用程序特定密码来访问您的 NextCloud。 您可以在您的用户设定中创建这类密码。"
 
-#: ../Pages/NewNextCloudAccountPage.qml:142
+#: ../qml/Pages/NewNextCloudAccountPage.qml:141
 msgctxt "NewNextCloudAccountPage|"
 msgid "Create App Password"
 msgstr "创建应用程序密码"
 
-#: ../Pages/NewNextCloudAccountPage.qml:151
+#: ../qml/Pages/NewNextCloudAccountPage.qml:150
 msgctxt "NewNextCloudAccountPage|"
 msgid "Account Settings"
 msgstr "账户设定"
 
-#: ../Pages/NewNextCloudAccountPage.qml:161
+#: ../qml/Pages/NewNextCloudAccountPage.qml:160
 msgctxt "NewNextCloudAccountPage|"
 msgid "Copy Link"
 msgstr "复制连接"
 
-#: ../Pages/NewNextCloudAccountPage.qml:167
+#: ../qml/Pages/NewNextCloudAccountPage.qml:166
 msgctxt "NewNextCloudAccountPage|"
 msgid "Copied!"
 msgstr "已复制!"
 
-#: ../Pages/NewNextCloudAccountPage.qml:176
+#: ../qml/Pages/NewNextCloudAccountPage.qml:175
 msgctxt "NewNextCloudAccountPage|"
 msgid "User:"
 msgstr "用户:"
 
-#: ../Pages/NewNextCloudAccountPage.qml:183
+#: ../qml/Pages/NewNextCloudAccountPage.qml:182
 msgctxt "NewNextCloudAccountPage|"
 msgid "User Name"
 msgstr "用户名"
 
-#: ../Pages/NewNextCloudAccountPage.qml:190
+#: ../qml/Pages/NewNextCloudAccountPage.qml:189
 msgctxt "NewNextCloudAccountPage|"
 msgid "Password:"
 msgstr "密码:"
 
-#: ../Pages/NewNextCloudAccountPage.qml:197
+#: ../qml/Pages/NewNextCloudAccountPage.qml:196
 msgctxt "NewNextCloudAccountPage|"
 msgid "Password"
 msgstr "密码"
 
-#: ../Pages/NewNextCloudAccountPage.qml:207
+#: ../qml/Pages/NewNextCloudAccountPage.qml:206
 msgctxt "NewNextCloudAccountPage|"
 msgid "Disable Certificate Checks"
 msgstr "禁用证书检查"
 
-#: ../Pages/NewNextCloudAccountPage.qml:211
+#: ../qml/Pages/NewNextCloudAccountPage.qml:210
 msgctxt "NewNextCloudAccountPage|"
 msgid "Name:"
 msgstr "名称:"
 
-#: ../Pages/NewNextCloudAccountPage.qml:224
+#: ../qml/Pages/NewNextCloudAccountPage.qml:223
 msgctxt "NewNextCloudAccountPage|"
 msgid "Account Name"
 msgstr "账户名"
 
-#: ../Pages/NewNextCloudAccountPage.qml:234
+#: ../qml/Pages/NewNextCloudAccountPage.qml:233
 msgctxt "NewNextCloudAccountPage|"
 msgid "Failed to connect to the server. Please check your user name, password and the server address and retry."
 msgstr "未能连接到服务器。请检查您的用户名、密码和服务器地址，然后重试。"
 
-#: ../Pages/AccountsPage.qml:19 ../Pages/AccountsPage.qml:41
+#: ../qml/Pages/AccountsPage.qml:18 ../qml/Pages/AccountsPage.qml:40
 msgctxt "AccountsPage|"
 msgid "Accounts"
 msgstr "账户"
 
-#: ../Pages/EditWebDAVAccountPage.qml:33 ../Pages/EditWebDAVAccountPage.qml:117
+#: ../qml/Pages/EditWebDAVAccountPage.qml:32
+#: ../qml/Pages/EditWebDAVAccountPage.qml:116
 msgctxt "EditWebDAVAccountPage|"
 msgid "Edit Account"
 msgstr "编辑账户"
 
-#: ../Pages/EditWebDAVAccountPage.qml:123
+#: ../qml/Pages/EditWebDAVAccountPage.qml:122
 msgctxt "EditWebDAVAccountPage|"
 msgid "Name:"
 msgstr "名称:"
 
-#: ../Pages/EditWebDAVAccountPage.qml:134
+#: ../qml/Pages/EditWebDAVAccountPage.qml:133
 msgctxt "EditWebDAVAccountPage|"
 msgid "Server Address:"
 msgstr "服务器地址:"
 
-#: ../Pages/EditWebDAVAccountPage.qml:140
+#: ../qml/Pages/EditWebDAVAccountPage.qml:139
 msgctxt "EditWebDAVAccountPage|"
 msgid "https://myserver.example.com"
 msgstr "https://myserver.example.com"
 
-#: ../Pages/EditWebDAVAccountPage.qml:147
+#: ../qml/Pages/EditWebDAVAccountPage.qml:146
 msgctxt "EditWebDAVAccountPage|"
 msgid "User:"
 msgstr "用户:"
 
-#: ../Pages/EditWebDAVAccountPage.qml:153
+#: ../qml/Pages/EditWebDAVAccountPage.qml:152
 msgctxt "EditWebDAVAccountPage|"
 msgid "User Name"
 msgstr "用户名"
 
-#: ../Pages/EditWebDAVAccountPage.qml:160
+#: ../qml/Pages/EditWebDAVAccountPage.qml:159
 msgctxt "EditWebDAVAccountPage|"
 msgid "Password:"
 msgstr "密码:"
 
-#: ../Pages/EditWebDAVAccountPage.qml:167
+#: ../qml/Pages/EditWebDAVAccountPage.qml:166
 msgctxt "EditWebDAVAccountPage|"
 msgid "Password"
 msgstr "密码"
 
-#: ../Pages/EditWebDAVAccountPage.qml:177
+#: ../qml/Pages/EditWebDAVAccountPage.qml:176
 msgctxt "EditWebDAVAccountPage|"
 msgid "Disable Certificate Checks"
 msgstr "禁用证书检查"
 
-#: ../Pages/EditWebDAVAccountPage.qml:185
+#: ../qml/Pages/EditWebDAVAccountPage.qml:184
 msgctxt "EditWebDAVAccountPage|"
 msgid "Failed to connect to the server. Please check your user name, password and the server address and retry."
 msgstr "未能连接到服务器。请检查您的用户名、密码和服务器地址，然后重试。"
 
-#: ../Utils/ItemUtils.qml:173
+#: ../qml/Utils/ItemUtils.qml:173
 msgctxt "ItemUtils|"
 msgid "Move Todo Into..."
 msgstr "移动待办事项至..."
@@ -1875,182 +1876,183 @@ msgctxt "MainWindow|"
 msgid "Move"
 msgstr "移动"
 
-#: ../Actions/MoveTodo.qml:13
+#: ../qml/Actions/MoveTodo.qml:12
 msgctxt "MoveTodo|"
 msgid "Move"
 msgstr "移动"
 
-#: ../Pages/NewLibraryFromAccountPage.qml:81
+#: ../qml/Pages/NewLibraryFromAccountPage.qml:81
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Create Library in Account"
 msgstr "在账户中创建资料库"
 
-#: ../Pages/NewLibraryFromAccountPage.qml:90
+#: ../qml/Pages/NewLibraryFromAccountPage.qml:90
 msgctxt "NewLibraryFromAccountPage|"
 msgid "A library created in an account is synchronized with it. This allows to easily back up a library to a server and later on restore it from there. Additionally, such libraries can be shared with other users (if the server allows this)."
 msgstr "在账户中创建的资料库将与其同步。这样可以轻松地将资料库备份到服务器，然后再从那里还原它。此外，此资料库可以与其他用户共享（如果服务器允许的话）。"
 
-#: ../Pages/NewLibraryFromAccountPage.qml:98
+#: ../qml/Pages/NewLibraryFromAccountPage.qml:98
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Existing Libraries"
 msgstr "现有资料库"
 
-#: ../Pages/NewLibraryFromAccountPage.qml:106
+#: ../qml/Pages/NewLibraryFromAccountPage.qml:106
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Select an existing library on the server to add it to the app."
 msgstr "选择服务器上的现有资料库以将其添加到应用程序。"
 
-#: ../Pages/NewLibraryFromAccountPage.qml:112
+#: ../qml/Pages/NewLibraryFromAccountPage.qml:112
 msgctxt "NewLibraryFromAccountPage|"
 msgid "No libraries were found on the server."
 msgstr "在服务器上找不到资料库。"
 
-#: ../Pages/NewLibraryFromAccountPage.qml:121
+#: ../qml/Pages/NewLibraryFromAccountPage.qml:121
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Searching existing libraries..."
 msgstr "搜索现有资料库..."
 
-#: ../Pages/NewLibraryFromAccountPage.qml:164
+#: ../qml/Pages/NewLibraryFromAccountPage.qml:164
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Create a New Library"
 msgstr "创建一个新资料库"
 
-#: ../Pages/NewLibraryFromAccountPage.qml:172
+#: ../qml/Pages/NewLibraryFromAccountPage.qml:172
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Create a new library, which will be synchronized with the server. Such a library can be added to the app on other devices as well to synchronize data."
 msgstr "创建一个新的资料库，它将与服务器同步。这样的资料库也可以添加到其他设备上的应用程序中以同步数据。"
 
-#: ../Pages/NewLibraryFromAccountPage.qml:186
+#: ../qml/Pages/NewLibraryFromAccountPage.qml:186
 msgctxt "NewLibraryFromAccountPage|"
 msgid "My new library's name"
 msgstr "我的新资料库名字"
 
-#: ../Pages/NewLibraryInFolderPage.qml:100
+#: ../qml/Pages/NewLibraryInFolderPage.qml:100
 msgctxt "NewLibraryInFolderPage|"
 msgid "Open a Folder as a Library"
 msgstr "按照资料库打开一个文件夹"
 
-#: ../Pages/NewLibraryInFolderPage.qml:108
+#: ../qml/Pages/NewLibraryInFolderPage.qml:108
 msgctxt "NewLibraryInFolderPage|"
 msgid "You can use any folder as a location for a library.<br/><br/>This is especially useful when you want to use another tool (like a sync client of a cloud provider) to sync your data with a server."
 msgstr "您可以使用任何文件夹作为资料库的位置。<br/> <br/>当您想使用其他工具（例如云提供商的同步客户端）将数据与服务器同步时，此功能特别有用。"
 
-#: ../Pages/NewLibraryInFolderPage.qml:112
+#: ../qml/Pages/NewLibraryInFolderPage.qml:112
 msgctxt "NewLibraryInFolderPage|"
 msgid "Folder:"
 msgstr "文件夹:"
 
-#: ../Pages/NewLibraryInFolderPage.qml:117
+#: ../qml/Pages/NewLibraryInFolderPage.qml:117
 msgctxt "NewLibraryInFolderPage|"
 msgid "Path to a folder to use as a library"
 msgstr "用作资料库的文件夹的路径"
 
-#: ../Pages/NewLibraryInFolderPage.qml:123
+#: ../qml/Pages/NewLibraryInFolderPage.qml:123
 msgctxt "NewLibraryInFolderPage|"
 msgid "Select"
 msgstr "选择"
 
-#: ../Pages/NewLibraryInFolderPage.qml:128
+#: ../qml/Pages/NewLibraryInFolderPage.qml:128
 msgctxt "NewLibraryInFolderPage|"
 msgid "Name:"
 msgstr "名称:"
 
-#: ../Pages/NewLibraryInFolderPage.qml:133
+#: ../qml/Pages/NewLibraryInFolderPage.qml:133
 msgctxt "NewLibraryInFolderPage|"
 msgid "My Local Library Name"
 msgstr "我的本地资料库名称"
 
-#: ../Pages/NewLibraryPage.qml:70
+#: ../qml/Pages/NewLibraryPage.qml:69
 msgctxt "NewLibraryPage|"
 msgid "Local Library"
 msgstr "本地资料库"
 
-#: ../Pages/NewLibraryPage.qml:77
+#: ../qml/Pages/NewLibraryPage.qml:76
 msgctxt "NewLibraryPage|"
 msgid "Use Folder as Library"
 msgstr "将文件夹用作资料库"
 
-#: ../Pages/NewLibraryPage.qml:89
+#: ../qml/Pages/NewLibraryPage.qml:88
 msgctxt "NewLibraryPage|"
 msgid "Add Libraries From Your Accounts"
 msgstr "从您的帐户添加资料库"
 
-#: ../Pages/NewLibraryPage.qml:116
+#: ../qml/Pages/NewLibraryPage.qml:115
 msgctxt "NewLibraryPage|"
 msgid "Add Account"
 msgstr "添加账户"
 
-#: ../Pages/NewLocalLibraryPage.qml:61
+#: ../qml/Pages/NewLocalLibraryPage.qml:61
 msgctxt "NewLocalLibraryPage|"
 msgid "Create a Local Library"
 msgstr "创建本地资料库"
 
-#: ../Pages/NewLocalLibraryPage.qml:69
+#: ../qml/Pages/NewLocalLibraryPage.qml:69
 msgctxt "NewLocalLibraryPage|"
 msgid "A local library is stored solely on your device - this makes it perfect for the privacy concise!<br/><br/>Use it when you want to store information only locally and back up all your data regularly via other mechanisms. If you need to access your information across several devices, create a library which is synced instead."
 msgstr "本地资料库仅存储在您的设备上-这非常适合隐私方面的考量！<br/> <br/>当您只想在本地存储信息并通过其他机制定期备份所有数据时，可以使用它。如果需要跨多个设备访问信息，请创建一个同步的资料库。"
 
-#: ../Pages/NewLocalLibraryPage.qml:79
+#: ../qml/Pages/NewLocalLibraryPage.qml:79
 msgctxt "NewLocalLibraryPage|"
 msgid "Name:"
 msgstr "名称:"
 
-#: ../Pages/NewLocalLibraryPage.qml:84
+#: ../qml/Pages/NewLocalLibraryPage.qml:84
 msgctxt "NewLocalLibraryPage|"
 msgid "My Local Library Name"
 msgstr "我的本地资料库名称"
 
-#: ../Pages/NewWebDAVAccountPage.qml:29 ../Pages/NewWebDAVAccountPage.qml:100
+#: ../qml/Pages/NewWebDAVAccountPage.qml:28
+#: ../qml/Pages/NewWebDAVAccountPage.qml:99
 msgctxt "NewWebDAVAccountPage|"
 msgid "Connection Settings"
 msgstr "连接设定"
 
-#: ../Pages/NewWebDAVAccountPage.qml:106
+#: ../qml/Pages/NewWebDAVAccountPage.qml:105
 msgctxt "NewWebDAVAccountPage|"
 msgid "Server Address:"
 msgstr "服务器地址:"
 
-#: ../Pages/NewWebDAVAccountPage.qml:112
+#: ../qml/Pages/NewWebDAVAccountPage.qml:111
 msgctxt "NewWebDAVAccountPage|"
 msgid "https://myserver.example.com"
 msgstr "https://myserver.example.com"
 
-#: ../Pages/NewWebDAVAccountPage.qml:118
+#: ../qml/Pages/NewWebDAVAccountPage.qml:117
 msgctxt "NewWebDAVAccountPage|"
 msgid "User:"
 msgstr "用户:"
 
-#: ../Pages/NewWebDAVAccountPage.qml:124
+#: ../qml/Pages/NewWebDAVAccountPage.qml:123
 msgctxt "NewWebDAVAccountPage|"
 msgid "User Name"
 msgstr "用户名"
 
-#: ../Pages/NewWebDAVAccountPage.qml:130
+#: ../qml/Pages/NewWebDAVAccountPage.qml:129
 msgctxt "NewWebDAVAccountPage|"
 msgid "Password:"
 msgstr "密码:"
 
-#: ../Pages/NewWebDAVAccountPage.qml:136
+#: ../qml/Pages/NewWebDAVAccountPage.qml:135
 msgctxt "NewWebDAVAccountPage|"
 msgid "Password"
 msgstr "密码"
 
-#: ../Pages/NewWebDAVAccountPage.qml:145
+#: ../qml/Pages/NewWebDAVAccountPage.qml:144
 msgctxt "NewWebDAVAccountPage|"
 msgid "Disable Certificate Checks"
 msgstr "禁用证书检查"
 
-#: ../Pages/NewWebDAVAccountPage.qml:149
+#: ../qml/Pages/NewWebDAVAccountPage.qml:148
 msgctxt "NewWebDAVAccountPage|"
 msgid "Name:"
 msgstr "名称:"
 
-#: ../Pages/NewWebDAVAccountPage.qml:172
+#: ../qml/Pages/NewWebDAVAccountPage.qml:171
 msgctxt "NewWebDAVAccountPage|"
 msgid "Failed to connect to the server. Please check your user name, password and the server address and retry."
 msgstr "未能连接到服务器。请检查您的用户名、密码和服务器地址，然后重试。"
 
-#: ../Pages/ProblemsPage.qml:18 ../Pages/ProblemsPage.qml:28
+#: ../qml/Pages/ProblemsPage.qml:18 ../qml/Pages/ProblemsPage.qml:28
 msgctxt "ProblemsPage|"
 msgid "Problems Detected"
 msgstr "检测到问题"
@@ -2100,7 +2102,7 @@ msgctxt "MainWindow|"
 msgid "Set Progress"
 msgstr "设定进度"
 
-#: ../Actions/SetManualProgressAction.qml:8
+#: ../qml/Actions/SetManualProgressAction.qml:8
 msgctxt "SetManualProgressAction|"
 msgid "Set Progress"
 msgstr "设定进度"
@@ -2153,7 +2155,7 @@ msgstr "使用此来手动缩放用户界面。默认情况下，应用程序应
 "\n"
 "这需要重新启动应用。"
 
-#: ../Utils/ItemUtils.qml:188
+#: ../qml/Utils/ItemUtils.qml:188
 msgctxt "ItemUtils|"
 msgid "Convert Task to Todo and Move Into..."
 msgstr "转换任务为待办事项并移动至..."
@@ -2168,12 +2170,12 @@ msgctxt "LogViewPage|"
 msgid "Scroll to Bottom"
 msgstr "滚动到底端"
 
-#: ../Pages/ProblemsPage.qml:47
+#: ../qml/Pages/ProblemsPage.qml:47
 msgctxt "ProblemsPage|"
 msgid "Synchronization failed for library"
 msgstr "同步失败项目至资料库"
 
-#: ../Actions/PromoteTask.qml:14
+#: ../qml/Actions/PromoteTask.qml:13
 msgctxt "PromoteTask|"
 msgid "Promote"
 msgstr "推荐"
@@ -2188,7 +2190,7 @@ msgctxt "WebDAVSynchronizer|"
 msgid "Failed to create sync lock:"
 msgstr "创建同步锁失败:"
 
-#: ../Pages/AboutPage.qml:92
+#: ../qml/Pages/AboutPage.qml:92
 msgctxt "AboutPage|"
 msgid "Copy System Information"
 msgstr "复制系统信息"
@@ -2223,72 +2225,72 @@ msgctxt "QObject|"
 msgid "unknown"
 msgstr "未知"
 
-#: ../Windows/QuickNoteWindow.qml:19
+#: ../qml/Windows/QuickNoteWindow.qml:17
 msgctxt "QuickNoteWindow|"
 msgid "Quick Notes"
 msgstr "快捷笔记"
 
-#: ../Windows/QuickNoteWindow.qml:49
+#: ../qml/Windows/QuickNoteWindow.qml:36
 msgctxt "QuickNoteWindow|"
 msgid "Quick Notes Editor"
 msgstr "快捷笔记编辑器"
 
-#: ../Windows/QuickNoteWindow.qml:60
+#: ../qml/Windows/QuickNoteWindow.qml:45
 msgctxt "QuickNoteWindow|"
 msgid "Open the main window"
 msgstr "打开主窗口"
 
-#: ../Windows/QuickNoteWindow.qml:73
+#: ../qml/Windows/QuickNoteWindow.qml:57
 msgctxt "QuickNoteWindow|"
 msgid "Quick Note Title"
 msgstr "快捷笔记标题"
 
-#: ../Windows/QuickNoteWindow.qml:137
+#: ../qml/Windows/QuickNoteWindow.qml:121
 msgctxt "QuickNoteWindow|"
 msgid "Save"
 msgstr "保存"
 
-#: ../Windows/QuickNoteWindow.qml:144
+#: ../qml/Windows/QuickNoteWindow.qml:126
 msgctxt "QuickNoteWindow|"
 msgid "Save the entered notes to the selected library. Press and hold the button to get more options for saving."
 msgstr "保存输入的笔记至选定的资料库。点按并保持来获得更多的保存方式。"
 
-#: ../Windows/QuickNoteWindow.qml:167
+#: ../qml/Windows/QuickNoteWindow.qml:148
 msgctxt "QuickNoteWindow|"
 msgid "Save as Note"
 msgstr "按照笔记保存"
 
-#: ../Windows/QuickNoteWindow.qml:180
+#: ../qml/Windows/QuickNoteWindow.qml:161
 msgctxt "QuickNoteWindow|"
 msgid "Save as Todo List"
 msgstr "以待办事项清单保存"
 
-#: ../Windows/QuickNoteWindow.qml:184
+#: ../qml/Windows/QuickNoteWindow.qml:165
 msgctxt "QuickNoteWindow|"
 msgid "Quick Todo List"
 msgstr "快捷待办事项清单"
 
-#: ../Windows/QuickNoteWindow.qml:171
+#: ../qml/Windows/QuickNoteWindow.qml:152
 msgctxt "QuickNoteWindow|"
 msgid "Quick Note"
 msgstr "快捷笔记"
 
-#: ../Windows/QuickNoteWindow.qml:86
+#: ../qml/Windows/QuickNoteWindow.qml:70
 msgctxt "QuickNoteWindow|"
 msgid "Type your notes here..."
 msgstr "在这里输入您的笔记..."
 
-#: ../Windows/RecurrenceDialog.qml:59
+#: ../qml/Windows/RecurrenceDialog.qml:59
 msgctxt "RecurrenceDialog|"
 msgid "Yearly"
 msgstr "每年"
 
-#: ../Windows/RecurrenceDialog.qml:67
+#: ../qml/Windows/RecurrenceDialog.qml:67
 msgctxt "RecurrenceDialog|"
 msgid "Every N Weeks"
 msgstr "每 N 周"
 
-#: ../Windows/RecurrenceDialog.qml:71
+#: ../qml/Windows/RecurrenceDialog.qml:71
 msgctxt "RecurrenceDialog|"
 msgid "Every N Months"
 msgstr "每 N 月"
@@ -2303,7 +2305,7 @@ msgctxt "SettingsPage|"
 msgid "Open Quick Notes Editor on Click"
 msgstr "点击以打开快捷笔记编辑器"
 
-#: ../Widgets/NoteItem.qml:89
+#: ../qml/Widgets/NoteItem.qml:91
 msgctxt "NoteItem|"
 msgid "Due on %1"
 msgstr "到期于 %1"
@@ -2313,12 +2315,12 @@ msgctxt "TodoListItem|"
 msgid "Due on %1"
 msgstr "到期于 %1"
 
-#: ../Actions/CopyTodo.qml:13
+#: ../qml/Actions/CopyTodo.qml:12
 msgctxt "CopyTodo|"
 msgid "Copy"
 msgstr "复制"
 
-#: ../Actions/CopyTopLevelItem.qml:13
+#: ../qml/Actions/CopyTopLevelItem.qml:12
 msgctxt "CopyTopLevelItem|"
 msgid "Copy"
 msgstr "复制"
@@ -2333,12 +2335,12 @@ msgctxt "MainWindow|"
 msgid "Copy"
 msgstr "复制"
 
-#: ../Windows/SelectLibraryDialog.qml:22
+#: ../qml/Windows/SelectLibraryDialog.qml:21
 msgctxt "SelectLibraryDialog|"
 msgid "Select Library"
 msgstr "选择图书馆"
 
-#: ../Windows/SelectTopLevelItemDialog.qml:22
+#: ../qml/Windows/SelectTopLevelItemDialog.qml:21
 msgctxt "SelectTopLevelItemDialog|"
 msgid "Select Item"
 msgstr "选择项目"
@@ -2424,17 +2426,17 @@ msgctxt "SettingsPage|"
 msgid "Desktop Mode"
 msgstr "桌面模式"
 
-#: ../Utils/ItemUtils.qml:204
+#: ../qml/Utils/ItemUtils.qml:204
 msgctxt "ItemUtils|"
 msgid "Copy Item Into..."
 msgstr "复制项目至..."
 
-#: ../Utils/ItemUtils.qml:221
+#: ../qml/Utils/ItemUtils.qml:221
 msgctxt "ItemUtils|"
 msgid "Copy Todo Into..."
 msgstr "复制待办事项至..."
 
-#: ../Pages/NewLibraryInFolderPage.qml:74
+#: ../qml/Pages/NewLibraryInFolderPage.qml:74
 msgctxt "NewLibraryInFolderPage|"
 msgid "Select a Folder"
 msgstr "选择一个文件夹"
@@ -2464,12 +2466,12 @@ msgctxt "TodoPage|"
 msgid "Show At The End"
 msgstr "显示在末尾"
 
-#: ../Actions/ResetDueTo.qml:8
+#: ../qml/Actions/ResetDueTo.qml:8
 msgctxt "ResetDueTo|"
 msgid "Reset Due To"
 msgstr ""
 
-#: ../Pages/AccountTypeSelectionPage.qml:71
+#: ../qml/Pages/AccountTypeSelectionPage.qml:70
 msgctxt "AccountTypeSelectionPage|"
 msgid "Dropbox"
 msgstr "Dropbox"
@@ -2494,103 +2496,104 @@ msgctxt "CopyItemQuery|"
 msgid "Copy of"
 msgstr "副本"
 
-#: ../Pages/EditDropboxAccountPage.qml:27
-#: ../Pages/EditDropboxAccountPage.qml:66
+#: ../qml/Pages/EditDropboxAccountPage.qml:26
+#: ../qml/Pages/EditDropboxAccountPage.qml:65
 msgctxt "EditDropboxAccountPage|"
 msgid "Connection Settings"
 msgstr "连接设置"
 
-#: ../Pages/EditDropboxAccountPage.qml:74
+#: ../qml/Pages/EditDropboxAccountPage.qml:73
 msgctxt "EditDropboxAccountPage|"
 msgid "Trouble Signing In?"
 msgstr "登录遇到问题？"
 
-#: ../Pages/EditDropboxAccountPage.qml:85
+#: ../qml/Pages/EditDropboxAccountPage.qml:84
 msgctxt "EditDropboxAccountPage|"
 msgid "We have tried to open your browser to log you in to your Dropbox account. Please log in and grant access to OpenTodoList in order to proceed."
 msgstr "我们正尝试打开浏览器来使你登录到Dropbox，请登录并授权给OpenTodoList来继续"
 
-#: ../Pages/EditDropboxAccountPage.qml:92
+#: ../qml/Pages/EditDropboxAccountPage.qml:91
 msgctxt "EditDropboxAccountPage|"
 msgid "Didn't your browser open? You can retry opening it or copy the required URL manually to your browser."
 msgstr "浏览器未打开？你可以重新打开或者复制手动链接到你的浏览器"
 
-#: ../Pages/EditDropboxAccountPage.qml:96
+#: ../qml/Pages/EditDropboxAccountPage.qml:95
 msgctxt "EditDropboxAccountPage|"
 msgid "Authorize..."
 msgstr "认证"
 
-#: ../Pages/EditDropboxAccountPage.qml:105
+#: ../qml/Pages/EditDropboxAccountPage.qml:104
 msgctxt "EditDropboxAccountPage|"
 msgid "Open Browser"
 msgstr "打开浏览器"
 
-#: ../Pages/EditDropboxAccountPage.qml:111
+#: ../qml/Pages/EditDropboxAccountPage.qml:110
 msgctxt "EditDropboxAccountPage|"
 msgid "Copy Link"
 msgstr "复制链接"
 
-#: ../Pages/EditDropboxAccountPage.qml:115
+#: ../qml/Pages/EditDropboxAccountPage.qml:114
 msgctxt "EditDropboxAccountPage|"
 msgid "Copied!"
 msgstr "已复制！"
 
-#: ../Pages/EditDropboxAccountPage.qml:124
+#: ../qml/Pages/EditDropboxAccountPage.qml:123
 msgctxt "EditDropboxAccountPage|"
 msgid "Name:"
 msgstr "名字："
 
-#: ../Pages/EditDropboxAccountPage.qml:131
+#: ../qml/Pages/EditDropboxAccountPage.qml:130
 msgctxt "EditDropboxAccountPage|"
 msgid "Dropbox"
 msgstr "Dropbox"
 
-#: ../Pages/NewDropboxAccountPage.qml:21 ../Pages/NewDropboxAccountPage.qml:54
+#: ../qml/Pages/NewDropboxAccountPage.qml:20
+#: ../qml/Pages/NewDropboxAccountPage.qml:53
 msgctxt "NewDropboxAccountPage|"
 msgid "Connection Settings"
 msgstr "连接设置"
 
-#: ../Pages/NewDropboxAccountPage.qml:62
+#: ../qml/Pages/NewDropboxAccountPage.qml:61
 msgctxt "NewDropboxAccountPage|"
 msgid "Trouble Signing In?"
 msgstr "登录遇到问题？"
 
-#: ../Pages/NewDropboxAccountPage.qml:73
+#: ../qml/Pages/NewDropboxAccountPage.qml:72
 msgctxt "NewDropboxAccountPage|"
 msgid "We have tried to open your browser to log you in to your Dropbox account. Please log in and grant access to OpenTodoList in order to proceed."
 msgstr "我们正尝试打开浏览器来使你登录到Dropbox，请登录并授权给OpenTodoList来继续"
 
-#: ../Pages/NewDropboxAccountPage.qml:80
+#: ../qml/Pages/NewDropboxAccountPage.qml:79
 msgctxt "NewDropboxAccountPage|"
 msgid "Didn't your browser open? You can retry opening it or copy the required URL manually to your browser."
 msgstr "浏览器未打开？你可以重新打开或者复制手动链接到你的浏览器"
 
-#: ../Pages/NewDropboxAccountPage.qml:86
+#: ../qml/Pages/NewDropboxAccountPage.qml:85
 msgctxt "NewDropboxAccountPage|"
 msgid "Authorize..."
 msgstr "认证"
 
-#: ../Pages/NewDropboxAccountPage.qml:95
+#: ../qml/Pages/NewDropboxAccountPage.qml:94
 msgctxt "NewDropboxAccountPage|"
 msgid "Open Browser"
 msgstr "打开浏览器"
 
-#: ../Pages/NewDropboxAccountPage.qml:101
+#: ../qml/Pages/NewDropboxAccountPage.qml:100
 msgctxt "NewDropboxAccountPage|"
 msgid "Copy Link"
 msgstr "复制链接"
 
-#: ../Pages/NewDropboxAccountPage.qml:105
+#: ../qml/Pages/NewDropboxAccountPage.qml:104
 msgctxt "NewDropboxAccountPage|"
 msgid "Copied!"
 msgstr "已复制"
 
-#: ../Pages/NewDropboxAccountPage.qml:114
+#: ../qml/Pages/NewDropboxAccountPage.qml:113
 msgctxt "NewDropboxAccountPage|"
 msgid "Name:"
 msgstr "名字："
 
-#: ../Pages/NewDropboxAccountPage.qml:121
+#: ../qml/Pages/NewDropboxAccountPage.qml:120
 msgctxt "NewDropboxAccountPage|"
 msgid "Dropbox"
 msgstr "Dropbox"
@@ -2620,82 +2623,82 @@ msgctxt "ItemDueDateEditor|"
 msgid "Recurs indefinitely"
 msgstr ""
 
-#: ../Windows/NewItemWithDueDateDialog.qml:150
+#: ../qml/Windows/NewItemWithDueDateDialog.qml:149
 msgctxt "NewItemWithDueDateDialog|"
 msgid "Library"
 msgstr "库"
 
-#: ../Pages/ScheduleViewPage.qml:53
+#: ../qml/Pages/ScheduleViewPage.qml:52
 msgctxt "ScheduleViewPage|"
 msgid "Schedule"
 msgstr "安排"
 
-#: ../Pages/StartPage.qml:46
+#: ../qml/Pages/StartPage.qml:45
 msgctxt "StartPage|"
 msgid "Libraries"
 msgstr "所有库"
 
-#: ../Pages/StartPage.qml:71
+#: ../qml/Pages/StartPage.qml:70
 msgctxt "StartPage|"
 msgid "Add a new library"
 msgstr "添加库"
 
-#: ../Pages/StartPage.qml:90
+#: ../qml/Pages/StartPage.qml:89
 msgctxt "StartPage|"
 msgid "Accounts"
 msgstr "账户"
 
-#: ../Pages/StartPage.qml:112
+#: ../qml/Pages/StartPage.qml:111
 msgctxt "StartPage|"
 msgid "Add an account"
 msgstr "添加账户"
 
-#: ../Pages/LogViewPage.qml:70
+#: ../qml/Pages/LogViewPage.qml:68
 msgctxt "LogViewPage|"
 msgid "Debugging information"
 msgstr "Debug 信息"
 
-#: ../Pages/LogViewPage.qml:72
+#: ../qml/Pages/LogViewPage.qml:70
 msgctxt "LogViewPage|"
 msgid "Warning"
 msgstr "警告"
 
-#: ../Pages/LogViewPage.qml:74
+#: ../qml/Pages/LogViewPage.qml:72
 msgctxt "LogViewPage|"
 msgid "Error"
 msgstr "错误"
 
-#: ../Pages/LogViewPage.qml:76
+#: ../qml/Pages/LogViewPage.qml:74
 msgctxt "LogViewPage|"
 msgid "Download"
 msgstr "下载"
 
-#: ../Pages/LogViewPage.qml:78
+#: ../qml/Pages/LogViewPage.qml:76
 msgctxt "LogViewPage|"
 msgid "Upload"
 msgstr "上传"
 
-#: ../Pages/LogViewPage.qml:80
+#: ../qml/Pages/LogViewPage.qml:78
 msgctxt "LogViewPage|"
 msgid "Create local folder"
 msgstr "创建本地文件夹"
 
-#: ../Pages/LogViewPage.qml:82
+#: ../qml/Pages/LogViewPage.qml:80
 msgctxt "LogViewPage|"
 msgid "Create remote folder"
 msgstr "创建远程文件夹"
 
-#: ../Pages/LogViewPage.qml:84
+#: ../qml/Pages/LogViewPage.qml:82
 msgctxt "LogViewPage|"
 msgid "Deleting locally"
 msgstr "删除本地"
 
-#: ../Pages/LogViewPage.qml:86
+#: ../qml/Pages/LogViewPage.qml:84
 msgctxt "LogViewPage|"
 msgid "Deleting remotely"
 msgstr "删除远程"
 
-#: ../Pages/LogViewPage.qml:88
+#: ../qml/Pages/LogViewPage.qml:86
 msgctxt "LogViewPage|"
 msgid "Unknown log message type"
 msgstr "未知日志信息"
@@ -2710,7 +2713,7 @@ msgctxt "LibraryPageActions|"
 msgid "Open Library Folder"
 msgstr "打开库文件夹"
 
-#: ../Pages/ProblemsPage.qml:91
+#: ../qml/Pages/ProblemsPage.qml:91
 msgctxt "ProblemsPage|"
 msgid "Retry Sync"
 msgstr "重试同步"
@@ -2720,22 +2723,22 @@ msgctxt "SettingsPage|"
 msgid "Monochrome Icon"
 msgstr ""
 
-#: ../Windows/RecurrenceDialog.qml:117
+#: ../qml/Windows/RecurrenceDialog.qml:117
 msgctxt "RecurrenceDialog|"
 msgid "Number of weeks:"
 msgstr "周数"
 
-#: ../Windows/RecurrenceDialog.qml:119
+#: ../qml/Windows/RecurrenceDialog.qml:119
 msgctxt "RecurrenceDialog|"
 msgid "Number of months:"
 msgstr "月数"
 
-#: ../Utils/DeepLinkHandler.qml:56
+#: ../qml/Utils/DeepLinkHandler.qml:56
 msgctxt "DeepLinkHandler|"
 msgid "Uuups... seems that's a dead end..."
 msgstr "哎呀...看起来有问题..."
 
-#: ../Utils/DeepLinkHandler.qml:62
+#: ../qml/Utils/DeepLinkHandler.qml:62
 msgctxt "DeepLinkHandler|"
 msgid "Sorry, that link does not lead to any page or item that is present on this device. Check if the library or item to which the link points is synchronized on this device and try again."
 msgstr "抱歉，该链接不指向此设备上存在的任何页面或项目。请检查链接指向的库或项目是否已在此设备上同步，然后重试。"
