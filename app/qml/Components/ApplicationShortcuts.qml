@@ -84,9 +84,10 @@ Item {
             var lib = OTL.Application.addLocalLibrary("My Library")
 
             var note = OTL.Application.addNote(lib, {
-                                                   "title": "A Note",
-                                                   "notes": ["* This is a note.", "* Notes are used to store text.", "* Text can be **styles** as well 😎", "* On top, additional pages can be added, which actually makes them *notebooks* 😉"].join(
-                                                       "\n")
+                                                   "title": "A note",
+                                                   "notes": ["* This is a note.", "* Notes are used to store text.", "* Text can be **styled** as well (using Markdown 😎)", "* On top, additional pages can be added, which actually makes them *notebooks* 😉"].join(
+                                                       "\n"),
+                                                   "color": OTL.TopLevelItem.Yellow
                                                })
             OTL.Application.addNotePage(lib, note, {
                                             "title": "A second page",
@@ -96,7 +97,8 @@ Item {
             var todoList = OTL.Application.addTodoList(lib, {
                                                            "title": "A todo list",
                                                            "notes": ["* A todo list contains todos.", "* Additionally, notes can be set on them, too.", "* If needed, todos can be further divided by adding tasks to them."].join(
-                                                               "\n")
+                                                               "\n"),
+                                                           "color": OTL.TopLevelItem.Green
                                                        })
 
             OTL.Application.addTodo(lib, todoList, {
@@ -114,7 +116,7 @@ Item {
                                         "title": "Another task"
                                     })
             OTL.Application.addTask(lib, todoWithTasks, {
-                                        "title": "A task already done",
+                                        "title": "A task which is already done",
                                         "done": true
                                     })
 
@@ -122,8 +124,27 @@ Item {
                                                      "title": "An image",
                                                      "image": ":/sample.png",
                                                      "notes": ["* This is an image", "* Images wrap a single image which is prominently shown within a library.", "* As with other top level items, you can add arbitrary notes to them 😉"].join(
-                                                         "\n")
+                                                         "\n"),
+                                                     "color": OTL.TopLevelItem.Lilac
                                                  })
+
+            var noteWithLinks = OTL.Application.addNote(lib, {
+                                                            "title": "Links",
+                                                            "notes": ["It is possible to use links within items:", "* Links can point to any external resource, e.g. to the [app's home page](https://opentodolist.rpdev.net).", "* However, they also can point to internal *things*, like [the library we are in right now](%1), a [todo list](%2) or a [note](%3). You can get links to items by opening them and using the page controls.".arg(
+                                                                    shareUtils.createDeepLink(
+                                                                        lib)).arg(
+                                                                    shareUtils.createDeepLink(
+                                                                        todoList)).arg(
+                                                                    shareUtils.createDeepLink(
+                                                                        note))].join(
+                                                                "\n"),
+                                                            "color": OTL.TopLevelItem.Orange
+                                                        })
+            var colorNote = OTL.Application.addNote(lib, {
+                                                        "title": "Item colors",
+                                                        "notes": ["Items can be colored:", "* Select from a preset of colors to highlight items.", "* Items without a specific color follow the app's color scheme and blend more easily with the background."].join(
+                                                            "\n")
+                                                    })
         }
     }
 

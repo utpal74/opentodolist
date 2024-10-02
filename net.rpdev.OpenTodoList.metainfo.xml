@@ -48,6 +48,20 @@
 
   <releases>
     <!-- Format releases according to this: https://www.freedesktop.org/software/appstream/docs/sect-Metadata-Releases.html#spec-releases-example -->
+    <release version="3.48.0" date="2024-10-02">
+        <description>
+            <p>This release of the app brings some exciting UI changes plus a bunch of fixes:</p>
+        </description>
+        <issues>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/661">#661: Update the style and color theme of the app.</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/654">#654: Add Flathub brand colors.</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/658">#658: Update to Qt 6.7.2.</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/652">#652: Fix rendering of popups when using custom font size.</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/660">#660: Fix automated downloading of translations from POEditor.</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/650">#650: Update translations (apply fix for POEditor downloading bug).</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/379">#379: Start writing user documentation.</issue>
+        </issues>
+    </release>
     <release version="3.47.0" date="2023-12-31">
         <description>
             <p>This is the next minor release of the app, bringing a mixture of features and bug fixes. In addition to the issues solved in this release, the app comes with a redesigned tool bar and a menu on some platforms (macOS, Windows and Linux distributions supporting a global app menu).</p>
