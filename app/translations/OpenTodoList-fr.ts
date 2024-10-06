@@ -261,122 +261,122 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="131"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="152"/>
         <source>Delete</source>
         <translation type="unfinished">Supprimer</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="139"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="160"/>
         <source>Delete Completed Items</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="147"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="168"/>
         <source>Due Date</source>
         <translation type="unfinished">Date d&apos;échéance</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="155"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="176"/>
         <source>Find</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="162"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="183"/>
         <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="179"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="200"/>
         <source>Left Sidebar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="185"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="206"/>
         <source>Mark all items as done</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="197"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="218"/>
         <source>Mark all items as undone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="209"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="230"/>
         <source>Move</source>
         <translation type="unfinished">Déplacer</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="217"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="238"/>
         <source>New Library</source>
         <translation type="unfinished">Nouvelle bibliothèque</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="225"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="246"/>
         <source>Open Created Item</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="232"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="253"/>
         <source>Open In New Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="240"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="261"/>
         <source>Open Library Folder</source>
         <translation type="unfinished">Ouvrir le dossier</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="246"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="267"/>
         <source>Quit</source>
         <translation type="unfinished">Quitter</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="252"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="273"/>
         <source>Rename</source>
         <translation type="unfinished">Renommer</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="260"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="281"/>
         <source>Preferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="281"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="302"/>
         <source>Scroll to Top</source>
         <translation type="unfinished">Défiler vers le haut</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="288"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="309"/>
         <source>Scroll to Bottom</source>
         <translation type="unfinished">Défiler vers le bas</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="295"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="316"/>
         <source>Set Color</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="302"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="323"/>
         <source>Set Progress</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="309"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="330"/>
         <source>Sort</source>
         <translation type="unfinished">Trier</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="317"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="338"/>
         <source>Sync Now</source>
         <translation type="unfinished">Synchroniser maintenant</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="330"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="351"/>
         <source>Sync Log</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="341"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="362"/>
         <source>Translate The App...</source>
         <translation type="unfinished">Traduire l&apos;appli...</translation>
     </message>
