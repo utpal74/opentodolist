@@ -5,14 +5,11 @@ quite right of features. In this chapter, we try to document all of them. To
 approach this in a meaningful way, the chapter is subdivided into the following
 parts:
 
-## Data Model
+## Backup
 
-The [Data Model](./data_model/index.md) part describes the different types of
-entities used within the app. This should give you a good understanding about
-what is meant when certain terms are used within the app. After reading this,
-you should be able to understand which basic capabilities the app provides and
-which type of item can be used for which purposes.
-
+Better safe than sorry! Sometimes it is good to keep an extra copy of your data.
+OpenTodoList has some mechanisms build into it to aid in this common task. These
+are documented in the [Backup](./backup/index.md) section.
 
 ## Sync
 

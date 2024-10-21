@@ -242,6 +242,8 @@ target_link_libraries(opentodolist-common
         KF5::SyntaxHighlighting
 
         # Qt libraries:
+        Qt${QT_VERSION_MAJOR}::Gui
+        Qt${QT_VERSION_MAJOR}::GuiPrivate
         Qt${QT_VERSION_MAJOR}::Qml
         Qt${QT_VERSION_MAJOR}::Quick
         Qt${QT_VERSION_MAJOR}::Xml

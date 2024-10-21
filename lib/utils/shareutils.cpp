@@ -21,6 +21,7 @@
 
 #include <QDesktopServices>
 #include <QUrl>
+#include <qfileinfo.h>
 
 #include "utils/urlhandler.h"
 
@@ -190,6 +191,32 @@ void ShareUtils::openFolder(const QString& path)
     if (canOpenFolders()) {
         m_platformShareUtils->openFolder(path);
     }
+}
+
+/**
+ * @brief Show a file in its folder.
+ *
+ * This method shows the file at @p path in its folder if this is possible on the platform.
+ * Otherwise, the file is directly opened.
+ */
+void ShareUtils::showFileInFolder(const QString& path)
+{
+    if (canOpenFolders()) {
+        QFileInfo fi(path);
+        m_platformShareUtils->openFolder(fi.path());
+    } else {
+        m_platformShareUtils->openFile(path);
+    }
+}
+
+/**
+ * @brief Show a file in its folder.
+ *
+ * This is an overloaded method which accepts the path to the file to be opened as a url.
+ */
+void ShareUtils::showFileInFolder(const QUrl& url)
+{
+    showFileInFolder(url.toLocalFile());
 }
 
 /**
