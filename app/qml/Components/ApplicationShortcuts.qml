@@ -55,6 +55,13 @@ Item {
         onTriggered: stackView.currentItem.attach()
     }
 
+    property C.Action backup: C.Action {
+        text: qsTr("Backup")
+        symbol: C.Icons.mdiArchive
+        enabled: typeof (stackView?.currentItem?.backup) === "function"
+        onTriggered: stackView.currentItem.backup()
+    }
+
     property C.Action close: C.Action {
         text: qsTr("Close")
         shortcut: StandardKey.Close

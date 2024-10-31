@@ -82,14 +82,14 @@ that the app implements includes (but is not limited) to the following:
 
 ### Data Model
 
-- The app structures items in [Libraries](./features/data_model/library.md).
+- The app structures items in [Libraries](./basics/data_model/library.md).
   These can contain the following types of items:
-  - [Todo Lists](./features/data_model/todolist.md), which in turn contain
-    [Todos](./features/data_model/todo.md). Todos can further be broken down
-    into [Tasks](./features/data_model/task.md).
-  - [Notes](./features/data_model/note.md), which are text containers and
-    which can optionally include further [Pages](./features/data_model/page.md).
-  - [Images](./features/data_model/image.md), which combine an image file with
+  - [Todo Lists](./basics/data_model/todolist.md), which in turn contain
+    [Todos](./basics/data_model/todo.md). Todos can further be broken down
+    into [Tasks](./basics/data_model/task.md).
+  - [Notes](./basics/data_model/note.md), which are text containers and
+    which can optionally include further [Pages](./basics/data_model/page.md).
+  - [Images](./basics/data_model/image.md), which combine an image file with
     additional meta information like a title and notes.
 
 ### Sync

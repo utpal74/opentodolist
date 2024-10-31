@@ -50,6 +50,8 @@ public slots:
     void editFile(const QUrl& url, FileEditObserver* observer = nullptr);
     void editFile(const QString& path, FileEditObserver* observer = nullptr);
     void openFolder(const QString& path);
+    void showFileInFolder(const QString& path);
+    void showFileInFolder(const QUrl& url);
 
 signals:
 

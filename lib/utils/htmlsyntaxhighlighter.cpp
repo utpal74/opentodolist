@@ -36,6 +36,8 @@
 #include <KSyntaxHighlighting/KSyntaxHighlighting/state.h>
 #include <KSyntaxHighlighting/KSyntaxHighlighting/theme.h>
 
+#include <memory>
+
 class HtmlHighlighterPrivate
 {
 public:

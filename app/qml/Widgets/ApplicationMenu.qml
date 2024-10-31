@@ -62,6 +62,10 @@ P.MenuBar {
             action: menuBar.shortcuts.openLibraryFolder
         }
 
+        ActionMenuItem {
+            action: menuBar.shortcuts.backup
+        }
+
         Separator {}
 
         ActionMenuItem {
