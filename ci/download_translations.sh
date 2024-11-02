@@ -6,25 +6,14 @@ SCRIPT_DIR="$(cd $(dirname "$0") && pwd)"
 cd "$SCRIPT_DIR"
 cd ..
 
-if [ -n "$CI" ]; then
-    dnf install -y \
-        qt6-qtbase-devel \
-        qt6-linguist \
-        python3 \
-        python3-pip \
-        openssh-clients \
-        git \
-        git-lfs \
-        curl \
-        which \
-        ncurses
-    git lfs install --skip-repo
-fi
-
 export QT_QPA_PLATFORM=minimal
 
-pip3 install poeditor fire
-python3 ./bin/poeditor-client.py download $POEDITOR_TOKEN app/translations
+rm -rf .venv-download-translations
+python3 -m venv .venv-download-translations
+. .venv-download-translations/bin/activate
+
+pip install poeditor fire
+python ./bin/poeditor-client.py download $POEDITOR_TOKEN app/translations
 
 if [ -z "$QT_PATH" ]; then
     QT_PATH=/usr/lib64/qt6/bin
