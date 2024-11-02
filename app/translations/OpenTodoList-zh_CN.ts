@@ -132,42 +132,42 @@
 <context>
     <name>AppStartup</name>
     <message>
-        <location filename="../appstartup.cpp" line="198"/>
+        <location filename="../appstartup.cpp" line="200"/>
         <source>Manage your personal data.</source>
         <translation>管理您的个人数据。</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="204"/>
+        <location filename="../appstartup.cpp" line="206"/>
         <source>Switch on some optimizations for touchscreens.</source>
         <translation>打开一些针对触摸屏的优化。</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="207"/>
+        <location filename="../appstartup.cpp" line="209"/>
         <source>Only run the app background service</source>
         <translation>仅运行应用后台服务</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="209"/>
+        <location filename="../appstartup.cpp" line="211"/>
         <source>Only run the app GUI and connect to an existing app background service</source>
         <translation>仅运行应用图形界面并连接至现有应用的后台服务</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="214"/>
+        <location filename="../appstartup.cpp" line="216"/>
         <source>Enable a console on Windows to gather debug output</source>
         <translation>在 Windows 上启用一个终端来获取调试输出</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="365"/>
+        <location filename="../appstartup.cpp" line="367"/>
         <source>Open</source>
         <translation>打开</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="431"/>
+        <location filename="../appstartup.cpp" line="433"/>
         <source>Quit</source>
         <translation>退出</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="373"/>
+        <location filename="../appstartup.cpp" line="375"/>
         <source>Quick Note</source>
         <translation>快捷笔记</translation>
     </message>
@@ -198,17 +198,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/ApplicationMenu.qml" line="83"/>
+        <location filename="../qml/Widgets/ApplicationMenu.qml" line="87"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/ApplicationMenu.qml" line="154"/>
+        <location filename="../qml/Widgets/ApplicationMenu.qml" line="158"/>
         <source>Navigate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/ApplicationMenu.qml" line="193"/>
+        <location filename="../qml/Widgets/ApplicationMenu.qml" line="197"/>
         <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
@@ -242,141 +242,146 @@
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="59"/>
+        <source>Backup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="66"/>
         <source>Close</source>
         <translation type="unfinished">关闭</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="66"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="73"/>
         <source>Copy</source>
         <translation type="unfinished">复制</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="74"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="81"/>
         <source>Copy Link To Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="82"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="89"/>
         <source>Create Sample Library</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="152"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="159"/>
         <source>Delete</source>
         <translation type="unfinished">删除</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="160"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="167"/>
         <source>Delete Completed Items</source>
         <translation type="unfinished">删除已完成的项目</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="168"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="175"/>
         <source>Due Date</source>
         <translation type="unfinished">到期日期</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="176"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="183"/>
         <source>Find</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="183"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="190"/>
         <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="200"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="207"/>
         <source>Left Sidebar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="206"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="213"/>
         <source>Mark all items as done</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="218"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="225"/>
         <source>Mark all items as undone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="230"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="237"/>
         <source>Move</source>
         <translation type="unfinished">移动</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="238"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="245"/>
         <source>New Library</source>
         <translation type="unfinished">新资料库</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="246"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="253"/>
         <source>Open Created Item</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="253"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="260"/>
         <source>Open In New Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="261"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="268"/>
         <source>Open Library Folder</source>
         <translation type="unfinished">打开库文件夹</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="267"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="274"/>
         <source>Quit</source>
         <translation type="unfinished">退出</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="273"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="280"/>
         <source>Rename</source>
         <translation type="unfinished">重命名</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="281"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="288"/>
         <source>Preferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="302"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="309"/>
         <source>Scroll to Top</source>
         <translation type="unfinished">滚动到顶端</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="309"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="316"/>
         <source>Scroll to Bottom</source>
         <translation type="unfinished">滚动到底端</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="316"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="323"/>
         <source>Set Color</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="323"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="330"/>
         <source>Set Progress</source>
         <translation type="unfinished">设定进度</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="330"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="337"/>
         <source>Sort</source>
         <translation type="unfinished">排序</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="338"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="345"/>
         <source>Sync Now</source>
         <translation type="unfinished">立即同步</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="351"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="358"/>
         <source>Sync Log</source>
         <translation type="unfinished">同步日志</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="362"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="369"/>
         <source>Translate The App...</source>
         <translation type="unfinished">帮助我们翻译这个应用...</translation>
     </message>
@@ -977,109 +982,127 @@
     </message>
 </context>
 <context>
+    <name>Library</name>
+    <message>
+        <location filename="../../lib/datamodel/library.cpp" line="615"/>
+        <source>Unable to create backup folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../lib/datamodel/library.cpp" line="619"/>
+        <source>Failed to change into backup folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../lib/datamodel/library.cpp" line="630"/>
+        <source>Failed to open file for writing: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>LibraryPage</name>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="206"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="210"/>
         <source>Red</source>
         <translation>红</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="213"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="217"/>
         <source>Green</source>
         <translation>绿</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="220"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="224"/>
         <source>Blue</source>
         <translation>蓝</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="227"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="231"/>
         <source>Yellow</source>
         <translation>黄</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="234"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="238"/>
         <source>Orange</source>
         <translation>橙</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="241"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="245"/>
         <source>Lilac</source>
         <translation>紫</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="248"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="252"/>
         <source>White</source>
         <translation>白</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="258"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="262"/>
         <source>Rename</source>
         <translation>重命名</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="269"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="273"/>
         <source>Delete</source>
         <translation>删除</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="351"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="355"/>
         <source>Note Title</source>
         <translation>笔记标题</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="364"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="368"/>
         <source>Todo List Title</source>
         <translation>待办事项清单标题</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="377"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="381"/>
         <source>Search term 1, search term 2, ...</source>
         <translation>搜索词1，搜索词2，...</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="454"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="458"/>
         <source>Nothing here yet! Start by adding a &lt;a href=&apos;#note&apos;&gt;note&lt;/a&gt;, &lt;a href=&apos;#todolist&apos;&gt;todo list&lt;/a&gt; or &lt;a href=&apos;#image&apos;&gt;image&lt;/a&gt;.</source>
         <translation>这里什么都没有！首先添加&lt;a href=&apos;#note&apos;&gt;便笺&lt;/a&gt;，&lt;a href=&apos;#todolist&apos;&gt;待办事项列表&lt;/a&gt;或&lt;a href=&apos;#image&apos;&gt;图片&lt;/a&gt;。</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="510"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="514"/>
         <source>Sort By</source>
         <translation>排序方式</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="514"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="518"/>
         <source>Manually</source>
         <translation>手动</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="521"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="525"/>
         <source>Title</source>
         <translation>标题</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="528"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="532"/>
         <source>Due To</source>
         <translation>到期于</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="535"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="539"/>
         <source>Created At</source>
         <translation>创建于</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="542"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="546"/>
         <source>Updated At</source>
         <translation>更新于</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="263"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="267"/>
         <source>Copy</source>
         <translation>复制</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="281"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="285"/>
         <source>Select Image</source>
         <translation>选择图片</translation>
     </message>
@@ -1676,8 +1699,8 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../appstartup.cpp" line="310"/>
-        <location filename="../appstartup.cpp" line="317"/>
+        <location filename="../appstartup.cpp" line="312"/>
+        <location filename="../appstartup.cpp" line="319"/>
         <source>unknown</source>
         <translation>未知</translation>
     </message>

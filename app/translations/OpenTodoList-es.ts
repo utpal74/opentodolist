@@ -132,42 +132,42 @@
 <context>
     <name>AppStartup</name>
     <message>
-        <location filename="../appstartup.cpp" line="198"/>
+        <location filename="../appstartup.cpp" line="200"/>
         <source>Manage your personal data.</source>
         <translation>Gestione sus datos personales.</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="204"/>
+        <location filename="../appstartup.cpp" line="206"/>
         <source>Switch on some optimizations for touchscreens.</source>
         <translation>Active algunas optimizaciones para pantallas táctiles.</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="207"/>
+        <location filename="../appstartup.cpp" line="209"/>
         <source>Only run the app background service</source>
         <translation>Ejecute solo el servicio en segundo plano de la aplicación</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="209"/>
+        <location filename="../appstartup.cpp" line="211"/>
         <source>Only run the app GUI and connect to an existing app background service</source>
         <translation>Ejecute solo la GUI de la aplicación y conéctese a un servicio en segundo plano de la aplicación existente</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="214"/>
+        <location filename="../appstartup.cpp" line="216"/>
         <source>Enable a console on Windows to gather debug output</source>
         <translation>Habilite una consola en Windows para recopilar resultados de depuración</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="365"/>
+        <location filename="../appstartup.cpp" line="367"/>
         <source>Open</source>
         <translation>Abierta</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="431"/>
+        <location filename="../appstartup.cpp" line="433"/>
         <source>Quit</source>
         <translation>Abandonar</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="373"/>
+        <location filename="../appstartup.cpp" line="375"/>
         <source>Quick Note</source>
         <translation>Nota rápida</translation>
     </message>
@@ -198,17 +198,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/ApplicationMenu.qml" line="83"/>
+        <location filename="../qml/Widgets/ApplicationMenu.qml" line="87"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/ApplicationMenu.qml" line="154"/>
+        <location filename="../qml/Widgets/ApplicationMenu.qml" line="158"/>
         <source>Navigate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/ApplicationMenu.qml" line="193"/>
+        <location filename="../qml/Widgets/ApplicationMenu.qml" line="197"/>
         <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
@@ -242,141 +242,146 @@
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="59"/>
+        <source>Backup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="66"/>
         <source>Close</source>
         <translation type="unfinished">Cerrar</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="66"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="73"/>
         <source>Copy</source>
         <translation type="unfinished">Copiar</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="74"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="81"/>
         <source>Copy Link To Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="82"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="89"/>
         <source>Create Sample Library</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="152"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="159"/>
         <source>Delete</source>
         <translation type="unfinished">Eliminar</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="160"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="167"/>
         <source>Delete Completed Items</source>
         <translation type="unfinished">Eliminar elementos completados</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="168"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="175"/>
         <source>Due Date</source>
         <translation type="unfinished">Fecha de vencimiento</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="176"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="183"/>
         <source>Find</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="183"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="190"/>
         <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="200"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="207"/>
         <source>Left Sidebar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="206"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="213"/>
         <source>Mark all items as done</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="218"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="225"/>
         <source>Mark all items as undone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="230"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="237"/>
         <source>Move</source>
         <translation type="unfinished">Mover</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="238"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="245"/>
         <source>New Library</source>
         <translation type="unfinished">Nueva Biblioteca</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="246"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="253"/>
         <source>Open Created Item</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="253"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="260"/>
         <source>Open In New Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="261"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="268"/>
         <source>Open Library Folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="267"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="274"/>
         <source>Quit</source>
         <translation type="unfinished">Abandonar</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="273"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="280"/>
         <source>Rename</source>
         <translation type="unfinished">Renombrar</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="281"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="288"/>
         <source>Preferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="302"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="309"/>
         <source>Scroll to Top</source>
         <translation type="unfinished">Vuelve al comienzo</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="309"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="316"/>
         <source>Scroll to Bottom</source>
         <translation type="unfinished">Desplazarse hacia abajo</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="316"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="323"/>
         <source>Set Color</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="323"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="330"/>
         <source>Set Progress</source>
         <translation type="unfinished">Establecer progreso</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="330"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="337"/>
         <source>Sort</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="338"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="345"/>
         <source>Sync Now</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="351"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="358"/>
         <source>Sync Log</source>
         <translation type="unfinished">Registro de sincronización</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="362"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="369"/>
         <source>Translate The App...</source>
         <translation type="unfinished">Traducir la aplicación...</translation>
     </message>
@@ -979,109 +984,127 @@
     </message>
 </context>
 <context>
+    <name>Library</name>
+    <message>
+        <location filename="../../lib/datamodel/library.cpp" line="615"/>
+        <source>Unable to create backup folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../lib/datamodel/library.cpp" line="619"/>
+        <source>Failed to change into backup folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../lib/datamodel/library.cpp" line="630"/>
+        <source>Failed to open file for writing: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>LibraryPage</name>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="206"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="210"/>
         <source>Red</source>
         <translation>Rojo</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="213"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="217"/>
         <source>Green</source>
         <translation>Verde</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="220"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="224"/>
         <source>Blue</source>
         <translation>Azul</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="227"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="231"/>
         <source>Yellow</source>
         <translation>Amarillo</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="234"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="238"/>
         <source>Orange</source>
         <translation>Naranja</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="241"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="245"/>
         <source>Lilac</source>
         <translation>Lila</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="248"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="252"/>
         <source>White</source>
         <translation>Blanco</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="258"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="262"/>
         <source>Rename</source>
         <translation>Renombrar</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="269"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="273"/>
         <source>Delete</source>
         <translation>Eliminar</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="351"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="355"/>
         <source>Note Title</source>
         <translation>Título de la nota</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="364"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="368"/>
         <source>Todo List Title</source>
         <translation>Título de la lista de todo</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="377"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="381"/>
         <source>Search term 1, search term 2, ...</source>
         <translation>Término de búsqueda 1, término de búsqueda 2, ...</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="454"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="458"/>
         <source>Nothing here yet! Start by adding a &lt;a href=&apos;#note&apos;&gt;note&lt;/a&gt;, &lt;a href=&apos;#todolist&apos;&gt;todo list&lt;/a&gt; or &lt;a href=&apos;#image&apos;&gt;image&lt;/a&gt;.</source>
         <translation>Aún no hay nada aquí! Comienza añadiendo una lista de &lt;a href=&apos;#note&apos;&gt;note&lt;/a&gt;, &lt;a href=&apos;#todolist&apos;&gt;todo&lt;/a&gt; o &lt;a href=&apos;#image&apos;&gt;image&lt;/a&gt;.</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="510"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="514"/>
         <source>Sort By</source>
         <translation>Ordenar por</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="514"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="518"/>
         <source>Manually</source>
         <translation>Manualmente</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="521"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="525"/>
         <source>Title</source>
         <translation>Título</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="528"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="532"/>
         <source>Due To</source>
         <translation>Debido a</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="535"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="539"/>
         <source>Created At</source>
         <translation>Creado en</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="542"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="546"/>
         <source>Updated At</source>
         <translation>Actualizado en</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="263"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="267"/>
         <source>Copy</source>
         <translation>Copiar</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="281"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="285"/>
         <source>Select Image</source>
         <translation>Seleccionar imagen</translation>
     </message>
@@ -1678,8 +1701,8 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../appstartup.cpp" line="310"/>
-        <location filename="../appstartup.cpp" line="317"/>
+        <location filename="../appstartup.cpp" line="312"/>
+        <location filename="../appstartup.cpp" line="319"/>
         <source>unknown</source>
         <translation>Desconocido</translation>
     </message>
