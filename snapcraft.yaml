@@ -2,8 +2,11 @@ name: opentodolist
 version: git
 confinement: strict
 grade: stable
-base: core20
+base: core22
 adopt-info: opentodolist # part to adopt appstream data from (first in parse list)
+donation: https://opentodolist.rpdev.net/donate/
+issues:
+    - https://gitlab.com/rpdev/opentodolist/-/issues
 apps:
     opentodolist:
         command: usr/bin/OpenTodoList-launcher
@@ -27,6 +30,8 @@ parts:
         source: ./
         parse-info: [net.rpdev.OpenTodoList.metainfo.xml]
         override-build: ./ci/snapcraft-build.sh
+        build-packages:
+            - git
         stage-packages:
             - libx11-6
             - libxcb1
