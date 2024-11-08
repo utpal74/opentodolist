@@ -91,30 +91,31 @@ Item {
         button: asparagus
 
         // A foreground color used with the Button color.
-        buttonText: textColorForBackgroundColor(button)
+        buttonText: textColorForBackgroundColor(asparagus)
 
         // A text color that is very different from WindowText, and contrasts well with e.g. Dark.
         // Typically used for text that needs to be drawn where Text or WindowText would give poor
         // contrast, such as on pressed push buttons. Note that text colors can be used for things
         // other than just words; text colors are usually used for text, but it's quite common to
         // use the text color roles for lines, icons, etc.
-        brightText: textColorForBackgroundColor(dark)
+        brightText: textColorForBackgroundColor(getDarkColorFromButtonColor(
+                                                    asparagus, false))
 
         ////////////////////////////////////////////////////////////////////////////////////////////
         // Used for painting 3D bevels and shadow effects.
         ////////////////////////////////////////////////////////////////////////////////////////////
 
         // Lighter than Button color.
-        light: getLightColorFromButtonColor(button, false)
+        light: getLightColorFromButtonColor(asparagus, false)
 
         // Between Button and Light.
-        midlight: getMidColorFromButtonColor(button, false)
+        midlight: getMidColorFromButtonColor(asparagus, false)
 
         // Darker than Button.
-        dark: getDarkColorFromButtonColor(button, false)
+        dark: getDarkColorFromButtonColor(asparagus, false)
 
         // Between Button and Dark.
-        mid: getMidColorFromButtonColor(button, false)
+        mid: getMidColorFromButtonColor(asparagus, false)
 
         // A very dark color. By default, the shadow color is Qt::black.
         shadow: raisinBlack
@@ -134,7 +135,7 @@ Item {
 
         // A text color that contrasts with Highlight. By default, the highlighted text color is
         // Qt::white.
-        highlightedText: textColorForBackgroundColor(highlight)
+        highlightedText: textColorForBackgroundColor(bittersweetShimmer)
 
         ////////////////////////////////////////////////////////////////////////////////////////////
         // Link colors
@@ -149,6 +150,7 @@ Item {
     }
 
     readonly property var darkColorPalete: Palette {
+
         ////////////////////////////////////////////////////////////////////////////////////////////
         // Central roles
         ////////////////////////////////////////////////////////////////////////////////////////////
@@ -189,30 +191,31 @@ Item {
         button: yellowGreen
 
         // A foreground color used with the Button color.
-        buttonText: textColorForBackgroundColor(button)
+        buttonText: textColorForBackgroundColor(yellowGreen)
 
         // A text color that is very different from WindowText, and contrasts well with e.g. Dark.
         // Typically used for text that needs to be drawn where Text or WindowText would give poor
         // contrast, such as on pressed push buttons. Note that text colors can be used for things
         // other than just words; text colors are usually used for text, but it's quite common to
         // use the text color roles for lines, icons, etc.
-        brightText: textColorForBackgroundColor(dark)
+        brightText: textColorForBackgroundColor(getDarkColorFromButtonColor(
+                                                    yellowGreen, true))
 
         ////////////////////////////////////////////////////////////////////////////////////////////
         // Used for painting 3D bevels and shadow effects.
         ////////////////////////////////////////////////////////////////////////////////////////////
 
         // Lighter than Button color.
-        light: getLightColorFromButtonColor(button, true)
+        light: getLightColorFromButtonColor(yellowGreen, true)
 
         // Between Button and Light.
-        midlight: getMidColorFromButtonColor(button, true)
+        midlight: getMidColorFromButtonColor(yellowGreen, true)
 
         // Darker than Button.
-        dark: getDarkColorFromButtonColor(button, true)
+        dark: getDarkColorFromButtonColor(yellowGreen, true)
 
         // Between Button and Dark.
-        mid: getMidColorFromButtonColor(button, true)
+        mid: getMidColorFromButtonColor(yellowGreen, true)
 
         // A very dark color. By default, the shadow color is Qt::black.
         shadow: antiFlashWhite
@@ -232,7 +235,7 @@ Item {
 
         // A text color that contrasts with Highlight. By default, the highlighted text color is
         // Qt::white.
-        highlightedText: textColorForBackgroundColor(highlight)
+        highlightedText: textColorForBackgroundColor(bittersweetShimmer)
 
         ////////////////////////////////////////////////////////////////////////////////////////////
         // Link colors
@@ -292,7 +295,7 @@ Item {
         }
     }
 
-    palette: {
+    readonly property var selectedPalette: {
         switch (theme) {
             case ColorTheme.Theme.Light:
             return lightColorPalete

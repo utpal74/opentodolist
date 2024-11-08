@@ -55,6 +55,8 @@ target_sources(
         datastorage/loadlibraryquery.h
         datastorage/movetodoquery.cpp
         datastorage/movetodoquery.h
+        datastorage/movetaskquery.h
+        datastorage/movetaskquery.cpp
         datastorage/promotetaskquery.cpp
         datastorage/promotetaskquery.h
         datastorage/updateitemquery.cpp

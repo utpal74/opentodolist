@@ -19,7 +19,7 @@ C.SwipeDelegate {
     property OTL.LibraryItem parentItem: OTL.LibraryItem {}
     property OTL.Library library: null
     property bool hideDueDate: false
-    readonly property var itemActions: ([renameAction, copyTodoAction, moveTodoAction, promoteTaskAction, setDueTodayAction, setDueTomorrowAction, setDueNextWeekAction, setDueThisWeekAction, setDueToAction, resetDueToAction, deleteAction])
+    readonly property var itemActions: ([renameAction, copyTodoAction, moveTodoAction, moveTaskAction, promoteTaskAction, setDueTodayAction, setDueTomorrowAction, setDueNextWeekAction, setDueThisWeekAction, setDueToAction, resetDueToAction, deleteAction])
     property bool allowReordering: false
     property bool drawSeperator: true
     property alias leftColorSwatch: leftColorSwatch
@@ -411,6 +411,13 @@ C.SwipeDelegate {
         item: swipeDelegate.item
         library: swipeDelegate.library
         enabled: item.itemType === "Todo"
+        itemUtils: swipeDelegate.C.ApplicationWindow.window?.itemUtils ?? null
+    }
+    Actions.MoveTask {
+        id: moveTaskAction
+        item: swipeDelegate.item
+        library: swipeDelegate.library
+        enabled: item.itemType === "Task"
         itemUtils: swipeDelegate.C.ApplicationWindow.window?.itemUtils ?? null
     }
     Actions.CopyTodo {

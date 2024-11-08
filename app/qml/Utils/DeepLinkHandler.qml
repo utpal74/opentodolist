@@ -55,9 +55,12 @@ Item {
 
         title: qsTr("Uuups... seems that's a dead end...")
         width: idealDialogWidth
+        implicitHeight: dialogLabel.height * 3
         standardButtons: C.Dialog.Close
 
         C.Label {
+            id: dialogLabel
+
             width: notFoundDialog.availableWidth
             text: qsTr("Sorry, that link does not lead to any page or item that is present on this device. Check if the library or item to which the link points is synchronized on this device and try again.")
         }

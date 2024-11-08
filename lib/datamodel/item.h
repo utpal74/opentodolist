@@ -173,6 +173,18 @@ public:
     void loadCachedData(const ItemCacheEntry& entry);
     void loadCachedData(const QVariant& entry);
 
+    template<typename T>
+    static QSharedPointer<T> decache(const ItemCacheEntry& entry)
+    {
+        if (entry.valid) {
+            QSharedPointer<Item> item(Item::decache(entry));
+            if (item) {
+                return qSharedPointerCast<T>(item);
+            }
+        }
+        return QSharedPointer<T>();
+    }
+
     Cache* cache() const;
     void setCache(Cache* cache);
 
