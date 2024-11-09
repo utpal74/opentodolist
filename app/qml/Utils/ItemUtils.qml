@@ -60,6 +60,22 @@ Item {
         d.moveTodoDialog.open()
     }
 
+    function moveTask(task, library) {
+        if (!library) {
+            console.warn("Called ItemUtils.moveTask() with null library")
+            return
+        }
+
+        if (d.moveTaskDialog === null) {
+            d.moveTaskDialog = moveTaskDialogComponent.createObject(window)
+        }
+        d.moveTaskDialog.library = library
+        d.moveTaskDialog.task = task
+        d.moveTaskDialog.excludeTodos = [task.todoUid]
+        d.moveTaskDialog.clear()
+        d.moveTaskDialog.open()
+    }
+
     function promoteTask(task, todoList, library) {
         if (!library) {
             console.warn("Called ItemUtils.promoteTask() with null library")
@@ -129,6 +145,7 @@ Item {
         property Windows.DeleteCompletedItemsDialog deleteCompletedItemsDialog: null
         property Windows.DateSelectionDialog dateSelectionDialog: null
         property Windows.SelectTodoListDialog moveTodoDialog: null
+        property Windows.SelectTodoDialog moveTaskDialog: null
         property Windows.SelectTodoListDialog promoteTaskDialog: null
         property Windows.SelectLibraryDialog selectLibraryDialog: null
         property Windows.SelectTopLevelItemDialog selectTodoListAndLibraryDialog: null
@@ -174,6 +191,21 @@ Item {
             onAccepted: {
                 if (todo && selectedTodoList) {
                     OTL.Application.moveTodo(todo, selectedTodoList)
+                }
+            }
+        }
+    }
+
+    Component {
+        id: moveTaskDialogComponent
+
+        Windows.SelectTodoDialog {
+            property OTL.Task task: null
+
+            title: qsTr("Move Task Into...")
+            onAccepted: {
+                if (task && selectedTodo) {
+                    OTL.Application.moveTask(task, selectedTodo)
                 }
             }
         }

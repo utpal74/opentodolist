@@ -41,7 +41,7 @@ C.ToolBar {
                 symbol: appShortcuts.leftSidebar.symbol
                 down: appShortcuts.leftSidebar.checked
                 flat: true
-                textColor: headerToolBar.palette.text
+                textColor: palette.text
                 onClicked: appShortcuts.leftSidebar.triggered()
                 Layout.alignment: Qt.AlignVCenter
             }
@@ -50,7 +50,7 @@ C.ToolBar {
                 id: backToolButton
 
                 flat: true
-                textColor: headerToolBar.palette.text
+                textColor: palette.text
                 symbol: {
                     switch (Qt.platform.os) {
                     case "ios":
@@ -102,7 +102,7 @@ C.ToolBar {
                         title: modelData.title
                         modal: true
                         y: applicationToolBar.height
-                        palette: C.ColorTheme.palette
+                        palette: C.ColorTheme.selectedPalette
 
                         Repeater {
                             model: menuFromAppMenu.appMenuEntry.items
