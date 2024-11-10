@@ -175,17 +175,17 @@
 <context>
     <name>Application</name>
     <message>
-        <location filename="../../lib/application.cpp" line="218"/>
+        <location filename="../../lib/application.cpp" line="219"/>
         <source>Background Sync</source>
         <translation>后台同步</translation>
     </message>
     <message>
-        <location filename="../../lib/application.cpp" line="222"/>
+        <location filename="../../lib/application.cpp" line="223"/>
         <source>App continues to sync your data in the background</source>
         <translation>应用将继续在后台同步数据</translation>
     </message>
     <message>
-        <location filename="../../lib/application.cpp" line="226"/>
+        <location filename="../../lib/application.cpp" line="227"/>
         <source>Quit</source>
         <translation>退出</translation>
     </message>
@@ -510,7 +510,7 @@
         <translation>哎呀...看起来有问题...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/DeepLinkHandler.qml" line="62"/>
+        <location filename="../qml/Utils/DeepLinkHandler.qml" line="65"/>
         <source>Sorry, that link does not lead to any page or item that is present on this device. Check if the library or item to which the link points is synchronized on this device and try again.</source>
         <translation>抱歉，该链接不指向此设备上存在的任何页面或项目。请检查链接指向的库或项目是否已在此设备上同步，然后重试。</translation>
     </message>
@@ -879,21 +879,6 @@
         <translation>尚未添加任何笔记 - 单击此处添加一些笔记。</translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="106"/>
-        <source>Copy</source>
-        <translation type="unfinished">复制</translation>
-    </message>
-    <message>
-        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="113"/>
-        <source>Copy Formatted Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="129"/>
-        <source>Copy Plain Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../qml/Widgets/ItemNotesEditor.qml" line="160"/>
         <source>Export to File...</source>
         <translation>导出到文件...</translation>
@@ -908,28 +893,48 @@
         <source>All files</source>
         <translation>所有的文件</translation>
     </message>
+    <message>
+        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="106"/>
+        <source>Copy</source>
+        <translation type="unfinished">复制</translation>
+    </message>
+    <message>
+        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="113"/>
+        <source>Copy Formatted Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="129"/>
+        <source>Copy Plain Text</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ItemUtils</name>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="173"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="190"/>
         <source>Move Todo Into...</source>
         <translation>移动待办事项至...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="188"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="220"/>
         <source>Convert Task to Todo and Move Into...</source>
         <translation>转换任务为待办事项并移动至...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="204"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="236"/>
         <source>Copy Item Into...</source>
         <translation>复制项目至...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="221"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="253"/>
         <source>Copy Todo Into...</source>
         <translation>复制待办事项至...</translation>
+    </message>
+    <message>
+        <location filename="../qml/Utils/ItemUtils.qml" line="205"/>
+        <source>Move Task Into...</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -971,14 +976,14 @@
         <translation>向下移动</translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/LibrariesSideBar.qml" line="293"/>
-        <source>Untagged</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../qml/Widgets/LibrariesSideBar.qml" line="93"/>
         <source>Donate</source>
         <translation>捐助</translation>
+    </message>
+    <message>
+        <location filename="../qml/Widgets/LibrariesSideBar.qml" line="293"/>
+        <source>Untagged</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1194,6 +1199,14 @@
         <location filename="../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml" line="29"/>
         <source>Keep Open</source>
         <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MoveTask</name>
+    <message>
+        <location filename="../qml/Actions/MoveTask.qml" line="12"/>
+        <source>Move</source>
+        <translation type="unfinished">移动</translation>
     </message>
 </context>
 <context>
@@ -1927,6 +1940,24 @@
         <location filename="../qml/Windows/SelectLibraryDialog.qml" line="21"/>
         <source>Select Library</source>
         <translation>选择图书馆</translation>
+    </message>
+</context>
+<context>
+    <name>SelectTodoDialog</name>
+    <message>
+        <location filename="../qml/Windows/SelectTodoDialog.qml" line="22"/>
+        <source>Select Todo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Windows/SelectTodoDialog.qml" line="42"/>
+        <source>Todo List:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Windows/SelectTodoDialog.qml" line="64"/>
+        <source>Todo:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

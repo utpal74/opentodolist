@@ -175,17 +175,17 @@
 <context>
     <name>Application</name>
     <message>
-        <location filename="../../lib/application.cpp" line="218"/>
+        <location filename="../../lib/application.cpp" line="219"/>
         <source>Background Sync</source>
         <translation>Synchronisation en arrière plan</translation>
     </message>
     <message>
-        <location filename="../../lib/application.cpp" line="222"/>
+        <location filename="../../lib/application.cpp" line="223"/>
         <source>App continues to sync your data in the background</source>
         <translation>L&apos;application poursuit la synchronisation de vos données en arrière plan</translation>
     </message>
     <message>
-        <location filename="../../lib/application.cpp" line="226"/>
+        <location filename="../../lib/application.cpp" line="227"/>
         <source>Quit</source>
         <translation>Quitter</translation>
     </message>
@@ -510,7 +510,7 @@
         <translation>Ouuups... le lien semble rompu...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/DeepLinkHandler.qml" line="62"/>
+        <location filename="../qml/Utils/DeepLinkHandler.qml" line="65"/>
         <source>Sorry, that link does not lead to any page or item that is present on this device. Check if the library or item to which the link points is synchronized on this device and try again.</source>
         <translation>Désolé, ce lien mène à aucune page ou élément présent sur cet appareil. Vérifiez que la bibliothèque ou l&apos;élément est bien synchronisé sur cet appareil et réessayez.</translation>
     </message>
@@ -879,21 +879,6 @@
         <translation>Aucune note n&apos;a encore été ajoutée - cliquez ici pour en ajouter.</translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="106"/>
-        <source>Copy</source>
-        <translation type="unfinished">Copier</translation>
-    </message>
-    <message>
-        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="113"/>
-        <source>Copy Formatted Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="129"/>
-        <source>Copy Plain Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../qml/Widgets/ItemNotesEditor.qml" line="160"/>
         <source>Export to File...</source>
         <translation>Exporter vers le fichier...</translation>
@@ -908,28 +893,48 @@
         <source>All files</source>
         <translation>Tous les fichiers</translation>
     </message>
+    <message>
+        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="106"/>
+        <source>Copy</source>
+        <translation type="unfinished">Copier</translation>
+    </message>
+    <message>
+        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="113"/>
+        <source>Copy Formatted Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="129"/>
+        <source>Copy Plain Text</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ItemUtils</name>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="173"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="190"/>
         <source>Move Todo Into...</source>
         <translation>Déplacer ToDo dans ...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="188"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="220"/>
         <source>Convert Task to Todo and Move Into...</source>
         <translation>Convertir une tâche en Todo et la déplacer dans...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="204"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="236"/>
         <source>Copy Item Into...</source>
         <translation>Copier l&apos;élément dans...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="221"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="253"/>
         <source>Copy Todo Into...</source>
         <translation>Copier la tâche dans...</translation>
+    </message>
+    <message>
+        <location filename="../qml/Utils/ItemUtils.qml" line="205"/>
+        <source>Move Task Into...</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -971,14 +976,14 @@
         <translation>Vers le bas</translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/LibrariesSideBar.qml" line="293"/>
-        <source>Untagged</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../qml/Widgets/LibrariesSideBar.qml" line="93"/>
         <source>Donate</source>
         <translation>Donner</translation>
+    </message>
+    <message>
+        <location filename="../qml/Widgets/LibrariesSideBar.qml" line="293"/>
+        <source>Untagged</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1194,6 +1199,14 @@
         <location filename="../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml" line="29"/>
         <source>Keep Open</source>
         <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MoveTask</name>
+    <message>
+        <location filename="../qml/Actions/MoveTask.qml" line="12"/>
+        <source>Move</source>
+        <translation type="unfinished">Déplacer</translation>
     </message>
 </context>
 <context>
@@ -1928,6 +1941,24 @@
         <location filename="../qml/Windows/SelectLibraryDialog.qml" line="21"/>
         <source>Select Library</source>
         <translation>Choisir Bibliothèque</translation>
+    </message>
+</context>
+<context>
+    <name>SelectTodoDialog</name>
+    <message>
+        <location filename="../qml/Windows/SelectTodoDialog.qml" line="22"/>
+        <source>Select Todo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Windows/SelectTodoDialog.qml" line="42"/>
+        <source>Todo List:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Windows/SelectTodoDialog.qml" line="64"/>
+        <source>Todo:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

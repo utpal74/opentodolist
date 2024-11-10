@@ -50,22 +50,22 @@ msgid "Download: <a href='%1'>%1</a>"
 msgstr "Descargue: <a href='%1'>%1</a>\n"
 ""
 
-#: ../Widgets/Attachments.qml:37
+#: ../qml/Widgets/Attachments.qml:36
 msgctxt "Attachments|"
 msgid "Attach File"
 msgstr "Adjuntar Archivo"
 
-#: ../Widgets/Attachments.qml:52
+#: ../qml/Widgets/Attachments.qml:51
 msgctxt "Attachments|"
 msgid "Delete Attachment?"
 msgstr "Borrar el archivo adjunto?"
 
-#: ../Widgets/Attachments.qml:56
+#: ../qml/Widgets/Attachments.qml:55
 msgctxt "Attachments|"
 msgid "Are you sure you want to delete the attachment <strong>%1</strong>? This action cannot be undone."
 msgstr "Estás seguro de que quieres borrar el adjunto <strong>%1</strong>? Esta acción no puede deshacerse."
 
-#: ../Widgets/Attachments.qml:70
+#: ../qml/Widgets/Attachments.qml:69
 msgctxt "Attachments|"
 msgid "Attachments"
 msgstr "Anexos"
@@ -171,17 +171,18 @@ msgctxt "ItemCreatedNotification|"
 msgid "Open"
 msgstr "Abrir"
 
-#: ../Widgets/ItemDueDateEditor.qml:32
+#: ../qml/Widgets/ItemDueDateEditor.qml:31
 msgctxt "ItemDueDateEditor|"
 msgid "Due on"
 msgstr "Se espera que..."
 
-#: ../Widgets/ItemNotesEditor.qml:32
+#: ../qml/Widgets/ItemNotesEditor.qml:28
 msgctxt "ItemNotesEditor|"
 msgid "Notes"
 msgstr "Notas"
 
-#: ../Widgets/LibrariesSideBar.qml:62 ../Widgets/LibrariesSideBar.qml:262
+#: ../qml/Widgets/LibrariesSideBar.qml:55
+#: ../qml/Widgets/LibrariesSideBar.qml:223
 msgctxt "LibrariesSideBar|"
 msgid "Schedule"
 msgstr "Programación"
@@ -196,67 +197,67 @@ msgctxt "LibrariesSideBar|"
 msgid "About..."
 msgstr "Acerca de..."
 
-#: ../Pages/LibraryPage.qml:201
+#: ../qml/Pages/LibraryPage.qml:210
 msgctxt "LibraryPage|"
 msgid "Red"
 msgstr "Rojo"
 
-#: ../Pages/LibraryPage.qml:208
+#: ../qml/Pages/LibraryPage.qml:217
 msgctxt "LibraryPage|"
 msgid "Green"
 msgstr "Verde"
 
-#: ../Pages/LibraryPage.qml:215
+#: ../qml/Pages/LibraryPage.qml:224
 msgctxt "LibraryPage|"
 msgid "Blue"
 msgstr "Azul"
 
-#: ../Pages/LibraryPage.qml:222
+#: ../qml/Pages/LibraryPage.qml:231
 msgctxt "LibraryPage|"
 msgid "Yellow"
 msgstr "Amarillo"
 
-#: ../Pages/LibraryPage.qml:229
+#: ../qml/Pages/LibraryPage.qml:238
 msgctxt "LibraryPage|"
 msgid "Orange"
 msgstr "Naranja"
 
-#: ../Pages/LibraryPage.qml:236
+#: ../qml/Pages/LibraryPage.qml:245
 msgctxt "LibraryPage|"
 msgid "Lilac"
 msgstr "Lila"
 
-#: ../Pages/LibraryPage.qml:243
+#: ../qml/Pages/LibraryPage.qml:252
 msgctxt "LibraryPage|"
 msgid "White"
 msgstr "Blanco"
 
-#: ../Pages/LibraryPage.qml:253
+#: ../qml/Pages/LibraryPage.qml:262
 msgctxt "LibraryPage|"
 msgid "Rename"
 msgstr "Renombrar"
 
-#: ../Pages/LibraryPage.qml:263
+#: ../qml/Pages/LibraryPage.qml:273
 msgctxt "LibraryPage|"
 msgid "Delete"
 msgstr "Eliminar"
 
-#: ../Pages/LibraryPage.qml:344
+#: ../qml/Pages/LibraryPage.qml:355
 msgctxt "LibraryPage|"
 msgid "Note Title"
 msgstr "Título de la nota"
 
-#: ../Pages/LibraryPage.qml:357
+#: ../qml/Pages/LibraryPage.qml:368
 msgctxt "LibraryPage|"
 msgid "Todo List Title"
 msgstr "Título de la lista de todo"
 
-#: ../Pages/LibraryPage.qml:370
+#: ../qml/Pages/LibraryPage.qml:381
 msgctxt "LibraryPage|"
 msgid "Search term 1, search term 2, ..."
 msgstr "Término de búsqueda 1, término de búsqueda 2, ..."
 
-#: ../Pages/LibraryPage.qml:447
+#: ../qml/Pages/LibraryPage.qml:458
 msgctxt "LibraryPage|"
 msgid "Nothing here yet! Start by adding a <a href='#note'>note</a>, <a href='#todolist'>todo list</a> or <a href='#image'>image</a>."
 msgstr "Aún no hay nada aquí! Comienza añadiendo una lista de <a href='#note'>note</a>, <a href='#todolist'>todo</a> o <a href='#image'>image</a>."
@@ -301,7 +302,7 @@ msgctxt "LogViewPage|"
 msgid "Copy Log"
 msgstr "Copia el registro"
 
-#: ../Windows/MainWindow.qml:24
+#: ../qml/Windows/MainWindow.qml:23
 msgctxt "MainWindow|"
 msgid "OpenTodoList"
 msgstr "OpenTodoList"
@@ -347,7 +348,7 @@ msgid "Open &Left Side Bar"
 msgstr "Abierta & Barra lateral izquierda\n"
 ""
 
-#: ../Windows/MainWindow.qml:250
+#: ../qml/Windows/MainWindow.qml:197
 msgctxt "MainWindow|"
 msgid "Start by <a href='#newLibrary'>creating a new library</a>. Libraries are used to store different kinds of items like notes, todo lists and images."
 msgstr "Empieza por <a href='#newLibrary'>creando una nueva biblioteca</a>. Las bibliotecas se usan para almacenar diferentes tipos de artículos como notas, listas de todo e imágenes."
@@ -554,17 +555,17 @@ msgctxt "SynchronizerBackendSelectionPage|"
 msgid "Local Library"
 msgstr "Biblioteca local"
 
-#: ../Widgets/TodoListItem.qml:132
+#: ../qml/Widgets/TodoListItem.qml:136
 msgctxt "TodoListItem|"
 msgid "✔ No open todos - everything done"
 msgstr "✔ No abrir pendientes"
 
-#: ../Pages/TodoListPage.qml:173
+#: ../qml/Pages/TodoListPage.qml:166
 msgctxt "TodoListPage|"
 msgid "Search term 1, search term 2, ..."
 msgstr "Término de búsqueda 1, término de búsqueda 2, ..."
 
-#: ../Pages/TodoListPage.qml:261
+#: ../qml/Pages/TodoListPage.qml:253
 msgctxt "TodoListPage|"
 msgid "Todos"
 msgstr "Pendientes"
@@ -574,12 +575,12 @@ msgctxt "TodoListPage|"
 msgid "Completed Todos"
 msgstr "Pendientes Completos"
 
-#: ../Pages/TodoPage.qml:182
+#: ../qml/Pages/TodoPage.qml:181
 msgctxt "TodoPage|"
 msgid "Search term 1, search term 2, ..."
 msgstr "Término de búsqueda 1, término de búsqueda 2, ..."
 
-#: ../Pages/TodoPage.qml:208
+#: ../qml/Pages/TodoPage.qml:206
 msgctxt "TodoPage|"
 msgid "Tasks"
 msgstr "Tareas"
@@ -680,23 +681,23 @@ msgid "Remove shortcuts to the AppImage."
 msgstr "Eliminar los accesos directos a la AppImage.\n"
 ""
 
-#: ../Widgets/ItemNotesEditor.qml:86
+#: ../qml/Widgets/ItemNotesEditor.qml:73
 msgctxt "ItemNotesEditor|"
 msgid "No notes added yet - click here to add some."
 msgstr "No se han añadido notas todavía - haga clic aquí para añadir algunas.\n"
 ""
 
-#: ../Widgets/TagsEditor.qml:34
+#: ../qml/Widgets/TagsEditor.qml:32
 msgctxt "TagsEditor|"
 msgid "Add Tag"
 msgstr "Añadir etiqueta"
 
-#: ../Pages/TodoListPage.qml:281
+#: ../qml/Pages/TodoListPage.qml:273
 msgctxt "TodoListPage|"
 msgid "Add new todo..."
 msgstr "Añadir nueva Lista de Pendientes..."
 
-#: ../Pages/TodoPage.qml:214
+#: ../qml/Pages/TodoPage.qml:212
 msgctxt "TodoPage|"
 msgid "Add new task..."
 msgstr "Añade una nueva tarea..."
@@ -721,7 +722,7 @@ msgctxt "Colors|"
 msgid "Dark"
 msgstr "Oscuro"
 
-#: ../Widgets/LibrariesSideBar.qml:94
+#: ../qml/Widgets/LibrariesSideBar.qml:85
 msgctxt "LibrariesSideBar|"
 msgid "Settings"
 msgstr "Ajustes"
@@ -756,32 +757,32 @@ msgctxt "LibrariesSideBar|"
 msgid "Create Default Library"
 msgstr "Crear una biblioteca predeterminada"
 
-#: ../Pages/LibraryPage.qml:503
+#: ../qml/Pages/LibraryPage.qml:514
 msgctxt "LibraryPage|"
 msgid "Sort By"
 msgstr "Ordenar por"
 
-#: ../Pages/LibraryPage.qml:508
+#: ../qml/Pages/LibraryPage.qml:518
 msgctxt "LibraryPage|"
 msgid "Manually"
 msgstr "Manualmente"
 
-#: ../Pages/LibraryPage.qml:515
+#: ../qml/Pages/LibraryPage.qml:525
 msgctxt "LibraryPage|"
 msgid "Title"
 msgstr "Título"
 
-#: ../Pages/LibraryPage.qml:522
+#: ../qml/Pages/LibraryPage.qml:532
 msgctxt "LibraryPage|"
 msgid "Due To"
 msgstr "Debido a"
 
-#: ../Pages/LibraryPage.qml:529
+#: ../qml/Pages/LibraryPage.qml:539
 msgctxt "LibraryPage|"
 msgid "Created At"
 msgstr "Creado en"
 
-#: ../Pages/LibraryPage.qml:536
+#: ../qml/Pages/LibraryPage.qml:546
 msgctxt "LibraryPage|"
 msgid "Updated At"
 msgstr "Actualizado en"
@@ -831,27 +832,27 @@ msgctxt "SettingsPageForm.ui|"
 msgid "Language:"
 msgstr "Lenguaje:"
 
-#: ../Pages/TodoListPage.qml:185
+#: ../qml/Pages/TodoListPage.qml:178
 msgctxt "TodoListPage|"
 msgid "Manually"
 msgstr "Manualmente"
 
-#: ../Pages/TodoListPage.qml:191
+#: ../qml/Pages/TodoListPage.qml:184
 msgctxt "TodoListPage|"
 msgid "Name"
 msgstr "Nombre"
 
-#: ../Pages/TodoListPage.qml:197
+#: ../qml/Pages/TodoListPage.qml:190
 msgctxt "TodoListPage|"
 msgid "Due Date"
 msgstr "Fecha de vencimiento"
 
-#: ../Pages/TodoListPage.qml:203
+#: ../qml/Pages/TodoListPage.qml:196
 msgctxt "TodoListPage|"
 msgid "Created At"
 msgstr "Creado en"
 
-#: ../Pages/TodoListPage.qml:209
+#: ../qml/Pages/TodoListPage.qml:202
 msgctxt "TodoListPage|"
 msgid "Updated At"
 msgstr "Actualizado en"
@@ -1228,27 +1229,27 @@ msgctxt "MainWindow|"
 msgid "Synchronizing library..."
 msgstr "Sincronizar la biblioteca..."
 
-#: ../Pages/NotePage.qml:164
+#: ../qml/Pages/NotePage.qml:171
 msgctxt "NotePage|"
 msgid "Main Page"
 msgstr "Página principal"
 
-#: ../Pages/NotePage.qml:231
+#: ../qml/Pages/NotePage.qml:238
 msgctxt "NotePage|"
 msgid "New Page"
 msgstr "Nueva página"
 
-#: ../Widgets/ItemNotesEditor.qml:115
+#: ../qml/Widgets/ItemNotesEditor.qml:160
 msgctxt "ItemNotesEditor|"
 msgid "Export to File..."
 msgstr "Exportar a Archivo..."
 
-#: ../Widgets/ItemNotesEditor.qml:119
+#: ../qml/Widgets/ItemNotesEditor.qml:163
 msgctxt "ItemNotesEditor|"
 msgid "Markdown files"
 msgstr "Markdown archivos"
 
-#: ../Widgets/ItemNotesEditor.qml:120
+#: ../qml/Widgets/ItemNotesEditor.qml:163
 msgctxt "ItemNotesEditor|"
 msgid "All files"
 msgstr "Todos los archivos"
@@ -1358,32 +1359,32 @@ msgctxt "DeleteItem|"
 msgid "Delete"
 msgstr "Eliminar"
 
-#: ../Widgets/ItemDueDateEditor.qml:71
+#: ../qml/Widgets/ItemDueDateEditor.qml:69
 msgctxt "ItemDueDateEditor|"
 msgid "First due on %1."
 msgstr "Vence el %1."
 
-#: ../Widgets/ItemDueDateEditor.qml:90
+#: ../qml/Widgets/ItemDueDateEditor.qml:88
 msgctxt "ItemDueDateEditor|"
 msgid "No recurrence pattern set..."
 msgstr "No se ha establecido un patrón de recurrencia..."
 
-#: ../Widgets/ItemDueDateEditor.qml:92
+#: ../qml/Widgets/ItemDueDateEditor.qml:90
 msgctxt "ItemDueDateEditor|"
 msgid "Recurs every day."
 msgstr "Se repite todos los días."
 
-#: ../Widgets/ItemDueDateEditor.qml:94
+#: ../qml/Widgets/ItemDueDateEditor.qml:92
 msgctxt "ItemDueDateEditor|"
 msgid "Recurs every week."
 msgstr "Se repite cada semana."
 
-#: ../Widgets/ItemDueDateEditor.qml:96
+#: ../qml/Widgets/ItemDueDateEditor.qml:94
 msgctxt "ItemDueDateEditor|"
 msgid "Recurs every month."
 msgstr "Se repite cada mes."
 
-#: ../Widgets/ItemDueDateEditor.qml:100
+#: ../qml/Widgets/ItemDueDateEditor.qml:98
 msgctxt "ItemDueDateEditor|"
 msgid "Recurs every %1 days."
 msgstr "Se repite cada %1 días."
@@ -1568,37 +1569,37 @@ msgctxt "AccountTypeSelectionPage|"
 msgid "WebDAV"
 msgstr "WebDAV"
 
-#: ../appstartup.cpp:198
+#: ../appstartup.cpp:200
 msgctxt "AppStartup|"
 msgid "Manage your personal data."
 msgstr "Gestione sus datos personales."
 
-#: ../appstartup.cpp:204
+#: ../appstartup.cpp:206
 msgctxt "AppStartup|"
 msgid "Switch on some optimizations for touchscreens."
 msgstr "Active algunas optimizaciones para pantallas táctiles."
 
-#: ../appstartup.cpp:207
+#: ../appstartup.cpp:209
 msgctxt "AppStartup|"
 msgid "Only run the app background service"
 msgstr "Ejecute solo el servicio en segundo plano de la aplicación"
 
-#: ../appstartup.cpp:209
+#: ../appstartup.cpp:211
 msgctxt "AppStartup|"
 msgid "Only run the app GUI and connect to an existing app background service"
 msgstr "Ejecute solo la GUI de la aplicación y conéctese a un servicio en segundo plano de la aplicación existente"
 
-#: ../appstartup.cpp:214
+#: ../appstartup.cpp:216
 msgctxt "AppStartup|"
 msgid "Enable a console on Windows to gather debug output"
 msgstr "Habilite una consola en Windows para recopilar resultados de depuración"
 
-#: ../appstartup.cpp:365
+#: ../appstartup.cpp:367
 msgctxt "AppStartup|"
 msgid "Open"
 msgstr "Abierta"
 
-#: ../appstartup.cpp:431
+#: ../appstartup.cpp:433
 msgctxt "AppStartup|"
 msgid "Quit"
 msgstr "Abandonar"
@@ -1679,27 +1680,27 @@ msgctxt "EditNextCloudAccountPage|"
 msgid "Failed to connect to the server. Please check your user name, password and the server address and retry."
 msgstr "Error al conectar con el servidor. Verifique su nombre de usuario, contraseña y la dirección del servidor y vuelva a intentarlo."
 
-#: ../Widgets/LibrariesSideBar.qml:88
+#: ../qml/Widgets/LibrariesSideBar.qml:78
 msgctxt "LibrariesSideBar|"
 msgid "Edit List"
 msgstr "Editar lista"
 
-#: ../Widgets/LibrariesSideBar.qml:225
+#: ../qml/Widgets/LibrariesSideBar.qml:190
 msgctxt "LibrariesSideBar|"
 msgid "Hide Schedule"
 msgstr "Ocultar calendario"
 
-#: ../Widgets/LibrariesSideBar.qml:225
+#: ../qml/Widgets/LibrariesSideBar.qml:190
 msgctxt "LibrariesSideBar|"
 msgid "Show Schedule"
 msgstr "Mostrar calendario"
 
-#: ../Widgets/LibrariesSideBar.qml:236
+#: ../qml/Widgets/LibrariesSideBar.qml:201
 msgctxt "LibrariesSideBar|"
 msgid "Move Up"
 msgstr "Mover arriba"
 
-#: ../Widgets/LibrariesSideBar.qml:247
+#: ../qml/Widgets/LibrariesSideBar.qml:210
 msgctxt "LibrariesSideBar|"
 msgid "Move Down"
 msgstr "Move abajo"
@@ -1866,12 +1867,12 @@ msgctxt "EditWebDAVAccountPage|"
 msgid "Failed to connect to the server. Please check your user name, password and the server address and retry."
 msgstr "Error al conectar con el servidor. Verifique su nombre de usuario, contraseña y la dirección del servidor y vuelva a intentarlo."
 
-#: ../qml/Utils/ItemUtils.qml:173
+#: ../qml/Utils/ItemUtils.qml:190
 msgctxt "ItemUtils|"
 msgid "Move Todo Into..."
 msgstr "Mover todo a..."
 
-#: ../Widgets/LibrariesSideBar.qml:107
+#: ../qml/Widgets/LibrariesSideBar.qml:93
 msgctxt "LibrariesSideBar|"
 msgid "Donate"
 msgstr "Donar"
@@ -2062,32 +2063,32 @@ msgctxt "ProblemsPage|"
 msgid "Problems Detected"
 msgstr "Problemas detectados"
 
-#: ../Windows/SelectTodoListDialog.qml:25
+#: ../qml/Windows/SelectTodoListDialog.qml:24
 msgctxt "SelectTodoListDialog|"
 msgid "Select Todo List"
 msgstr "Seleccionar lista de tareas pendientes"
 
-#: ../Pages/SettingsPage.qml:40
+#: ../qml/Pages/SettingsPage.qml:39
 msgctxt "SettingsPage|"
 msgid "Settings"
 msgstr "Configuraciones"
 
-#: ../Pages/SettingsPage.qml:46
+#: ../qml/Pages/SettingsPage.qml:45
 msgctxt "SettingsPage|"
 msgid "User Interface"
 msgstr "Interfaz de usuario"
 
-#: ../Pages/SettingsPage.qml:54
+#: ../qml/Pages/SettingsPage.qml:53
 msgctxt "SettingsPage|"
 msgid "Language:"
 msgstr "Lenguaje:"
 
-#: ../Pages/SettingsPage.qml:118
+#: ../qml/Pages/SettingsPage.qml:117
 msgctxt "SettingsPage|"
 msgid "Theme:"
 msgstr "Tema:"
 
-#: ../Pages/SettingsPage.qml:161
+#: ../qml/Pages/SettingsPage.qml:161
 msgctxt "SettingsPage|"
 msgid "Font Size:"
 msgstr "Tamaño de fuente:"
@@ -2112,17 +2113,17 @@ msgctxt "SetManualProgressAction|"
 msgid "Set Progress"
 msgstr "Establecer progreso"
 
-#: ../Pages/SettingsPage.qml:178
+#: ../qml/Pages/SettingsPage.qml:178
 msgctxt "SettingsPage|"
 msgid "Use custom font size"
 msgstr "Usar tamaño de fuente personalizado"
 
-#: ../Pages/SettingsPage.qml:196
+#: ../qml/Pages/SettingsPage.qml:196
 msgctxt "SettingsPage|"
 msgid "Use Compact Style"
 msgstr "Usar estilo compacto"
 
-#: ../Pages/SettingsPage.qml:205
+#: ../qml/Pages/SettingsPage.qml:205
 msgctxt "SettingsPage|"
 msgid "Reduce space between components and reduce the font size.\n"
 "\n"
@@ -2131,27 +2132,27 @@ msgstr "Reduzca el espacio entre los componentes y reduzca el tamaño de la fuen
 "\n"
 "<em>Requiere reiniciar la aplicación.</em>"
 
-#: ../Pages/SettingsPage.qml:213
+#: ../qml/Pages/SettingsPage.qml:213
 msgctxt "SettingsPage|"
 msgid "Use compact todo lists"
 msgstr "Usar listas de tareas compactas"
 
-#: ../Pages/SettingsPage.qml:223
+#: ../qml/Pages/SettingsPage.qml:223
 msgctxt "SettingsPage|"
 msgid "Reduce the padding in todo and task listings to fit more items on the screen."
 msgstr "Reduzca el relleno en las listas de tareas pendientes para que quepan más elementos en la pantalla."
 
-#: ../Pages/SettingsPage.qml:230
+#: ../qml/Pages/SettingsPage.qml:230
 msgctxt "SettingsPage|"
 msgid "Override Scaling Factor"
 msgstr "Anular factor de escala"
 
-#: ../Pages/SettingsPage.qml:237
+#: ../qml/Pages/SettingsPage.qml:237
 msgctxt "SettingsPage|"
 msgid "Scale Factor:"
 msgstr "Factor de escala:"
 
-#: ../Pages/SettingsPage.qml:257
+#: ../qml/Pages/SettingsPage.qml:257
 msgctxt "SettingsPage|"
 msgid "Use this to manually scale the user interface. By default, the app should adapt automatically according to your device configuration. If this does not work properly, you can set a custom scaling factor here.\n"
 "\n"
@@ -2160,7 +2161,7 @@ msgstr "Use esto para escalar manualmente la interfaz de usuario. De manera pred
 "\n"
 "Esto requiere un reinicio de la aplicación."
 
-#: ../qml/Utils/ItemUtils.qml:188
+#: ../qml/Utils/ItemUtils.qml:220
 msgctxt "ItemUtils|"
 msgid "Convert Task to Todo and Move Into..."
 msgstr "Convertir Tarea a Todo y Mover a..."
@@ -2185,7 +2186,7 @@ msgctxt "PromoteTask|"
 msgid "Promote"
 msgstr "Promover"
 
-#: ../Pages/SettingsPage.qml:266
+#: ../qml/Pages/SettingsPage.qml:266
 msgctxt "SettingsPage|"
 msgid "Library Item Size:"
 msgstr "Tamaño del elemento de la biblioteca:"
@@ -2200,22 +2201,22 @@ msgctxt "AboutPage|"
 msgid "Copy System Information"
 msgstr "Copiar información del sistema"
 
-#: ../appstartup.cpp:373
+#: ../appstartup.cpp:375
 msgctxt "AppStartup|"
 msgid "Quick Note"
 msgstr "Nota rápida"
 
-#: ../Widgets/ItemDueDateEditor.qml:98
+#: ../qml/Widgets/ItemDueDateEditor.qml:96
 msgctxt "ItemDueDateEditor|"
 msgid "Recurs every year."
 msgstr "Se repite todos los años."
 
-#: ../Widgets/ItemDueDateEditor.qml:103
+#: ../qml/Widgets/ItemDueDateEditor.qml:101
 msgctxt "ItemDueDateEditor|"
 msgid "Recurs every %1 weeks."
 msgstr "Se repite cada %1 semanas."
 
-#: ../Widgets/ItemDueDateEditor.qml:106
+#: ../qml/Widgets/ItemDueDateEditor.qml:104
 msgctxt "ItemDueDateEditor|"
 msgid "Recurs every %1 months."
 msgstr "Se repite cada %1 meses."
@@ -2225,7 +2226,7 @@ msgctxt "MainWindow|"
 msgid "Undo"
 msgstr "Deshacer"
 
-#: ../appstartup.cpp:310 ../appstartup.cpp:317
+#: ../appstartup.cpp:312 ../appstartup.cpp:319
 msgctxt "QObject|"
 msgid "unknown"
 msgstr "Desconocido"
@@ -2300,12 +2301,12 @@ msgctxt "RecurrenceDialog|"
 msgid "Every N Months"
 msgstr "Cada N Meses"
 
-#: ../Pages/SettingsPage.qml:142
+#: ../qml/Pages/SettingsPage.qml:142
 msgctxt "SettingsPage|"
 msgid "System Tray:"
 msgstr "Bandeja del sistema:"
 
-#: ../Pages/SettingsPage.qml:155
+#: ../qml/Pages/SettingsPage.qml:155
 msgctxt "SettingsPage|"
 msgid "Open Quick Notes Editor on Click"
 msgstr "Abra el editor de notas rápidas al hacer clic"
@@ -2315,7 +2316,7 @@ msgctxt "NoteItem|"
 msgid "Due on %1"
 msgstr "Vencimiento el %1"
 
-#: ../Widgets/TodoListItem.qml:78
+#: ../qml/Widgets/TodoListItem.qml:77
 msgctxt "TodoListItem|"
 msgid "Due on %1"
 msgstr "Vencimiento el %1"
@@ -2330,7 +2331,7 @@ msgctxt "CopyTopLevelItem|"
 msgid "Copy"
 msgstr "Copiar"
 
-#: ../Pages/LibraryPage.qml:258
+#: ../qml/Pages/LibraryPage.qml:267
 msgctxt "LibraryPage|"
 msgid "Copy"
 msgstr "Copiar"
@@ -2426,17 +2427,17 @@ msgctxt "ApplicationToolBarActions|"
 msgid "Set Progress"
 msgstr "Establecer progreso"
 
-#: ../Pages/SettingsPage.qml:187
+#: ../qml/Pages/SettingsPage.qml:187
 msgctxt "SettingsPage|"
 msgid "Desktop Mode"
 msgstr "Modo de escritorio"
 
-#: ../qml/Utils/ItemUtils.qml:204
+#: ../qml/Utils/ItemUtils.qml:236
 msgctxt "ItemUtils|"
 msgid "Copy Item Into..."
 msgstr "Copiar elemento en..."
 
-#: ../qml/Utils/ItemUtils.qml:221
+#: ../qml/Utils/ItemUtils.qml:253
 msgctxt "ItemUtils|"
 msgid "Copy Todo Into..."
 msgstr "Copiar todo en..."
@@ -2446,27 +2447,27 @@ msgctxt "NewLibraryInFolderPage|"
 msgid "Select a Folder"
 msgstr "Seleccione una carpeta"
 
-#: ../Pages/LibraryPage.qml:275
+#: ../qml/Pages/LibraryPage.qml:285
 msgctxt "LibraryPage|"
 msgid "Select Image"
 msgstr "Seleccionar imagen"
 
-#: ../Pages/TodoListPage.qml:222
+#: ../qml/Pages/TodoListPage.qml:215
 msgctxt "TodoListPage|"
 msgid "Show Completed"
 msgstr "Mostrar completado"
 
-#: ../Pages/TodoListPage.qml:230
+#: ../qml/Pages/TodoListPage.qml:223
 msgctxt "TodoListPage|"
 msgid "Show At The End"
 msgstr "Mostrar al final"
 
-#: ../Pages/TodoPage.qml:305
+#: ../qml/Pages/TodoPage.qml:303
 msgctxt "TodoPage|"
 msgid "Show Completed"
 msgstr "Mostrar completado"
 
-#: ../Pages/TodoPage.qml:312
+#: ../qml/Pages/TodoPage.qml:310
 msgctxt "TodoPage|"
 msgid "Show At The End"
 msgstr "Mostrar al final"
@@ -2481,17 +2482,17 @@ msgctxt "AccountTypeSelectionPage|"
 msgid "Dropbox"
 msgstr "Dropbox"
 
-#: ../../lib/application.cpp:218
+#: ../../lib/application.cpp:219
 msgctxt "Application|"
 msgid "Background Sync"
 msgstr "Sincronización de fondo"
 
-#: ../../lib/application.cpp:222
+#: ../../lib/application.cpp:223
 msgctxt "Application|"
 msgid "App continues to sync your data in the background"
 msgstr "La aplicación continúa sincronizando sus datos en segundo plano"
 
-#: ../../lib/application.cpp:226
+#: ../../lib/application.cpp:227
 msgctxt "Application|"
 msgid "Quit"
 msgstr "Abandonar"
@@ -2613,17 +2614,17 @@ msgctxt "EmbeddedWebViewDialog|"
 msgid "Loading..."
 msgstr "Cargando..."
 
-#: ../Pages/SettingsPage.qml:282
+#: ../qml/Pages/SettingsPage.qml:282
 msgctxt "SettingsPage|"
 msgid "Show notes excerpt in listings"
 msgstr "Mostrar extracto de notas en listados"
 
-#: ../Widgets/ItemDueDateEditor.qml:144
+#: ../qml/Widgets/ItemDueDateEditor.qml:141
 msgctxt "ItemDueDateEditor|"
 msgid "Recurs until %1."
 msgstr "Se repite hasta %1."
 
-#: ../Widgets/ItemDueDateEditor.qml:147
+#: ../qml/Widgets/ItemDueDateEditor.qml:144
 msgctxt "ItemDueDateEditor|"
 msgid "Recurs indefinitely"
 msgstr "Se repite indefinidamente"
@@ -2708,7 +2709,7 @@ msgctxt "LogViewPage|"
 msgid "Unknown log message type"
 msgstr ""
 
-#: ../Widgets/TodosWidgetDelegate.qml:238
+#: ../qml/Widgets/TodosWidgetDelegate.qml:238
 msgctxt "TodosWidgetDelegate|"
 msgid "More Actions..."
 msgstr ""
@@ -2723,7 +2724,7 @@ msgctxt "ProblemsPage|"
 msgid "Retry Sync"
 msgstr ""
 
-#: ../Pages/SettingsPage.qml:147
+#: ../qml/Pages/SettingsPage.qml:147
 msgctxt "SettingsPage|"
 msgid "Monochrome Icon"
 msgstr ""
@@ -2743,8 +2744,298 @@ msgctxt "DeepLinkHandler|"
 msgid "Uuups... seems that's a dead end..."
 msgstr ""
 
-#: ../qml/Utils/DeepLinkHandler.qml:62
+#: ../qml/Utils/DeepLinkHandler.qml:65
 msgctxt "DeepLinkHandler|"
 msgid "Sorry, that link does not lead to any page or item that is present on this device. Check if the library or item to which the link points is synchronized on this device and try again."
+msgstr ""
+
+#: ../qml/Components/Tooltips/AllSubtasksDone.qml:13
+msgctxt "AllSubtasksDone|"
+msgid "Everything in %1 done! Do you want to mark it as well as done?"
+msgstr ""
+
+#: ../qml/Components/Tooltips/AllSubtasksDone.qml:20
+msgctxt "AllSubtasksDone|"
+msgid "Mark as Done"
+msgstr ""
+
+#: ../qml/Components/Tooltips/AllSubtasksDone.qml:30
+msgctxt "AllSubtasksDone|"
+msgid "Keep Open"
+msgstr ""
+
+#: ../qml/Widgets/ApplicationMenu.qml:36
+msgctxt "ApplicationMenu|"
+msgid "File"
+msgstr ""
+
+#: ../qml/Widgets/ApplicationMenu.qml:87
+msgctxt "ApplicationMenu|"
+msgid "Edit"
+msgstr ""
+
+#: ../qml/Widgets/ApplicationMenu.qml:158
+msgctxt "ApplicationMenu|"
+msgid "Navigate"
+msgstr ""
+
+#: ../qml/Widgets/ApplicationMenu.qml:197
+msgctxt "ApplicationMenu|"
+msgid "Help"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:18
+msgctxt "ApplicationShortcuts|"
+msgid "About"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:27
+msgctxt "ApplicationShortcuts|"
+msgid "About Qt"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:35
+msgctxt "ApplicationShortcuts|"
+msgid "Accounts"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:43
+msgctxt "ApplicationShortcuts|"
+msgid "Add Tag"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:51
+msgctxt "ApplicationShortcuts|"
+msgid "Attach File"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:59
+msgctxt "ApplicationShortcuts|"
+msgid "Backup"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:66
+msgctxt "ApplicationShortcuts|"
+msgid "Close"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:73
+msgctxt "ApplicationShortcuts|"
+msgid "Copy"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:81
+msgctxt "ApplicationShortcuts|"
+msgid "Copy Link To Page"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:89
+msgctxt "ApplicationShortcuts|"
+msgid "Create Sample Library"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:159
+msgctxt "ApplicationShortcuts|"
+msgid "Delete"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:167
+msgctxt "ApplicationShortcuts|"
+msgid "Delete Completed Items"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:175
+msgctxt "ApplicationShortcuts|"
+msgid "Due Date"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:183
+msgctxt "ApplicationShortcuts|"
+msgid "Find"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:190
+msgctxt "ApplicationShortcuts|"
+msgid "Back"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:207
+msgctxt "ApplicationShortcuts|"
+msgid "Left Sidebar"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:213
+msgctxt "ApplicationShortcuts|"
+msgid "Mark all items as done"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:225
+msgctxt "ApplicationShortcuts|"
+msgid "Mark all items as undone"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:237
+msgctxt "ApplicationShortcuts|"
+msgid "Move"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:245
+msgctxt "ApplicationShortcuts|"
+msgid "New Library"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:253
+msgctxt "ApplicationShortcuts|"
+msgid "Open Created Item"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:260
+msgctxt "ApplicationShortcuts|"
+msgid "Open In New Window"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:268
+msgctxt "ApplicationShortcuts|"
+msgid "Open Library Folder"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:274
+msgctxt "ApplicationShortcuts|"
+msgid "Quit"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:280
+msgctxt "ApplicationShortcuts|"
+msgid "Rename"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:288
+msgctxt "ApplicationShortcuts|"
+msgid "Preferences"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:309
+msgctxt "ApplicationShortcuts|"
+msgid "Scroll to Top"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:316
+msgctxt "ApplicationShortcuts|"
+msgid "Scroll to Bottom"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:323
+msgctxt "ApplicationShortcuts|"
+msgid "Set Color"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:330
+msgctxt "ApplicationShortcuts|"
+msgid "Set Progress"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:337
+msgctxt "ApplicationShortcuts|"
+msgid "Sort"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:345
+msgctxt "ApplicationShortcuts|"
+msgid "Sync Now"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:358
+msgctxt "ApplicationShortcuts|"
+msgid "Sync Log"
+msgstr ""
+
+#: ../qml/Components/ApplicationShortcuts.qml:369
+msgctxt "ApplicationShortcuts|"
+msgid "Translate The App..."
+msgstr ""
+
+#: ../qml/Components/ApplicationToolBar.qml:86
+msgctxt "ApplicationToolBar|"
+msgid "Problems"
+msgstr ""
+
+#: ../qml/Widgets/ItemNotesEditor.qml:106
+msgctxt "ItemNotesEditor|"
+msgid "Copy"
+msgstr ""
+
+#: ../qml/Widgets/ItemNotesEditor.qml:113
+msgctxt "ItemNotesEditor|"
+msgid "Copy Formatted Text"
+msgstr ""
+
+#: ../qml/Widgets/ItemNotesEditor.qml:129
+msgctxt "ItemNotesEditor|"
+msgid "Copy Plain Text"
+msgstr ""
+
+#: ../qml/Widgets/LibrariesSideBar.qml:293
+msgctxt "LibrariesSideBar|"
+msgid "Untagged"
+msgstr ""
+
+#: ../../lib/datamodel/library.cpp:615
+msgctxt "Library|"
+msgid "Unable to create backup folder"
+msgstr ""
+
+#: ../../lib/datamodel/library.cpp:619
+msgctxt "Library|"
+msgid "Failed to change into backup folder"
+msgstr ""
+
+#: ../../lib/datamodel/library.cpp:630
+msgctxt "Library|"
+msgid "Failed to open file for writing: %1"
+msgstr ""
+
+#: ../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml:13
+msgctxt "MarkFutureInstanceAsDone|"
+msgid "%1 is scheduled for the future - do you want to mark that future instance as done?"
+msgstr ""
+
+#: ../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml:20
+msgctxt "MarkFutureInstanceAsDone|"
+msgid "Mark as Done"
+msgstr ""
+
+#: ../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml:29
+msgctxt "MarkFutureInstanceAsDone|"
+msgid "Keep Open"
+msgstr ""
+
+#: ../qml/Windows/StackViewWindow.qml:21
+msgctxt "StackViewWindow|"
+msgid "OpenTodoList"
+msgstr ""
+
+#: ../qml/Utils/ItemUtils.qml:205
+msgctxt "ItemUtils|"
+msgid "Move Task Into..."
+msgstr ""
+
+#: ../qml/Actions/MoveTask.qml:12
+msgctxt "MoveTask|"
+msgid "Move"
+msgstr ""
+
+#: ../qml/Windows/SelectTodoDialog.qml:22
+msgctxt "SelectTodoDialog|"
+msgid "Select Todo"
+msgstr ""
+
+#: ../qml/Windows/SelectTodoDialog.qml:42
+msgctxt "SelectTodoDialog|"
+msgid "Todo List:"
+msgstr ""
+
+#: ../qml/Windows/SelectTodoDialog.qml:64
+msgctxt "SelectTodoDialog|"
+msgid "Todo:"
 msgstr ""
 

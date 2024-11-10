@@ -175,17 +175,17 @@
 <context>
     <name>Application</name>
     <message>
-        <location filename="../../lib/application.cpp" line="218"/>
+        <location filename="../../lib/application.cpp" line="219"/>
         <source>Background Sync</source>
         <translation>Sünkroniseeri Tagaplaanil</translation>
     </message>
     <message>
-        <location filename="../../lib/application.cpp" line="222"/>
+        <location filename="../../lib/application.cpp" line="223"/>
         <source>App continues to sync your data in the background</source>
         <translation>Rakendus jätkab andmete sünkroonimist taustal</translation>
     </message>
     <message>
-        <location filename="../../lib/application.cpp" line="226"/>
+        <location filename="../../lib/application.cpp" line="227"/>
         <source>Quit</source>
         <translation>Välju</translation>
     </message>
@@ -510,7 +510,7 @@
         <translation>Oih... tundub, et see on ummiktee...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/DeepLinkHandler.qml" line="62"/>
+        <location filename="../qml/Utils/DeepLinkHandler.qml" line="65"/>
         <source>Sorry, that link does not lead to any page or item that is present on this device. Check if the library or item to which the link points is synchronized on this device and try again.</source>
         <translation>Vabandust, see link ei vii ühelegi leheküljele või elemendile, mis on selles seadmes olemas. Kontrollige, kas teek või element, millele link viitab, on selles seadmes sünkroniseeritud, ja proovige uuesti.</translation>
     </message>
@@ -880,21 +880,6 @@ https://myserver.example.com </translation>
         <translation>Märkmeid pole veel lisatud - klõpsa siia, et neid lisada.</translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="106"/>
-        <source>Copy</source>
-        <translation type="unfinished">Kopeeri</translation>
-    </message>
-    <message>
-        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="113"/>
-        <source>Copy Formatted Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="129"/>
-        <source>Copy Plain Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../qml/Widgets/ItemNotesEditor.qml" line="160"/>
         <source>Export to File...</source>
         <translation>Ekspordi faili...</translation>
@@ -909,28 +894,48 @@ https://myserver.example.com </translation>
         <source>All files</source>
         <translation>Kõik failid</translation>
     </message>
+    <message>
+        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="106"/>
+        <source>Copy</source>
+        <translation type="unfinished">Kopeeri</translation>
+    </message>
+    <message>
+        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="113"/>
+        <source>Copy Formatted Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="129"/>
+        <source>Copy Plain Text</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ItemUtils</name>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="173"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="190"/>
         <source>Move Todo Into...</source>
         <translation>Liiguta Töö...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="188"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="220"/>
         <source>Convert Task to Todo and Move Into...</source>
         <translation>Konverteeri ülesanne Tööks ja liiguta...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="204"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="236"/>
         <source>Copy Item Into...</source>
         <translation>Kopeeri Element...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="221"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="253"/>
         <source>Copy Todo Into...</source>
         <translation>Kopeeri Töö...</translation>
+    </message>
+    <message>
+        <location filename="../qml/Utils/ItemUtils.qml" line="205"/>
+        <source>Move Task Into...</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -972,14 +977,14 @@ https://myserver.example.com </translation>
         <translation>Liiguta Alla</translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/LibrariesSideBar.qml" line="293"/>
-        <source>Untagged</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../qml/Widgets/LibrariesSideBar.qml" line="93"/>
         <source>Donate</source>
         <translation>Anneta</translation>
+    </message>
+    <message>
+        <location filename="../qml/Widgets/LibrariesSideBar.qml" line="293"/>
+        <source>Untagged</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1195,6 +1200,14 @@ https://myserver.example.com </translation>
         <location filename="../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml" line="29"/>
         <source>Keep Open</source>
         <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MoveTask</name>
+    <message>
+        <location filename="../qml/Actions/MoveTask.qml" line="12"/>
+        <source>Move</source>
+        <translation type="unfinished">Liiguta</translation>
     </message>
 </context>
 <context>
@@ -1928,6 +1941,24 @@ https://myserver.example.com </translation>
         <location filename="../qml/Windows/SelectLibraryDialog.qml" line="21"/>
         <source>Select Library</source>
         <translation>Vali Teek</translation>
+    </message>
+</context>
+<context>
+    <name>SelectTodoDialog</name>
+    <message>
+        <location filename="../qml/Windows/SelectTodoDialog.qml" line="22"/>
+        <source>Select Todo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Windows/SelectTodoDialog.qml" line="42"/>
+        <source>Todo List:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Windows/SelectTodoDialog.qml" line="64"/>
+        <source>Todo:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
