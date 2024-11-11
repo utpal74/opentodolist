@@ -11,8 +11,8 @@ CenteredDialog {
 
     property var selectedColor
 
-    implicitWidth: C.ApplicationWindow.contentItem.width * 0.9
-    implicitHeight: C.ApplicationWindow.contentItem.height * 0.9
+    width: idealDialogWidth
+    height: idealDialogHeight
     standardButtons: C.Dialog.Ok | C.Dialog.Cancel | C.Dialog.Reset
     onReset: dialog.selectedColor = undefined
 
@@ -23,33 +23,26 @@ CenteredDialog {
         }
     }
 
-    Flickable {
-        id: flickable
+    ListView {
+        id: listView
         width: dialog.availableWidth
         height: dialog.availableHeight
         clip: true
-        contentHeight: colorFlow.height + 50
-
         C.ScrollIndicator.vertical: C.ScrollIndicator {}
-
-        Flow {
-            id: colorFlow
-
-            width: flickable.width
-            spacing: AppSettings.mediumSpace
-
-            Repeater {
-                model: OTL.Colors.loadColors()
-                delegate: C.Button {
-                    // palette.button: modelData.color
-                    //palette.buttonText: C.ColorTheme.textColorForBackgroundColor(
-                    //                        palette.button)
-                    font.bold: dialog.selectedColor === modelData.color
-
-                    text: modelData.name
-                    onClicked: dialog.selectedColor = modelData.color
-                }
+        model: OTL.Colors.loadColors()
+        delegate: C.CheckDelegate {
+            id: control
+            text: modelData.name
+            checked: dialog.selectedColor === modelData.color
+            width: listView.width
+            background: Rectangle {
+                color: modelData.color
             }
+            contentItem: C.Label {
+                text: control.text
+                color: C.ColorTheme.textColorForBackgroundColor(modelData.color)
+            }
+            onClicked: dialog.selectedColor = modelData.color
         }
     }
 }
