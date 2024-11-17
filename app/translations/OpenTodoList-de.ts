@@ -2027,42 +2027,42 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="39"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="40"/>
         <source>Settings</source>
         <translation>Einstellungen</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="45"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="46"/>
         <source>User Interface</source>
         <translation>Benutzeroberfläche</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="53"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="54"/>
         <source>Language:</source>
         <translation>Sprache:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="117"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="118"/>
         <source>Theme:</source>
         <translation>Farbschema:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="161"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="198"/>
         <source>Font Size:</source>
         <translation>Schriftgröße:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="178"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="215"/>
         <source>Use custom font size</source>
         <translation>Eigene Schriftgröße nutzen</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="196"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="233"/>
         <source>Use Compact Style</source>
         <translation>Kompakten Stil nutzen</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="205"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="242"/>
         <source>Reduce space between components and reduce the font size.
 
 &lt;em&gt;Requires a restart of the app.&lt;/em&gt;</source>
@@ -2071,27 +2071,27 @@
 &lt;em&gt;Benötigt einen Neustart der Anwendung.&lt;/em&gt;</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="213"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="250"/>
         <source>Use compact todo lists</source>
         <translation>Kompakte Todo-Listen nutzen</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="223"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="260"/>
         <source>Reduce the padding in todo and task listings to fit more items on the screen.</source>
         <translation>Vertikale Abstände in Todo- und Aufgabenlisten reduzieren, um Platz für mehr Elemente auf dem Bildschirm zu schaffen.</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="230"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="267"/>
         <source>Override Scaling Factor</source>
         <translation>Skalierungsfaktor überschreiben</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="237"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="274"/>
         <source>Scale Factor:</source>
         <translation>Skalierungsfaktor:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="257"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="294"/>
         <source>Use this to manually scale the user interface. By default, the app should adapt automatically according to your device configuration. If this does not work properly, you can set a custom scaling factor here.
 
 This requires a restart of the app.</source>
@@ -2100,34 +2100,50 @@ This requires a restart of the app.</source>
 Dies erfordert einen Neustart der Anwendung.</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="266"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="303"/>
         <source>Library Item Size:</source>
         <translation>Kachelgröße in Bibliotheksansicht:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="142"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="179"/>
         <source>System Tray:</source>
         <translation>Systemablage:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="155"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="192"/>
         <source>Open Quick Notes Editor on Click</source>
         <translation>Öffne Kurznotiz-Editor bei Klick</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="187"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="224"/>
         <source>Desktop Mode</source>
         <translation>Desktopmodus</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="282"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="319"/>
         <source>Show notes excerpt in listings</source>
         <translation>Auszug aus den Notizen in den Inseraten anzeigen</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="147"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="184"/>
         <source>Monochrome Icon</source>
         <translation>Einfarbiges Icon</translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/SettingsPage.qml" line="143"/>
+        <source>Custom Primary Color:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/SettingsPage.qml" line="151"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="166"/>
+        <source>Select</source>
+        <translation type="unfinished">Auswählen</translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/SettingsPage.qml" line="160"/>
+        <source>Custom Secondary Color:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

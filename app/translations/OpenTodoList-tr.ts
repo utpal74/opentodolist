@@ -2027,69 +2027,69 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="39"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="40"/>
         <source>Settings</source>
         <translation>Ayarlar</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="45"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="46"/>
         <source>User Interface</source>
         <translation>Kullanıcı Arayüzü</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="53"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="54"/>
         <source>Language:</source>
         <translation>Dil</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="117"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="118"/>
         <source>Theme:</source>
         <translation>Tema</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="161"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="198"/>
         <source>Font Size:</source>
         <translation>Yazı Tipi Boyutu</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="178"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="215"/>
         <source>Use custom font size</source>
         <translation>Özel yazı fontu kullan</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="196"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="233"/>
         <source>Use Compact Style</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="205"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="242"/>
         <source>Reduce space between components and reduce the font size.
 
 &lt;em&gt;Requires a restart of the app.&lt;/em&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="213"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="250"/>
         <source>Use compact todo lists</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="223"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="260"/>
         <source>Reduce the padding in todo and task listings to fit more items on the screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="230"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="267"/>
         <source>Override Scaling Factor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="237"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="274"/>
         <source>Scale Factor:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="257"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="294"/>
         <source>Use this to manually scale the user interface. By default, the app should adapt automatically according to your device configuration. If this does not work properly, you can set a custom scaling factor here.
 
 This requires a restart of the app.</source>
@@ -2098,33 +2098,49 @@ This requires a restart of the app.</source>
 Bu ayar değişikliği uygulamanın yeniden başlatılmasını gerektirir.</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="266"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="303"/>
         <source>Library Item Size:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="142"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="179"/>
         <source>System Tray:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="155"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="192"/>
         <source>Open Quick Notes Editor on Click</source>
         <translation>Tıklandığında Hızlı Notlar&apos;ı Aç</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="187"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="224"/>
         <source>Desktop Mode</source>
         <translation>Masaüstü Modu</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="282"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="319"/>
         <source>Show notes excerpt in listings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="147"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="184"/>
         <source>Monochrome Icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/SettingsPage.qml" line="143"/>
+        <source>Custom Primary Color:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/SettingsPage.qml" line="151"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="166"/>
+        <source>Select</source>
+        <translation type="unfinished">Seç</translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/SettingsPage.qml" line="160"/>
+        <source>Custom Secondary Color:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

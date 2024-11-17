@@ -2065,27 +2065,27 @@ msgctxt "SelectTodoListDialog|"
 msgid "Select Todo List"
 msgstr "Wybierz Lista zadań do wykonania"
 
-#: ../qml/Pages/SettingsPage.qml:39
+#: ../qml/Pages/SettingsPage.qml:40
 msgctxt "SettingsPage|"
 msgid "Settings"
 msgstr "Ustawienia"
 
-#: ../qml/Pages/SettingsPage.qml:45
+#: ../qml/Pages/SettingsPage.qml:46
 msgctxt "SettingsPage|"
 msgid "User Interface"
 msgstr "Interfejs użytkownika"
 
-#: ../qml/Pages/SettingsPage.qml:53
+#: ../qml/Pages/SettingsPage.qml:54
 msgctxt "SettingsPage|"
 msgid "Language:"
 msgstr "Język:"
 
-#: ../qml/Pages/SettingsPage.qml:117
+#: ../qml/Pages/SettingsPage.qml:118
 msgctxt "SettingsPage|"
 msgid "Theme:"
 msgstr "Motyw:"
 
-#: ../qml/Pages/SettingsPage.qml:161
+#: ../qml/Pages/SettingsPage.qml:198
 msgctxt "SettingsPage|"
 msgid "Font Size:"
 msgstr "Rozmiar czcionki:"
@@ -2110,17 +2110,17 @@ msgctxt "SetManualProgressAction|"
 msgid "Set Progress"
 msgstr "Ustaw postęp"
 
-#: ../qml/Pages/SettingsPage.qml:178
+#: ../qml/Pages/SettingsPage.qml:215
 msgctxt "SettingsPage|"
 msgid "Use custom font size"
 msgstr "Użyj niestandardowej czcionki"
 
-#: ../qml/Pages/SettingsPage.qml:196
+#: ../qml/Pages/SettingsPage.qml:233
 msgctxt "SettingsPage|"
 msgid "Use Compact Style"
 msgstr "Użyj stylu kompaktowego"
 
-#: ../qml/Pages/SettingsPage.qml:205
+#: ../qml/Pages/SettingsPage.qml:242
 msgctxt "SettingsPage|"
 msgid "Reduce space between components and reduce the font size.\n"
 "\n"
@@ -2129,27 +2129,27 @@ msgstr "Zmniejsz odstępy między elementami i zmniejsz czcionkę.\n"
 "\n"
 "<em>Wymaga restartu aplikacji.</em>"
 
-#: ../qml/Pages/SettingsPage.qml:213
+#: ../qml/Pages/SettingsPage.qml:250
 msgctxt "SettingsPage|"
 msgid "Use compact todo lists"
 msgstr "Użyj kompaktowych list zadań"
 
-#: ../qml/Pages/SettingsPage.qml:223
+#: ../qml/Pages/SettingsPage.qml:260
 msgctxt "SettingsPage|"
 msgid "Reduce the padding in todo and task listings to fit more items on the screen."
 msgstr "Zmniejsz padding w listach zadań by zmieścić więcej pozycji na ekranie."
 
-#: ../qml/Pages/SettingsPage.qml:230
+#: ../qml/Pages/SettingsPage.qml:267
 msgctxt "SettingsPage|"
 msgid "Override Scaling Factor"
 msgstr "Ignoruj skalowanie"
 
-#: ../qml/Pages/SettingsPage.qml:237
+#: ../qml/Pages/SettingsPage.qml:274
 msgctxt "SettingsPage|"
 msgid "Scale Factor:"
 msgstr "Skalowanie:"
 
-#: ../qml/Pages/SettingsPage.qml:257
+#: ../qml/Pages/SettingsPage.qml:294
 msgctxt "SettingsPage|"
 msgid "Use this to manually scale the user interface. By default, the app should adapt automatically according to your device configuration. If this does not work properly, you can set a custom scaling factor here.\n"
 "\n"
@@ -2183,7 +2183,7 @@ msgctxt "PromoteTask|"
 msgid "Promote"
 msgstr ""
 
-#: ../qml/Pages/SettingsPage.qml:266
+#: ../qml/Pages/SettingsPage.qml:303
 msgctxt "SettingsPage|"
 msgid "Library Item Size:"
 msgstr ""
@@ -2298,12 +2298,12 @@ msgctxt "RecurrenceDialog|"
 msgid "Every N Months"
 msgstr ""
 
-#: ../qml/Pages/SettingsPage.qml:142
+#: ../qml/Pages/SettingsPage.qml:179
 msgctxt "SettingsPage|"
 msgid "System Tray:"
 msgstr ""
 
-#: ../qml/Pages/SettingsPage.qml:155
+#: ../qml/Pages/SettingsPage.qml:192
 msgctxt "SettingsPage|"
 msgid "Open Quick Notes Editor on Click"
 msgstr ""
@@ -2424,7 +2424,7 @@ msgctxt "ApplicationToolBarActions|"
 msgid "Set Progress"
 msgstr ""
 
-#: ../qml/Pages/SettingsPage.qml:187
+#: ../qml/Pages/SettingsPage.qml:224
 msgctxt "SettingsPage|"
 msgid "Desktop Mode"
 msgstr ""
@@ -2611,7 +2611,7 @@ msgctxt "EmbeddedWebViewDialog|"
 msgid "Loading..."
 msgstr ""
 
-#: ../qml/Pages/SettingsPage.qml:282
+#: ../qml/Pages/SettingsPage.qml:319
 msgctxt "SettingsPage|"
 msgid "Show notes excerpt in listings"
 msgstr ""
@@ -2721,7 +2721,7 @@ msgctxt "ProblemsPage|"
 msgid "Retry Sync"
 msgstr ""
 
-#: ../qml/Pages/SettingsPage.qml:147
+#: ../qml/Pages/SettingsPage.qml:184
 msgctxt "SettingsPage|"
 msgid "Monochrome Icon"
 msgstr ""
@@ -3034,5 +3034,20 @@ msgstr ""
 #: ../qml/Windows/SelectTodoDialog.qml:64
 msgctxt "SelectTodoDialog|"
 msgid "Todo:"
+msgstr ""
+
+#: ../qml/Pages/SettingsPage.qml:143
+msgctxt "SettingsPage|"
+msgid "Custom Primary Color:"
+msgstr ""
+
+#: ../qml/Pages/SettingsPage.qml:151 ../qml/Pages/SettingsPage.qml:166
+msgctxt "SettingsPage|"
+msgid "Select"
+msgstr ""
+
+#: ../qml/Pages/SettingsPage.qml:160
+msgctxt "SettingsPage|"
+msgid "Custom Secondary Color:"
 msgstr ""
 
