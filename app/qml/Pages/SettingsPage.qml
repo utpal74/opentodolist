@@ -151,6 +151,11 @@ C.Page {
                     text: qsTr("Select")
                     onClicked: {
                         colorSelectionDialog.what = colorSelectionDialog.selectPrimary
+                        if (C.ColorTheme.customPrimaryColor.a > 0) {
+                            colorSelectionDialog.selectedColor = C.ColorTheme.customPrimaryColor
+                        } else {
+                            colorSelectionDialog.selectedColor = null
+                        }
                         colorSelectionDialog.visible = true
                     }
                 }
@@ -171,6 +176,11 @@ C.Page {
                                                 C.ColorTheme.customSecondaryColor)
                 onClicked: {
                     colorSelectionDialog.what = colorSelectionDialog.selectSecondary
+                    if (C.ColorTheme.customSecondaryColor.a > 0) {
+                        colorSelectionDialog.selectedColor = C.ColorTheme.customSecondaryColor
+                    } else {
+                        colorSelectionDialog.selectedColor = null
+                    }
                     colorSelectionDialog.visible = true
                 }
             }
