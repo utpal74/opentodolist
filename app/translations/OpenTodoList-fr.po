@@ -2101,7 +2101,7 @@ msgctxt "SettingsPage|"
 msgid "Theme:"
 msgstr "Thème :"
 
-#: ../qml/Pages/SettingsPage.qml:198
+#: ../qml/Pages/SettingsPage.qml:208
 msgctxt "SettingsPage|"
 msgid "Font Size:"
 msgstr "Taille de la fonte"
@@ -2126,17 +2126,17 @@ msgctxt "SetManualProgressAction|"
 msgid "Set Progress"
 msgstr "Définir l'avancement"
 
-#: ../qml/Pages/SettingsPage.qml:215
+#: ../qml/Pages/SettingsPage.qml:225
 msgctxt "SettingsPage|"
 msgid "Use custom font size"
 msgstr "Utiliser une taille de police personnalisée"
 
-#: ../qml/Pages/SettingsPage.qml:233
+#: ../qml/Pages/SettingsPage.qml:243
 msgctxt "SettingsPage|"
 msgid "Use Compact Style"
 msgstr "Utiliser un style compact"
 
-#: ../qml/Pages/SettingsPage.qml:242
+#: ../qml/Pages/SettingsPage.qml:252
 msgctxt "SettingsPage|"
 msgid "Reduce space between components and reduce the font size.\n"
 "\n"
@@ -2145,27 +2145,27 @@ msgstr "Réduire l'espace entre les composants et réduire la taille de la polic
 "\n"
 "<em>Nécessite un redémarrage de l'application.</em>"
 
-#: ../qml/Pages/SettingsPage.qml:250
+#: ../qml/Pages/SettingsPage.qml:260
 msgctxt "SettingsPage|"
 msgid "Use compact todo lists"
 msgstr "Utiliser des listes des tâches compactes"
 
-#: ../qml/Pages/SettingsPage.qml:260
+#: ../qml/Pages/SettingsPage.qml:270
 msgctxt "SettingsPage|"
 msgid "Reduce the padding in todo and task listings to fit more items on the screen."
 msgstr "Réduire l'écart de remplissage dans les listes de tâches et d'actions pour faire tenir plus d'éléments à l'écran."
 
-#: ../qml/Pages/SettingsPage.qml:267
+#: ../qml/Pages/SettingsPage.qml:277
 msgctxt "SettingsPage|"
 msgid "Override Scaling Factor"
 msgstr "Remplacer le facteur d'échelle"
 
-#: ../qml/Pages/SettingsPage.qml:274
+#: ../qml/Pages/SettingsPage.qml:284
 msgctxt "SettingsPage|"
 msgid "Scale Factor:"
 msgstr "Facteur d'échelle:"
 
-#: ../qml/Pages/SettingsPage.qml:294
+#: ../qml/Pages/SettingsPage.qml:304
 msgctxt "SettingsPage|"
 msgid "Use this to manually scale the user interface. By default, the app should adapt automatically according to your device configuration. If this does not work properly, you can set a custom scaling factor here.\n"
 "\n"
@@ -2199,7 +2199,7 @@ msgctxt "PromoteTask|"
 msgid "Promote"
 msgstr "Promouvoir"
 
-#: ../qml/Pages/SettingsPage.qml:303
+#: ../qml/Pages/SettingsPage.qml:313
 msgctxt "SettingsPage|"
 msgid "Library Item Size:"
 msgstr "Taille des Objets de la Bibliothèque:"
@@ -2314,12 +2314,12 @@ msgctxt "RecurrenceDialog|"
 msgid "Every N Months"
 msgstr "Tous les N Mois"
 
-#: ../qml/Pages/SettingsPage.qml:179
+#: ../qml/Pages/SettingsPage.qml:189
 msgctxt "SettingsPage|"
 msgid "System Tray:"
 msgstr "Barre des Tâches:"
 
-#: ../qml/Pages/SettingsPage.qml:192
+#: ../qml/Pages/SettingsPage.qml:202
 msgctxt "SettingsPage|"
 msgid "Open Quick Notes Editor on Click"
 msgstr "Ouvrir l’Éditeur de Notes Rapides au Clic"
@@ -2440,7 +2440,7 @@ msgctxt "ApplicationToolBarActions|"
 msgid "Set Progress"
 msgstr "Définir la progression"
 
-#: ../qml/Pages/SettingsPage.qml:224
+#: ../qml/Pages/SettingsPage.qml:234
 msgctxt "SettingsPage|"
 msgid "Desktop Mode"
 msgstr "Mode bureau"
@@ -2627,7 +2627,7 @@ msgctxt "EmbeddedWebViewDialog|"
 msgid "Loading..."
 msgstr "Chargement..."
 
-#: ../qml/Pages/SettingsPage.qml:319
+#: ../qml/Pages/SettingsPage.qml:329
 msgctxt "SettingsPage|"
 msgid "Show notes excerpt in listings"
 msgstr "Montrer un extrait des notes dans les listes"
@@ -2737,7 +2737,7 @@ msgctxt "ProblemsPage|"
 msgid "Retry Sync"
 msgstr "Relancer la synchro"
 
-#: ../qml/Pages/SettingsPage.qml:184
+#: ../qml/Pages/SettingsPage.qml:194
 msgctxt "SettingsPage|"
 msgid "Monochrome Icon"
 msgstr "Icône monochrome"
@@ -3057,12 +3057,12 @@ msgctxt "SettingsPage|"
 msgid "Custom Primary Color:"
 msgstr ""
 
-#: ../qml/Pages/SettingsPage.qml:151 ../qml/Pages/SettingsPage.qml:166
+#: ../qml/Pages/SettingsPage.qml:151 ../qml/Pages/SettingsPage.qml:171
 msgctxt "SettingsPage|"
 msgid "Select"
 msgstr ""
 
-#: ../qml/Pages/SettingsPage.qml:160
+#: ../qml/Pages/SettingsPage.qml:165
 msgctxt "SettingsPage|"
 msgid "Custom Secondary Color:"
 msgstr ""

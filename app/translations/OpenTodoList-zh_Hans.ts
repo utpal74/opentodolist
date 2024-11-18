@@ -2047,22 +2047,22 @@
         <translation>主题:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="198"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="208"/>
         <source>Font Size:</source>
         <translation>字体尺寸:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="215"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="225"/>
         <source>Use custom font size</source>
         <translation>使用自定义字体尺寸</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="233"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="243"/>
         <source>Use Compact Style</source>
         <translation>使用紧凑风格</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="242"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="252"/>
         <source>Reduce space between components and reduce the font size.
 
 &lt;em&gt;Requires a restart of the app.&lt;/em&gt;</source>
@@ -2071,27 +2071,27 @@
 &lt;em&gt;需要重新启动应用。&lt;/em&gt;</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="250"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="260"/>
         <source>Use compact todo lists</source>
         <translation>使用紧凑的待办事项清单</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="260"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="270"/>
         <source>Reduce the padding in todo and task listings to fit more items on the screen.</source>
         <translation>缩小待办事项和任务列表的边距使得屏幕上可以显示更多项目。</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="267"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="277"/>
         <source>Override Scaling Factor</source>
         <translation>覆盖缩放级别</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="274"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="284"/>
         <source>Scale Factor:</source>
         <translation>缩放级别:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="294"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="304"/>
         <source>Use this to manually scale the user interface. By default, the app should adapt automatically according to your device configuration. If this does not work properly, you can set a custom scaling factor here.
 
 This requires a restart of the app.</source>
@@ -2100,32 +2100,32 @@ This requires a restart of the app.</source>
 这需要重新启动应用。</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="303"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="313"/>
         <source>Library Item Size:</source>
         <translation>资料库项目尺寸:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="179"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="189"/>
         <source>System Tray:</source>
         <translation>系统托盘:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="192"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="202"/>
         <source>Open Quick Notes Editor on Click</source>
         <translation>点击以打开快捷笔记编辑器</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="224"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="234"/>
         <source>Desktop Mode</source>
         <translation>桌面模式</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="319"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="329"/>
         <source>Show notes excerpt in listings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="184"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="194"/>
         <source>Monochrome Icon</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2136,12 +2136,12 @@ This requires a restart of the app.</source>
     </message>
     <message>
         <location filename="../qml/Pages/SettingsPage.qml" line="151"/>
-        <location filename="../qml/Pages/SettingsPage.qml" line="166"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="171"/>
         <source>Select</source>
         <translation type="unfinished">选择</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="160"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="165"/>
         <source>Custom Secondary Color:</source>
         <translation type="unfinished"></translation>
     </message>

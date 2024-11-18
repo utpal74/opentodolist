@@ -2086,7 +2086,7 @@ msgctxt "SettingsPage|"
 msgid "Theme:"
 msgstr "Тема:"
 
-#: ../qml/Pages/SettingsPage.qml:198
+#: ../qml/Pages/SettingsPage.qml:208
 msgctxt "SettingsPage|"
 msgid "Font Size:"
 msgstr "Розмір шрифту:"
@@ -2111,17 +2111,17 @@ msgctxt "SetManualProgressAction|"
 msgid "Set Progress"
 msgstr "Встановити прогрес"
 
-#: ../qml/Pages/SettingsPage.qml:215
+#: ../qml/Pages/SettingsPage.qml:225
 msgctxt "SettingsPage|"
 msgid "Use custom font size"
 msgstr "Використати нестандартний розмір шрифту"
 
-#: ../qml/Pages/SettingsPage.qml:233
+#: ../qml/Pages/SettingsPage.qml:243
 msgctxt "SettingsPage|"
 msgid "Use Compact Style"
 msgstr "Використати компактний стиль"
 
-#: ../qml/Pages/SettingsPage.qml:242
+#: ../qml/Pages/SettingsPage.qml:252
 msgctxt "SettingsPage|"
 msgid "Reduce space between components and reduce the font size.\n"
 "\n"
@@ -2130,27 +2130,27 @@ msgstr "Зменшіть простір між компонентами та з�
 "\n"
 "<em>Потребує перезапуску додатка.</em>"
 
-#: ../qml/Pages/SettingsPage.qml:250
+#: ../qml/Pages/SettingsPage.qml:260
 msgctxt "SettingsPage|"
 msgid "Use compact todo lists"
 msgstr "Компактний вид списка"
 
-#: ../qml/Pages/SettingsPage.qml:260
+#: ../qml/Pages/SettingsPage.qml:270
 msgctxt "SettingsPage|"
 msgid "Reduce the padding in todo and task listings to fit more items on the screen."
 msgstr "Зменшіть відступи в списках справ і завдань, щоб вмістити більше елементів на екрані."
 
-#: ../qml/Pages/SettingsPage.qml:267
+#: ../qml/Pages/SettingsPage.qml:277
 msgctxt "SettingsPage|"
 msgid "Override Scaling Factor"
 msgstr "Перевизначити Коефіцієнт Масштабування"
 
-#: ../qml/Pages/SettingsPage.qml:274
+#: ../qml/Pages/SettingsPage.qml:284
 msgctxt "SettingsPage|"
 msgid "Scale Factor:"
 msgstr "Масштаб:"
 
-#: ../qml/Pages/SettingsPage.qml:294
+#: ../qml/Pages/SettingsPage.qml:304
 msgctxt "SettingsPage|"
 msgid "Use this to manually scale the user interface. By default, the app should adapt automatically according to your device configuration. If this does not work properly, you can set a custom scaling factor here.\n"
 "\n"
@@ -2184,7 +2184,7 @@ msgctxt "PromoteTask|"
 msgid "Promote"
 msgstr "Просувати"
 
-#: ../qml/Pages/SettingsPage.qml:303
+#: ../qml/Pages/SettingsPage.qml:313
 msgctxt "SettingsPage|"
 msgid "Library Item Size:"
 msgstr "Розмір Елемента Бібліотеки"
@@ -2299,12 +2299,12 @@ msgctxt "RecurrenceDialog|"
 msgid "Every N Months"
 msgstr "Кожен N Місяці"
 
-#: ../qml/Pages/SettingsPage.qml:179
+#: ../qml/Pages/SettingsPage.qml:189
 msgctxt "SettingsPage|"
 msgid "System Tray:"
 msgstr "Системний Лоток"
 
-#: ../qml/Pages/SettingsPage.qml:192
+#: ../qml/Pages/SettingsPage.qml:202
 msgctxt "SettingsPage|"
 msgid "Open Quick Notes Editor on Click"
 msgstr "Відкривати Редактор Швидких Нотаток за Кліком"
@@ -2425,7 +2425,7 @@ msgctxt "ApplicationToolBarActions|"
 msgid "Set Progress"
 msgstr "Встановити прогрес"
 
-#: ../qml/Pages/SettingsPage.qml:224
+#: ../qml/Pages/SettingsPage.qml:234
 msgctxt "SettingsPage|"
 msgid "Desktop Mode"
 msgstr "Режим Робочого Столу"
@@ -2612,7 +2612,7 @@ msgctxt "EmbeddedWebViewDialog|"
 msgid "Loading..."
 msgstr "Завантаження..."
 
-#: ../qml/Pages/SettingsPage.qml:319
+#: ../qml/Pages/SettingsPage.qml:329
 msgctxt "SettingsPage|"
 msgid "Show notes excerpt in listings"
 msgstr "Показувати уривки нотаток у списках"
@@ -2722,7 +2722,7 @@ msgctxt "ProblemsPage|"
 msgid "Retry Sync"
 msgstr "Перепробувати Синхронізацію"
 
-#: ../qml/Pages/SettingsPage.qml:184
+#: ../qml/Pages/SettingsPage.qml:194
 msgctxt "SettingsPage|"
 msgid "Monochrome Icon"
 msgstr "Монохромна ікона"
@@ -3042,12 +3042,12 @@ msgctxt "SettingsPage|"
 msgid "Custom Primary Color:"
 msgstr ""
 
-#: ../qml/Pages/SettingsPage.qml:151 ../qml/Pages/SettingsPage.qml:166
+#: ../qml/Pages/SettingsPage.qml:151 ../qml/Pages/SettingsPage.qml:171
 msgctxt "SettingsPage|"
 msgid "Select"
 msgstr ""
 
-#: ../qml/Pages/SettingsPage.qml:160
+#: ../qml/Pages/SettingsPage.qml:165
 msgctxt "SettingsPage|"
 msgid "Custom Secondary Color:"
 msgstr ""

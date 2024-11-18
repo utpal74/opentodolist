@@ -2048,22 +2048,22 @@
         <translation>Thema:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="198"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="208"/>
         <source>Font Size:</source>
         <translation>Tekstgrootte:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="215"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="225"/>
         <source>Use custom font size</source>
         <translation>Aangepaste tekstgrootte instellen</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="233"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="243"/>
         <source>Use Compact Style</source>
         <translation>Compacte vormgeving gebruiken</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="242"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="252"/>
         <source>Reduce space between components and reduce the font size.
 
 &lt;em&gt;Requires a restart of the app.&lt;/em&gt;</source>
@@ -2072,27 +2072,27 @@
 &lt;em&gt;Herstart OpenTodoList om de wijziging toe te passen.&lt;/em&gt;</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="250"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="260"/>
         <source>Use compact todo lists</source>
         <translation>Compacte takenlijsten gebruiken</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="260"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="270"/>
         <source>Reduce the padding in todo and task listings to fit more items on the screen.</source>
         <translation>Verklein de ruimte tussen taken en lijstitems zodat er meer items op het scherm passen.</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="267"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="277"/>
         <source>Override Scaling Factor</source>
         <translation>Beeldgrootte afdwingen</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="274"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="284"/>
         <source>Scale Factor:</source>
         <translation>Beeldgrootte:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="294"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="304"/>
         <source>Use this to manually scale the user interface. By default, the app should adapt automatically according to your device configuration. If this does not work properly, you can set a custom scaling factor here.
 
 This requires a restart of the app.</source>
@@ -2101,32 +2101,32 @@ This requires a restart of the app.</source>
 Herstart OpenTodoList om de wijziging toe te passen.</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="303"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="313"/>
         <source>Library Item Size:</source>
         <translation>Grootte van item in verzameling:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="179"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="189"/>
         <source>System Tray:</source>
         <translation>Systeemvak:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="192"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="202"/>
         <source>Open Quick Notes Editor on Click</source>
         <translation>Snelle notities openen na aanklikken</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="224"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="234"/>
         <source>Desktop Mode</source>
         <translation>Bureaubladmodus</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="319"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="329"/>
         <source>Show notes excerpt in listings</source>
         <translation>Notities niet op lijsten tonen</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="184"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="194"/>
         <source>Monochrome Icon</source>
         <translation>Monochroom pictogram</translation>
     </message>
@@ -2137,12 +2137,12 @@ Herstart OpenTodoList om de wijziging toe te passen.</translation>
     </message>
     <message>
         <location filename="../qml/Pages/SettingsPage.qml" line="151"/>
-        <location filename="../qml/Pages/SettingsPage.qml" line="166"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="171"/>
         <source>Select</source>
         <translation type="unfinished">Kiezen</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="160"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="165"/>
         <source>Custom Secondary Color:</source>
         <translation type="unfinished"></translation>
     </message>

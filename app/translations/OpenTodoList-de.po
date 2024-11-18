@@ -2093,7 +2093,7 @@ msgctxt "SettingsPage|"
 msgid "Theme:"
 msgstr "Farbschema:"
 
-#: ../qml/Pages/SettingsPage.qml:198
+#: ../qml/Pages/SettingsPage.qml:208
 msgctxt "SettingsPage|"
 msgid "Font Size:"
 msgstr "Schriftgröße:"
@@ -2118,17 +2118,17 @@ msgctxt "SetManualProgressAction|"
 msgid "Set Progress"
 msgstr "Fortschritt setzen"
 
-#: ../qml/Pages/SettingsPage.qml:215
+#: ../qml/Pages/SettingsPage.qml:225
 msgctxt "SettingsPage|"
 msgid "Use custom font size"
 msgstr "Eigene Schriftgröße nutzen"
 
-#: ../qml/Pages/SettingsPage.qml:233
+#: ../qml/Pages/SettingsPage.qml:243
 msgctxt "SettingsPage|"
 msgid "Use Compact Style"
 msgstr "Kompakten Stil nutzen"
 
-#: ../qml/Pages/SettingsPage.qml:242
+#: ../qml/Pages/SettingsPage.qml:252
 msgctxt "SettingsPage|"
 msgid "Reduce space between components and reduce the font size.\n"
 "\n"
@@ -2137,27 +2137,27 @@ msgstr "Abstände zwischen den Komponenten verringern und Schriftgröße reduzie
 "\n"
 "<em>Benötigt einen Neustart der Anwendung.</em>"
 
-#: ../qml/Pages/SettingsPage.qml:250
+#: ../qml/Pages/SettingsPage.qml:260
 msgctxt "SettingsPage|"
 msgid "Use compact todo lists"
 msgstr "Kompakte Todo-Listen nutzen"
 
-#: ../qml/Pages/SettingsPage.qml:260
+#: ../qml/Pages/SettingsPage.qml:270
 msgctxt "SettingsPage|"
 msgid "Reduce the padding in todo and task listings to fit more items on the screen."
 msgstr "Vertikale Abstände in Todo- und Aufgabenlisten reduzieren, um Platz für mehr Elemente auf dem Bildschirm zu schaffen."
 
-#: ../qml/Pages/SettingsPage.qml:267
+#: ../qml/Pages/SettingsPage.qml:277
 msgctxt "SettingsPage|"
 msgid "Override Scaling Factor"
 msgstr "Skalierungsfaktor überschreiben"
 
-#: ../qml/Pages/SettingsPage.qml:274
+#: ../qml/Pages/SettingsPage.qml:284
 msgctxt "SettingsPage|"
 msgid "Scale Factor:"
 msgstr "Skalierungsfaktor:"
 
-#: ../qml/Pages/SettingsPage.qml:294
+#: ../qml/Pages/SettingsPage.qml:304
 msgctxt "SettingsPage|"
 msgid "Use this to manually scale the user interface. By default, the app should adapt automatically according to your device configuration. If this does not work properly, you can set a custom scaling factor here.\n"
 "\n"
@@ -2191,7 +2191,7 @@ msgctxt "PromoteTask|"
 msgid "Promote"
 msgstr "In Aufgabe konvertieren"
 
-#: ../qml/Pages/SettingsPage.qml:303
+#: ../qml/Pages/SettingsPage.qml:313
 msgctxt "SettingsPage|"
 msgid "Library Item Size:"
 msgstr "Kachelgröße in Bibliotheksansicht:"
@@ -2306,12 +2306,12 @@ msgctxt "RecurrenceDialog|"
 msgid "Every N Months"
 msgstr "Alle N Monate"
 
-#: ../qml/Pages/SettingsPage.qml:179
+#: ../qml/Pages/SettingsPage.qml:189
 msgctxt "SettingsPage|"
 msgid "System Tray:"
 msgstr "Systemablage:"
 
-#: ../qml/Pages/SettingsPage.qml:192
+#: ../qml/Pages/SettingsPage.qml:202
 msgctxt "SettingsPage|"
 msgid "Open Quick Notes Editor on Click"
 msgstr "Öffne Kurznotiz-Editor bei Klick"
@@ -2432,7 +2432,7 @@ msgctxt "ApplicationToolBarActions|"
 msgid "Set Progress"
 msgstr "Fortschritt dokumentieren"
 
-#: ../qml/Pages/SettingsPage.qml:224
+#: ../qml/Pages/SettingsPage.qml:234
 msgctxt "SettingsPage|"
 msgid "Desktop Mode"
 msgstr "Desktopmodus"
@@ -2619,7 +2619,7 @@ msgctxt "EmbeddedWebViewDialog|"
 msgid "Loading..."
 msgstr "Laden..."
 
-#: ../qml/Pages/SettingsPage.qml:319
+#: ../qml/Pages/SettingsPage.qml:329
 msgctxt "SettingsPage|"
 msgid "Show notes excerpt in listings"
 msgstr "Auszug aus den Notizen in den Inseraten anzeigen"
@@ -2729,7 +2729,7 @@ msgctxt "ProblemsPage|"
 msgid "Retry Sync"
 msgstr "Synchronisation erneut versuchen"
 
-#: ../qml/Pages/SettingsPage.qml:184
+#: ../qml/Pages/SettingsPage.qml:194
 msgctxt "SettingsPage|"
 msgid "Monochrome Icon"
 msgstr "Einfarbiges Icon"
@@ -2757,305 +2757,307 @@ msgstr "Entschuldigung, diese Verknüpfung verweist auf keine Seite oder keinen 
 #: ../qml/Components/Tooltips/AllSubtasksDone.qml:13
 msgctxt "AllSubtasksDone|"
 msgid "Everything in %1 done! Do you want to mark it as well as done?"
-msgstr ""
+msgstr "Alles in %1 erledigt! Möchten Sie es auch als erledigt markieren?"
 
 #: ../qml/Components/Tooltips/AllSubtasksDone.qml:20
 msgctxt "AllSubtasksDone|"
 msgid "Mark as Done"
-msgstr ""
+msgstr "Als erledigt markieren"
 
 #: ../qml/Components/Tooltips/AllSubtasksDone.qml:30
 msgctxt "AllSubtasksDone|"
 msgid "Keep Open"
-msgstr ""
+msgstr "Geöffnet halten"
 
 #: ../qml/Widgets/ApplicationMenu.qml:36
 msgctxt "ApplicationMenu|"
 msgid "File"
-msgstr ""
+msgstr "Datei"
 
 #: ../qml/Widgets/ApplicationMenu.qml:87
 msgctxt "ApplicationMenu|"
 msgid "Edit"
-msgstr ""
+msgstr "Bearbeiten"
 
 #: ../qml/Widgets/ApplicationMenu.qml:158
 msgctxt "ApplicationMenu|"
 msgid "Navigate"
-msgstr ""
+msgstr "Navigieren"
 
 #: ../qml/Widgets/ApplicationMenu.qml:197
 msgctxt "ApplicationMenu|"
 msgid "Help"
-msgstr ""
+msgstr "Hilfe"
 
 #: ../qml/Components/ApplicationShortcuts.qml:18
 msgctxt "ApplicationShortcuts|"
 msgid "About"
-msgstr ""
+msgstr "Über"
 
 #: ../qml/Components/ApplicationShortcuts.qml:27
 msgctxt "ApplicationShortcuts|"
 msgid "About Qt"
-msgstr ""
+msgstr "Über Qt"
 
 #: ../qml/Components/ApplicationShortcuts.qml:35
 msgctxt "ApplicationShortcuts|"
 msgid "Accounts"
-msgstr ""
+msgstr "Konten"
 
 #: ../qml/Components/ApplicationShortcuts.qml:43
 msgctxt "ApplicationShortcuts|"
 msgid "Add Tag"
-msgstr ""
+msgstr "Tag hinzufügen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:51
 msgctxt "ApplicationShortcuts|"
 msgid "Attach File"
-msgstr ""
+msgstr "Datei anhängen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:59
 msgctxt "ApplicationShortcuts|"
 msgid "Backup"
-msgstr ""
+msgstr "Backup"
 
 #: ../qml/Components/ApplicationShortcuts.qml:66
 msgctxt "ApplicationShortcuts|"
 msgid "Close"
-msgstr ""
+msgstr "Schließen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:73
 msgctxt "ApplicationShortcuts|"
 msgid "Copy"
-msgstr ""
+msgstr "Kopieren"
 
 #: ../qml/Components/ApplicationShortcuts.qml:81
 msgctxt "ApplicationShortcuts|"
 msgid "Copy Link To Page"
-msgstr ""
+msgstr "Link auf Seite kopieren"
 
 #: ../qml/Components/ApplicationShortcuts.qml:89
 msgctxt "ApplicationShortcuts|"
 msgid "Create Sample Library"
-msgstr ""
+msgstr "Beispielbibliothek erzeugen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:159
 msgctxt "ApplicationShortcuts|"
 msgid "Delete"
-msgstr ""
+msgstr "Löschen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:167
 msgctxt "ApplicationShortcuts|"
 msgid "Delete Completed Items"
-msgstr ""
+msgstr "Erledigte Einträge löschen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:175
 msgctxt "ApplicationShortcuts|"
 msgid "Due Date"
-msgstr ""
+msgstr "Fälligkeitsdatum"
 
+#. Where is the occurrence of this entry? Is this a 'Find…' in a sense of Ctrl + F = Search…?
 #: ../qml/Components/ApplicationShortcuts.qml:183
 msgctxt "ApplicationShortcuts|"
 msgid "Find"
-msgstr ""
+msgstr "Suchen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:190
 msgctxt "ApplicationShortcuts|"
 msgid "Back"
-msgstr ""
+msgstr "Zurück"
 
 #: ../qml/Components/ApplicationShortcuts.qml:207
 msgctxt "ApplicationShortcuts|"
 msgid "Left Sidebar"
-msgstr ""
+msgstr "Linke Seitenleiste"
 
 #: ../qml/Components/ApplicationShortcuts.qml:213
 msgctxt "ApplicationShortcuts|"
 msgid "Mark all items as done"
-msgstr ""
+msgstr "Alle Einträge als erledigt markieren"
 
 #: ../qml/Components/ApplicationShortcuts.qml:225
 msgctxt "ApplicationShortcuts|"
 msgid "Mark all items as undone"
-msgstr ""
+msgstr "Alle Einträge als unerledigt markieren"
 
 #: ../qml/Components/ApplicationShortcuts.qml:237
 msgctxt "ApplicationShortcuts|"
 msgid "Move"
-msgstr ""
+msgstr "Verschieben"
 
 #: ../qml/Components/ApplicationShortcuts.qml:245
 msgctxt "ApplicationShortcuts|"
 msgid "New Library"
-msgstr ""
+msgstr "Neue Bibliothek"
 
 #: ../qml/Components/ApplicationShortcuts.qml:253
 msgctxt "ApplicationShortcuts|"
 msgid "Open Created Item"
-msgstr ""
+msgstr "Angelegten Eintrag öffnen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:260
 msgctxt "ApplicationShortcuts|"
 msgid "Open In New Window"
-msgstr ""
+msgstr "In neuem Fenster öffnen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:268
 msgctxt "ApplicationShortcuts|"
 msgid "Open Library Folder"
-msgstr ""
+msgstr "Bibliotheksordner öffnen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:274
 msgctxt "ApplicationShortcuts|"
 msgid "Quit"
-msgstr ""
+msgstr "Beenden"
 
 #: ../qml/Components/ApplicationShortcuts.qml:280
 msgctxt "ApplicationShortcuts|"
 msgid "Rename"
-msgstr ""
+msgstr "Umbenennen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:288
 msgctxt "ApplicationShortcuts|"
 msgid "Preferences"
-msgstr ""
+msgstr "Einstellungen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:309
 msgctxt "ApplicationShortcuts|"
 msgid "Scroll to Top"
-msgstr ""
+msgstr "An den Anfang scrollen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:316
 msgctxt "ApplicationShortcuts|"
 msgid "Scroll to Bottom"
-msgstr ""
+msgstr "Ans Ende scrollen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:323
 msgctxt "ApplicationShortcuts|"
 msgid "Set Color"
-msgstr ""
+msgstr "Farbe setzen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:330
 msgctxt "ApplicationShortcuts|"
 msgid "Set Progress"
-msgstr ""
+msgstr "Fortschritt setzen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:337
 msgctxt "ApplicationShortcuts|"
 msgid "Sort"
-msgstr ""
+msgstr "Sortieren"
 
 #: ../qml/Components/ApplicationShortcuts.qml:345
 msgctxt "ApplicationShortcuts|"
 msgid "Sync Now"
-msgstr ""
+msgstr "Jetzt synchronisieren"
 
 #: ../qml/Components/ApplicationShortcuts.qml:358
 msgctxt "ApplicationShortcuts|"
 msgid "Sync Log"
-msgstr ""
+msgstr "Synch Log"
 
 #: ../qml/Components/ApplicationShortcuts.qml:369
 msgctxt "ApplicationShortcuts|"
 msgid "Translate The App..."
-msgstr ""
+msgstr "Die App übersetzen …"
 
 #: ../qml/Components/ApplicationToolBar.qml:86
 msgctxt "ApplicationToolBar|"
 msgid "Problems"
-msgstr ""
+msgstr "Probleme"
 
 #: ../qml/Widgets/ItemNotesEditor.qml:106
 msgctxt "ItemNotesEditor|"
 msgid "Copy"
-msgstr ""
+msgstr "Kopieren"
 
 #: ../qml/Widgets/ItemNotesEditor.qml:113
 msgctxt "ItemNotesEditor|"
 msgid "Copy Formatted Text"
-msgstr ""
+msgstr "Formatierten Text kopieren"
 
 #: ../qml/Widgets/ItemNotesEditor.qml:129
 msgctxt "ItemNotesEditor|"
 msgid "Copy Plain Text"
-msgstr ""
+msgstr "Reinen Text kopieren"
 
+#. For German localization cf. https://www.duden.de/konjugation/taggen
 #: ../qml/Widgets/LibrariesSideBar.qml:293
 msgctxt "LibrariesSideBar|"
 msgid "Untagged"
-msgstr ""
+msgstr "Ungetaggt"
 
 #: ../../lib/datamodel/library.cpp:615
 msgctxt "Library|"
 msgid "Unable to create backup folder"
-msgstr ""
+msgstr "Backupordner kann nicht angelegt werden"
 
 #: ../../lib/datamodel/library.cpp:619
 msgctxt "Library|"
 msgid "Failed to change into backup folder"
-msgstr ""
+msgstr "Es kann nicht in den Backupordner gewechselt werden"
 
 #: ../../lib/datamodel/library.cpp:630
 msgctxt "Library|"
 msgid "Failed to open file for writing: %1"
-msgstr ""
+msgstr "Die Datei kann nicht zum Schreiben geöffnet werden: %1"
 
 #: ../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml:13
 msgctxt "MarkFutureInstanceAsDone|"
 msgid "%1 is scheduled for the future - do you want to mark that future instance as done?"
-msgstr ""
+msgstr "%1 ist in der Zukunft geplant - möchten Sie diese zukünftige Instanz als erledigt markieren?"
 
 #: ../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml:20
 msgctxt "MarkFutureInstanceAsDone|"
 msgid "Mark as Done"
-msgstr ""
+msgstr "Als erledigt markieren"
 
 #: ../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml:29
 msgctxt "MarkFutureInstanceAsDone|"
 msgid "Keep Open"
-msgstr ""
+msgstr "Geöffnet halten"
 
 #: ../qml/Windows/StackViewWindow.qml:21
 msgctxt "StackViewWindow|"
 msgid "OpenTodoList"
-msgstr ""
+msgstr "OpenTodoList"
 
 #: ../qml/Utils/ItemUtils.qml:205
 msgctxt "ItemUtils|"
 msgid "Move Task Into..."
-msgstr ""
+msgstr "Aufgabe verschieben nach …"
 
 #: ../qml/Actions/MoveTask.qml:12
 msgctxt "MoveTask|"
 msgid "Move"
-msgstr ""
+msgstr "Verschieben"
 
 #: ../qml/Windows/SelectTodoDialog.qml:22
 msgctxt "SelectTodoDialog|"
 msgid "Select Todo"
-msgstr ""
+msgstr "Aufgabe auswählen"
 
 #: ../qml/Windows/SelectTodoDialog.qml:42
 msgctxt "SelectTodoDialog|"
 msgid "Todo List:"
-msgstr ""
+msgstr "Aufgabenliste:"
 
 #: ../qml/Windows/SelectTodoDialog.qml:64
 msgctxt "SelectTodoDialog|"
 msgid "Todo:"
-msgstr ""
+msgstr "Aufgabe:"
 
 #: ../qml/Pages/SettingsPage.qml:143
 msgctxt "SettingsPage|"
 msgid "Custom Primary Color:"
-msgstr ""
+msgstr "Eigene Primärfarbe:"
 
-#: ../qml/Pages/SettingsPage.qml:151 ../qml/Pages/SettingsPage.qml:166
+#: ../qml/Pages/SettingsPage.qml:151 ../qml/Pages/SettingsPage.qml:171
 msgctxt "SettingsPage|"
 msgid "Select"
-msgstr ""
+msgstr "Auswählen"
 
-#: ../qml/Pages/SettingsPage.qml:160
+#: ../qml/Pages/SettingsPage.qml:165
 msgctxt "SettingsPage|"
 msgid "Custom Secondary Color:"
-msgstr ""
+msgstr "Eigene Sekundärfarbe:"
 
