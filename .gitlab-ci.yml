@@ -1,10 +1,10 @@
 # yaml-language-server: $schema=https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json
 
 variables:
-  QT_VERSION: "6.7.2"
+  QT_VERSION: "6.8.1"
   UBUNTU_IMAGE: registry.gitlab.com/rpdev/docker/qt6-ubuntu:$QT_VERSION
   ANDROID_IMAGE: registry.gitlab.com/rpdev/docker/qt6-android:$QT_VERSION
-  FLATPAK_IMAGE: registry.gitlab.com/rpdev/docker/flatpak-builder-kde-qt6:6.7
+  FLATPAK_IMAGE: registry.gitlab.com/rpdev/docker/flatpak-builder-kde-qt6:6.8
   DOCKER_IMAGE: docker
   DOCKER_DIND_IMAGE: docker:dind
   SNAPCRAFT_IMAGE: ghcr.io/canonical/snapcraft:7_core22

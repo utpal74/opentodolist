@@ -1,0 +1,13 @@
+diff --git a/data/CMakeLists.txt b/data/CMakeLists.txt
+index 26a110d3..00f3a11f 100644
+--- a/data/CMakeLists.txt
++++ b/data/CMakeLists.txt
+@@ -65,7 +65,7 @@ add_custom_command(OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/index.katesyntax"
+ if (QRC_SYNTAX)
+     # generate the qrc file manually, to make dependencies on generated files work...
+     add_custom_command(OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/qrc_syntax-data.cpp"
+-        COMMAND Qt${QT_MAJOR_VERSION}::rcc --name syntax_data -o "${CMAKE_CURRENT_BINARY_DIR}/qrc_syntax-data.cpp" "${CMAKE_CURRENT_BINARY_DIR}/syntax-data.qrc"
++        COMMAND Qt${QT_MAJOR_VERSION}::rcc --name syntax_data -o "${CMAKE_CURRENT_BINARY_DIR}/qrc_syntax-data.cpp" "${CMAKE_CURRENT_BINARY_DIR}/syntax-data.qrc" --no-zstd
+         DEPENDS ${defs} ${CMAKE_CURRENT_BINARY_DIR}/index.katesyntax
+     )
+     set_source_files_properties("${CMAKE_CURRENT_BINARY_DIR}/qrc_syntax-data.cpp" PROPERTIES SKIP_AUTOMOC ON)
