@@ -51,7 +51,7 @@ fi
 echo "Using Qt installation in $QT_INSTALL_ROOT"
 
 if [ -z "$QT_VERSION" ]; then
-    QT_VERSION=$(ls "$QT_INSTALL_ROOT" | grep -E '\d+\.\d+\.\d+' | sort -V | tail -n1)
+    QT_VERSION=$(ls "$QT_INSTALL_ROOT" | grep -E '[0-9]+\.[0-9]+\.[0-9]+' | sort -V | tail -n1)
 fi
 echo "Using Qt $QT_VERSION"
 
