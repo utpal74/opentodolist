@@ -116,17 +116,17 @@
     <message>
         <location filename="../qml/Components/Tooltips/AllSubtasksDone.qml" line="13"/>
         <source>Everything in %1 done! Do you want to mark it as well as done?</source>
-        <translation type="unfinished"></translation>
+        <translation>Toutes les tâches dans %1 sont terminées ! Voulez-vous le marquer comme terminé ?</translation>
     </message>
     <message>
         <location filename="../qml/Components/Tooltips/AllSubtasksDone.qml" line="20"/>
         <source>Mark as Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Marquer comme terminer ?</translation>
     </message>
     <message>
         <location filename="../qml/Components/Tooltips/AllSubtasksDone.qml" line="30"/>
         <source>Keep Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Laisser ouvert</translation>
     </message>
 </context>
 <context>
@@ -195,22 +195,22 @@
     <message>
         <location filename="../qml/Widgets/ApplicationMenu.qml" line="36"/>
         <source>File</source>
-        <translation type="unfinished"></translation>
+        <translation>Fichier</translation>
     </message>
     <message>
         <location filename="../qml/Widgets/ApplicationMenu.qml" line="87"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Modifier</translation>
     </message>
     <message>
         <location filename="../qml/Widgets/ApplicationMenu.qml" line="158"/>
         <source>Navigate</source>
-        <translation type="unfinished"></translation>
+        <translation>Naviguer</translation>
     </message>
     <message>
         <location filename="../qml/Widgets/ApplicationMenu.qml" line="197"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Aide</translation>
     </message>
 </context>
 <context>
@@ -218,172 +218,172 @@
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="18"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>À propos</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="27"/>
         <source>About Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>A propos de Qt</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="35"/>
         <source>Accounts</source>
-        <translation type="unfinished">Comptes</translation>
+        <translation>Comptes</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="43"/>
         <source>Add Tag</source>
-        <translation type="unfinished">Ajouter un tag</translation>
+        <translation>Ajouter un tag</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="51"/>
         <source>Attach File</source>
-        <translation type="unfinished"></translation>
+        <translation>Attacher un fichier</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="59"/>
         <source>Backup</source>
-        <translation type="unfinished"></translation>
+        <translation>Sauvegarde</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="66"/>
         <source>Close</source>
-        <translation type="unfinished">Fermer</translation>
+        <translation>Fermer</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="73"/>
         <source>Copy</source>
-        <translation type="unfinished">Copier</translation>
+        <translation>Copier</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="81"/>
         <source>Copy Link To Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Copier le lien vers la page</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="89"/>
         <source>Create Sample Library</source>
-        <translation type="unfinished"></translation>
+        <translation>Créer un librairie d&apos;exemple</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="159"/>
         <source>Delete</source>
-        <translation type="unfinished">Supprimer</translation>
+        <translation>Supprimer</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="167"/>
         <source>Delete Completed Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer les points complétés</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="175"/>
         <source>Due Date</source>
-        <translation type="unfinished">Date d&apos;échéance</translation>
+        <translation>Échéance</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="183"/>
         <source>Find</source>
-        <translation type="unfinished"></translation>
+        <translation>Trouver</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="190"/>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Retour</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="207"/>
         <source>Left Sidebar</source>
-        <translation type="unfinished"></translation>
+        <translation>Barre latérale gauche</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="213"/>
         <source>Mark all items as done</source>
-        <translation type="unfinished"></translation>
+        <translation>Marquer tout comme complété</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="225"/>
         <source>Mark all items as undone</source>
-        <translation type="unfinished"></translation>
+        <translation>Marquer tout comme non fait</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="237"/>
         <source>Move</source>
-        <translation type="unfinished">Déplacer</translation>
+        <translation>Déplacer</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="245"/>
         <source>New Library</source>
-        <translation type="unfinished">Nouvelle bibliothèque</translation>
+        <translation>Nouvelle librairie</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="253"/>
         <source>Open Created Item</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir l&apos;objet créé </translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="260"/>
         <source>Open In New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir dans une nouvelle fenêtre</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="268"/>
         <source>Open Library Folder</source>
-        <translation type="unfinished">Ouvrir le dossier</translation>
+        <translation>Ouvrir le dossier de la libraire</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="274"/>
         <source>Quit</source>
-        <translation type="unfinished">Quitter</translation>
+        <translation>Quitter</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="280"/>
         <source>Rename</source>
-        <translation type="unfinished">Renommer</translation>
+        <translation>Renommer</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="288"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Préférences</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="309"/>
         <source>Scroll to Top</source>
-        <translation type="unfinished">Défiler vers le haut</translation>
+        <translation>Aller au sommet</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="316"/>
         <source>Scroll to Bottom</source>
-        <translation type="unfinished">Défiler vers le bas</translation>
+        <translation>Aller en bas</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="323"/>
         <source>Set Color</source>
-        <translation type="unfinished"></translation>
+        <translation>Définir la couleur</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="330"/>
         <source>Set Progress</source>
-        <translation type="unfinished"></translation>
+        <translation>Définir le progrès</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="337"/>
         <source>Sort</source>
-        <translation type="unfinished">Trier</translation>
+        <translation>Trier</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="345"/>
         <source>Sync Now</source>
-        <translation type="unfinished">Synchroniser maintenant</translation>
+        <translation>Synchroniser maintenant</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="358"/>
         <source>Sync Log</source>
-        <translation type="unfinished"></translation>
+        <translation>Synchroniser le journal</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="369"/>
         <source>Translate The App...</source>
-        <translation type="unfinished">Traduire l&apos;appli...</translation>
+        <translation>Traduire l&apos;application...</translation>
     </message>
 </context>
 <context>
@@ -391,7 +391,7 @@
     <message>
         <location filename="../qml/Components/ApplicationToolBar.qml" line="86"/>
         <source>Problems</source>
-        <translation type="unfinished"></translation>
+        <translation>Problèmes</translation>
     </message>
 </context>
 <context>
@@ -896,17 +896,17 @@
     <message>
         <location filename="../qml/Widgets/ItemNotesEditor.qml" line="106"/>
         <source>Copy</source>
-        <translation type="unfinished">Copier</translation>
+        <translation>Copier</translation>
     </message>
     <message>
         <location filename="../qml/Widgets/ItemNotesEditor.qml" line="113"/>
         <source>Copy Formatted Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Copier le texte formatté</translation>
     </message>
     <message>
         <location filename="../qml/Widgets/ItemNotesEditor.qml" line="129"/>
         <source>Copy Plain Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Copier le texte brut</translation>
     </message>
 </context>
 <context>
@@ -934,7 +934,7 @@
     <message>
         <location filename="../qml/Utils/ItemUtils.qml" line="205"/>
         <source>Move Task Into...</source>
-        <translation type="unfinished"></translation>
+        <translation>Déplacer la tâche vers...</translation>
     </message>
 </context>
 <context>
@@ -983,7 +983,7 @@
     <message>
         <location filename="../qml/Widgets/LibrariesSideBar.qml" line="293"/>
         <source>Untagged</source>
-        <translation type="unfinished"></translation>
+        <translation>Non taggué</translation>
     </message>
 </context>
 <context>
@@ -991,17 +991,17 @@
     <message>
         <location filename="../../lib/datamodel/library.cpp" line="615"/>
         <source>Unable to create backup folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible de créer un dossier de sauvegarde</translation>
     </message>
     <message>
         <location filename="../../lib/datamodel/library.cpp" line="619"/>
         <source>Failed to change into backup folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Échec de conversion vers un dossier de sauvegarde</translation>
     </message>
     <message>
         <location filename="../../lib/datamodel/library.cpp" line="630"/>
         <source>Failed to open file for writing: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible d&apos;ouvrir le fichier en écriture: %1</translation>
     </message>
 </context>
 <context>
@@ -1188,17 +1188,17 @@
     <message>
         <location filename="../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml" line="13"/>
         <source>%1 is scheduled for the future - do you want to mark that future instance as done?</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 est marqué pour l&apos;avenir. Voulez-vous marquer les instances futures comme terminées ?</translation>
     </message>
     <message>
         <location filename="../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml" line="20"/>
         <source>Mark as Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Marquer comme complété</translation>
     </message>
     <message>
         <location filename="../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml" line="29"/>
         <source>Keep Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Laisser ouvert</translation>
     </message>
 </context>
 <context>
@@ -1206,7 +1206,7 @@
     <message>
         <location filename="../qml/Actions/MoveTask.qml" line="12"/>
         <source>Move</source>
-        <translation type="unfinished">Déplacer</translation>
+        <translation>Déplacer</translation>
     </message>
 </context>
 <context>
@@ -1948,17 +1948,17 @@
     <message>
         <location filename="../qml/Windows/SelectTodoDialog.qml" line="22"/>
         <source>Select Todo</source>
-        <translation type="unfinished"></translation>
+        <translation>Sélectionner le Todo</translation>
     </message>
     <message>
         <location filename="../qml/Windows/SelectTodoDialog.qml" line="42"/>
         <source>Todo List:</source>
-        <translation type="unfinished"></translation>
+        <translation>Liste des tâches:</translation>
     </message>
     <message>
         <location filename="../qml/Windows/SelectTodoDialog.qml" line="64"/>
         <source>Todo:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tâches:</translation>
     </message>
 </context>
 <context>
@@ -2133,18 +2133,18 @@ Cela nécessite un redémarrage de l&apos;application.</translation>
     <message>
         <location filename="../qml/Pages/SettingsPage.qml" line="143"/>
         <source>Custom Primary Color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Couleur primaire personnalisée:</translation>
     </message>
     <message>
         <location filename="../qml/Pages/SettingsPage.qml" line="151"/>
         <location filename="../qml/Pages/SettingsPage.qml" line="171"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Sélectionner</translation>
     </message>
     <message>
         <location filename="../qml/Pages/SettingsPage.qml" line="165"/>
         <source>Custom Secondary Color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Couleur personnalisée secondaire:</translation>
     </message>
 </context>
 <context>
@@ -2152,7 +2152,7 @@ Cela nécessite un redémarrage de l&apos;application.</translation>
     <message>
         <location filename="../qml/Windows/StackViewWindow.qml" line="21"/>
         <source>OpenTodoList</source>
-        <translation type="unfinished">OpenTodoList</translation>
+        <translation>OpenTodoList</translation>
     </message>
 </context>
 <context>
