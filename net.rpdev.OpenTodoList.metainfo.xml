@@ -48,6 +48,20 @@
 
   <releases>
     <!-- Format releases according to this: https://www.freedesktop.org/software/appstream/docs/sect-Metadata-Releases.html#spec-releases-example -->
+    <release version="3.49.0" date="2025-01-09">
+        <description>
+            <p>This release of the app contains the following changes:</p>
+        </description>
+        <issues>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/674">#674: Update to Qt 6.8.</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/611">#611: Make the primary and secondary colors configurable.</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/650">#650: Finally fix the translations everywhere in the UI.</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/606">#606: Allow moving tasks.</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/669">#669: Fix the user documentation build.</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/668">#668: Use upstream image for snapcraft build.</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/663">#663: Add a simple backup solution.</issue>
+        </issues>
+    </release>
     <release version="3.48.0" date="2024-10-02">
         <description>
             <p>This release of the app brings some exciting UI changes plus a bunch of fixes:</p>
