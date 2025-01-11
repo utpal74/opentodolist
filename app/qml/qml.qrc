@@ -157,5 +157,7 @@
         <file>OpenTodoList/Style/ToolBar.qml</file>
         <file>OpenTodoList/qmldir</file>
         <file>OpenTodoList/Style/Symbol.qml</file>
+        <file>Actions/MoveTask.qml</file>
+        <file>Windows/SelectTodoDialog.qml</file>
     </qresource>
 </RCC>

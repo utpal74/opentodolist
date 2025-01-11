@@ -41,12 +41,12 @@ C.Page {
 
         property color accentColor: page.topLevelItem && page.topLevelItem.color
                                     !== OTL.TopLevelItem.White ? Utils.Colors.itemColor(
-                                                                     page.topLevelItem) : C.ColorTheme.palette.button
+                                                                     page.topLevelItem) : C.ColorTheme.selectedPalette.button
 
         function createPageSpecificColorPalette(basePalette, item, itemColor) {
             accentedPalette.basePalette = basePalette
             if (itemColor === OTL.TopLevelItem.White) {
-                accentedPalette.accentColor = C.ColorTheme.palette.button
+                accentedPalette.accentColor = C.ColorTheme.selectedPalette.button
             } else {
                 accentedPalette.accentColor = Utils.Colors.itemColor(item)
             }
@@ -54,7 +54,7 @@ C.Page {
         }
 
         function updateColorPalette() {
-            page.palette = C.ColorTheme.palette
+            page.palette = C.ColorTheme.selectedPalette
 
             if (!page.topLevelItem) {
                 return
@@ -64,7 +64,7 @@ C.Page {
                 return
             }
 
-            accentedPalette.basePalette = C.ColorTheme.palette
+            accentedPalette.basePalette = C.ColorTheme.selectedPalette
             accentedPalette.accentColor = Utils.Colors.itemColor(
                         page.topLevelItem, C.ColorTheme.isDarkColorScheme)
 

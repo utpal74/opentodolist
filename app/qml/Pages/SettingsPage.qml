@@ -4,6 +4,7 @@ import QtQuick.Layouts 1.3
 import "../Components"
 import OpenTodoList.Style as C
 import "../Utils" as Utils
+import "../Windows" as Windows
 
 import OpenTodoList 1.0 as OTL
 
@@ -135,6 +136,52 @@ C.Page {
                         }
                     }
                     return 0
+                }
+            }
+
+            C.Label {
+                text: qsTr("Custom Primary Color:")
+            }
+
+            Row {
+
+                C.Button {
+                    id: selectPrimaryColorButton
+
+                    text: qsTr("Select")
+                    onClicked: {
+                        colorSelectionDialog.what = colorSelectionDialog.selectPrimary
+                        if (C.ColorTheme.customPrimaryColor.a > 0) {
+                            colorSelectionDialog.selectedColor = C.ColorTheme.customPrimaryColor
+                        } else {
+                            colorSelectionDialog.selectedColor = null
+                        }
+                        colorSelectionDialog.visible = true
+                    }
+                }
+            }
+
+            C.Label {
+                text: qsTr("Custom Secondary Color:")
+            }
+
+            C.Button {
+                id: selectSecondaryColorButton
+
+                text: qsTr("Select")
+                palette.button: C.ColorTheme.customSecondaryColor.a
+                                === 0 ? C.ColorTheme.selectedPalette.button : C.ColorTheme.customSecondaryColor
+                palette.buttonText: C.ColorTheme.customSecondaryColor.a
+                                    === 0 ? C.ColorTheme.selectedPalette.buttonText : C.ColorTheme.textColorForBackgroundColor(
+                                                C.ColorTheme.customSecondaryColor)
+                onClicked: {
+                    colorSelectionDialog.what = colorSelectionDialog.selectSecondary
+                    if (C.ColorTheme.customSecondaryColor.a > 0) {
+                        colorSelectionDialog.selectedColor = C.ColorTheme.customSecondaryColor
+                    } else {
+                        colorSelectionDialog.selectedColor = null
+                    }
+                    colorSelectionDialog.visible = true
                 }
             }
 
@@ -282,6 +329,26 @@ C.Page {
                 text: qsTr("Show notes excerpt in listings")
                 checked: Utils.AppSettings.showNotesExcepts
                 onCheckedChanged: Utils.AppSettings.showNotesExcepts = checked
+            }
+        }
+    }
+
+    Windows.ColorSelectionDialog {
+        id: colorSelectionDialog
+
+        readonly property string selectPrimary: "primary"
+        readonly property string selectSecondary: "secondary"
+
+        property string what: ""
+
+        onAccepted: {
+            switch (what) {
+            case selectPrimary:
+                C.ColorTheme.customPrimaryColor = selectedColor ? selectedColor : "transparent"
+                break
+            case selectSecondary:
+                C.ColorTheme.customSecondaryColor = selectedColor ? selectedColor : "transparent"
+                break
             }
         }
     }

@@ -28,16 +28,6 @@ build:
       # Make local files to have the real content on them
       - ./git-lfs checkout
 
-    pre_create_environment:
-      # Install PDM
-      - python -m venv /tmp/pdm
-      - /tmp/pdm/bin/pip install --upgrade pip
-      - /tmp/pdm/bin/pip install pdm
-
-    post_create_environment:
-      # Install development dependencies, including for doc build:
-      - /tmp/pdm/bin/pdm install
-
 mkdocs:
   configuration: doc/user-manual/mkdocs.yml
 

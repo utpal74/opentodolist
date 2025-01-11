@@ -70,6 +70,7 @@
 #include "datastorage/copyitemquery.h"
 #include "datastorage/insertorupdateitemsquery.h"
 #include "datastorage/movetodoquery.h"
+#include "datastorage/movetaskquery.h"
 #include "datastorage/promotetaskquery.h"
 #include "datastorage/updateitemquery.h"
 #include "rep_backgroundservice_replica.h"
@@ -749,6 +750,20 @@ void Application::moveTodo(Todo* todo, TodoList* todoList)
     if (todo && todoList) {
         auto q = new MoveTodoQuery();
         q->moveTodo(todo, todoList);
+        m_cache->run(q);
+    }
+}
+
+/**
+ * @brief Move a @p task into another @p todo.
+ *
+ * @warning The todo mist be in the same library as the current parent todo of the task.
+ */
+void Application::moveTask(Task* task, Todo* todo)
+{
+    if (task != nullptr && todo != nullptr) {
+        auto q = new MoveTaskQuery();
+        q->moveTask(task, todo);
         m_cache->run(q);
     }
 }

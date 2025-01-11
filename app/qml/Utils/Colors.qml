@@ -30,8 +30,8 @@ Item {
     property string theme: systemTheme
 
     // Pre-defined colors for specific "roles":
-    readonly property color negativeColor: C.ColorTheme.palette.accent
-    readonly property color linkColor: C.ColorTheme.palette.button
+    readonly property color negativeColor: C.ColorTheme.selectedPalette.accent
+    readonly property color linkColor: C.ColorTheme.selectedPalette.button
 
     function itemColor(item, darkColorScheme) {
         if (!item || item.color === undefined) {

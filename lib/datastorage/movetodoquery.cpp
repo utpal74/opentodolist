@@ -40,29 +40,25 @@ void MoveTodoQuery::run()
 {
     QLMDB::Transaction t(*context());
 
-    if (m_entry.valid) {
-        QSharedPointer<Item> item(Item::decache(m_entry));
-        if (item) {
-            auto todo = qSharedPointerCast<Todo>(item);
-            if (todo) {
-                // "Unlink" from previous parent:
-                QLMDB::Cursor childrenCursor(t, *children());
-                auto result = childrenCursor.find(todo->todoListUid().toByteArray(),
-                                                  todo->uid().toByteArray());
-                if (result.isValid()) {
-                    childrenCursor.remove();
-                }
+    auto todo = Item::decache<Todo>(m_entry);
 
-                // Set new parent:
-                todo->setTodoListUid(m_targetUid);
-                // Save to DB:
-                items()->put(t, todo->uid().toByteArray(), todo->encache().toByteArray());
-                children()->put(t, m_targetUid.toByteArray(), todo->uid().toByteArray());
-                // Save to disk:
-                todo->save();
-                // Mark todo as changed:
-                markAsChanged(&t, todo->uid().toByteArray());
-            }
+    if (todo) {
+        // "Unlink" from previous parent:
+        QLMDB::Cursor childrenCursor(t, *children());
+        auto result =
+                childrenCursor.find(todo->todoListUid().toByteArray(), todo->uid().toByteArray());
+        if (result.isValid()) {
+            childrenCursor.remove();
         }
+
+        // Set new parent:
+        todo->setTodoListUid(m_targetUid);
+        // Save to DB:
+        items()->put(t, todo->uid().toByteArray(), todo->encache().toByteArray());
+        children()->put(t, m_targetUid.toByteArray(), todo->uid().toByteArray());
+        // Save to disk:
+        todo->save();
+        // Mark todo as changed:
+        markAsChanged(&t, todo->uid().toByteArray());
     }
 }

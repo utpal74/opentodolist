@@ -90,6 +90,10 @@ C.Page {
         sortByMenu.popup()
     }
 
+    function backup() {
+        library.backup()
+    }
+
     property bool syncRunning: {
         return library && OTL.Application.directoriesWithRunningSync.indexOf(
                     library.directory) >= 0
@@ -554,6 +558,14 @@ C.Page {
                     && transactionId === d.loadLibraryTransactionId) {
                 page.library = OTL.Application.libraryFromData(data)
             }
+        }
+    }
+
+    Connections {
+        target: page.library
+
+        function onBackupAvailable(backupFile) {
+            shareUtils.showFileInFolder(backupFile)
         }
     }
 }

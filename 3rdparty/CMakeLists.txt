@@ -81,6 +81,7 @@ if(NOT OPENTODOLIST_USE_SYSTEM_KF_SYNTAX_HIGHLIGHTING)
     else()
         set(KDE_SH_GENERATOR ${CMAKE_GENERATOR})
     endif()
+
     if(IOS)
         # On iOS, KDE Syntax Highlighting does not build out of the box. This is because the
         # build does not properly detect that we are cross-compiling. For this reason,
@@ -138,9 +139,35 @@ if(NOT OPENTODOLIST_USE_SYSTEM_KF_SYNTAX_HIGHLIGHTING)
             PATCH_COMMAND
                 ${CMAKE_COMMAND} -E copy_if_different ${CMAKE_CURRENT_SOURCE_DIR}/KDE/syntax-highlighting-ios.patch <SOURCE_DIR> && git checkout <SOURCE_DIR> && git apply <SOURCE_DIR>/syntax-highlighting-ios.patch
         )
-    unset(KF_SYNTAX_HIGHLIGHTING_SOURCE_ARGS)
-
+        unset(KF_SYNTAX_HIGHLIGHTING_SOURCE_ARGS)
     endif()
+
+    if(ANDROID)
+        # On Android, we also need to tweak the build and apply a patch. Starting with Qt 6.8.1,
+        # zstd support is not part of the pre-built Qt binaries anymore. However, rcc for Android
+        # (at least on Linux hosts) still generates code assuming its presence! Hence, we
+        # need to tweak the syntax-highlighting build to explicitly turn zstd use off when
+        # building for Android.
+        execute_process(
+            COMMAND
+                git describe --tags
+            WORKING_DIRECTORY
+                ${CMAKE_CURRENT_SOURCE_DIR}/KDE/syntax-highlighting
+            OUTPUT_VARIABLE
+                KF5_SYNTAX_HIGHLIGHTING_VERSION
+            OUTPUT_STRIP_TRAILING_WHITESPACE
+        )
+        set(KDE_SH_CROSSCOMPILING_ANDROID_EXTRA_PARAMS
+            GIT_REPOSITORY
+                ${CMAKE_CURRENT_SOURCE_DIR}/KDE/syntax-highlighting
+            GIT_TAG
+                ${KF5_SYNTAX_HIGHLIGHTING_VERSION}
+            PATCH_COMMAND
+                ${CMAKE_COMMAND} -E copy_if_different ${CMAKE_CURRENT_SOURCE_DIR}/KDE/syntax-highlighting-android.patch <SOURCE_DIR> && git checkout <SOURCE_DIR> && git apply <SOURCE_DIR>/syntax-highlighting-android.patch
+        )
+        unset(KF_SYNTAX_HIGHLIGHTING_SOURCE_ARGS)
+    endif()
+
     set(
         KF5_PREFIX_PATHS
         ${OPENTODOLIST_MODULES_INSTALL_DIR}
@@ -166,6 +193,7 @@ if(NOT OPENTODOLIST_USE_SYSTEM_KF_SYNTAX_HIGHLIGHTING)
             -DECM_DIR:STRING=${OPENTODOLIST_MODULES_INSTALL_DIR}/share/ECM/cmake
             ${KDE_SH_CROSSCOMPILING_EXTRA_ARGS}
         ${KDE_SH_CROSSCOMPILING_IOS_EXTRA_PARAMS}
+        ${KDE_SH_CROSSCOMPILING_ANDROID_EXTRA_PARAMS}
     )
     ExternalProject_Add_StepDependencies(build_kf_syntax_highlighting configure build_ecm ${KDE_SH_CROSSCOMPILING_EXTRA_TARGETS})
 

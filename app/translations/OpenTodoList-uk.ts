@@ -132,42 +132,42 @@
 <context>
     <name>AppStartup</name>
     <message>
-        <location filename="../appstartup.cpp" line="198"/>
+        <location filename="../appstartup.cpp" line="200"/>
         <source>Manage your personal data.</source>
         <translation>Керуйте своїми особистими даними.</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="204"/>
+        <location filename="../appstartup.cpp" line="206"/>
         <source>Switch on some optimizations for touchscreens.</source>
         <translation>Увімкніть деякі оптимізації для сенсорних екранів.</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="207"/>
+        <location filename="../appstartup.cpp" line="209"/>
         <source>Only run the app background service</source>
         <translation>Запустіть лише фонову службу програми</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="209"/>
+        <location filename="../appstartup.cpp" line="211"/>
         <source>Only run the app GUI and connect to an existing app background service</source>
         <translation>Запустіть лише графічний інтерфейс програми та підключіться до існуючої фонової служби програми</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="214"/>
+        <location filename="../appstartup.cpp" line="216"/>
         <source>Enable a console on Windows to gather debug output</source>
         <translation>Увімкніть консоль у Windows, щоб отримати вихідні дані налагодження</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="365"/>
+        <location filename="../appstartup.cpp" line="367"/>
         <source>Open</source>
         <translation>Відкрити</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="431"/>
+        <location filename="../appstartup.cpp" line="433"/>
         <source>Quit</source>
         <translation>Вийти</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="373"/>
+        <location filename="../appstartup.cpp" line="375"/>
         <source>Quick Note</source>
         <translation>Швидка Нотатка</translation>
     </message>
@@ -175,17 +175,17 @@
 <context>
     <name>Application</name>
     <message>
-        <location filename="../../lib/application.cpp" line="218"/>
+        <location filename="../../lib/application.cpp" line="219"/>
         <source>Background Sync</source>
         <translation>Фонова Синхронізація</translation>
     </message>
     <message>
-        <location filename="../../lib/application.cpp" line="222"/>
+        <location filename="../../lib/application.cpp" line="223"/>
         <source>App continues to sync your data in the background</source>
         <translation>Додаток продовжує синхронізувати ваші дані у фоновому режимі</translation>
     </message>
     <message>
-        <location filename="../../lib/application.cpp" line="226"/>
+        <location filename="../../lib/application.cpp" line="227"/>
         <source>Quit</source>
         <translation>Вийти</translation>
     </message>
@@ -198,17 +198,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/ApplicationMenu.qml" line="83"/>
+        <location filename="../qml/Widgets/ApplicationMenu.qml" line="87"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/ApplicationMenu.qml" line="154"/>
+        <location filename="../qml/Widgets/ApplicationMenu.qml" line="158"/>
         <source>Navigate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/ApplicationMenu.qml" line="193"/>
+        <location filename="../qml/Widgets/ApplicationMenu.qml" line="197"/>
         <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
@@ -242,141 +242,146 @@
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="59"/>
+        <source>Backup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="66"/>
         <source>Close</source>
         <translation type="unfinished">Закрити</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="66"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="73"/>
         <source>Copy</source>
         <translation type="unfinished">Копіювати</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="74"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="81"/>
         <source>Copy Link To Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="82"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="89"/>
         <source>Create Sample Library</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="131"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="159"/>
         <source>Delete</source>
         <translation type="unfinished">Видалити</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="139"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="167"/>
         <source>Delete Completed Items</source>
         <translation type="unfinished">Видалити завершені елементи</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="147"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="175"/>
         <source>Due Date</source>
         <translation type="unfinished">Термін виконання</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="155"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="183"/>
         <source>Find</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="162"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="190"/>
         <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="179"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="207"/>
         <source>Left Sidebar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="185"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="213"/>
         <source>Mark all items as done</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="197"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="225"/>
         <source>Mark all items as undone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="209"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="237"/>
         <source>Move</source>
         <translation type="unfinished">Рухатися</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="217"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="245"/>
         <source>New Library</source>
         <translation type="unfinished">Нова бібліотека</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="225"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="253"/>
         <source>Open Created Item</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="232"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="260"/>
         <source>Open In New Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="240"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="268"/>
         <source>Open Library Folder</source>
         <translation type="unfinished">Відкрити Папку Бібліотеки</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="246"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="274"/>
         <source>Quit</source>
         <translation type="unfinished">Вийти</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="252"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="280"/>
         <source>Rename</source>
         <translation type="unfinished">Перейменувати</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="260"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="288"/>
         <source>Preferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="281"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="309"/>
         <source>Scroll to Top</source>
         <translation type="unfinished">Перегорнути Нагору</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="288"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="316"/>
         <source>Scroll to Bottom</source>
         <translation type="unfinished">Перегорнути Вниз</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="295"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="323"/>
         <source>Set Color</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="302"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="330"/>
         <source>Set Progress</source>
         <translation type="unfinished">Встановити прогрес</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="309"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="337"/>
         <source>Sort</source>
         <translation type="unfinished">Сортувати</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="317"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="345"/>
         <source>Sync Now</source>
         <translation type="unfinished">Синхронізувати зараз</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="330"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="358"/>
         <source>Sync Log</source>
         <translation type="unfinished">Журнал синхронізації</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="341"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="369"/>
         <source>Translate The App...</source>
         <translation type="unfinished">Перекласти додаток...</translation>
     </message>
@@ -505,7 +510,7 @@
         <translation>Упс... здається, це глухий кут...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/DeepLinkHandler.qml" line="62"/>
+        <location filename="../qml/Utils/DeepLinkHandler.qml" line="65"/>
         <source>Sorry, that link does not lead to any page or item that is present on this device. Check if the library or item to which the link points is synchronized on this device and try again.</source>
         <translation>Вибачте, це посилання не веде на жодну сторінку або елемент, які є на цьому пристрої. Перевірте, чи бібліотеку або елемент, на який вказує посилання, синхронізовано на цьому пристрої, і повторіть спробу.</translation>
     </message>
@@ -874,21 +879,6 @@
         <translation>Нотаток ще не додано - натисніть тут, щоб додати.</translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="106"/>
-        <source>Copy</source>
-        <translation type="unfinished">Копіювати</translation>
-    </message>
-    <message>
-        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="113"/>
-        <source>Copy Formatted Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="129"/>
-        <source>Copy Plain Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../qml/Widgets/ItemNotesEditor.qml" line="160"/>
         <source>Export to File...</source>
         <translation>Експорт у файл...</translation>
@@ -903,28 +893,48 @@
         <source>All files</source>
         <translation>Всі файли</translation>
     </message>
+    <message>
+        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="106"/>
+        <source>Copy</source>
+        <translation type="unfinished">Копіювати</translation>
+    </message>
+    <message>
+        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="113"/>
+        <source>Copy Formatted Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="129"/>
+        <source>Copy Plain Text</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ItemUtils</name>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="173"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="190"/>
         <source>Move Todo Into...</source>
         <translation>Перемістити завдання в...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="188"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="220"/>
         <source>Convert Task to Todo and Move Into...</source>
         <translation>Перетворіть Завдання на Справу і перемістіть в...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="204"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="236"/>
         <source>Copy Item Into...</source>
         <translation>Скопіювати Елемент В...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="221"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="253"/>
         <source>Copy Todo Into...</source>
         <translation>Скопіювати Справо В...</translation>
+    </message>
+    <message>
+        <location filename="../qml/Utils/ItemUtils.qml" line="205"/>
+        <source>Move Task Into...</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -966,122 +976,140 @@
         <translation>Рухатися вниз</translation>
     </message>
     <message>
+        <location filename="../qml/Widgets/LibrariesSideBar.qml" line="93"/>
+        <source>Donate</source>
+        <translation>Пожертвування</translation>
+    </message>
+    <message>
         <location filename="../qml/Widgets/LibrariesSideBar.qml" line="293"/>
         <source>Untagged</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>Library</name>
     <message>
-        <location filename="../qml/Widgets/LibrariesSideBar.qml" line="93"/>
-        <source>Donate</source>
-        <translation>Пожертвування</translation>
+        <location filename="../../lib/datamodel/library.cpp" line="615"/>
+        <source>Unable to create backup folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../lib/datamodel/library.cpp" line="619"/>
+        <source>Failed to change into backup folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../lib/datamodel/library.cpp" line="630"/>
+        <source>Failed to open file for writing: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>LibraryPage</name>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="206"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="210"/>
         <source>Red</source>
         <translation>Червоний</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="213"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="217"/>
         <source>Green</source>
         <translation>Зелений
 </translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="220"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="224"/>
         <source>Blue</source>
         <translation>Блакитний
 </translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="227"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="231"/>
         <source>Yellow</source>
         <translation>Жовтий</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="234"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="238"/>
         <source>Orange</source>
         <translation>Помаранчевий</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="241"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="245"/>
         <source>Lilac</source>
         <translation>Бузковий</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="248"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="252"/>
         <source>White</source>
         <translation>Білий</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="258"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="262"/>
         <source>Rename</source>
         <translation>Перейменувати</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="269"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="273"/>
         <source>Delete</source>
         <translation>Видалити</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="351"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="355"/>
         <source>Note Title</source>
         <translation>Заголовок примітки </translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="364"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="368"/>
         <source>Todo List Title</source>
         <translation>Заголовок списку справ </translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="377"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="381"/>
         <source>Search term 1, search term 2, ...</source>
         <translation>Пошук терміну 1, пошук терміну 2, ...</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="454"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="458"/>
         <source>Nothing here yet! Start by adding a &lt;a href=&apos;#note&apos;&gt;note&lt;/a&gt;, &lt;a href=&apos;#todolist&apos;&gt;todo list&lt;/a&gt; or &lt;a href=&apos;#image&apos;&gt;image&lt;/a&gt;.</source>
         <translation>Тут нічого ще немає! Почніть з додавання &lt;a href=&apos;#note&apos;&gt;примітка &lt;/a&gt;, &lt;a href=&apos;#todolist&apos;&gt;список справ&lt;/a&gt; або &lt;a href=&apos;#image&apos;&gt;зображення&lt;/a&gt;.</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="510"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="514"/>
         <source>Sort By</source>
         <translation>Сортувати за</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="514"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="518"/>
         <source>Manually</source>
         <translation>Вручну</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="521"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="525"/>
         <source>Title</source>
         <translation>Назва</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="528"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="532"/>
         <source>Due To</source>
         <translation>Через</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="535"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="539"/>
         <source>Created At</source>
         <translation>Створено в</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="542"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="546"/>
         <source>Updated At</source>
         <translation>Оновлено в</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="263"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="267"/>
         <source>Copy</source>
         <translation>Копіювати</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="281"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="285"/>
         <source>Select Image</source>
         <translation>Виберіть Зображення</translation>
     </message>
@@ -1173,6 +1201,14 @@
         <location filename="../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml" line="29"/>
         <source>Keep Open</source>
         <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MoveTask</name>
+    <message>
+        <location filename="../qml/Actions/MoveTask.qml" line="12"/>
+        <source>Move</source>
+        <translation type="unfinished">Рухатися</translation>
     </message>
 </context>
 <context>
@@ -1678,8 +1714,8 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../appstartup.cpp" line="310"/>
-        <location filename="../appstartup.cpp" line="317"/>
+        <location filename="../appstartup.cpp" line="312"/>
+        <location filename="../appstartup.cpp" line="319"/>
         <source>unknown</source>
         <translation>невідомо</translation>
     </message>
@@ -1909,6 +1945,24 @@
     </message>
 </context>
 <context>
+    <name>SelectTodoDialog</name>
+    <message>
+        <location filename="../qml/Windows/SelectTodoDialog.qml" line="22"/>
+        <source>Select Todo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Windows/SelectTodoDialog.qml" line="42"/>
+        <source>Todo List:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Windows/SelectTodoDialog.qml" line="64"/>
+        <source>Todo:</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SelectTodoListDialog</name>
     <message>
         <location filename="../qml/Windows/SelectTodoListDialog.qml" line="24"/>
@@ -1975,42 +2029,42 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="39"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="40"/>
         <source>Settings</source>
         <translation>Налаштування</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="45"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="46"/>
         <source>User Interface</source>
         <translation>Інтерфейс користувача</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="53"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="54"/>
         <source>Language:</source>
         <translation>Мова:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="117"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="118"/>
         <source>Theme:</source>
         <translation>Тема:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="161"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="208"/>
         <source>Font Size:</source>
         <translation>Розмір шрифту:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="178"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="225"/>
         <source>Use custom font size</source>
         <translation>Використати нестандартний розмір шрифту</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="196"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="243"/>
         <source>Use Compact Style</source>
         <translation>Використати компактний стиль</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="205"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="252"/>
         <source>Reduce space between components and reduce the font size.
 
 &lt;em&gt;Requires a restart of the app.&lt;/em&gt;</source>
@@ -2019,27 +2073,27 @@
 &lt;em&gt;Потребує перезапуску додатка.&lt;/em&gt;</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="213"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="260"/>
         <source>Use compact todo lists</source>
         <translation>Компактний вид списка</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="223"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="270"/>
         <source>Reduce the padding in todo and task listings to fit more items on the screen.</source>
         <translation>Зменшіть відступи в списках справ і завдань, щоб вмістити більше елементів на екрані.</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="230"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="277"/>
         <source>Override Scaling Factor</source>
         <translation>Перевизначити Коефіцієнт Масштабування</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="237"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="284"/>
         <source>Scale Factor:</source>
         <translation>Масштаб:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="257"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="304"/>
         <source>Use this to manually scale the user interface. By default, the app should adapt automatically according to your device configuration. If this does not work properly, you can set a custom scaling factor here.
 
 This requires a restart of the app.</source>
@@ -2048,34 +2102,50 @@ This requires a restart of the app.</source>
 Потребує перезапуску програми.</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="266"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="313"/>
         <source>Library Item Size:</source>
         <translation>Розмір Елемента Бібліотеки</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="142"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="189"/>
         <source>System Tray:</source>
         <translation>Системний Лоток</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="155"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="202"/>
         <source>Open Quick Notes Editor on Click</source>
         <translation>Відкривати Редактор Швидких Нотаток за Кліком</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="187"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="234"/>
         <source>Desktop Mode</source>
         <translation>Режим Робочого Столу</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="282"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="329"/>
         <source>Show notes excerpt in listings</source>
         <translation>Показувати уривки нотаток у списках</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="147"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="194"/>
         <source>Monochrome Icon</source>
         <translation>Монохромна ікона</translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/SettingsPage.qml" line="143"/>
+        <source>Custom Primary Color:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/SettingsPage.qml" line="151"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="171"/>
+        <source>Select</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/SettingsPage.qml" line="165"/>
+        <source>Custom Secondary Color:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

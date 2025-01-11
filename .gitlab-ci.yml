@@ -1,11 +1,13 @@
 # yaml-language-server: $schema=https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json
 
 variables:
-  QT_VERSION: "6.7.2"
+  QT_VERSION: "6.8.1"
   UBUNTU_IMAGE: registry.gitlab.com/rpdev/docker/qt6-ubuntu:$QT_VERSION
   ANDROID_IMAGE: registry.gitlab.com/rpdev/docker/qt6-android:$QT_VERSION
-  FLATPAK_IMAGE: registry.gitlab.com/rpdev/docker/flatpak-builder-kde-qt6:6.7
-  SNAPCRAFT_IMAGE: registry.gitlab.com/rpdev/docker/snapcraft
+  FLATPAK_IMAGE: registry.gitlab.com/rpdev/docker/flatpak-builder-kde-qt6:6.8
+  DOCKER_IMAGE: docker
+  DOCKER_DIND_IMAGE: docker:dind
+  SNAPCRAFT_IMAGE: ghcr.io/canonical/snapcraft:7_core22
   NEXTCLOUD_IMAGE: nextcloud
   OWNCLOUD_IMAGE: owncloud
   CTEST_OUTPUT_ON_FAILURE: 1
@@ -44,6 +46,7 @@ workflow:
       when: always
     - if: $CI_MERGE_REQUEST_ID
       when: never
+    - when: always
 
 ################################################################################
 # Prepare Stage
@@ -51,7 +54,7 @@ workflow:
 
 download_translations:
   stage: prepare
-  image: fedora
+  image: $UBUNTU_IMAGE
   script:
     ./ci/download_translations.sh
   rules:
@@ -258,9 +261,12 @@ flatpak:
 # Build the app as Snap
 snap::build:
     stage: build
-    image: $SNAPCRAFT_IMAGE
+    image: $DOCKER_IMAGE
+    services:
+      - $DOCKER_DIND_IMAGE
     script:
-        - snapcraft snap
+        - docker pull $SNAPCRAFT_IMAGE
+        - docker run --rm -v $PWD:/project $SNAPCRAFT_IMAGE snap
     artifacts:
       paths:
         - opentodolist*.snap
@@ -365,7 +371,7 @@ playstore:
 
 upload_translations:
   stage: deploy
-  image: fedora
+  image: $UBUNTU_IMAGE
   script:
     ./ci/upload_translations.sh
   rules:
@@ -379,9 +385,12 @@ upload_translations:
 # Template to upload snaps:
 .snap::upload:
   stage: deploy
-  image: $SNAPCRAFT_IMAGE
+  image: $DOCKER_IMAGE
+  services:
+    - $DOCKER_DIND_IMAGE
   script:
-      - snapcraft upload opentodolist*.snap --release $SNAPCRAFT_CHANNEL
+      - docker pull $SNAPCRAFT_IMAGE
+      - docker run --rm -v $PWD:/project -e SNAPCRAFT_STORE_CREDENTIALS="$SNAPCRAFT_STORE_CREDENTIALS" $SNAPCRAFT_IMAGE upload opentodolist*.snap --release $SNAPCRAFT_CHANNEL
   needs:
     - snap::build
   allow_failure: true

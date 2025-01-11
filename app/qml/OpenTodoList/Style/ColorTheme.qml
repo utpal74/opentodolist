@@ -1,6 +1,7 @@
 pragma Singleton
 
 import QtQuick
+import QtCore
 
 import OpenTodoList as OTL
 
@@ -14,6 +15,18 @@ Item {
     }
 
     property int theme: ColorTheme.Theme.Light
+
+
+    /**
+     * @brief A custom primary color to be used by default.
+     */
+    property color customPrimaryColor: "transparent"
+
+
+    /**
+     * @brief A custom secondary color to be used by default.
+     */
+    property color customSecondaryColor: "transparent"
 
     readonly property bool isDarkColorScheme: {
         switch (theme) {
@@ -47,6 +60,34 @@ Item {
     readonly property color paynesGray: "#5A5E72"
     readonly property color charcoal: "#484B5B"
     readonly property color raisinBlack: "#272932"
+
+
+    /**
+     * @brief The primary color used by the light color scheme.
+     */
+    readonly property color lightThemePrimary: customPrimaryColor.a
+                                               === 0 ? asparagus : customPrimaryColor
+
+
+    /**
+     * @brief The secondary color used by the light color scheme.
+     */
+    readonly property color lightThemeSecondary: customSecondaryColor.a
+                                                 === 0 ? bittersweetShimmer : customSecondaryColor
+
+
+    /**
+     * @brief The primary color used by the dark color scheme.
+     */
+    readonly property color darkThemePrimary: customPrimaryColor.a
+                                              === 0 ? yellowGreen : customPrimaryColor
+
+
+    /**
+     * @brief The secondary color used by the dark color scheme.
+     */
+    readonly property color darkThemeSecondary: customSecondaryColor.a
+                                                === 0 ? bittersweetShimmer : customSecondaryColor
 
     // A light color palette, based on the theme colors:
     readonly property var lightColorPalete: Palette {
@@ -88,33 +129,34 @@ Item {
 
         // The general button background color. This background can be different from Window as
         // some styles require a different background color for buttons.
-        button: asparagus
+        button: lightThemePrimary
 
         // A foreground color used with the Button color.
-        buttonText: textColorForBackgroundColor(button)
+        buttonText: textColorForBackgroundColor(lightThemePrimary)
 
         // A text color that is very different from WindowText, and contrasts well with e.g. Dark.
         // Typically used for text that needs to be drawn where Text or WindowText would give poor
         // contrast, such as on pressed push buttons. Note that text colors can be used for things
         // other than just words; text colors are usually used for text, but it's quite common to
         // use the text color roles for lines, icons, etc.
-        brightText: textColorForBackgroundColor(dark)
+        brightText: textColorForBackgroundColor(getDarkColorFromButtonColor(
+                                                    lightThemePrimary, false))
 
         ////////////////////////////////////////////////////////////////////////////////////////////
         // Used for painting 3D bevels and shadow effects.
         ////////////////////////////////////////////////////////////////////////////////////////////
 
         // Lighter than Button color.
-        light: getLightColorFromButtonColor(button, false)
+        light: getLightColorFromButtonColor(lightThemePrimary, false)
 
         // Between Button and Light.
-        midlight: getMidColorFromButtonColor(button, false)
+        midlight: getMidColorFromButtonColor(lightThemePrimary, false)
 
         // Darker than Button.
-        dark: getDarkColorFromButtonColor(button, false)
+        dark: getDarkColorFromButtonColor(lightThemePrimary, false)
 
         // Between Button and Dark.
-        mid: getMidColorFromButtonColor(button, false)
+        mid: getMidColorFromButtonColor(lightThemePrimary, false)
 
         // A very dark color. By default, the shadow color is Qt::black.
         shadow: raisinBlack
@@ -125,30 +167,31 @@ Item {
 
         // A color to indicate a selected item or the current item. By default, the highlight color
         // is Qt::darkBlue.
-        highlight: bittersweetShimmer
+        highlight: lightThemeSecondary
 
         // A color that typically contrasts or complements Base, Window and Button colors. It
         // usually represents the users' choice of desktop personalisation. Styling of interactive
         // components is a typical use case. Unless explicitly set, it defaults to Highlight.
-        accent: bittersweetShimmer
+        accent: lightThemeSecondary
 
         // A text color that contrasts with Highlight. By default, the highlighted text color is
         // Qt::white.
-        highlightedText: textColorForBackgroundColor(highlight)
+        highlightedText: textColorForBackgroundColor(lightThemeSecondary)
 
         ////////////////////////////////////////////////////////////////////////////////////////////
         // Link colors
         ////////////////////////////////////////////////////////////////////////////////////////////
 
         // A text color used for unvisited hyperlinks. By default, the link color is Qt::blue.
-        link: bittersweetShimmer
+        link: lightThemeSecondary
 
         // A text color used for already visited hyperlinks. By default, the linkvisited color
         // is Qt::magenta.
-        linkVisited: bittersweetShimmer
+        linkVisited: lightThemeSecondary
     }
 
     readonly property var darkColorPalete: Palette {
+
         ////////////////////////////////////////////////////////////////////////////////////////////
         // Central roles
         ////////////////////////////////////////////////////////////////////////////////////////////
@@ -186,33 +229,34 @@ Item {
 
         // The general button background color. This background can be different from Window as
         // some styles require a different background color for buttons.
-        button: yellowGreen
+        button: darkThemePrimary
 
         // A foreground color used with the Button color.
-        buttonText: textColorForBackgroundColor(button)
+        buttonText: textColorForBackgroundColor(darkThemePrimary)
 
         // A text color that is very different from WindowText, and contrasts well with e.g. Dark.
         // Typically used for text that needs to be drawn where Text or WindowText would give poor
         // contrast, such as on pressed push buttons. Note that text colors can be used for things
         // other than just words; text colors are usually used for text, but it's quite common to
         // use the text color roles for lines, icons, etc.
-        brightText: textColorForBackgroundColor(dark)
+        brightText: textColorForBackgroundColor(getDarkColorFromButtonColor(
+                                                    darkThemePrimary, true))
 
         ////////////////////////////////////////////////////////////////////////////////////////////
         // Used for painting 3D bevels and shadow effects.
         ////////////////////////////////////////////////////////////////////////////////////////////
 
         // Lighter than Button color.
-        light: getLightColorFromButtonColor(button, true)
+        light: getLightColorFromButtonColor(darkThemePrimary, true)
 
         // Between Button and Light.
-        midlight: getMidColorFromButtonColor(button, true)
+        midlight: getMidColorFromButtonColor(darkThemePrimary, true)
 
         // Darker than Button.
-        dark: getDarkColorFromButtonColor(button, true)
+        dark: getDarkColorFromButtonColor(darkThemePrimary, true)
 
         // Between Button and Dark.
-        mid: getMidColorFromButtonColor(button, true)
+        mid: getMidColorFromButtonColor(darkThemePrimary, true)
 
         // A very dark color. By default, the shadow color is Qt::black.
         shadow: antiFlashWhite
@@ -223,27 +267,27 @@ Item {
 
         // A color to indicate a selected item or the current item. By default, the highlight color
         // is Qt::darkBlue.
-        highlight: bittersweetShimmer
+        highlight: darkThemeSecondary
 
         // A color that typically contrasts or complements Base, Window and Button colors. It
         // usually represents the users' choice of desktop personalisation. Styling of interactive
         // components is a typical use case. Unless explicitly set, it defaults to Highlight.
-        accent: bittersweetShimmer
+        accent: darkThemeSecondary
 
         // A text color that contrasts with Highlight. By default, the highlighted text color is
         // Qt::white.
-        highlightedText: textColorForBackgroundColor(highlight)
+        highlightedText: textColorForBackgroundColor(darkThemeSecondary)
 
         ////////////////////////////////////////////////////////////////////////////////////////////
         // Link colors
         ////////////////////////////////////////////////////////////////////////////////////////////
 
         // A text color used for unvisited hyperlinks. By default, the link color is Qt::blue.
-        link: bittersweetShimmer
+        link: darkThemeSecondary
 
         // A text color used for already visited hyperlinks. By default, the linkvisited color
         // is Qt::magenta.
-        linkVisited: bittersweetShimmer
+        linkVisited: darkThemeSecondary
     }
 
     function isDarkColor(color) {
@@ -292,7 +336,7 @@ Item {
         }
     }
 
-    palette: {
+    readonly property var selectedPalette: {
         switch (theme) {
             case ColorTheme.Theme.Light:
             return lightColorPalete
@@ -305,5 +349,21 @@ Item {
                 return lightColorPalete
             }
         }
+    }
+
+    onCustomPrimaryColorChanged: settings.customPrimaryColor = customPrimaryColor
+    onCustomSecondaryColorChanged: settings.customSecondaryColor = customSecondaryColor
+    Component.onCompleted: {
+        customPrimaryColor = settings.customPrimaryColor
+        customSecondaryColor = settings.customSecondaryColor
+    }
+
+    Settings {
+        id: settings
+
+        category: "OpenTodoList/Style/ColorTheme"
+
+        property color customPrimaryColor: "transparent"
+        property color customSecondaryColor: "transparent"
     }
 }

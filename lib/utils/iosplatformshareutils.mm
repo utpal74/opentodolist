@@ -45,8 +45,11 @@ void IOSPlatformShareUtils::openFile(const QUrl& url)
     docInteractionController =
             [UIDocumentInteractionController interactionControllerWithURL:fileUrl];
 
-    UIViewController* viewController =
-            [[[[UIApplication sharedApplication] windows] firstObject] rootViewController];
+    UIWindowScene* windowScene = (UIWindowScene*)[[UIApplication sharedApplication] connectedScenes]
+                                         .allObjects.firstObject;
+    UIWindow* window = windowScene.windows.firstObject;
+    UIViewController* viewController = window.rootViewController;
+
     if (viewController != nil) {
         docViewController = [[IOSShareUtilsDocViewController alloc] init];
         docViewController.m_url = url;

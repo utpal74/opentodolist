@@ -22,9 +22,16 @@
 #include <QCborValue>
 #include <QDebug>
 #include <QDir>
+#include <QDirIterator>
+#include <QFile>
 #include <QQmlEngine>
 #include <QtConcurrent>
 #include <QTimer>
+#include <QtCore/private/qzipwriter_p.h>
+#include <QtCore/qdebug.h>
+#include <QtCore/qdiriterator.h>
+#include <chrono>
+#include <tuple>
 
 #include "library.h"
 #include "application.h"
@@ -595,6 +602,54 @@ void Library::resetColor()
 }
 
 /**
+ * @brief Create a backup archive of the library.
+ *
+ * This creates a backup of the library. Once the backup file is ready, the
+ * @sa backupAvailable() signal is emitted with the path to the backup file.
+ */
+void Library::backup()
+{
+    QDir libraryDirectory(directory());
+    QDir dir(libraryDirectory);
+    if (!dir.exists(".backup") && !dir.mkdir(".backup")) {
+        emit backupFailed(tr("Unable to create backup folder"));
+        return;
+    }
+    if (!dir.cd(".backup")) {
+        emit backupFailed(tr("Failed to change into backup folder"));
+        return;
+    }
+
+    cleanBackupFolder(dir);
+
+    const auto now = QDateTime::currentDateTime();
+    const auto backupFileName = now.toString(QString("yyyy-MM-dd-hh-mm-ss")) + ".zip";
+    const auto absoluteBackupFileName = dir.absoluteFilePath(backupFileName);
+    QFile file(absoluteBackupFileName);
+    if (!file.open(QIODevice::WriteOnly)) {
+        emit backupFailed(tr("Failed to open file for writing: %1").arg(file.errorString()));
+        return;
+    }
+    QZipWriter zip(&file);
+    QDirIterator it(libraryDirectory, QDirIterator::Subdirectories);
+    while (it.hasNext()) {
+        std::ignore = it.next();
+        const auto entry = it.fileInfo();
+        if (entry.isHidden() || entry.baseName().startsWith(".")) {
+            continue;
+        }
+        QFile inputFile(entry.absoluteFilePath());
+        if (inputFile.open(QIODevice::ReadOnly)) {
+            zip.addFile(libraryDirectory.relativeFilePath(entry.absoluteFilePath()), &inputFile);
+            inputFile.close();
+        }
+    }
+    zip.close();
+    file.close();
+    emit backupAvailable(absoluteBackupFileName);
+}
+
+/**
  * @brief Set the UID of the library.
  */
 void Library::setUid(const QUuid& uid)
@@ -654,6 +709,30 @@ void Library::calculateDefaultColor()
     auto colorValue = namedColors.at(index);
     m_defaultColor = colorValue.color();
     emit colorChanged();
+}
+
+/**
+ * @brief Remove old backups.
+ *
+ * This method removes old entries from the backup @p dir.
+ */
+void Library::cleanBackupFolder(const QDir& dir)
+{
+    // Cleanup old backups:
+    for (const auto& entry : dir.entryInfoList()) {
+        if (!entry.isFile()) {
+            continue;
+        }
+        QFileInfo fi(entry.absoluteFilePath());
+        if (fi.suffix() != "zip") {
+            return;
+        }
+        const auto age = QDateTime::currentDateTime() - fi.lastModified();
+        const auto hours = std::chrono::duration_cast<std::chrono::hours>(age);
+        if (hours.count() >= 24 * 14) { // Preserve for 14 days
+            QFile::remove(entry.absoluteFilePath());
+        }
+    }
 }
 
 void Library::applyCalculatedData(const QVariantMap& properties)

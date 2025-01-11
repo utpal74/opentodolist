@@ -12,4 +12,4 @@ often, this is due to technical reasons and required for efficient working
 of the app). However, what this immediately means: You can simply copy such
 a library folder to e.g. back it up and restore it later. Note, though, that
 if you want to sync your items across devices, you rather might want to use
-one of the supported [Sync Mechanisms](../sync/index.md).
+one of the supported [Sync Mechanisms](../../features/sync/index.md).

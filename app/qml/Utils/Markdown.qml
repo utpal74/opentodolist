@@ -13,10 +13,10 @@ Item {
     }
 
     readonly property string stylesheet: generateStylesheet(
-                                             C.ColorTheme.palette, true)
+                                             C.ColorTheme.selectedPalette, true)
 
     readonly property string stylesheetContent: generateStylesheet(
-                                                    C.ColorTheme.palette)
+                                                    C.ColorTheme.selectedPalette)
 
     function generateStylesheet(palette, full, linkColor) {
         let template = OTL.Application.loadFile(Qt.resolvedUrl(

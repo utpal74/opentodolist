@@ -25,6 +25,7 @@
 #include <QTemporaryDir>
 #include <QTest>
 
+#include <QtTest/qsignalspy.h>
 #include <iostream>
 
 #include "application.h"
@@ -51,6 +52,7 @@ private slots:
     void testFromJson();
     void testEncache();
     void testDecache();
+    void testBackup();
     void cleanup();
 
 private:
@@ -121,6 +123,26 @@ void LibraryTest::testDecache()
     QCOMPARE(lib2->name(), lib.name());
     QCOMPARE(lib2->color(), lib.color());
     QCOMPARE(lib2->directory(), lib.directory());
+}
+
+void LibraryTest::testBackup()
+{
+    Library lib(m_dir->path());
+    lib.setName("Hello World");
+    lib.setColor(Qt::blue);
+    lib.save();
+
+    Note note(lib.newItemLocation());
+    note.setTitle("A note");
+    note.save();
+
+    QSignalSpy spy(&lib, &Library::backupAvailable);
+    lib.backup();
+    // TODO: Eventually, we might change to creating backups in a background thhread. Until then,
+    // at this point, the signal already fired.
+
+    QFileInfo fi(spy.at(0).at(0).toString());
+    QVERIFY(fi.exists());
 }
 
 void LibraryTest::testVariant()

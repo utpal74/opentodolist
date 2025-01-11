@@ -31,6 +31,8 @@
 #    endif
 #endif
 
+#include <cstdio>
+
 static Q_LOGGING_CATEGORY(log, "OpenTodoList.main", QtDebugMsg);
 
 QVector<QtMessageHandler> AppStartup::s_prevMessageHandler;

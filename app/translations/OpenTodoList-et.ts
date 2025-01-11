@@ -132,42 +132,42 @@
 <context>
     <name>AppStartup</name>
     <message>
-        <location filename="../appstartup.cpp" line="198"/>
+        <location filename="../appstartup.cpp" line="200"/>
         <source>Manage your personal data.</source>
         <translation>Halda oma isikuandmeid.</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="204"/>
+        <location filename="../appstartup.cpp" line="206"/>
         <source>Switch on some optimizations for touchscreens.</source>
         <translation>Käivita mõned optimeerimingud puuteekraanide jaoks.</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="207"/>
+        <location filename="../appstartup.cpp" line="209"/>
         <source>Only run the app background service</source>
         <translation>Käivita ainult rakenduse taustateenus</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="209"/>
+        <location filename="../appstartup.cpp" line="211"/>
         <source>Only run the app GUI and connect to an existing app background service</source>
         <translation>Käivita ainult rakenduse kasutajaliides ja ühenda olemasoleva rakenduse taustateenusega.</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="214"/>
+        <location filename="../appstartup.cpp" line="216"/>
         <source>Enable a console on Windows to gather debug output</source>
         <translation>Lülitage Windowsis konsool sisse, et koguda silumisväljundeid</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="365"/>
+        <location filename="../appstartup.cpp" line="367"/>
         <source>Open</source>
         <translation>Ava</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="431"/>
+        <location filename="../appstartup.cpp" line="433"/>
         <source>Quit</source>
         <translation>Välju</translation>
     </message>
     <message>
-        <location filename="../appstartup.cpp" line="373"/>
+        <location filename="../appstartup.cpp" line="375"/>
         <source>Quick Note</source>
         <translation>Kiir Märge</translation>
     </message>
@@ -175,17 +175,17 @@
 <context>
     <name>Application</name>
     <message>
-        <location filename="../../lib/application.cpp" line="218"/>
+        <location filename="../../lib/application.cpp" line="219"/>
         <source>Background Sync</source>
         <translation>Sünkroniseeri Tagaplaanil</translation>
     </message>
     <message>
-        <location filename="../../lib/application.cpp" line="222"/>
+        <location filename="../../lib/application.cpp" line="223"/>
         <source>App continues to sync your data in the background</source>
         <translation>Rakendus jätkab andmete sünkroonimist taustal</translation>
     </message>
     <message>
-        <location filename="../../lib/application.cpp" line="226"/>
+        <location filename="../../lib/application.cpp" line="227"/>
         <source>Quit</source>
         <translation>Välju</translation>
     </message>
@@ -198,17 +198,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/ApplicationMenu.qml" line="83"/>
+        <location filename="../qml/Widgets/ApplicationMenu.qml" line="87"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/ApplicationMenu.qml" line="154"/>
+        <location filename="../qml/Widgets/ApplicationMenu.qml" line="158"/>
         <source>Navigate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/ApplicationMenu.qml" line="193"/>
+        <location filename="../qml/Widgets/ApplicationMenu.qml" line="197"/>
         <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
@@ -242,141 +242,146 @@
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="59"/>
+        <source>Backup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="66"/>
         <source>Close</source>
         <translation type="unfinished">Pane Kinni</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="66"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="73"/>
         <source>Copy</source>
         <translation type="unfinished">Kopeeri</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="74"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="81"/>
         <source>Copy Link To Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="82"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="89"/>
         <source>Create Sample Library</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="131"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="159"/>
         <source>Delete</source>
         <translation type="unfinished">Kustuta</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="139"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="167"/>
         <source>Delete Completed Items</source>
         <translation type="unfinished">Kustuta Tehtud Elemendid</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="147"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="175"/>
         <source>Due Date</source>
         <translation type="unfinished">Tähtaeg</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="155"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="183"/>
         <source>Find</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="162"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="190"/>
         <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="179"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="207"/>
         <source>Left Sidebar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="185"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="213"/>
         <source>Mark all items as done</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="197"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="225"/>
         <source>Mark all items as undone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="209"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="237"/>
         <source>Move</source>
         <translation type="unfinished">Liiguta</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="217"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="245"/>
         <source>New Library</source>
         <translation type="unfinished">Uus Teek</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="225"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="253"/>
         <source>Open Created Item</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="232"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="260"/>
         <source>Open In New Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="240"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="268"/>
         <source>Open Library Folder</source>
         <translation type="unfinished">Ava Teegi Kaust</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="246"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="274"/>
         <source>Quit</source>
         <translation type="unfinished">Välju</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="252"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="280"/>
         <source>Rename</source>
         <translation type="unfinished">Nimeta Ümber</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="260"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="288"/>
         <source>Preferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="281"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="309"/>
         <source>Scroll to Top</source>
         <translation type="unfinished">Keri Üles</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="288"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="316"/>
         <source>Scroll to Bottom</source>
         <translation type="unfinished">Keri Alla</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="295"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="323"/>
         <source>Set Color</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="302"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="330"/>
         <source>Set Progress</source>
         <translation type="unfinished">Määra edasiminek</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="309"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="337"/>
         <source>Sort</source>
         <translation type="unfinished">Sorteeri</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="317"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="345"/>
         <source>Sync Now</source>
         <translation type="unfinished">Sünkroniseeri Nüüd</translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="330"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="358"/>
         <source>Sync Log</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Components/ApplicationShortcuts.qml" line="341"/>
+        <location filename="../qml/Components/ApplicationShortcuts.qml" line="369"/>
         <source>Translate The App...</source>
         <translation type="unfinished">Tõlgi Rakendus...</translation>
     </message>
@@ -505,7 +510,7 @@
         <translation>Oih... tundub, et see on ummiktee...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/DeepLinkHandler.qml" line="62"/>
+        <location filename="../qml/Utils/DeepLinkHandler.qml" line="65"/>
         <source>Sorry, that link does not lead to any page or item that is present on this device. Check if the library or item to which the link points is synchronized on this device and try again.</source>
         <translation>Vabandust, see link ei vii ühelegi leheküljele või elemendile, mis on selles seadmes olemas. Kontrollige, kas teek või element, millele link viitab, on selles seadmes sünkroniseeritud, ja proovige uuesti.</translation>
     </message>
@@ -875,21 +880,6 @@ https://myserver.example.com </translation>
         <translation>Märkmeid pole veel lisatud - klõpsa siia, et neid lisada.</translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="106"/>
-        <source>Copy</source>
-        <translation type="unfinished">Kopeeri</translation>
-    </message>
-    <message>
-        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="113"/>
-        <source>Copy Formatted Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="129"/>
-        <source>Copy Plain Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../qml/Widgets/ItemNotesEditor.qml" line="160"/>
         <source>Export to File...</source>
         <translation>Ekspordi faili...</translation>
@@ -904,28 +894,48 @@ https://myserver.example.com </translation>
         <source>All files</source>
         <translation>Kõik failid</translation>
     </message>
+    <message>
+        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="106"/>
+        <source>Copy</source>
+        <translation type="unfinished">Kopeeri</translation>
+    </message>
+    <message>
+        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="113"/>
+        <source>Copy Formatted Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="129"/>
+        <source>Copy Plain Text</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ItemUtils</name>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="173"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="190"/>
         <source>Move Todo Into...</source>
         <translation>Liiguta Töö...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="188"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="220"/>
         <source>Convert Task to Todo and Move Into...</source>
         <translation>Konverteeri ülesanne Tööks ja liiguta...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="204"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="236"/>
         <source>Copy Item Into...</source>
         <translation>Kopeeri Element...</translation>
     </message>
     <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="221"/>
+        <location filename="../qml/Utils/ItemUtils.qml" line="253"/>
         <source>Copy Todo Into...</source>
         <translation>Kopeeri Töö...</translation>
+    </message>
+    <message>
+        <location filename="../qml/Utils/ItemUtils.qml" line="205"/>
+        <source>Move Task Into...</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -967,120 +977,138 @@ https://myserver.example.com </translation>
         <translation>Liiguta Alla</translation>
     </message>
     <message>
+        <location filename="../qml/Widgets/LibrariesSideBar.qml" line="93"/>
+        <source>Donate</source>
+        <translation>Anneta</translation>
+    </message>
+    <message>
         <location filename="../qml/Widgets/LibrariesSideBar.qml" line="293"/>
         <source>Untagged</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>Library</name>
     <message>
-        <location filename="../qml/Widgets/LibrariesSideBar.qml" line="93"/>
-        <source>Donate</source>
-        <translation>Anneta</translation>
+        <location filename="../../lib/datamodel/library.cpp" line="615"/>
+        <source>Unable to create backup folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../lib/datamodel/library.cpp" line="619"/>
+        <source>Failed to change into backup folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../lib/datamodel/library.cpp" line="630"/>
+        <source>Failed to open file for writing: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>LibraryPage</name>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="206"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="210"/>
         <source>Red</source>
         <translation>Punane</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="213"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="217"/>
         <source>Green</source>
         <translation>Roheline</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="220"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="224"/>
         <source>Blue</source>
         <translation>Sinine</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="227"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="231"/>
         <source>Yellow</source>
         <translation>Kollane</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="234"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="238"/>
         <source>Orange</source>
         <translation>Oranž</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="241"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="245"/>
         <source>Lilac</source>
         <translation>Lilla</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="248"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="252"/>
         <source>White</source>
         <translation>Valge</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="258"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="262"/>
         <source>Rename</source>
         <translation>Nimeta Ümber</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="269"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="273"/>
         <source>Delete</source>
         <translation>Kustuta</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="351"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="355"/>
         <source>Note Title</source>
         <translation>Märkme Pealkiri</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="364"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="368"/>
         <source>Todo List Title</source>
         <translation>Tehaolevate Tööde Loendi Pealkiri</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="377"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="381"/>
         <source>Search term 1, search term 2, ...</source>
         <translation>Otsingusõna 1, Otsingusõna 2, ...</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="454"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="458"/>
         <source>Nothing here yet! Start by adding a &lt;a href=&apos;#note&apos;&gt;note&lt;/a&gt;, &lt;a href=&apos;#todolist&apos;&gt;todo list&lt;/a&gt; or &lt;a href=&apos;#image&apos;&gt;image&lt;/a&gt;.</source>
         <translation>Siin pole veel midagi! Alustuseks lisage &lt;a href=&apos;#note&apos;&gt;Märge&lt;/an&gt;, &lt;a href=&apos;#todolist&apos;&gt;tehaolevate tööde loend&lt;/a&gt; või &lt;a href=&apos;#image&apos;&gt;pilt&lt;/a&gt;.</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="510"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="514"/>
         <source>Sort By</source>
         <translation>Reasta</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="514"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="518"/>
         <source>Manually</source>
         <translation>Käsitsi</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="521"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="525"/>
         <source>Title</source>
         <translation>Pealkiri</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="528"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="532"/>
         <source>Due To</source>
         <translation>Kuni</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="535"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="539"/>
         <source>Created At</source>
         <translation>Loodud</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="542"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="546"/>
         <source>Updated At</source>
         <translation>Muudetud</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="263"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="267"/>
         <source>Copy</source>
         <translation>Kopeeri</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="281"/>
+        <location filename="../qml/Pages/LibraryPage.qml" line="285"/>
         <source>Select Image</source>
         <translation>Vali Pilt</translation>
     </message>
@@ -1172,6 +1200,14 @@ https://myserver.example.com </translation>
         <location filename="../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml" line="29"/>
         <source>Keep Open</source>
         <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MoveTask</name>
+    <message>
+        <location filename="../qml/Actions/MoveTask.qml" line="12"/>
+        <source>Move</source>
+        <translation type="unfinished">Liiguta</translation>
     </message>
 </context>
 <context>
@@ -1677,8 +1713,8 @@ https://myserver.example.com </translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../appstartup.cpp" line="310"/>
-        <location filename="../appstartup.cpp" line="317"/>
+        <location filename="../appstartup.cpp" line="312"/>
+        <location filename="../appstartup.cpp" line="319"/>
         <source>unknown</source>
         <translation>teadmatta</translation>
     </message>
@@ -1908,6 +1944,24 @@ https://myserver.example.com </translation>
     </message>
 </context>
 <context>
+    <name>SelectTodoDialog</name>
+    <message>
+        <location filename="../qml/Windows/SelectTodoDialog.qml" line="22"/>
+        <source>Select Todo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Windows/SelectTodoDialog.qml" line="42"/>
+        <source>Todo List:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Windows/SelectTodoDialog.qml" line="64"/>
+        <source>Todo:</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SelectTodoListDialog</name>
     <message>
         <location filename="../qml/Windows/SelectTodoListDialog.qml" line="24"/>
@@ -1974,42 +2028,42 @@ https://myserver.example.com </translation>
 <context>
     <name>SettingsPage</name>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="39"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="40"/>
         <source>Settings</source>
         <translation>Sätted</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="45"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="46"/>
         <source>User Interface</source>
         <translation>Kasutajaliides</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="53"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="54"/>
         <source>Language:</source>
         <translation>Keel:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="117"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="118"/>
         <source>Theme:</source>
         <translation>Teema:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="161"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="208"/>
         <source>Font Size:</source>
         <translation>Kirjasuurus:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="178"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="225"/>
         <source>Use custom font size</source>
         <translation>Kasuta kohandatud kirjasuurust</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="196"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="243"/>
         <source>Use Compact Style</source>
         <translation>Kasuta kompaktset stiili</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="205"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="252"/>
         <source>Reduce space between components and reduce the font size.
 
 &lt;em&gt;Requires a restart of the app.&lt;/em&gt;</source>
@@ -2018,27 +2072,27 @@ https://myserver.example.com </translation>
 &lt;em&gt;Vajab rakenduse taaskäivitamist.&lt;/em&gt;</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="213"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="260"/>
         <source>Use compact todo lists</source>
         <translation>Kasuta kompaktseid tehaolevate tööde loendeid</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="223"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="270"/>
         <source>Reduce the padding in todo and task listings to fit more items on the screen.</source>
         <translation>Vähendage tööde ja ülesannete nimekirjade polsterdust, et ekraanile mahuks rohkem elemente.</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="230"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="277"/>
         <source>Override Scaling Factor</source>
         <translation>Skaleerimisteguri Ületamine</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="237"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="284"/>
         <source>Scale Factor:</source>
         <translation>Skaleerimisteguri:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="257"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="304"/>
         <source>Use this to manually scale the user interface. By default, the app should adapt automatically according to your device configuration. If this does not work properly, you can set a custom scaling factor here.
 
 This requires a restart of the app.</source>
@@ -2047,34 +2101,50 @@ This requires a restart of the app.</source>
 See nõuab rakenduse taaskäivitamist.</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="266"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="313"/>
         <source>Library Item Size:</source>
         <translation>Teegi Elemendi Suurus:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="142"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="189"/>
         <source>System Tray:</source>
         <translation>Süsteemiriiul:</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="155"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="202"/>
         <source>Open Quick Notes Editor on Click</source>
         <translation>Ava Kiirmärkmete Toimetaja Klikiga</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="187"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="234"/>
         <source>Desktop Mode</source>
         <translation>Töölaua Režiim</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="282"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="329"/>
         <source>Show notes excerpt in listings</source>
         <translation>Näita märkmeid väljavõte nimekirjades</translation>
     </message>
     <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="147"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="194"/>
         <source>Monochrome Icon</source>
         <translation>Monokroomne ikoon</translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/SettingsPage.qml" line="143"/>
+        <source>Custom Primary Color:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/SettingsPage.qml" line="151"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="171"/>
+        <source>Select</source>
+        <translation type="unfinished">Vali</translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/SettingsPage.qml" line="165"/>
+        <source>Custom Secondary Color:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

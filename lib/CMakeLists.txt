@@ -55,6 +55,8 @@ target_sources(
         datastorage/loadlibraryquery.h
         datastorage/movetodoquery.cpp
         datastorage/movetodoquery.h
+        datastorage/movetaskquery.h
+        datastorage/movetaskquery.cpp
         datastorage/promotetaskquery.cpp
         datastorage/promotetaskquery.h
         datastorage/updateitemquery.cpp
@@ -242,6 +244,8 @@ target_link_libraries(opentodolist-common
         KF5::SyntaxHighlighting
 
         # Qt libraries:
+        Qt${QT_VERSION_MAJOR}::Gui
+        Qt${QT_VERSION_MAJOR}::GuiPrivate
         Qt${QT_VERSION_MAJOR}::Qml
         Qt${QT_VERSION_MAJOR}::Quick
         Qt${QT_VERSION_MAJOR}::Xml

@@ -145,6 +145,10 @@ public:
 
     Q_INVOKABLE void resetColor();
 
+public slots:
+
+    void backup();
+
 signals:
 
     /**
@@ -207,6 +211,24 @@ signals:
      */
     void cacheChanged();
 
+    /**
+     * @brief A backup of the library has been created.
+     *
+     * This signal is emitted to indicate that a backup of a library has been created.
+     * The signal carries the @p backupFile, which is the full path to the file which
+     * has been created.
+     */
+    void backupAvailable(const QString& backupFile);
+
+    /**
+     * @brief Creating a backup failed.
+     *
+     * This signal is emitted to indicate that creating a backup of a library failed.
+     * The @p message contains a textual description of why the creation of the backup
+     * failed.
+     */
+    void backupFailed(const QString& message);
+
 private:
     QUuid m_uid;
     QString m_name;
@@ -231,6 +253,8 @@ private:
     void onChanged();
 
     void calculateDefaultColor();
+
+    void cleanBackupFolder(const QDir& dir);
 };
 
 #endif // DATAMODEL_LIBRARY_H_
