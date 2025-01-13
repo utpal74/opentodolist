@@ -38,29 +38,29 @@ listed explicitly above, you might still be able to compile the app for it on
 your own.
 
 <a
-    href="doc/screenshots/Android Tablet/library.png"
+    href="doc/user-manual/docs/assets/screenshots/Android Tablet/library.png"
     alt="Libraries are used to organize items."
-    ><img src="doc/screenshots/Android Tablet/library.png" height="300px"
+    ><img src="doc/user-manual/docs/assets/screenshots/Android Tablet/library.png" height="300px"
 /></a>
 <a
-    href="doc/screenshots/Android Tablet/todolist.png"
+    href="doc/user-manual/docs/assets/screenshots/Android Tablet/todolist.png"
     alt="Todo lists collect todos - you can have arbitrary many todo lists per library."
-    ><img src="doc/screenshots/Android Tablet/todolist.png" height="300px"
+    ><img src="doc/user-manual/docs/assets/screenshots/Android Tablet/todolist.png" height="300px"
 /></a>
 <a
-    href="doc/screenshots/Android Tablet/todo.png"
+    href="doc/user-manual/docs/assets/screenshots/Android Tablet/todo.png"
     alt="Todos are single tasks that can be marked as done - they can be further broken down into tasks."
-    ><img src="doc/screenshots/Android Tablet/todo.png" height="300px"
+    ><img src="doc/user-manual/docs/assets/screenshots/Android Tablet/todo.png" height="300px"
 /></a>
 <a
-    href="doc/screenshots/Android Tablet/note.png"
+    href="doc/user-manual/docs/assets/screenshots/Android Tablet/note.png"
     alt="Notes are used to collect text - you can add additional pages to each note, making them notebooks."
-    ><img src="doc/screenshots/Android Tablet/note.png" height="300px"
+    ><img src="doc/user-manual/docs/assets/screenshots/Android Tablet/note.png" height="300px"
 /></a>
 <a
-    href="doc/screenshots/Android Tablet/image.png"
+    href="doc/user-manual/docs/assets/screenshots/Android Tablet/image.png"
     alt="Images can be added to libraries as well - you can add additional text to them, too."
-    ><img src="doc/screenshots/Android Tablet/image.png" height="300px"
+    ><img src="doc/user-manual/docs/assets/screenshots/Android Tablet/image.png" height="300px"
 /></a>
 
 ## Download
