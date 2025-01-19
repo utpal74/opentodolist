@@ -2748,302 +2748,302 @@ msgstr "De link lijkt niet naar een pagina of item op het apparaat te verwijzen.
 #: ../qml/Components/Tooltips/AllSubtasksDone.qml:13
 msgctxt "AllSubtasksDone|"
 msgid "Everything in %1 done! Do you want to mark it as well as done?"
-msgstr ""
+msgstr "Alles op %1 is afgerond! Wilt u alles als dusdanig markeren?"
 
 #: ../qml/Components/Tooltips/AllSubtasksDone.qml:20
 msgctxt "AllSubtasksDone|"
 msgid "Mark as Done"
-msgstr ""
+msgstr "Markeren als afgerond"
 
 #: ../qml/Components/Tooltips/AllSubtasksDone.qml:30
 msgctxt "AllSubtasksDone|"
 msgid "Keep Open"
-msgstr ""
+msgstr "Niet markeren"
 
 #: ../qml/Widgets/ApplicationMenu.qml:36
 msgctxt "ApplicationMenu|"
 msgid "File"
-msgstr ""
+msgstr "Bestand"
 
 #: ../qml/Widgets/ApplicationMenu.qml:87
 msgctxt "ApplicationMenu|"
 msgid "Edit"
-msgstr ""
+msgstr "Bewerken"
 
 #: ../qml/Widgets/ApplicationMenu.qml:158
 msgctxt "ApplicationMenu|"
 msgid "Navigate"
-msgstr ""
+msgstr "Ga"
 
 #: ../qml/Widgets/ApplicationMenu.qml:197
 msgctxt "ApplicationMenu|"
 msgid "Help"
-msgstr ""
+msgstr "Hulp"
 
 #: ../qml/Components/ApplicationShortcuts.qml:18
 msgctxt "ApplicationShortcuts|"
 msgid "About"
-msgstr ""
+msgstr "Over"
 
 #: ../qml/Components/ApplicationShortcuts.qml:27
 msgctxt "ApplicationShortcuts|"
 msgid "About Qt"
-msgstr ""
+msgstr "Over Qt"
 
 #: ../qml/Components/ApplicationShortcuts.qml:35
 msgctxt "ApplicationShortcuts|"
 msgid "Accounts"
-msgstr ""
+msgstr "Accounts"
 
 #: ../qml/Components/ApplicationShortcuts.qml:43
 msgctxt "ApplicationShortcuts|"
 msgid "Add Tag"
-msgstr ""
+msgstr "Label toekennen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:51
 msgctxt "ApplicationShortcuts|"
 msgid "Attach File"
-msgstr ""
+msgstr "Bestand bijvoegen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:59
 msgctxt "ApplicationShortcuts|"
 msgid "Backup"
-msgstr ""
+msgstr "Reservekopie maken"
 
 #: ../qml/Components/ApplicationShortcuts.qml:66
 msgctxt "ApplicationShortcuts|"
 msgid "Close"
-msgstr ""
+msgstr "Sluiten"
 
 #: ../qml/Components/ApplicationShortcuts.qml:73
 msgctxt "ApplicationShortcuts|"
 msgid "Copy"
-msgstr ""
+msgstr "Kopiëren"
 
 #: ../qml/Components/ApplicationShortcuts.qml:81
 msgctxt "ApplicationShortcuts|"
 msgid "Copy Link To Page"
-msgstr ""
+msgstr "Paginalink kopiëren"
 
 #: ../qml/Components/ApplicationShortcuts.qml:89
 msgctxt "ApplicationShortcuts|"
 msgid "Create Sample Library"
-msgstr ""
+msgstr "Voorbeeldlijsten samenstellen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:159
 msgctxt "ApplicationShortcuts|"
 msgid "Delete"
-msgstr ""
+msgstr "Verwijderen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:167
 msgctxt "ApplicationShortcuts|"
 msgid "Delete Completed Items"
-msgstr ""
+msgstr "Afgeronde items wissen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:175
 msgctxt "ApplicationShortcuts|"
 msgid "Due Date"
-msgstr ""
+msgstr "Einddatum"
 
 #: ../qml/Components/ApplicationShortcuts.qml:183
 msgctxt "ApplicationShortcuts|"
 msgid "Find"
-msgstr ""
+msgstr "Zoeken"
 
 #: ../qml/Components/ApplicationShortcuts.qml:190
 msgctxt "ApplicationShortcuts|"
 msgid "Back"
-msgstr ""
+msgstr "Terug"
 
 #: ../qml/Components/ApplicationShortcuts.qml:207
 msgctxt "ApplicationShortcuts|"
 msgid "Left Sidebar"
-msgstr ""
+msgstr "Linker zijbalk"
 
 #: ../qml/Components/ApplicationShortcuts.qml:213
 msgctxt "ApplicationShortcuts|"
 msgid "Mark all items as done"
-msgstr ""
+msgstr "Alle items markeren als afgerond"
 
 #: ../qml/Components/ApplicationShortcuts.qml:225
 msgctxt "ApplicationShortcuts|"
 msgid "Mark all items as undone"
-msgstr ""
+msgstr "Alle items markeren als niet-afgerond"
 
 #: ../qml/Components/ApplicationShortcuts.qml:237
 msgctxt "ApplicationShortcuts|"
 msgid "Move"
-msgstr ""
+msgstr "Verplaatsen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:245
 msgctxt "ApplicationShortcuts|"
 msgid "New Library"
-msgstr ""
+msgstr "Nieuwe verzameling"
 
 #: ../qml/Components/ApplicationShortcuts.qml:253
 msgctxt "ApplicationShortcuts|"
 msgid "Open Created Item"
-msgstr ""
+msgstr "Aangemaakt item openen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:260
 msgctxt "ApplicationShortcuts|"
 msgid "Open In New Window"
-msgstr ""
+msgstr "Openen in nieuw venster"
 
 #: ../qml/Components/ApplicationShortcuts.qml:268
 msgctxt "ApplicationShortcuts|"
 msgid "Open Library Folder"
-msgstr ""
+msgstr "Verzamelingsmap openen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:274
 msgctxt "ApplicationShortcuts|"
 msgid "Quit"
-msgstr ""
+msgstr "Afsluiten"
 
 #: ../qml/Components/ApplicationShortcuts.qml:280
 msgctxt "ApplicationShortcuts|"
 msgid "Rename"
-msgstr ""
+msgstr "Naam wĳzigen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:288
 msgctxt "ApplicationShortcuts|"
 msgid "Preferences"
-msgstr ""
+msgstr "Instellingen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:309
 msgctxt "ApplicationShortcuts|"
 msgid "Scroll to Top"
-msgstr ""
+msgstr "Scrollen naar bovenkant"
 
 #: ../qml/Components/ApplicationShortcuts.qml:316
 msgctxt "ApplicationShortcuts|"
 msgid "Scroll to Bottom"
-msgstr ""
+msgstr "Scrollen naar onderkant"
 
 #: ../qml/Components/ApplicationShortcuts.qml:323
 msgctxt "ApplicationShortcuts|"
 msgid "Set Color"
-msgstr ""
+msgstr "Kleur toekennen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:330
 msgctxt "ApplicationShortcuts|"
 msgid "Set Progress"
-msgstr ""
+msgstr "Voortgang instellen"
 
 #: ../qml/Components/ApplicationShortcuts.qml:337
 msgctxt "ApplicationShortcuts|"
 msgid "Sort"
-msgstr ""
+msgstr "Sorteren"
 
 #: ../qml/Components/ApplicationShortcuts.qml:345
 msgctxt "ApplicationShortcuts|"
 msgid "Sync Now"
-msgstr ""
+msgstr "Nu synchroniseren"
 
 #: ../qml/Components/ApplicationShortcuts.qml:358
 msgctxt "ApplicationShortcuts|"
 msgid "Sync Log"
-msgstr ""
+msgstr "Logboek synchroniseren"
 
 #: ../qml/Components/ApplicationShortcuts.qml:369
 msgctxt "ApplicationShortcuts|"
 msgid "Translate The App..."
-msgstr ""
+msgstr "Programma vertalen…"
 
 #: ../qml/Components/ApplicationToolBar.qml:86
 msgctxt "ApplicationToolBar|"
 msgid "Problems"
-msgstr ""
+msgstr "Problemen"
 
 #: ../qml/Widgets/ItemNotesEditor.qml:106
 msgctxt "ItemNotesEditor|"
 msgid "Copy"
-msgstr ""
+msgstr "Kopiëren"
 
 #: ../qml/Widgets/ItemNotesEditor.qml:113
 msgctxt "ItemNotesEditor|"
 msgid "Copy Formatted Text"
-msgstr ""
+msgstr "Opgemaakte tekst kopiëren"
 
 #: ../qml/Widgets/ItemNotesEditor.qml:129
 msgctxt "ItemNotesEditor|"
 msgid "Copy Plain Text"
-msgstr ""
+msgstr "Platte tekst kopiëren"
 
 #: ../qml/Widgets/LibrariesSideBar.qml:293
 msgctxt "LibrariesSideBar|"
 msgid "Untagged"
-msgstr ""
+msgstr "Ongelabeld"
 
 #: ../../lib/datamodel/library.cpp:615
 msgctxt "Library|"
 msgid "Unable to create backup folder"
-msgstr ""
+msgstr "De reservekopiemap kan niet worden aangemaakt"
 
 #: ../../lib/datamodel/library.cpp:619
 msgctxt "Library|"
 msgid "Failed to change into backup folder"
-msgstr ""
+msgstr "De reservekopiemap kan niet worden binnengegaan"
 
 #: ../../lib/datamodel/library.cpp:630
 msgctxt "Library|"
 msgid "Failed to open file for writing: %1"
-msgstr ""
+msgstr "Het bestand kan niet worden geopend: %1"
 
 #: ../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml:13
 msgctxt "MarkFutureInstanceAsDone|"
 msgid "%1 is scheduled for the future - do you want to mark that future instance as done?"
-msgstr ""
+msgstr "%1 staat ingepland. Wilt u dat geplande item markeren als afgerond?"
 
 #: ../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml:20
 msgctxt "MarkFutureInstanceAsDone|"
 msgid "Mark as Done"
-msgstr ""
+msgstr "Markeren als afgerond"
 
 #: ../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml:29
 msgctxt "MarkFutureInstanceAsDone|"
 msgid "Keep Open"
-msgstr ""
+msgstr "Niet markeren"
 
 #: ../qml/Windows/StackViewWindow.qml:21
 msgctxt "StackViewWindow|"
 msgid "OpenTodoList"
-msgstr ""
+msgstr "OpenTodoList"
 
 #: ../qml/Utils/ItemUtils.qml:205
 msgctxt "ItemUtils|"
 msgid "Move Task Into..."
-msgstr ""
+msgstr "Taak verplaatsen naar…"
 
 #: ../qml/Actions/MoveTask.qml:12
 msgctxt "MoveTask|"
 msgid "Move"
-msgstr ""
+msgstr "Verplaatsen"
 
 #: ../qml/Windows/SelectTodoDialog.qml:22
 msgctxt "SelectTodoDialog|"
 msgid "Select Todo"
-msgstr ""
+msgstr "Kies een taak"
 
 #: ../qml/Windows/SelectTodoDialog.qml:42
 msgctxt "SelectTodoDialog|"
 msgid "Todo List:"
-msgstr ""
+msgstr "Takenlijst:"
 
 #: ../qml/Windows/SelectTodoDialog.qml:64
 msgctxt "SelectTodoDialog|"
 msgid "Todo:"
-msgstr ""
+msgstr "Taak:"
 
 #: ../qml/Pages/SettingsPage.qml:143
 msgctxt "SettingsPage|"
 msgid "Custom Primary Color:"
-msgstr ""
+msgstr "Zelfgekozen primaire kleur:"
 
 #: ../qml/Pages/SettingsPage.qml:151 ../qml/Pages/SettingsPage.qml:171
 msgctxt "SettingsPage|"
 msgid "Select"
-msgstr ""
+msgstr "Kiezen"
 
 #: ../qml/Pages/SettingsPage.qml:165
 msgctxt "SettingsPage|"
