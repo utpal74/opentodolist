@@ -213,16 +213,6 @@ QOAuth2AuthorizationCodeFlow* DropboxAccount::createOAuthAuthFlow(QObject* paren
     return result;
 }
 
-void DropboxAccount::save(QSettings* settings)
-{
-    Account::save(settings);
-}
-
-void DropboxAccount::load(QSettings* settings)
-{
-    Account::load(settings);
-}
-
 QString DropboxAccount::accountSecrets() const
 {
     QVariantMap doc {
