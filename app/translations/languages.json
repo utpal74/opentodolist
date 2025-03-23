@@ -35,6 +35,13 @@
         "updated": "2020-06-11T11:47:53+0000"
     },
     {
+        "name": "Bulgarian",
+        "code": "bg",
+        "translations": 240,
+        "percentage": 39.74,
+        "updated": "2025-03-07T07:23:11+0000"
+    },
+    {
         "name": "Catalan",
         "code": "ca",
         "translations": 482,
@@ -79,9 +86,9 @@
     {
         "name": "Dutch",
         "code": "nl",
-        "translations": 603,
-        "percentage": 99.83,
-        "updated": "2025-01-15T10:10:11+0000"
+        "translations": 604,
+        "percentage": 100,
+        "updated": "2025-03-15T10:30:21+0000"
     },
     {
         "name": "English",
@@ -233,9 +240,9 @@
     {
         "name": "Spanish",
         "code": "es",
-        "translations": 525,
-        "percentage": 86.92,
-        "updated": "2023-02-11T15:42:36+0000"
+        "translations": 604,
+        "percentage": 100,
+        "updated": "2025-02-06T20:41:09+0000"
     },
     {
         "name": "Spanish (LA & C)",

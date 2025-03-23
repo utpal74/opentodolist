@@ -3048,5 +3048,5 @@ msgstr "Kiezen"
 #: ../qml/Pages/SettingsPage.qml:165
 msgctxt "SettingsPage|"
 msgid "Custom Secondary Color:"
-msgstr ""
+msgstr "Eigen secundaire kleur:"
 
