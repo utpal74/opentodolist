@@ -37,7 +37,6 @@ public:
 
     // Synchronizer interface
     void synchronize() override;
-    void fromMap(const QVariantMap& map) override;
     void setAccount(Account* account) override;
 
     const QString& accessToken() const;

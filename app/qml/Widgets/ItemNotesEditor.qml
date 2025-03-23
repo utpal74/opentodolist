@@ -49,7 +49,7 @@ Column {
 
         C.Symbol {
             symbol: C.Icons.mdiEditNote
-            onClicked: loader.sourceComponent = notesEditor
+            onClicked: root.editing = true
         }
     }
 

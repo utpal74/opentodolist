@@ -51,11 +51,6 @@ void DropboxSynchronizer::synchronize()
     }
 }
 
-void DropboxSynchronizer::fromMap(const QVariantMap& map)
-{
-    Synchronizer::fromMap(map);
-}
-
 void DropboxSynchronizer::setAccount(Account* account)
 {
     auto dropboxAccount = qobject_cast<DropboxAccount*>(account);

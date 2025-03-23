@@ -69,8 +69,6 @@ private:
 
     // Account interface
 public:
-    void save(QSettings* settings) override;
-    void load(QSettings* settings) override;
     QString accountSecrets() const override;
     void setAccountSecrets(const QString& secrets) override;
     Synchronizer* createSynchronizer() const override;
