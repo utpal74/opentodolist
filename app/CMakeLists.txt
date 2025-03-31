@@ -1,133 +1,55 @@
-# Instruct CMake to run moc and rrc automatically when needed.
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTORCC ON)
-
-set(PROJECT_SOURCES
-    main.cpp
-    appstartup.cpp
-    appstartup.h
-)
-
-if(WIN32)
-    set(PROJECT_SOURCES ${PROJECT_SOURCES} OpenTodoList.rc)
-endif()
-
-set(APP_RESOURCES
-    ./qml/qml.qrc
-    ./res.qrc
-)
-
-if(WIN32)
-    set(APP_FLAGS WIN32)
-endif()
-
 set(CI_PIPELINE_IID $ENV{CI_PIPELINE_IID})
 if("${CI_PIPELINE_IID}" STREQUAL "")
     set(CI_PIPELINE_IID "0")
 endif()
 
-if(APPLE)
-    set(APP_FLAGS MACOSX_BUNDLE)
-    set(PROJECT_SOURCES ${PROJECT_SOURCES} res/OpenTodoList.icns)
-    set(MACOSX_BUNDLE_ICON_FILE OpenTodoList.icns)
-    set_source_files_properties(res/OpenTodoList.icns PROPERTIES MACOSX_PACKAGE_LOCATION Resources)
+if(NOT ANDROID AND NOT IOS)
+    set(DESKTOP_MODE ON)
 endif()
 
-if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(OpenTodoList ${APP_FLAGS} ${PROJECT_SOURCES} ${APP_RESOURCES}
-        )
+qt_add_executable(OpenTodoList MACOSX_BUNDLE)
 
-    # Include Assets and special config for iOS
-    if(IOS)
-        target_sources(OpenTodoList PRIVATE ios/Images.xcassets)
-        set_source_files_properties(
-            ios/Images.xcassets
-            PROPERTIES
-                MACOSX_PACKAGE_LOCATION Resources
-        )
-        qt_import_plugins(
-            OpenTodoList
-            INCLUDE Qt::QIosOptionalPlugin_NSPhotoLibraryPlugin
-        )
-    endif()
+target_sources(
+    OpenTodoList
+    PRIVATE
+        main.cpp
+        appstartup.cpp
+        appstartup.h
+        $<$<BOOL:${WIN32c}>:OpenTodoList.rc>
+        $<$<BOOL:${APPLE}>:res/OpenTodoList.icns>
+        ./qml/qml.qrc
+        ./res.qrc
+        $<$<BOOL:${IOS}>:ios/Images.xcassets>
+        $<$<BOOL:${IOS}>:ios/LaunchScreenOTL.storyboard>
+)
+
+set_source_files_properties(
+    res/OpenTodoList.icns
+    ios/Images.xcassets
+    ios/LaunchScreenOTL.storyboard
+    PROPERTIES
+        MACOSX_PACKAGE_LOCATION Resources
+)
+
+if(IOS)
+    set(INFO_PLIST_FILE ${CMAKE_CURRENT_SOURCE_DIR}/ios/Info.plist.in)
 else()
-    if(ANDROID)
-        add_library(OpenTodoList SHARED ${PROJECT_SOURCES} ${APP_RESOURCES})
-
-        set(
-            ANDROID_PACKAGE_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/android
-            CACHE INTERNAL "Extra files for Android deployment"
-        )
-    elseif(IOS)
-        include(../3rdparty/QtIosCMake/AddQtIosApp.cmake)
-        include(../3rdparty/QtStaticCMake/QtStaticCMake.cmake)
-        add_executable(OpenTodoList)
-        add_qt_ios_app(
-            OpenTodoList
-            NAME "OpenTodoList"
-            BUNDLE_IDENTIFIER "net.rpdev.OpenTodoList"
-            VERSION "${OPENTODOLIST_VERSION_MAJOR}.${OPENTODOLIST_VERSION_MINOR}.${CI_PIPELINE_IID}"
-            ORIENTATION_PORTRAIT
-            ORIENTATION_PORTRAIT_UPDOWN
-            ORIENTATION_PORTRAIT_UPSIDEDOWN
-            ORIENTATION_LANDSCAPE_LEFT
-            ORIENTATION_LANDSCAPE_RIGHT
-            PHOTO_LIBRARY_USAGE_DESCRIPTION "Allow adding photos from the library as images."
-            SUPPORT_IPHONE
-            SUPPORT_IPAD
-            IPA
-            UPLOAD_SYMBOL
-            ASSET_DIR ios/Images.xcassets
-            LAUNCHSCREEN_STORYBOARD "ios/LaunchScreenOTL.storyboard"
-            CUSTOM_PLIST ${CMAKE_CURRENT_SOURCE_DIR}/ios/Info.plist.in
-        )
-        target_sources(OpenTodoList PRIVATE  ${PROJECT_SOURCES} ${APP_RESOURCES})
-        qt_generate_plugin_import(
-            OpenTodoList
-            OUTPUT "OpenTodoList_plugin_import.cpp"
-            OUTPUT_DIR ${CMAKE_CURRENT_BINARY_DIR}
-            VERBOSE
-        )
-
-        qt_generate_qml_plugin_import(
-            OpenTodoList
-            QML_SRC ${CMAKE_CURRENT_SOURCE_DIR}
-            OUTPUT "OpenTodoList_qml_plugin_import.cpp"
-            OUTPUT_DIR ${CMAKE_CURRENT_BINARY_DIR}
-            VERBOSE
-        )
-
-    else()
-        add_executable(OpenTodoList ${APP_FLAGS} ${PROJECT_SOURCES} ${APP_RESOURCES})
-    endif()
+    set(INFO_PLIST_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Info.plist.in)
 endif()
 
-if(APPLE)
-    if(IOS)
-        set_target_properties(
-            OpenTodoList
-            PROPERTIES
-                MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_SOURCE_DIR}/ios/Info.plist.in
-        )
-        target_sources(
-            OpenTodoList
-            PRIVATE
-                ios/LaunchScreenOTL.storyboard
-        )
-        set_source_files_properties(ios/LaunchScreenOTL.storyboard PROPERTIES MACOSX_PACKAGE_LOCATION Resources)
-    else(IOS)
-        set_target_properties(
-            OpenTodoList
-            PROPERTIES
-                MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_SOURCE_DIR}/Info.plist.in
-        )
-    endif()
+# Include Assets and special config for iOS
+if(IOS)
+    qt_import_plugins(
+        OpenTodoList
+        INCLUDE Qt::QIosOptionalPlugin_NSPhotoLibraryPlugin
+    )
 endif()
 
 target_compile_definitions(
     OpenTodoList
     PRIVATE
         $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>
+        $<$<BOOL:${OPENTODOLIST_WITH_KNOTIFICATIONS}>:OPENTODOLIST_WITH_KNOTIFICATIONS>
 )
 
 target_compile_options(
@@ -144,6 +66,7 @@ target_compile_features(
 set_target_properties(
     OpenTodoList
     PROPERTIES
+        MACOSX_BUNDLE_INFO_PLIST ${INFO_PLIST_FILE}
         MACOSX_BUNDLE_GUI_IDENTIFIER net.rpdev.OpenTodoList
         MACOSX_BUNDLE_BUNDLE_NAME OpenTodoList
         MACOSX_BUNDLE_BUNDLE_VERSION "${OPENTODOLIST_VERSION_MAJOR}.${OPENTODOLIST_VERSION_MINOR}.${CI_PIPELINE_IID}"
@@ -242,29 +165,12 @@ target_link_libraries(
         Qt${QT_VERSION_MAJOR}::Quick
         Qt${QT_VERSION_MAJOR}::Concurrent
         Qt${QT_VERSION_MAJOR}::Widgets
-)
 
-add_dependencies(OpenTodoList opentodolist-common)
+        $<$<BOOL:${OPENTODOLIST_WITH_KNOTIFICATIONS}>:KF5::Notifications>
+)
 
 if(OPENTODOLIST_FLATPAK)
     target_compile_definitions(OpenTodoList PRIVATE OPENTODOLIST_FLATPAK)
-endif()
-
-if(OPENTODOLIST_WITH_KNOTIFICATIONS)
-    target_link_libraries(
-        OpenTodoList
-
-        PRIVATE
-
-            KF5::Notifications
-    )
-    target_compile_definitions(
-        OpenTodoList
-
-        PRIVATE
-
-            OPENTODOLIST_WITH_KNOTIFICATIONS
-    )
 endif()
 
 file(GLOB_RECURSE TS_SOURCE_FILES
@@ -343,6 +249,16 @@ foreach(ts_file ${TS_FILES})
 endforeach()
 add_custom_target(opentodolist-ts-to-po DEPENDS ${PO_FILES})
 
+
+# Set up QML modules:
+# qt_add_qml_module(
+#     OpenTodoList
+#     URI
+#         OpenTodoList
+#     VERSION
+#         1.0
+# )
+
 # Install the app:
 install(
     TARGETS OpenTodoList
@@ -360,7 +276,7 @@ endif()
 
 
 # Add Gallery example:
-if(NOT ANDROID AND NOT IOS)
+if(DESKTOP_MODE)
     qt_add_executable(gallery gallery.cpp)
     target_link_libraries(
         gallery

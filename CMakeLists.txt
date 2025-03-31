@@ -3,15 +3,8 @@ cmake_minimum_required(VERSION 3.16.3)
 # Generate build commands JSON file:
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-# Enable running Qt specific tools automatically (otherwise, we have to
-# wrap stuff in Qt specific functions). See
-# https://www.kdab.com/wp-content/uploads/stories/QTVTC20-Using-Modern-CMake-Kevin-Funk.pdf
-# for more details.
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTORCC ON)
-set(CMAKE_AUTOUIC ON)
-set(CMAKE_INCLUDE_CURRENT_DIR ON)
-set(CMAKE_CXX_VISIBILITY_PRESET hidden) # To avoid linker warnings building for iOS
+# To avoid linker warnings building for iOS
+set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 
 # Set policies explicitly:
 # cmake_policy(SET CMP0114 NEW) # Use independent step targets w/ external project on Xcode new build system.
@@ -29,28 +22,29 @@ include(3rdparty/android-openssl/android_openssl.cmake)
 enable_testing()
 
 if(NOT OPENTODOLIST_QT_VERSIONS)
-    # If OPENTODOLIST_QT_VERSIONS is not set by user, first, look for Qt6, followed by Qt5:
-    set(OPENTODOLIST_QT_VERSIONS Qt6 Qt5)
+    # If OPENTODOLIST_QT_VERSIONS is not set by user, look for Qt6:
+    set(OPENTODOLIST_QT_VERSIONS Qt6)
+    set(QT_VERSION_MAJOR 6)
 endif()
 
-set(REQUIRED_QT_COMPONENTS Core Quick Qml Xml Concurrent Sql RemoteObjects LinguistTools Widgets Network NetworkAuth)
+set(REQUIRED_QT_COMPONENTS Core Quick Qml Xml Concurrent Sql RemoteObjects LinguistTools Widgets Network NetworkAuth Test)
 
+find_package(
+    Qt6
+    COMPONENTS
+        ${REQUIRED_QT_COMPONENTS}
+    REQUIRED
+)
 
-find_package(QT NAMES ${OPENTODOLIST_QT_VERSIONS} COMPONENTS ${REQUIRED_QT_COMPONENTS} REQUIRED)
+qt_policy(SET QTP0001 NEW)
 
-if(ANDROID)
-    if(QT_VERSION_MAJOR STREQUAL "5")
-        message(FATAL_ERROR "Support for building OpenTodoList for Android using Qt5 has been dropped. Please build using Qt6 or higher.")
-    endif()
-endif()
-
-find_package(Qt${QT_VERSION_MAJOR} COMPONENTS ${REQUIRED_QT_COMPONENTS} REQUIRED)
+qt_standard_project_setup()
 
 # Convenience: Set the QT_INSTALL_PREFIX based on QT_DIR (which is set by the first find_package
 # call above. The QT_DIR is set to something like
 # <prefix>/lib/cmake/Qt6, so we have to get the directory 3 times.
 if(NOT QT_INSTALL_PREFIX)
-    get_filename_component(QT_INSTALL_PREFIX ${QT_DIR} DIRECTORY)
+    get_filename_component(QT_INSTALL_PREFIX ${Qt${QT_VERSION_MAJOR}_DIR} DIRECTORY)
     get_filename_component(QT_INSTALL_PREFIX ${QT_INSTALL_PREFIX} DIRECTORY)
     get_filename_component(QT_INSTALL_PREFIX ${QT_INSTALL_PREFIX} DIRECTORY)
     if(QT_INSTALL_PREFIX STREQUAL "/")
@@ -142,23 +136,23 @@ endif()
 
 
 # Show other, project-related files:
-file(GLOB_RECURSE OTHER_FILES
-    OpenTodoList.desktop.in
-    README.md
-    COPYING
-    Doxyfile
-    net.rpdev.OpenTodoList.json
-    net.rpdev.OpenTodoList.metainfo.xml
-    snapcraft.yaml
-    doc/*
-    .gitlab-ci.yml
-    bin/*
-    templates/*
-    ci/*
-    cmake/*
-    app/android/*
-    lib/*
-    test/*
+file(GLOB_RECURSE
+    OTHER_FILES
+        OpenTodoList.desktop.in
+        README.md
+        COPYING
+        Doxyfile
+        net.rpdev.OpenTodoList.json
+        net.rpdev.OpenTodoList.metainfo.xml
+        snapcraft.yaml
+        doc/*
+        .gitlab-ci.yml
+        bin/*
+        templates/*
+        ci/*
+        cmake/*
+        app/android/*
+        lib/*
+        test/*
 )
-
 add_custom_target(OtherFiles SOURCES ${OTHER_FILES})

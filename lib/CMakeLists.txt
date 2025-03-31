@@ -1,5 +1,8 @@
-# Add the library
-add_library(opentodolist-common)
+if(NOT ANDROID AND NOT IOS)
+    set(USE_GENERIC_SHARE_UTILS ON)
+endif()
+
+add_library(opentodolist-common OBJECT)
 
 target_sources(
     opentodolist-common
@@ -134,35 +137,26 @@ target_sources(
 
         # Include SimpleCrypt source:
         ${CMAKE_CURRENT_SOURCE_DIR}/../3rdparty/simplecrypt/simplecrypt.cpp
+
+
+        $<$<BOOL:${IOS}>:utils/iosplatformshareutils.h>
+        $<$<BOOL:${IOS}>:utils/iosplatformshareutils.cpp>
+        $<$<BOOL:${IOS}>:utils/iosplatformshareutils.mm>
+        $<$<BOOL:${IOS}>:utils/ios/shareutilsdocviewcontroller.h>
+        $<$<BOOL:${IOS}>:utils/ios/shareutilsdocviewcontroller.mm>
+        $<$<BOOL:${IOS}>:utils/ios/application.mm>
+
+        $<$<BOOL:${ANDROID}>:utils/androidplatformshareutils.h>
+        $<$<BOOL:${ANDROID}>:utils/androidplatformshareutils.cpp>
+        $<$<BOOL:${ANDROID}>:utils/android/androidfiledialog.h>
+        $<$<BOOL:${ANDROID}>:utils/android/androidfiledialog.cpp>
+
+        $<$<BOOL:${USE_GENERIC_SHARE_UTILS}>:utils/genericplatformshareutils.h>
+        $<$<BOOL:${USE_GENERIC_SHARE_UTILS}>:utils/genericplatformshareutils.cpp>
 )
 
-if(IOS)
-    target_sources(
-        opentodolist-common
-        PRIVATE
-            utils/iosplatformshareutils.h
-            utils/iosplatformshareutils.cpp
-            utils/iosplatformshareutils.mm
-            utils/ios/shareutilsdocviewcontroller.h
-            utils/ios/shareutilsdocviewcontroller.mm
-            utils/ios/application.mm
-    )
-elseif(ANDROID)
-    target_sources(
-        opentodolist-common
-        PRIVATE
-            utils/androidplatformshareutils.h
-            utils/androidplatformshareutils.cpp
-    )
-else()
-    target_sources(
-        opentodolist-common
-        PRIVATE
-            utils/genericplatformshareutils.h
-            utils/genericplatformshareutils.cpp
-    )
-endif()
-
+qt_add_repc_sources(opentodolist-common service/backgroundservice.rep)
+qt_add_repc_replicas(opentodolist-common service/backgroundservice.rep)
 
 target_compile_features(
     opentodolist-common PRIVATE cxx_std_14
@@ -174,43 +168,6 @@ target_compile_options(
         $<$<CXX_COMPILER_ID:MSVC>:/W4 /WX>
         $<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-Wall -Werror -Wno-error=deprecated-declarations>
 )
-
-if(ANDROID)
-    target_sources(
-        opentodolist-common
-        PRIVATE
-            utils/android/androidfiledialog.h
-            utils/android/androidfiledialog.cpp
-    )
-endif()
-
-# Some versions of the syntax highlighting library introduced a "bug" which causes the
-# path to the KF5 folder not to be included in the header search path. While some systems
-# already rolled out a fix, some don't (of the time of writing this, the 28th of May 2022, this
-# affects at least Fedora). As a workaround, we manually add the parent folder of the
-# "KSyntaxHighlighting" to the search paths:
-get_target_property(KF5_SYNTAXHIGHLIGHTING_INCLUDE_DIRS KF5::SyntaxHighlighting INTERFACE_INCLUDE_DIRECTORIES)
-foreach(path ${KF5_SYNTAXHIGHLIGHTING_INCLUDE_DIRS})
-    if(path MATCHES ".*KSyntaxHighlighting")
-        get_filename_component(path ${path} DIRECTORY)
-        target_include_directories(opentodolist-common PRIVATE ${path})
-    endif()
-endforeach()
-
-if("${QT_VERSION_MAJOR}" STREQUAL "5")
-    unset(REPC_SOURCES)
-    qt5_generate_repc(REPC_SOURCES service/backgroundservice.rep SOURCE)
-    qt5_generate_repc(REPC_SOURCES service/backgroundservice.rep REPLICA)
-    target_sources(
-        opentodolist-common
-        PRIVATE
-        ${REPC_SOURCES}
-    )
-    unset(REPC_SOURCES)
-else()
-    qt_add_repc_sources(opentodolist-common service/backgroundservice.rep)
-    qt_add_repc_replicas(opentodolist-common service/backgroundservice.rep)
-endif()
 
 # Set include paths
 target_include_directories(
@@ -262,3 +219,16 @@ install(
     TARGETS opentodolist-common
     DESTINATION ${CMAKE_INSTALL_LIBDIR}
 )
+
+# Some versions of the syntax highlighting library introduced a "bug" which causes the
+# path to the KF5 folder not to be included in the header search path. While some systems
+# already rolled out a fix, some don't (of the time of writing this, the 28th of May 2022, this
+# affects at least Fedora). As a workaround, we manually add the parent folder of the
+# "KSyntaxHighlighting" to the search paths:
+get_target_property(KF5_SYNTAXHIGHLIGHTING_INCLUDE_DIRS KF5::SyntaxHighlighting INTERFACE_INCLUDE_DIRECTORIES)
+foreach(path ${KF5_SYNTAXHIGHLIGHTING_INCLUDE_DIRS})
+    if(path MATCHES ".*KSyntaxHighlighting")
+        get_filename_component(path ${path} DIRECTORY)
+        target_include_directories(opentodolist-common PRIVATE ${path})
+    endif()
+endforeach()
