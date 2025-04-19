@@ -14,6 +14,7 @@ project(OpenTodoList)
 
 # Include modules:
 include(cmake/options.cmake)
+include(cmake/global-variables.cmake)
 include(cmake/version.cmake)
 include(cmake/Flatpak.cmake)
 include(3rdparty/android-openssl/android_openssl.cmake)
@@ -37,8 +38,9 @@ find_package(
 )
 
 qt_policy(SET QTP0001 NEW)
+qt_policy(SET QTP0004 NEW)
 
-qt_standard_project_setup()
+qt_standard_project_setup(REQUIRES 6.8)
 
 # Convenience: Set the QT_INSTALL_PREFIX based on QT_DIR (which is set by the first find_package
 # call above. The QT_DIR is set to something like
@@ -128,9 +130,8 @@ install(
 
 # Include sub-directories:
 add_subdirectory(3rdparty)
-add_subdirectory(lib)
-add_subdirectory(app)
-if(NOT IOS)
+add_subdirectory(src)
+if(NOT IOS AND NOT ANDROID)
     add_subdirectory(test)
 endif()
 

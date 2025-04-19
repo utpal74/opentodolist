@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/OpenTodoList.icns</file>
+        <file>res/OpenTodoList.ico</file>
+        <file>res/COPYING</file>
+        <file>sample.png</file>
+        <file>icons/hicolor/128x128/apps/net.rpdev.OpenTodoList.png</file>
+        <file>icons/hicolor/16x16/apps/net.rpdev.OpenTodoList.png</file>
+        <file>icons/hicolor/256x256/apps/net.rpdev.OpenTodoList.png</file>
+        <file>icons/hicolor/32x32/apps/net.rpdev.OpenTodoList.png</file>
+        <file>icons/hicolor/64x64/apps/net.rpdev.OpenTodoList.png</file>
+        <file>OpenTodoList.notifyrc</file>
+        <file>translations/languages.json</file>
+        <file>icons/hicolor/128x128/apps/net.rpdev.OpenTodoList-Monochrome.png</file>
+        <file>icons/hicolor/16x16/apps/net.rpdev.OpenTodoList-Monochrome.png</file>
+        <file>icons/hicolor/256x256/apps/net.rpdev.OpenTodoList-Monochrome.png</file>
+        <file>icons/hicolor/32x32/apps/net.rpdev.OpenTodoList-Monochrome.png</file>
+        <file>icons/hicolor/64x64/apps/net.rpdev.OpenTodoList-Monochrome.png</file>
+        <file alias="ral.json">../3rdparty/ral-json/ral.json</file>
+    </qresource>
+</RCC>

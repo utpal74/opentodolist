@@ -14,8 +14,8 @@ doc/latex/
 *.qmlc
 *.jsc
 *~
-app/android/gradle.properties
-app/android/local.properties
+src/android/gradle.properties
+src/android/local.properties
 /build-*
 /deploy-*
 config.tests/*/Makefile
@@ -26,8 +26,8 @@ CMakeLists.txt.user*
 /fp-repo
 .flatpak-builder
 /ios-build
-app/android/.gradle/
-app/android/.idea/
+src/android/.gradle/
+src/android/.idea/
 /.vscode/
 /fedora-build-cmake
 /xwindeployqt
@@ -36,3 +36,4 @@ __pycache__
 .venv*
 .cache
 /OpenTodoList-*-Windows-64bit/
+**/.qmlls.ini
