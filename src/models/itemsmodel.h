@@ -26,11 +26,20 @@
 #include <QObject>
 #include <QPointer>
 #include <QTimer>
+#include <QtCore/qabstractitemmodel.h>
+#include <QtQml/qqmlregistration.h>
 
 #include "datamodel/item.h"
 #include "datastorage/cache.h"
 
 class GetItemsQuery;
+
+struct ForeignQAbstractItemModel
+{
+    Q_GADGET
+    QML_FOREIGN(QAbstractItemModel)
+    QML_NAMED_ELEMENT(QAbstractItemModel)
+};
 
 /**
  * @brief A model working on a Cache.
@@ -62,6 +71,7 @@ class ItemsModel : public QAbstractListModel
     Q_PROPERTY(QString itemType READ itemType WRITE setItemType NOTIFY itemTypeChanged)
     Q_PROPERTY(bool untaggedOnly READ untaggedOnly WRITE setUntaggedOnly NOTIFY untaggedOnlyChanged
                        FINAL)
+    QML_ELEMENT
 public:
     enum Roles {
         ItemRole = Qt::UserRole,

@@ -21,11 +21,15 @@
 #define SYNC_NEXTCLOUDACCOUNT_H_
 
 #include <QObject>
+#include <QtQml/qqmlregistration.h>
+#include <qqmlintegration.h>
+
 #include "webdavaccount.h"
 
 class NextCloudAccount : public WebDAVAccount
 {
     Q_OBJECT
+    QML_ELEMENT
 public:
     explicit NextCloudAccount(QObject* parent = nullptr);
 

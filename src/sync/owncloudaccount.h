@@ -21,12 +21,15 @@
 #define SYNC_OWNCLOUDACCOUNT_H_
 
 #include <QObject>
+#include <QtQml/qqmlregistration.h>
+#include <qqmlintegration.h>
 
 #include "webdavaccount.h"
 
 class OwnCloudAccount : public WebDAVAccount
 {
     Q_OBJECT
+    QML_ELEMENT
 public:
     explicit OwnCloudAccount(QObject* parent = nullptr);
 

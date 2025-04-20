@@ -21,6 +21,10 @@
 #define DATAMODEL_NOTEPAGE_H_
 
 #include <QObject>
+#include <QUuid>
+#include <QDir>
+#include <QString>
+#include <QtQml/qqmlregistration.h>
 
 #include "datamodel/complexitem.h"
 
@@ -28,6 +32,7 @@ class NotePage : public ComplexItem
 {
     Q_OBJECT
     Q_PROPERTY(QUuid noteUid READ noteUid WRITE setNoteUid NOTIFY noteUidChanged)
+    QML_NAMED_ELEMENT("NotePageItem")
 public:
     explicit NotePage(QObject* parent = nullptr);
     explicit NotePage(const QString& filename, QObject* parent = nullptr);

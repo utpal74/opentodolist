@@ -26,6 +26,7 @@
 #include <QObject>
 #include <QUuid>
 #include <QVariantMap>
+#include <QtQml/qqmlregistration.h>
 
 class Account;
 
@@ -47,6 +48,8 @@ class Synchronizer : public QObject
                        remoteDirectoryChanged)
     Q_PROPERTY(bool isNull READ isNull NOTIFY directoryChanged)
     Q_PROPERTY(QString type READ type CONSTANT)
+    QML_ELEMENT
+    QML_UNCREATABLE("Use concrete Synchronizer type")
 public:
     enum LogType {
         Debug,

@@ -22,6 +22,7 @@
 
 #include <QObject>
 #include <QQuickTextDocument>
+#include <QtQml/qqmlregistration.h>
 
 namespace KSyntaxHighlighting {
 class SyntaxHighlighter;
@@ -36,6 +37,7 @@ class SyntaxHighlighter : public QObject
     Q_OBJECT
     Q_PROPERTY(QQuickTextDocument* document READ document WRITE setDocument NOTIFY documentChanged)
     Q_PROPERTY(Theme theme READ theme WRITE setTheme NOTIFY themeChanged)
+    QML_ELEMENT
 public:
     enum Theme { Light, Dark };
 

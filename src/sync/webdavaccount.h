@@ -23,6 +23,8 @@
 #include <QObject>
 #include <QString>
 #include <QVariantMap>
+#include <QtQml/qqmlregistration.h>
+#include <qqmlintegration.h>
 
 #include "account.h"
 
@@ -42,6 +44,7 @@ class WebDAVAccount : public Account
                        setDisableCertificateChecks NOTIFY disableCertificateChecksChanged)
     Q_PROPERTY(QVariantMap backendSpecificData READ backendSpecificData WRITE setBackendSpecificData
                        NOTIFY backendSpecificDataChanged)
+    QML_ELEMENT
 public:
     explicit WebDAVAccount(QObject* parent = nullptr);
 

@@ -21,6 +21,7 @@
 #define SYNC_DROPBOXACCOUNT_H_
 
 #include <QObject>
+#include <QtQml/qqmlregistration.h>
 
 #include "account.h"
 
@@ -35,6 +36,8 @@ class DropboxAccount : public Account
     Q_OBJECT
 
     Q_PROPERTY(QString accessToken READ accessToken WRITE setAccessToken NOTIFY accessTokenChanged)
+
+    QML_ELEMENT
 
 public:
     explicit DropboxAccount(QObject* parent = nullptr);

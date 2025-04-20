@@ -29,6 +29,8 @@
 #include <QVariantMap>
 #include <QVector>
 
+#include <SynqClient/nextcloudloginflow.h>
+
 #include "datamodel/library.h"
 #include "sync/synchronizer.h"
 #include "utilities/problem.h"
@@ -36,6 +38,10 @@
 #include "sync/account.h"
 #include "sync/remotelibraryinfo.h"
 #include "datastorage/cache.h"
+
+Q_MOC_INCLUDE("datamodel/task.h")
+Q_MOC_INCLUDE("datamodel/todo.h")
+Q_MOC_INCLUDE("datamodel/notepage.h")
 
 class QRemoteObjectNode;
 class QTemporaryDir;
@@ -52,9 +58,12 @@ class Task;
 class Todo;
 class TodoList;
 
-namespace SynqClient {
-class NextCloudLoginFlow;
-}
+struct ForeignNextCloudLoginFlow
+{
+    Q_GADGET
+    QML_FOREIGN(SynqClient::NextCloudLoginFlow)
+    QML_NAMED_ELEMENT(NextCloudLoginFlow)
+};
 
 /**
  * @brief The main class of the application
@@ -74,6 +83,9 @@ class Application : public QObject
     Q_PROPERTY(QVariantMap syncErrors READ syncErrors NOTIFY syncErrorsChanged)
     Q_PROPERTY(QVariantMap syncProgress READ syncProgress NOTIFY syncProgressChanged)
     Q_PROPERTY(ProblemManager* problemManager READ problemManager CONSTANT)
+
+    QML_ELEMENT
+    QML_SINGLETON
 
 public:
     explicit Application(Cache* cache, QObject* parent = nullptr);

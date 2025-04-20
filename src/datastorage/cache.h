@@ -23,6 +23,7 @@
 #include <QObject>
 #include <QSharedPointer>
 #include <QVariant>
+#include <QtQml/qqmlregistration.h>
 
 // Forward declarations:
 namespace QLMDB {
@@ -54,6 +55,8 @@ class Cache : public QObject
     Q_OBJECT
     Q_PROPERTY(int numberOfRunningTransactions READ numberOfRunningTransactions WRITE
                        setNumberOfRunningTransactions NOTIFY numberOfRunningTransactionsChanged)
+    QML_ELEMENT
+    QML_UNCREATABLE("Use Application.cache instead")
 public:
     static const QByteArray RootId;
     static const QByteArray VersionKey;

@@ -21,6 +21,8 @@
 #define DATAMODEL_TASK_H_
 
 #include <QObject>
+#include <QUuid>
+#include <QtQml/qqmlregistration.h>
 
 #include "item.h"
 
@@ -37,6 +39,7 @@ class Task : public Item
 
     Q_PROPERTY(bool done READ done WRITE setDone NOTIFY doneChanged)
     Q_PROPERTY(QUuid todoUid READ todoUid WRITE setTodoUid NOTIFY todoUidChanged)
+    QML_ELEMENT
 
 public:
     explicit Task(QObject* parent = nullptr);

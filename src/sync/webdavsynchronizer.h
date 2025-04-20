@@ -24,6 +24,7 @@
 #include <QLoggingCategory>
 #include <QRegularExpression>
 #include <QtConcurrent>
+#include <QtQml/qqmlregistration.h>
 
 #include "sync/synqclientsynchronizer.h"
 
@@ -46,6 +47,7 @@ class WebDAVSynchronizer : public SynqClientSynchronizer
     Q_PROPERTY(WebDAVSynchronizer::WebDAVServerType serverType READ serverType WRITE setServerType
                        NOTIFY serverTypeChanged)
     Q_PROPERTY(int workarounds READ workarounds WRITE setWorkarounds NOTIFY workaroundsChanged)
+    QML_ELEMENT
 
 public:
     enum WebDAVServerType { Unknown = 0, Generic = 1, NextCloud = 2, OwnCloud = 3 };

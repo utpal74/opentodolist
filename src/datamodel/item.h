@@ -94,7 +94,7 @@ class Item : public QObject
     Q_PROPERTY(QDateTime updatedAt READ updatedAt NOTIFY updatedAtChanged)
     Q_PROPERTY(QDateTime effectiveUpdatedAt READ effectiveUpdatedAt NOTIFY updatedAtChanged)
     Q_PROPERTY(QVector<QUuid> parents READ parents NOTIFY parentsChanged)
-    QML_ELEMENT
+    QML_NAMED_ELEMENT("LibraryItem")
 
     friend class ItemChangedInhibitor;
 

@@ -22,12 +22,14 @@
 
 #include <QObject>
 #include <QQuickTextDocument>
+#include <QtQml/qqmlregistration.h>
 
 #include "syntaxhighlighting.h"
 
 class TextUtils : public QObject
 {
     Q_OBJECT
+    QML_ELEMENT
 
 public:
     explicit TextUtils(QObject* parent = nullptr);

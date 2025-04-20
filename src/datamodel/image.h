@@ -22,6 +22,7 @@
 
 #include <QObject>
 #include <QUrl>
+#include <QtQml/qqmlregistration.h>
 
 #include "toplevelitem.h"
 
@@ -31,6 +32,7 @@ class Image : public TopLevelItem
     Q_PROPERTY(QString image READ image WRITE setImage NOTIFY imageChanged)
     Q_PROPERTY(QUrl imageUrl READ imageUrl WRITE setImageUrl NOTIFY imageChanged)
     Q_PROPERTY(bool validImage READ validImage NOTIFY imageChanged)
+    QML_NAMED_ELEMENT("ImageItem")
 public:
     explicit Image(const QString& filename, QObject* parent = nullptr);
     explicit Image(QObject* parent = nullptr);

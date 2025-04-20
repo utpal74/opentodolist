@@ -22,11 +22,13 @@
 
 #include <QObject>
 #include <QUrl>
+#include <QtQml/qqmlregistration.h>
 
 class FileEditObserver : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(QUrl fileUrl READ fileUrl WRITE setFileUrl NOTIFY fileUrlChanged FINAL)
+    QML_ELEMENT
 
 public:
     explicit FileEditObserver(QObject* parent = nullptr);

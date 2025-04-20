@@ -25,6 +25,7 @@
 #include <QPalette>
 #include <QStyleHints>
 #include <QPointer>
+#include <QtQml/qqmlregistration.h>
 
 class Color
 {
@@ -52,6 +53,8 @@ class Colors : public QObject
     Q_OBJECT
     Q_PROPERTY(bool systemUsesDarkTheme READ systemUsesDarkTheme NOTIFY systemUsesDarkThemeChanged
                        FINAL)
+    QML_ELEMENT
+    QML_SINGLETON
 public:
     explicit Colors(QObject* parent = nullptr);
 

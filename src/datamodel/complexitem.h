@@ -24,6 +24,9 @@
 #include <QLoggingCategory>
 #include <QObject>
 #include <QFutureWatcher>
+#include <QString>
+#include <QStringList>
+#include <QtQml/qqmlregistration.h>
 
 #include "item.h"
 
@@ -55,6 +58,7 @@ class ComplexItem : public Item
     Q_PROPERTY(bool isRecurring READ isRecurring NOTIFY isRecurringChanged)
     Q_PROPERTY(bool newRecurrenceCreated READ newRecurrenceCreated WRITE setNewRecurrenceCreated
                        NOTIFY newRecurrenceCreatedChanged)
+    QML_ELEMENT
 
 public:
     /**

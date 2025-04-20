@@ -21,6 +21,7 @@
 #define DATAMODEL_TOPLEVELITEM_H_
 
 #include <QObject>
+#include <QtQml/qqmlregistration.h>
 
 #include "complexitem.h"
 
@@ -37,6 +38,7 @@ class TopLevelItem : public ComplexItem
     Q_PROPERTY(Color color READ color WRITE setColor NOTIFY colorChanged)
     Q_PROPERTY(QStringList tags READ tags WRITE setTags NOTIFY tagsChanged)
     Q_PROPERTY(QUuid libraryId READ libraryId WRITE setLibraryId NOTIFY libraryIdChanged)
+    QML_ELEMENT
 public:
     enum Color { White, Red, Green, Blue, Orange, Yellow, Lilac };
 

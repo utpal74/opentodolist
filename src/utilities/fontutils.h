@@ -23,10 +23,12 @@
 #include <QObject>
 #include <QFont>
 #include <QFontDatabase>
+#include <QtQml/qqmlregistration.h>
 
 class FontUtils : public QObject
 {
     Q_OBJECT
+    QML_ELEMENT
 public:
     /**
      * @brief Categories of system fonts that can be retrieved.

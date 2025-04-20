@@ -22,6 +22,7 @@
 
 #include <QObject>
 #include <QPointer>
+#include <QtQml/qqmlregistration.h>
 
 #include "toplevelitem.h"
 
@@ -36,6 +37,7 @@ class TodoList : public TopLevelItem
                        percentageDoneChanged)
     Q_PROPERTY(int numTodos READ numTodos WRITE setNumTodos NOTIFY numTodosChanged)
     Q_PROPERTY(int numDoneTodos READ numDoneTodos WRITE setNumDoneTodos NOTIFY numDoneTodosChanged)
+    QML_ELEMENT
 public:
     explicit TodoList(QObject* parent = nullptr);
     explicit TodoList(const QString& filename, QObject* parent = nullptr);

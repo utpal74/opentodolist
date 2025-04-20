@@ -25,12 +25,14 @@
 #include <QObject>
 #include <QSortFilterProxyModel>
 #include <QUuid>
+#include <QtQml/qqmlregistration.h>
 
 class ItemsSortFilterModel : public QSortFilterProxyModel
 {
     Q_OBJECT
     Q_PROPERTY(int count READ count NOTIFY countChanged)
     Q_PROPERTY(bool groupDone READ groupDone WRITE setGroupDone NOTIFY groupDoneChanged)
+    QML_ELEMENT
 public:
     explicit ItemsSortFilterModel(QObject* parent = nullptr);
 

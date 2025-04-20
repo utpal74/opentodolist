@@ -23,6 +23,7 @@
 #include <QObject>
 #include <QSharedPointer>
 #include <QUuid>
+#include <QtQml/qqmlregistration.h>
 
 /**
  * @brief Represents a problem detected by the application.
@@ -39,6 +40,7 @@ class Problem
     Q_PROPERTY(Problem::ProblemType type READ type CONSTANT)
     Q_PROPERTY(QObject* contextObject READ getContextObject CONSTANT)
     Q_PROPERTY(QString message READ message CONSTANT)
+    QML_VALUE_TYPE(problem)
 
 public:
     /**

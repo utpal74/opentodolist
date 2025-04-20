@@ -26,6 +26,7 @@
 #include <QString>
 #include <QVariantMap>
 #include <QColor>
+#include <QtQml/qqmlregistration.h>
 
 #include <functional>
 
@@ -79,6 +80,7 @@ class Library : public QObject
     Q_PROPERTY(QString directory READ directory CONSTANT)
     Q_PROPERTY(bool hasSynchronizer READ hasSynchronizer CONSTANT)
     Q_PROPERTY(bool isInDefaultLocation READ isInDefaultLocation CONSTANT)
+    QML_ELEMENT
 
     friend class Application;
 

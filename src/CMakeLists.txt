@@ -175,7 +175,7 @@ qt_add_repc_replicas(OpenTodoList service/backgroundservice.rep)
 target_compile_features(
     OpenTodoList
     PRIVATE
-        cxx_std_14
+        cxx_std_17
 )
 
 target_compile_options(

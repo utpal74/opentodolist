@@ -24,6 +24,7 @@
 #include <QJniObject>
 #include <QObject>
 #include <QUrl>
+#include <QtQml/qqmlregistration.h>
 
 /**
  * @brief Select files on Android via Intents.
@@ -35,6 +36,7 @@ class AndroidFileDialog : public QObject
     Q_OBJECT
     Q_PROPERTY(Type type READ type WRITE setType NOTIFY typeChanged)
     Q_PROPERTY(QObject* receiver READ receiver WRITE setReceiver NOTIFY receiverChanged)
+    QML_ELEMENT
 
 public:
     enum Type { SelectFile, SelectImage };

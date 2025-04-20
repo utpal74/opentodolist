@@ -25,6 +25,7 @@
 #include <QObject>
 #include <QPointer>
 #include <QUuid>
+#include <QtQml/qqmlregistration.h>
 
 class Cache;
 class Library;
@@ -41,6 +42,7 @@ class LibrariesModel : public QAbstractListModel
     Q_PROPERTY(Cache* cache READ cache WRITE setCache NOTIFY cacheChanged)
     Q_PROPERTY(int count READ count NOTIFY countChanged)
     Q_PROPERTY(QList<Library*> libraries READ libraries NOTIFY updateFinished)
+    QML_ELEMENT
 public:
     enum Roles { LibraryRole = Qt::UserRole, NameRole };
     Q_ENUM(Roles);

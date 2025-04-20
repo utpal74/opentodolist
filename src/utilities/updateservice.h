@@ -22,10 +22,12 @@
 
 #include <QLoggingCategory>
 #include <QObject>
+#include <QtQml/qqmlregistration.h>
 
 class UpdateService : public QObject
 {
     Q_OBJECT
+    QML_ELEMENT
 public:
     explicit UpdateService(QObject* parent = nullptr);
 

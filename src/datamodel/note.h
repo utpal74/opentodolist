@@ -21,6 +21,7 @@
 #define DATAMODEL_NOTE_H_
 
 #include <QObject>
+#include <QtQml/qqmlregistration.h>
 
 #include "toplevelitem.h"
 
@@ -34,6 +35,7 @@
 class Note : public TopLevelItem
 {
     Q_OBJECT
+    QML_ELEMENT
 public:
     explicit Note(QObject* parent = nullptr);
     explicit Note(const QString& filename, QObject* parent = nullptr);

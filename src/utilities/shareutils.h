@@ -22,6 +22,7 @@
 
 #include <QObject>
 #include <QScopedPointer>
+#include <QtQml/qqmlregistration.h>
 
 class PlatformShareUtils;
 class FileEditObserver;
@@ -32,6 +33,7 @@ class ShareUtils : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(bool canOpenFolders READ canOpenFolders CONSTANT)
+    QML_ELEMENT
 public:
     explicit ShareUtils(QObject* parent = nullptr);
     virtual ~ShareUtils();

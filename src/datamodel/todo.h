@@ -22,6 +22,7 @@
 
 #include <QObject>
 #include <QPointer>
+#include <QtQml/qqmlregistration.h>
 
 #include "complexitem.h"
 
@@ -45,6 +46,7 @@ class Todo : public ComplexItem
     Q_PROPERTY(int numTodos READ numSubtasks WRITE setNumSubtasks NOTIFY numSubtasksChanged)
     Q_PROPERTY(int numDoneTodos READ numDoneSubtasks WRITE setNumDoneSubtasks NOTIFY
                        numDoneSubtasksChanged)
+    QML_ELEMENT
 
 public:
     explicit Todo(const QString& filename, QObject* parent = nullptr);

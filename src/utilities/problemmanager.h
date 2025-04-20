@@ -23,6 +23,7 @@
 #include <QList>
 #include <QObject>
 #include <QVariantList>
+#include <QtQml/qqmlregistration.h>
 
 #include "problem.h"
 
@@ -34,6 +35,8 @@ class ProblemManager : public QObject
     Q_OBJECT
 
     Q_PROPERTY(QVariantList problems READ getProblems NOTIFY problemsChanged)
+    QML_ELEMENT
+    QML_UNCREATABLE("Use Application.problemManager instead")
 
 public:
     explicit ProblemManager(QObject* parent = nullptr);
