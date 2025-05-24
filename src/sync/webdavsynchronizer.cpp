@@ -48,7 +48,7 @@
 #include "webdavaccount.h"
 #include "webdavsynchronizer.h"
 
-#include "utils/networkutils.h"
+#include "utilities/networkutils.h"
 
 static Q_LOGGING_CATEGORY(log, "OpenTodoList.WebDAVSynchronizer", QtDebugMsg);
 

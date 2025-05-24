@@ -1,8 +1,8 @@
 import QtQuick 2.9
 
-import "../Components"
+import OpenTodoList.Components
 import OpenTodoList.Style as C
-import "../Utils"
+import OpenTodoList.Utils
 
 import OpenTodoList 1.0 as OTL
 

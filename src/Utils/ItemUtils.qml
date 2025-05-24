@@ -3,8 +3,7 @@ import QtQuick.Window 2.0
 
 import OpenTodoList 1.0 as OTL
 
-import "." as Utils
-import "../Windows" as Windows
+import OpenTodoList.Windows as Windows
 import OpenTodoList.Style as C
 
 Item {

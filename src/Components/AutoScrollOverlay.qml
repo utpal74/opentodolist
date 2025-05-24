@@ -1,6 +1,6 @@
 import QtQuick 2.5
 
-import "../Utils" as Utils
+import OpenTodoList.Utils as Utils
 
 
 /**

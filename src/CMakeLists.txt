@@ -476,7 +476,6 @@ set_source_files_properties(
         Utils/Colors.qml
         Utils/DateUtils.qml
         Utils/Markdown.qml
-        Utils/SyntaxHighlighter.qml
     PROPERTIES
         QT_QML_SINGLETON_TYPE TRUE
 )
@@ -548,27 +547,53 @@ qt_add_qml_module(
         Pages/TodoPage.qml
         Style/Action.qml
         Style/ApplicationWindow.qml
+        Style/BusyIndicator.qml
         Style/Button.qml
+        Style/ButtonGroup.qml
+        Style/CheckBox.qml
+        Style/CheckDelegate.qml
         Style/ColorTheme.qml
+        Style/ComboBox.qml
+        Style/DayOfWeekRow.qml
+        Style/Dialog.qml
+        Style/DialogButtonBox.qml
+        Style/Drawer.qml
         Style/DropShadow.qml
         Style/ErrorLabel.qml
         Style/Fonts.qml
+        Style/Frame.qml
+        Style/GroupBox.qml
         Style/Icons.qml
         Style/ItemDelegate.qml
         Style/Label.qml
         Style/Menu.qml
         Style/MenuItem.qml
+        Style/MenuSeparator.qml
+        Style/MonthGrid.qml
         Style/Page.qml
+        Style/Pane.qml
         Style/PasswordField.qml
+        Style/Popup.qml
+        Style/ProgressBar.qml
+        Style/RadioButton.qml
         Style/RoundButton.qml
+        Style/ScrollBar.qml
+        Style/ScrollIndicator.qml
+        Style/ScrollView.qml
+        Style/Slider.qml
+        Style/SpinBox.qml
         Style/StackView.qml
         Style/StyleSettings.qml
+        Style/SwipeDelegate.qml
         Style/Symbol.qml
+        Style/TabBar.qml
+        Style/TabButton.qml
         Style/TextArea.qml
         Style/TextField.qml
         Style/ToolBar.qml
         Style/ToolButton.qml
         Style/ToolTip.qml
+        Style/WeekNumberColumn.qml
         Utils/Accounts.qml
         Utils/AppSettings.qml
         Utils/Colors.qml
@@ -577,7 +602,6 @@ qt_add_qml_module(
         Utils/ItemUtils.qml
         Utils/Markdown.qml
         Utils/SortFilterModel.qml
-        Utils/SyntaxHighlighter.qml
         Widgets/ApplicationMenu.qml
         Widgets/Attachments.qml
         Widgets/BackgroundLabel.qml
@@ -608,7 +632,6 @@ qt_add_qml_module(
         Widgets/TodosWidget.qml
         Widgets/TodosWidgetDelegate.qml
         Widgets/UpdateNotificationBar.qml
-        Windows/+android/FolderSelectionDialog.qml
         Windows/AppWindow.qml
         Windows/CenteredDialog.qml
         Windows/ColorSelectionDialog.qml
@@ -617,7 +640,6 @@ qt_add_qml_module(
         Windows/DeleteCompletedItemsDialog.qml
         Windows/DeleteItemDialog.qml
         Windows/DeleteLibraryDialog.qml
-        Windows/FolderSelectionDialog.qml
         Windows/MainWindow.qml
         Windows/NewItemWithDueDateDialog.qml
         Windows/QuickNoteWindow.qml
@@ -630,7 +652,6 @@ qt_add_qml_module(
         Windows/SelectTopLevelItemDialog.qml
         Windows/StackViewWindow.qml
         Windows/WebViewDialog.qml
-        #qml.qrc
     RESOURCES
         Utils/text-style.css
         Style/Oxygen/Oxygen-Regular.ttf

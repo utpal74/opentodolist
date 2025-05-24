@@ -1,7 +1,7 @@
 import QtQuick
 import QtQuick.Controls.Basic as Basic
 
-import "../../Utils" as Utils
+import OpenTodoList.Utils as Utils
 
 import OpenTodoList.Style as C
 

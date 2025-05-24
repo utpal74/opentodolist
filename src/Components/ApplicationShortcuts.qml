@@ -1,7 +1,6 @@
 import QtQuick
 import OpenTodoList.Style as C
-import "../Pages" as Pages
-import "../"
+import OpenTodoList.Pages as Pages
 
 import OpenTodoList as OTL
 

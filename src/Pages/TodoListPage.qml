@@ -4,14 +4,14 @@ import QtCore
 
 import OpenTodoList as OTL
 
-import "../Components"
-import "../Components/Tooltips" as Tooltips
 import OpenTodoList.Style as C
-import "../Windows"
-import "../Widgets"
-import "../Utils"
-import "../Menues"
-import "../Actions" as Actions
+import OpenTodoList.Components
+import OpenTodoList.Components.Tooltips as Tooltips
+import OpenTodoList.Windows
+import OpenTodoList.Widgets
+import OpenTodoList.Utils
+import OpenTodoList.Menues
+import OpenTodoList.Actions as Actions
 
 ItemPage {
     id: page

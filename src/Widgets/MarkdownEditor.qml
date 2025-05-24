@@ -2,9 +2,9 @@ import QtQuick 2.5
 
 import OpenTodoList 1.0 as OTL
 
-import "../Components" as Components
+import OpenTodoList.Components as Components
 import OpenTodoList.Style as C
-import "../Utils"
+import OpenTodoList.Utils
 
 Column {
     id: editor

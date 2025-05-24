@@ -4,10 +4,10 @@ import Qt.labs.platform 1.0
 
 import OpenTodoList 1.0 as OTL
 
-import "../Components"
+import OpenTodoList.Components
 import OpenTodoList.Style as C
-import "../Pages"
-import "../Utils"
+import OpenTodoList.Pages
+import OpenTodoList.Utils
 
 Column {
     id: root

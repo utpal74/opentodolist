@@ -157,3 +157,17 @@ file(GLOB_RECURSE
         test/*
 )
 add_custom_target(OtherFiles SOURCES ${OTHER_FILES})
+
+# Add a custom target which runs qmllint first and then out
+# CMake script which will read the JSON output and print it formatted
+# lile GCC/Clang warning messages. This way, tools like VSCode will properly
+# pick these up:
+add_custom_target(
+    qmllint
+    DEPENDS
+        all_qmllint_json
+    COMMAND
+        ${CMAKE_COMMAND}
+            -DJSON_FILE=${CMAKE_CURRENT_BINARY_DIR}/OpenTodoList_qmllint.json
+            -P ${CMAKE_SOURCE_DIR}/bin/qmllintjson2compilerwarnings.cmake
+)

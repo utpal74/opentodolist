@@ -1,9 +1,9 @@
 import QtQuick 2.9
 import QtQuick.Layouts 1.3
 
-import "../Components"
+import OpenTodoList.Components
 import OpenTodoList.Style as C
-import "../Utils" as Utils
+import OpenTodoList.Utils as Utils
 
 C.ItemDelegate {
     id: root

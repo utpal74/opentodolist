@@ -1,7 +1,7 @@
 import QtQuick 2.0
 
 import OpenTodoList.Style as C
-import "../Windows" as W
+import OpenTodoList.Windows as W
 
 Item {
     property C.StackView stackView: null

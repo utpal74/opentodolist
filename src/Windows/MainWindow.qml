@@ -4,12 +4,12 @@ import QtQuick.Layouts 1.1
 import Qt.labs.qmlmodels 1.0
 import QtCore
 
-import "../Components"
+import OpenTodoList.Components
 import OpenTodoList.Style as C
-import "../Widgets"
-import "../Menues"
-import "../Pages"
-import "../Utils"
+import OpenTodoList.Widgets
+import OpenTodoList.Menues
+import OpenTodoList.Pages
+import OpenTodoList.Utils
 
 import OpenTodoList 1.0 as OTL
 

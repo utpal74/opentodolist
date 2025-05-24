@@ -3,7 +3,7 @@ import QtQuick.Controls.Basic as Basic
 
 import OpenTodoList as OTL
 
-import "../../Utils" as Utils
+import OpenTodoList.Utils as Utils
 
 Basic.Label {
     wrapMode: Text.WrapAtWordBoundaryOrAnywhere

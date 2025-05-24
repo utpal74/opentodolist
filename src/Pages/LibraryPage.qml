@@ -1,15 +1,15 @@
 import QtQuick 2.10
 import QtQuick.Layouts 1.1
 import QtCore
-import "../Dialogs" as Dialogs
 
 import OpenTodoList 1.0 as OTL
 
-import "../Menues"
-import "../Components"
-import "../Widgets"
-import "../Windows"
-import "../Utils"
+import OpenTodoList.Dialogs as Dialogs
+import OpenTodoList.Menues
+import OpenTodoList.Components
+import OpenTodoList.Widgets
+import OpenTodoList.Windows
+import OpenTodoList.Utils
 import OpenTodoList.Style as C
 
 C.Page {

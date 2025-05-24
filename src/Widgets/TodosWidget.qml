@@ -3,10 +3,10 @@ import QtQuick.Layouts 1.1
 
 import OpenTodoList 1.0 as OTL
 
-import "../Components" as Components
+import OpenTodoList.Components as Components
 import OpenTodoList.Style as C
-import "../Utils"
-import "../Windows"
+import OpenTodoList.Utils
+import OpenTodoList.Windows
 
 ListView {
     id: root

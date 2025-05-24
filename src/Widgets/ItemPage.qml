@@ -2,10 +2,10 @@ import QtQuick 2.0
 
 import OpenTodoList 1.0 as OTL
 
-import "../Utils" as Utils
+import OpenTodoList.Utils as Utils
 import OpenTodoList.Style as C
-import "../Menues" as Menues
-import "../Windows" as W
+import OpenTodoList.Menues as Menues
+import OpenTodoList.Windows as W
 
 C.Page {
     id: page

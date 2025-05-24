@@ -1,11 +1,9 @@
-import QtQuick 2.0
-import "../Components" as Components
-import "../Utils" as Utils
+import OpenTodoList.Components as Components
 import OpenTodoList.Style as C
 
 Components.ItemAction {
     symbol: C.Icons.mdiTrackChanges
     text: qsTr("Set Progress")
-    onTriggered: item.progress = 0
-    enabled: item && item.progress < 0
+    onTriggered: todoItem.progress = 0
+    enabled: todoItem && todoItem.progress < 0
 }

@@ -1,10 +1,10 @@
 import QtQuick 2.10
 import QtQuick.Layouts 1.1
 
-import "../Components" as Components
+import OpenTodoList.Components as Components
 import OpenTodoList.Style as C
-import "../Windows"
-import "../Utils" as Utils
+import OpenTodoList.Windows
+import OpenTodoList.Utils as Utils
 
 import OpenTodoList 1.0 as OTL
 
@@ -79,8 +79,11 @@ C.Page {
 
 
                 /* On iOS, we currently have no notion of a "file system" in that sense. So
-                  don't even show this to the user. */
-                visible: Qt.platform.os !== "ios"
+                  don't even show this to the user. Same on Android, the system
+                  meanwhile uses an equally strict sandboxing, so trying to let the
+                  user create libraries in a custom location simply doesn't make sense
+                  for now. */
+                visible: Qt.platform.os !== "ios" && Qt.platform.os != "android"
             }
 
             Components.Heading {

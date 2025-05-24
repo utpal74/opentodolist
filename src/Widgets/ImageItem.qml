@@ -1,17 +1,18 @@
 import QtQuick 2.0
+import QtQuick 2.0 as Quick
 import QtQuick.Layouts 1.1
 
 import OpenTodoList 1.0 as OTL
 import OpenTodoList.Style as C
 
-import "../Components" as Components
-import "../Utils"
+import OpenTodoList.Components as Components
+import OpenTodoList.Utils
 
 MouseArea {
     id: item
 
     property OTL.Library library: null
-    property OTL.ImageItem libraryItem: OTL.ImageItem {}
+    property OTL.Image libraryItem: OTL.Image {}
     property var model
     property bool allowReordering: true
 
@@ -28,10 +29,10 @@ MouseArea {
         anchors.margins: AppSettings.smallSpace
         item: item.libraryItem
 
-        Image {
+        Quick.Image {
             source: item.libraryItem.imageUrl
             anchors.fill: parent
-            fillMode: Image.PreserveAspectFit
+            fillMode: Quick.Image.PreserveAspectFit
         }
     }
 

@@ -32,7 +32,7 @@ class NotePage : public ComplexItem
 {
     Q_OBJECT
     Q_PROPERTY(QUuid noteUid READ noteUid WRITE setNoteUid NOTIFY noteUidChanged)
-    QML_NAMED_ELEMENT("NotePageItem")
+    QML_NAMED_ELEMENT(NotePageItem)
 public:
     explicit NotePage(QObject* parent = nullptr);
     explicit NotePage(const QString& filename, QObject* parent = nullptr);

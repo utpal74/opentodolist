@@ -3,7 +3,7 @@ import QtQuick.Layouts 1.0
 
 import OpenTodoList.Style as C
 import OpenTodoList 1.0 as OTL
-import "../../Utils" as Utils
+import OpenTodoList.Utils as Utils
 
 ActionableToolTip {
     id: tooltip

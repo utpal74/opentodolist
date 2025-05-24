@@ -2,7 +2,7 @@ import QtQuick 2.0
 
 import OpenTodoList 1.0 as OTL
 
-import "../Utils" as Utils
+import OpenTodoList.Utils as Utils
 import OpenTodoList.Style as C
 
 C.ScrollView {

@@ -1,8 +1,8 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.12
 import OpenTodoList 1.0 as OTL
-import "../Components"
-import "../Utils"
+import OpenTodoList.Components
+import OpenTodoList.Utils
 
 Item {
     id: root

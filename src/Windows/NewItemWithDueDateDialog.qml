@@ -6,10 +6,10 @@ import QtCore
 
 import OpenTodoList 1.0 as OTL
 
-import "../Components"
+import OpenTodoList.Components
 import OpenTodoList.Style as C
-import "../Utils"
-import "."
+import OpenTodoList.Utils
+import OpenTodoList.Windows
 
 CenteredDialog {
     id: dialog

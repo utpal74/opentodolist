@@ -3,11 +3,11 @@ import QtQuick.Layouts 1.3
 
 import OpenTodoList 1.0 as OTL
 
-import "../Components"
+import OpenTodoList.Components
 import OpenTodoList.Style as C
-import "../Utils"
-import "../Windows"
-import "../Dialogs" as Dialogs
+import OpenTodoList.Utils
+import OpenTodoList.Windows
+import OpenTodoList.Dialogs as Dialogs
 
 Item {
     id: item

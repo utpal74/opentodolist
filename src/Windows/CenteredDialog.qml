@@ -1,6 +1,6 @@
 import QtQuick 2.10
 
-import "../Components"
+import OpenTodoList.Components
 import OpenTodoList.Style as C
 
 C.Dialog {

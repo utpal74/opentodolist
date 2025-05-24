@@ -3,12 +3,12 @@ import QtQuick.Layouts 1.1
 
 import OpenTodoList 1.0 as OTL
 
-import "../Components" as Components
-import "../Components/Tooltips" as Tooltips
+import OpenTodoList.Components as Components
+import OpenTodoList.Components.Tooltips as Tooltips
 import OpenTodoList.Style as C
-import "../Utils"
-import "../Windows"
-import "../Actions" as Actions
+import OpenTodoList.Utils
+import OpenTodoList.Windows
+import OpenTodoList.Actions as Actions
 
 C.SwipeDelegate {
     id: swipeDelegate

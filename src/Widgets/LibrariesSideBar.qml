@@ -1,10 +1,10 @@
 import QtQuick 2.5
 import QtCore
 
-import "../Components"
+import OpenTodoList.Components
 import OpenTodoList.Style as C
-import "../Utils"
-import "../Pages" as Pages
+import OpenTodoList.Utils
+import OpenTodoList.Pages as Pages
 
 import OpenTodoList 1.0 as OTL
 

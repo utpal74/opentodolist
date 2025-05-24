@@ -3,8 +3,8 @@ import QtQuick.Layouts 1.0
 import Qt.labs.qmlmodels 1.0
 
 import OpenTodoList.Style as C
-import "../Utils" as Utils
-import "../Widgets" as Widgets
+import OpenTodoList.Utils as Utils
+import OpenTodoList.Widgets as Widgets
 
 import OpenTodoList 1.0 as OTL
 

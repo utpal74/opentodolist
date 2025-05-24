@@ -3,7 +3,7 @@ import QtQml
 
 import OpenTodoList 1.0 as OTL
 
-import "../Utils"
+import OpenTodoList.Utils
 import OpenTodoList.Style as C
 
 Item {

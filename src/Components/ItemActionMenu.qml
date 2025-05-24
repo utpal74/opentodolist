@@ -1,7 +1,7 @@
 import QtQuick 2.0
 
 import OpenTodoList.Style as C
-import "." as Components
+import OpenTodoList.Components as Components
 
 C.Menu {
     property alias actions: repeater.model

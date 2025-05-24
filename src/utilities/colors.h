@@ -53,7 +53,7 @@ class Colors : public QObject
     Q_OBJECT
     Q_PROPERTY(bool systemUsesDarkTheme READ systemUsesDarkTheme NOTIFY systemUsesDarkThemeChanged
                        FINAL)
-    QML_ELEMENT
+    QML_NAMED_ELEMENT(ColorUtils)
     QML_SINGLETON
 public:
     explicit Colors(QObject* parent = nullptr);

@@ -3,12 +3,12 @@ import QtQuick.Layouts 1.0
 
 import OpenTodoList 1.0 as OTL
 
-import "../Components"
-import "../Windows"
-import "../Widgets"
-import "../Utils"
-import "../Menues"
-import "../Actions" as Actions
+import OpenTodoList.Components
+import OpenTodoList.Windows
+import OpenTodoList.Widgets
+import OpenTodoList.Utils
+import OpenTodoList.Menues
+import OpenTodoList.Actions as Actions
 import OpenTodoList.Style as C
 
 ItemPage {

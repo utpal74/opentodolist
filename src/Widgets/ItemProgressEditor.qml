@@ -3,10 +3,10 @@ import QtQuick.Layouts 1.3
 
 import OpenTodoList 1.0 as OTL
 
-import "../Components"
+import OpenTodoList.Components
 import OpenTodoList.Style as C
-import "../Utils"
-import "../Windows"
+import OpenTodoList.Utils
+import OpenTodoList.Windows
 
 RowLayout {
     id: root

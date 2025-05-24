@@ -1,11 +1,10 @@
-import QtQuick 2.0
-import "../Components" as Components
-import "../Utils" as Utils
+import OpenTodoList.Components as Components
+import OpenTodoList.Utils as Utils
 import OpenTodoList.Style as C
 
 Components.ItemAction {
     symbol: C.Icons.mdiCalendarViewWeek
     text: qsTr("Set Due This Week")
-    onTriggered: item.dueTo = Utils.DateUtils.endOfThisWeek()
-    enabled: item && item.dueTo !== undefined
+    onTriggered: complexItem.dueTo = Utils.DateUtils.endOfThisWeek()
+    enabled: complexItem && complexItem.dueTo !== undefined
 }

@@ -1,10 +1,10 @@
 import QtQuick 2.4
 import QtQuick.Layouts 1.3
 
-import "../Components"
+import OpenTodoList.Components
 import OpenTodoList.Style as C
-import "../Utils" as Utils
-import "../Windows" as Windows
+import OpenTodoList.Utils as Utils
+import OpenTodoList.Windows as Windows
 
 import OpenTodoList 1.0 as OTL
 

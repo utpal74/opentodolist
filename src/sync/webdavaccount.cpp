@@ -31,7 +31,7 @@
 
 #include "datamodel/library.h"
 #include "sync/webdavsynchronizer.h"
-#include "utils/networkutils.h"
+#include "utilities/networkutils.h"
 
 /**
  * @brief An account used to connect to a WebDAV server.

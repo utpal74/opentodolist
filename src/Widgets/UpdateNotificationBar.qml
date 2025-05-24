@@ -1,7 +1,7 @@
 import QtQuick 2.10
 import QtQuick.Layouts 1.3
 
-import "../Components"
+import OpenTodoList.Components
 import OpenTodoList.Style as C
 
 import OpenTodoList 1.0 as OTL

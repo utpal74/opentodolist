@@ -1,7 +1,7 @@
 import QtQuick 2.12
 
 import OpenTodoList.Style as C
-import "../Utils" as Utils
+import OpenTodoList.Utils as Utils
 
 C.Label {
     property int level: 1

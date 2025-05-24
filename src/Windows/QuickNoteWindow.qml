@@ -3,9 +3,9 @@ import QtQuick.Window 2.0
 import QtQuick.Layouts 1.0
 import QtCore
 
-import "../Components" as Components
+import OpenTodoList.Components as Components
 import OpenTodoList.Style as C
-import "../Utils" as Utils
+import OpenTodoList.Utils as Utils
 
 import OpenTodoList 1.0 as OTL
 

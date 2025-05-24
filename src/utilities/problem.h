@@ -81,6 +81,27 @@ private:
     QString m_message;
 };
 
-Q_DECLARE_METATYPE(Problem)
+/**
+ * @brief Expose enums from Problem.
+ *
+ * This class is needed to expose enums to the QML world (as Problem is a value
+ * type).
+ */
+class ProblemDerived : public Problem
+{
+    Q_GADGET
+};
+
+/**
+ * @brief Expose Enums of Problem to QML.
+ *
+ * This namespace is used to expose enums defined within the Problem
+ * value class to QML.
+ */
+namespace ProblemDerivedForeign {
+Q_NAMESPACE
+QML_NAMED_ELEMENT(Problem)
+QML_FOREIGN_NAMESPACE(ProblemDerived)
+}
 
 #endif // UTILS_PROBLEM_H_

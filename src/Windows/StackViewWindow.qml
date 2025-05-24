@@ -1,9 +1,9 @@
 import QtQuick
 
 import OpenTodoList.Style as C
-import "../Components" as Cmp
-import "../Widgets" as W
-import "../Utils" as U
+import OpenTodoList.Components as Cmp
+import OpenTodoList.Widgets as W
+import OpenTodoList.Utils as U
 
 AppWindow {
     id: window

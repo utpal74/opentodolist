@@ -3,10 +3,11 @@ import QtQuick.Layouts 1.0
 
 import OpenTodoList 1.0 as OTL
 
-import "../Components"
+import OpenTodoList.Components
 import OpenTodoList.Style as C
+import OpenTodoList.Windows as W
 
-CenteredDialog {
+W.CenteredDialog {
     id: root
 
     readonly property OTL.Library library: comboBox.currentValue

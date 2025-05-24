@@ -2,7 +2,7 @@ import QtQuick 2.10
 
 import OpenTodoList 1.0 as OTL
 
-import "../Utils"
+import OpenTodoList.Utils
 
 MouseArea {
     id: dragTile

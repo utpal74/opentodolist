@@ -2,7 +2,7 @@ import QtQuick 2.0
 
 import OpenTodoList 1.0 as OTL
 
-import "../Components" as Components
+import OpenTodoList.Components as Components
 import OpenTodoList.Style as C
 
 CenteredDialog {

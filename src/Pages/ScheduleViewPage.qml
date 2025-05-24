@@ -2,13 +2,13 @@ import QtQuick 2.10
 import QtQuick.Layouts 1.3
 
 import OpenTodoList 1.0 as OTL
-
-import "../Components"
 import OpenTodoList.Style as C
-import "../Menues"
-import "../Utils"
-import "../Widgets"
-import "../Windows"
+
+import OpenTodoList.Components
+import OpenTodoList.Menues
+import OpenTodoList.Utils
+import OpenTodoList.Widgets
+import OpenTodoList.Windows
 
 C.Page {
     id: page

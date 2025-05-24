@@ -1,9 +1,9 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 
-import "../Components" as Components
+import OpenTodoList.Components as Components
 import OpenTodoList.Style as C
-import "../Utils" as Utils
+import OpenTodoList.Utils as Utils
 
 C.Pane {
     id: root

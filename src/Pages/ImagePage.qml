@@ -1,20 +1,21 @@
-import QtQuick 2.5
+import QtQuick
+import QtQuick as Quick
 
 import OpenTodoList 1.0 as OTL
 
-import "../Components"
-import "../Windows"
-import "../Widgets"
-import "../Utils"
-import "../Menues"
-import "../Actions" as Actions
+import OpenTodoList.Components
+import OpenTodoList.Windows
+import OpenTodoList.Widgets
+import OpenTodoList.Utils
+import OpenTodoList.Menues
+import OpenTodoList.Actions as Actions
 import OpenTodoList.Style as C
 
 ItemPage {
     id: page
 
     property var library: null
-    property OTL.ImageItem item: OTL.ImageItem {}
+    property OTL.Image item: OTL.Image {}
 
     signal closePage
     signal openPage(var component, var properties)
@@ -152,7 +153,7 @@ ItemPage {
                     width: parent.width
                     height: image.height + padding * 2
 
-                    Image {
+                    Quick.Image {
                         id: image
 
                         source: item.imageUrl

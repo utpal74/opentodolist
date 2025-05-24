@@ -3,8 +3,8 @@ import QtQuick.Layouts 1.1
 
 import OpenTodoList 1.0 as OTL
 
-import "../Components" as Components
-import "../Utils" as Utils
+import OpenTodoList.Components as Components
+import OpenTodoList.Utils as Utils
 import OpenTodoList.Style as C
 
 C.Page {

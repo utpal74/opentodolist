@@ -1,7 +1,7 @@
 import QtQuick 2.10
 
-import "." as Components
-import "../Utils" as Utils
+import OpenTodoList.Components as Components
+import OpenTodoList.Utils as Utils
 import OpenTodoList.Style as C
 
 Item {

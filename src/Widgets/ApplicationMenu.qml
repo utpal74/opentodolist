@@ -3,7 +3,7 @@ import Qt.labs.platform as P
 
 import OpenTodoList 1.0 as OTL
 import OpenTodoList.Style as C
-import "../Components" as Cmp
+import OpenTodoList.Components as Cmp
 
 P.MenuBar {
     id: menuBar
