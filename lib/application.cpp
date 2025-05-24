@@ -79,6 +79,7 @@
 #include "utils/jsonutils.h"
 #include "utils/keystore.h"
 #include "utils/urlhandler.h"
+#include "utils/networkutils.h"
 
 static Q_LOGGING_CATEGORY(log, "OpenTodoList.Application", QtDebugMsg);
 
@@ -1358,15 +1359,10 @@ bool Application::libraryExists(const QUuid& uid)
 SynqClient::NextCloudLoginFlow* Application::createNextCloudLoginFlow(bool ignoreSslErrors) const
 {
     auto result = new SynqClient::NextCloudLoginFlow();
-    auto nam = new QNetworkAccessManager(result);
+    auto nam = new NetworkUtils::NetworkAccessManager(result);
+    nam->setDefaultIgnoreSslErrors(ignoreSslErrors);
     result->setNetworkAccessManager(nam);
     result->setUserAgent(Synchronizer::HTTPUserAgent);
-    if (ignoreSslErrors) {
-        connect(nam, &QNetworkAccessManager::sslErrors, result,
-                [=](QNetworkReply* reply, const QList<QSslError>& errors) {
-                    reply->ignoreSslErrors(errors);
-                });
-    }
     return result;
 }
 

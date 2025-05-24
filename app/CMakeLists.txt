@@ -134,7 +134,7 @@ target_compile_options(
     OpenTodoList
     PRIVATE
         $<$<CXX_COMPILER_ID:MSVC>:/W4 /WX>
-        $<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-Wall -Werror>
+        $<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-Wall -Werror -Wno-error=deprecated-declarations>
 )
 
 target_compile_features(
