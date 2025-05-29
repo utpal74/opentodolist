@@ -2,5 +2,7 @@ import QtQuick
 import QtQuick.Controls.Basic as Basic
 
 Basic.ToolBar {
-    palette.text: ColorTheme.textColorForBackgroundColor(palette.button)
+    Component.onCompleted: palette.text = Qt.binding(function() {
+        return ColorTheme.textColorForBackgroundColor(palette.button);
+    })
 }

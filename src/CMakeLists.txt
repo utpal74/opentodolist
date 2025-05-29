@@ -76,8 +76,6 @@ target_sources(
         models/itemssortfiltermodel.h
         models/librariesmodel.cpp
         models/librariesmodel.h
-        opentodolistqmlextensionsplugin.cpp
-        opentodolistqmlextensionsplugin.h
         service/backgroundservice.cpp
         service/backgroundservice.h
         sync/account.cpp
@@ -572,6 +570,8 @@ qt_add_qml_module(
         Style/MonthGrid.qml
         Style/Page.qml
         Style/Pane.qml
+        Style/MenuBar.qml
+        Style/SwitchDelegate.qml
         Style/PasswordField.qml
         Style/Popup.qml
         Style/ProgressBar.qml

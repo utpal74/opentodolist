@@ -38,7 +38,6 @@ class SyntaxHighlighter : public QObject
     Q_PROPERTY(QQuickTextDocument* document READ document WRITE setDocument NOTIFY documentChanged)
     Q_PROPERTY(Theme theme READ theme WRITE setTheme NOTIFY themeChanged)
     QML_ELEMENT
-    QML_SINGLETON
 public:
     enum Theme { Light, Dark };
 

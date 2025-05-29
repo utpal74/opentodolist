@@ -53,7 +53,6 @@
 
 #include "application.h"
 #include "datastorage/cache.h"
-#include "opentodolistqmlextensionsplugin.h"
 #include "service/backgroundservice.h"
 
 #ifdef OTL_USE_SINGLE_APPLICATION
@@ -95,7 +94,6 @@ private:
     QCommandLineParser m_parser;
     QQmlApplicationEngine* m_engine;
     OpenTodoList::Translations* m_translations;
-    OpenTodoListQmlExtensionsPlugin m_qmlPlugin;
     UrlHandler m_urlHandler;
 
     void setupGlobals();

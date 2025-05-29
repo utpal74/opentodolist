@@ -28,6 +28,7 @@
 #include <QTimer>
 #include <QtCore/qabstractitemmodel.h>
 #include <QtQml/qqmlregistration.h>
+#include <qqmlintegration.h>
 
 #include "datamodel/item.h"
 #include "datastorage/cache.h"
@@ -39,6 +40,7 @@ struct ForeignQAbstractItemModel
     Q_GADGET
     QML_FOREIGN(QAbstractItemModel)
     QML_NAMED_ELEMENT(QAbstractItemModel)
+    QML_UNCREATABLE("This is an abstract base type - it shall be be created directly")
 };
 
 /**

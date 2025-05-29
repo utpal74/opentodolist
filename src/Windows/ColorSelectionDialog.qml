@@ -29,7 +29,7 @@ CenteredDialog {
         height: dialog.availableHeight
         clip: true
         C.ScrollIndicator.vertical: C.ScrollIndicator {}
-        model: OTL.Colors.loadColors()
+        model: OTL.ColorUtils.loadColors()
         delegate: C.CheckDelegate {
             id: control
             text: modelData.name

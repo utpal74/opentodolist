@@ -18,6 +18,7 @@
  */
 
 #include "appstartup.h"
+#include "application.h"
 
 #ifdef Q_OS_ANDROID
 #    include <private/qandroidextras_p.h>
@@ -52,10 +53,8 @@ AppStartup::AppStartup()
       m_parser(),
       m_engine(nullptr),
       m_translations(nullptr),
-      m_qmlPlugin(),
       m_urlHandler()
 {
-    m_qmlPlugin.registerTypes("OpenTodoList");
 }
 
 AppStartup::~AppStartup()
@@ -298,8 +297,7 @@ void AppStartup::startGUI()
 #ifdef Q_OS_ANDROID
     m_application->setPropagateCacheEventsFromBackgroundService(true);
 #endif
-    m_qmlPlugin.setApplication(m_application);
-    m_qmlPlugin.registerTypes("OpenTodoList");
+    Application::setApplicationInstance(m_application);
 
     m_engine->rootContext()->setContextProperty("application", m_app);
     m_engine->rootContext()->setContextProperty("applicationVersion",

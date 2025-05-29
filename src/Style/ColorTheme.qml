@@ -6,7 +6,7 @@ import QtCore
 import OpenTodoList as OTL
 
 Item {
-    id: palette
+    id: colorPalette
 
     enum Theme {
         Light,
@@ -40,7 +40,7 @@ Item {
             }
             case ColorTheme.Theme.System:
             {
-                return OTL.Colors.systemUsesDarkTheme
+                return OTL.ColorUtils.systemUsesDarkTheme
             }
         }
     }
@@ -97,69 +97,70 @@ Item {
         ////////////////////////////////////////////////////////////////////////////////////////////
 
         // A general background color.
-        window: eggshell
+        window: colorPalette.eggshell
 
         // A general foreground color.
-        windowText: raisinBlack
+        windowText: colorPalette.raisinBlack
 
         // Used mostly as the background color for text entry widgets, but can also be used for
         // other painting - such as the background of combobox drop down lists and toolbar handles. It
         //is usually white or another light color.
-        base: parchment
+        base: colorPalette.parchment
 
         // Used as the alternate background color in views with alternating row colors (see
         // QAbstractItemView::setAlternatingRowColors()).
-        alternateBase: platinum
+        alternateBase: colorPalette.platinum
 
         // Used as the background color for QToolTip and QWhatsThis. Tool tips use the Inactive
         // color group of QPalette, because tool tips are not active windows.
-        toolTipBase: eggshell
+        toolTipBase: colorPalette.eggshell
 
         // Used as the foreground color for QToolTip and QWhatsThis. Tool tips use the Inactive
         // color group of QPalette, because tool tips are not active windows.
-        toolTipText: raisinBlack
+        toolTipText: colorPalette.raisinBlack
 
         // Used as the placeholder color for various text input widgets. This enum value has been
         // introduced in Qt 5.12
-        placeholderText: paynesGray
+        placeholderText: colorPalette.paynesGray
 
         // The foreground color used with Base. This is usually the same as the WindowText, in
         // which case it must provide good contrast with Window and Base.
-        text: raisinBlack
+        text: colorPalette.raisinBlack
 
         // The general button background color. This background can be different from Window as
         // some styles require a different background color for buttons.
-        button: lightThemePrimary
+        button: colorPalette.lightThemePrimary
 
         // A foreground color used with the Button color.
-        buttonText: textColorForBackgroundColor(lightThemePrimary)
+        buttonText: colorPalette.textColorForBackgroundColor(colorPalette.lightThemePrimary)
 
         // A text color that is very different from WindowText, and contrasts well with e.g. Dark.
         // Typically used for text that needs to be drawn where Text or WindowText would give poor
         // contrast, such as on pressed push buttons. Note that text colors can be used for things
         // other than just words; text colors are usually used for text, but it's quite common to
         // use the text color roles for lines, icons, etc.
-        brightText: textColorForBackgroundColor(getDarkColorFromButtonColor(
-                                                    lightThemePrimary, false))
+        brightText: colorPalette.textColorForBackgroundColor(
+            colorPalette.getDarkColorFromButtonColor(
+                colorPalette.lightThemePrimary, false))
 
         ////////////////////////////////////////////////////////////////////////////////////////////
         // Used for painting 3D bevels and shadow effects.
         ////////////////////////////////////////////////////////////////////////////////////////////
 
         // Lighter than Button color.
-        light: getLightColorFromButtonColor(lightThemePrimary, false)
+        light: colorPalette.getLightColorFromButtonColor(colorPalette.lightThemePrimary, false)
 
         // Between Button and Light.
-        midlight: getMidColorFromButtonColor(lightThemePrimary, false)
+        midlight: colorPalette.getMidColorFromButtonColor(colorPalette.lightThemePrimary, false)
 
         // Darker than Button.
-        dark: getDarkColorFromButtonColor(lightThemePrimary, false)
+        dark: colorPalette.getDarkColorFromButtonColor(colorPalette.lightThemePrimary, false)
 
         // Between Button and Dark.
-        mid: getMidColorFromButtonColor(lightThemePrimary, false)
+        mid: colorPalette.getMidColorFromButtonColor(colorPalette.lightThemePrimary, false)
 
         // A very dark color. By default, the shadow color is Qt::black.
-        shadow: raisinBlack
+        shadow: colorPalette.raisinBlack
 
         ////////////////////////////////////////////////////////////////////////////////////////////
         // Selected/marked items
@@ -167,99 +168,100 @@ Item {
 
         // A color to indicate a selected item or the current item. By default, the highlight color
         // is Qt::darkBlue.
-        highlight: lightThemeSecondary
+        highlight: colorPalette.lightThemeSecondary
 
         // A color that typically contrasts or complements Base, Window and Button colors. It
         // usually represents the users' choice of desktop personalisation. Styling of interactive
         // components is a typical use case. Unless explicitly set, it defaults to Highlight.
-        accent: lightThemeSecondary
+        accent: colorPalette.lightThemeSecondary
 
         // A text color that contrasts with Highlight. By default, the highlighted text color is
         // Qt::white.
-        highlightedText: textColorForBackgroundColor(lightThemeSecondary)
+        highlightedText: colorPalette.textColorForBackgroundColor(colorPalette.lightThemeSecondary)
 
         ////////////////////////////////////////////////////////////////////////////////////////////
         // Link colors
         ////////////////////////////////////////////////////////////////////////////////////////////
 
         // A text color used for unvisited hyperlinks. By default, the link color is Qt::blue.
-        link: lightThemeSecondary
+        link: colorPalette.lightThemeSecondary
 
         // A text color used for already visited hyperlinks. By default, the linkvisited color
         // is Qt::magenta.
-        linkVisited: lightThemeSecondary
+        linkVisited: colorPalette.lightThemeSecondary
     }
 
-    readonly property var darkColorPalete: Palette {
+    readonly property var darkColorPalette: Palette {
 
         ////////////////////////////////////////////////////////////////////////////////////////////
         // Central roles
         ////////////////////////////////////////////////////////////////////////////////////////////
 
         // A general background color.
-        window: raisinBlack
+        window: colorPalette.raisinBlack
 
         // A general foreground color.
-        windowText: antiFlashWhite
+        windowText: colorPalette.antiFlashWhite
 
         // Used mostly as the background color for text entry widgets, but can also be used for
         // other painting - such as the background of combobox drop down lists and toolbar handles. It
         //is usually white or another light color.
-        base: charcoal
+        base: colorPalette.charcoal
 
         // Used as the alternate background color in views with alternating row colors (see
         // QAbstractItemView::setAlternatingRowColors()).
-        alternateBase: paynesGray
+        alternateBase: colorPalette.paynesGray
 
         // Used as the background color for QToolTip and QWhatsThis. Tool tips use the Inactive
         // color group of QPalette, because tool tips are not active windows.
-        toolTipBase: raisinBlack
+        toolTipBase: colorPalette.raisinBlack
 
         // Used as the foreground color for QToolTip and QWhatsThis. Tool tips use the Inactive
         // color group of QPalette, because tool tips are not active windows.
-        toolTipText: antiFlashWhite
+        toolTipText: colorPalette.antiFlashWhite
 
         // Used as the placeholder color for various text input widgets. This enum value has been
         // introduced in Qt 5.12
-        placeholderText: platinum
+        placeholderText: colorPalette.platinum
 
         // The foreground color used with Base. This is usually the same as the WindowText, in
         // which case it must provide good contrast with Window and Base.
-        text: antiFlashWhite
+        text: colorPalette.antiFlashWhite
 
         // The general button background color. This background can be different from Window as
         // some styles require a different background color for buttons.
-        button: darkThemePrimary
+        button: colorPalette.darkThemePrimary
 
         // A foreground color used with the Button color.
-        buttonText: textColorForBackgroundColor(darkThemePrimary)
+        buttonText: colorPalette.textColorForBackgroundColor(colorPalette.darkThemePrimary)
 
         // A text color that is very different from WindowText, and contrasts well with e.g. Dark.
         // Typically used for text that needs to be drawn where Text or WindowText would give poor
         // contrast, such as on pressed push buttons. Note that text colors can be used for things
         // other than just words; text colors are usually used for text, but it's quite common to
         // use the text color roles for lines, icons, etc.
-        brightText: textColorForBackgroundColor(getDarkColorFromButtonColor(
-                                                    darkThemePrimary, true))
+        brightText: colorPalette.textColorForBackgroundColor(
+            colorPalette.getDarkColorFromButtonColor(
+                colorPalette.darkThemePrimary, true))
 
         ////////////////////////////////////////////////////////////////////////////////////////////
         // Used for painting 3D bevels and shadow effects.
         ////////////////////////////////////////////////////////////////////////////////////////////
 
         // Lighter than Button color.
-        light: getLightColorFromButtonColor(darkThemePrimary, true)
+        light: colorPalette.getLightColorFromButtonColor(colorPalette.darkThemePrimary, true)
 
         // Between Button and Light.
-        midlight: getMidColorFromButtonColor(darkThemePrimary, true)
+        midlight: colorPalette.getMidColorFromButtonColor(colorPalette.darkThemePrimary, true)
 
         // Darker than Button.
-        dark: getDarkColorFromButtonColor(darkThemePrimary, true)
+        dark: colorPalette.getDarkColorFromButtonColor(colorPalette.darkThemePrimary, true)
 
         // Between Button and Dark.
-        mid: getMidColorFromButtonColor(darkThemePrimary, true)
+        mid: colorPalette.getMidColorFromButtonColor(colorPalette.darkThemePrimary, true)
 
         // A very dark color. By default, the shadow color is Qt::black.
-        shadow: antiFlashWhite
+        shadow: colorPalette.antiFlashWhite
 
         ////////////////////////////////////////////////////////////////////////////////////////////
         // Selected/marked items
@@ -267,27 +269,27 @@ Item {
 
         // A color to indicate a selected item or the current item. By default, the highlight color
         // is Qt::darkBlue.
-        highlight: darkThemeSecondary
+        highlight: colorPalette.darkThemeSecondary
 
         // A color that typically contrasts or complements Base, Window and Button colors. It
         // usually represents the users' choice of desktop personalisation. Styling of interactive
         // components is a typical use case. Unless explicitly set, it defaults to Highlight.
-        accent: darkThemeSecondary
+        accent: colorPalette.darkThemeSecondary
 
         // A text color that contrasts with Highlight. By default, the highlighted text color is
         // Qt::white.
-        highlightedText: textColorForBackgroundColor(darkThemeSecondary)
+        highlightedText: colorPalette.textColorForBackgroundColor(colorPalette.darkThemeSecondary)
 
         ////////////////////////////////////////////////////////////////////////////////////////////
         // Link colors
         ////////////////////////////////////////////////////////////////////////////////////////////
 
         // A text color used for unvisited hyperlinks. By default, the link color is Qt::blue.
-        link: darkThemeSecondary
+        link: colorPalette.darkThemeSecondary
 
         // A text color used for already visited hyperlinks. By default, the linkvisited color
         // is Qt::magenta.
-        linkVisited: darkThemeSecondary
+        linkVisited: colorPalette.darkThemeSecondary
     }
 
     function isDarkColor(color) {
@@ -341,10 +343,10 @@ Item {
             case ColorTheme.Theme.Light:
             return lightColorPalete
             case ColorTheme.Theme.Dark:
-            return darkColorPalete
+            return darkColorPalette
             default:
-            if (OTL.Colors.systemUsesDarkTheme) {
-                return darkColorPalete
+            if (OTL.ColorUtils.systemUsesDarkTheme) {
+                return darkColorPalette
             } else {
                 return lightColorPalete
             }

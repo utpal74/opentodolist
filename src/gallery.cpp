@@ -21,15 +21,11 @@
 #include <QGuiApplication>
 #include <QUrl>
 
-#include <opentodolistqmlextensionsplugin.h>
-
 int main(int argc, char** argv)
 {
     QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;
     engine.addImportPath(SOURCE_DIR);
-    OpenTodoListQmlExtensionsPlugin plugin;
-    plugin.registerTypes("OpenTodoList");
     engine.setBaseUrl(QUrl::fromLocalFile(SOURCE_DIR));
     auto url = QUrl::fromLocalFile(SOURCE_DIR "/gallery.qml");
     QObject::connect(

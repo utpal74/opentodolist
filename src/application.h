@@ -33,7 +33,6 @@
 
 #include "datamodel/library.h"
 #include "sync/synchronizer.h"
-#include "utilities/problem.h"
 #include "utilities/problemmanager.h"
 #include "sync/account.h"
 #include "sync/remotelibraryinfo.h"
@@ -45,6 +44,7 @@ Q_MOC_INCLUDE("datamodel/notepage.h")
 
 class QRemoteObjectNode;
 class QTemporaryDir;
+class QJSEngine;
 
 class ApplicationSettings;
 class BackgroundServiceReplica;
@@ -205,6 +205,16 @@ public:
     bool useMonochromeTrayIcon() const;
     void setUseMonochromeTrayIcon(bool newUseMonochromeTrayIcon);
 
+    /**
+     * @brief The instance of the application used by QML.
+     *
+     * The instance must be set by calling setApplicationInstance() before.
+     *
+     * @return Application* The application instance.
+     */
+    static Application* create(QQmlEngine*, QJSEngine*) { return s_applicationInstance; }
+    static void setApplicationInstance(Application* instance) { s_applicationInstance = instance; }
+
 public slots:
 
     void syncLibrary(Library* library);
@@ -327,6 +337,8 @@ private:
     QUuid m_appInstanceUid;
     bool m_propagateCacheEventsFromBackgroundService;
     bool m_useMonochromeTrayIcon;
+
+    static Application* s_applicationInstance;
 
     void initialize();
     void disableIOSBackup();

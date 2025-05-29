@@ -89,6 +89,8 @@ static bool DEFAULT_USE_MONOCHROME_TRAY_ICON = true;
 static bool DEFAULT_USE_MONOCHROME_TRAY_ICON = false;
 #endif
 
+Application* Application::s_applicationInstance { nullptr };
+
 /**
  * @brief Constructor.
  *

@@ -7,5 +7,5 @@ Basic.ApplicationWindow {
     font.family: Fonts.regularFont
     palette: ColorTheme.selectedPalette
 
-    Overlay.overlay.palette: appWindow.palette
+    Basic.Overlay.overlay.palette: appWindow.palette
 }
