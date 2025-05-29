@@ -129,6 +129,8 @@ target_sources(
         utils/updateservice.h
         utils/urlhandler.h
         utils/urlhandler.cpp
+        utils/networkutils.h
+        utils/networkutils.cpp
 
         # Include SimpleCrypt source:
         ${CMAKE_CURRENT_SOURCE_DIR}/../3rdparty/simplecrypt/simplecrypt.cpp
@@ -170,7 +172,7 @@ target_compile_options(
     opentodolist-common
     PRIVATE
         $<$<CXX_COMPILER_ID:MSVC>:/W4 /WX>
-        $<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-Wall -Werror>
+        $<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-Wall -Werror -Wno-error=deprecated-declarations>
 )
 
 if(ANDROID)

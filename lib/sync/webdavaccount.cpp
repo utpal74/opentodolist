@@ -31,6 +31,7 @@
 
 #include "datamodel/library.h"
 #include "sync/webdavsynchronizer.h"
+#include "utils/networkutils.h"
 
 /**
  * @brief An account used to connect to a WebDAV server.
@@ -155,14 +156,8 @@ SynqClient::WebDAVJobFactory* WebDAVAccount::createWebDAVJobFactory(QObject* par
 {
     auto factory = new SynqClient::WebDAVJobFactory(parent);
 
-    auto nam = new QNetworkAccessManager(factory);
-    nam->setRedirectPolicy(QNetworkRequest::NoLessSafeRedirectPolicy);
-    connect(nam, &QNetworkAccessManager::sslErrors, this,
-            [=](QNetworkReply* reply, const QList<QSslError>& errors) {
-                if (!m_disableCertificateChecks) {
-                    reply->ignoreSslErrors(errors);
-                }
-            });
+    auto nam = new NetworkUtils::NetworkAccessManager(factory);
+    nam->setDefaultIgnoreSslErrors(m_disableCertificateChecks);
 
     factory->setNetworkAccessManager(nam);
     SynqClient::WebDAVServerType serverType;

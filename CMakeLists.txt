@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.16.3)
 
 # Generate build commands JSON file:
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)

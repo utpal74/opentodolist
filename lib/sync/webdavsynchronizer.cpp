@@ -48,6 +48,8 @@
 #include "webdavaccount.h"
 #include "webdavsynchronizer.h"
 
+#include "utils/networkutils.h"
+
 static Q_LOGGING_CATEGORY(log, "OpenTodoList.WebDAVSynchronizer", QtDebugMsg);
 
 static SynqClient::WebDAVServerType
@@ -260,14 +262,7 @@ void WebDAVSynchronizer::fromFullMap(const QVariantMap& map)
 QNetworkAccessManager* WebDAVSynchronizer::nam()
 {
     if (m_nam == nullptr) {
-        m_nam = new QNetworkAccessManager(this);
-        m_nam->setRedirectPolicy(QNetworkRequest::NoLessSafeRedirectPolicy);
-        connect(m_nam, &QNetworkAccessManager::sslErrors, this,
-                [=](QNetworkReply* reply, const QList<QSslError>& errors) {
-                    if (!m_disableCertificateCheck) {
-                        reply->ignoreSslErrors(errors);
-                    }
-                });
+        m_nam = new NetworkUtils::NetworkAccessManager(m_disableCertificateCheck, this);
     }
     return m_nam;
 }
