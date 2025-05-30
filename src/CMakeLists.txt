@@ -485,6 +485,8 @@ qt_add_qml_module(
         OpenTodoList
     VERSION
         1.0
+    IMPORTS
+        QtQuick.Controls.Basic
     QML_FILES
         Actions/CopyTodo.qml
         Actions/CopyTopLevelItem.qml

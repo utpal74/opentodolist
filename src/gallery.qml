@@ -6,7 +6,7 @@ ApplicationWindow {
 
     width: 800
     height: 600
-    palette: ColorTheme.palette
+    palette: ColorTheme.selectedPalette
     font.family: Fonts.regularFont
     font.weight: 500
 
@@ -283,107 +283,107 @@ ApplicationWindow {
 
                 ColorPatch {
                     name: "window"
-                    color: ColorTheme.palette.window
+                    color: ColorTheme.selectedPalette.window
                 }
 
                 ColorPatch {
                     name: "windowText"
-                    color: ColorTheme.palette.windowText
+                    color: ColorTheme.selectedPalette.windowText
                 }
 
                 ColorPatch {
                     name: "base"
-                    color: ColorTheme.palette.base
+                    color: ColorTheme.selectedPalette.base
                 }
 
                 ColorPatch {
                     name: "alternateBase"
-                    color: ColorTheme.palette.alternateBase
+                    color: ColorTheme.selectedPalette.alternateBase
                 }
 
                 ColorPatch {
                     name: "toolTipBase"
-                    color: ColorTheme.palette.toolTipBase
+                    color: ColorTheme.selectedPalette.toolTipBase
                 }
 
                 ColorPatch {
                     name: "toolTipText"
-                    color: ColorTheme.palette.toolTipText
+                    color: ColorTheme.selectedPalette.toolTipText
                 }
 
                 ColorPatch {
                     name: "placeholderText"
-                    color: ColorTheme.palette.placeholderText
+                    color: ColorTheme.selectedPalette.placeholderText
                 }
 
                 ColorPatch {
                     name: "text"
-                    color: ColorTheme.palette.text
+                    color: ColorTheme.selectedPalette.text
                 }
 
                 ColorPatch {
                     name: "button"
-                    color: ColorTheme.palette.button
+                    color: ColorTheme.selectedPalette.button
                 }
 
                 ColorPatch {
                     name: "buttonText"
-                    color: ColorTheme.palette.buttonText
+                    color: ColorTheme.selectedPalette.buttonText
                 }
 
                 ColorPatch {
                     name: "brightText"
-                    color: ColorTheme.palette.brightText
+                    color: ColorTheme.selectedPalette.brightText
                 }
 
                 ColorPatch {
                     name: "light"
-                    color: ColorTheme.palette.light
+                    color: ColorTheme.selectedPalette.light
                 }
 
                 ColorPatch {
                     name: "midlight"
-                    color: ColorTheme.palette.midlight
+                    color: ColorTheme.selectedPalette.midlight
                 }
 
                 ColorPatch {
                     name: "dark"
-                    color: ColorTheme.palette.dark
+                    color: ColorTheme.selectedPalette.dark
                 }
 
                 ColorPatch {
                     name: "mid"
-                    color: ColorTheme.palette.mid
+                    color: ColorTheme.selectedPalette.mid
                 }
 
                 ColorPatch {
                     name: "shadow"
-                    color: ColorTheme.palette.shadow
+                    color: ColorTheme.selectedPalette.shadow
                 }
 
                 ColorPatch {
                     name: "highlight"
-                    color: ColorTheme.palette.highlight
+                    color: ColorTheme.selectedPalette.highlight
                 }
 
                 ColorPatch {
                     name: "accent"
-                    color: ColorTheme.palette.accent
+                    color: ColorTheme.selectedPalette.accent
                 }
 
                 ColorPatch {
                     name: "highlightedText"
-                    color: ColorTheme.palette.highlightedText
+                    color: ColorTheme.selectedPalette.highlightedText
                 }
 
                 ColorPatch {
                     name: "link"
-                    color: ColorTheme.palette.link
+                    color: ColorTheme.selectedPalette.link
                 }
 
                 ColorPatch {
                     name: "linkVisited"
-                    color: ColorTheme.palette.linkVisited
+                    color: ColorTheme.selectedPalette.linkVisited
                 }
             }
         }
