@@ -2476,17 +2476,17 @@ msgctxt "AccountTypeSelectionPage|"
 msgid "Dropbox"
 msgstr "Dropbox"
 
-#: ../../lib/application.cpp:219
+#: ../../lib/application.cpp:220
 msgctxt "Application|"
 msgid "Background Sync"
 msgstr "Фоновая синхронизация"
 
-#: ../../lib/application.cpp:223
+#: ../../lib/application.cpp:224
 msgctxt "Application|"
 msgid "App continues to sync your data in the background"
 msgstr "Приложение продолжает синхронизировать ваши данные в фоновом режиме"
 
-#: ../../lib/application.cpp:227
+#: ../../lib/application.cpp:228
 msgctxt "Application|"
 msgid "Quit"
 msgstr "Выйти"
@@ -2761,12 +2761,12 @@ msgstr ""
 #: ../qml/Widgets/ApplicationMenu.qml:36
 msgctxt "ApplicationMenu|"
 msgid "File"
-msgstr ""
+msgstr "Файл"
 
 #: ../qml/Widgets/ApplicationMenu.qml:87
 msgctxt "ApplicationMenu|"
 msgid "Edit"
-msgstr ""
+msgstr "Редактировать"
 
 #: ../qml/Widgets/ApplicationMenu.qml:158
 msgctxt "ApplicationMenu|"
@@ -2776,7 +2776,7 @@ msgstr ""
 #: ../qml/Widgets/ApplicationMenu.qml:197
 msgctxt "ApplicationMenu|"
 msgid "Help"
-msgstr ""
+msgstr "Помощь"
 
 #: ../qml/Components/ApplicationShortcuts.qml:18
 msgctxt "ApplicationShortcuts|"
@@ -2786,17 +2786,17 @@ msgstr ""
 #: ../qml/Components/ApplicationShortcuts.qml:27
 msgctxt "ApplicationShortcuts|"
 msgid "About Qt"
-msgstr ""
+msgstr "О Qt"
 
 #: ../qml/Components/ApplicationShortcuts.qml:35
 msgctxt "ApplicationShortcuts|"
 msgid "Accounts"
-msgstr ""
+msgstr "Учетные записи"
 
 #: ../qml/Components/ApplicationShortcuts.qml:43
 msgctxt "ApplicationShortcuts|"
 msgid "Add Tag"
-msgstr ""
+msgstr "Добавить метку"
 
 #: ../qml/Components/ApplicationShortcuts.qml:51
 msgctxt "ApplicationShortcuts|"
@@ -2836,7 +2836,7 @@ msgstr ""
 #: ../qml/Components/ApplicationShortcuts.qml:167
 msgctxt "ApplicationShortcuts|"
 msgid "Delete Completed Items"
-msgstr ""
+msgstr "Удалить выполненные"
 
 #: ../qml/Components/ApplicationShortcuts.qml:175
 msgctxt "ApplicationShortcuts|"
@@ -2861,12 +2861,12 @@ msgstr ""
 #: ../qml/Components/ApplicationShortcuts.qml:213
 msgctxt "ApplicationShortcuts|"
 msgid "Mark all items as done"
-msgstr ""
+msgstr "Пометить все как выполненные"
 
 #: ../qml/Components/ApplicationShortcuts.qml:225
 msgctxt "ApplicationShortcuts|"
 msgid "Mark all items as undone"
-msgstr ""
+msgstr "Пометить все как невыполненные"
 
 #: ../qml/Components/ApplicationShortcuts.qml:237
 msgctxt "ApplicationShortcuts|"
@@ -2876,7 +2876,7 @@ msgstr ""
 #: ../qml/Components/ApplicationShortcuts.qml:245
 msgctxt "ApplicationShortcuts|"
 msgid "New Library"
-msgstr ""
+msgstr "Новая библиотека"
 
 #: ../qml/Components/ApplicationShortcuts.qml:253
 msgctxt "ApplicationShortcuts|"

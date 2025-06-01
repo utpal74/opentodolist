@@ -175,17 +175,17 @@
 <context>
     <name>Application</name>
     <message>
-        <location filename="../../lib/application.cpp" line="219"/>
+        <location filename="../../lib/application.cpp" line="220"/>
         <source>Background Sync</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../lib/application.cpp" line="223"/>
+        <location filename="../../lib/application.cpp" line="224"/>
         <source>App continues to sync your data in the background</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../lib/application.cpp" line="227"/>
+        <location filename="../../lib/application.cpp" line="228"/>
         <source>Quit</source>
         <translation type="unfinished">Lopeta</translation>
     </message>

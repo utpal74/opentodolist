@@ -9,7 +9,6 @@ msgstr ""
 "Project-Id-Version: OpenTodoList\n"
 "Language: fr\n"
 
-#. "Au sujet de" était correct, mais la plupart des logiciels traduisent par "à propos"
 #: ../qml/Pages/AboutPage.qml:15
 msgctxt "AboutPage|"
 msgid "About..."
@@ -115,7 +114,6 @@ msgctxt "DeleteItemDialog|"
 msgid "Delete Item?"
 msgstr "Supprimer l'élément ?"
 
-#. Je mettrais "Cette action est définitive" plutôt que "Cela ne peut être annulé" (même si le second est une meilleure traduction, le premier est ce qui est généralement indiqué dans les autres logiciels, et est pour moi plus facile à comprendre, car avec "cela ne peut être annulé", on pourrait croire qu'on ne peut pas annuler l'action qu'on est en train de faire, alors que ce sera une fois l'action faite qu'il sera impossible de revenir en arrière)
 #: ../qml/Windows/DeleteItemDialog.qml:31
 msgctxt "DeleteItemDialog|"
 msgid "Do you really want to delete the image <strong>%1</strong>? This cannot be undone."
@@ -171,7 +169,6 @@ msgctxt "ItemCreatedNotification|"
 msgid "Open"
 msgstr "Ouvrir"
 
-#. Ou "Échéance :"
 #: ../qml/Widgets/ItemDueDateEditor.qml:31
 msgctxt "ItemDueDateEditor|"
 msgid "Due on"
@@ -182,7 +179,6 @@ msgctxt "ItemNotesEditor|"
 msgid "Notes"
 msgstr "Notes"
 
-#. Dans le contexte de l'application, je mettrais plutôt "Échéancier"
 #: ../qml/Widgets/LibrariesSideBar.qml:55
 #: ../qml/Widgets/LibrariesSideBar.qml:223
 msgctxt "LibrariesSideBar|"
@@ -249,7 +245,6 @@ msgctxt "LibraryPage|"
 msgid "Note Title"
 msgstr "Titre de la note"
 
-#. "Liste des tâches" était très bien, mais "todo list" est utilisé partout ailleurs, j'ai donc mis ça aussi pour la cohérence de l'application
 #: ../qml/Pages/LibraryPage.qml:368
 msgctxt "LibraryPage|"
 msgid "Todo List Title"
@@ -340,7 +335,6 @@ msgctxt "MainWindow|"
 msgid "&Find"
 msgstr "&Trouver"
 
-#. J'ai mis "élément" car c'est comme ça qu'item a été traduit ailleurs
 #: ../Windows/MainWindow.qml:545
 msgctxt "MainWindow|"
 msgid "Open Last &Created Item"
@@ -703,7 +697,6 @@ msgctxt "TodoPage|"
 msgid "Add new task..."
 msgstr "Ajouter une nouvelle tâche..."
 
-#. Ou "Échéance :"
 #: ../qml/Widgets/TodosWidget.qml:211
 msgctxt "TodosWidget|"
 msgid "Due on: %1"
@@ -799,7 +792,6 @@ msgctxt "MainWindow|"
 msgid "Color"
 msgstr "Couleur"
 
-#. Car le nom tag a été conservé auparavant
 #: ../Windows/MainWindow.qml:352
 msgctxt "MainWindow|"
 msgid "Add Tag"
@@ -820,7 +812,6 @@ msgctxt "MainWindow|"
 msgid "Sort"
 msgstr "Trier"
 
-#. Ou "Indiquer une date d'échéance"
 #: ../Windows/MainWindow.qml:383
 msgctxt "MainWindow|"
 msgid "Set Due Date"
@@ -861,13 +852,11 @@ msgctxt "TodoListPage|"
 msgid "Updated At"
 msgstr "Mis à jour à"
 
-#. Une traduction plus littérale aurait été : "Faire glisser pour indiquer que ça n'a pas été réalisé", mais c'était foutrement long, alors j'ai pris quelques libertés...
 #: ../Widgets/TodosWidget.qml:309
 msgctxt "TodosWidget|"
 msgid "Swipe to mark undone"
 msgstr "Faire glisser si non-réalisé"
 
-#. Une traduction plus littérale aurait été : "Faire glisser pour indiquer que ça a été réalisé", mais c'était foutrement long, alors j'ai pris quelques libertés...
 #: ../Widgets/TodosWidget.qml:310
 msgctxt "TodosWidget|"
 msgid "Swipe to mark done"
@@ -1260,7 +1249,6 @@ msgctxt "ItemNotesEditor|"
 msgid "All files"
 msgstr "Tous les fichiers"
 
-#. "Secrets manquants pour le compte" ? (précédemment, "secrets" a été traduit par "secrets")
 #: ../qml/Pages/ProblemsPage.qml:42
 msgctxt "ProblemsPage|"
 msgid "Missing secrets for account"
@@ -1336,7 +1324,6 @@ msgctxt "Translations|"
 msgid "Turkish"
 msgstr "Turque"
 
-#. "dismiss" au sens "renvoi" (ancienne traduction) veut dire renvoyer quelqu'un. Ici, il s'agit d'effacer le texte pop-up qui apparaît pour dire qu'un nouvel élément a été créé, donc je pense que "Masquer" est une meilleure traduction
 #: ../qml/Widgets/ItemCreatedNotification.qml:79
 msgctxt "ItemCreatedNotification|"
 msgid "Dismiss"
@@ -1367,7 +1354,6 @@ msgctxt "DeleteItem|"
 msgid "Delete"
 msgstr "Supprimer"
 
-#. Je ne vois pas où ça apparaît, je ne suis pas certain de cette traduction
 #: ../qml/Widgets/ItemDueDateEditor.qml:69
 msgctxt "ItemDueDateEditor|"
 msgid "First due on %1."
@@ -1438,7 +1424,6 @@ msgctxt "NewItemWithDueDateDialog|"
 msgid "Create in:"
 msgstr "Créé dans :"
 
-#. Ou "Échéance :"
 #: ../qml/Windows/NewItemWithDueDateDialog.qml:226
 msgctxt "NewItemWithDueDateDialog|"
 msgid "Due on:"
@@ -1524,13 +1509,11 @@ msgctxt "SetDueTomorrow|"
 msgid "Set Due Tomorrow"
 msgstr "Pour demain"
 
-#. Si vous avez mieux...
 #: ../Widgets/TodosWidgetDelegate.qml:286
 msgctxt "TodosWidgetDelegate|"
 msgid "Swipe to mark undone"
 msgstr "Faire glisser si non-réalisé"
 
-#. Idem
 #: ../Widgets/TodosWidgetDelegate.qml:288
 msgctxt "TodosWidgetDelegate|"
 msgid "Swipe to mark done"
@@ -2495,17 +2478,17 @@ msgctxt "AccountTypeSelectionPage|"
 msgid "Dropbox"
 msgstr "Dropbox"
 
-#: ../../lib/application.cpp:219
+#: ../../lib/application.cpp:220
 msgctxt "Application|"
 msgid "Background Sync"
 msgstr "Synchronisation en arrière plan"
 
-#: ../../lib/application.cpp:223
+#: ../../lib/application.cpp:224
 msgctxt "Application|"
 msgid "App continues to sync your data in the background"
 msgstr "L'application poursuit la synchronisation de vos données en arrière plan"
 
-#: ../../lib/application.cpp:227
+#: ../../lib/application.cpp:228
 msgctxt "Application|"
 msgid "Quit"
 msgstr "Quitter"

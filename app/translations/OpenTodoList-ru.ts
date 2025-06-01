@@ -175,17 +175,17 @@
 <context>
     <name>Application</name>
     <message>
-        <location filename="../../lib/application.cpp" line="219"/>
+        <location filename="../../lib/application.cpp" line="220"/>
         <source>Background Sync</source>
         <translation>Фоновая синхронизация</translation>
     </message>
     <message>
-        <location filename="../../lib/application.cpp" line="223"/>
+        <location filename="../../lib/application.cpp" line="224"/>
         <source>App continues to sync your data in the background</source>
         <translation>Приложение продолжает синхронизировать ваши данные в фоновом режиме</translation>
     </message>
     <message>
-        <location filename="../../lib/application.cpp" line="227"/>
+        <location filename="../../lib/application.cpp" line="228"/>
         <source>Quit</source>
         <translation>Выйти</translation>
     </message>
@@ -195,12 +195,12 @@
     <message>
         <location filename="../qml/Widgets/ApplicationMenu.qml" line="36"/>
         <source>File</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл</translation>
     </message>
     <message>
         <location filename="../qml/Widgets/ApplicationMenu.qml" line="87"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Редактировать</translation>
     </message>
     <message>
         <location filename="../qml/Widgets/ApplicationMenu.qml" line="158"/>
@@ -210,7 +210,7 @@
     <message>
         <location filename="../qml/Widgets/ApplicationMenu.qml" line="197"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Помощь</translation>
     </message>
 </context>
 <context>
@@ -223,17 +223,17 @@
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="27"/>
         <source>About Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>О Qt</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="35"/>
         <source>Accounts</source>
-        <translation type="unfinished"></translation>
+        <translation>Учетные записи</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="43"/>
         <source>Add Tag</source>
-        <translation type="unfinished">Добавить метку</translation>
+        <translation>Добавить метку</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="51"/>
@@ -273,7 +273,7 @@
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="167"/>
         <source>Delete Completed Items</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить выполненные</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="175"/>
@@ -298,12 +298,12 @@
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="213"/>
         <source>Mark all items as done</source>
-        <translation type="unfinished"></translation>
+        <translation>Пометить все как выполненные</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="225"/>
         <source>Mark all items as undone</source>
-        <translation type="unfinished"></translation>
+        <translation>Пометить все как невыполненные</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="237"/>
@@ -313,7 +313,7 @@
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="245"/>
         <source>New Library</source>
-        <translation type="unfinished">Новая библиотека</translation>
+        <translation>Новая библиотека</translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="253"/>

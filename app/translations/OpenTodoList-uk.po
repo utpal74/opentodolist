@@ -377,7 +377,6 @@ msgctxt "NewLibraryPage|"
 msgid "My New Library"
 msgstr "Моя нова бібліотека"
 
-#. "Створіть бібліотеку у місці за замовчуванням" - може у теці за замовчанням. "Створіть бібліотеку у теці за замовчуванням"
 #: ../Pages/NewLibraryPage.qml:73
 msgctxt "NewLibraryPage|"
 msgid "Create Library in Default Location"
@@ -2480,17 +2479,17 @@ msgctxt "AccountTypeSelectionPage|"
 msgid "Dropbox"
 msgstr "Dropbox"
 
-#: ../../lib/application.cpp:219
+#: ../../lib/application.cpp:220
 msgctxt "Application|"
 msgid "Background Sync"
 msgstr "Фонова Синхронізація"
 
-#: ../../lib/application.cpp:223
+#: ../../lib/application.cpp:224
 msgctxt "Application|"
 msgid "App continues to sync your data in the background"
 msgstr "Додаток продовжує синхронізувати ваші дані у фоновому режимі"
 
-#: ../../lib/application.cpp:227
+#: ../../lib/application.cpp:228
 msgctxt "Application|"
 msgid "Quit"
 msgstr "Вийти"

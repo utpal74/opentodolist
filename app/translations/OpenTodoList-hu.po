@@ -2474,17 +2474,17 @@ msgctxt "AccountTypeSelectionPage|"
 msgid "Dropbox"
 msgstr ""
 
-#: ../../lib/application.cpp:219
+#: ../../lib/application.cpp:220
 msgctxt "Application|"
 msgid "Background Sync"
 msgstr ""
 
-#: ../../lib/application.cpp:223
+#: ../../lib/application.cpp:224
 msgctxt "Application|"
 msgid "App continues to sync your data in the background"
 msgstr ""
 
-#: ../../lib/application.cpp:227
+#: ../../lib/application.cpp:228
 msgctxt "Application|"
 msgid "Quit"
 msgstr ""

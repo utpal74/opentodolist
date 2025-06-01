@@ -190,7 +190,6 @@ msgctxt "LibrariesSideBar|"
 msgid "New Library"
 msgstr "Neue Bibliothek"
 
-#. Drei Punkte durch echte Ellipse ("Auslassungspunkte") ersetzt, Leerzeichen zwischen Ellipse und Text wie in deutschen Lokalisierungen üblich.
 #: ../Widgets/LibrariesSideBar.qml:115
 msgctxt "LibrariesSideBar|"
 msgid "About..."
@@ -1034,7 +1033,6 @@ msgctxt "LibrariesSideBar|"
 msgid "Accounts"
 msgstr "Konten"
 
-#. Übersetzung durch Infinitiv statt Imperativ, Leerzeichen zwischen Text und Ellipse ("Auslassungspunkte") wie in deutschen Lokalisierungen üblich.
 #: ../Widgets/LibrariesSideBar.qml:100
 msgctxt "LibrariesSideBar|"
 msgid "Translate The App..."
@@ -2487,17 +2485,17 @@ msgctxt "AccountTypeSelectionPage|"
 msgid "Dropbox"
 msgstr "Dropbox"
 
-#: ../../lib/application.cpp:219
+#: ../../lib/application.cpp:220
 msgctxt "Application|"
 msgid "Background Sync"
 msgstr "Hintergrund Synchronisation"
 
-#: ../../lib/application.cpp:223
+#: ../../lib/application.cpp:224
 msgctxt "Application|"
 msgid "App continues to sync your data in the background"
 msgstr "Die App synchronisiert Ihre Daten weiterhin im Hintergrund"
 
-#: ../../lib/application.cpp:227
+#: ../../lib/application.cpp:228
 msgctxt "Application|"
 msgid "Quit"
 msgstr "Beenden"
@@ -2854,7 +2852,6 @@ msgctxt "ApplicationShortcuts|"
 msgid "Due Date"
 msgstr "Fälligkeitsdatum"
 
-#. Where is the occurrence of this entry? Is this a 'Find…' in a sense of Ctrl + F = Search…?
 #: ../qml/Components/ApplicationShortcuts.qml:183
 msgctxt "ApplicationShortcuts|"
 msgid "Find"
@@ -2980,7 +2977,6 @@ msgctxt "ItemNotesEditor|"
 msgid "Copy Plain Text"
 msgstr "Reinen Text kopieren"
 
-#. For German localization cf. https://www.duden.de/konjugation/taggen
 #: ../qml/Widgets/LibrariesSideBar.qml:293
 msgctxt "LibrariesSideBar|"
 msgid "Untagged"
