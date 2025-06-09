@@ -14,5 +14,5 @@ C.Action {
     readonly property OTL.Task taskItem: item as OTL.Task
     readonly property OTL.Image imageItem: item as OTL.Image
     readonly property OTL.Note noteItem: item as OTL.Note
-    readonly property OTL.NotePage notePageItem: item as OTL.NotePage
+    readonly property OTL.NotePageItem notePageItem: item as OTL.NotePageItem
 }

@@ -107,11 +107,15 @@ void AppStartup::setupGlobals()
             qputenv("QT_QUICK_CONTROLS_MATERIAL_VARIANT", "Normal");
         }
 
+        // Enable QML tracing:
+        // qputenv("QML_IMPORT_TRACE", "1");
+
         if (settings.value("overrideUiScaling", false).toBool()) {
             auto scale = settings.value("uiScaling", 100).toInt() / 100.0;
             qputenv("QT_SCALE_FACTOR", QByteArray::number(scale));
         }
     }
+
     qunsetenv("QT_AUTO_SCREEN_SCALE_FACTOR");
 
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)

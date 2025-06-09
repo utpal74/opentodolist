@@ -273,7 +273,7 @@ C.Pane {
                             indent: 2
                             text: title
                             leftColorSwatch.color: library.color
-                            highlighted: d.bottommostPage.item?.uid === object.uid
+                            highlighted: d.bottommostPage?.item?.uid === object.uid
                             onClicked: sidebar.showItem(library, object)
                         }
                     }

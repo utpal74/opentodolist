@@ -69,7 +69,7 @@ C.Page {
                            + "<a href='app-license'>GNU General Public License"
                            + "</a> version 3 or (at your " + "choice) any later version.")
                 width: parent.width
-                onLinkActivated: {
+                onLinkActivated: (link) => {
                     switch (link) {
                     case "app-license":
                         shareUtils.openLink(

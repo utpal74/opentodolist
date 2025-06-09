@@ -12,7 +12,7 @@ Basic.Label {
         shareUtils.openLink(link)
     }
 
-    onLinkActivated: linkHandler(link)
+    onLinkActivated: (link) => { linkHandler(link) }
     textFormat: Text.StyledText
     linkColor: Utils.Colors.linkColor
     ToolTip.visible: StyleSettings.useDesktopMode && mouseArea.containsMouse

@@ -478,6 +478,13 @@ set_source_files_properties(
         QT_QML_SINGLETON_TYPE TRUE
 )
 
+# Add aliases for some resources:
+set_source_files_properties(
+    ../3rdparty/ral-json/ral.json
+    PROPERTIES
+           QT_RESOURCE_ALIAS ral.json
+)
+
 # Add the module:
 qt_add_qml_module(
     OpenTodoList
@@ -701,6 +708,7 @@ qt_add_qml_module(
         3rdpartyinfo/roboto/3rdpartyinfo.json
         3rdpartyinfo/syntax-highlighting/3rdpartyinfo.json
         qtquickcontrols2.conf
+        ../3rdparty/ral-json/ral.json
 )
 
 

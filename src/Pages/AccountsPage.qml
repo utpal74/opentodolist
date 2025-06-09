@@ -18,7 +18,7 @@ C.Page {
     title: qsTr("Accounts")
 
     accounts: accountList.accounts
-    onAccountSelected: {
+    onAccountSelected: (account) => {
         let accountTypeName = OTL.Application.accountTypeToString(account.type)
         page.openPage(Qt.resolvedUrl(
                           "./Edit" + accountTypeName + "AccountPage.qml"), {
