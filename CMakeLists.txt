@@ -135,29 +135,6 @@ if(NOT IOS AND NOT ANDROID)
     add_subdirectory(test)
 endif()
 
-
-# Show other, project-related files:
-file(GLOB_RECURSE
-    OTHER_FILES
-        OpenTodoList.desktop.in
-        README.md
-        COPYING
-        Doxyfile
-        net.rpdev.OpenTodoList.json
-        net.rpdev.OpenTodoList.metainfo.xml
-        snapcraft.yaml
-        doc/*
-        .gitlab-ci.yml
-        bin/*
-        templates/*
-        ci/*
-        cmake/*
-        app/android/*
-        lib/*
-        test/*
-)
-add_custom_target(OtherFiles SOURCES ${OTHER_FILES})
-
 # Add a custom target which runs qmllint first and then out
 # CMake script which will read the JSON output and print it formatted
 # lile GCC/Clang warning messages. This way, tools like VSCode will properly

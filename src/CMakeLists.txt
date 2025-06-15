@@ -494,6 +494,12 @@ qt_add_qml_module(
         1.0
     IMPORTS
         QtQuick.Controls.Basic
+    OUTPUT_DIRECTORY
+        # Store QML related files in a dedicated sub-folder of the build folder.
+        # Otherwise, we have file name conflicts on some platforms (such as
+        # Linux), where the executable name would be equal to the OpenTodoList
+        # qml folder name.
+        ${CMAKE_CURRENT_BINARY_DIR}/qml
     QML_FILES
         Actions/CopyTodo.qml
         Actions/CopyTopLevelItem.qml
