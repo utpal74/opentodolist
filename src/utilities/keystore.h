@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_KEYSTORE_H_
-#define UTILS_KEYSTORE_H_
+#ifndef UTILITIES_KEYSTORE_H_
+#define UTILITIES_KEYSTORE_H_
 
 #include <QLoggingCategory>
 #include <QObject>
@@ -82,4 +82,4 @@ private:
     static void registerSettingsFormat();
 };
 
-#endif // UTILS_KEYSTORE_H_
+#endif // UTILITIES_KEYSTORE_H_

@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_TRANSLATIONS_H_
-#define UTILS_TRANSLATIONS_H_
+#ifndef UTILITIES_TRANSLATIONS_H_
+#define UTILITIES_TRANSLATIONS_H_
 
 #include <QObject>
 #include <QString>
@@ -61,4 +61,4 @@ private:
 
 } // namespace OpenTodoList
 
-#endif // UTILS_TRANSLATIONS_H_
+#endif // UTILITIES_TRANSLATIONS_H_

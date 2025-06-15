@@ -7,6 +7,6 @@
 #define SyntaxHighlighting_VERSION_MAJOR 5
 #define SyntaxHighlighting_VERSION_MINOR 70
 #define SyntaxHighlighting_VERSION_PATCH 0
-#define SyntaxHighlighting_VERSION ((5<<16)|(70<<8)|(0))
+#define SyntaxHighlighting_VERSION ((5 << 16) | (70 << 8) | (0))
 
 #endif

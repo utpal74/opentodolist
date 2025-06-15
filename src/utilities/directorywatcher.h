@@ -1,6 +1,6 @@
 /*
  * Copyright 2020 Martin Hoeher <martin@rpdev.net>
- +
+ *
  * This file is part of OpenTodoList.
  *
  * OpenTodoList is free software: you can redistribute it and/or modify
@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_DIRECTORYWATCHER_H_
-#define UTILS_DIRECTORYWATCHER_H_
+#ifndef UTILITIES_DIRECTORYWATCHER_H_
+#define UTILITIES_DIRECTORYWATCHER_H_
 
 #include <QObject>
 #include <QThread>
@@ -83,4 +83,4 @@ private slots:
     void watchDir(const QString& directory);
 };
 
-#endif // UTILS_DIRECTORYWATCHER_H_
+#endif // UTILITIES_DIRECTORYWATCHER_H_

@@ -22,8 +22,8 @@
     SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-#ifndef UTILS_HTMLSYNTAXHIGHLIGHTER_H_
-#define UTILS_HTMLSYNTAXHIGHLIGHTER_H_
+#ifndef UTILITIES_HTMLSYNTAXHIGHLIGHTER_H_
+#define UTILITIES_HTMLSYNTAXHIGHLIGHTER_H_
 
 #include <KSyntaxHighlighting/KSyntaxHighlighting/abstracthighlighter.h>
 
@@ -50,4 +50,4 @@ private:
     std::unique_ptr<HtmlHighlighterPrivate> d;
 };
 
-#endif // UTILS_HTMLSYNTAXHIGHLIGHTER_H_
+#endif // UTILITIES_HTMLSYNTAXHIGHLIGHTER_H_

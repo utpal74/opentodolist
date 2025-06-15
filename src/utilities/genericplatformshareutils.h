@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_GENERICPLATFORMSHAREUTILS_H_
-#define UTILS_GENERICPLATFORMSHAREUTILS_H_
+#ifndef UTILITIES_GENERICPLATFORMSHAREUTILS_H_
+#define UTILITIES_GENERICPLATFORMSHAREUTILS_H_
 
 #include <QMultiHash>
 
@@ -53,4 +53,4 @@ private slots:
     void unwatchFile(const QUrl& url) override;
 };
 
-#endif // UTILS_GENERICPLATFORMSHAREUTILS_H_
+#endif // UTILITIES_GENERICPLATFORMSHAREUTILS_H_

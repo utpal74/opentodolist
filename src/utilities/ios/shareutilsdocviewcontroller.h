@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_IOS_SHAREUTILSDOCVIEWCONTROLLER_H_
-#define UTILS_IOS_SHAREUTILSDOCVIEWCONTROLLER_H_
+#ifndef UTILITIES_IOS_SHAREUTILSDOCVIEWCONTROLLER_H_
+#define UTILITIES_IOS_SHAREUTILSDOCVIEWCONTROLLER_H_
 
 #import <UIKit/UIKit.h>
 #import "utilities/iosplatformshareutils.h"
@@ -34,4 +34,4 @@
 
 @end
 
-#endif // UTILS_IOS_SHAREUTILSDOCVIEWCONTROLLER_H_
+#endif // UTILITIES_IOS_SHAREUTILSDOCVIEWCONTROLLER_H_

@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_SHAREUTILS_H_
-#define UTILS_SHAREUTILS_H_
+#ifndef UTILITIES_SHAREUTILS_H_
+#define UTILITIES_SHAREUTILS_H_
 
 #include <QObject>
 #include <QScopedPointer>
@@ -65,4 +65,4 @@ private:
     QScopedPointer<PlatformShareUtils> m_platformShareUtils;
 };
 
-#endif // UTILS_SHAREUTILS_H_
+#endif // UTILITIES_SHAREUTILS_H_

@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_JSONUTILS_H_
-#define UTILS_JSONUTILS_H_
+#ifndef UTILITIES_JSONUTILS_H_
+#define UTILITIES_JSONUTILS_H_
 
 #include <QString>
 #include <QVariantMap>
@@ -36,4 +36,4 @@ QVariantMap loadMap(const QString& filename, bool* ok = nullptr);
 
 }
 
-#endif // UTILS_JSONUTILS_H_
+#endif // UTILITIES_JSONUTILS_H_

@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_UPDATESERVICE_H_
-#define UTILS_UPDATESERVICE_H_
+#ifndef UTILITIES_UPDATESERVICE_H_
+#define UTILITIES_UPDATESERVICE_H_
 
 #include <QLoggingCategory>
 #include <QObject>
@@ -48,4 +48,4 @@ private slots:
     void checkForUpdates();
 };
 
-#endif // UTILS_UPDATESERVICE_H_
+#endif // UTILITIES_UPDATESERVICE_H_

@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_ANDROIDPLATFORMSHAREUTILS_H_
-#define UTILS_ANDROIDPLATFORMSHAREUTILS_H_
+#ifndef UTILITIES_ANDROIDPLATFORMSHAREUTILS_H_
+#define UTILITIES_ANDROIDPLATFORMSHAREUTILS_H_
 
 #include "platformshareutils.h"
 
@@ -42,4 +42,4 @@ protected slots:
     void unwatchFile(const QUrl& url) override;
 };
 
-#endif // UTILS_ANDROIDPLATFORMSHAREUTILS_H_
+#endif // UTILITIES_ANDROIDPLATFORMSHAREUTILS_H_

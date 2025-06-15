@@ -1,6 +1,6 @@
 /*
  * Copyright 2023 Martin Hoeher <martin@rpdev.net>
- +
+ *
  * This file is part of OpenTodoList.
  *
  * OpenTodoList is free software: you can redistribute it and/or modify
@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_FILEEDITOBSERVER_H_
-#define UTILS_FILEEDITOBSERVER_H_
+#ifndef UTILITIES_FILEEDITOBSERVER_H_
+#define UTILITIES_FILEEDITOBSERVER_H_
 
 #include <QObject>
 #include <QUrl>
@@ -49,4 +49,4 @@ private:
     QUrl m_fileUrl;
 };
 
-#endif // UTILS_FILEEDITOBSERVER_H_
+#endif // UTILITIES_FILEEDITOBSERVER_H_

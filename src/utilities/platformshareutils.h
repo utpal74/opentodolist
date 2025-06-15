@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_PLATFORMSHAREUTILS_H_
-#define UTILS_PLATFORMSHAREUTILS_H_
+#ifndef UTILITIES_PLATFORMSHAREUTILS_H_
+#define UTILITIES_PLATFORMSHAREUTILS_H_
 
 #include <QObject>
 #include <QMultiHash>
@@ -57,4 +57,4 @@ private:
     QMultiHash<QUrl, QPointer<FileEditObserver>> m_watchedFiles;
 };
 
-#endif // UTILS_PLATFORMSHAREUTILS_H_
+#endif // UTILITIES_PLATFORMSHAREUTILS_H_

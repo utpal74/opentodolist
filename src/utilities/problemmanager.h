@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_PROBLEMMANAGER_H_
-#define UTILS_PROBLEMMANAGER_H_
+#ifndef UTILITIES_PROBLEMMANAGER_H_
+#define UTILITIES_PROBLEMMANAGER_H_
 
 #include <QList>
 #include <QObject>
@@ -59,4 +59,4 @@ private:
     QList<Problem> m_problems;
 };
 
-#endif // UTILS_PROBLEMMANAGER_H_
+#endif // UTILITIES_PROBLEMMANAGER_H_

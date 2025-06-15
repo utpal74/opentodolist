@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_FONTUTILS_H_
-#define UTILS_FONTUTILS_H_
+#ifndef UTILITIES_FONTUTILS_H_
+#define UTILITIES_FONTUTILS_H_
 
 #include <QObject>
 #include <QFont>
@@ -48,4 +48,4 @@ public:
 signals:
 };
 
-#endif // UTILS_FONTUTILS_H_
+#endif // UTILITIES_FONTUTILS_H_

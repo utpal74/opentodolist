@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_URLHANDLER_H_
-#define UTILS_URLHANDLER_H_
+#ifndef UTILITIES_URLHANDLER_H_
+#define UTILITIES_URLHANDLER_H_
 
 #include <QObject>
 #include <QUrl>
@@ -82,4 +82,4 @@ private slots:
     void setupAndroidAppLinkHandler();
 };
 
-#endif // UTILS_URLHANDLER_H_
+#endif // UTILITIES_URLHANDLER_H_

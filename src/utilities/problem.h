@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_PROBLEM_H_
-#define UTILS_PROBLEM_H_
+#ifndef UTILITIES_PROBLEM_H_
+#define UTILITIES_PROBLEM_H_
 
 #include <QObject>
 #include <QSharedPointer>
@@ -104,4 +104,4 @@ QML_NAMED_ELEMENT(Problem)
 QML_FOREIGN_NAMESPACE(ProblemDerived)
 }
 
-#endif // UTILS_PROBLEM_H_
+#endif // UTILITIES_PROBLEM_H_

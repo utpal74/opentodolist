@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_COLORS_H_
-#define UTILS_COLORS_H_
+#ifndef UTILITIES_COLORS_H_
+#define UTILITIES_COLORS_H_
 
 #include <QObject>
 #include <QColor>
@@ -75,4 +75,4 @@ private:
 Q_DECLARE_METATYPE(Color);
 Q_DECLARE_METATYPE(QList<Color>);
 
-#endif // UTILS_COLORS_H_
+#endif // UTILITIES_COLORS_H_

@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_SYNTAXHIGHLIGHTING_H_
-#define UTILS_SYNTAXHIGHLIGHTING_H_
+#ifndef UTILITIES_SYNTAXHIGHLIGHTING_H_
+#define UTILITIES_SYNTAXHIGHLIGHTING_H_
 
 #include <QObject>
 #include <QQuickTextDocument>
@@ -70,4 +70,4 @@ private:
     void applyTheme();
 };
 
-#endif // UTILS_SYNTAXHIGHLIGHTING_H_
+#endif // UTILITIES_SYNTAXHIGHLIGHTING_H_

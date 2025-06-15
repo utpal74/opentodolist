@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_TEXTUTILS_H_
-#define UTILS_TEXTUTILS_H_
+#ifndef UTILITIES_TEXTUTILS_H_
+#define UTILITIES_TEXTUTILS_H_
 
 #include <QObject>
 #include <QQuickTextDocument>
@@ -45,4 +45,4 @@ private:
     QString removeBodyStyle(const QString& html) const;
 };
 
-#endif // UTILS_TEXTUTILS_H_
+#endif // UTILITIES_TEXTUTILS_H_

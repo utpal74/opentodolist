@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_IOSPLATFORMSHAREUTILS_H_
-#define UTILS_IOSPLATFORMSHAREUTILS_H_
+#ifndef UTILITIES_IOSPLATFORMSHAREUTILS_H_
+#define UTILITIES_IOSPLATFORMSHAREUTILS_H_
 
 #include "platformshareutils.h"
 
@@ -44,4 +44,4 @@ protected slots:
     void unwatchFile(const QUrl& url) override;
 };
 
-#endif // UTILS_IOSPLATFORMSHAREUTILS_H_
+#endif // UTILITIES_IOSPLATFORMSHAREUTILS_H_

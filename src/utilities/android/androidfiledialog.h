@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_ANDROID_ANDROIDFILEDIALOG_H_
-#define UTILS_ANDROID_ANDROIDFILEDIALOG_H_
+#ifndef UTILITIES_ANDROID_ANDROIDFILEDIALOG_H_
+#define UTILITIES_ANDROID_ANDROIDFILEDIALOG_H_
 
 #include <private/qandroidextras_p.h>
 #include <QJniObject>
@@ -89,4 +89,4 @@ private:
     bool ensureCanAccessImages();
 };
 
-#endif // UTILS_ANDROID_ANDROIDFILEDIALOG_H_
+#endif // UTILITIES_ANDROID_ANDROIDFILEDIALOG_H_

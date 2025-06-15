@@ -17,8 +17,8 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_NETWORKUTILS_H_
-#define UTILS_NETWORKUTILS_H_
+#ifndef UTILITIES_NETWORKUTILS_H_
+#define UTILITIES_NETWORKUTILS_H_
 
 #include <QNetworkAccessManager>
 #include <QtNetwork/qnetworkaccessmanager.h>
@@ -55,4 +55,4 @@ private:
 
 } // namespace NetworkUtils
 
-#endif // UTILS_NETWORKUTILS_H_
+#endif // UTILITIES_NETWORKUTILS_H_
