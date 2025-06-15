@@ -9,6 +9,7 @@ set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 # Set policies explicitly:
 # cmake_policy(SET CMP0114 NEW) # Use independent step targets w/ external project on Xcode new build system.
 
+
 project(OpenTodoList)
 
 
@@ -46,9 +47,9 @@ qt_standard_project_setup(REQUIRES 6.8)
 # call above. The QT_DIR is set to something like
 # <prefix>/lib/cmake/Qt6, so we have to get the directory 3 times.
 if(NOT QT_INSTALL_PREFIX)
-    get_filename_component(QT_INSTALL_PREFIX ${Qt${QT_VERSION_MAJOR}_DIR} DIRECTORY)
-    get_filename_component(QT_INSTALL_PREFIX ${QT_INSTALL_PREFIX} DIRECTORY)
-    get_filename_component(QT_INSTALL_PREFIX ${QT_INSTALL_PREFIX} DIRECTORY)
+    get_filename_component(QT_INSTALL_PREFIX "${Qt${QT_VERSION_MAJOR}_DIR}" DIRECTORY)
+    get_filename_component(QT_INSTALL_PREFIX "${QT_INSTALL_PREFIX}" DIRECTORY)
+    get_filename_component(QT_INSTALL_PREFIX "${QT_INSTALL_PREFIX}" DIRECTORY)
     if(QT_INSTALL_PREFIX STREQUAL "/")
       set(QT_INSTALL_PREFIX "")
     endif()
@@ -115,7 +116,7 @@ configure_file(
 )
 include(GNUInstallDirs)
 install(
-    DIRECTORY app/icons/hicolor
+    DIRECTORY src/icons/hicolor
     DESTINATION ${CMAKE_INSTALL_DATADIR}/icons/
 )
 install(

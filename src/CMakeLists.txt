@@ -198,6 +198,7 @@ target_include_directories(
         service
         sync
         utilities
+        utilities/android/
 )
 
 # Add compile definitions
