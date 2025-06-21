@@ -181,6 +181,7 @@ target_compile_options(
     PRIVATE
         $<$<CXX_COMPILER_ID:MSVC>:/W4 /WX>
         $<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-Wall -Werror -Wno-error=deprecated-declarations>
+        $<$<BOOL:${IOS}>:-Wno-error=shorten-64-to-32>
 )
 
 # Set include paths
@@ -285,13 +286,6 @@ target_compile_definitions(
     PRIVATE
         $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>
         $<$<BOOL:${OPENTODOLIST_WITH_KNOTIFICATIONS}>:OPENTODOLIST_WITH_KNOTIFICATIONS>
-)
-
-target_compile_options(
-    OpenTodoList
-    PRIVATE
-        $<$<CXX_COMPILER_ID:MSVC>:/W4 /WX>
-        $<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-Wall -Werror>
 )
 
 set_target_properties(

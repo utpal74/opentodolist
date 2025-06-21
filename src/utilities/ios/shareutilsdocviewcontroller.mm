@@ -1,6 +1,6 @@
-#include "utils/ios/shareutilsdocviewcontroller.h"
+#include "utilities/ios/shareutilsdocviewcontroller.h"
 
-#import "utils/ios/shareutilsdocviewcontroller.h"
+#import "utilities/ios/shareutilsdocviewcontroller.h"
 
 @interface IOSShareUtilsDocViewController ()
 @end

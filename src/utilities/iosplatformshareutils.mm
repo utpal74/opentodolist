@@ -24,7 +24,7 @@
 
 #include <UIKit/UIKit.h>
 
-#include "utils/ios/shareutilsdocviewcontroller.h"
+#include "utilities/ios/shareutilsdocviewcontroller.h"
 
 // The implementation is based on the ideas from https://github.com/ekke/ekkesSHAREexample.
 
@@ -73,14 +73,6 @@ void IOSPlatformShareUtils::editFile(const QUrl& url, FileEditObserver* observer
 
     // Same as viewing:
     openFile(url);
-}
-
-/**
- * @brief Implementation of PlatformShareUtils::openFolder().
- */
-void IOSPlatformShareUtils::openFolder(const QString& path)
-{
-    Q_UNUSED(path);
 }
 
 /**
