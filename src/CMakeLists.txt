@@ -202,6 +202,17 @@ target_include_directories(
         utilities/android/
 )
 
+# QML Type registration: Also append "modified" path to includes in selected
+# dependencies:
+get_target_property(synqclient_include_dirs SynqClient::synqclient-qt${QT_VERSION_MAJOR} INTERFACE_INCLUDE_DIRECTORIES)
+foreach(path ${synqclient_include_dirs})
+    target_include_directories(
+        OpenTodoList
+        PRIVATE
+            ${path}/SynqClient
+    )
+endforeach()
+
 # Add compile definitions
 target_compile_definitions(
     OpenTodoList
