@@ -23,12 +23,6 @@ include(3rdparty/android-openssl/android_openssl.cmake)
 # Enable unit tests:
 enable_testing()
 
-if(NOT OPENTODOLIST_QT_VERSIONS)
-    # If OPENTODOLIST_QT_VERSIONS is not set by user, look for Qt6:
-    set(OPENTODOLIST_QT_VERSIONS Qt6)
-    set(QT_VERSION_MAJOR 6)
-endif()
-
 set(REQUIRED_QT_COMPONENTS Core Quick Qml Xml Concurrent Sql RemoteObjects LinguistTools Widgets Network NetworkAuth Test)
 
 find_package(
@@ -37,6 +31,8 @@ find_package(
         ${REQUIRED_QT_COMPONENTS}
     REQUIRED
 )
+
+set(QT_VERSION_MAJOR 6)
 
 qt_policy(SET QTP0001 NEW)
 qt_policy(SET QTP0004 NEW)
