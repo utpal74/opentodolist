@@ -204,7 +204,11 @@ QOAuth2AuthorizationCodeFlow* DropboxAccount::createOAuthAuthFlow(QObject* paren
             break;
         }
     });
+#if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)
+    result->setTokenUrl(QUrl(DropboxAccessTokenUrl));
+#else
     result->setAccessTokenUrl(QUrl(DropboxAccessTokenUrl));
+#endif
     result->setAuthorizationUrl(QUrl(DropboxAuthorizationUrl));
     result->setRefreshToken(m_refreshToken);
     result->setToken(m_accessToken);
@@ -262,7 +266,12 @@ void DropboxAccount::login()
         setLoggingIn(false);
         emit loginFinished(true);
     });
-    connect(oauth, &QOAuth2AuthorizationCodeFlow::error, this,
+#if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)
+    auto errorSignal = &QOAuth2AuthorizationCodeFlow::serverReportedErrorOccurred;
+#else
+    auto errorSignal = &QOAuth2AuthorizationCodeFlow::error;
+#endif
+    connect(oauth, errorSignal, this,
             [=](const QString& error, const QString& errorDescription, const QUrl& url) {
                 qCWarning(log) << "oAuth error:" << error << ":" << errorDescription << url;
 
@@ -305,7 +314,11 @@ void DropboxAccount::login()
                         oauth->deleteLater();
                     }
                 });
+#if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)
+        oauth->refreshTokens();
+#else
         oauth->refreshAccessToken();
+#endif
     }
 }
 
@@ -416,14 +429,23 @@ void DropboxAccount::checkConnectivity()
         emit accountSecretsChanged();
         emit connectivityCheckFinished(true);
     });
-    connect(oauth, &QOAuth2AuthorizationCodeFlow::error, this,
+#if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)
+    auto errorSignal = &QOAuth2AuthorizationCodeFlow::serverReportedErrorOccurred;
+#else
+    auto errorSignal = &QOAuth2AuthorizationCodeFlow::error;
+#endif
+    connect(oauth, errorSignal, this,
             [=](const QString& error, const QString& errorDescription, const QUrl& url) {
                 qCWarning(log) << "Failed to refresh tokens for account" << uid();
                 qCWarning(log) << "oAuth error:" << error << ":" << errorDescription << url;
                 emit connectivityCheckFinished(false);
                 oauth->deleteLater();
             });
+#if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)
+    oauth->refreshTokens();
+#else
     oauth->refreshAccessToken();
+#endif
 }
 
 /**
