@@ -167,22 +167,24 @@ C.Page {
         OTL.NextCloudAccount {
             id: accountCopy
 
-            onLoginFinished: {
-                if (success) {
-                    page.account.username = username
-                    page.account.password = password
-                    page.account.baseUrl = baseUrl
-                    page.account.name = accountNameEdit.text
-                    page.account.disableCertificateChecks = disableCertificateChecks
-                    page.account.backendSpecificData = backendSpecificData
+            onLoginFinished: success => {
+                                 if (success) {
+                                     page.account.username = username
+                                     page.account.password = password
+                                     page.account.baseUrl = baseUrl
+                                     page.account.name = accountNameEdit.text
+                                     page.account.disableCertificateChecks
+                                     = disableCertificateChecks
+                                     page.account.backendSpecificData = backendSpecificData
 
-                    OTL.Application.saveAccount(page.account)
-                    OTL.Application.saveAccountSecrets(page.account)
-                    page.closePage()
-                } else {
-                    errorLabel.visible = true
-                }
-            }
+                                     OTL.Application.saveAccount(page.account)
+                                     OTL.Application.saveAccountSecrets(
+                                         page.account)
+                                     page.closePage()
+                                 } else {
+                                     errorLabel.visible = true
+                                 }
+                             }
         }
 
         OTL.ShareUtils {
