@@ -1,6 +1,7 @@
 import QtQuick 2.12
 import QtQuick.Layouts 1.0
 import Qt.labs.qmlmodels 1.0
+import QtQml.Models
 
 import OpenTodoList.Style as C
 import "../Utils" as Utils
