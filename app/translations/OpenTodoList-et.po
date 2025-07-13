@@ -2950,7 +2950,7 @@ msgctxt "ApplicationShortcuts|"
 msgid "Translate The App..."
 msgstr ""
 
-#: ../qml/Components/ApplicationToolBar.qml:86
+#: ../qml/Components/ApplicationToolBar.qml:87
 msgctxt "ApplicationToolBar|"
 msgid "Problems"
 msgstr ""
