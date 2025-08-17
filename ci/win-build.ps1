@@ -6,7 +6,7 @@ if(-not $env:QT_INSTALL_ROOT) {
     $qt_root = $env:QT_INSTALL_ROOT
 }
 
-if (-not $env:QT_VERSION) { 
+if (-not $env:QT_VERSION) {
     $qt_versions = Get-ChildItem "$qt_root" | Where-Object {$_.name -like "*.*.*"} | Select-Object name | Sort-Object { $_ -as [version] }
     $env:QT_VERSION = $qt_versions[0].Name
 }
@@ -83,7 +83,7 @@ if (-not $?) {
     Write-Error -Message "Failed to install OpenTodoList."
 }
 
-windeployqt --qmldir app deploy-win64\bin
+windeployqt --qmldir src deploy-win64\bin
 
 if (-not $?) {
     Write-Error -Message "Failed to deploy Qt binaries for OpenTodoList."

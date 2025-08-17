@@ -29,6 +29,7 @@
 #include "datamodel/task.h"
 #include "datamodel/todo.h"
 #include "datamodel/todolist.h"
+#include "datamodel/recipe.h"
 #include "datastorage/cache.h"
 #include "datastorage/insertorupdateitemsquery.h"
 #include "datastorage/getitemquery.h"
@@ -73,6 +74,10 @@ void InsertOrUpdateItemsQueryTest::insertOrUpdate()
     Image image;
     image.setTitle("An image");
     image.setLibraryId(lib.uid());
+    Recipe recipe;
+    recipe.setTitle("A recipe");
+    recipe.setLibraryId(lib.uid());
+    recipe.setSteps({ RecipeStep("Step 1", {}, { "Oven" }), RecipeStep("Step 2", {}, { "Bowl" }) });
 
     {
         auto q = new InsertOrUpdateItemsQuery;
@@ -87,6 +92,7 @@ void InsertOrUpdateItemsQueryTest::insertOrUpdate()
         q->add(&task);
         q->add(&note);
         q->add(&image);
+        q->add(&recipe);
         cache.run(q);
 
         QVERIFY(cacheFinished.wait());
@@ -109,6 +115,7 @@ void InsertOrUpdateItemsQueryTest::insertOrUpdate()
         q->add(&task);
         q->add(&note);
         q->add(&image);
+        q->add(&recipe);
         cache.run(q);
 
         QVERIFY(cacheFinished.wait());
@@ -124,6 +131,7 @@ void InsertOrUpdateItemsQueryTest::insertOrUpdate()
         task.setTitle("Changed task");
         note.setTitle("Changed note");
         image.setTitle("Changed image");
+        recipe.setTitle("Changed recipe");
 
         auto q = new InsertOrUpdateItemsQuery;
         QSignalSpy finished(q, &InsertOrUpdateItemsQuery::finished);
@@ -136,6 +144,7 @@ void InsertOrUpdateItemsQueryTest::insertOrUpdate()
         q->add(&task);
         q->add(&note);
         q->add(&image);
+        q->add(&recipe);
         cache.run(q);
 
         QVERIFY(cacheFinished.wait());

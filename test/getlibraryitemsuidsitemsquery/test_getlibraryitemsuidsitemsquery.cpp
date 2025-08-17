@@ -30,6 +30,7 @@
 #include "datamodel/task.h"
 #include "datamodel/todo.h"
 #include "datamodel/todolist.h"
+#include "datamodel/recipe.h"
 #include "datastorage/cache.h"
 #include "datastorage/getlibraryitemsuidsitemsquery.h"
 #include "datastorage/insertorupdateitemsquery.h"
@@ -83,6 +84,9 @@ void GetLibraryItemsUIDsItemsQueryTest::run()
     Image image;
     image.setTitle("An image");
     image.setLibraryId(lib.uid());
+    Recipe recipe;
+    recipe.setTitle("A recipe");
+    recipe.setLibraryId(lib.uid());
 
     {
         auto q = new InsertOrUpdateItemsQuery;
@@ -95,6 +99,7 @@ void GetLibraryItemsUIDsItemsQueryTest::run()
         q->add(&task);
         q->add(&note);
         q->add(&image);
+        q->add(&recipe);
         cache.run(q);
 
         QVERIFY(destroyed.wait());
@@ -116,6 +121,7 @@ void GetLibraryItemsUIDsItemsQueryTest::run()
                 task.uid(),
                 note.uid(),
                 image.uid(),
+                recipe.uid(),
         });
         QCOMPARE(got, expected);
     }

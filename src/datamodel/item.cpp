@@ -35,6 +35,7 @@
 #include "datamodel/todolist.h"
 #include "datamodel/todo.h"
 #include "datamodel/task.h"
+#include "datamodel/recipe.h"
 
 #include "fileutils.h"
 #include "utilities/jsonutils.h"
@@ -603,6 +604,8 @@ Item* Item::createItem(const QString& itemType, QObject* parent)
         return new Todo(parent);
     } else if (itemType == "Task") {
         return new Task(parent);
+    } else if (itemType == "Recipe") {
+        return new Recipe(parent);
     } else {
         return nullptr;
     }

@@ -31,6 +31,7 @@
 #include "datamodel/task.h"
 #include "datamodel/todo.h"
 #include "datamodel/todolist.h"
+#include "datamodel/recipe.h"
 
 #include "datastorage/cache.h"
 #include "datastorage/copyitemquery.h"
@@ -50,11 +51,13 @@ private slots:
     void copyTodoListSameLibrary();
     void copyTodoSameLibrary();
     void copyTaskSameLibrary();
+    void copyRecipeSameLibrary();
     void copyImageDifferentLibrary();
     void copyNoteDifferentLibrary();
     void copyTodoListDifferentLibrary();
     void copyTodoDifferentLibrary();
     void copyTaskDifferentLibrary();
+    void copyRecipeDifferentLibrary();
     void cleanup();
     void cleanupTestCase() {}
 
@@ -542,6 +545,78 @@ void CopyItemQueryTest::copyTaskSameLibrary()
     }
 }
 
+void CopyItemQueryTest::copyRecipeSameLibrary()
+{
+    QTemporaryDir tmpDir1;
+
+    Library lib1(tmpDir1.path());
+    QDir dir(lib1.newItemLocation());
+    QVERIFY(dir.mkpath("."));
+    Recipe recipe1(dir);
+    recipe1.setLibraryId(lib1.uid());
+    recipe1.setTags({ "Dinner", "Italian" });
+    recipe1.setColor(TopLevelItem::Red);
+    recipe1.setTitle("Pasta Carbonara");
+    recipe1.setDueTo(QDateTime::currentDateTime());
+    recipe1.setNotes("Classic Italian pasta dish");
+    recipe1.setIngredients({ RecipeIngredient(1, "", "egg"), RecipeIngredient(100, "g", "pancetta"),
+                             RecipeIngredient(200, "g", "spaghetti"),
+                             RecipeIngredient(50, "g", "Parmesan cheese") });
+    recipe1.setSteps({ RecipeStep("Boil spaghetti", {}, {}), RecipeStep("Fry pancetta", {}, {}),
+                       RecipeStep("Mix eggs and cheese", {}, {}),
+                       RecipeStep("Combine all ingredients", {}, {}) });
+    recipe1.attachFile(SAMPLES_PATH "/image.jpg");
+
+    {
+        auto q = new InsertOrUpdateItemsQuery;
+        q->add(&lib1);
+        q->add(&recipe1);
+        cache->run(q);
+        QSignalSpy finished(q, &ItemsQuery::finished);
+        QVERIFY(finished.wait());
+    }
+
+    {
+        auto q = new CopyItemQuery;
+        q->copyItem(&recipe1, &lib1);
+        cache->run(q);
+        QSignalSpy finished(q, &ItemsQuery::finished);
+        QVERIFY(finished.wait());
+    }
+
+    {
+        auto q = new GetItemsQuery;
+        q->setParent(lib1.uid());
+        cache->run(q);
+        QSignalSpy itemsAvailable(q, &GetItemsQuery::itemsAvailable);
+        QVERIFY(itemsAvailable.wait());
+        auto items = itemsAvailable.at(0).at(0).toList();
+        // We should have the recipe and its copy
+        QCOMPARE(items.length(), 2);
+        auto recipe2 = qSharedPointerCast<Recipe>(
+                QSharedPointer<Item>(Item::decache(items.at(0).value<ItemCacheEntry>())));
+        if (recipe2->uid() == recipe1.uid()) {
+            recipe2 = qSharedPointerCast<Recipe>(
+                    QSharedPointer<Item>(Item::decache(items.at(1).value<ItemCacheEntry>())));
+        }
+
+        // The two should be - attribute wise - identical
+        QVERIFY(recipe1.uid() != recipe2->uid());
+        QCOMPARE(recipe2->libraryId(), recipe1.libraryId());
+        QCOMPARE(recipe2->tags(), recipe1.tags());
+        QCOMPARE(recipe2->color(), recipe1.color());
+        QCOMPARE(recipe2->title(), "Copy of " + recipe1.title());
+        QCOMPARE(recipe2->dueTo(), recipe1.dueTo());
+        QCOMPARE(recipe2->notes(), recipe1.notes());
+        QCOMPARE(recipe2->ingredients(), recipe1.ingredients());
+        QCOMPARE(recipe2->steps(), recipe1.steps());
+        QCOMPARE(recipe2->attachments().length(), 1);
+        QVERIFY(differentFilesHaveEqualContent(
+                recipe2->attachmentFileName(recipe2->attachments().at(0)),
+                recipe1.attachmentFileName(recipe1.attachments().at(0))));
+    }
+}
+
 void CopyItemQueryTest::copyImageDifferentLibrary()
 {
     QTemporaryDir tmpDir1;
@@ -1012,6 +1087,74 @@ void CopyItemQueryTest::copyTaskDifferentLibrary()
         QVERIFY(task2->todoUid() != task1.todoUid());
         QCOMPARE(task2->title(), task1.title());
         QCOMPARE(task2->done(), task1.done());
+    }
+}
+
+void CopyItemQueryTest::copyRecipeDifferentLibrary()
+{
+    QTemporaryDir tmpDir1;
+    QTemporaryDir tmpDir2;
+
+    Library lib1(tmpDir1.path());
+    Library lib2(tmpDir2.path());
+    QDir dir(lib1.newItemLocation());
+    QVERIFY(dir.mkpath("."));
+    Recipe recipe1(dir);
+    recipe1.setLibraryId(lib1.uid());
+    recipe1.setTags({ "Dinner", "Italian" });
+    recipe1.setColor(TopLevelItem::Red);
+    recipe1.setTitle("Pasta Carbonara");
+    recipe1.setDueTo(QDateTime::currentDateTime());
+    recipe1.setNotes("Classic Italian pasta dish");
+    recipe1.setIngredients(
+            { RecipeIngredient(1, "", "egg"), RecipeIngredient(100, "g", "pancetta") });
+    recipe1.setSteps({ RecipeStep("Boil pasta", {}, {}), RecipeStep("Mix ingredients", {}, {}) });
+    recipe1.attachFile(SAMPLES_PATH "/image.jpg");
+
+    {
+        auto q = new InsertOrUpdateItemsQuery;
+        q->add(&lib1);
+        q->add(&lib2);
+        q->add(&recipe1);
+        cache->run(q);
+        QSignalSpy finished(q, &ItemsQuery::finished);
+        QVERIFY(finished.wait());
+    }
+
+    {
+        auto q = new CopyItemQuery;
+        q->copyItem(&recipe1, &lib2);
+        cache->run(q);
+        QSignalSpy finished(q, &ItemsQuery::finished);
+        QVERIFY(finished.wait());
+    }
+
+    {
+        auto q = new GetItemsQuery;
+        q->setParent(lib2.uid());
+        cache->run(q);
+        QSignalSpy itemsAvailable(q, &GetItemsQuery::itemsAvailable);
+        QVERIFY(itemsAvailable.wait());
+        auto items = itemsAvailable.at(0).at(0).toList();
+        // We should have the recipe in the new library
+        QCOMPARE(items.length(), 1);
+        auto recipe2 = qSharedPointerCast<Recipe>(
+                QSharedPointer<Item>(Item::decache(items.at(0).value<ItemCacheEntry>())));
+
+        // The two should be - attribute wise - identical
+        QVERIFY(recipe1.uid() != recipe2->uid());
+        QCOMPARE(recipe2->libraryId(), lib2.uid());
+        QCOMPARE(recipe2->tags(), recipe1.tags());
+        QCOMPARE(recipe2->color(), recipe1.color());
+        QCOMPARE(recipe2->title(), recipe1.title());
+        QCOMPARE(recipe2->dueTo(), recipe1.dueTo());
+        QCOMPARE(recipe2->notes(), recipe1.notes());
+        QCOMPARE(recipe2->ingredients(), recipe1.ingredients());
+        QCOMPARE(recipe2->steps(), recipe1.steps());
+        QCOMPARE(recipe2->attachments().length(), 1);
+        QVERIFY(differentFilesHaveEqualContent(
+                recipe2->attachmentFileName(recipe2->attachments().at(0)),
+                recipe1.attachmentFileName(recipe1.attachments().at(0))));
     }
 }
 

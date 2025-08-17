@@ -26,6 +26,8 @@ target_sources(
         datamodel/note.h
         datamodel/notepage.cpp
         datamodel/notepage.h
+        datamodel/recipe.h
+        datamodel/recipe.cpp
         datamodel/task.cpp
         datamodel/task.h
         datamodel/todo.cpp

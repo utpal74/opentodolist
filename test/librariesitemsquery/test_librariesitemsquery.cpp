@@ -29,6 +29,7 @@
 #include "datamodel/task.h"
 #include "datamodel/todo.h"
 #include "datamodel/todolist.h"
+#include "datamodel/recipe.h"
 #include "datastorage/cache.h"
 #include "datastorage/insertorupdateitemsquery.h"
 #include "datastorage/librariesitemsquery.h"
@@ -85,6 +86,10 @@ void LibrariesItemsQueryTest::run()
     image.setTitle("An image");
     image.setLibraryId(lib.uid());
     image.setTags({ "Tag 3" });
+    Recipe recipe;
+    recipe.setTitle("A recipe");
+    recipe.setLibraryId(lib.uid());
+    recipe.setTags({ "Tag 4" });
 
     {
         auto q = new InsertOrUpdateItemsQuery;
@@ -97,6 +102,7 @@ void LibrariesItemsQueryTest::run()
         q->add(&task);
         q->add(&note);
         q->add(&image);
+        q->add(&recipe);
         cache.run(q);
 
         QVERIFY(destroyed.wait());
@@ -123,10 +129,11 @@ void LibrariesItemsQueryTest::run()
         auto lib2 = Library::decache(entry);
         QVERIFY(lib2 != nullptr);
         auto tags = lib2->tags();
-        QCOMPARE(tags.length(), 3);
+        QCOMPARE(tags.length(), 4);
         QVERIFY(tags.contains("Tag 1"));
         QVERIFY(tags.contains("Tag 2"));
         QVERIFY(tags.contains("Tag 3"));
+        QVERIFY(tags.contains("Tag 4"));
         delete lib2;
     }
 
@@ -137,6 +144,7 @@ void LibrariesItemsQueryTest::run()
         task.setTitle("Changed task");
         note.setTitle("Changed note");
         image.setTitle("Changed image");
+        recipe.setTitle("Changed recipe");
 
         auto q = new InsertOrUpdateItemsQuery;
         QSignalSpy finished(q, &InsertOrUpdateItemsQuery::finished);
@@ -148,6 +156,7 @@ void LibrariesItemsQueryTest::run()
         q->add(&task);
         q->add(&note);
         q->add(&image);
+        q->add(&recipe);
         cache.run(q);
 
         QVERIFY(destroyed.wait());
