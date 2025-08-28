@@ -14,6 +14,7 @@ C.RoundButton {
     signal newImage
     signal newNote
     signal newTodo
+    signal newRecipe
 
     anchors {
         right: parent.right
@@ -57,6 +58,10 @@ C.RoundButton {
             onTriggered: newItemButton.newImage()
             visible: newItemButton.createImages
             height: visible ? implicitHeight : 0
+        }
+        C.MenuItem {
+            text: qsTr("Recipe")
+            onTriggered: newItemButton.newRecipe()
         }
     }
 }

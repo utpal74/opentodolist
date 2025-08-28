@@ -653,6 +653,36 @@ Note* Application::addNote(Library* library, QVariantMap properties)
     return note;
 }
 
+/**
+ * @brief Add a new recipe to the given library.
+ *
+ * @param library The library to add the recipe to.
+ * @param properties Properties to set on the new recipe.
+ * @return Recipe* The created recipe, or nullptr on failure.
+ */
+Recipe* Application::addRecipe(Library* library, QVariantMap properties)
+{
+    Recipe* recipe = nullptr;
+    if (library != nullptr) {
+        if (library->isValid()) {
+            QDir dir(library->newItemLocation());
+            dir.mkpath(".");
+            recipe = new Recipe(dir);
+        } else {
+            recipe = new Recipe();
+        }
+        for (auto it = properties.constBegin(); it != properties.constEnd(); ++it) {
+            recipe->setProperty(it.key().toUtf8(), it.value());
+        }
+        recipe->setLibraryId(library->uid());
+        auto q = new InsertOrUpdateItemsQuery();
+        q->add(recipe, InsertOrUpdateItemsQuery::CreateNewItem);
+        m_cache->run(q);
+        recipe->setCache(m_cache);
+    }
+    return recipe;
+}
+
 NotePage* Application::addNotePage(Library* library, Note* note, QVariantMap properties)
 {
     NotePage* page = nullptr;

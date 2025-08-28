@@ -37,6 +37,7 @@
 #include "sync/account.h"
 #include "sync/remotelibraryinfo.h"
 #include "datastorage/cache.h"
+#include "datamodel/recipe.h"
 
 Q_MOC_INCLUDE("datamodel/task.h")
 Q_MOC_INCLUDE("datamodel/todo.h")
@@ -130,6 +131,7 @@ public:
     Q_INVOKABLE void deleteItem(Item* item);
     Q_INVOKABLE void deleteDoneTodos(TodoList* todoList);
     Q_INVOKABLE void deleteDoneTasks(Todo* todo);
+    Q_INVOKABLE Recipe* addRecipe(Library* library, QVariantMap properties);
     Q_INVOKABLE QUuid loadLibrary(const QUuid& uid);
     Q_INVOKABLE Library* libraryFromData(const QVariant& data);
     Q_INVOKABLE QUuid loadItem(const QUuid& uid);

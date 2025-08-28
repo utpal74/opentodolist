@@ -66,6 +66,11 @@ C.Page {
         newTodoListBar.edit.text = "";
     }
 
+    function newRecipe() {
+        newRecipeBar.edit.forceActiveFocus();
+        newRecipeBar.edit.text = "";
+    }
+
     function renameItem() {
         renameLibraryDialog.renameLibrary(library);
     }
@@ -138,6 +143,18 @@ C.Page {
             };
 
             var result = OTL.Application.addTodoList(library, properties);
+            edit.text = "";
+            edit.focus = false;
+            return result;
+        }
+
+        function createRecipe(library, edit, tags) {
+            var properties = {
+                "title": edit.displayText,
+                "tags": tags
+            };
+
+            var result = OTL.Application.addRecipe(library, properties);
             edit.text = "";
             edit.focus = false;
             return result;
@@ -396,6 +413,21 @@ C.Page {
     }
 
     TextInputBar {
+        id: newRecipeBar
+
+        placeholderText: qsTr("Recipe Title")
+
+        onAccepted: {
+            var tags = [];
+            if (page.tag !== "") {
+                tags = [page.tag];
+            }
+            var recipe = d.createRecipe(library, newRecipeBar.edit, tags);
+            itemCreatedNotification.show(recipe);
+        }
+    }
+
+    TextInputBar {
         id: filterBar
 
         closeOnButtonClick: true
@@ -500,6 +532,7 @@ C.Page {
         onNewImage: page.newImage()
         onNewNote: page.newNote()
         onNewTodoList: page.newTodoList()
+        onNewRecipe: page.newRecipe()
     }
 
     SyncErrorNotificationBar {
