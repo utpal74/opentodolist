@@ -21,7 +21,7 @@
 #define DATAMODEL_RECIPE_H_
 
 #include <QObject>
-#include <QVector>
+#include <QList>
 #include <QString>
 #include <QtCore/qcontainerfwd.h>
 #include <qqmlregistration.h>
@@ -31,6 +31,7 @@
 class RecipeIngredient
 {
     Q_GADGET
+    QML_VALUE_TYPE(recipeIngredient)
     Q_PROPERTY(double amount READ amount WRITE setAmount)
     Q_PROPERTY(QString unit READ unit WRITE setUnit)
     Q_PROPERTY(QString name READ name WRITE setName)
@@ -64,20 +65,23 @@ private:
     QString m_name;
 };
 
-using RecipeIngredients = QVector<RecipeIngredient>;
+using RecipeIngredients = QList<RecipeIngredient>;
+
+using RecipeUtilities = QList<QString>;
 
 class RecipeStep
 {
     Q_GADGET
+    QML_VALUE_TYPE(recipeStep)
 
     Q_PROPERTY(QString description READ description WRITE setDescription)
-    Q_PROPERTY(RecipeIngredients ingredients READ ingredients WRITE setIngredients)
-    Q_PROPERTY(QVector<QString> utilities READ utilities WRITE setUtilities)
+    Q_PROPERTY(QList<RecipeIngredient> ingredients READ ingredients WRITE setIngredients)
+    Q_PROPERTY(QList<QString> utilities READ utilities WRITE setUtilities)
 
 public:
     RecipeStep() = default;
     RecipeStep(const QString& description, const RecipeIngredients& ingredients,
-               const QVector<QString>& utilities);
+               const RecipeUtilities& utilities);
     RecipeStep(const RecipeStep& other);
     RecipeStep& operator=(const RecipeStep& other);
     ~RecipeStep() = default;
@@ -93,8 +97,8 @@ public:
     RecipeIngredients ingredients() const { return m_ingredients; }
     void setIngredients(const RecipeIngredients& ingredients) { m_ingredients = ingredients; }
 
-    QVector<QString> utilities() const { return m_utilities; }
-    void setUtilities(const QVector<QString>& utilities) { m_utilities = utilities; }
+    RecipeUtilities utilities() const { return m_utilities; }
+    void setUtilities(const RecipeUtilities& utilities) { m_utilities = utilities; }
 
     QVariantMap toMap() const;
     static RecipeStep fromMap(const QVariantMap& map);
@@ -102,22 +106,21 @@ public:
 private:
     QString m_description;
     RecipeIngredients m_ingredients;
-    QVector<QString> m_utilities;
+    RecipeUtilities m_utilities;
 };
 
-using RecipeSteps = QVector<RecipeStep>;
-
-using RecipeUtilities = QVector<QString>;
+using RecipeSteps = QList<RecipeStep>;
 
 class Recipe : public TopLevelItem
 {
     Q_OBJECT
+    QML_ELEMENT
 
 public:
-    Q_PROPERTY(RecipeSteps steps READ steps WRITE setSteps NOTIFY stepsChanged)
-    Q_PROPERTY(RecipeIngredients ingredients READ ingredients WRITE setIngredients NOTIFY
+    Q_PROPERTY(QList<RecipeStep> steps READ steps WRITE setSteps NOTIFY stepsChanged)
+    Q_PROPERTY(QList<RecipeIngredient> ingredients READ ingredients WRITE setIngredients NOTIFY
                        ingredientsChanged)
-    Q_PROPERTY(RecipeUtilities utilities READ utilities WRITE setUtilities NOTIFY utilitiesChanged)
+    Q_PROPERTY(QList<QString> utilities READ utilities WRITE setUtilities NOTIFY utilitiesChanged)
 
 public:
     Recipe(QObject* parent = nullptr);

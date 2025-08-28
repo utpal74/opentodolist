@@ -176,7 +176,7 @@ RecipeIngredient RecipeIngredient::fromMap(const QVariantMap& map)
  * @param utilities List of utilities (tools, equipment) needed for this step.
  */
 RecipeStep::RecipeStep(const QString& description, const RecipeIngredients& ingredients,
-                       const QVector<QString>& utilities)
+                       const RecipeUtilities& utilities)
     : m_description(description), m_ingredients(ingredients), m_utilities(utilities)
 {
 }
@@ -331,7 +331,7 @@ RecipeStep RecipeStep::fromMap(const QVariantMap& map)
         ingredients.append(RecipeIngredient::fromMap(ingredientMap));
     }
 
-    QVector<QString> utilities;
+    RecipeUtilities utilities;
     QVariantList utilitiesList = map.value("utilities").toList();
     for (const QVariant& utilityVar : utilitiesList) {
         utilities.append(utilityVar.toString());

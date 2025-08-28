@@ -495,7 +495,7 @@ qt_add_qml_module(
         # Otherwise, we have file name conflicts on some platforms (such as
         # Linux), where the executable name would be equal to the OpenTodoList
         # qml folder name.
-        ${CMAKE_CURRENT_BINARY_DIR}/qml
+        ${CMAKE_CURRENT_BINARY_DIR}/qml/OpenTodoList
     QML_FILES
         Actions/CopyTodo.qml
         Actions/CopyTopLevelItem.qml
@@ -635,6 +635,7 @@ qt_add_qml_module(
         Widgets/NewTopLevelItemButton.qml
         Widgets/NoteItem.qml
         Widgets/ProgressItemOverlay.qml
+        Widgets/RecipeItem.qml
         Widgets/ReorderableListViewOverlay.qml
         Widgets/SyncErrorNotificationBar.qml
         Widgets/TagsEditor.qml
@@ -786,6 +787,6 @@ add_custom_command(
         ${CMAKE_COMMAND} -E remove_directory ${CMAKE_BINARY_DIR}/OpenTodoList
     COMMAND
         ${CMAKE_COMMAND} -E create_symlink
-            ${CMAKE_CURRENT_BINARY_DIR}/OpenTodoList
+            ${CMAKE_CURRENT_BINARY_DIR}/qml/OpenTodoList
             ${CMAKE_BINARY_DIR}/OpenTodoList
 )

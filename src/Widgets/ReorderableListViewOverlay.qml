@@ -19,8 +19,8 @@ Item {
 
         readonly property var dropKeys: {
             let result = []
-            if (dragTile) {
-                for (let key in dragTile.Drag.mimeData) {
+            if (root.dragTile) {
+                for (let key in root.dragTile.Drag.mimeData) {
                     result.push(key)
                 }
             }
@@ -35,7 +35,7 @@ Item {
 
     C.Pane {
         id: itemBackground
-        visible: dragTile && dragTile.item == item && dragTile.dragging
+        visible: root.dragTile && root.dragTile.item == root.item && root.dragTile.dragging
         anchors.fill: parent
         // palette.window: palette.button
         opacity: 0.2
