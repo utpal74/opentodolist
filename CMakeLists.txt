@@ -23,7 +23,7 @@ include(3rdparty/android-openssl/android_openssl.cmake)
 # Enable unit tests:
 enable_testing()
 
-set(REQUIRED_QT_COMPONENTS Core Quick Qml Xml Concurrent Sql RemoteObjects LinguistTools Widgets Network NetworkAuth Test)
+set(REQUIRED_QT_COMPONENTS Core Quick Gui GuiPrivate Qml Xml Concurrent Sql RemoteObjects LinguistTools Widgets Network NetworkAuth Test)
 
 find_package(
     Qt6
