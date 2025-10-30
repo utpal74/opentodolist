@@ -18,6 +18,8 @@
  */
 #include "recipe.h"
 
+#include <utility>
+
 /**
  * @brief Default constructor for RecipeIngredient.
  *
@@ -162,10 +164,10 @@ QVariantMap RecipeIngredient::toMap() const
  */
 RecipeIngredient RecipeIngredient::fromMap(const QVariantMap& map)
 {
-    double amount = map.value("amount").toDouble();
-    QString unit = map.value("unit").toString();
-    QString name = map.value("name").toString();
-    return RecipeIngredient(amount, unit, name);
+    double amount_ = map.value("amount").toDouble();
+    QString unit_ = map.value("unit").toString();
+    QString name_ = map.value("name").toString();
+    return RecipeIngredient(amount_, unit_, name_);
 }
 
 /**
@@ -322,22 +324,22 @@ QVariantMap RecipeStep::toMap() const
  */
 RecipeStep RecipeStep::fromMap(const QVariantMap& map)
 {
-    QString description = map.value("description").toString();
+    QString description_ = map.value("description").toString();
 
-    RecipeIngredients ingredients;
+    RecipeIngredients ingredients_;
     QVariantList ingredientsList = map.value("ingredients").toList();
     for (const QVariant& ingredientVar : ingredientsList) {
         QVariantMap ingredientMap = ingredientVar.toMap();
-        ingredients.append(RecipeIngredient::fromMap(ingredientMap));
+        ingredients_.append(RecipeIngredient::fromMap(ingredientMap));
     }
 
-    RecipeUtilities utilities;
+    RecipeUtilities utilities_;
     QVariantList utilitiesList = map.value("utilities").toList();
     for (const QVariant& utilityVar : utilitiesList) {
-        utilities.append(utilityVar.toString());
+        utilities_.append(utilityVar.toString());
     }
 
-    return RecipeStep(description, ingredients, utilities);
+    return RecipeStep(description_, ingredients_, utilities_);
 }
 
 /**

@@ -50,10 +50,10 @@ public:
     double amount() const { return m_amount; }
     void setAmount(double amount) { m_amount = amount; }
 
-    QString unit() const { return m_unit; }
+    const QString& unit() const { return m_unit; }
     void setUnit(const QString& unit) { m_unit = unit; }
 
-    QString name() const { return m_name; }
+    const QString& name() const { return m_name; }
     void setName(const QString& name) { m_name = name; }
 
     QVariantMap toMap() const;
@@ -91,13 +91,13 @@ public:
     bool operator==(const RecipeStep& other) const;
     bool operator!=(const RecipeStep& other) const;
 
-    QString description() const { return m_description; }
+    const QString& description() const { return m_description; }
     void setDescription(const QString& description) { m_description = description; }
 
-    RecipeIngredients ingredients() const { return m_ingredients; }
+    const RecipeIngredients& ingredients() const { return m_ingredients; }
     void setIngredients(const RecipeIngredients& ingredients) { m_ingredients = ingredients; }
 
-    RecipeUtilities utilities() const { return m_utilities; }
+    const RecipeUtilities& utilities() const { return m_utilities; }
     void setUtilities(const RecipeUtilities& utilities) { m_utilities = utilities; }
 
     QVariantMap toMap() const;
@@ -123,20 +123,20 @@ public:
     Q_PROPERTY(QList<QString> utilities READ utilities WRITE setUtilities NOTIFY utilitiesChanged)
 
 public:
-    Recipe(QObject* parent = nullptr);
-    Recipe(const QString& filename, QObject* parent = nullptr);
-    Recipe(const Recipe& other);
-    Recipe(const QDir& dir, QObject* parent = nullptr);
+    explicit Recipe(QObject* parent = nullptr);
+    explicit Recipe(const QString& filename, QObject* parent = nullptr);
+    explicit Recipe(const Recipe& other);
+    explicit Recipe(const QDir& dir, QObject* parent = nullptr);
     Recipe(Recipe&& other) noexcept;
     ~Recipe() override = default;
 
-    RecipeSteps steps() const;
+    const RecipeSteps& steps() const;
     void setSteps(const RecipeSteps& steps);
 
-    RecipeIngredients ingredients() const;
+    const RecipeIngredients& ingredients() const;
     void setIngredients(const RecipeIngredients& ingredients);
 
-    RecipeUtilities utilities() const;
+    const RecipeUtilities& utilities() const;
     void setUtilities(const RecipeUtilities& utilities);
 
     QVariantMap toMap() const override;
