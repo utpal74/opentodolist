@@ -63,15 +63,9 @@ desktop-file-validate AppImageBuild/usr/share/applications/net.rpdev.OpenTodoLis
 # Copy OpenSSL libraries (use ones build from sources delivered with Qt):
 mkdir -p AppImageBuild/usr/lib
 cp \
-    /usr/local/lib64/libcrypto.so.3 \
-    /usr/local/lib64/libssl.so.3 \
+    /usr/lib/x86_64-linux-gnu/libssl.so \
+    /usr/lib/x86_64-linux-gnu/libcrypto.so \
     AppImageBuild/usr/lib
-
-(
-    cd AppImageBuild/usr/lib && \
-    ln -s libcrypto.so.3 libcrypto.so && \
-    ln -s libssl.so.3 libssl.so
-)
 
 export LD_LIBRARY_PATH=$PWD/AppImageBuild/usr/lib:$LD_LIBRARY_PATH
 
