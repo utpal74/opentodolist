@@ -430,7 +430,7 @@ Recipe::Recipe(Recipe&& other) noexcept
  *
  * @return RecipeSteps Returns the collection of steps that make up the recipe.
  */
-RecipeSteps Recipe::steps() const
+const RecipeSteps& Recipe::steps() const
 {
     return m_steps;
 }
@@ -456,7 +456,7 @@ void Recipe::setSteps(const RecipeSteps& steps)
  *
  * @return RecipeIngredients The collection of ingredients in the recipe.
  */
-RecipeIngredients Recipe::ingredients() const
+const RecipeIngredients& Recipe::ingredients() const
 {
     return m_ingredients;
 }
@@ -480,7 +480,7 @@ void Recipe::setIngredients(const RecipeIngredients& ingredients)
  *
  * @return RecipeUtilities The utilities (tools, equipment, etc.) needed for the recipe.
  */
-RecipeUtilities Recipe::utilities() const
+const RecipeUtilities& Recipe::utilities() const
 {
     return m_utilities;
 }
