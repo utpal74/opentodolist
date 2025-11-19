@@ -73,7 +73,7 @@ for i in initial retry; do
     pushd dist-web
     $QT_DIR/bin/macdeployqt \
         OpenTodoList.app/ \
-        -qmldir=../../app \
+        -qmldir=../../src \
         -appstore-compliant \
         -sign-for-notarization="Developer ID Application: Martin Hoeher (786Z636JV9)"
     find OpenTodoList.app -name "*.dSYM" -type d | xargs rm -rf
@@ -154,7 +154,7 @@ cp -r src/OpenTodoList.app dist-store
 pushd dist-store
 $QT_DIR/bin/macdeployqt \
     OpenTodoList.app/ \
-    -qmldir=../../app \
+    -qmldir=../../src \
     -appstore-compliant \
     -sign-for-notarization="Apple Distribution: Martin Hoeher (786Z636JV9)"
 find OpenTodoList.app -name "*.dSYM" -type d | xargs rm -rf
