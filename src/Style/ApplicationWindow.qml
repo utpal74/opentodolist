@@ -6,6 +6,8 @@ Basic.ApplicationWindow {
 
     font.family: Fonts.regularFont
     palette: ColorTheme.selectedPalette
+    flags: Qt.Window | Qt.ExpandedClientAreaHint | Qt.NoTitleBarBackgroundHint
+
 
     Basic.Overlay.overlay.palette: appWindow.palette
 }
