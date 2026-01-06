@@ -30,6 +30,7 @@
 #include <QtQml/qqmlregistration.h>
 #include <qqmlintegration.h>
 
+#include <algorithm>
 #include <functional>
 
 #include "datamodel/item.h"

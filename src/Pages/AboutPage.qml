@@ -44,7 +44,7 @@ C.Page {
             }
 
             C.Label {
-                text: "(c) RPdev 2013-2023 - v%1".arg(applicationVersion)
+                text: "(c) RPdev 2013-2026 - v%1".arg(applicationVersion)
                 width: parent.width
                 padding: Utils.AppSettings.smallSpace
             }

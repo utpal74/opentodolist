@@ -23,6 +23,8 @@
 #include <QDateTime>
 #include <QRegularExpression>
 
+#include <algorithm>
+
 #include "datamodel/complexitem.h"
 #include "datamodel/todolist.h"
 #include "datamodel/todo.h"
