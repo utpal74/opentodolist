@@ -18,7 +18,6 @@ include(cmake/options.cmake)
 include(cmake/global-variables.cmake)
 include(cmake/version.cmake)
 include(cmake/Flatpak.cmake)
-include(3rdparty/android-openssl/android_openssl.cmake)
 
 # Enable unit tests:
 enable_testing()
@@ -33,6 +32,9 @@ find_package(
 )
 
 set(QT_VERSION_MAJOR 6)
+
+# Note: Include this after finding Qt, as the module uses Qt variables
+include(3rdparty/android-openssl/android_openssl.cmake)
 
 qt_policy(SET QTP0001 NEW)
 qt_policy(SET QTP0004 NEW)

@@ -59,14 +59,11 @@ CenteredDialog {
             textRole: "title"
             valueRole: "object"
             Layout.fillWidth: true
-            model: OTL.ItemsSortFilterModel {
-                id: itemsSortFilterModel
+            model: OTL.ItemsModel {
+                id: itemsModel
                 sortRole: OTL.ItemsModel.TitleRole
-                sourceModel: OTL.ItemsModel {
-                    id: itemsModel
-                    cache: OTL.Application.cache
-                    parentItem: libraryComboBox.currentValue ? libraryComboBox.currentValue.uid : ""
-                }
+                cache: OTL.Application.cache
+                parentItem: libraryComboBox.currentValue ? libraryComboBox.currentValue.uid : ""
             }
         }
     }

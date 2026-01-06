@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Martin Hoeher <martin@rpdev.net>
+ * Copyright 2020-2026 Martin Hoeher <martin@rpdev.net>
  +
  * This file is part of OpenTodoList.
  *
@@ -29,6 +29,8 @@
 #include <QtCore/qabstractitemmodel.h>
 #include <QtQml/qqmlregistration.h>
 #include <qqmlintegration.h>
+
+#include <functional>
 
 #include "datamodel/item.h"
 #include "datastorage/cache.h"
@@ -73,6 +75,10 @@ class ItemsModel : public QAbstractListModel
     Q_PROPERTY(QString itemType READ itemType WRITE setItemType NOTIFY itemTypeChanged)
     Q_PROPERTY(bool untaggedOnly READ untaggedOnly WRITE setUntaggedOnly NOTIFY untaggedOnlyChanged
                        FINAL)
+    Q_PROPERTY(QList<QUuid> itemsToExclude READ itemsToExclude WRITE setItemsToExclude NOTIFY
+                       itemsToExcludeChanged)
+    Q_PROPERTY(int sortRole READ sortRole WRITE setSortRole NOTIFY sortRoleChanged)
+    Q_PROPERTY(bool groupDone READ groupDone WRITE setGroupDone NOTIFY groupDoneChanged)
     QML_ELEMENT
 public:
     enum Roles {
@@ -145,6 +151,16 @@ public:
     bool untaggedOnly() const;
     void setUntaggedOnly(bool newUntaggedOnly);
 
+    int sortRole() const;
+    void setSortRole(int sortRole);
+
+    bool groupDone() const;
+    void setGroupDone(bool groupDone);
+
+    std::function<bool(ItemPtr item, GetItemsQuery* query)> getFilterFn() const;
+
+    void sort(int column, Qt::SortOrder order = Qt::AscendingOrder) override;
+
 signals:
 
     void cacheChanged();
@@ -165,6 +181,18 @@ signals:
 
     void untaggedOnlyChanged();
 
+    /**
+     * @brief Indicates that the model was just updated.
+     *
+     * This signal is emitted after the model has been updated, i.e. after it has loaded its data
+     * from the database.
+     */
+    void updateFinished();
+
+    // Notifier signals for sortRole and groupDone
+    void sortRoleChanged();
+    void groupDoneChanged();
+
 public slots:
 
 private:
@@ -179,6 +207,8 @@ private:
     QString m_searchString;
     QString m_tag;
     QString m_itemType;
+    int m_sortRole;
+    bool m_groupDone;
     bool m_onlyDone;
     bool m_onlyUndone;
     bool m_onlyWithDueDate;
@@ -195,10 +225,7 @@ private:
 
     QString timeSpanLabel(Item* item, int role) const;
 
-    Q_PROPERTY(QList<QUuid> itemsToExclude READ itemsToExclude WRITE setItemsToExclude NOTIFY
-                       itemsToExcludeChanged)
-
-    std::function<bool(ItemPtr item, GetItemsQuery* query)> getFilterFn() const;
+    bool lessThan(const QModelIndex& source_left, const QModelIndex& source_right) const;
 
 private slots:
 

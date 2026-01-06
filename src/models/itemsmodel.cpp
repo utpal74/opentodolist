@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Martin Hoeher <martin@rpdev.net>
+ * Copyright 2020-2026 Martin Hoeher <martin@rpdev.net>
  +
  * This file is part of OpenTodoList.
  *
@@ -41,6 +41,9 @@ ItemsModel::ItemsModel(QObject* parent)
       m_itemsToExclude(),
       m_searchString(),
       m_tag(),
+      m_itemType(),
+      m_sortRole(ItemsModel::WeightRole),
+      m_groupDone(false),
       m_onlyDone(false),
       m_onlyUndone(false),
       m_onlyWithDueDate(false),
@@ -697,6 +700,9 @@ void ItemsModel::update(const QVariantList& items, const QUuid& queryUid)
     }
 
     m_updating = false;
+    emit updateFinished();
+
+    sort(0);
 }
 
 void ItemsModel::itemChanged()
@@ -708,11 +714,168 @@ void ItemsModel::itemChanged()
             auto index = static_cast<int>(m_ids.indexOf(id));
             auto modelIndex = this->index(index);
             emit dataChanged(modelIndex, modelIndex);
+            sort(0);
         }
         if (!m_updating && m_cache != nullptr) {
             auto q = new InsertOrUpdateItemsQuery();
             q->add(item, InsertOrUpdateItemsQuery::Save);
             m_cache->run(q);
+        }
+    }
+}
+
+/**
+ * @brief Returns the current sort role used by the model.
+ *
+ * The sort role determines which data role is used when sorting items
+ * within the model.
+ *
+ * @return The integer value representing the current sort role.
+ */
+int ItemsModel::sortRole() const
+{
+    return m_sortRole;
+}
+
+/**
+ * @brief Sets the role used for sorting items in the model.
+ *
+ * If the provided sort role is different from the current one,
+ * updates the sort role and emits the sortRoleChanged() signal
+ * to notify any observers of the change.
+ *
+ * @param sortRole The new role to use for sorting.
+ */
+void ItemsModel::setSortRole(int sortRole)
+{
+    if (m_sortRole != sortRole) {
+        m_sortRole = sortRole;
+        emit sortRoleChanged();
+        sort(0);
+    }
+}
+
+/**
+ * @brief Returns whether completed items are grouped together in the model.
+ *
+ * When this property is set to true, completed items will be grouped together,
+ * typically at the end of the list, making it easier to distinguish between
+ * completed and pending tasks.
+ *
+ * @return true if completed items are grouped; false otherwise.
+ */
+bool ItemsModel::groupDone() const
+{
+    return m_groupDone;
+}
+
+/**
+ * @brief Sets whether completed items should be grouped together in the model.
+ *
+ * If the provided value is different from the current setting, updates
+ * the grouping behavior and emits the groupDoneChanged() signal to notify
+ * any observers of the change.
+ *
+ * @param groupDone true to group completed items; false to intersperse them.
+ */
+void ItemsModel::setGroupDone(bool groupDone)
+{
+    if (m_groupDone != groupDone) {
+        m_groupDone = groupDone;
+        emit groupDoneChanged();
+        sort(0);
+    }
+}
+
+/**
+ * @brief Compares two items in the model to determine their sorting order.
+ *
+ * This method is used by the model's sorting mechanism to decide whether the item
+ * at @p source_left should appear before the item at @p source_right, based on the
+ * current sort role and grouping settings.
+ *
+ * The comparison logic is as follows:
+ * - If grouping by "done" status is enabled (@c m_groupDone), items that are not done
+ *   are always considered less than items that are done.
+ * - For certain roles (CreatedAtRole, UpdatedAtRole, EffectiveUpdatedAtRole), sorting
+ *   is performed in reverse order to display the most recent items first.
+ * - For due date roles (DueToRole, EffectiveDueToRole), items with a valid due date
+ *   are sorted before those without, using a string trick to ensure proper ordering.
+ * - For all other roles, the default comparison is used.
+ *
+ * @param source_left The model index of the left item to compare.
+ * @param source_right The model index of the right item to compare.
+ * @return @c true if the left item should appear before the right item, @c false otherwise.
+ */
+bool ItemsModel::lessThan(const QModelIndex& source_left, const QModelIndex& source_right) const
+{
+    if (m_groupDone) {
+        auto leftDone = source_left.data(ItemsModel::DoneRole).toBool();
+        auto rightDone = source_right.data(ItemsModel::DoneRole).toBool();
+        if (!leftDone && rightDone) {
+            // Left is undone, right is done - it is clearly "less than".
+            return true;
+        }
+        if (leftDone && !rightDone) {
+            // Left is done, right undone - it is clearly "not less than".
+            return false;
+        }
+        // In any other case, we check out the next sort criteria.
+    }
+
+    switch (sortRole()) {
+
+    // For the following roles, sort in reverse order (usually, to get a
+    // "most-recent on top" ordering):
+    case ItemsModel::CreatedAtRole:
+    case ItemsModel::UpdatedAtRole:
+    case ItemsModel::EffectiveUpdatedAtRole:
+        return QVariant::compare(source_right.data(sortRole()), source_left.data(sortRole()))
+                == QPartialOrdering::Less;
+
+    // For the DueTo role, apply a little trick: Sort by the due to role
+    // data (converted to a string), but append an 'X'. This causes
+    // Any items with a valid due date to appear first in listings.
+    case ItemsModel::DueToRole:
+    case ItemsModel::EffectiveDueToRole: {
+        auto left_dt = source_left.data(sortRole()).toString();
+        auto right_dt = source_right.data(sortRole()).toString();
+        return left_dt + "x" < right_dt + "x";
+    }
+
+    // For everything else, use the default sorting:
+    default:
+        return QVariant::compare(source_left.data(sortRole()), source_right.data(sortRole()))
+                == QPartialOrdering::Less;
+    }
+}
+
+/**
+ * @brief Sorts the items in the model based on the specified column and order.
+ *
+ * This function performs an in-place sort of the model's items using a bubble sort algorithm.
+ * The sorting is done according to the comparison logic defined in lessThan(), and the order
+ * can be either ascending or descending as specified by the 'order' parameter.
+ * The function emits the necessary signals to notify views of row movements.
+ *
+ * @param column The column index to sort by (currently not used in the implementation).
+ * @param order The sort order, either Qt::AscendingOrder or Qt::DescendingOrder.
+ */
+void ItemsModel::sort(int column, Qt::SortOrder order)
+{
+    for (int i = 0; i < m_ids.size() - 1; ++i) {
+        for (int j = 0; j < m_ids.size() - i - 1; ++j) {
+            auto leftIndex = index(j);
+            auto rightIndex = index(j + 1);
+            bool isLessThan = lessThan(leftIndex, rightIndex);
+            if (order == Qt::DescendingOrder) {
+                isLessThan = !isLessThan;
+            }
+            if (!isLessThan) {
+                beginMoveRows(QModelIndex(), j + 1, j + 1, QModelIndex(), j);
+                m_ids.swapItemsAt(j, j + 1);
+                endMoveRows();
+            }
         }
     }
 }

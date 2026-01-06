@@ -149,16 +149,14 @@ ItemPage {
         id: renameItemDialog
     }
 
-    OTL.ItemsSortFilterModel {
+    OTL.ItemsModel {
         id: todosModel
         sortRole: d.sortTodosRole
         groupDone: AppSettings.todoListPageSettings.groupDone
-        sourceModel: OTL.ItemsModel {
-            cache: OTL.Application.cache
-            parentItem: page.item?.uid ?? ""
-            searchString: filterBar.text
-            onlyUndone: !AppSettings.todoListPageSettings.showUndone
-        }
+        cache: OTL.Application.cache
+        parentItem: page.item?.uid ?? ""
+        searchString: filterBar.text
+        onlyUndone: !AppSettings.todoListPageSettings.showUndone
     }
 
     TextInputBar {

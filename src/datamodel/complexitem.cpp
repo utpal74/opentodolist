@@ -1,5 +1,5 @@
 /*
- * Copyright 2020-2023 Martin Hoeher <martin@rpdev.net>
+ * Copyright 2020-2026 Martin Hoeher <martin@rpdev.net>
  +
  * This file is part of OpenTodoList.
  *
@@ -24,15 +24,12 @@
 #include <QTextDocument>
 #include <QtConcurrent>
 
-static Q_LOGGING_CATEGORY(log, "OpenTodoList.ComplexItem", QtWarningMsg)
+static Q_LOGGING_CATEGORY(log, "OpenTodoList.ComplexItem", QtWarningMsg);
 
-        /**
-         * @brief Constructor.
-         */
-        ComplexItem::ComplexItem(QObject* parent)
-    : ComplexItem(QString(), parent)
-{
-}
+/**
+ * @brief Constructor.
+ */
+ComplexItem::ComplexItem(QObject* parent) : ComplexItem(QString(), parent) {}
 
 /**
  * @brief Constructor.

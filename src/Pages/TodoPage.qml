@@ -165,15 +165,13 @@ ItemPage {
         id: renameItemDialog
     }
 
-    OTL.ItemsSortFilterModel {
+    OTL.ItemsModel {
         id: tasks
         groupDone: settings.groupDone
-        sourceModel: OTL.ItemsModel {
-            cache: OTL.Application.cache
-            parentItem: page.item.uid
-            searchString: filterBar.text
-            onlyUndone: !settings.showUndone
-        }
+        cache: OTL.Application.cache
+        parentItem: page.item.uid
+        searchString: filterBar.text
+        onlyUndone: !settings.showUndone
     }
 
     TextInputBar {

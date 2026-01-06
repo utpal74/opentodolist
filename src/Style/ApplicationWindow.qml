@@ -8,6 +8,5 @@ Basic.ApplicationWindow {
     palette: ColorTheme.selectedPalette
     flags: Qt.Window | Qt.ExpandedClientAreaHint | Qt.NoTitleBarBackgroundHint
 
-
     Basic.Overlay.overlay.palette: appWindow.palette
 }

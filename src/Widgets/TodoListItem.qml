@@ -99,15 +99,13 @@ MouseArea {
                 spacing: AppSettings.smallSpace
                 interactive: false
                 clip: true
-                model: OTL.ItemsSortFilterModel {
+                model: OTL.ItemsModel {
                     sortRole: item.C.ApplicationWindow.window?.itemUtils.todosSortRoleFromString(
                                   AppSettings.todoListPageSettings.sortTodosBy)
                               ?? OTL.ItemsModel.TitleRole
-                    sourceModel: OTL.ItemsModel {
-                        cache: OTL.Application.cache
-                        parentItem: item.libraryItem.uid
-                        onlyUndone: true
-                    }
+                    cache: OTL.Application.cache
+                    parentItem: item.libraryItem.uid
+                    onlyUndone: true
                 }
                 delegate: RowLayout {
                     width: openTodosList.width

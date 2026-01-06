@@ -123,11 +123,6 @@ C.Page {
         overdueLabel: qsTr("Overdue")
         recursive: true
         cache: OTL.Application.cache
-    }
-
-    OTL.ItemsSortFilterModel {
-        id: sortedItems
-        sourceModel: items
         sortRole: OTL.ItemsModel.EffectiveDueToRole
     }
 
@@ -291,7 +286,7 @@ C.Page {
                            let clone = OTL.Application.cloneItem(todo)
                            d.openItemInPage(clone)
                        }
-        itemsModel: sortedItems
+        itemsModel: items
         section {
             property: "effectiveDueToSpan"
             delegate: Heading {

@@ -102,7 +102,7 @@ QList<Color> Colors::loadRALColors() const
     static QList<Color>* result = nullptr;
     if (result == nullptr) {
         result = new QList<Color>;
-        QFile file(":/qt/qml/ral.json");
+        QFile file(":/qt/qml/OpenTodoList/ral.json");
         if (!file.open(QIODevice::ReadOnly)) {
             qCWarning(log) << "Failed to open" << file.fileName()
                            << "for reading:" << file.errorString();

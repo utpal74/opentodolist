@@ -173,27 +173,25 @@ ItemPage {
                         }
 
                         Repeater {
-                            model: OTL.ItemsSortFilterModel {
+                            model: OTL.ItemsModel {
                                 id: pagesModel
 
                                 sortRole: OTL.ItemsModel.WeightRole
-                                sourceModel: OTL.ItemsModel {
-                                    cache: OTL.Application.cache
-                                    parentItem: page.item.uid
-                                    onCountChanged: {
-                                        var lastPage = itemNotesEditor.lastPageCreated
-                                        if (lastPage != null) {
-                                            for (var i = 0; i < count; ++i) {
-                                                var idx = index(i, 0)
-                                                var modelPage = data(
-                                                            idx,
-                                                            OTL.ItemsModel.ItemRole)
-                                                if (modelPage.uid === lastPage.uid) {
-                                                    pageTabBar.setCurrentIndex(
-                                                                i + 1)
-                                                    itemNotesEditor.lastPageCreated = null
-                                                    break
-                                                }
+                                cache: OTL.Application.cache
+                                parentItem: page.item.uid
+                                onCountChanged: {
+                                    var lastPage = itemNotesEditor.lastPageCreated
+                                    if (lastPage != null) {
+                                        for (var i = 0; i < count; ++i) {
+                                            var idx = index(i, 0)
+                                            var modelPage = data(
+                                                        idx,
+                                                        OTL.ItemsModel.ItemRole)
+                                            if (modelPage.uid === lastPage.uid) {
+                                                pageTabBar.setCurrentIndex(
+                                                            i + 1)
+                                                itemNotesEditor.lastPageCreated = null
+                                                break
                                             }
                                         }
                                     }

@@ -21,6 +21,7 @@ C.Pane {
     // palette.window: palette.button
     // palette.text: C.ColorTheme.textColorForBackgroundColor(palette.window)
     y: shown ? parent.height - height : parent.height
+    visible: shown
 
     OTL.UpdateService {
         id: updateService

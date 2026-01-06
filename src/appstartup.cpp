@@ -166,7 +166,8 @@ void AppStartup::createApp(int& argc, char* argv[])
 #endif
     auto guiApp = qobject_cast<QGuiApplication*>(m_app);
     if (guiApp) {
-        guiApp->setWindowIcon(QIcon(":/icons/hicolor/128x128/apps/net.rpdev.OpenTodoList.png"));
+        guiApp->setWindowIcon(QIcon(
+                ":/qt/qml/OpenTodoList/icons/hicolor/128x128/apps/net.rpdev.OpenTodoList.png"));
         guiApp->setDesktopFileName("net.rpdev.OpenTodoList");
     }
 
@@ -181,9 +182,9 @@ void AppStartup::setupFonts()
         QFontDatabase::addApplicationFont(":/Fonts/NotoColorEmoji-unhinted/NotoColorEmoji.ttf");
 
         // Load Roboto font:
-        QFontDatabase::addApplicationFont(":/Fonts/Roboto/Roboto-Bold.ttf");
-        QFontDatabase::addApplicationFont(":/Fonts/Roboto/Roboto-Italic.ttf");
-        QFontDatabase::addApplicationFont(":/Fonts/Roboto/Roboto-Regular.ttf");
+        QFontDatabase::addApplicationFont(":/qt/qml/OpenTodoList/Fonts/Roboto/Roboto-Bold.ttf");
+        QFontDatabase::addApplicationFont(":/qt/qml/OpenTodoList/Fonts/Roboto/Roboto-Italic.ttf");
+        QFontDatabase::addApplicationFont(":/qt/qml/OpenTodoList/Fonts/Roboto/Roboto-Regular.ttf");
     }
 
 #ifdef OPENTODOLIST_FLATPAK
@@ -479,11 +480,12 @@ void AppStartup::debugMessageHandler(QtMsgType type, const QMessageLogContext& c
 QIcon AppStartup::loadIcon() const
 {
     if (m_application->useMonochromeTrayIcon()) {
-        QIcon result(":/icons/hicolor/64x64/apps/net.rpdev.OpenTodoList-Monochrome.png");
+        QIcon result(":/qt/qml/OpenTodoList/icons/hicolor/64x64/apps/"
+                     "net.rpdev.OpenTodoList-Monochrome.png");
         result.setIsMask(true);
         return result;
     } else {
-        return QIcon(":/icons/hicolor/64x64/apps/net.rpdev.OpenTodoList.png");
+        return QIcon(":/qt/qml/OpenTodoList/icons/hicolor/64x64/apps/net.rpdev.OpenTodoList.png");
     }
 }
 

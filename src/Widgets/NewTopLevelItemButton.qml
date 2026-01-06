@@ -59,9 +59,11 @@ C.RoundButton {
             visible: newItemButton.createImages
             height: visible ? implicitHeight : 0
         }
+        /*
         C.MenuItem {
             text: qsTr("Recipe")
             onTriggered: newItemButton.newRecipe()
         }
+        */
     }
 }

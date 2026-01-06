@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Martin Hoeher <martin@rpdev.net>
+ * Copyright 2020-2026 Martin Hoeher <martin@rpdev.net>
  +
  * This file is part of OpenTodoList.
  *
@@ -108,8 +108,9 @@ bool ItemsSortFilterModel::groupDone() const
 
 void ItemsSortFilterModel::setGroupDone(bool newGroupDone)
 {
-    if (m_groupDone == newGroupDone)
+    if (m_groupDone == newGroupDone) {
         return;
+    }
     m_groupDone = newGroupDone;
     emit groupDoneChanged();
     invalidate();

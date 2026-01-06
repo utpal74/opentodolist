@@ -49,14 +49,12 @@ CenteredDialog {
             textRole: "title"
             valueRole: "object"
             width: root.availableWidth
-            model: OTL.ItemsSortFilterModel {
+            model: OTL.ItemsModel {
                 id: todoListsModel
                 sortRole: OTL.ItemsModel.TitleRole
-                sourceModel: OTL.ItemsModel {
-                    cache: OTL.Application.cache
-                    itemType: "TodoList"
-                    parentItem: root.library?.uid ?? ""
-                }
+                cache: OTL.Application.cache
+                itemType: "TodoList"
+                parentItem: root.library?.uid ?? ""
             }
         }
 
@@ -71,15 +69,13 @@ CenteredDialog {
             textRole: "title"
             valueRole: "object"
             width: root.availableWidth
-            model: OTL.ItemsSortFilterModel {
+            model: OTL.ItemsModel {
                 id: model
                 sortRole: OTL.ItemsModel.TitleRole
-                sourceModel: OTL.ItemsModel {
-                    cache: OTL.Application.cache
-                    itemType: "Todo"
-                    itemsToExclude: root.excludeTodos
-                    parentItem: todoListBox.currentValue?.uid ?? ""
-                }
+                cache: OTL.Application.cache
+                itemType: "Todo"
+                itemsToExclude: root.excludeTodos
+                parentItem: todoListBox.currentValue?.uid ?? ""
             }
         }
     }

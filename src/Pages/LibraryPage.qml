@@ -344,7 +344,7 @@ C.Page {
         }
     }
 
-    OTL.ItemsSortFilterModel {
+    OTL.ItemsModel {
         id: itemsModel
 
         /**
@@ -372,14 +372,11 @@ C.Page {
         }
 
         sortRole: effectiveSortRole
-
-        sourceModel: OTL.ItemsModel {
-            cache: OTL.Application.cache
-            parentItem: page.library?.uid ?? ""
-            searchString: filterBar.text
-            tag: page.tag
-            untaggedOnly: page.untaggedOnly
-        }
+        cache: OTL.Application.cache
+        parentItem: page.library?.uid ?? ""
+        searchString: filterBar.text
+        tag: page.tag
+        untaggedOnly: page.untaggedOnly
     }
 
     TextInputBar {

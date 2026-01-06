@@ -63,16 +63,14 @@ CenteredDialog {
         textRole: "title"
         valueRole: "object"
         width: root.availableWidth
-        model: OTL.ItemsSortFilterModel {
+        model: OTL.ItemsModel {
             id: model
             sortRole: OTL.ItemsModel.TitleRole
-            sourceModel: OTL.ItemsModel {
-                cache: OTL.Application.cache
-                itemType: "TodoList"
-                itemsToExclude: root.excludeTodoLists
-                parentItem: root.library?.uid ?? ""
-                onCountChanged: d.findInitial()
-            }
+            cache: OTL.Application.cache
+            itemType: "TodoList"
+            itemsToExclude: root.excludeTodoLists
+            parentItem: root.library?.uid ?? ""
+            onCountChanged: d.findInitial()
         }
     }
 

@@ -141,7 +141,6 @@ target_sources(
         appstartup.cpp
         appstartup.h
         main.cpp
-        res.qrc
 
 
         # Include SimpleCrypt source:
@@ -306,7 +305,7 @@ set_target_properties(
         XCODE_ATTRIBUTE_CODE_SIGN_STYLE "${OPENTODOLIST_APPLE_CODE_SIGN_STYLE}"
         XCODE_PROPERTY_PRODUCT_BUNDLE_IDENTIFIER "net.rpdev.OpenTodoList"
 
-        QT_ANDROID_EXTRA_LIBS "${ANDROID_EXTRA_LIBS}"
+
         QT_ANDROID_PACKAGE_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/android
         QT_ANDROID_TARGET_SDK_VERSION 35
         QT_ANDROID_MIN_SDK_VERSION 23
@@ -576,13 +575,12 @@ qt_add_qml_module(
         Style/ItemDelegate.qml
         Style/Label.qml
         Style/Menu.qml
+        Style/MenuBar.qml
         Style/MenuItem.qml
         Style/MenuSeparator.qml
         Style/MonthGrid.qml
         Style/Page.qml
         Style/Pane.qml
-        Style/MenuBar.qml
-        Style/SwitchDelegate.qml
         Style/PasswordField.qml
         Style/Popup.qml
         Style/ProgressBar.qml
@@ -596,6 +594,7 @@ qt_add_qml_module(
         Style/StackView.qml
         Style/StyleSettings.qml
         Style/SwipeDelegate.qml
+        Style/SwitchDelegate.qml
         Style/Symbol.qml
         Style/TabBar.qml
         Style/TabButton.qml
@@ -665,53 +664,73 @@ qt_add_qml_module(
         Windows/StackViewWindow.qml
         Windows/WebViewDialog.qml
     RESOURCES
-        Utils/text-style.css
-        Style/Oxygen/Oxygen-Regular.ttf
-        Style/Oxygen/Oxygen-Light.ttf
-        Style/Oxygen/OxygenMono-Regular.ttf
-        Style/Oxygen/OFL.txt
-        Style/Oxygen/Oxygen-Bold.ttf
-        Style/material-design-icons/LICENSE
-        Style/material-design-icons/README.md
-        Style/material-design-icons/font/MaterialIconsSharp-Regular.otf
-        Style/material-design-icons/font/MaterialIconsOutlined-Regular.codepoints
-        Style/material-design-icons/font/MaterialIconsRound-Regular.codepoints
-        Style/material-design-icons/font/MaterialIconsTwoTone-Regular.codepoints
-        Style/material-design-icons/font/README.md
-        Style/material-design-icons/font/MaterialIconsSharp-Regular.codepoints
-        Style/material-design-icons/font/MaterialIconsRound-Regular.otf
-        Style/material-design-icons/font/MaterialIcons-Regular.ttf
-        Style/material-design-icons/font/MaterialIcons-Regular.codepoints
-        Style/material-design-icons/font/MaterialIconsOutlined-Regular.otf
-        Style/material-design-icons/font/MaterialIconsTwoTone-Regular.otf
+        ../3rdparty/ral-json/ral.json
+        3rdpartyinfo/comfortaa/3rdpartyinfo.json
+        3rdpartyinfo/material-design-icons/3rdpartyinfo.json
+        3rdpartyinfo/noto-color-emoji/3rdpartyinfo.json
+        3rdpartyinfo/oxygen/3rdpartyinfo.json
+        3rdpartyinfo/qt/3rdpartyinfo.json
+        3rdpartyinfo/qtkeychain/3rdpartyinfo.json
+        3rdpartyinfo/ral-json/3rdpartyinfo.json
+        3rdpartyinfo/roboto/3rdpartyinfo.json
+        3rdpartyinfo/simplecrypt/3rdpartyinfo.json
+        3rdpartyinfo/SingleApplication/3rdpartyinfo.json
+        3rdpartyinfo/syntax-highlighting/3rdpartyinfo.json
+        icons/hicolor/128x128/apps/net.rpdev.OpenTodoList-Monochrome.png
+        icons/hicolor/128x128/apps/net.rpdev.OpenTodoList.png
+        icons/hicolor/16x16/apps/net.rpdev.OpenTodoList-Monochrome.png
+        icons/hicolor/16x16/apps/net.rpdev.OpenTodoList.png
+        icons/hicolor/256x256/apps/net.rpdev.OpenTodoList-Monochrome.png
+        icons/hicolor/256x256/apps/net.rpdev.OpenTodoList.png
+        icons/hicolor/32x32/apps/net.rpdev.OpenTodoList-Monochrome.png
+        icons/hicolor/32x32/apps/net.rpdev.OpenTodoList.png
+        icons/hicolor/64x64/apps/net.rpdev.OpenTodoList-Monochrome.png
+        icons/hicolor/64x64/apps/net.rpdev.OpenTodoList.png
+        OpenTodoList.notifyrc
+        qtquickcontrols2.conf
+        res/COPYING
+        res/OpenTodoList.icns
+        res/OpenTodoList.ico
+        sample.png
         Style/Comfortaa/Comfortaa-VariableFont_wght.ttf
-        Style/Comfortaa/static/Comfortaa-Light.ttf
-        Style/Comfortaa/static/Comfortaa-SemiBold.ttf
-        Style/Comfortaa/static/Comfortaa-Medium.ttf
-        Style/Comfortaa/static/Comfortaa-Regular.ttf
-        Style/Comfortaa/static/Comfortaa-Bold.ttf
         Style/Comfortaa/OFL.txt
         Style/Comfortaa/README.txt
-        Style/Roboto/Roboto-Regular.ttf
-        Style/Roboto/Roboto-Italic.ttf
+        Style/Comfortaa/static/Comfortaa-Bold.ttf
+        Style/Comfortaa/static/Comfortaa-Light.ttf
+        Style/Comfortaa/static/Comfortaa-Medium.ttf
+        Style/Comfortaa/static/Comfortaa-Regular.ttf
+        Style/Comfortaa/static/Comfortaa-SemiBold.ttf
+        Style/material-design-icons/font/MaterialIcons-Regular.codepoints
+        Style/material-design-icons/font/MaterialIcons-Regular.ttf
+        Style/material-design-icons/font/MaterialIconsOutlined-Regular.codepoints
+        Style/material-design-icons/font/MaterialIconsOutlined-Regular.otf
+        Style/material-design-icons/font/MaterialIconsRound-Regular.codepoints
+        Style/material-design-icons/font/MaterialIconsRound-Regular.otf
+        Style/material-design-icons/font/MaterialIconsSharp-Regular.codepoints
+        Style/material-design-icons/font/MaterialIconsSharp-Regular.otf
+        Style/material-design-icons/font/MaterialIconsTwoTone-Regular.codepoints
+        Style/material-design-icons/font/MaterialIconsTwoTone-Regular.otf
+        Style/material-design-icons/font/README.md
+        Style/material-design-icons/LICENSE
+        Style/material-design-icons/README.md
+        Style/NotoColorEmoji-unhinted/LICENSE_OFL.txt
+        Style/NotoColorEmoji-unhinted/NotoColorEmoji.ttf
+        Style/NotoColorEmoji-unhinted/README
+        Style/Oxygen/OFL.txt
+        Style/Oxygen/Oxygen-Bold.ttf
+        Style/Oxygen/Oxygen-Light.ttf
+        Style/Oxygen/Oxygen-Regular.ttf
+        Style/Oxygen/OxygenMono-Regular.ttf
         Style/Roboto/LICENSE.txt
         Style/Roboto/Roboto-Bold.ttf
-        Style/NotoColorEmoji-unhinted/README
-        Style/NotoColorEmoji-unhinted/NotoColorEmoji.ttf
-        Style/NotoColorEmoji-unhinted/LICENSE_OFL.txt
-        3rdpartyinfo/oxygen/3rdpartyinfo.json
-        3rdpartyinfo/qtkeychain/3rdpartyinfo.json
-        3rdpartyinfo/noto-color-emoji/3rdpartyinfo.json
-        3rdpartyinfo/qt/3rdpartyinfo.json
-        3rdpartyinfo/material-design-icons/3rdpartyinfo.json
-        3rdpartyinfo/comfortaa/3rdpartyinfo.json
-        3rdpartyinfo/ral-json/3rdpartyinfo.json
-        3rdpartyinfo/SingleApplication/3rdpartyinfo.json
-        3rdpartyinfo/simplecrypt/3rdpartyinfo.json
-        3rdpartyinfo/roboto/3rdpartyinfo.json
-        3rdpartyinfo/syntax-highlighting/3rdpartyinfo.json
-        qtquickcontrols2.conf
-        ../3rdparty/ral-json/ral.json
+        Style/Roboto/Roboto-Italic.ttf
+        Style/Roboto/Roboto-Regular.ttf
+        translations/languages.json
+        translations/languages.json
+        translations/languages.json
+        translations/update-info.json
+        translations/update-info.json
+        Utils/text-style.css
 )
 
 

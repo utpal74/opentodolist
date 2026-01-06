@@ -261,12 +261,10 @@ C.Pane {
                     }
 
                     Repeater {
-                        model: OTL.ItemsSortFilterModel {
-                            sourceModel: OTL.ItemsModel {
-                                cache: tagColumn.expanded ? OTL.Application.cache : null
-                                parentItem: library.uid
-                                tag: tagColumn.tag
-                            }
+                        model: OTL.ItemsModel {
+                            cache: tagColumn.expanded ? OTL.Application.cache : null
+                            parentItem: library.uid
+                            tag: tagColumn.tag
                             sortRole: OTL.ItemsModel.TitleRole
                         }
                         delegate: LibrarySideBarButton {
@@ -304,12 +302,10 @@ C.Pane {
                 }
 
                 Repeater {
-                    model: OTL.ItemsSortFilterModel {
-                        sourceModel: OTL.ItemsModel {
-                            cache: noTagColumn.expanded ? OTL.Application.cache : null
-                            parentItem: library.uid
-                            untaggedOnly: true
-                        }
+                    model: OTL.ItemsModel {
+                        cache: noTagColumn.expanded ? OTL.Application.cache : null
+                        parentItem: library.uid
+                        untaggedOnly: true
                         sortRole: OTL.ItemsModel.TitleRole
                     }
                     delegate: LibrarySideBarButton {
