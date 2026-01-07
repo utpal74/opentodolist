@@ -266,6 +266,13 @@
         "updated": "2023-10-12T21:29:03+0000"
     },
     {
+        "name": "Tamil",
+        "code": "ta",
+        "translations": 0,
+        "percentage": 0,
+        "updated": ""
+    },
+    {
         "name": "Turkish",
         "code": "tr",
         "translations": 470,

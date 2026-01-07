@@ -390,7 +390,7 @@
 <context>
     <name>ApplicationToolBar</name>
     <message>
-        <location filename="../qml/Components/ApplicationToolBar.qml" line="86"/>
+        <location filename="../qml/Components/ApplicationToolBar.qml" line="87"/>
         <source>Problems</source>
         <translation type="unfinished"></translation>
     </message>

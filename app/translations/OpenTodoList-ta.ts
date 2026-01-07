@@ -1,72 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="da">
+<TS version="2.1" language="ta">
 <context>
     <name>AboutPage</name>
     <message>
         <location filename="../qml/Pages/AboutPage.qml" line="15"/>
         <source>About...</source>
-        <translation>Om...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/AboutPage.qml" line="33"/>
         <source>OpenTodoList</source>
-        <translation>OpenTodoList</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/AboutPage.qml" line="40"/>
         <source>A todo and task managing application.</source>
-        <translation>En todo- og opgavehåndteringsapplikation.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/AboutPage.qml" line="68"/>
         <source>OpenTodoList is released under the terms of the &lt;a href=&apos;app-license&apos;&gt;GNU General Public License&lt;/a&gt; version 3 or (at your choice) any later version.</source>
-        <translation>OpenTodoList frigives under betingelserne i &lt;a href=&apos;app-license&apos;&gt; GNU General Public License &lt;/a&gt; version 3 eller (efter eget valg) enhver senere version.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/AboutPage.qml" line="85"/>
         <source>Report an Issue</source>
-        <translation>Rapporter et problem</translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/AboutPage.qml" line="92"/>
-        <source>Copy System Information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/AboutPage.qml" line="114"/>
         <source>Third Party Libraries and Resources</source>
-        <translation>Tredjeparts biblioteker og ressourcer</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/AboutPage.qml" line="151"/>
         <source>Author:</source>
-        <translation>Forfatter:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/AboutPage.qml" line="156"/>
         <source>&lt;a href=&apos;%2&apos;&gt;%1&lt;/a&gt;</source>
-        <translation>&lt;a href=&apos;%2&apos;&gt;%1&lt;/a&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/AboutPage.qml" line="163"/>
         <source>License:</source>
-        <translation>Licens:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/AboutPage.qml" line="168"/>
         <source>&lt;a href=&apos;%1&apos;&gt;%2&lt;/a&gt;</source>
-        <translation>&lt;a href=&apos;%1&apos;&gt;%2&lt;/a&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/AboutPage.qml" line="174"/>
         <source>Download:</source>
-        <translation>Hent:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/AboutPage.qml" line="178"/>
         <source>&lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</source>
-        <translation>&lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/AboutPage.qml" line="92"/>
+        <source>Copy System Information</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -74,27 +74,27 @@
     <message>
         <location filename="../qml/Pages/AccountTypeSelectionPage.qml" line="20"/>
         <source>Select Account Type</source>
-        <translation type="unfinished">Vælg Kontotype</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/AccountTypeSelectionPage.qml" line="55"/>
         <source>Account Type</source>
-        <translation type="unfinished">Kontotype</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/AccountTypeSelectionPage.qml" line="61"/>
         <source>NextCloud</source>
-        <translation type="unfinished">NextCloud</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/AccountTypeSelectionPage.qml" line="64"/>
         <source>ownCloud</source>
-        <translation type="unfinished">ownCloud</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/AccountTypeSelectionPage.qml" line="67"/>
         <source>WebDAV</source>
-        <translation type="unfinished">WebDAV</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/AccountTypeSelectionPage.qml" line="70"/>
@@ -108,7 +108,7 @@
         <location filename="../qml/Pages/AccountsPage.qml" line="18"/>
         <location filename="../qml/Pages/AccountsPage.qml" line="40"/>
         <source>Accounts</source>
-        <translation type="unfinished">Konti</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -134,12 +134,12 @@
     <message>
         <location filename="../appstartup.cpp" line="200"/>
         <source>Manage your personal data.</source>
-        <translation type="unfinished">Administrer dine personlige data.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appstartup.cpp" line="206"/>
         <source>Switch on some optimizations for touchscreens.</source>
-        <translation type="unfinished">Tænd for nogle optimeringer til berøringsskærme.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appstartup.cpp" line="209"/>
@@ -159,7 +159,7 @@
     <message>
         <location filename="../appstartup.cpp" line="367"/>
         <source>Open</source>
-        <translation type="unfinished">Åben</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../appstartup.cpp" line="433"/>
@@ -175,17 +175,17 @@
 <context>
     <name>Application</name>
     <message>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../../lib/application.cpp" line="220"/>
         <source>Background Sync</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="223"/>
+        <location filename="../../lib/application.cpp" line="224"/>
         <source>App continues to sync your data in the background</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="227"/>
+        <location filename="../../lib/application.cpp" line="228"/>
         <source>Quit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -228,17 +228,17 @@
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="35"/>
         <source>Accounts</source>
-        <translation type="unfinished">Konti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="43"/>
         <source>Add Tag</source>
-        <translation type="unfinished">Tilføj tag</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="51"/>
         <source>Attach File</source>
-        <translation type="unfinished">Vedhæft fil</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="59"/>
@@ -268,7 +268,7 @@
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="159"/>
         <source>Delete</source>
-        <translation type="unfinished">Slet</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="167"/>
@@ -278,7 +278,7 @@
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="175"/>
         <source>Due Date</source>
-        <translation type="unfinished">Afleveringsdato</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="183"/>
@@ -313,7 +313,7 @@
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="245"/>
         <source>New Library</source>
-        <translation type="unfinished">Nyt bibliotek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="253"/>
@@ -338,7 +338,7 @@
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="280"/>
         <source>Rename</source>
-        <translation type="unfinished">Omdøb</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="288"/>
@@ -368,22 +368,22 @@
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="337"/>
         <source>Sort</source>
-        <translation type="unfinished">Sortere</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="345"/>
         <source>Sync Now</source>
-        <translation type="unfinished">Synkroniser nu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="358"/>
         <source>Sync Log</source>
-        <translation type="unfinished">Synkroniseringslog</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Components/ApplicationShortcuts.qml" line="369"/>
         <source>Translate The App...</source>
-        <translation type="unfinished">Oversæt appen...</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -399,22 +399,22 @@
     <message>
         <location filename="../qml/Widgets/Attachments.qml" line="36"/>
         <source>Attach File</source>
-        <translation>Vedhæft fil</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/Attachments.qml" line="51"/>
         <source>Delete Attachment?</source>
-        <translation>Slet vedhæftet fil?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/Attachments.qml" line="55"/>
         <source>Are you sure you want to delete the attachment &lt;strong&gt;%1&lt;/strong&gt;? This action cannot be undone.</source>
-        <translation>Er du sikker på, at du vil slette vedhæftningen &lt;strong&gt;% 1&lt;/strong&gt;? Denne handling kan ikke fortrydes.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/Attachments.qml" line="69"/>
         <source>Attachments</source>
-        <translation>Vedhæftede filer</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -422,42 +422,42 @@
     <message>
         <location filename="../qml/Menues/ColorMenu.qml" line="15"/>
         <source>Color</source>
-        <translation>Farve</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Menues/ColorMenu.qml" line="19"/>
         <source>White</source>
-        <translation>hvid</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Menues/ColorMenu.qml" line="26"/>
         <source>Red</source>
-        <translation>Rød</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Menues/ColorMenu.qml" line="33"/>
         <source>Green</source>
-        <translation>Grøn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Menues/ColorMenu.qml" line="40"/>
         <source>Blue</source>
-        <translation>Blå</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Menues/ColorMenu.qml" line="47"/>
         <source>Yellow</source>
-        <translation>Gul</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Menues/ColorMenu.qml" line="54"/>
         <source>Orange</source>
-        <translation>orange</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Menues/ColorMenu.qml" line="61"/>
         <source>Lilac</source>
-        <translation>Lilac</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -465,23 +465,23 @@
     <message>
         <location filename="../qml/Utils/Colors.qml" line="15"/>
         <source>System</source>
-        <translation>System</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Utils/Colors.qml" line="16"/>
         <source>Light</source>
-        <translation>Lys</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Utils/Colors.qml" line="17"/>
         <source>Dark</source>
-        <translation>Mørk</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CopyItemQuery</name>
     <message>
-        <location filename="../datastorage/copyitemquery.cpp" line="120"/>
+        <location filename="../../lib/datastorage/copyitemquery.cpp" line="120"/>
         <source>Copy of</source>
         <translation type="unfinished"></translation>
     </message>
@@ -520,12 +520,12 @@
     <message>
         <location filename="../qml/Windows/DeleteAccountDialog.qml" line="18"/>
         <source>Delete Account?</source>
-        <translation>Slet konto?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/DeleteAccountDialog.qml" line="35"/>
         <source>Do you really want to remove the account &lt;strong&gt;%1&lt;/strong&gt;? This will remove all libraries belonging to the account from your device?&lt;br/&gt;&lt;br/&gt;&lt;i&gt;Note: You can restore them from the server by adding back the account.&lt;/i&gt;</source>
-        <translation>Vil du virkelig fjerne kontoen &lt;strong&gt;% 1&lt;/strong&gt;? Dette fjerner alle biblioteker, der tilhører kontoen fra din enhed? &lt;br/&gt; &lt;br/&gt; &lt;i&gt; Bemærk: Du kan gendanne dem fra serveren ved at tilføje kontoen tilbage. &lt;/i&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -559,7 +559,7 @@
     <message>
         <location filename="../qml/Actions/DeleteItem.qml" line="10"/>
         <source>Delete</source>
-        <translation>Slet</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -567,37 +567,37 @@
     <message>
         <location filename="../qml/Windows/DeleteItemDialog.qml" line="18"/>
         <source>Delete Item?</source>
-        <translation>Slet vare?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/DeleteItemDialog.qml" line="31"/>
         <source>Do you really want to delete the image &lt;strong&gt;%1&lt;/strong&gt;? This cannot be undone.</source>
-        <translation>Vil du virkelig slette billedet &lt;strong&gt;% 1 &lt;/strong&gt;? Dette kan ikke fortrydes.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/DeleteItemDialog.qml" line="35"/>
         <source>Do you really want to delete the todo list &lt;strong&gt;%1&lt;/strong&gt;? This cannot be undone.</source>
-        <translation>Vil du virkelig slette todo-listen &lt;strong&gt;% 1 &lt;/strong&gt;? Dette kan ikke fortrydes.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/DeleteItemDialog.qml" line="40"/>
         <source>Do you really want to delete the todo &lt;strong&gt;%1&lt;/strong&gt;? This cannot be undone.</source>
-        <translation>Vil du virkelig slette todo &lt;strong&gt;% 1 &lt;/strong&gt;? Dette kan ikke fortrydes.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/DeleteItemDialog.qml" line="43"/>
         <source>Do you really want to delete the task &lt;strong&gt;%1&lt;/strong&gt;? This cannot be undone.</source>
-        <translation>Vil du virkelig slette opgaven &lt;strong&gt;% 1 &lt;/strong&gt;? Dette kan ikke fortrydes.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/DeleteItemDialog.qml" line="46"/>
         <source>Do you really want to delete the note &lt;strong&gt;%1&lt;/strong&gt;? This cannot be undone.</source>
-        <translation>Vil du virkelig slette noten &lt;strong&gt;% 1 &lt;/strong&gt;? Dette kan ikke fortrydes.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/DeleteItemDialog.qml" line="49"/>
         <source>Do you really want to delete the page &lt;strong&gt;%1&lt;/strong&gt;? This cannot be undone.</source>
-        <translation>Vil du virkelig slette siden &lt;strong&gt;% 1 &lt;/strong&gt;? Dette kan ikke fortrydes.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -605,17 +605,17 @@
     <message>
         <location filename="../qml/Windows/DeleteLibraryDialog.qml" line="18"/>
         <source>Delete Library?</source>
-        <translation>Slet bibliotek?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/DeleteLibraryDialog.qml" line="32"/>
         <source>Do you really want to remove the library &lt;strong&gt;%1&lt;/strong&gt; from  the application? &lt;em&gt;This will remove any files belonging to the library.&lt;/em&gt;</source>
-        <translation>Vil du virkelig fjerne biblioteket &lt;strong&gt;% 1 &lt;/strong&gt; fra applikationen? &lt;em&gt; Dette fjerner alle filer, der hører til biblioteket. &lt;/em&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/DeleteLibraryDialog.qml" line="38"/>
         <source>Do you really want to remove the library &lt;strong&gt;%1&lt;/strong&gt; from the application? Note that the files inside the library will not be removed, so you can restore the library later on.</source>
-        <translation>Vil du virkelig fjerne biblioteket &lt;strong&gt;% 1 &lt;/strong&gt; fra applikationen? Bemærk, at filerne inde i biblioteket ikke fjernes, så du kan gendanne biblioteket senere.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -624,7 +624,7 @@
         <location filename="../qml/Pages/EditDropboxAccountPage.qml" line="26"/>
         <location filename="../qml/Pages/EditDropboxAccountPage.qml" line="65"/>
         <source>Connection Settings</source>
-        <translation type="unfinished">Forbindelsesindstillinger</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditDropboxAccountPage.qml" line="73"/>
@@ -664,7 +664,7 @@
     <message>
         <location filename="../qml/Pages/EditDropboxAccountPage.qml" line="123"/>
         <source>Name:</source>
-        <translation type="unfinished">Navn:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditDropboxAccountPage.qml" line="130"/>
@@ -678,22 +678,22 @@
         <location filename="../qml/Pages/EditNextCloudAccountPage.qml" line="22"/>
         <location filename="../qml/Pages/EditNextCloudAccountPage.qml" line="57"/>
         <source>Edit Account</source>
-        <translation type="unfinished">Rediger konto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditNextCloudAccountPage.qml" line="63"/>
         <source>Name:</source>
-        <translation type="unfinished">Navn:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditNextCloudAccountPage.qml" line="74"/>
         <source>Server Address:</source>
-        <translation type="unfinished">Serveradresse:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditNextCloudAccountPage.qml" line="81"/>
         <source>https://myserver.example.com</source>
-        <translation type="unfinished">https://myserver.example.com</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditNextCloudAccountPage.qml" line="89"/>
@@ -703,32 +703,32 @@
     <message>
         <location filename="../qml/Pages/EditNextCloudAccountPage.qml" line="102"/>
         <source>User:</source>
-        <translation type="unfinished">Bruger:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditNextCloudAccountPage.qml" line="109"/>
         <source>User Name</source>
-        <translation type="unfinished">Brugernavn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditNextCloudAccountPage.qml" line="115"/>
         <source>Password:</source>
-        <translation type="unfinished">Adgangskode:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditNextCloudAccountPage.qml" line="122"/>
         <source>Password</source>
-        <translation type="unfinished">Adgangskode</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditNextCloudAccountPage.qml" line="131"/>
         <source>Disable Certificate Checks</source>
-        <translation type="unfinished">Deaktiver certifikatchecks</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditNextCloudAccountPage.qml" line="140"/>
         <source>Failed to connect to the server. Please check your user name, password and the server address and retry.</source>
-        <translation type="unfinished">Kunne ikke oprette forbindelse til serveren. Kontroller dit brugernavn, din adgangskode og serveradressen, og prøv igen.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -737,52 +737,52 @@
         <location filename="../qml/Pages/EditWebDAVAccountPage.qml" line="32"/>
         <location filename="../qml/Pages/EditWebDAVAccountPage.qml" line="116"/>
         <source>Edit Account</source>
-        <translation type="unfinished">Rediger konto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditWebDAVAccountPage.qml" line="122"/>
         <source>Name:</source>
-        <translation type="unfinished">Navn:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditWebDAVAccountPage.qml" line="133"/>
         <source>Server Address:</source>
-        <translation type="unfinished">Serveradresse:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditWebDAVAccountPage.qml" line="139"/>
         <source>https://myserver.example.com</source>
-        <translation type="unfinished">https://myserver.example.com</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditWebDAVAccountPage.qml" line="146"/>
         <source>User:</source>
-        <translation type="unfinished">Bruger:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditWebDAVAccountPage.qml" line="152"/>
         <source>User Name</source>
-        <translation type="unfinished">Brugernavn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditWebDAVAccountPage.qml" line="159"/>
         <source>Password:</source>
-        <translation type="unfinished">Adgangskode:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditWebDAVAccountPage.qml" line="166"/>
         <source>Password</source>
-        <translation type="unfinished">Adgangskode</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditWebDAVAccountPage.qml" line="176"/>
         <source>Disable Certificate Checks</source>
-        <translation type="unfinished">Deaktiver certifikatchecks</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/EditWebDAVAccountPage.qml" line="184"/>
         <source>Failed to connect to the server. Please check your user name, password and the server address and retry.</source>
-        <translation type="unfinished">Kunne ikke oprette forbindelse til serveren. Kontroller dit brugernavn, din adgangskode og serveradressen, og prøv igen.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -790,17 +790,17 @@
     <message>
         <location filename="../qml/Widgets/ItemCreatedNotification.qml" line="68"/>
         <source>&lt;strong&gt;%1&lt;/strong&gt; has been created.</source>
-        <translation>&lt;strong&gt;% 1 &lt;/strong&gt; er oprettet.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/ItemCreatedNotification.qml" line="74"/>
         <source>Open</source>
-        <translation>Åben</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/ItemCreatedNotification.qml" line="79"/>
         <source>Dismiss</source>
-        <translation>Afskedige</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -808,42 +808,42 @@
     <message>
         <location filename="../qml/Widgets/ItemDueDateEditor.qml" line="31"/>
         <source>Due on</source>
-        <translation>På grund af</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/ItemDueDateEditor.qml" line="69"/>
         <source>First due on %1.</source>
-        <translation>Først på grund af% 1.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/ItemDueDateEditor.qml" line="88"/>
         <source>No recurrence pattern set...</source>
-        <translation>Intet gentagelsesmønster sæt ...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/ItemDueDateEditor.qml" line="90"/>
         <source>Recurs every day.</source>
-        <translation>Gentages hver dag.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/ItemDueDateEditor.qml" line="92"/>
         <source>Recurs every week.</source>
-        <translation>Gentages hver uge.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/ItemDueDateEditor.qml" line="94"/>
         <source>Recurs every month.</source>
-        <translation>Gentages hver måned.</translation>
-    </message>
-    <message>
-        <location filename="../qml/Widgets/ItemDueDateEditor.qml" line="96"/>
-        <source>Recurs every year.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/ItemDueDateEditor.qml" line="98"/>
         <source>Recurs every %1 days.</source>
-        <translation>Gentages hver% 1 dag.</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Widgets/ItemDueDateEditor.qml" line="96"/>
+        <source>Recurs every year.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/ItemDueDateEditor.qml" line="101"/>
@@ -871,12 +871,27 @@
     <message>
         <location filename="../qml/Widgets/ItemNotesEditor.qml" line="28"/>
         <source>Notes</source>
-        <translation>Noter</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/ItemNotesEditor.qml" line="73"/>
         <source>No notes added yet - click here to add some.</source>
-        <translation>Der er endnu ikke tilføjet nogen noter - klik her for at tilføje nogle.</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="160"/>
+        <source>Export to File...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="163"/>
+        <source>Markdown files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="163"/>
+        <source>All files</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/ItemNotesEditor.qml" line="106"/>
@@ -893,32 +908,12 @@
         <source>Copy Plain Text</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="160"/>
-        <source>Export to File...</source>
-        <translation>Eksporter til fil...</translation>
-    </message>
-    <message>
-        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="163"/>
-        <source>Markdown files</source>
-        <translation>Markdown-filer</translation>
-    </message>
-    <message>
-        <location filename="../qml/Widgets/ItemNotesEditor.qml" line="163"/>
-        <source>All files</source>
-        <translation>Alle filer</translation>
-    </message>
 </context>
 <context>
     <name>ItemUtils</name>
     <message>
         <location filename="../qml/Utils/ItemUtils.qml" line="190"/>
         <source>Move Todo Into...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Utils/ItemUtils.qml" line="205"/>
-        <source>Move Task Into...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -936,6 +931,11 @@
         <source>Copy Todo Into...</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../qml/Utils/ItemUtils.qml" line="205"/>
+        <source>Move Task Into...</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>LibrariesSideBar</name>
@@ -943,21 +943,16 @@
         <location filename="../qml/Widgets/LibrariesSideBar.qml" line="55"/>
         <location filename="../qml/Widgets/LibrariesSideBar.qml" line="223"/>
         <source>Schedule</source>
-        <translation>Tidsplan</translation>
-    </message>
-    <message>
-        <location filename="../qml/Widgets/LibrariesSideBar.qml" line="78"/>
-        <source>Edit List</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/LibrariesSideBar.qml" line="85"/>
         <source>Settings</source>
-        <translation>Indstillinger</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/LibrariesSideBar.qml" line="93"/>
-        <source>Donate</source>
+        <location filename="../qml/Widgets/LibrariesSideBar.qml" line="78"/>
+        <source>Edit List</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -981,6 +976,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/Widgets/LibrariesSideBar.qml" line="93"/>
+        <source>Donate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/Widgets/LibrariesSideBar.qml" line="293"/>
         <source>Untagged</source>
         <translation type="unfinished"></translation>
@@ -989,17 +989,17 @@
 <context>
     <name>Library</name>
     <message>
-        <location filename="../datamodel/library.cpp" line="615"/>
+        <location filename="../../lib/datamodel/library.cpp" line="615"/>
         <source>Unable to create backup folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../datamodel/library.cpp" line="619"/>
+        <location filename="../../lib/datamodel/library.cpp" line="619"/>
         <source>Failed to change into backup folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../datamodel/library.cpp" line="630"/>
+        <location filename="../../lib/datamodel/library.cpp" line="630"/>
         <source>Failed to open file for writing: %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1009,42 +1009,97 @@
     <message>
         <location filename="../qml/Pages/LibraryPage.qml" line="210"/>
         <source>Red</source>
-        <translation>Rød</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/LibraryPage.qml" line="217"/>
         <source>Green</source>
-        <translation>Grøn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/LibraryPage.qml" line="224"/>
         <source>Blue</source>
-        <translation>Blå</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/LibraryPage.qml" line="231"/>
         <source>Yellow</source>
-        <translation>Gul</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/LibraryPage.qml" line="238"/>
         <source>Orange</source>
-        <translation>orange</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/LibraryPage.qml" line="245"/>
         <source>Lilac</source>
-        <translation>Lilac</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/LibraryPage.qml" line="252"/>
         <source>White</source>
-        <translation>hvid</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/LibraryPage.qml" line="262"/>
         <source>Rename</source>
-        <translation>Omdøb</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/LibraryPage.qml" line="273"/>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/LibraryPage.qml" line="355"/>
+        <source>Note Title</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/LibraryPage.qml" line="368"/>
+        <source>Todo List Title</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/LibraryPage.qml" line="381"/>
+        <source>Search term 1, search term 2, ...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/LibraryPage.qml" line="458"/>
+        <source>Nothing here yet! Start by adding a &lt;a href=&apos;#note&apos;&gt;note&lt;/a&gt;, &lt;a href=&apos;#todolist&apos;&gt;todo list&lt;/a&gt; or &lt;a href=&apos;#image&apos;&gt;image&lt;/a&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/LibraryPage.qml" line="514"/>
+        <source>Sort By</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/LibraryPage.qml" line="518"/>
+        <source>Manually</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/LibraryPage.qml" line="525"/>
+        <source>Title</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/LibraryPage.qml" line="532"/>
+        <source>Due To</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/LibraryPage.qml" line="539"/>
+        <source>Created At</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/LibraryPage.qml" line="546"/>
+        <source>Updated At</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/LibraryPage.qml" line="267"/>
@@ -1052,64 +1107,9 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="273"/>
-        <source>Delete</source>
-        <translation>Slet</translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="355"/>
-        <source>Note Title</source>
-        <translation>Bemærk titel</translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="368"/>
-        <source>Todo List Title</source>
-        <translation>Todo liste titel</translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="381"/>
-        <source>Search term 1, search term 2, ...</source>
-        <translation>Søgeudtryk 1, søgeudtryk 2, ...</translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="458"/>
-        <source>Nothing here yet! Start by adding a &lt;a href=&apos;#note&apos;&gt;note&lt;/a&gt;, &lt;a href=&apos;#todolist&apos;&gt;todo list&lt;/a&gt; or &lt;a href=&apos;#image&apos;&gt;image&lt;/a&gt;.</source>
-        <translation>Intet her endnu! Start med at tilføje en &lt;a href=&apos;#note&apos;&gt; note &lt;/a&gt;, &lt;a href=&apos;#todolist&apos;&gt; todo-liste &lt;/a&gt; eller &lt;a href=&apos;#image&apos;&gt; billede &lt;/a&gt;.</translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="514"/>
-        <source>Sort By</source>
-        <translation>Sorter efter</translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="518"/>
-        <source>Manually</source>
-        <translation>manuelt</translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="525"/>
-        <source>Title</source>
-        <translation>Titel</translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="532"/>
-        <source>Due To</source>
-        <translation>På grund af</translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="539"/>
-        <source>Created At</source>
-        <translation>Oprettet kl</translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/LibraryPage.qml" line="546"/>
-        <source>Updated At</source>
-        <translation>Opdateret kl</translation>
-    </message>
-    <message>
         <location filename="../qml/Pages/LibraryPage.qml" line="285"/>
         <source>Select Image</source>
-        <translation type="unfinished">Vælg billede</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1117,7 +1117,7 @@
     <message>
         <location filename="../qml/Pages/LogViewPage.qml" line="13"/>
         <source>Synchronization Log</source>
-        <translation>Synkroniseringslog</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/LogViewPage.qml" line="68"/>
@@ -1137,7 +1137,7 @@
     <message>
         <location filename="../qml/Pages/LogViewPage.qml" line="74"/>
         <source>Download</source>
-        <translation type="unfinished">Hent</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/LogViewPage.qml" line="76"/>
@@ -1175,12 +1175,12 @@
     <message>
         <location filename="../qml/Windows/MainWindow.qml" line="23"/>
         <source>OpenTodoList</source>
-        <translation>OpenTodoList</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/MainWindow.qml" line="197"/>
         <source>Start by &lt;a href=&apos;#newLibrary&apos;&gt;creating a new library&lt;/a&gt;. Libraries are used to store different kinds of items like notes, todo lists and images.</source>
-        <translation>Start med at &lt;a href=&apos;#newLibrary&apos;&gt; oprette et nyt bibliotek &lt;/a&gt;. Biblioteker bruges til at gemme forskellige slags ting som noter, todo lister og billeder.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1223,7 +1223,7 @@
         <location filename="../qml/Pages/NewDropboxAccountPage.qml" line="20"/>
         <location filename="../qml/Pages/NewDropboxAccountPage.qml" line="53"/>
         <source>Connection Settings</source>
-        <translation type="unfinished">Forbindelsesindstillinger</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewDropboxAccountPage.qml" line="61"/>
@@ -1263,7 +1263,7 @@
     <message>
         <location filename="../qml/Pages/NewDropboxAccountPage.qml" line="113"/>
         <source>Name:</source>
-        <translation type="unfinished">Navn:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewDropboxAccountPage.qml" line="120"/>
@@ -1276,52 +1276,52 @@
     <message>
         <location filename="../qml/Windows/NewItemWithDueDateDialog.qml" line="104"/>
         <source>Today</source>
-        <translation>I dag</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/NewItemWithDueDateDialog.qml" line="105"/>
         <source>Tomorrow</source>
-        <translation>I morgen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/NewItemWithDueDateDialog.qml" line="106"/>
         <source>This Week</source>
-        <translation>Denne uge</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/NewItemWithDueDateDialog.qml" line="107"/>
         <source>Next Week</source>
-        <translation>Næste uge</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/NewItemWithDueDateDialog.qml" line="108"/>
         <source>Select...</source>
-        <translation>Vælg...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/NewItemWithDueDateDialog.qml" line="138"/>
         <source>Title:</source>
-        <translation>Titel:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/NewItemWithDueDateDialog.qml" line="143"/>
         <source>The title for your new item...</source>
-        <translation>Titlen på din nye vare ...</translation>
-    </message>
-    <message>
-        <location filename="../qml/Windows/NewItemWithDueDateDialog.qml" line="149"/>
-        <source>Library</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/NewItemWithDueDateDialog.qml" line="185"/>
         <source>Create in:</source>
-        <translation>Opret i:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/NewItemWithDueDateDialog.qml" line="226"/>
         <source>Due on:</source>
-        <translation>På grund af:</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Windows/NewItemWithDueDateDialog.qml" line="149"/>
+        <source>Library</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1329,47 +1329,47 @@
     <message>
         <location filename="../qml/Pages/NewLibraryFromAccountPage.qml" line="81"/>
         <source>Create Library in Account</source>
-        <translation type="unfinished">Opret bibliotek på konto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLibraryFromAccountPage.qml" line="90"/>
         <source>A library created in an account is synchronized with it. This allows to easily back up a library to a server and later on restore it from there. Additionally, such libraries can be shared with other users (if the server allows this).</source>
-        <translation type="unfinished">Et bibliotek oprettet i en konto synkroniseres med det. Dette gør det nemt at tage backup af et bibliotek til en server og senere gendanne det derfra. Derudover kan sådanne biblioteker deles med andre brugere (hvis serveren tillader dette).</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLibraryFromAccountPage.qml" line="98"/>
         <source>Existing Libraries</source>
-        <translation type="unfinished">Eksisterende biblioteker</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLibraryFromAccountPage.qml" line="106"/>
         <source>Select an existing library on the server to add it to the app.</source>
-        <translation type="unfinished">Vælg et eksisterende bibliotek på serveren for at føje det til appen.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLibraryFromAccountPage.qml" line="112"/>
         <source>No libraries were found on the server.</source>
-        <translation type="unfinished">Ingen biblioteker blev fundet på serveren.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLibraryFromAccountPage.qml" line="121"/>
         <source>Searching existing libraries...</source>
-        <translation type="unfinished">Søger i eksisterende biblioteker ...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLibraryFromAccountPage.qml" line="164"/>
         <source>Create a New Library</source>
-        <translation type="unfinished">Opret et nyt bibliotek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLibraryFromAccountPage.qml" line="172"/>
         <source>Create a new library, which will be synchronized with the server. Such a library can be added to the app on other devices as well to synchronize data.</source>
-        <translation type="unfinished">Opret et nyt bibliotek, som synkroniseres med serveren. Et sådant bibliotek kan føjes til appen på andre enheder samt for at synkronisere data.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLibraryFromAccountPage.qml" line="186"/>
         <source>My new library&apos;s name</source>
-        <translation type="unfinished">Mit nye biblioteks navn</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1377,42 +1377,42 @@
     <message>
         <location filename="../qml/Pages/NewLibraryInFolderPage.qml" line="100"/>
         <source>Open a Folder as a Library</source>
-        <translation type="unfinished">Åbn en mappe som et bibliotek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLibraryInFolderPage.qml" line="108"/>
         <source>You can use any folder as a location for a library.&lt;br/&gt;&lt;br/&gt;This is especially useful when you want to use another tool (like a sync client of a cloud provider) to sync your data with a server.</source>
-        <translation type="unfinished">Du kan bruge en hvilken som helst mappe som en placering til et bibliotek. &lt;br/&gt; &lt;br/&gt; Dette er især nyttigt, når du vil bruge et andet værktøj (som en synkroniseringsklient fra en skyudbyder) til at synkronisere dine data med en server.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLibraryInFolderPage.qml" line="112"/>
         <source>Folder:</source>
-        <translation type="unfinished">Folder:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLibraryInFolderPage.qml" line="117"/>
         <source>Path to a folder to use as a library</source>
-        <translation type="unfinished">Sti til en mappe, der skal bruges som bibliotek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLibraryInFolderPage.qml" line="123"/>
         <source>Select</source>
-        <translation type="unfinished">Vælg</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLibraryInFolderPage.qml" line="128"/>
         <source>Name:</source>
-        <translation type="unfinished">Navn:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLibraryInFolderPage.qml" line="133"/>
         <source>My Local Library Name</source>
-        <translation type="unfinished">Mit lokale biblioteksnavn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLibraryInFolderPage.qml" line="74"/>
         <source>Select a Folder</source>
-        <translation type="unfinished">Vælg en mappe</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1421,27 +1421,27 @@
         <location filename="../qml/Pages/NewLibraryPage.qml" line="22"/>
         <location filename="../qml/Pages/NewLibraryPage.qml" line="62"/>
         <source>Create Library</source>
-        <translation>Opret bibliotek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLibraryPage.qml" line="69"/>
         <source>Local Library</source>
-        <translation type="unfinished">Lokalt bibliotek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLibraryPage.qml" line="76"/>
         <source>Use Folder as Library</source>
-        <translation type="unfinished">Brug mappe som bibliotek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLibraryPage.qml" line="88"/>
         <source>Add Libraries From Your Accounts</source>
-        <translation type="unfinished">Tilføj biblioteker fra dine konti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLibraryPage.qml" line="115"/>
         <source>Add Account</source>
-        <translation type="unfinished">Tilføj konto</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1449,22 +1449,22 @@
     <message>
         <location filename="../qml/Pages/NewLocalLibraryPage.qml" line="61"/>
         <source>Create a Local Library</source>
-        <translation type="unfinished">Opret et lokalt bibliotek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLocalLibraryPage.qml" line="69"/>
         <source>A local library is stored solely on your device - this makes it perfect for the privacy concise!&lt;br/&gt;&lt;br/&gt;Use it when you want to store information only locally and back up all your data regularly via other mechanisms. If you need to access your information across several devices, create a library which is synced instead.</source>
-        <translation type="unfinished">Et lokalt bibliotek gemmes udelukkende på din enhed - dette gør det perfekt til beskyttelse af privatlivets fred! &lt;br/&gt; &lt;br/&gt; Brug det, når du kun vil gemme information lokalt og sikkerhedskopiere alle dine data regelmæssigt via andre mekanismer. Hvis du har brug for adgang til dine oplysninger på flere enheder, skal du oprette et bibliotek, der i stedet synkroniseres.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLocalLibraryPage.qml" line="79"/>
         <source>Name:</source>
-        <translation type="unfinished">Navn:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewLocalLibraryPage.qml" line="84"/>
         <source>My Local Library Name</source>
-        <translation type="unfinished">Mit lokale biblioteksnavn</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1473,12 +1473,12 @@
         <location filename="../qml/Pages/NewNextCloudAccountPage.qml" line="19"/>
         <location filename="../qml/Pages/NewNextCloudAccountPage.qml" line="71"/>
         <source>Connection Settings</source>
-        <translation type="unfinished">Forbindelsesindstillinger</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewNextCloudAccountPage.qml" line="77"/>
         <source>Server Address:</source>
-        <translation type="unfinished">Serveradresse:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewNextCloudAccountPage.qml" line="91"/>
@@ -1528,42 +1528,42 @@
     <message>
         <location filename="../qml/Pages/NewNextCloudAccountPage.qml" line="175"/>
         <source>User:</source>
-        <translation type="unfinished">Bruger:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewNextCloudAccountPage.qml" line="182"/>
         <source>User Name</source>
-        <translation type="unfinished">Brugernavn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewNextCloudAccountPage.qml" line="189"/>
         <source>Password:</source>
-        <translation type="unfinished">Adgangskode:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewNextCloudAccountPage.qml" line="196"/>
         <source>Password</source>
-        <translation type="unfinished">Adgangskode</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewNextCloudAccountPage.qml" line="206"/>
         <source>Disable Certificate Checks</source>
-        <translation type="unfinished">Deaktiver certifikatchecks</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewNextCloudAccountPage.qml" line="210"/>
         <source>Name:</source>
-        <translation type="unfinished">Navn:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewNextCloudAccountPage.qml" line="223"/>
         <source>Account Name</source>
-        <translation type="unfinished">Kontonavn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewNextCloudAccountPage.qml" line="233"/>
         <source>Failed to connect to the server. Please check your user name, password and the server address and retry.</source>
-        <translation type="unfinished">Kunne ikke oprette forbindelse til serveren. Kontroller dit brugernavn, din adgangskode og serveradressen, og prøv igen.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1571,22 +1571,22 @@
     <message>
         <location filename="../qml/Widgets/NewTopLevelItemButton.qml" line="52"/>
         <source>Note</source>
-        <translation>Bemærk</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/NewTopLevelItemButton.qml" line="41"/>
         <source>Todo List</source>
-        <translation>Todo liste</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/NewTopLevelItemButton.qml" line="56"/>
         <source>Image</source>
-        <translation>Billede</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/NewTopLevelItemButton.qml" line="46"/>
         <source>Todo</source>
-        <translation>At gøre</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1594,58 +1594,58 @@
     <message>
         <location filename="../qml/Pages/NewWebDAVAccountPage.qml" line="161"/>
         <source>Account Name</source>
-        <translation>Kontonavn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewWebDAVAccountPage.qml" line="28"/>
         <location filename="../qml/Pages/NewWebDAVAccountPage.qml" line="99"/>
         <source>Connection Settings</source>
-        <translation type="unfinished">Forbindelsesindstillinger</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewWebDAVAccountPage.qml" line="105"/>
         <source>Server Address:</source>
-        <translation type="unfinished">Serveradresse:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewWebDAVAccountPage.qml" line="111"/>
         <source>https://myserver.example.com</source>
-        <translation type="unfinished">https://myserver.example.com</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewWebDAVAccountPage.qml" line="117"/>
         <source>User:</source>
-        <translation type="unfinished">Bruger:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewWebDAVAccountPage.qml" line="123"/>
         <source>User Name</source>
-        <translation type="unfinished">Brugernavn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewWebDAVAccountPage.qml" line="129"/>
         <source>Password:</source>
-        <translation type="unfinished">Adgangskode:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewWebDAVAccountPage.qml" line="135"/>
         <source>Password</source>
-        <translation type="unfinished">Adgangskode</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewWebDAVAccountPage.qml" line="144"/>
         <source>Disable Certificate Checks</source>
-        <translation type="unfinished">Deaktiver certifikatchecks</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewWebDAVAccountPage.qml" line="148"/>
         <source>Name:</source>
-        <translation type="unfinished">Navn:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NewWebDAVAccountPage.qml" line="171"/>
         <source>Failed to connect to the server. Please check your user name, password and the server address and retry.</source>
-        <translation type="unfinished">Kunne ikke oprette forbindelse til serveren. Kontroller dit brugernavn, din adgangskode og serveradressen, og prøv igen.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1661,20 +1661,20 @@
     <message>
         <location filename="../qml/Pages/NotePage.qml" line="171"/>
         <source>Main Page</source>
-        <translation>Forside</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/NotePage.qml" line="238"/>
         <source>New Page</source>
-        <translation>Ny side</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>OpenTodoList::Translations</name>
     <message>
-        <location filename="../utils/translations.cpp" line="91"/>
+        <location filename="../../lib/utils/translations.cpp" line="91"/>
         <source>System Language</source>
-        <translation type="unfinished">System Sprog</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1682,7 +1682,13 @@
     <message>
         <location filename="../qml/Pages/ProblemsPage.qml" line="42"/>
         <source>Missing secrets for account</source>
-        <translation>Manglende adgangsdata for kontoen</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/ProblemsPage.qml" line="18"/>
+        <location filename="../qml/Pages/ProblemsPage.qml" line="28"/>
+        <source>Problems Detected</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/ProblemsPage.qml" line="47"/>
@@ -1693,12 +1699,6 @@
         <location filename="../qml/Pages/ProblemsPage.qml" line="91"/>
         <source>Retry Sync</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/ProblemsPage.qml" line="18"/>
-        <location filename="../qml/Pages/ProblemsPage.qml" line="28"/>
-        <source>Problems Detected</source>
-        <translation type="unfinished">Problemer opdaget</translation>
     </message>
 </context>
 <context>
@@ -1741,11 +1741,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Windows/QuickNoteWindow.qml" line="70"/>
-        <source>Type your notes here...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../qml/Windows/QuickNoteWindow.qml" line="121"/>
         <source>Save</source>
         <translation type="unfinished"></translation>
@@ -1761,11 +1756,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Windows/QuickNoteWindow.qml" line="152"/>
-        <source>Quick Note</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../qml/Windows/QuickNoteWindow.qml" line="161"/>
         <source>Save as Todo List</source>
         <translation type="unfinished"></translation>
@@ -1775,43 +1765,68 @@
         <source>Quick Todo List</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../qml/Windows/QuickNoteWindow.qml" line="152"/>
+        <source>Quick Note</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Windows/QuickNoteWindow.qml" line="70"/>
+        <source>Type your notes here...</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>RecurrenceDialog</name>
     <message>
         <location filename="../qml/Windows/RecurrenceDialog.qml" line="29"/>
         <source>Edit Recurrence</source>
-        <translation>Rediger gentagelse</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/RecurrenceDialog.qml" line="43"/>
         <source>Never</source>
-        <translation>Aldrig</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/RecurrenceDialog.qml" line="47"/>
         <source>Daily</source>
-        <translation>Daglige</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/RecurrenceDialog.qml" line="51"/>
         <source>Weekly</source>
-        <translation>Ugentlig</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/RecurrenceDialog.qml" line="55"/>
         <source>Monthly</source>
-        <translation>Månedlige</translation>
-    </message>
-    <message>
-        <location filename="../qml/Windows/RecurrenceDialog.qml" line="59"/>
-        <source>Yearly</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/RecurrenceDialog.qml" line="63"/>
         <source>Every N Days</source>
-        <translation>Hver N dage</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Windows/RecurrenceDialog.qml" line="97"/>
+        <source>Recurs:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Windows/RecurrenceDialog.qml" line="115"/>
+        <source>Number of days:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Windows/RecurrenceDialog.qml" line="141"/>
+        <source>Recur relative to the date when marking as done</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Windows/RecurrenceDialog.qml" line="59"/>
+        <source>Yearly</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/RecurrenceDialog.qml" line="67"/>
@@ -1824,16 +1839,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Windows/RecurrenceDialog.qml" line="97"/>
-        <source>Recurs:</source>
-        <translation>går igen:</translation>
-    </message>
-    <message>
-        <location filename="../qml/Windows/RecurrenceDialog.qml" line="115"/>
-        <source>Number of days:</source>
-        <translation>Antal dage:</translation>
-    </message>
-    <message>
         <location filename="../qml/Windows/RecurrenceDialog.qml" line="117"/>
         <source>Number of weeks:</source>
         <translation type="unfinished"></translation>
@@ -1843,18 +1848,13 @@
         <source>Number of months:</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <location filename="../qml/Windows/RecurrenceDialog.qml" line="141"/>
-        <source>Recur relative to the date when marking as done</source>
-        <translation>Gentag igen i forhold til datoen, når markeringen er udført</translation>
-    </message>
 </context>
 <context>
     <name>RenameItem</name>
     <message>
         <location filename="../qml/Actions/RenameItem.qml" line="10"/>
         <source>Rename</source>
-        <translation>Omdøb</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1862,12 +1862,12 @@
     <message>
         <location filename="../qml/Windows/RenameItemDialog.qml" line="21"/>
         <source>Rename Item</source>
-        <translation>Omdøb varen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/RenameItemDialog.qml" line="32"/>
         <source>Enter item title...</source>
-        <translation>Indtast varetitel...</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1875,12 +1875,12 @@
     <message>
         <location filename="../qml/Windows/RenameLibraryDialog.qml" line="19"/>
         <source>Rename Library</source>
-        <translation>Omdøb bibliotek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Windows/RenameLibraryDialog.qml" line="36"/>
         <source>Enter library title...</source>
-        <translation>Indtast bibliotekets titel...</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1896,42 +1896,42 @@
     <message>
         <location filename="../qml/Pages/ScheduleViewPage.qml" line="147"/>
         <source>Today</source>
-        <translation>I dag</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/ScheduleViewPage.qml" line="148"/>
         <source>Tomorrow</source>
-        <translation>I morgen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/ScheduleViewPage.qml" line="184"/>
         <source>Later This Week</source>
-        <translation>Senere denne uge</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/ScheduleViewPage.qml" line="186"/>
         <source>Next Week</source>
-        <translation>Næste uge</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/ScheduleViewPage.qml" line="187"/>
         <source>Coming Next</source>
-        <translation>Kommer næste</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/ScheduleViewPage.qml" line="266"/>
         <source>Nothing scheduled... Add a due date to items for them to appear here.</source>
-        <translation>Intet planlagt ...Tilføj en forfaldsdato til poster, så de kan vises her.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/ScheduleViewPage.qml" line="123"/>
         <source>Overdue</source>
-        <translation>Forsinket</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/ScheduleViewPage.qml" line="52"/>
         <source>Schedule</source>
-        <translation type="unfinished">Tidsplan</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1981,7 +1981,7 @@
     <message>
         <location filename="../qml/Actions/SetDueNextWeek.qml" line="8"/>
         <source>Set Due This Week</source>
-        <translation>Sæt forfald i denne uge</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1989,7 +1989,7 @@
     <message>
         <location filename="../qml/Actions/SetDueThisWeek.qml" line="8"/>
         <source>Set Due Next Week</source>
-        <translation>Sæt forfald i næste uge</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1997,7 +1997,7 @@
     <message>
         <location filename="../qml/Actions/SetDueTo.qml" line="10"/>
         <source>Select Due Date</source>
-        <translation>Vælg forfaldsdato</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2005,7 +2005,7 @@
     <message>
         <location filename="../qml/Actions/SetDueToday.qml" line="8"/>
         <source>Set Due Today</source>
-        <translation>Sæt forfald i dag</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2013,7 +2013,7 @@
     <message>
         <location filename="../qml/Actions/SetDueTomorrow.qml" line="8"/>
         <source>Set Due Tomorrow</source>
-        <translation>Indstil forfald i morgen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2029,52 +2029,21 @@
     <message>
         <location filename="../qml/Pages/SettingsPage.qml" line="40"/>
         <source>Settings</source>
-        <translation type="unfinished">Indstillinger</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/SettingsPage.qml" line="46"/>
         <source>User Interface</source>
-        <translation type="unfinished">Brugergrænseflade</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/SettingsPage.qml" line="54"/>
         <source>Language:</source>
-        <translation type="unfinished">Sprog:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/SettingsPage.qml" line="118"/>
         <source>Theme:</source>
-        <translation type="unfinished">Tema:</translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="143"/>
-        <source>Custom Primary Color:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="151"/>
-        <location filename="../qml/Pages/SettingsPage.qml" line="171"/>
-        <source>Select</source>
-        <translation type="unfinished">Vælg</translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="165"/>
-        <source>Custom Secondary Color:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="189"/>
-        <source>System Tray:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="194"/>
-        <source>Monochrome Icon</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="202"/>
-        <source>Open Quick Notes Editor on Click</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2085,11 +2054,6 @@
     <message>
         <location filename="../qml/Pages/SettingsPage.qml" line="225"/>
         <source>Use custom font size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/SettingsPage.qml" line="234"/>
-        <source>Desktop Mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2137,8 +2101,44 @@ This requires a restart of the app.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/Pages/SettingsPage.qml" line="189"/>
+        <source>System Tray:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/SettingsPage.qml" line="202"/>
+        <source>Open Quick Notes Editor on Click</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/SettingsPage.qml" line="234"/>
+        <source>Desktop Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/Pages/SettingsPage.qml" line="329"/>
         <source>Show notes excerpt in listings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/SettingsPage.qml" line="194"/>
+        <source>Monochrome Icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/SettingsPage.qml" line="143"/>
+        <source>Custom Primary Color:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/SettingsPage.qml" line="151"/>
+        <location filename="../qml/Pages/SettingsPage.qml" line="171"/>
+        <source>Select</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/SettingsPage.qml" line="165"/>
+        <source>Custom Secondary Color:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2147,7 +2147,7 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../qml/Windows/StackViewWindow.qml" line="21"/>
         <source>OpenTodoList</source>
-        <translation type="unfinished">OpenTodoList</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2165,7 +2165,7 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../qml/Pages/StartPage.qml" line="89"/>
         <source>Accounts</source>
-        <translation type="unfinished">Konti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/StartPage.qml" line="111"/>
@@ -2178,17 +2178,17 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../qml/Widgets/SyncErrorNotificationBar.qml" line="42"/>
         <source>There were errors when synchronizing the library. Please ensure that the library settings are up to date.</source>
-        <translation>Der opstod fejl ved synkronisering af biblioteket. Sørg for, at bibliotekets indstillinger er opdaterede.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/SyncErrorNotificationBar.qml" line="48"/>
         <source>Ignore</source>
-        <translation>Ignorere</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/SyncErrorNotificationBar.qml" line="52"/>
         <source>View</source>
-        <translation>Udsigt</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2196,20 +2196,20 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../qml/Widgets/TagsEditor.qml" line="32"/>
         <source>Add Tag</source>
-        <translation>Tilføj tag</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>TodoListItem</name>
     <message>
-        <location filename="../qml/Widgets/TodoListItem.qml" line="77"/>
-        <source>Due on %1</source>
+        <location filename="../qml/Widgets/TodoListItem.qml" line="136"/>
+        <source>✔ No open todos - everything done</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Widgets/TodoListItem.qml" line="136"/>
-        <source>✔ No open todos - everything done</source>
-        <translation>✔ Ingen åbne todos - alt gjort</translation>
+        <location filename="../qml/Widgets/TodoListItem.qml" line="77"/>
+        <source>Due on %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2217,7 +2217,42 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../qml/Pages/TodoListPage.qml" line="166"/>
         <source>Search term 1, search term 2, ...</source>
-        <translation>Søgeudtryk 1, søgeudtryk 2, ...</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/TodoListPage.qml" line="253"/>
+        <source>Todos</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/TodoListPage.qml" line="273"/>
+        <source>Add new todo...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/TodoListPage.qml" line="178"/>
+        <source>Manually</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/TodoListPage.qml" line="184"/>
+        <source>Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/TodoListPage.qml" line="190"/>
+        <source>Due Date</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/TodoListPage.qml" line="196"/>
+        <source>Created At</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Pages/TodoListPage.qml" line="202"/>
+        <source>Updated At</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/TodoListPage.qml" line="215"/>
@@ -2229,58 +2264,23 @@ This requires a restart of the app.</source>
         <source>Show At The End</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <location filename="../qml/Pages/TodoListPage.qml" line="253"/>
-        <source>Todos</source>
-        <translation>Todos</translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/TodoListPage.qml" line="273"/>
-        <source>Add new todo...</source>
-        <translation>Tilføj nyt todo...</translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/TodoListPage.qml" line="178"/>
-        <source>Manually</source>
-        <translation>manuelt</translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/TodoListPage.qml" line="184"/>
-        <source>Name</source>
-        <translation>Navn</translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/TodoListPage.qml" line="190"/>
-        <source>Due Date</source>
-        <translation>Afleveringsdato</translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/TodoListPage.qml" line="196"/>
-        <source>Created At</source>
-        <translation>Oprettet kl</translation>
-    </message>
-    <message>
-        <location filename="../qml/Pages/TodoListPage.qml" line="202"/>
-        <source>Updated At</source>
-        <translation>Opdateret kl</translation>
-    </message>
 </context>
 <context>
     <name>TodoPage</name>
     <message>
         <location filename="../qml/Pages/TodoPage.qml" line="181"/>
         <source>Search term 1, search term 2, ...</source>
-        <translation>Søgeudtryk 1, søgeudtryk 2, ...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/TodoPage.qml" line="206"/>
         <source>Tasks</source>
-        <translation>Opgaver</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/TodoPage.qml" line="212"/>
         <source>Add new task...</source>
-        <translation>Tilføj ny opgave...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Pages/TodoPage.qml" line="303"/>
@@ -2298,7 +2298,7 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../qml/Widgets/TodosWidget.qml" line="211"/>
         <source>Due on: %1</source>
-        <translation>Forfalder på:% 1</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2314,17 +2314,17 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../qml/Widgets/UpdateNotificationBar.qml" line="44"/>
         <source>An update to OpenTodoList %1 is available.</source>
-        <translation>En opdatering til OpenTodoList% 1 er tilgængelig.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/UpdateNotificationBar.qml" line="50"/>
         <source>Ignore</source>
-        <translation>Ignorere</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Widgets/UpdateNotificationBar.qml" line="54"/>
         <source>Download</source>
-        <translation>Hent</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
