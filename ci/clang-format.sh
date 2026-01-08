@@ -16,5 +16,5 @@ if [ -n "$CI" ]; then
 fi
 
 python3 ./3rdparty/run-clang-format/run-clang-format.py \
-    -r app lib test \
+    -r src test \
     --exclude lib/qmake/kf5-syntax-highlighting

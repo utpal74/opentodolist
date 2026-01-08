@@ -7,7 +7,7 @@ arch=('x86_64')
 url="https://opentodolist.rpdev.net/"
 license=('GPL')
 depends=('qt6-base' 'qt6-declarative' 'qt6-remoteobjects' 'qt6-networkauth' 'libsecret' 'ttf-roboto' 'noto-fonts' 'qtkeychain-qt6')
-makedepends=('git' 'git-lfs' 'cmake' 'ninja' 'qt6-tools')
+makedepends=('git' 'cmake' 'ninja' 'qt6-tools')
 provides=("${pkgname%}")
 conflicts=("${pkgname%}")
 source=("${pkgname}::git+https://gitlab.com/rpdev/opentodolist.git#commit=${pkgver}")
@@ -26,9 +26,25 @@ pkgver() {
         fi
 }
 
+# Disable Git LFS globally for this build
+export GIT_LFS_SKIP_SMUDGE=1
+
 prepare() {
         cd "$srcdir/${pkgname%}"
+
+        # Disable Git LFS to avoid missing object errors
+        export GIT_LFS_SKIP_SMUDGE=1
+        git config filter.lfs.smudge "cat"
+        git config filter.lfs.clean "cat"
+
+        # Reset the repository to handle any Git LFS issues
+        git reset --hard HEAD
+
+        # Initialize and update submodules with LFS disabled
         git submodule update --init --recursive
+
+        # Fix Qt6 QML deprecated imports - Qt.labs.qmlmodels is now QtQml.Models
+        find . -name "*.qml" -exec sed -i 's/import Qt\.labs\.qmlmodels.*/import QtQml.Models/g' {} \;
 }
 
 build() {

@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/fox-forks/schemastore/refs/heads/master/src/schemas/json/clangd.json
+
+CompileFlags:
+  CompilationDatabase: build/

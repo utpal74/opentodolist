@@ -23,7 +23,7 @@
 
 #include "sync/synchronizer.h"
 #include "sync/webdavsynchronizer.h"
-#include "utils/jsonutils.h"
+#include "utilities/jsonutils.h"
 
 class SynchronizerTest : public QObject
 {

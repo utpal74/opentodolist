@@ -30,6 +30,7 @@
 #include "datamodel/task.h"
 #include "datamodel/todo.h"
 #include "datamodel/todolist.h"
+#include "datamodel/recipe.h"
 #include "datastorage/cache.h"
 #include "datastorage/getitemquery.h"
 #include "datastorage/insertorupdateitemsquery.h"
@@ -73,6 +74,11 @@ void GetItemQueryTest::run()
     image.setTitle("An image");
     image.setLibraryId(lib.uid());
 
+    // Add Recipe
+    Recipe recipe;
+    recipe.setTitle("A recipe");
+    recipe.setLibraryId(lib.uid());
+
     {
         auto q = new InsertOrUpdateItemsQuery;
         QSignalSpy finished(q, &InsertOrUpdateItemsQuery::finished);
@@ -84,6 +90,7 @@ void GetItemQueryTest::run()
         q->add(&task);
         q->add(&note);
         q->add(&image);
+        q->add(&recipe); // Add Recipe to query
         cache.run(q);
 
         QVERIFY(destroyed.wait());
@@ -170,6 +177,19 @@ void GetItemQueryTest::run()
         QVERIFY(item != nullptr);
         QCOMPARE(item->uid(), image.uid());
         QCOMPARE(item->title(), image.title());
+    }
+
+    // Test for Recipe
+    {
+        auto q = new GetItemQuery();
+        q->setUid(recipe.uid());
+        QSignalSpy itemLoaded(q, &GetItemQuery::itemLoaded);
+        cache.run(q);
+        QVERIFY(itemLoaded.wait());
+        ItemPtr item(Item::decache(itemLoaded.value(0).value(0)));
+        QVERIFY(item != nullptr);
+        QCOMPARE(item->uid(), recipe.uid());
+        QCOMPARE(item->title(), recipe.title());
     }
 }
 

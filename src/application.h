@@ -1,0 +1,382 @@
+/*
+ * Copyright 2020-2021 Martin Hoeher <martin@rpdev.net>
+ *
+ * This file is part of OpenTodoList.
+ *
+ * OpenTodoList is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation, either version 3 of
+ * the License, or (at your option) any later version.
+ *
+ * OpenTodoList is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#ifndef APPLICATION_H_
+#define APPLICATION_H_
+
+#include <QLoggingCategory>
+#include <QObject>
+#include <QQmlListProperty>
+#include <QSettings>
+#include <QStringList>
+#include <QUrl>
+#include <QVariantMap>
+#include <QVector>
+
+#include <SynqClient/nextcloudloginflow.h>
+
+#include "datamodel/library.h"
+#include "sync/synchronizer.h"
+#include "utilities/problemmanager.h"
+#include "sync/account.h"
+#include "sync/remotelibraryinfo.h"
+#include "datastorage/cache.h"
+#include "datamodel/recipe.h"
+
+Q_MOC_INCLUDE("datamodel/task.h")
+Q_MOC_INCLUDE("datamodel/todo.h")
+Q_MOC_INCLUDE("datamodel/notepage.h")
+
+class QRemoteObjectNode;
+class QTemporaryDir;
+class QJSEngine;
+
+class ApplicationSettings;
+class BackgroundServiceReplica;
+class Cache;
+class DirectoryWatcher;
+class Image;
+class KeyStore;
+class Note;
+class NotePage;
+class Task;
+class Todo;
+class TodoList;
+
+struct ForeignNextCloudLoginFlow
+{
+    Q_GADGET
+    QML_FOREIGN(SynqClient::NextCloudLoginFlow)
+    QML_NAMED_ELEMENT(NextCloudLoginFlow)
+};
+
+/**
+ * @brief The main class of the application
+ *
+ * The Application class is used as entry point into the OpenTodoList application. It is used
+ * as contained class and provides references to other objects. Basically, the Application class
+ * models the application, i.e. it is created when the application starts and destroyed once
+ * the application is to be closed.
+ */
+class Application : public QObject
+{
+    Q_OBJECT
+    Q_PROPERTY(QString librariesLocation READ librariesLocation CONSTANT)
+    Q_PROPERTY(Cache* cache READ cache CONSTANT)
+    Q_PROPERTY(QStringList directoriesWithRunningSync READ directoriesWithRunningSync NOTIFY
+                       directoriesWithRunningSyncChanged)
+    Q_PROPERTY(QVariantMap syncErrors READ syncErrors NOTIFY syncErrorsChanged)
+    Q_PROPERTY(QVariantMap syncProgress READ syncProgress NOTIFY syncProgressChanged)
+    Q_PROPERTY(ProblemManager* problemManager READ problemManager CONSTANT)
+
+    QML_ELEMENT
+    QML_SINGLETON
+
+public:
+    explicit Application(Cache* cache, QObject* parent = nullptr);
+    explicit Application(Cache* cache, const QString& applicationDir, QObject* parent = nullptr);
+
+    virtual ~Application();
+
+    Q_INVOKABLE void saveAccount(Account* account);
+    Q_INVOKABLE void saveAccountSecrets(Account* account);
+    Q_INVOKABLE void removeAccount(Account* account);
+    Q_INVOKABLE Account* loadAccount(const QUuid& uid);
+    Q_INVOKABLE QVariantList accountUids();
+    Q_INVOKABLE Account* createAccount(Account::Type type);
+    Q_INVOKABLE Account* createAccount(int type)
+    {
+        return createAccount(static_cast<Account::Type>(type));
+    }
+    Q_INVOKABLE void loadSecretsForAccounts(Account* account);
+
+    Q_INVOKABLE QString accountTypeToString(Account::Type type);
+    Q_INVOKABLE QString accountTypeToString(int type)
+    {
+        return accountTypeToString(static_cast<Account::Type>(type));
+    }
+
+    Q_INVOKABLE Library* addLocalLibrary(const QString& name);
+    Q_INVOKABLE Library* addLibraryDirectory(const QString& directory);
+    Q_INVOKABLE Library* addNewLibraryToAccount(Account* account, const QString& name);
+    Q_INVOKABLE Library* addExistingLibraryToAccount(Account* account,
+                                                     const RemoteLibraryInfo& library);
+    Q_INVOKABLE void deleteLibrary(Library* library);
+    Q_INVOKABLE Note* addNote(Library* library, QVariantMap properties);
+    Q_INVOKABLE NotePage* addNotePage(Library* library, Note* note, QVariantMap properties);
+    Q_INVOKABLE Image* addImage(Library* library, QVariantMap properties);
+    Q_INVOKABLE TodoList* addTodoList(Library* library, QVariantMap properties);
+    Q_INVOKABLE Todo* addTodo(Library* library, TodoList* todoList, QVariantMap properties);
+    Q_INVOKABLE void moveTodo(Todo* todo, TodoList* todoList);
+    Q_INVOKABLE void moveTask(Task* task, Todo* todo);
+    Q_INVOKABLE void copyItem(Item* item, Library* targetLibrary, Item* targetParentItem = nullptr);
+    Q_INVOKABLE Task* addTask(Library* library, Todo* todo, QVariantMap properties);
+    Q_INVOKABLE void promoteTask(Task* task, TodoList* targetTodoList);
+    Q_INVOKABLE void deleteItem(Item* item);
+    Q_INVOKABLE void deleteDoneTodos(TodoList* todoList);
+    Q_INVOKABLE void deleteDoneTasks(Todo* todo);
+    Q_INVOKABLE Recipe* addRecipe(Library* library, QVariantMap properties);
+    Q_INVOKABLE QUuid loadLibrary(const QUuid& uid);
+    Q_INVOKABLE Library* libraryFromData(const QVariant& data);
+    Q_INVOKABLE QUuid loadItem(const QUuid& uid);
+    Q_INVOKABLE Item* itemFromData(const QVariant& data);
+    Q_INVOKABLE Item* cloneItem(Item* item);
+    Q_INVOKABLE Library* cloneLibrary(Library* library);
+    Q_INVOKABLE QString saveItem(Item* item);
+    Q_INVOKABLE void restoreItem(const QString& data);
+    Q_INVOKABLE void markAllItemsAsDone(Item* item);
+    Q_INVOKABLE void markAllItemsAsUndone(Item* item);
+
+    Q_INVOKABLE void saveValue(const QString& name, const QVariant& value);
+    Q_INVOKABLE QVariant loadValue(const QString& name, const QVariant& defaultValue = QVariant());
+    Q_INVOKABLE QString loadFile(const QString& filename) const;
+    Q_INVOKABLE QString loadFile(const QUrl& filename) const;
+
+    Q_INVOKABLE QVariant find3rdPartyInfos() const;
+
+    Q_INVOKABLE bool saveTextToFile(const QUrl& fileUrl, const QString& text) const;
+
+    Q_INVOKABLE QString urlToLocalFile(const QUrl& url) const;
+    Q_INVOKABLE QUrl localFileToUrl(const QString& localFile) const;
+    Q_INVOKABLE QUrl urlFromString(const QString& urlString) const;
+    Q_INVOKABLE QUrl cleanPath(const QUrl& url) const;
+    Q_INVOKABLE bool canListPath(const QUrl& url) const;
+    Q_INVOKABLE QUrl getParentDirectory(const QUrl& url) const;
+    Q_INVOKABLE QUrl getPhotoLibraryLocation() const;
+#ifdef Q_OS_ANDROID
+    Q_INVOKABLE QString getExternalFilesDir() const;
+#endif
+
+    Q_INVOKABLE bool fileExists(const QString& filename) const;
+    Q_INVOKABLE bool directoryExists(const QString& directory) const;
+    Q_INVOKABLE QString basename(const QString& filename) const;
+    Q_INVOKABLE bool isLibraryDir(const QUrl& url) const;
+    Q_INVOKABLE QString libraryNameFromDir(const QUrl& url) const;
+
+    Q_INVOKABLE QString sha256(const QString& text) const;
+    Q_INVOKABLE QUuid uuidFromString(const QString& text) const;
+    Q_INVOKABLE QString uuidToString(const QUuid& uid) const;
+
+    QString librariesLocation() const;
+
+    Q_INVOKABLE QUrl homeLocation() const;
+    Q_INVOKABLE bool folderExists(const QUrl& url) const;
+
+    Q_INVOKABLE bool libraryExists(const QUuid& uid);
+
+    Q_INVOKABLE SynqClient::NextCloudLoginFlow*
+    createNextCloudLoginFlow(bool ignoreSslErrors) const;
+
+    Q_INVOKABLE void syncAllLibraries();
+
+    Q_INVOKABLE void aboutQt() const;
+
+#ifdef Q_OS_ANDROID
+    Q_INVOKABLE void finishActivity();
+#endif
+
+    Cache* cache() const;
+
+    const QStringList& directoriesWithRunningSync() const;
+    void setDirectoriesWithRunningSync(const QStringList& directoriesWithRunningSync);
+
+    QVariantMap syncErrors() const;
+    QVariantMap syncProgress() const;
+
+    ProblemManager* problemManager() const;
+
+    void
+    setPropagateCacheEventsFromBackgroundService(bool propagateCacheEventsFromBackgroundService);
+
+    bool useMonochromeTrayIcon() const;
+    void setUseMonochromeTrayIcon(bool newUseMonochromeTrayIcon);
+
+    /**
+     * @brief The instance of the application used by QML.
+     *
+     * The instance must be set by calling setApplicationInstance() before.
+     *
+     * @return Application* The application instance.
+     */
+    static Application* create(QQmlEngine*, QJSEngine*) { return s_applicationInstance; }
+    static void setApplicationInstance(Application* instance) { s_applicationInstance = instance; }
+
+public slots:
+
+    void syncLibrary(Library* library);
+    void copyToClipboard(const QString& text);
+    void copyHtmlToClipboard(const QString& html);
+    void clearSyncErrors(Library* library);
+
+signals:
+
+    void directoriesWithRunningSyncChanged();
+    void syncErrorsChanged();
+    void syncProgressChanged();
+    void accountsChanged();
+
+    /**
+     * @brief The user requested the application window to be shown.
+     *
+     * This signal is emitted to indicate that the user requested the main
+     * window to be shown (again). For example, on Desktop systems, this
+     * might be the case then the app runs minimized to the background and
+     * the user clicks the tray icon - in this case, the Window shall
+     * be show and brought to the foreground.
+     */
+    void showWindowRequested();
+
+    /**
+     * @brief The user requested to hide the application window.
+     */
+    void hideWindowRequested();
+
+    /**
+     * @brief The user clicked the system tray icon.
+     */
+    void systemTrayIconClicked();
+
+    /**
+     * @brief The user requested to show the quick notes editor.
+     */
+    void showQuickNotesEditorRequested();
+
+    /**
+     * @brief The application entered the Qt::ApplicationActive state.
+     */
+    void applicationActivated();
+
+    /**
+     * @brief The data of a library has been loaded.
+     *
+     * This signal is emitted to indicate that the @p data of the library with the given @p uid
+     * has been loaded. Use the libraryFromData() method to create an item from the serialized data.
+     * The @p transactionId is the UID returned by the loadLibrary() method.
+     */
+    void libraryLoaded(const QUuid& uid, const QVariant& data, const QUuid& transactionId);
+
+    /**
+     * @brief Indicates that a given library was not found.
+     *
+     * This signal is emitted if the library with the given @p uid was not found. The
+     * @p transactionId is the UID returned by the loadLibrary() method.
+     */
+    void libraryNotFound(const QUuid& uid, const QUuid& transactionId);
+
+    /**
+     * @brief The data of an item has been loaded.
+     *
+     * This signal is emitted to indicate that the @p data of the item with the given @p uid
+     * has been loaded. Use the itemFromData() method to create an item from the serialized data.
+     *
+     * The @p parents contains the data of the parent items of the item, with the first being the
+     * direct parent and the last one being the top level item that the item belongs to.
+     *
+     * @p library is the data of the library the item belongs to.
+     *
+     * The @p transactionId is the UID returned by the loadItem() method.
+     */
+    void itemLoaded(const QUuid& uid, const QVariant& data, const QVariantList& parents,
+                    const QVariant& library, const QUuid& transactionId);
+
+    /**
+     * @brief An item could not be found in the cache.
+     *
+     * This signal is emitted as a response to the loadItem() method when the given item cannot be
+     * found. The @p uid is the uid of the item searched for. The @p transactionId is the UID
+     * returned by the loadItem() method.
+     */
+    void itemNotFound(const QUuid& uid, const QUuid& transactionId);
+
+    /**
+     * @brief The application received a link to a library that shall be opened.
+     *
+     * This signal is emitted if the app received a deep link in the form of the given @p url
+     * to the library with the @p uid.
+     */
+    void openLinkToLibrary(const QUrl& url, const QUuid& uid);
+
+    /**
+     * @brief The application received a link to an item that shall be opened.
+     *
+     * This signal is emitted if the app received a deep link in the form of the given @p url
+     * to the item with the @p uid.
+     */
+    void openLinkToItem(const QUrl& url, const QUuid& uid);
+
+    void useMonochromeTrayIconChanged();
+
+private:
+    Cache* m_cache;
+    KeyStore* m_keyStore;
+    ProblemManager* m_problemManager;
+    ApplicationSettings* m_appSettings;
+    QSettings* m_settings;
+    QStringList m_directoriesWithRunningSync;
+    QVariantMap m_syncErrors;
+    QVariantMap m_syncProgress;
+    QSet<QString> m_librariesWithChanges;
+    QSharedPointer<QTemporaryDir> m_tmpCacheDir;
+    QRemoteObjectNode* m_remoteObjectNode;
+    QSharedPointer<BackgroundServiceReplica> m_backgroundService;
+    QSet<QUuid> m_librariesRequestedForDeletion;
+    QUuid m_appInstanceUid;
+    bool m_propagateCacheEventsFromBackgroundService;
+    bool m_useMonochromeTrayIcon;
+
+    static Application* s_applicationInstance;
+
+    void initialize();
+    void disableIOSBackup();
+
+    void connectItemToCache(Item* item);
+
+    template<typename T>
+    void runSyncForLibrary(T library);
+
+    template<typename T>
+    void watchLibraryForChanges(T library);
+
+    void internallyAddLibrary(Library* library);
+    bool isLibraryUid(const QUuid& uid);
+
+    void importAccountsFromSynchronizers();
+
+    QSharedPointer<BackgroundServiceReplica> getBackgroundService();
+
+    Q_PROPERTY(bool useMonochromeTrayIcon READ useMonochromeTrayIcon WRITE setUseMonochromeTrayIcon
+                       NOTIFY useMonochromeTrayIconChanged)
+
+private slots:
+
+    void onLibrarySyncStarted(const QUuid& libraryUid);
+    void onLibrarySyncFinished(const QUuid& libraryUid);
+    void onLibrarySyncError(const QUuid& libraryUid, const QString& error);
+    void onLibrarySyncProgress(const QUuid& libraryUid, int value);
+    void onLibraryDeleted(const QUuid& libraryUid);
+    void onLibrariesChanged(QVariantList librariesUids);
+    void onBackgroundServiceCacheDataChanged(const QUuid& appInstanceUid);
+    void onBackgroundServiceCacheLibrariesChanged(const QVariantList& libraryUids,
+                                                  const QUuid& appInstanceUid);
+    void onLocalCacheDataChanged();
+    void onLocalCacheLibrariesChanged(const QVariantList& libraryUids);
+    void onAccountSecretsChanged(const QUuid& accountUid, const QString& secrets);
+};
+
+#endif // APPLICATION_H_

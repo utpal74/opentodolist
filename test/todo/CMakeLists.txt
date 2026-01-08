@@ -1,4 +1,4 @@
-find_package(Qt${QT_VERSION_MAJOR}Test REQUIRED)
+
 add_executable(
     test_todo
 

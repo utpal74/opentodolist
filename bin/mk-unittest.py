@@ -25,7 +25,7 @@ Example:
 """
 
 CMAKE = """\
-find_package(Qt${QT_VERSION_MAJOR}Test REQUIRED)
+
 add_executable(
     test_${name.lower()}
 

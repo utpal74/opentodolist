@@ -63,15 +63,9 @@ desktop-file-validate AppImageBuild/usr/share/applications/net.rpdev.OpenTodoLis
 # Copy OpenSSL libraries (use ones build from sources delivered with Qt):
 mkdir -p AppImageBuild/usr/lib
 cp \
-    /usr/local/lib64/libcrypto.so.3 \
-    /usr/local/lib64/libssl.so.3 \
+    /usr/lib/x86_64-linux-gnu/libssl.so \
+    /usr/lib/x86_64-linux-gnu/libcrypto.so \
     AppImageBuild/usr/lib
-
-(
-    cd AppImageBuild/usr/lib && \
-    ln -s libcrypto.so.3 libcrypto.so && \
-    ln -s libssl.so.3 libssl.so
-)
 
 export LD_LIBRARY_PATH=$PWD/AppImageBuild/usr/lib:$LD_LIBRARY_PATH
 
@@ -97,32 +91,19 @@ if [ ! -d linuxdeploy-plugin-qt ]; then
     rm linuxdeploy-plugin-qt-x86_64.AppImage
 fi
 
-export QML_SOURCES_PATHS="$PWD/../app"
+export QML_SOURCES_PATHS="$PWD/../src"
 
 export LINUXDEPLOY_OUTPUT_VERSION=$(git describe --tags)
 export QMAKE=$QT_INSTALL_ROOT/$QT_VERSION/gcc_64/bin/qmake
 
-# Does not currently work. When using on Linux, this yields the following errors:
-#
-## qt.qpa.wayland: Failed to load client buffer integration: "wayland-egl"
-## qt.qpa.wayland: Available client buffer integrations: QList()
-## qt.qpa.wayland: No shell integration named "xdg-shell" found
-## qt.qpa.wayland: No shell integration named "wl-shell" found
-## qt.qpa.wayland: No shell integration named "ivi-shell" found
-## qt.qpa.wayland: No shell integration named "qt-shell" found
-## qt.qpa.wayland: Loading shell integration failed.
-## qt.qpa.wayland: Attempted to load the following shells QList("xdg-shell", "wl-shell", "ivi-shell", "qt-shell")
-## QRhiGles2: Failed to create temporary context
-## QRhiGles2: Failed to create context
-## Failed to create RHI (backend 2)
-## Failed to initialize graphics backend for OpenGL.
-## Aborted (core dumped)
+export EXTRA_PLATFORM_PLUGINS="libqwayland.so"
+export EXTRA_QT_PLUGINS="waylandcompositor"
 
-# export EXTRA_PLATFORM_PLUGINS="libqwayland-generic.so;libqwayland-egl.so"
-
-# Remove libqsqlmimer.so - it fails to deploy due to dependencies:
+# Remove some extra plugins - they fail to deploy due to dependencies:
 if [ -n "$CI" ]; then
-    find $QT_INSTALL_ROOT/$QT_VERSION/gcc_64 -name libqsqlmimer.so -delete
+    for plugin in libqsqlmimer.so libqsqloci.so; do
+        find $QT_INSTALL_ROOT/$QT_VERSION/gcc_64 -name $plugin -delete
+    done
 fi
 
 linuxdeploy --appdir AppImageBuild --plugin qt --output appimage
