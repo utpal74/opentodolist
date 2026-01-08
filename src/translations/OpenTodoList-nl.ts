@@ -175,17 +175,17 @@
 <context>
     <name>Application</name>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="223"/>
         <source>Background Sync</source>
         <translation>Achtergrondsynchronisatie</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="226"/>
+        <location filename="../application.cpp" line="227"/>
         <source>App continues to sync your data in the background</source>
         <translation>De app synchroniseert op de achtergrond</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="230"/>
+        <location filename="../application.cpp" line="231"/>
         <source>Quit</source>
         <translation>Afsluiten</translation>
     </message>
@@ -2061,11 +2061,6 @@
         <translation>Thema:</translation>
     </message>
     <message>
-        <location filename="../Pages/SettingsPage.qml" line="165"/>
-        <source>Custom Secondary Color:</source>
-        <translation type="unfinished">Eigen secundaire kleur:</translation>
-    </message>
-    <message>
         <location filename="../Pages/SettingsPage.qml" line="208"/>
         <source>Font Size:</source>
         <translation>Tekstgrootte:</translation>
@@ -2158,6 +2153,11 @@ Herstart OpenTodoList om de wijziging toe te passen.</translation>
         <location filename="../Pages/SettingsPage.qml" line="171"/>
         <source>Select</source>
         <translation>Kiezen</translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="165"/>
+        <source>Custom Secondary Color:</source>
+        <translation>Eigen secundaire kleur:</translation>
     </message>
 </context>
 <context>

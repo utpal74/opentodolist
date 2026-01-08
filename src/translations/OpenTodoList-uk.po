@@ -2749,305 +2749,305 @@ msgstr "Вибачте, це посилання не веде на жодну с
 #: ../qml/Components/Tooltips/AllSubtasksDone.qml:13
 msgctxt "AllSubtasksDone|"
 msgid "Everything in %1 done! Do you want to mark it as well as done?"
-msgstr ""
+msgstr "Все в %1 зроблено! Бажаєте позначити це також як виконане?"
 
 #: ../qml/Components/Tooltips/AllSubtasksDone.qml:20
 msgctxt "AllSubtasksDone|"
 msgid "Mark as Done"
-msgstr ""
+msgstr "Позначити як виконане"
 
 #: ../qml/Components/Tooltips/AllSubtasksDone.qml:30
 msgctxt "AllSubtasksDone|"
 msgid "Keep Open"
-msgstr ""
+msgstr "Залишати відкритим"
 
 #: ../qml/Widgets/ApplicationMenu.qml:36
 msgctxt "ApplicationMenu|"
 msgid "File"
-msgstr ""
+msgstr "Файл"
 
 #: ../qml/Widgets/ApplicationMenu.qml:87
 msgctxt "ApplicationMenu|"
 msgid "Edit"
-msgstr ""
+msgstr "Зміни"
 
 #: ../qml/Widgets/ApplicationMenu.qml:158
 msgctxt "ApplicationMenu|"
 msgid "Navigate"
-msgstr ""
+msgstr "Навігація"
 
 #: ../qml/Widgets/ApplicationMenu.qml:197
 msgctxt "ApplicationMenu|"
 msgid "Help"
-msgstr ""
+msgstr "Допомога"
 
 #: ../qml/Components/ApplicationShortcuts.qml:18
 msgctxt "ApplicationShortcuts|"
 msgid "About"
-msgstr ""
+msgstr "Про"
 
 #: ../qml/Components/ApplicationShortcuts.qml:27
 msgctxt "ApplicationShortcuts|"
 msgid "About Qt"
-msgstr ""
+msgstr "Про Qt"
 
 #: ../qml/Components/ApplicationShortcuts.qml:35
 msgctxt "ApplicationShortcuts|"
 msgid "Accounts"
-msgstr ""
+msgstr "Облікові записи"
 
 #: ../qml/Components/ApplicationShortcuts.qml:43
 msgctxt "ApplicationShortcuts|"
 msgid "Add Tag"
-msgstr ""
+msgstr "Додати тег"
 
 #: ../qml/Components/ApplicationShortcuts.qml:51
 msgctxt "ApplicationShortcuts|"
 msgid "Attach File"
-msgstr ""
+msgstr "Прикріпити файл"
 
 #: ../qml/Components/ApplicationShortcuts.qml:59
 msgctxt "ApplicationShortcuts|"
 msgid "Backup"
-msgstr ""
+msgstr "Резервна копія"
 
 #: ../qml/Components/ApplicationShortcuts.qml:66
 msgctxt "ApplicationShortcuts|"
 msgid "Close"
-msgstr ""
+msgstr "Закрити"
 
 #: ../qml/Components/ApplicationShortcuts.qml:73
 msgctxt "ApplicationShortcuts|"
 msgid "Copy"
-msgstr ""
+msgstr "Копіювати"
 
 #: ../qml/Components/ApplicationShortcuts.qml:81
 msgctxt "ApplicationShortcuts|"
 msgid "Copy Link To Page"
-msgstr ""
+msgstr "Скопіювати посилання на сторінку"
 
 #: ../qml/Components/ApplicationShortcuts.qml:89
 msgctxt "ApplicationShortcuts|"
 msgid "Create Sample Library"
-msgstr ""
+msgstr "Створити зразкову бібліотеку"
 
 #: ../qml/Components/ApplicationShortcuts.qml:159
 msgctxt "ApplicationShortcuts|"
 msgid "Delete"
-msgstr ""
+msgstr "Видалити"
 
 #: ../qml/Components/ApplicationShortcuts.qml:167
 msgctxt "ApplicationShortcuts|"
 msgid "Delete Completed Items"
-msgstr ""
+msgstr "Видалити виконані записи"
 
 #: ../qml/Components/ApplicationShortcuts.qml:175
 msgctxt "ApplicationShortcuts|"
 msgid "Due Date"
-msgstr ""
+msgstr "Термін виконання"
 
 #: ../qml/Components/ApplicationShortcuts.qml:183
 msgctxt "ApplicationShortcuts|"
 msgid "Find"
-msgstr ""
+msgstr "Пошук"
 
 #: ../qml/Components/ApplicationShortcuts.qml:190
 msgctxt "ApplicationShortcuts|"
 msgid "Back"
-msgstr ""
+msgstr "Назад"
 
 #: ../qml/Components/ApplicationShortcuts.qml:207
 msgctxt "ApplicationShortcuts|"
 msgid "Left Sidebar"
-msgstr ""
+msgstr "Ліва бічна панель"
 
 #: ../qml/Components/ApplicationShortcuts.qml:213
 msgctxt "ApplicationShortcuts|"
 msgid "Mark all items as done"
-msgstr ""
+msgstr "Позначити всі записи як виконані"
 
 #: ../qml/Components/ApplicationShortcuts.qml:225
 msgctxt "ApplicationShortcuts|"
 msgid "Mark all items as undone"
-msgstr ""
+msgstr "Позначити всі записи як невиконані"
 
 #: ../qml/Components/ApplicationShortcuts.qml:237
 msgctxt "ApplicationShortcuts|"
 msgid "Move"
-msgstr ""
+msgstr "Перемістити"
 
 #: ../qml/Components/ApplicationShortcuts.qml:245
 msgctxt "ApplicationShortcuts|"
 msgid "New Library"
-msgstr ""
+msgstr "Нова бібліотека"
 
 #: ../qml/Components/ApplicationShortcuts.qml:253
 msgctxt "ApplicationShortcuts|"
 msgid "Open Created Item"
-msgstr ""
+msgstr "Відкрити створений запис"
 
 #: ../qml/Components/ApplicationShortcuts.qml:260
 msgctxt "ApplicationShortcuts|"
 msgid "Open In New Window"
-msgstr ""
+msgstr "Відкрити в новому вікні"
 
 #: ../qml/Components/ApplicationShortcuts.qml:268
 msgctxt "ApplicationShortcuts|"
 msgid "Open Library Folder"
-msgstr ""
+msgstr "Відкрити теку бібліотеки"
 
 #: ../qml/Components/ApplicationShortcuts.qml:274
 msgctxt "ApplicationShortcuts|"
 msgid "Quit"
-msgstr ""
+msgstr "Вийти"
 
 #: ../qml/Components/ApplicationShortcuts.qml:280
 msgctxt "ApplicationShortcuts|"
 msgid "Rename"
-msgstr ""
+msgstr "Перейменувати"
 
 #: ../qml/Components/ApplicationShortcuts.qml:288
 msgctxt "ApplicationShortcuts|"
 msgid "Preferences"
-msgstr ""
+msgstr "Налаштування"
 
 #: ../qml/Components/ApplicationShortcuts.qml:309
 msgctxt "ApplicationShortcuts|"
 msgid "Scroll to Top"
-msgstr ""
+msgstr "Прокрутити до початку"
 
 #: ../qml/Components/ApplicationShortcuts.qml:316
 msgctxt "ApplicationShortcuts|"
 msgid "Scroll to Bottom"
-msgstr ""
+msgstr "Прокрутити до кінця"
 
 #: ../qml/Components/ApplicationShortcuts.qml:323
 msgctxt "ApplicationShortcuts|"
 msgid "Set Color"
-msgstr ""
+msgstr "Встановити колір"
 
 #: ../qml/Components/ApplicationShortcuts.qml:330
 msgctxt "ApplicationShortcuts|"
 msgid "Set Progress"
-msgstr ""
+msgstr "Встановити прогрес"
 
 #: ../qml/Components/ApplicationShortcuts.qml:337
 msgctxt "ApplicationShortcuts|"
 msgid "Sort"
-msgstr ""
+msgstr "Сортувати"
 
 #: ../qml/Components/ApplicationShortcuts.qml:345
 msgctxt "ApplicationShortcuts|"
 msgid "Sync Now"
-msgstr ""
+msgstr "Синхронізувати зараз"
 
 #: ../qml/Components/ApplicationShortcuts.qml:358
 msgctxt "ApplicationShortcuts|"
 msgid "Sync Log"
-msgstr ""
+msgstr "Журнал синхронізації"
 
 #: ../qml/Components/ApplicationShortcuts.qml:369
 msgctxt "ApplicationShortcuts|"
 msgid "Translate The App..."
-msgstr ""
+msgstr "Перекласти додаток…"
 
 #: ../qml/Components/ApplicationToolBar.qml:87
 msgctxt "ApplicationToolBar|"
 msgid "Problems"
-msgstr ""
+msgstr "Проблеми"
 
 #: ../qml/Widgets/ItemNotesEditor.qml:106
 msgctxt "ItemNotesEditor|"
 msgid "Copy"
-msgstr ""
+msgstr "Копіювати"
 
 #: ../qml/Widgets/ItemNotesEditor.qml:113
 msgctxt "ItemNotesEditor|"
 msgid "Copy Formatted Text"
-msgstr ""
+msgstr "Копіювати форматований текст"
 
 #: ../qml/Widgets/ItemNotesEditor.qml:129
 msgctxt "ItemNotesEditor|"
 msgid "Copy Plain Text"
-msgstr ""
+msgstr "Копіювати звичайний текст"
 
 #: ../qml/Widgets/LibrariesSideBar.qml:293
 msgctxt "LibrariesSideBar|"
 msgid "Untagged"
-msgstr ""
+msgstr "Без тегів"
 
 #: ../../lib/datamodel/library.cpp:615
 msgctxt "Library|"
 msgid "Unable to create backup folder"
-msgstr ""
+msgstr "Не вдається створити теку резервної копії"
 
 #: ../../lib/datamodel/library.cpp:619
 msgctxt "Library|"
 msgid "Failed to change into backup folder"
-msgstr ""
+msgstr "Не вдається перейти до теки резервної копії"
 
 #: ../../lib/datamodel/library.cpp:630
 msgctxt "Library|"
 msgid "Failed to open file for writing: %1"
-msgstr ""
+msgstr "Не вдається відкрити файл для запису: %1"
 
 #: ../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml:13
 msgctxt "MarkFutureInstanceAsDone|"
 msgid "%1 is scheduled for the future - do you want to mark that future instance as done?"
-msgstr ""
+msgstr "%1 заплановано на майбутнє – чи бажаєте ви позначити цей майбутній екземпляр як виконаний?"
 
 #: ../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml:20
 msgctxt "MarkFutureInstanceAsDone|"
 msgid "Mark as Done"
-msgstr ""
+msgstr "Позначити як виконане"
 
 #: ../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml:29
 msgctxt "MarkFutureInstanceAsDone|"
 msgid "Keep Open"
-msgstr ""
+msgstr "Тримати відкритим"
 
 #: ../qml/Windows/StackViewWindow.qml:21
 msgctxt "StackViewWindow|"
 msgid "OpenTodoList"
-msgstr ""
+msgstr "OpenTodoList"
 
 #: ../qml/Utils/ItemUtils.qml:205
 msgctxt "ItemUtils|"
 msgid "Move Task Into..."
-msgstr ""
+msgstr "Перемістити завдання до…"
 
 #: ../qml/Actions/MoveTask.qml:12
 msgctxt "MoveTask|"
 msgid "Move"
-msgstr ""
+msgstr "Перемістити"
 
 #: ../qml/Windows/SelectTodoDialog.qml:22
 msgctxt "SelectTodoDialog|"
 msgid "Select Todo"
-msgstr ""
+msgstr "Вибрати завдання"
 
 #: ../qml/Windows/SelectTodoDialog.qml:42
 msgctxt "SelectTodoDialog|"
 msgid "Todo List:"
-msgstr ""
+msgstr "Список завдань:"
 
 #: ../qml/Windows/SelectTodoDialog.qml:64
 msgctxt "SelectTodoDialog|"
 msgid "Todo:"
-msgstr ""
+msgstr "Завдання:"
 
 #: ../qml/Pages/SettingsPage.qml:143
 msgctxt "SettingsPage|"
 msgid "Custom Primary Color:"
-msgstr ""
+msgstr "Власний основний колір:"
 
 #: ../qml/Pages/SettingsPage.qml:151 ../qml/Pages/SettingsPage.qml:171
 msgctxt "SettingsPage|"
 msgid "Select"
-msgstr ""
+msgstr "Вибрати"
 
 #: ../qml/Pages/SettingsPage.qml:165
 msgctxt "SettingsPage|"
 msgid "Custom Secondary Color:"
-msgstr ""
+msgstr "Власний додатковий колір:"
 

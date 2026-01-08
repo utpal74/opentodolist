@@ -175,17 +175,17 @@
 <context>
     <name>Application</name>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="223"/>
         <source>Background Sync</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="226"/>
+        <location filename="../application.cpp" line="227"/>
         <source>App continues to sync your data in the background</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="230"/>
+        <location filename="../application.cpp" line="231"/>
         <source>Quit</source>
         <translation type="unfinished">Çıkış</translation>
     </message>
@@ -238,7 +238,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="50"/>
         <source>Attach File</source>
-        <translation type="unfinished">Dosya Ekle</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="58"/>
@@ -841,16 +841,6 @@
         <translation>Her %1 günde bir tekrarlar.</translation>
     </message>
     <message>
-        <location filename="../Widgets/ItemDueDateEditor.qml" line="141"/>
-        <source>Recurs until %1.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemDueDateEditor.qml" line="144"/>
-        <source>Recurs indefinitely</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Widgets/ItemDueDateEditor.qml" line="96"/>
         <source>Recurs every year.</source>
         <translation>Her yıl yinelenir.</translation>
@@ -865,6 +855,16 @@
         <source>Recurs every %1 months.</source>
         <translation>Her %1 ayda bir yinelenir.</translation>
     </message>
+    <message>
+        <location filename="../Widgets/ItemDueDateEditor.qml" line="141"/>
+        <source>Recurs until %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Widgets/ItemDueDateEditor.qml" line="144"/>
+        <source>Recurs indefinitely</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ItemNotesEditor</name>
@@ -877,16 +877,6 @@
         <location filename="../Widgets/ItemNotesEditor.qml" line="73"/>
         <source>No notes added yet - click here to add some.</source>
         <translation>Henüz not eklenmedi - biraz eklemek için burayı tıklayın.</translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="113"/>
-        <source>Copy Formatted Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="129"/>
-        <source>Copy Plain Text</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Widgets/ItemNotesEditor.qml" line="160"/>
@@ -908,6 +898,16 @@
         <source>Copy</source>
         <translation type="unfinished">Kopyala</translation>
     </message>
+    <message>
+        <location filename="../Widgets/ItemNotesEditor.qml" line="113"/>
+        <source>Copy Formatted Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Widgets/ItemNotesEditor.qml" line="129"/>
+        <source>Copy Plain Text</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ItemUtils</name>
@@ -915,11 +915,6 @@
         <location filename="../Utils/ItemUtils.qml" line="189"/>
         <source>Move Todo Into...</source>
         <translation>Yapılacak İşi Şuraya Taşı ...</translation>
-    </message>
-    <message>
-        <location filename="../Utils/ItemUtils.qml" line="204"/>
-        <source>Move Task Into...</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Utils/ItemUtils.qml" line="219"/>
@@ -934,6 +929,11 @@
     <message>
         <location filename="../Utils/ItemUtils.qml" line="252"/>
         <source>Copy Todo Into...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Utils/ItemUtils.qml" line="204"/>
+        <source>Move Task Into...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -976,14 +976,14 @@
         <translation>Aşağı Taşı</translation>
     </message>
     <message>
-        <location filename="../Widgets/LibrariesSideBar.qml" line="291"/>
-        <source>Untagged</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Widgets/LibrariesSideBar.qml" line="93"/>
         <source>Donate</source>
         <translation>Bağış Yap</translation>
+    </message>
+    <message>
+        <location filename="../Widgets/LibrariesSideBar.qml" line="291"/>
+        <source>Untagged</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1314,11 +1314,6 @@
         <translation>Yeni öğenizin başlığı...</translation>
     </message>
     <message>
-        <location filename="../Windows/NewItemWithDueDateDialog.qml" line="149"/>
-        <source>Library</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Windows/NewItemWithDueDateDialog.qml" line="185"/>
         <source>Create in:</source>
         <translation>Şurada oluştur:</translation>
@@ -1327,6 +1322,11 @@
         <location filename="../Windows/NewItemWithDueDateDialog.qml" line="226"/>
         <source>Due on:</source>
         <translation>Son tarih:</translation>
+    </message>
+    <message>
+        <location filename="../Windows/NewItemWithDueDateDialog.qml" line="149"/>
+        <source>Library</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1832,16 +1832,6 @@
         <translation>Gün sayısı:</translation>
     </message>
     <message>
-        <location filename="../Windows/RecurrenceDialog.qml" line="118"/>
-        <source>Number of weeks:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Windows/RecurrenceDialog.qml" line="120"/>
-        <source>Number of months:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Windows/RecurrenceDialog.qml" line="142"/>
         <source>Recur relative to the date when marking as done</source>
         <translation>Tamam olarak işaretlendiğinde tarihe göre yineleme</translation>
@@ -1860,6 +1850,16 @@
         <location filename="../Windows/RecurrenceDialog.qml" line="72"/>
         <source>Every N Months</source>
         <translation>Her N Ay</translation>
+    </message>
+    <message>
+        <location filename="../Windows/RecurrenceDialog.qml" line="118"/>
+        <source>Number of weeks:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Windows/RecurrenceDialog.qml" line="120"/>
+        <source>Number of months:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2060,26 +2060,6 @@
         <translation>Tema</translation>
     </message>
     <message>
-        <location filename="../Pages/SettingsPage.qml" line="143"/>
-        <source>Custom Primary Color:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="165"/>
-        <source>Custom Secondary Color:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="189"/>
-        <source>System Tray:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="194"/>
-        <source>Monochrome Icon</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Pages/SettingsPage.qml" line="208"/>
         <source>Font Size:</source>
         <translation>Yazı Tipi Boyutu</translation>
@@ -2136,8 +2116,8 @@ Bu ayar değişikliği uygulamanın yeniden başlatılmasını gerektirir.</tran
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Pages/SettingsPage.qml" line="329"/>
-        <source>Show notes excerpt in listings</source>
+        <location filename="../Pages/SettingsPage.qml" line="189"/>
+        <source>System Tray:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2151,10 +2131,30 @@ Bu ayar değişikliği uygulamanın yeniden başlatılmasını gerektirir.</tran
         <translation>Masaüstü Modu</translation>
     </message>
     <message>
+        <location filename="../Pages/SettingsPage.qml" line="329"/>
+        <source>Show notes excerpt in listings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="194"/>
+        <source>Monochrome Icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="143"/>
+        <source>Custom Primary Color:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../Pages/SettingsPage.qml" line="151"/>
         <location filename="../Pages/SettingsPage.qml" line="171"/>
         <source>Select</source>
         <translation type="unfinished">Seç</translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="165"/>
+        <source>Custom Secondary Color:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

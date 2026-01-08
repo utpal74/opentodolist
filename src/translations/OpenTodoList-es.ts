@@ -175,17 +175,17 @@
 <context>
     <name>Application</name>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="223"/>
         <source>Background Sync</source>
         <translation>Sincronización de fondo</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="226"/>
+        <location filename="../application.cpp" line="227"/>
         <source>App continues to sync your data in the background</source>
         <translation>La aplicación continúa sincronizando sus datos en segundo plano</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="230"/>
+        <location filename="../application.cpp" line="231"/>
         <source>Quit</source>
         <translation>Abandonar</translation>
     </message>
@@ -233,12 +233,12 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="42"/>
         <source>Add Tag</source>
-        <translation type="unfinished">Añadir etiqueta</translation>
+        <translation>Añadir etiqueta</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="50"/>
         <source>Attach File</source>
-        <translation type="unfinished">Adjuntar Archivo</translation>
+        <translation>Adjuntar archivo</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="58"/>
@@ -881,16 +881,6 @@
 </translation>
     </message>
     <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="113"/>
-        <source>Copy Formatted Text</source>
-        <translation type="unfinished">Copiar texto formateado</translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="129"/>
-        <source>Copy Plain Text</source>
-        <translation type="unfinished">Copiar texto plano</translation>
-    </message>
-    <message>
         <location filename="../Widgets/ItemNotesEditor.qml" line="160"/>
         <source>Export to File...</source>
         <translation>Exportar a Archivo...</translation>
@@ -910,6 +900,16 @@
         <source>Copy</source>
         <translation>Copiar</translation>
     </message>
+    <message>
+        <location filename="../Widgets/ItemNotesEditor.qml" line="113"/>
+        <source>Copy Formatted Text</source>
+        <translation>Copiar texto formateado</translation>
+    </message>
+    <message>
+        <location filename="../Widgets/ItemNotesEditor.qml" line="129"/>
+        <source>Copy Plain Text</source>
+        <translation>Copiar texto plano</translation>
+    </message>
 </context>
 <context>
     <name>ItemUtils</name>
@@ -917,11 +917,6 @@
         <location filename="../Utils/ItemUtils.qml" line="189"/>
         <source>Move Todo Into...</source>
         <translation>Mover todo a...</translation>
-    </message>
-    <message>
-        <location filename="../Utils/ItemUtils.qml" line="204"/>
-        <source>Move Task Into...</source>
-        <translation type="unfinished">Mover tareas en...</translation>
     </message>
     <message>
         <location filename="../Utils/ItemUtils.qml" line="219"/>
@@ -937,6 +932,11 @@
         <location filename="../Utils/ItemUtils.qml" line="252"/>
         <source>Copy Todo Into...</source>
         <translation>Copiar todo en...</translation>
+    </message>
+    <message>
+        <location filename="../Utils/ItemUtils.qml" line="204"/>
+        <source>Move Task Into...</source>
+        <translation>Mover tareas en...</translation>
     </message>
 </context>
 <context>
@@ -978,14 +978,14 @@
         <translation>Move abajo</translation>
     </message>
     <message>
-        <location filename="../Widgets/LibrariesSideBar.qml" line="291"/>
-        <source>Untagged</source>
-        <translation>Desetiquetado</translation>
-    </message>
-    <message>
         <location filename="../Widgets/LibrariesSideBar.qml" line="93"/>
         <source>Donate</source>
         <translation>Donar</translation>
+    </message>
+    <message>
+        <location filename="../Widgets/LibrariesSideBar.qml" line="291"/>
+        <source>Untagged</source>
+        <translation>Desetiquetado</translation>
     </message>
 </context>
 <context>
@@ -1834,16 +1834,6 @@
         <translation>Número de días:</translation>
     </message>
     <message>
-        <location filename="../Windows/RecurrenceDialog.qml" line="118"/>
-        <source>Number of weeks:</source>
-        <translation type="unfinished">Número de semanas:</translation>
-    </message>
-    <message>
-        <location filename="../Windows/RecurrenceDialog.qml" line="120"/>
-        <source>Number of months:</source>
-        <translation type="unfinished">Número de meses:</translation>
-    </message>
-    <message>
         <location filename="../Windows/RecurrenceDialog.qml" line="142"/>
         <source>Recur relative to the date when marking as done</source>
         <translation>Recurrir en relación con la fecha en que se marcó como hecho</translation>
@@ -1862,6 +1852,16 @@
         <location filename="../Windows/RecurrenceDialog.qml" line="72"/>
         <source>Every N Months</source>
         <translation>Cada N Meses</translation>
+    </message>
+    <message>
+        <location filename="../Windows/RecurrenceDialog.qml" line="118"/>
+        <source>Number of weeks:</source>
+        <translation>Número de semanas:</translation>
+    </message>
+    <message>
+        <location filename="../Windows/RecurrenceDialog.qml" line="120"/>
+        <source>Number of months:</source>
+        <translation>Número de meses:</translation>
     </message>
 </context>
 <context>
@@ -2062,21 +2062,6 @@
         <translation>Tema:</translation>
     </message>
     <message>
-        <location filename="../Pages/SettingsPage.qml" line="143"/>
-        <source>Custom Primary Color:</source>
-        <translation type="unfinished">Personalizar color primario:</translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="165"/>
-        <source>Custom Secondary Color:</source>
-        <translation type="unfinished">Personalizar color secundario:</translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="194"/>
-        <source>Monochrome Icon</source>
-        <translation type="unfinished">Icono monocromático</translation>
-    </message>
-    <message>
         <location filename="../Pages/SettingsPage.qml" line="208"/>
         <source>Font Size:</source>
         <translation>Tamaño de fuente:</translation>
@@ -2155,10 +2140,25 @@ Esto requiere un reinicio de la aplicación.</translation>
         <translation>Mostrar extracto de notas en listados</translation>
     </message>
     <message>
+        <location filename="../Pages/SettingsPage.qml" line="194"/>
+        <source>Monochrome Icon</source>
+        <translation>Icono monocromático</translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="143"/>
+        <source>Custom Primary Color:</source>
+        <translation>Personalizar color primario:</translation>
+    </message>
+    <message>
         <location filename="../Pages/SettingsPage.qml" line="151"/>
         <location filename="../Pages/SettingsPage.qml" line="171"/>
         <source>Select</source>
         <translation>Seleccionar:</translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="165"/>
+        <source>Custom Secondary Color:</source>
+        <translation>Personalizar color secundario:</translation>
     </message>
 </context>
 <context>

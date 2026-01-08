@@ -175,17 +175,17 @@
 <context>
     <name>Application</name>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="223"/>
         <source>Background Sync</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="226"/>
+        <location filename="../application.cpp" line="227"/>
         <source>App continues to sync your data in the background</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="230"/>
+        <location filename="../application.cpp" line="231"/>
         <source>Quit</source>
         <translation type="unfinished">Lopeta</translation>
     </message>
@@ -363,7 +363,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="329"/>
         <source>Set Progress</source>
-        <translation type="unfinished">Aseta edistyminen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="336"/>
@@ -806,6 +806,16 @@
 <context>
     <name>ItemDueDateEditor</name>
     <message>
+        <location filename="../Widgets/ItemDueDateEditor.qml" line="31"/>
+        <source>Due on</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Widgets/ItemDueDateEditor.qml" line="69"/>
+        <source>First due on %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../Widgets/ItemDueDateEditor.qml" line="88"/>
         <source>No recurrence pattern set...</source>
         <translation>Toistumiskaavaa ei ole asetettu...</translation>
@@ -831,6 +841,16 @@
         <translation>Toistuu %1 päivän välein.</translation>
     </message>
     <message>
+        <location filename="../Widgets/ItemDueDateEditor.qml" line="96"/>
+        <source>Recurs every year.</source>
+        <translation>Toistuu vuosittain.</translation>
+    </message>
+    <message>
+        <location filename="../Widgets/ItemDueDateEditor.qml" line="101"/>
+        <source>Recurs every %1 weeks.</source>
+        <translation>Toistuu %1 viikon välein.</translation>
+    </message>
+    <message>
         <location filename="../Widgets/ItemDueDateEditor.qml" line="104"/>
         <source>Recurs every %1 months.</source>
         <translation type="unfinished"></translation>
@@ -845,26 +865,6 @@
         <source>Recurs indefinitely</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <location filename="../Widgets/ItemDueDateEditor.qml" line="96"/>
-        <source>Recurs every year.</source>
-        <translation>Toistuu vuosittain.</translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemDueDateEditor.qml" line="31"/>
-        <source>Due on</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemDueDateEditor.qml" line="69"/>
-        <source>First due on %1.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemDueDateEditor.qml" line="101"/>
-        <source>Recurs every %1 weeks.</source>
-        <translation>Toistuu %1 viikon välein.</translation>
-    </message>
 </context>
 <context>
     <name>ItemNotesEditor</name>
@@ -876,16 +876,6 @@
     <message>
         <location filename="../Widgets/ItemNotesEditor.qml" line="73"/>
         <source>No notes added yet - click here to add some.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="113"/>
-        <source>Copy Formatted Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="129"/>
-        <source>Copy Plain Text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -908,17 +898,22 @@
         <source>Copy</source>
         <translation type="unfinished">Kopioi</translation>
     </message>
+    <message>
+        <location filename="../Widgets/ItemNotesEditor.qml" line="113"/>
+        <source>Copy Formatted Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Widgets/ItemNotesEditor.qml" line="129"/>
+        <source>Copy Plain Text</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ItemUtils</name>
     <message>
         <location filename="../Utils/ItemUtils.qml" line="189"/>
         <source>Move Todo Into...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Utils/ItemUtils.qml" line="204"/>
-        <source>Move Task Into...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -934,6 +929,11 @@
     <message>
         <location filename="../Utils/ItemUtils.qml" line="252"/>
         <source>Copy Todo Into...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Utils/ItemUtils.qml" line="204"/>
+        <source>Move Task Into...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -976,14 +976,14 @@
         <translation>Siirrä alas</translation>
     </message>
     <message>
-        <location filename="../Widgets/LibrariesSideBar.qml" line="291"/>
-        <source>Untagged</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Widgets/LibrariesSideBar.qml" line="93"/>
         <source>Donate</source>
         <translation>Lahjoita</translation>
+    </message>
+    <message>
+        <location filename="../Widgets/LibrariesSideBar.qml" line="291"/>
+        <source>Untagged</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1314,11 +1314,6 @@
         <translation>Otsikko uudelle tietueelle...</translation>
     </message>
     <message>
-        <location filename="../Windows/NewItemWithDueDateDialog.qml" line="149"/>
-        <source>Library</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Windows/NewItemWithDueDateDialog.qml" line="185"/>
         <source>Create in:</source>
         <translation type="unfinished"></translation>
@@ -1326,6 +1321,11 @@
     <message>
         <location filename="../Windows/NewItemWithDueDateDialog.qml" line="226"/>
         <source>Due on:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Windows/NewItemWithDueDateDialog.qml" line="149"/>
+        <source>Library</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1574,24 +1574,24 @@
 <context>
     <name>NewTopLevelItemButton</name>
     <message>
-        <location filename="../Widgets/NewTopLevelItemButton.qml" line="42"/>
-        <source>Todo List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/NewTopLevelItemButton.qml" line="47"/>
-        <source>Todo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Widgets/NewTopLevelItemButton.qml" line="53"/>
         <source>Note</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Widgets/NewTopLevelItemButton.qml" line="42"/>
+        <source>Todo List</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Widgets/NewTopLevelItemButton.qml" line="57"/>
         <source>Image</source>
         <translation>Kuva</translation>
+    </message>
+    <message>
+        <location filename="../Widgets/NewTopLevelItemButton.qml" line="47"/>
+        <source>Todo</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1685,15 +1685,15 @@
 <context>
     <name>ProblemsPage</name>
     <message>
+        <location filename="../Pages/ProblemsPage.qml" line="42"/>
+        <source>Missing secrets for account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../Pages/ProblemsPage.qml" line="18"/>
         <location filename="../Pages/ProblemsPage.qml" line="28"/>
         <source>Problems Detected</source>
         <translation>Ongelmia havaittu</translation>
-    </message>
-    <message>
-        <location filename="../Pages/ProblemsPage.qml" line="42"/>
-        <source>Missing secrets for account</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Pages/ProblemsPage.qml" line="47"/>
@@ -1746,11 +1746,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Windows/QuickNoteWindow.qml" line="70"/>
-        <source>Type your notes here...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Windows/QuickNoteWindow.qml" line="121"/>
         <source>Save</source>
         <translation>Tallenna</translation>
@@ -1766,11 +1761,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Windows/QuickNoteWindow.qml" line="152"/>
-        <source>Quick Note</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Windows/QuickNoteWindow.qml" line="161"/>
         <source>Save as Todo List</source>
         <translation type="unfinished"></translation>
@@ -1778,6 +1768,16 @@
     <message>
         <location filename="../Windows/QuickNoteWindow.qml" line="165"/>
         <source>Quick Todo List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Windows/QuickNoteWindow.qml" line="152"/>
+        <source>Quick Note</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Windows/QuickNoteWindow.qml" line="70"/>
+        <source>Type your notes here...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1817,24 +1817,9 @@
         <translation>Kuukausittain</translation>
     </message>
     <message>
-        <location filename="../Windows/RecurrenceDialog.qml" line="60"/>
-        <source>Yearly</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Windows/RecurrenceDialog.qml" line="64"/>
         <source>Every N Days</source>
         <translation>N päivän välein</translation>
-    </message>
-    <message>
-        <location filename="../Windows/RecurrenceDialog.qml" line="68"/>
-        <source>Every N Weeks</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Windows/RecurrenceDialog.qml" line="72"/>
-        <source>Every N Months</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Windows/RecurrenceDialog.qml" line="98"/>
@@ -1847,6 +1832,26 @@
         <translation>Päivien määrä:</translation>
     </message>
     <message>
+        <location filename="../Windows/RecurrenceDialog.qml" line="142"/>
+        <source>Recur relative to the date when marking as done</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Windows/RecurrenceDialog.qml" line="60"/>
+        <source>Yearly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Windows/RecurrenceDialog.qml" line="68"/>
+        <source>Every N Weeks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Windows/RecurrenceDialog.qml" line="72"/>
+        <source>Every N Months</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../Windows/RecurrenceDialog.qml" line="118"/>
         <source>Number of weeks:</source>
         <translation type="unfinished"></translation>
@@ -1854,11 +1859,6 @@
     <message>
         <location filename="../Windows/RecurrenceDialog.qml" line="120"/>
         <source>Number of months:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Windows/RecurrenceDialog.qml" line="142"/>
-        <source>Recur relative to the date when marking as done</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1907,11 +1907,6 @@
 <context>
     <name>ScheduleViewPage</name>
     <message>
-        <location filename="../Pages/ScheduleViewPage.qml" line="123"/>
-        <source>Overdue</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Pages/ScheduleViewPage.qml" line="142"/>
         <source>Today</source>
         <translation>Tänään</translation>
@@ -1940,6 +1935,11 @@
         <location filename="../Pages/ScheduleViewPage.qml" line="261"/>
         <source>Nothing scheduled... Add a due date to items for them to appear here.</source>
         <translation>Mitään ei ole aikataulutettu... Aseta määräpäivä tietueille, jotta ne ilmestyvät tänne näkyviin.</translation>
+    </message>
+    <message>
+        <location filename="../Pages/ScheduleViewPage.qml" line="123"/>
+        <source>Overdue</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Pages/ScheduleViewPage.qml" line="52"/>
@@ -2060,31 +2060,6 @@
         <translation>Teema:</translation>
     </message>
     <message>
-        <location filename="../Pages/SettingsPage.qml" line="143"/>
-        <source>Custom Primary Color:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="165"/>
-        <source>Custom Secondary Color:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="189"/>
-        <source>System Tray:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="194"/>
-        <source>Monochrome Icon</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="202"/>
-        <source>Open Quick Notes Editor on Click</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Pages/SettingsPage.qml" line="208"/>
         <source>Font Size:</source>
         <translation>Fontin koko:</translation>
@@ -2139,8 +2114,13 @@ This requires a restart of the app.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Pages/SettingsPage.qml" line="329"/>
-        <source>Show notes excerpt in listings</source>
+        <location filename="../Pages/SettingsPage.qml" line="189"/>
+        <source>System Tray:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="202"/>
+        <source>Open Quick Notes Editor on Click</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2149,10 +2129,30 @@ This requires a restart of the app.</source>
         <translation>Työpöytätila</translation>
     </message>
     <message>
+        <location filename="../Pages/SettingsPage.qml" line="329"/>
+        <source>Show notes excerpt in listings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="194"/>
+        <source>Monochrome Icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="143"/>
+        <source>Custom Primary Color:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../Pages/SettingsPage.qml" line="151"/>
         <location filename="../Pages/SettingsPage.qml" line="171"/>
         <source>Select</source>
         <translation type="unfinished">Valitse</translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="165"/>
+        <source>Custom Secondary Color:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2215,13 +2215,13 @@ This requires a restart of the app.</source>
 <context>
     <name>TodoListItem</name>
     <message>
-        <location filename="../Widgets/TodoListItem.qml" line="77"/>
-        <source>Due on %1</source>
+        <location filename="../Widgets/TodoListItem.qml" line="134"/>
+        <source>✔ No open todos - everything done</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Widgets/TodoListItem.qml" line="134"/>
-        <source>✔ No open todos - everything done</source>
+        <location filename="../Widgets/TodoListItem.qml" line="77"/>
+        <source>Due on %1</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2230,6 +2230,16 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../Pages/TodoListPage.qml" line="164"/>
         <source>Search term 1, search term 2, ...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/TodoListPage.qml" line="251"/>
+        <source>Todos</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/TodoListPage.qml" line="271"/>
+        <source>Add new todo...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2265,16 +2275,6 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../Pages/TodoListPage.qml" line="221"/>
         <source>Show At The End</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/TodoListPage.qml" line="251"/>
-        <source>Todos</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/TodoListPage.qml" line="271"/>
-        <source>Add new todo...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

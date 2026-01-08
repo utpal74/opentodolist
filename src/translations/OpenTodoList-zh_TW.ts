@@ -11,7 +11,7 @@
     <message>
         <location filename="../Pages/AboutPage.qml" line="33"/>
         <source>OpenTodoList</source>
-        <translation type="unfinished"></translation>
+        <translation>OpenTodoList</translation>
     </message>
     <message>
         <location filename="../Pages/AboutPage.qml" line="40"/>
@@ -30,11 +30,6 @@
         <translation>回報問題</translation>
     </message>
     <message>
-        <location filename="../Pages/AboutPage.qml" line="92"/>
-        <source>Copy System Information</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Pages/AboutPage.qml" line="114"/>
         <source>Third Party Libraries and Resources</source>
         <translation>第三方函式庫和資源</translation>
@@ -47,7 +42,7 @@
     <message>
         <location filename="../Pages/AboutPage.qml" line="156"/>
         <source>&lt;a href=&apos;%2&apos;&gt;%1&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;a href=&apos;%2&apos;&gt;%1&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../Pages/AboutPage.qml" line="163"/>
@@ -57,7 +52,7 @@
     <message>
         <location filename="../Pages/AboutPage.qml" line="168"/>
         <source>&lt;a href=&apos;%1&apos;&gt;%2&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;a href=&apos;%1&apos;&gt;%2&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../Pages/AboutPage.qml" line="174"/>
@@ -67,7 +62,12 @@
     <message>
         <location filename="../Pages/AboutPage.qml" line="178"/>
         <source>&lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</translation>
+    </message>
+    <message>
+        <location filename="../Pages/AboutPage.qml" line="92"/>
+        <source>Copy System Information</source>
+        <translation>複製系統訊息</translation>
     </message>
 </context>
 <context>
@@ -85,22 +85,22 @@
     <message>
         <location filename="../Pages/AccountTypeSelectionPage.qml" line="61"/>
         <source>NextCloud</source>
-        <translation type="unfinished"></translation>
+        <translation>NextCloud</translation>
     </message>
     <message>
         <location filename="../Pages/AccountTypeSelectionPage.qml" line="64"/>
         <source>ownCloud</source>
-        <translation type="unfinished"></translation>
+        <translation>ownCloud</translation>
     </message>
     <message>
         <location filename="../Pages/AccountTypeSelectionPage.qml" line="67"/>
         <source>WebDAV</source>
-        <translation type="unfinished"></translation>
+        <translation>WebDAV</translation>
     </message>
     <message>
         <location filename="../Pages/AccountTypeSelectionPage.qml" line="70"/>
         <source>Dropbox</source>
-        <translation type="unfinished"></translation>
+        <translation>Dropbox</translation>
     </message>
 </context>
 <context>
@@ -109,7 +109,7 @@
         <location filename="../Pages/AccountsPage.qml" line="18"/>
         <location filename="../Pages/AccountsPage.qml" line="40"/>
         <source>Accounts</source>
-        <translation type="unfinished">帳號</translation>
+        <translation>帳號</translation>
     </message>
 </context>
 <context>
@@ -117,7 +117,7 @@
     <message>
         <location filename="../Components/Tooltips/AllSubtasksDone.qml" line="13"/>
         <source>Everything in %1 done! Do you want to mark it as well as done?</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 中的所有內容都已完成！是否也將其標記為已完成？</translation>
     </message>
     <message>
         <location filename="../Components/Tooltips/AllSubtasksDone.qml" line="20"/>
@@ -140,7 +140,7 @@
     <message>
         <location filename="../appstartup.cpp" line="210"/>
         <source>Switch on some optimizations for touchscreens.</source>
-        <translation type="unfinished">開啟觸控螢幕最佳化。</translation>
+        <translation>開啟觸控螢幕最佳化。</translation>
     </message>
     <message>
         <location filename="../appstartup.cpp" line="213"/>
@@ -176,19 +176,19 @@
 <context>
     <name>Application</name>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="223"/>
         <source>Background Sync</source>
-        <translation type="unfinished"></translation>
+        <translation>背景同步</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="226"/>
+        <location filename="../application.cpp" line="227"/>
         <source>App continues to sync your data in the background</source>
-        <translation type="unfinished"></translation>
+        <translation>正在背景同步您的數據</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="230"/>
+        <location filename="../application.cpp" line="231"/>
         <source>Quit</source>
-        <translation type="unfinished">離開</translation>
+        <translation>離開</translation>
     </message>
 </context>
 <context>
@@ -201,12 +201,12 @@
     <message>
         <location filename="../Widgets/ApplicationMenu.qml" line="87"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>編輯</translation>
     </message>
     <message>
         <location filename="../Widgets/ApplicationMenu.qml" line="158"/>
         <source>Navigate</source>
-        <translation type="unfinished"></translation>
+        <translation>導航</translation>
     </message>
     <message>
         <location filename="../Widgets/ApplicationMenu.qml" line="197"/>
@@ -219,42 +219,42 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="17"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>關於</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="26"/>
         <source>About Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>關於Qt</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="34"/>
         <source>Accounts</source>
-        <translation type="unfinished">帳號</translation>
+        <translation>帳號</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="42"/>
         <source>Add Tag</source>
-        <translation type="unfinished">加入標籤</translation>
+        <translation>加入標籤</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="50"/>
         <source>Attach File</source>
-        <translation type="unfinished">附加檔案</translation>
+        <translation>附加檔案</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="58"/>
         <source>Backup</source>
-        <translation type="unfinished"></translation>
+        <translation>備份</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="65"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>關閉</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="72"/>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>複製</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="80"/>
@@ -269,17 +269,17 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="158"/>
         <source>Delete</source>
-        <translation type="unfinished">刪除</translation>
+        <translation>刪除</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="166"/>
         <source>Delete Completed Items</source>
-        <translation type="unfinished">刪除完成的項目</translation>
+        <translation>刪除完成的項目</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="174"/>
         <source>Due Date</source>
-        <translation type="unfinished">截止期限</translation>
+        <translation>截止期限</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="182"/>
@@ -289,7 +289,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="189"/>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>返回</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="206"/>
@@ -309,12 +309,12 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="236"/>
         <source>Move</source>
-        <translation type="unfinished"></translation>
+        <translation>移動</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="244"/>
         <source>New Library</source>
-        <translation type="unfinished">新書庫</translation>
+        <translation>新書庫</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="252"/>
@@ -334,7 +334,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="273"/>
         <source>Quit</source>
-        <translation type="unfinished">離開</translation>
+        <translation>離開</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="279"/>
@@ -344,7 +344,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="287"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>偏好設定</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="308"/>
@@ -369,22 +369,22 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="336"/>
         <source>Sort</source>
-        <translation type="unfinished">分類</translation>
+        <translation>分類</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="344"/>
         <source>Sync Now</source>
-        <translation type="unfinished">現在同步</translation>
+        <translation>現在同步</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="357"/>
         <source>Sync Log</source>
-        <translation type="unfinished">同步日誌</translation>
+        <translation>同步日誌</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="368"/>
         <source>Translate The App...</source>
-        <translation type="unfinished">翻譯此應用程式</translation>
+        <translation>翻譯此應用程式...</translation>
     </message>
 </context>
 <context>
@@ -492,7 +492,7 @@
     <message>
         <location filename="../Actions/CopyTodo.qml" line="12"/>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>複製</translation>
     </message>
 </context>
 <context>
@@ -500,7 +500,7 @@
     <message>
         <location filename="../Actions/CopyTopLevelItem.qml" line="12"/>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>複製</translation>
     </message>
 </context>
 <context>
@@ -625,7 +625,7 @@
         <location filename="../Pages/EditDropboxAccountPage.qml" line="26"/>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="65"/>
         <source>Connection Settings</source>
-        <translation type="unfinished">連接設定</translation>
+        <translation>連接設定</translation>
     </message>
     <message>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="73"/>
@@ -645,7 +645,7 @@
     <message>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="95"/>
         <source>Authorize...</source>
-        <translation type="unfinished"></translation>
+        <translation>授權...</translation>
     </message>
     <message>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="104"/>
@@ -655,22 +655,22 @@
     <message>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="110"/>
         <source>Copy Link</source>
-        <translation type="unfinished"></translation>
+        <translation>複製連結</translation>
     </message>
     <message>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="114"/>
         <source>Copied!</source>
-        <translation type="unfinished"></translation>
+        <translation>已複製！</translation>
     </message>
     <message>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="123"/>
         <source>Name:</source>
-        <translation type="unfinished">名稱：</translation>
+        <translation>名稱：</translation>
     </message>
     <message>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="130"/>
         <source>Dropbox</source>
-        <translation type="unfinished"></translation>
+        <translation>Dropbox</translation>
     </message>
 </context>
 <context>
@@ -679,57 +679,57 @@
         <location filename="../Pages/EditNextCloudAccountPage.qml" line="22"/>
         <location filename="../Pages/EditNextCloudAccountPage.qml" line="57"/>
         <source>Edit Account</source>
-        <translation type="unfinished">編輯帳號</translation>
+        <translation>編輯帳號</translation>
     </message>
     <message>
         <location filename="../Pages/EditNextCloudAccountPage.qml" line="63"/>
         <source>Name:</source>
-        <translation type="unfinished">名稱：</translation>
+        <translation>名稱：</translation>
     </message>
     <message>
         <location filename="../Pages/EditNextCloudAccountPage.qml" line="74"/>
         <source>Server Address:</source>
-        <translation type="unfinished">伺服器網址：</translation>
+        <translation>伺服器地址：</translation>
     </message>
     <message>
         <location filename="../Pages/EditNextCloudAccountPage.qml" line="81"/>
         <source>https://myserver.example.com</source>
-        <translation type="unfinished"></translation>
+        <translation>https://myserver.example.com</translation>
     </message>
     <message>
         <location filename="../Pages/EditNextCloudAccountPage.qml" line="89"/>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>登入</translation>
     </message>
     <message>
         <location filename="../Pages/EditNextCloudAccountPage.qml" line="102"/>
         <source>User:</source>
-        <translation type="unfinished">使用者：</translation>
+        <translation>使用者：</translation>
     </message>
     <message>
         <location filename="../Pages/EditNextCloudAccountPage.qml" line="109"/>
         <source>User Name</source>
-        <translation type="unfinished"></translation>
+        <translation>使用者名稱</translation>
     </message>
     <message>
         <location filename="../Pages/EditNextCloudAccountPage.qml" line="115"/>
         <source>Password:</source>
-        <translation type="unfinished">密碼：</translation>
+        <translation>密碼：</translation>
     </message>
     <message>
         <location filename="../Pages/EditNextCloudAccountPage.qml" line="122"/>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>密碼</translation>
     </message>
     <message>
         <location filename="../Pages/EditNextCloudAccountPage.qml" line="131"/>
         <source>Disable Certificate Checks</source>
-        <translation type="unfinished">關閉證明確認</translation>
+        <translation>關閉證明確認</translation>
     </message>
     <message>
         <location filename="../Pages/EditNextCloudAccountPage.qml" line="140"/>
         <source>Failed to connect to the server. Please check your user name, password and the server address and retry.</source>
-        <translation type="unfinished"></translation>
+        <translation>無法連接伺服器。請確認你的使用者名稱、密碼和伺服器網址，然後重試。</translation>
     </message>
 </context>
 <context>
@@ -738,52 +738,52 @@
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="32"/>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="116"/>
         <source>Edit Account</source>
-        <translation type="unfinished">編輯帳號</translation>
+        <translation>編輯帳號</translation>
     </message>
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="122"/>
         <source>Name:</source>
-        <translation type="unfinished">名稱：</translation>
+        <translation>名稱：</translation>
     </message>
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="133"/>
         <source>Server Address:</source>
-        <translation type="unfinished">伺服器網址：</translation>
+        <translation>伺服器地址：</translation>
     </message>
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="139"/>
         <source>https://myserver.example.com</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">https://myserver.example.com</translation>
     </message>
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="146"/>
         <source>User:</source>
-        <translation type="unfinished">使用者：</translation>
+        <translation>使用者：</translation>
     </message>
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="152"/>
         <source>User Name</source>
-        <translation type="unfinished"></translation>
+        <translation>使用者名稱</translation>
     </message>
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="159"/>
         <source>Password:</source>
-        <translation type="unfinished">密碼：</translation>
+        <translation>密碼：</translation>
     </message>
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="166"/>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>密碼</translation>
     </message>
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="176"/>
         <source>Disable Certificate Checks</source>
-        <translation type="unfinished">關閉證明確認</translation>
+        <translation>關閉證明確認</translation>
     </message>
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="184"/>
         <source>Failed to connect to the server. Please check your user name, password and the server address and retry.</source>
-        <translation type="unfinished"></translation>
+        <translation>無法連接伺服器。請確認你的使用者名稱、密碼和伺服器網址，然後重試。</translation>
     </message>
 </context>
 <context>
@@ -837,14 +837,14 @@
         <translation>每月反復發生。</translation>
     </message>
     <message>
-        <location filename="../Widgets/ItemDueDateEditor.qml" line="96"/>
-        <source>Recurs every year.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Widgets/ItemDueDateEditor.qml" line="98"/>
         <source>Recurs every %1 days.</source>
         <translation>每%1 天反復發生。</translation>
+    </message>
+    <message>
+        <location filename="../Widgets/ItemDueDateEditor.qml" line="96"/>
+        <source>Recurs every year.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Widgets/ItemDueDateEditor.qml" line="101"/>
@@ -880,24 +880,14 @@
         <translation>還沒有加入任何筆記——點擊這裡加入。</translation>
     </message>
     <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="106"/>
-        <source>Copy</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="113"/>
-        <source>Copy Formatted Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="129"/>
-        <source>Copy Plain Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Widgets/ItemNotesEditor.qml" line="160"/>
         <source>Export to File...</source>
         <translation>輸出檔案……</translation>
+    </message>
+    <message>
+        <location filename="../Widgets/ItemNotesEditor.qml" line="163"/>
+        <source>Markdown files</source>
+        <translation>Markdown文件</translation>
     </message>
     <message>
         <location filename="../Widgets/ItemNotesEditor.qml" line="163"/>
@@ -905,9 +895,19 @@
         <translation>所有檔案</translation>
     </message>
     <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="163"/>
-        <source>Markdown files</source>
-        <translation type="unfinished"></translation>
+        <location filename="../Widgets/ItemNotesEditor.qml" line="106"/>
+        <source>Copy</source>
+        <translation>複製</translation>
+    </message>
+    <message>
+        <location filename="../Widgets/ItemNotesEditor.qml" line="113"/>
+        <source>Copy Formatted Text</source>
+        <translation>複製格式化文字</translation>
+    </message>
+    <message>
+        <location filename="../Widgets/ItemNotesEditor.qml" line="129"/>
+        <source>Copy Plain Text</source>
+        <translation>複製純文字</translation>
     </message>
 </context>
 <context>
@@ -918,23 +918,23 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Utils/ItemUtils.qml" line="204"/>
-        <source>Move Task Into...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Utils/ItemUtils.qml" line="219"/>
         <source>Convert Task to Todo and Move Into...</source>
-        <translation type="unfinished"></translation>
+        <translation>將任務轉換為待辦事項並移至...</translation>
     </message>
     <message>
         <location filename="../Utils/ItemUtils.qml" line="235"/>
         <source>Copy Item Into...</source>
-        <translation type="unfinished"></translation>
+        <translation>將項目複製到...</translation>
     </message>
     <message>
         <location filename="../Utils/ItemUtils.qml" line="252"/>
         <source>Copy Todo Into...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Utils/ItemUtils.qml" line="204"/>
+        <source>Move Task Into...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -947,18 +947,13 @@
         <translation>時間表</translation>
     </message>
     <message>
-        <location filename="../Widgets/LibrariesSideBar.qml" line="78"/>
-        <source>Edit List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Widgets/LibrariesSideBar.qml" line="85"/>
         <source>Settings</source>
         <translation>設定</translation>
     </message>
     <message>
-        <location filename="../Widgets/LibrariesSideBar.qml" line="93"/>
-        <source>Donate</source>
+        <location filename="../Widgets/LibrariesSideBar.qml" line="78"/>
+        <source>Edit List</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -980,6 +975,11 @@
         <location filename="../Widgets/LibrariesSideBar.qml" line="210"/>
         <source>Move Down</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Widgets/LibrariesSideBar.qml" line="93"/>
+        <source>Donate</source>
+        <translation>贊助</translation>
     </message>
     <message>
         <location filename="../Widgets/LibrariesSideBar.qml" line="291"/>
@@ -1048,11 +1048,6 @@
         <translation>重新命名</translation>
     </message>
     <message>
-        <location filename="../Pages/LibraryPage.qml" line="298"/>
-        <source>Copy</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Pages/LibraryPage.qml" line="304"/>
         <source>Delete</source>
         <translation>刪除</translation>
@@ -1113,9 +1108,14 @@
         <translation>更新於</translation>
     </message>
     <message>
+        <location filename="../Pages/LibraryPage.qml" line="298"/>
+        <source>Copy</source>
+        <translation>複製</translation>
+    </message>
+    <message>
         <location filename="../Pages/LibraryPage.qml" line="318"/>
         <source>Select Image</source>
-        <translation type="unfinished">選擇圖片</translation>
+        <translation>選擇圖片</translation>
     </message>
 </context>
 <context>
@@ -1133,7 +1133,7 @@
     <message>
         <location filename="../Pages/LogViewPage.qml" line="70"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>警告</translation>
     </message>
     <message>
         <location filename="../Pages/LogViewPage.qml" line="72"/>
@@ -1143,7 +1143,7 @@
     <message>
         <location filename="../Pages/LogViewPage.qml" line="74"/>
         <source>Download</source>
-        <translation type="unfinished">下載</translation>
+        <translation>下載</translation>
     </message>
     <message>
         <location filename="../Pages/LogViewPage.qml" line="76"/>
@@ -1163,12 +1163,12 @@
     <message>
         <location filename="../Pages/LogViewPage.qml" line="82"/>
         <source>Deleting locally</source>
-        <translation type="unfinished"></translation>
+        <translation>本地刪除</translation>
     </message>
     <message>
         <location filename="../Pages/LogViewPage.qml" line="84"/>
         <source>Deleting remotely</source>
-        <translation type="unfinished"></translation>
+        <translation>遠端刪除</translation>
     </message>
     <message>
         <location filename="../Pages/LogViewPage.qml" line="86"/>
@@ -1181,7 +1181,7 @@
     <message>
         <location filename="../Windows/MainWindow.qml" line="23"/>
         <source>OpenTodoList</source>
-        <translation type="unfinished"></translation>
+        <translation>OpenTodoList</translation>
     </message>
     <message>
         <location filename="../Windows/MainWindow.qml" line="197"/>
@@ -1212,7 +1212,7 @@
     <message>
         <location filename="../Actions/MoveTask.qml" line="12"/>
         <source>Move</source>
-        <translation type="unfinished"></translation>
+        <translation>移動</translation>
     </message>
 </context>
 <context>
@@ -1220,7 +1220,7 @@
     <message>
         <location filename="../Actions/MoveTodo.qml" line="12"/>
         <source>Move</source>
-        <translation type="unfinished"></translation>
+        <translation>移動</translation>
     </message>
 </context>
 <context>
@@ -1229,7 +1229,7 @@
         <location filename="../Pages/NewDropboxAccountPage.qml" line="20"/>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="53"/>
         <source>Connection Settings</source>
-        <translation type="unfinished">連接設定</translation>
+        <translation>連接設定</translation>
     </message>
     <message>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="61"/>
@@ -1249,7 +1249,7 @@
     <message>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="85"/>
         <source>Authorize...</source>
-        <translation type="unfinished"></translation>
+        <translation>授權...</translation>
     </message>
     <message>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="94"/>
@@ -1259,22 +1259,22 @@
     <message>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="100"/>
         <source>Copy Link</source>
-        <translation type="unfinished"></translation>
+        <translation>複製連結</translation>
     </message>
     <message>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="104"/>
         <source>Copied!</source>
-        <translation type="unfinished"></translation>
+        <translation>已複製！</translation>
     </message>
     <message>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="113"/>
         <source>Name:</source>
-        <translation type="unfinished">名稱：</translation>
+        <translation>名稱：</translation>
     </message>
     <message>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="120"/>
         <source>Dropbox</source>
-        <translation type="unfinished"></translation>
+        <translation>Dropbox</translation>
     </message>
 </context>
 <context>
@@ -1315,11 +1315,6 @@
         <translation>新項目的標題……</translation>
     </message>
     <message>
-        <location filename="../Windows/NewItemWithDueDateDialog.qml" line="149"/>
-        <source>Library</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Windows/NewItemWithDueDateDialog.qml" line="185"/>
         <source>Create in:</source>
         <translation>在……中創造：</translation>
@@ -1329,23 +1324,28 @@
         <source>Due on:</source>
         <translation>截止期限：</translation>
     </message>
+    <message>
+        <location filename="../Windows/NewItemWithDueDateDialog.qml" line="149"/>
+        <source>Library</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>NewLibraryFromAccountPage</name>
     <message>
         <location filename="../Pages/NewLibraryFromAccountPage.qml" line="81"/>
         <source>Create Library in Account</source>
-        <translation type="unfinished">在帳號裡創造書庫</translation>
+        <translation>在帳號裡創造書庫</translation>
     </message>
     <message>
         <location filename="../Pages/NewLibraryFromAccountPage.qml" line="90"/>
         <source>A library created in an account is synchronized with it. This allows to easily back up a library to a server and later on restore it from there. Additionally, such libraries can be shared with other users (if the server allows this).</source>
-        <translation type="unfinished">創造到一個帳號裡的一個書庫和它同步。這允許輕鬆的備份一個書庫到一個伺服器以及之後從那恢復它。此外，這樣的書庫可以被分享到其他使用者（如果伺服器允許的話）。</translation>
+        <translation>創造到一個帳號裡的一個書庫和它同步。這允許輕鬆的備份一個書庫到一個伺服器以及之後從那恢復它。此外，這樣的書庫可以被分享到其他使用者（如果伺服器允許的話）。</translation>
     </message>
     <message>
         <location filename="../Pages/NewLibraryFromAccountPage.qml" line="98"/>
         <source>Existing Libraries</source>
-        <translation type="unfinished">已存在的書庫</translation>
+        <translation>已存在的書庫</translation>
     </message>
     <message>
         <location filename="../Pages/NewLibraryFromAccountPage.qml" line="106"/>
@@ -1355,7 +1355,7 @@
     <message>
         <location filename="../Pages/NewLibraryFromAccountPage.qml" line="112"/>
         <source>No libraries were found on the server.</source>
-        <translation type="unfinished">在伺服器上沒有找到書庫。</translation>
+        <translation>在伺服器上沒有找到書庫。</translation>
     </message>
     <message>
         <location filename="../Pages/NewLibraryFromAccountPage.qml" line="121"/>
@@ -1365,17 +1365,17 @@
     <message>
         <location filename="../Pages/NewLibraryFromAccountPage.qml" line="164"/>
         <source>Create a New Library</source>
-        <translation type="unfinished">創造一個新書庫</translation>
+        <translation>創造一個新書庫</translation>
     </message>
     <message>
         <location filename="../Pages/NewLibraryFromAccountPage.qml" line="172"/>
         <source>Create a new library, which will be synchronized with the server. Such a library can be added to the app on other devices as well to synchronize data.</source>
-        <translation type="unfinished">創造一個書庫，這將會被同步到伺服器。這樣的一個書庫可以被加入到在其他裝置的應用程式裡，也同步資料。</translation>
+        <translation>創造一個書庫，這將會被同步到伺服器。這樣的一個書庫可以被加入到在其他裝置的應用程式裡，也同步資料。</translation>
     </message>
     <message>
         <location filename="../Pages/NewLibraryFromAccountPage.qml" line="186"/>
         <source>My new library&apos;s name</source>
-        <translation type="unfinished">我的新書庫的名稱</translation>
+        <translation>我的新書庫的名稱</translation>
     </message>
 </context>
 <context>
@@ -1388,7 +1388,7 @@
     <message>
         <location filename="../Pages/NewLibraryInFolderPage.qml" line="109"/>
         <source>You can use any folder as a location for a library.&lt;br/&gt;&lt;br/&gt;This is especially useful when you want to use another tool (like a sync client of a cloud provider) to sync your data with a server.</source>
-        <translation type="unfinished">你可以使用任何資料夾作為一個書庫的一個位置。&lt;br/&gt;&lt;br/&gt;這尤其在當你想要用另一個工具（像是一個雲端提供者的一個同步客戶）同步你的資料到一個伺服器時有用。</translation>
+        <translation>你可以使用任何資料夾作為一個書庫的一個位置。&lt;br/&gt;&lt;br/&gt;這尤其在當你想要用另一個工具（像是一個雲端提供者的一個同步客戶）同步你的資料到一個伺服器時有用。</translation>
     </message>
     <message>
         <location filename="../Pages/NewLibraryInFolderPage.qml" line="113"/>
@@ -1398,27 +1398,27 @@
     <message>
         <location filename="../Pages/NewLibraryInFolderPage.qml" line="118"/>
         <source>Path to a folder to use as a library</source>
-        <translation type="unfinished">用來作為書庫的資料夾路徑</translation>
+        <translation>用來作為書庫的資料夾路徑</translation>
     </message>
     <message>
         <location filename="../Pages/NewLibraryInFolderPage.qml" line="124"/>
         <source>Select</source>
-        <translation type="unfinished">選擇</translation>
+        <translation>選擇</translation>
     </message>
     <message>
         <location filename="../Pages/NewLibraryInFolderPage.qml" line="129"/>
         <source>Name:</source>
-        <translation type="unfinished">名稱：</translation>
+        <translation>名稱：</translation>
     </message>
     <message>
         <location filename="../Pages/NewLibraryInFolderPage.qml" line="134"/>
         <source>My Local Library Name</source>
-        <translation type="unfinished">我的本地書庫名稱</translation>
+        <translation>我的本地書庫名稱</translation>
     </message>
     <message>
         <location filename="../Pages/NewLibraryInFolderPage.qml" line="75"/>
         <source>Select a Folder</source>
-        <translation type="unfinished">選擇資料夾</translation>
+        <translation>選擇資料夾</translation>
     </message>
 </context>
 <context>
@@ -1442,12 +1442,12 @@
     <message>
         <location filename="../Pages/NewLibraryPage.qml" line="91"/>
         <source>Add Libraries From Your Accounts</source>
-        <translation type="unfinished">從你的帳號中加入書庫</translation>
+        <translation>從你的帳號中加入書庫</translation>
     </message>
     <message>
         <location filename="../Pages/NewLibraryPage.qml" line="118"/>
         <source>Add Account</source>
-        <translation type="unfinished">加入帳號</translation>
+        <translation>加入帳號</translation>
     </message>
 </context>
 <context>
@@ -1455,22 +1455,22 @@
     <message>
         <location filename="../Pages/NewLocalLibraryPage.qml" line="61"/>
         <source>Create a Local Library</source>
-        <translation type="unfinished">創造一個本地書庫</translation>
+        <translation>創造一個本地書庫</translation>
     </message>
     <message>
         <location filename="../Pages/NewLocalLibraryPage.qml" line="69"/>
         <source>A local library is stored solely on your device - this makes it perfect for the privacy concise!&lt;br/&gt;&lt;br/&gt;Use it when you want to store information only locally and back up all your data regularly via other mechanisms. If you need to access your information across several devices, create a library which is synced instead.</source>
-        <translation type="unfinished">一個本地書庫被單獨的儲存在你的裝置上——這使隱私簡潔完美！&lt;br/&gt;&lt;br/&gt;當你只想要在本地儲存資訊和經由其他的機制定期的備份你的全部資料時，使用它。如果你需要垮越數個裝置存取你的資訊、創造一個同步的書庫代替。</translation>
+        <translation>一個本地書庫被單獨的儲存在你的裝置上——這使隱私簡潔完美！&lt;br/&gt;&lt;br/&gt;當你只想要在本地儲存資訊和經由其他的機制定期的備份你的全部資料時，使用它。如果你需要垮越數個裝置存取你的資訊、創造一個同步的書庫代替。</translation>
     </message>
     <message>
         <location filename="../Pages/NewLocalLibraryPage.qml" line="79"/>
         <source>Name:</source>
-        <translation type="unfinished">名稱：</translation>
+        <translation>名稱：</translation>
     </message>
     <message>
         <location filename="../Pages/NewLocalLibraryPage.qml" line="84"/>
         <source>My Local Library Name</source>
-        <translation type="unfinished">我的本地書庫名稱</translation>
+        <translation>我的本地書庫名稱</translation>
     </message>
 </context>
 <context>
@@ -1479,17 +1479,17 @@
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="19"/>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="71"/>
         <source>Connection Settings</source>
-        <translation type="unfinished">連接設定</translation>
+        <translation>連接設定</translation>
     </message>
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="77"/>
         <source>Server Address:</source>
-        <translation type="unfinished">伺服器網址：</translation>
+        <translation>伺服器地址：</translation>
     </message>
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="91"/>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>登入</translation>
     </message>
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="107"/>
@@ -1514,62 +1514,62 @@
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="141"/>
         <source>Create App Password</source>
-        <translation type="unfinished"></translation>
+        <translation>創建應用密碼</translation>
     </message>
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="150"/>
         <source>Account Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>帳號設定</translation>
     </message>
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="160"/>
         <source>Copy Link</source>
-        <translation type="unfinished"></translation>
+        <translation>複製連結</translation>
     </message>
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="166"/>
         <source>Copied!</source>
-        <translation type="unfinished"></translation>
+        <translation>已複製！</translation>
     </message>
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="175"/>
         <source>User:</source>
-        <translation type="unfinished">使用者：</translation>
+        <translation>使用者：</translation>
     </message>
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="182"/>
         <source>User Name</source>
-        <translation type="unfinished"></translation>
+        <translation>使用者名稱</translation>
     </message>
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="189"/>
         <source>Password:</source>
-        <translation type="unfinished">密碼：</translation>
+        <translation>密碼：</translation>
     </message>
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="196"/>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>密碼</translation>
     </message>
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="206"/>
         <source>Disable Certificate Checks</source>
-        <translation type="unfinished">關閉證明確認</translation>
+        <translation>關閉證明確認</translation>
     </message>
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="210"/>
         <source>Name:</source>
-        <translation type="unfinished">名稱：</translation>
+        <translation>名稱：</translation>
     </message>
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="223"/>
         <source>Account Name</source>
-        <translation type="unfinished">帳號名稱</translation>
+        <translation>帳號名稱</translation>
     </message>
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="233"/>
         <source>Failed to connect to the server. Please check your user name, password and the server address and retry.</source>
-        <translation type="unfinished"></translation>
+        <translation>無法連接伺服器。請確認你的使用者名稱、密碼和伺服器網址，然後重試。</translation>
     </message>
 </context>
 <context>
@@ -1606,52 +1606,52 @@
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="28"/>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="99"/>
         <source>Connection Settings</source>
-        <translation type="unfinished">連接設定</translation>
+        <translation>連接設定</translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="105"/>
         <source>Server Address:</source>
-        <translation type="unfinished">伺服器網址：</translation>
+        <translation>伺服器地址：</translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="111"/>
         <source>https://myserver.example.com</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">https://myserver.example.com</translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="117"/>
         <source>User:</source>
-        <translation type="unfinished">使用者：</translation>
+        <translation>使用者：</translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="123"/>
         <source>User Name</source>
-        <translation type="unfinished"></translation>
+        <translation>使用者名稱</translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="129"/>
         <source>Password:</source>
-        <translation type="unfinished">密碼：</translation>
+        <translation>密碼：</translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="135"/>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>密碼</translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="144"/>
         <source>Disable Certificate Checks</source>
-        <translation type="unfinished">關閉證明確認</translation>
+        <translation>關閉證明確認</translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="148"/>
         <source>Name:</source>
-        <translation type="unfinished">名稱：</translation>
+        <translation>名稱：</translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="171"/>
         <source>Failed to connect to the server. Please check your user name, password and the server address and retry.</source>
-        <translation type="unfinished"></translation>
+        <translation>無法連接伺服器。請確認你的使用者名稱、密碼和伺服器網址，然後重試。</translation>
     </message>
 </context>
 <context>
@@ -1680,21 +1680,21 @@
     <message>
         <location filename="../utilities/translations.cpp" line="91"/>
         <source>System Language</source>
-        <translation type="unfinished">系統語言</translation>
+        <translation>系統語言</translation>
     </message>
 </context>
 <context>
     <name>ProblemsPage</name>
     <message>
+        <location filename="../Pages/ProblemsPage.qml" line="42"/>
+        <source>Missing secrets for account</source>
+        <translation>帳戶的密碼遺失</translation>
+    </message>
+    <message>
         <location filename="../Pages/ProblemsPage.qml" line="18"/>
         <location filename="../Pages/ProblemsPage.qml" line="28"/>
         <source>Problems Detected</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/ProblemsPage.qml" line="42"/>
-        <source>Missing secrets for account</source>
-        <translation>帳戶的密碼遺失</translation>
     </message>
     <message>
         <location filename="../Pages/ProblemsPage.qml" line="47"/>
@@ -1747,11 +1747,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Windows/QuickNoteWindow.qml" line="70"/>
-        <source>Type your notes here...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Windows/QuickNoteWindow.qml" line="121"/>
         <source>Save</source>
         <translation type="unfinished"></translation>
@@ -1767,11 +1762,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Windows/QuickNoteWindow.qml" line="152"/>
-        <source>Quick Note</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Windows/QuickNoteWindow.qml" line="161"/>
         <source>Save as Todo List</source>
         <translation type="unfinished"></translation>
@@ -1779,6 +1769,16 @@
     <message>
         <location filename="../Windows/QuickNoteWindow.qml" line="165"/>
         <source>Quick Todo List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Windows/QuickNoteWindow.qml" line="152"/>
+        <source>Quick Note</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Windows/QuickNoteWindow.qml" line="70"/>
+        <source>Type your notes here...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1818,24 +1818,9 @@
         <translation>每月</translation>
     </message>
     <message>
-        <location filename="../Windows/RecurrenceDialog.qml" line="60"/>
-        <source>Yearly</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Windows/RecurrenceDialog.qml" line="64"/>
         <source>Every N Days</source>
         <translation>每 N 天</translation>
-    </message>
-    <message>
-        <location filename="../Windows/RecurrenceDialog.qml" line="68"/>
-        <source>Every N Weeks</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Windows/RecurrenceDialog.qml" line="72"/>
-        <source>Every N Months</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Windows/RecurrenceDialog.qml" line="98"/>
@@ -1848,6 +1833,26 @@
         <translation>天數：</translation>
     </message>
     <message>
+        <location filename="../Windows/RecurrenceDialog.qml" line="142"/>
+        <source>Recur relative to the date when marking as done</source>
+        <translation>當標示為做完，反復發生相關的日期</translation>
+    </message>
+    <message>
+        <location filename="../Windows/RecurrenceDialog.qml" line="60"/>
+        <source>Yearly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Windows/RecurrenceDialog.qml" line="68"/>
+        <source>Every N Weeks</source>
+        <translation>每 N 週</translation>
+    </message>
+    <message>
+        <location filename="../Windows/RecurrenceDialog.qml" line="72"/>
+        <source>Every N Months</source>
+        <translation>每 N 月</translation>
+    </message>
+    <message>
         <location filename="../Windows/RecurrenceDialog.qml" line="118"/>
         <source>Number of weeks:</source>
         <translation type="unfinished"></translation>
@@ -1856,11 +1861,6 @@
         <location filename="../Windows/RecurrenceDialog.qml" line="120"/>
         <source>Number of months:</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Windows/RecurrenceDialog.qml" line="142"/>
-        <source>Recur relative to the date when marking as done</source>
-        <translation>當標示為做完，反復發生相關的日期</translation>
     </message>
 </context>
 <context>
@@ -2043,7 +2043,7 @@
     <message>
         <location filename="../Pages/SettingsPage.qml" line="40"/>
         <source>Settings</source>
-        <translation type="unfinished">設定</translation>
+        <translation>設定</translation>
     </message>
     <message>
         <location filename="../Pages/SettingsPage.qml" line="46"/>
@@ -2053,37 +2053,12 @@
     <message>
         <location filename="../Pages/SettingsPage.qml" line="54"/>
         <source>Language:</source>
-        <translation type="unfinished">語言：</translation>
+        <translation>語言：</translation>
     </message>
     <message>
         <location filename="../Pages/SettingsPage.qml" line="118"/>
         <source>Theme:</source>
         <translation type="unfinished">主題：</translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="143"/>
-        <source>Custom Primary Color:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="165"/>
-        <source>Custom Secondary Color:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="189"/>
-        <source>System Tray:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="194"/>
-        <source>Monochrome Icon</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="202"/>
-        <source>Open Quick Notes Editor on Click</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Pages/SettingsPage.qml" line="208"/>
@@ -2093,11 +2068,6 @@
     <message>
         <location filename="../Pages/SettingsPage.qml" line="225"/>
         <source>Use custom font size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="234"/>
-        <source>Desktop Mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2145,15 +2115,45 @@ This requires a restart of the app.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../Pages/SettingsPage.qml" line="189"/>
+        <source>System Tray:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="202"/>
+        <source>Open Quick Notes Editor on Click</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="234"/>
+        <source>Desktop Mode</source>
+        <translation>桌面模式</translation>
+    </message>
+    <message>
         <location filename="../Pages/SettingsPage.qml" line="329"/>
         <source>Show notes excerpt in listings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="194"/>
+        <source>Monochrome Icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="143"/>
+        <source>Custom Primary Color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Pages/SettingsPage.qml" line="151"/>
         <location filename="../Pages/SettingsPage.qml" line="171"/>
         <source>Select</source>
-        <translation type="unfinished">選擇</translation>
+        <translation>選擇</translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="165"/>
+        <source>Custom Secondary Color:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2161,7 +2161,7 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../Windows/StackViewWindow.qml" line="21"/>
         <source>OpenTodoList</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">OpenTodoList</translation>
     </message>
 </context>
 <context>
@@ -2174,17 +2174,17 @@ This requires a restart of the app.</source>
     <message>
         <location filename="../Pages/StartPage.qml" line="70"/>
         <source>Add a new library</source>
-        <translation type="unfinished"></translation>
+        <translation>建立新書庫</translation>
     </message>
     <message>
         <location filename="../Pages/StartPage.qml" line="89"/>
         <source>Accounts</source>
-        <translation type="unfinished">帳號</translation>
+        <translation>帳號</translation>
     </message>
     <message>
         <location filename="../Pages/StartPage.qml" line="111"/>
         <source>Add an account</source>
-        <translation type="unfinished"></translation>
+        <translation>加入帳號</translation>
     </message>
 </context>
 <context>
@@ -2216,14 +2216,14 @@ This requires a restart of the app.</source>
 <context>
     <name>TodoListItem</name>
     <message>
-        <location filename="../Widgets/TodoListItem.qml" line="77"/>
-        <source>Due on %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Widgets/TodoListItem.qml" line="134"/>
         <source>✔ No open todos - everything done</source>
         <translation>沒有開啟的待辦事項——所有事情做完了</translation>
+    </message>
+    <message>
+        <location filename="../Widgets/TodoListItem.qml" line="77"/>
+        <source>Due on %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2232,16 +2232,6 @@ This requires a restart of the app.</source>
         <location filename="../Pages/TodoListPage.qml" line="164"/>
         <source>Search term 1, search term 2, ...</source>
         <translation>搜尋項目1、項目2……</translation>
-    </message>
-    <message>
-        <location filename="../Pages/TodoListPage.qml" line="213"/>
-        <source>Show Completed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/TodoListPage.qml" line="221"/>
-        <source>Show At The End</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Pages/TodoListPage.qml" line="251"/>
@@ -2277,6 +2267,16 @@ This requires a restart of the app.</source>
         <location filename="../Pages/TodoListPage.qml" line="200"/>
         <source>Updated At</source>
         <translation>更新於</translation>
+    </message>
+    <message>
+        <location filename="../Pages/TodoListPage.qml" line="213"/>
+        <source>Show Completed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/TodoListPage.qml" line="221"/>
+        <source>Show At The End</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

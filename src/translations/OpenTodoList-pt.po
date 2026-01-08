@@ -22,12 +22,12 @@ msgstr "OpenTodoList"
 #: ../qml/Pages/AboutPage.qml:40
 msgctxt "AboutPage|"
 msgid "A todo and task managing application."
-msgstr "Um aplicativo de gerenciamento de todo e tarefa."
+msgstr "Uma aplicação para gerenciar todos e tarefas."
 
 #: ../Pages/AboutPage.qml:60
 msgctxt "AboutPage|"
 msgid "OpenTodoList is released under the terms of the GNU General Public License version 3 or (at your choice) any later version. You can find a copy of the license below. Additionally, several libraries and resources are used. For detailed information about their license terms, please refer to the <a href='3rdparty'>3rd Party Software</a> page."
-msgstr "OpenTodoList é lançado sob os termos da GNU General Public License versão 3 ou (à sua escolha) qualquer versão posterior. Você pode encontrar uma cópia da licença abaixo. Além disso, várias bibliotecas e recursos são utilizados. Para informações detalhadas sobre seus termos de licença, por favor consulte a página <a href='3rdparty'>3rd Party Software</a>."
+msgstr "OpenTodoList é lançado sob os termos da GNU General Public License versão 3 ou (à sua escolha) qualquer versão posterior. Pode encontrar uma cópia da licença abaixo. Além disso, várias bibliotecas e recursos são utilizados. Para informações detalhadas sobre seus termos de licença, por favor consulte a página <a href='3rdparty'>3rd Party Software</a>."
 
 #: ../Pages/AboutThirdPartyPage.qml:11
 msgctxt "AboutThirdPartyPage|"
@@ -268,12 +268,12 @@ msgstr "Editar Configurações de Sincronização"
 #: ../Menues/LibraryPageMenu.qml:20
 msgctxt "LibraryPageMenu|"
 msgid "Sync Now"
-msgstr "Sinc Agora"
+msgstr "Sincronizar Agora"
 
 #: ../Menues/LibraryPageMenu.qml:29
 msgctxt "LibraryPageMenu|"
 msgid "Sync Log"
-msgstr "Sync Log"
+msgstr "Sincronizar Registro"
 
 #: ../Widgets/LibrarySecretsMissingNotificationBar.qml:36
 msgctxt "LibrarySecretsMissingNotificationBar|"
@@ -308,12 +308,12 @@ msgstr "OpenTodoList"
 #: ../Windows/MainWindow.qml:451
 msgctxt "MainWindow|"
 msgid "New &Library"
-msgstr "New &Library"
+msgstr "Novo &Biblioteca"
 
 #: ../Windows/MainWindow.qml:462
 msgctxt "MainWindow|"
 msgid "New &Note"
-msgstr "New &Note"
+msgstr "Novo &Nota"
 
 #: ../Windows/MainWindow.qml:470
 msgctxt "MainWindow|"
@@ -1522,32 +1522,32 @@ msgstr "Deslizar para marcar feito"
 #: ../Menues/LibraryPageActions.qml:39
 msgctxt "LibraryPageActions|"
 msgid "Sync Now"
-msgstr ""
+msgstr "Sincronizar Agora"
 
 #: ../Menues/LibraryPageActions.qml:56
 msgctxt "LibraryPageActions|"
 msgid "Sync Log"
-msgstr ""
+msgstr "Sincronizar Registro"
 
 #: ../Pages/SettingsPageForm.ui.qml:65
 msgctxt "SettingsPageForm.ui|"
 msgid "Font Size:"
-msgstr ""
+msgstr "Tamanho da fonte:"
 
 #: ../Utils/Translations.qml:52
 msgctxt "Translations|"
 msgid "Basque"
-msgstr ""
+msgstr "Basco"
 
 #: ../qml/Pages/AccountTypeSelectionPage.qml:20
 msgctxt "AccountTypeSelectionPage|"
 msgid "Select Account Type"
-msgstr ""
+msgstr "Escolha o tipo de conta"
 
 #: ../qml/Pages/AccountTypeSelectionPage.qml:55
 msgctxt "AccountTypeSelectionPage|"
 msgid "Account Type"
-msgstr ""
+msgstr "Tipo de conta"
 
 #: ../qml/Pages/AccountTypeSelectionPage.qml:61
 msgctxt "AccountTypeSelectionPage|"
@@ -1592,12 +1592,12 @@ msgstr ""
 #: ../appstartup.cpp:367
 msgctxt "AppStartup|"
 msgid "Open"
-msgstr ""
+msgstr "Abrir"
 
 #: ../appstartup.cpp:433
 msgctxt "AppStartup|"
 msgid "Quit"
-msgstr ""
+msgstr "Sair"
 
 #: ../qml/Actions/DeleteCompletedChildren.qml:10
 msgctxt "DeleteCompletedChildren|"
@@ -1643,22 +1643,22 @@ msgstr ""
 #: ../qml/Pages/EditNextCloudAccountPage.qml:89
 msgctxt "EditNextCloudAccountPage|"
 msgid "Login"
-msgstr ""
+msgstr "Iniciar sessão:"
 
 #: ../qml/Pages/EditNextCloudAccountPage.qml:102
 msgctxt "EditNextCloudAccountPage|"
 msgid "User:"
-msgstr ""
+msgstr "Utilizador:"
 
 #: ../qml/Pages/EditNextCloudAccountPage.qml:109
 msgctxt "EditNextCloudAccountPage|"
 msgid "User Name"
-msgstr ""
+msgstr "Nome de utilizador"
 
 #: ../qml/Pages/EditNextCloudAccountPage.qml:115
 msgctxt "EditNextCloudAccountPage|"
 msgid "Password:"
-msgstr ""
+msgstr "Palavra-chave:"
 
 #: ../qml/Pages/EditNextCloudAccountPage.qml:122
 msgctxt "EditNextCloudAccountPage|"
@@ -1678,7 +1678,7 @@ msgstr ""
 #: ../qml/Widgets/LibrariesSideBar.qml:78
 msgctxt "LibrariesSideBar|"
 msgid "Edit List"
-msgstr ""
+msgstr "Editar Lista"
 
 #: ../qml/Widgets/LibrariesSideBar.qml:190
 msgctxt "LibrariesSideBar|"
@@ -1769,22 +1769,22 @@ msgstr ""
 #: ../qml/Pages/NewNextCloudAccountPage.qml:175
 msgctxt "NewNextCloudAccountPage|"
 msgid "User:"
-msgstr ""
+msgstr "Utilizador:"
 
 #: ../qml/Pages/NewNextCloudAccountPage.qml:182
 msgctxt "NewNextCloudAccountPage|"
 msgid "User Name"
-msgstr ""
+msgstr "Nome de Utilizador"
 
 #: ../qml/Pages/NewNextCloudAccountPage.qml:189
 msgctxt "NewNextCloudAccountPage|"
 msgid "Password:"
-msgstr ""
+msgstr "Palavra-chave:"
 
 #: ../qml/Pages/NewNextCloudAccountPage.qml:196
 msgctxt "NewNextCloudAccountPage|"
 msgid "Password"
-msgstr ""
+msgstr "Palavra-chave"
 
 #: ../qml/Pages/NewNextCloudAccountPage.qml:206
 msgctxt "NewNextCloudAccountPage|"
@@ -1815,12 +1815,12 @@ msgstr ""
 #: ../qml/Pages/EditWebDAVAccountPage.qml:116
 msgctxt "EditWebDAVAccountPage|"
 msgid "Edit Account"
-msgstr ""
+msgstr "Editar Conta"
 
 #: ../qml/Pages/EditWebDAVAccountPage.qml:122
 msgctxt "EditWebDAVAccountPage|"
 msgid "Name:"
-msgstr ""
+msgstr "Nome:"
 
 #: ../qml/Pages/EditWebDAVAccountPage.qml:133
 msgctxt "EditWebDAVAccountPage|"
@@ -1835,7 +1835,7 @@ msgstr ""
 #: ../qml/Pages/EditWebDAVAccountPage.qml:146
 msgctxt "EditWebDAVAccountPage|"
 msgid "User:"
-msgstr ""
+msgstr "Utilizador:"
 
 #: ../qml/Pages/EditWebDAVAccountPage.qml:152
 msgctxt "EditWebDAVAccountPage|"
@@ -2758,7 +2758,7 @@ msgstr ""
 #: ../qml/Widgets/ApplicationMenu.qml:36
 msgctxt "ApplicationMenu|"
 msgid "File"
-msgstr ""
+msgstr "Ficheiro"
 
 #: ../qml/Widgets/ApplicationMenu.qml:87
 msgctxt "ApplicationMenu|"
@@ -2773,7 +2773,7 @@ msgstr ""
 #: ../qml/Widgets/ApplicationMenu.qml:197
 msgctxt "ApplicationMenu|"
 msgid "Help"
-msgstr ""
+msgstr "Ajuda"
 
 #: ../qml/Components/ApplicationShortcuts.qml:18
 msgctxt "ApplicationShortcuts|"
@@ -3013,7 +3013,7 @@ msgstr ""
 #: ../qml/Actions/MoveTask.qml:12
 msgctxt "MoveTask|"
 msgid "Move"
-msgstr ""
+msgstr "Mover"
 
 #: ../qml/Windows/SelectTodoDialog.qml:22
 msgctxt "SelectTodoDialog|"
@@ -3033,15 +3033,15 @@ msgstr ""
 #: ../qml/Pages/SettingsPage.qml:143
 msgctxt "SettingsPage|"
 msgid "Custom Primary Color:"
-msgstr ""
+msgstr "Cor Primária Personalizada:"
 
 #: ../qml/Pages/SettingsPage.qml:151 ../qml/Pages/SettingsPage.qml:171
 msgctxt "SettingsPage|"
 msgid "Select"
-msgstr ""
+msgstr "Selecione"
 
 #: ../qml/Pages/SettingsPage.qml:165
 msgctxt "SettingsPage|"
 msgid "Custom Secondary Color:"
-msgstr ""
+msgstr "Cor Secundária Personalizada:"
 

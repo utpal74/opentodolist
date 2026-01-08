@@ -175,17 +175,17 @@
 <context>
     <name>Application</name>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="223"/>
         <source>Background Sync</source>
         <translation>Фоновая синхронизация</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="226"/>
+        <location filename="../application.cpp" line="227"/>
         <source>App continues to sync your data in the background</source>
         <translation>Приложение продолжает синхронизировать ваши данные в фоновом режиме</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="230"/>
+        <location filename="../application.cpp" line="231"/>
         <source>Quit</source>
         <translation>Выйти</translation>
     </message>
@@ -228,7 +228,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="34"/>
         <source>Accounts</source>
-        <translation type="unfinished">Аккаунты</translation>
+        <translation>Учетные записи</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="42"/>
@@ -273,7 +273,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="166"/>
         <source>Delete Completed Items</source>
-        <translation type="unfinished">Удалить Завершённые элементы</translation>
+        <translation>Удалить выполненные</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="174"/>
@@ -879,16 +879,6 @@
         <translation>Еще нет добавленных заметок - нажмите здесь, чтобы добавить.</translation>
     </message>
     <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="113"/>
-        <source>Copy Formatted Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="129"/>
-        <source>Copy Plain Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Widgets/ItemNotesEditor.qml" line="160"/>
         <source>Export to File...</source>
         <translation>Экспорт в файл ...</translation>
@@ -908,6 +898,16 @@
         <source>Copy</source>
         <translation type="unfinished">Копировать</translation>
     </message>
+    <message>
+        <location filename="../Widgets/ItemNotesEditor.qml" line="113"/>
+        <source>Copy Formatted Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Widgets/ItemNotesEditor.qml" line="129"/>
+        <source>Copy Plain Text</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ItemUtils</name>
@@ -915,11 +915,6 @@
         <location filename="../Utils/ItemUtils.qml" line="189"/>
         <source>Move Todo Into...</source>
         <translation>Переместить все в...</translation>
-    </message>
-    <message>
-        <location filename="../Utils/ItemUtils.qml" line="204"/>
-        <source>Move Task Into...</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Utils/ItemUtils.qml" line="219"/>
@@ -935,6 +930,11 @@
         <location filename="../Utils/ItemUtils.qml" line="252"/>
         <source>Copy Todo Into...</source>
         <translation>Скопировать все в...</translation>
+    </message>
+    <message>
+        <location filename="../Utils/ItemUtils.qml" line="204"/>
+        <source>Move Task Into...</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -976,14 +976,14 @@
         <translation>Передвинуть вниз</translation>
     </message>
     <message>
-        <location filename="../Widgets/LibrariesSideBar.qml" line="291"/>
-        <source>Untagged</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Widgets/LibrariesSideBar.qml" line="93"/>
         <source>Donate</source>
         <translation>Пожертвовать</translation>
+    </message>
+    <message>
+        <location filename="../Widgets/LibrariesSideBar.qml" line="291"/>
+        <source>Untagged</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2060,16 +2060,6 @@
         <translation>Тема:</translation>
     </message>
     <message>
-        <location filename="../Pages/SettingsPage.qml" line="143"/>
-        <source>Custom Primary Color:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="165"/>
-        <source>Custom Secondary Color:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Pages/SettingsPage.qml" line="208"/>
         <source>Font Size:</source>
         <translation>Размер шрифта:</translation>
@@ -2089,7 +2079,7 @@
         <source>Reduce space between components and reduce the font size.
 
 &lt;em&gt;Requires a restart of the app.&lt;/em&gt;</source>
-        <translation>Уменьшить размер шрифта и расстояние между компонентами .
+        <translation>Уменьшить размер шрифта и расстояние между компонентами . 
 &lt;em&gt;Требует перезапуска приложения&lt;/em&gt;</translation>
     </message>
     <message>
@@ -2152,10 +2142,20 @@ This requires a restart of the app.</source>
         <translation>Монохромная икона</translation>
     </message>
     <message>
+        <location filename="../Pages/SettingsPage.qml" line="143"/>
+        <source>Custom Primary Color:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../Pages/SettingsPage.qml" line="151"/>
         <location filename="../Pages/SettingsPage.qml" line="171"/>
         <source>Select</source>
         <translation type="unfinished">Выбрать</translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="165"/>
+        <source>Custom Secondary Color:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

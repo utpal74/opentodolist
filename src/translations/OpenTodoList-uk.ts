@@ -116,17 +116,17 @@
     <message>
         <location filename="../Components/Tooltips/AllSubtasksDone.qml" line="13"/>
         <source>Everything in %1 done! Do you want to mark it as well as done?</source>
-        <translation type="unfinished"></translation>
+        <translation>Все в %1 зроблено! Бажаєте позначити це також як виконане?</translation>
     </message>
     <message>
         <location filename="../Components/Tooltips/AllSubtasksDone.qml" line="20"/>
         <source>Mark as Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Позначити як виконане</translation>
     </message>
     <message>
         <location filename="../Components/Tooltips/AllSubtasksDone.qml" line="30"/>
         <source>Keep Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Залишати відкритим</translation>
     </message>
 </context>
 <context>
@@ -175,17 +175,17 @@
 <context>
     <name>Application</name>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="223"/>
         <source>Background Sync</source>
         <translation>Фонова Синхронізація</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="226"/>
+        <location filename="../application.cpp" line="227"/>
         <source>App continues to sync your data in the background</source>
         <translation>Додаток продовжує синхронізувати ваші дані у фоновому режимі</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="230"/>
+        <location filename="../application.cpp" line="231"/>
         <source>Quit</source>
         <translation>Вийти</translation>
     </message>
@@ -195,22 +195,22 @@
     <message>
         <location filename="../Widgets/ApplicationMenu.qml" line="36"/>
         <source>File</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл</translation>
     </message>
     <message>
         <location filename="../Widgets/ApplicationMenu.qml" line="87"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Зміни</translation>
     </message>
     <message>
         <location filename="../Widgets/ApplicationMenu.qml" line="158"/>
         <source>Navigate</source>
-        <translation type="unfinished"></translation>
+        <translation>Навігація</translation>
     </message>
     <message>
         <location filename="../Widgets/ApplicationMenu.qml" line="197"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Допомога</translation>
     </message>
 </context>
 <context>
@@ -218,172 +218,172 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="17"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Про</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="26"/>
         <source>About Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Про Qt</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="34"/>
         <source>Accounts</source>
-        <translation type="unfinished"></translation>
+        <translation>Облікові записи</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="42"/>
         <source>Add Tag</source>
-        <translation type="unfinished">Додати Tag</translation>
+        <translation>Додати тег</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="50"/>
         <source>Attach File</source>
-        <translation type="unfinished">Прикріпити файл</translation>
+        <translation>Прикріпити файл</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="58"/>
         <source>Backup</source>
-        <translation type="unfinished"></translation>
+        <translation>Резервна копія</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="65"/>
         <source>Close</source>
-        <translation type="unfinished">Закрити</translation>
+        <translation>Закрити</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="72"/>
         <source>Copy</source>
-        <translation type="unfinished">Копіювати</translation>
+        <translation>Копіювати</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="80"/>
         <source>Copy Link To Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Скопіювати посилання на сторінку</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="88"/>
         <source>Create Sample Library</source>
-        <translation type="unfinished"></translation>
+        <translation>Створити зразкову бібліотеку</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="158"/>
         <source>Delete</source>
-        <translation type="unfinished">Видалити</translation>
+        <translation>Видалити</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="166"/>
         <source>Delete Completed Items</source>
-        <translation type="unfinished">Видалити завершені елементи</translation>
+        <translation>Видалити виконані записи</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="174"/>
         <source>Due Date</source>
-        <translation type="unfinished">Термін виконання</translation>
+        <translation>Термін виконання</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="182"/>
         <source>Find</source>
-        <translation type="unfinished"></translation>
+        <translation>Пошук</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="189"/>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Назад</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="206"/>
         <source>Left Sidebar</source>
-        <translation type="unfinished"></translation>
+        <translation>Ліва бічна панель</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="212"/>
         <source>Mark all items as done</source>
-        <translation type="unfinished"></translation>
+        <translation>Позначити всі записи як виконані</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="224"/>
         <source>Mark all items as undone</source>
-        <translation type="unfinished"></translation>
+        <translation>Позначити всі записи як невиконані</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="236"/>
         <source>Move</source>
-        <translation type="unfinished">Рухатися</translation>
+        <translation>Перемістити</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="244"/>
         <source>New Library</source>
-        <translation type="unfinished">Нова бібліотека</translation>
+        <translation>Нова бібліотека</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="252"/>
         <source>Open Created Item</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити створений запис</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="259"/>
         <source>Open In New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити в новому вікні</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="267"/>
         <source>Open Library Folder</source>
-        <translation type="unfinished">Відкрити Папку Бібліотеки</translation>
+        <translation>Відкрити теку бібліотеки</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="273"/>
         <source>Quit</source>
-        <translation type="unfinished">Вийти</translation>
+        <translation>Вийти</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="279"/>
         <source>Rename</source>
-        <translation type="unfinished">Перейменувати</translation>
+        <translation>Перейменувати</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="287"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Налаштування</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="308"/>
         <source>Scroll to Top</source>
-        <translation type="unfinished">Перегорнути Нагору</translation>
+        <translation>Прокрутити до початку</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="315"/>
         <source>Scroll to Bottom</source>
-        <translation type="unfinished">Перегорнути Вниз</translation>
+        <translation>Прокрутити до кінця</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="322"/>
         <source>Set Color</source>
-        <translation type="unfinished"></translation>
+        <translation>Встановити колір</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="329"/>
         <source>Set Progress</source>
-        <translation type="unfinished">Встановити прогрес</translation>
+        <translation>Встановити прогрес</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="336"/>
         <source>Sort</source>
-        <translation type="unfinished">Сортувати</translation>
+        <translation>Сортувати</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="344"/>
         <source>Sync Now</source>
-        <translation type="unfinished">Синхронізувати зараз</translation>
+        <translation>Синхронізувати зараз</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="357"/>
         <source>Sync Log</source>
-        <translation type="unfinished">Журнал синхронізації</translation>
+        <translation>Журнал синхронізації</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="368"/>
         <source>Translate The App...</source>
-        <translation type="unfinished">Перекласти додаток...</translation>
+        <translation>Перекласти додаток…</translation>
     </message>
 </context>
 <context>
@@ -391,7 +391,7 @@
     <message>
         <location filename="../Components/ApplicationToolBar.qml" line="87"/>
         <source>Problems</source>
-        <translation type="unfinished"></translation>
+        <translation>Проблеми</translation>
     </message>
 </context>
 <context>
@@ -879,16 +879,6 @@
         <translation>Нотаток ще не додано - натисніть тут, щоб додати.</translation>
     </message>
     <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="113"/>
-        <source>Copy Formatted Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="129"/>
-        <source>Copy Plain Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Widgets/ItemNotesEditor.qml" line="160"/>
         <source>Export to File...</source>
         <translation>Експорт у файл...</translation>
@@ -906,7 +896,17 @@
     <message>
         <location filename="../Widgets/ItemNotesEditor.qml" line="106"/>
         <source>Copy</source>
-        <translation type="unfinished">Копіювати</translation>
+        <translation>Копіювати</translation>
+    </message>
+    <message>
+        <location filename="../Widgets/ItemNotesEditor.qml" line="113"/>
+        <source>Copy Formatted Text</source>
+        <translation>Копіювати форматований текст</translation>
+    </message>
+    <message>
+        <location filename="../Widgets/ItemNotesEditor.qml" line="129"/>
+        <source>Copy Plain Text</source>
+        <translation>Копіювати звичайний текст</translation>
     </message>
 </context>
 <context>
@@ -915,11 +915,6 @@
         <location filename="../Utils/ItemUtils.qml" line="189"/>
         <source>Move Todo Into...</source>
         <translation>Перемістити завдання в...</translation>
-    </message>
-    <message>
-        <location filename="../Utils/ItemUtils.qml" line="204"/>
-        <source>Move Task Into...</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Utils/ItemUtils.qml" line="219"/>
@@ -935,6 +930,11 @@
         <location filename="../Utils/ItemUtils.qml" line="252"/>
         <source>Copy Todo Into...</source>
         <translation>Скопіювати Справо В...</translation>
+    </message>
+    <message>
+        <location filename="../Utils/ItemUtils.qml" line="204"/>
+        <source>Move Task Into...</source>
+        <translation>Перемістити завдання до…</translation>
     </message>
 </context>
 <context>
@@ -976,14 +976,14 @@
         <translation>Рухатися вниз</translation>
     </message>
     <message>
-        <location filename="../Widgets/LibrariesSideBar.qml" line="291"/>
-        <source>Untagged</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Widgets/LibrariesSideBar.qml" line="93"/>
         <source>Donate</source>
         <translation>Пожертвування</translation>
+    </message>
+    <message>
+        <location filename="../Widgets/LibrariesSideBar.qml" line="291"/>
+        <source>Untagged</source>
+        <translation>Без тегів</translation>
     </message>
 </context>
 <context>
@@ -991,17 +991,17 @@
     <message>
         <location filename="../datamodel/library.cpp" line="615"/>
         <source>Unable to create backup folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдається створити теку резервної копії</translation>
     </message>
     <message>
         <location filename="../datamodel/library.cpp" line="619"/>
         <source>Failed to change into backup folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдається перейти до теки резервної копії</translation>
     </message>
     <message>
         <location filename="../datamodel/library.cpp" line="630"/>
         <source>Failed to open file for writing: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдається відкрити файл для запису: %1</translation>
     </message>
 </context>
 <context>
@@ -1195,17 +1195,17 @@
     <message>
         <location filename="../Components/Tooltips/MarkFutureInstanceAsDone.qml" line="13"/>
         <source>%1 is scheduled for the future - do you want to mark that future instance as done?</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 заплановано на майбутнє – чи бажаєте ви позначити цей майбутній екземпляр як виконаний?</translation>
     </message>
     <message>
         <location filename="../Components/Tooltips/MarkFutureInstanceAsDone.qml" line="20"/>
         <source>Mark as Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Позначити як виконане</translation>
     </message>
     <message>
         <location filename="../Components/Tooltips/MarkFutureInstanceAsDone.qml" line="29"/>
         <source>Keep Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Тримати відкритим</translation>
     </message>
 </context>
 <context>
@@ -1213,7 +1213,7 @@
     <message>
         <location filename="../Actions/MoveTask.qml" line="12"/>
         <source>Move</source>
-        <translation type="unfinished">Рухатися</translation>
+        <translation>Перемістити</translation>
     </message>
 </context>
 <context>
@@ -1962,17 +1962,17 @@
     <message>
         <location filename="../Windows/SelectTodoDialog.qml" line="22"/>
         <source>Select Todo</source>
-        <translation type="unfinished"></translation>
+        <translation>Вибрати завдання</translation>
     </message>
     <message>
         <location filename="../Windows/SelectTodoDialog.qml" line="42"/>
         <source>Todo List:</source>
-        <translation type="unfinished"></translation>
+        <translation>Список завдань:</translation>
     </message>
     <message>
         <location filename="../Windows/SelectTodoDialog.qml" line="62"/>
         <source>Todo:</source>
-        <translation type="unfinished"></translation>
+        <translation>Завдання:</translation>
     </message>
 </context>
 <context>
@@ -2062,22 +2062,6 @@
         <translation>Тема:</translation>
     </message>
     <message>
-        <location filename="../Pages/SettingsPage.qml" line="143"/>
-        <source>Custom Primary Color:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="151"/>
-        <location filename="../Pages/SettingsPage.qml" line="171"/>
-        <source>Select</source>
-        <translation type="unfinished">Виберіть</translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="165"/>
-        <source>Custom Secondary Color:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Pages/SettingsPage.qml" line="208"/>
         <source>Font Size:</source>
         <translation>Розмір шрифту:</translation>
@@ -2160,13 +2144,29 @@ This requires a restart of the app.</source>
         <source>Monochrome Icon</source>
         <translation>Монохромна ікона</translation>
     </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="143"/>
+        <source>Custom Primary Color:</source>
+        <translation>Власний основний колір:</translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="151"/>
+        <location filename="../Pages/SettingsPage.qml" line="171"/>
+        <source>Select</source>
+        <translation>Вибрати</translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="165"/>
+        <source>Custom Secondary Color:</source>
+        <translation>Власний додатковий колір:</translation>
+    </message>
 </context>
 <context>
     <name>StackViewWindow</name>
     <message>
         <location filename="../Windows/StackViewWindow.qml" line="21"/>
         <source>OpenTodoList</source>
-        <translation type="unfinished"></translation>
+        <translation>OpenTodoList</translation>
     </message>
 </context>
 <context>

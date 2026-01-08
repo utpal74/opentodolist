@@ -2385,7 +2385,7 @@ msgstr "Cor"
 #: ../Components/ApplicationToolBarActions.qml:74
 msgctxt "ApplicationToolBarActions|"
 msgid "Add Tag"
-msgstr "Adicionar Etiqueta"
+msgstr "Adicionar Tag"
 
 #: ../Components/ApplicationToolBarActions.qml:82
 msgctxt "ApplicationToolBarActions|"
@@ -2726,330 +2726,330 @@ msgstr "Repetir Sincronização"
 #: ../qml/Pages/SettingsPage.qml:194
 msgctxt "SettingsPage|"
 msgid "Monochrome Icon"
-msgstr ""
+msgstr "Ícone Monocromático"
 
 #: ../qml/Windows/RecurrenceDialog.qml:117
 msgctxt "RecurrenceDialog|"
 msgid "Number of weeks:"
-msgstr ""
+msgstr "Número de semanas:"
 
 #: ../qml/Windows/RecurrenceDialog.qml:119
 msgctxt "RecurrenceDialog|"
 msgid "Number of months:"
-msgstr ""
+msgstr "Número de meses:"
 
 #: ../qml/Utils/DeepLinkHandler.qml:56
 msgctxt "DeepLinkHandler|"
 msgid "Uuups... seems that's a dead end..."
-msgstr ""
+msgstr "Ops... parece o que é fim da linha..."
 
 #: ../qml/Utils/DeepLinkHandler.qml:65
 msgctxt "DeepLinkHandler|"
 msgid "Sorry, that link does not lead to any page or item that is present on this device. Check if the library or item to which the link points is synchronized on this device and try again."
-msgstr ""
+msgstr "Desculpe, esse link não direciona para nenhuma página ou item que está presente neste dispositivo. Verifique se a biblioteca ou o item para o qual o link deveria direcionar está sincronizado com este dispositivo e tente de novo."
 
 #: ../qml/Components/Tooltips/AllSubtasksDone.qml:13
 msgctxt "AllSubtasksDone|"
 msgid "Everything in %1 done! Do you want to mark it as well as done?"
-msgstr ""
+msgstr "Tudo está %1 concluído! Você também quer o marcar como concluído?"
 
 #: ../qml/Components/Tooltips/AllSubtasksDone.qml:20
 msgctxt "AllSubtasksDone|"
 msgid "Mark as Done"
-msgstr ""
+msgstr "Marcar como Concluído"
 
 #: ../qml/Components/Tooltips/AllSubtasksDone.qml:30
 msgctxt "AllSubtasksDone|"
 msgid "Keep Open"
-msgstr ""
+msgstr "Manter Aberto"
 
 #: ../qml/Widgets/ApplicationMenu.qml:36
 msgctxt "ApplicationMenu|"
 msgid "File"
-msgstr ""
+msgstr "Arquivo"
 
 #: ../qml/Widgets/ApplicationMenu.qml:87
 msgctxt "ApplicationMenu|"
 msgid "Edit"
-msgstr ""
+msgstr "Editar"
 
 #: ../qml/Widgets/ApplicationMenu.qml:158
 msgctxt "ApplicationMenu|"
 msgid "Navigate"
-msgstr ""
+msgstr "Navegar"
 
 #: ../qml/Widgets/ApplicationMenu.qml:197
 msgctxt "ApplicationMenu|"
 msgid "Help"
-msgstr ""
+msgstr "Ajuda"
 
 #: ../qml/Components/ApplicationShortcuts.qml:18
 msgctxt "ApplicationShortcuts|"
 msgid "About"
-msgstr ""
+msgstr "Sobre"
 
 #: ../qml/Components/ApplicationShortcuts.qml:27
 msgctxt "ApplicationShortcuts|"
 msgid "About Qt"
-msgstr ""
+msgstr "Sobre o Qt"
 
 #: ../qml/Components/ApplicationShortcuts.qml:35
 msgctxt "ApplicationShortcuts|"
 msgid "Accounts"
-msgstr ""
+msgstr "Contas"
 
 #: ../qml/Components/ApplicationShortcuts.qml:43
 msgctxt "ApplicationShortcuts|"
 msgid "Add Tag"
-msgstr ""
+msgstr "Adicionar Tag"
 
 #: ../qml/Components/ApplicationShortcuts.qml:51
 msgctxt "ApplicationShortcuts|"
 msgid "Attach File"
-msgstr ""
+msgstr "Anexar Arquivo"
 
 #: ../qml/Components/ApplicationShortcuts.qml:59
 msgctxt "ApplicationShortcuts|"
 msgid "Backup"
-msgstr ""
+msgstr "Backup"
 
 #: ../qml/Components/ApplicationShortcuts.qml:66
 msgctxt "ApplicationShortcuts|"
 msgid "Close"
-msgstr ""
+msgstr "Fechar"
 
 #: ../qml/Components/ApplicationShortcuts.qml:73
 msgctxt "ApplicationShortcuts|"
 msgid "Copy"
-msgstr ""
+msgstr "Copiar"
 
 #: ../qml/Components/ApplicationShortcuts.qml:81
 msgctxt "ApplicationShortcuts|"
 msgid "Copy Link To Page"
-msgstr ""
+msgstr "Copiar Link para Página"
 
 #: ../qml/Components/ApplicationShortcuts.qml:89
 msgctxt "ApplicationShortcuts|"
 msgid "Create Sample Library"
-msgstr ""
+msgstr "Criar biblioteca de exemplo"
 
 #: ../qml/Components/ApplicationShortcuts.qml:159
 msgctxt "ApplicationShortcuts|"
 msgid "Delete"
-msgstr ""
+msgstr "Deletar"
 
 #: ../qml/Components/ApplicationShortcuts.qml:167
 msgctxt "ApplicationShortcuts|"
 msgid "Delete Completed Items"
-msgstr ""
+msgstr "Deletar Itens concluídos"
 
 #: ../qml/Components/ApplicationShortcuts.qml:175
 msgctxt "ApplicationShortcuts|"
 msgid "Due Date"
-msgstr ""
+msgstr "Prazo"
 
 #: ../qml/Components/ApplicationShortcuts.qml:183
 msgctxt "ApplicationShortcuts|"
 msgid "Find"
-msgstr ""
+msgstr "Encontrar"
 
 #: ../qml/Components/ApplicationShortcuts.qml:190
 msgctxt "ApplicationShortcuts|"
 msgid "Back"
-msgstr ""
+msgstr "Voltar"
 
 #: ../qml/Components/ApplicationShortcuts.qml:207
 msgctxt "ApplicationShortcuts|"
 msgid "Left Sidebar"
-msgstr ""
+msgstr "Barra Lateral Esquerda"
 
 #: ../qml/Components/ApplicationShortcuts.qml:213
 msgctxt "ApplicationShortcuts|"
 msgid "Mark all items as done"
-msgstr ""
+msgstr "Marcar todos os itens como Concluído"
 
 #: ../qml/Components/ApplicationShortcuts.qml:225
 msgctxt "ApplicationShortcuts|"
 msgid "Mark all items as undone"
-msgstr ""
+msgstr "Marcar todos os itens como Não Concluído"
 
 #: ../qml/Components/ApplicationShortcuts.qml:237
 msgctxt "ApplicationShortcuts|"
 msgid "Move"
-msgstr ""
+msgstr "Mover"
 
 #: ../qml/Components/ApplicationShortcuts.qml:245
 msgctxt "ApplicationShortcuts|"
 msgid "New Library"
-msgstr ""
+msgstr "Nova Biblioteca"
 
 #: ../qml/Components/ApplicationShortcuts.qml:253
 msgctxt "ApplicationShortcuts|"
 msgid "Open Created Item"
-msgstr ""
+msgstr "Abrir Item Criado"
 
 #: ../qml/Components/ApplicationShortcuts.qml:260
 msgctxt "ApplicationShortcuts|"
 msgid "Open In New Window"
-msgstr ""
+msgstr "Abrir Em Uma Nova Janela"
 
 #: ../qml/Components/ApplicationShortcuts.qml:268
 msgctxt "ApplicationShortcuts|"
 msgid "Open Library Folder"
-msgstr ""
+msgstr "Abrir Pasta de Biblioteca"
 
 #: ../qml/Components/ApplicationShortcuts.qml:274
 msgctxt "ApplicationShortcuts|"
 msgid "Quit"
-msgstr ""
+msgstr "Sair"
 
 #: ../qml/Components/ApplicationShortcuts.qml:280
 msgctxt "ApplicationShortcuts|"
 msgid "Rename"
-msgstr ""
+msgstr "Renomear"
 
 #: ../qml/Components/ApplicationShortcuts.qml:288
 msgctxt "ApplicationShortcuts|"
 msgid "Preferences"
-msgstr ""
+msgstr "Preferências"
 
 #: ../qml/Components/ApplicationShortcuts.qml:309
 msgctxt "ApplicationShortcuts|"
 msgid "Scroll to Top"
-msgstr ""
+msgstr "Rolar para o Topo"
 
 #: ../qml/Components/ApplicationShortcuts.qml:316
 msgctxt "ApplicationShortcuts|"
 msgid "Scroll to Bottom"
-msgstr ""
+msgstr "Rolar para o Fim"
 
 #: ../qml/Components/ApplicationShortcuts.qml:323
 msgctxt "ApplicationShortcuts|"
 msgid "Set Color"
-msgstr ""
+msgstr "Definir Cor"
 
 #: ../qml/Components/ApplicationShortcuts.qml:330
 msgctxt "ApplicationShortcuts|"
 msgid "Set Progress"
-msgstr ""
+msgstr "Definir Progresso"
 
 #: ../qml/Components/ApplicationShortcuts.qml:337
 msgctxt "ApplicationShortcuts|"
 msgid "Sort"
-msgstr ""
+msgstr "Ordenar"
 
 #: ../qml/Components/ApplicationShortcuts.qml:345
 msgctxt "ApplicationShortcuts|"
 msgid "Sync Now"
-msgstr ""
+msgstr "Sincronizar Agora"
 
 #: ../qml/Components/ApplicationShortcuts.qml:358
 msgctxt "ApplicationShortcuts|"
 msgid "Sync Log"
-msgstr ""
+msgstr "Registro da Sincronização"
 
 #: ../qml/Components/ApplicationShortcuts.qml:369
 msgctxt "ApplicationShortcuts|"
 msgid "Translate The App..."
-msgstr ""
+msgstr "Traduzir o App..."
 
 #: ../qml/Components/ApplicationToolBar.qml:87
 msgctxt "ApplicationToolBar|"
 msgid "Problems"
-msgstr ""
+msgstr "Problemas"
 
 #: ../qml/Widgets/ItemNotesEditor.qml:106
 msgctxt "ItemNotesEditor|"
 msgid "Copy"
-msgstr ""
+msgstr "Copiar"
 
 #: ../qml/Widgets/ItemNotesEditor.qml:113
 msgctxt "ItemNotesEditor|"
 msgid "Copy Formatted Text"
-msgstr ""
+msgstr "Copiar Texto Formatado"
 
 #: ../qml/Widgets/ItemNotesEditor.qml:129
 msgctxt "ItemNotesEditor|"
 msgid "Copy Plain Text"
-msgstr ""
+msgstr "Copiar em Texto Simples"
 
 #: ../qml/Widgets/LibrariesSideBar.qml:293
 msgctxt "LibrariesSideBar|"
 msgid "Untagged"
-msgstr ""
+msgstr "Sem Tags"
 
 #: ../../lib/datamodel/library.cpp:615
 msgctxt "Library|"
 msgid "Unable to create backup folder"
-msgstr ""
+msgstr "Falha em criar pasta de backup"
 
 #: ../../lib/datamodel/library.cpp:619
 msgctxt "Library|"
 msgid "Failed to change into backup folder"
-msgstr ""
+msgstr "Falha em trocar para a pasta de backup"
 
 #: ../../lib/datamodel/library.cpp:630
 msgctxt "Library|"
 msgid "Failed to open file for writing: %1"
-msgstr ""
+msgstr "Falha em abrir o arquivo para escrita: %1"
 
 #: ../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml:13
 msgctxt "MarkFutureInstanceAsDone|"
 msgid "%1 is scheduled for the future - do you want to mark that future instance as done?"
-msgstr ""
+msgstr "%1 está marcado para o futuro - você quer marcar essa instância futura como concluída?"
 
 #: ../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml:20
 msgctxt "MarkFutureInstanceAsDone|"
 msgid "Mark as Done"
-msgstr ""
+msgstr "Marcar como Concluído"
 
 #: ../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml:29
 msgctxt "MarkFutureInstanceAsDone|"
 msgid "Keep Open"
-msgstr ""
+msgstr "Manter Aberto"
 
 #: ../qml/Windows/StackViewWindow.qml:21
 msgctxt "StackViewWindow|"
 msgid "OpenTodoList"
-msgstr ""
+msgstr "OpenTodoList"
 
 #: ../qml/Utils/ItemUtils.qml:205
 msgctxt "ItemUtils|"
 msgid "Move Task Into..."
-msgstr ""
+msgstr "Mover Tarefa Para..."
 
 #: ../qml/Actions/MoveTask.qml:12
 msgctxt "MoveTask|"
 msgid "Move"
-msgstr ""
+msgstr "Mover"
 
 #: ../qml/Windows/SelectTodoDialog.qml:22
 msgctxt "SelectTodoDialog|"
 msgid "Select Todo"
-msgstr ""
+msgstr "Selecionar A Fazer"
 
 #: ../qml/Windows/SelectTodoDialog.qml:42
 msgctxt "SelectTodoDialog|"
 msgid "Todo List:"
-msgstr ""
+msgstr "Lista de Tarefas:"
 
 #: ../qml/Windows/SelectTodoDialog.qml:64
 msgctxt "SelectTodoDialog|"
 msgid "Todo:"
-msgstr ""
+msgstr "A Fazer:"
 
 #: ../qml/Pages/SettingsPage.qml:143
 msgctxt "SettingsPage|"
 msgid "Custom Primary Color:"
-msgstr ""
+msgstr "Cor Primária Personalizada:"
 
 #: ../qml/Pages/SettingsPage.qml:151 ../qml/Pages/SettingsPage.qml:171
 msgctxt "SettingsPage|"
 msgid "Select"
-msgstr ""
+msgstr "Selecionar"
 
 #: ../qml/Pages/SettingsPage.qml:165
 msgctxt "SettingsPage|"
 msgid "Custom Secondary Color:"
-msgstr ""
+msgstr "Cor Secundária Personalizada:"
 

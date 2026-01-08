@@ -175,17 +175,17 @@
 <context>
     <name>Application</name>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="223"/>
         <source>Background Sync</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="226"/>
+        <location filename="../application.cpp" line="227"/>
         <source>App continues to sync your data in the background</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="230"/>
+        <location filename="../application.cpp" line="231"/>
         <source>Quit</source>
         <translation type="unfinished">退出</translation>
     </message>
@@ -841,16 +841,6 @@
         <translation>每 %1 天重复一次。</translation>
     </message>
     <message>
-        <location filename="../Widgets/ItemDueDateEditor.qml" line="141"/>
-        <source>Recurs until %1.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemDueDateEditor.qml" line="144"/>
-        <source>Recurs indefinitely</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Widgets/ItemDueDateEditor.qml" line="96"/>
         <source>Recurs every year.</source>
         <translation>每年重复。</translation>
@@ -865,6 +855,16 @@
         <source>Recurs every %1 months.</source>
         <translation>每 %1 月重复。</translation>
     </message>
+    <message>
+        <location filename="../Widgets/ItemDueDateEditor.qml" line="141"/>
+        <source>Recurs until %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Widgets/ItemDueDateEditor.qml" line="144"/>
+        <source>Recurs indefinitely</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ItemNotesEditor</name>
@@ -877,16 +877,6 @@
         <location filename="../Widgets/ItemNotesEditor.qml" line="73"/>
         <source>No notes added yet - click here to add some.</source>
         <translation>尚未添加任何笔记 - 单击此处添加一些笔记。</translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="113"/>
-        <source>Copy Formatted Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="129"/>
-        <source>Copy Plain Text</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Widgets/ItemNotesEditor.qml" line="160"/>
@@ -908,6 +898,16 @@
         <source>Copy</source>
         <translation type="unfinished">复制</translation>
     </message>
+    <message>
+        <location filename="../Widgets/ItemNotesEditor.qml" line="113"/>
+        <source>Copy Formatted Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Widgets/ItemNotesEditor.qml" line="129"/>
+        <source>Copy Plain Text</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ItemUtils</name>
@@ -915,11 +915,6 @@
         <location filename="../Utils/ItemUtils.qml" line="189"/>
         <source>Move Todo Into...</source>
         <translation>移动待办事项至...</translation>
-    </message>
-    <message>
-        <location filename="../Utils/ItemUtils.qml" line="204"/>
-        <source>Move Task Into...</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Utils/ItemUtils.qml" line="219"/>
@@ -935,6 +930,11 @@
         <location filename="../Utils/ItemUtils.qml" line="252"/>
         <source>Copy Todo Into...</source>
         <translation>复制待办事项至...</translation>
+    </message>
+    <message>
+        <location filename="../Utils/ItemUtils.qml" line="204"/>
+        <source>Move Task Into...</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -976,14 +976,14 @@
         <translation>向下移动</translation>
     </message>
     <message>
-        <location filename="../Widgets/LibrariesSideBar.qml" line="291"/>
-        <source>Untagged</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Widgets/LibrariesSideBar.qml" line="93"/>
         <source>Donate</source>
         <translation>捐助</translation>
+    </message>
+    <message>
+        <location filename="../Widgets/LibrariesSideBar.qml" line="291"/>
+        <source>Untagged</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1314,11 +1314,6 @@
         <translation>新项目的标题...</translation>
     </message>
     <message>
-        <location filename="../Windows/NewItemWithDueDateDialog.qml" line="149"/>
-        <source>Library</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Windows/NewItemWithDueDateDialog.qml" line="185"/>
         <source>Create in:</source>
         <translation>创建于:</translation>
@@ -1327,6 +1322,11 @@
         <location filename="../Windows/NewItemWithDueDateDialog.qml" line="226"/>
         <source>Due on:</source>
         <translation>到期于:</translation>
+    </message>
+    <message>
+        <location filename="../Windows/NewItemWithDueDateDialog.qml" line="149"/>
+        <source>Library</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1832,16 +1832,6 @@
         <translation>天数:</translation>
     </message>
     <message>
-        <location filename="../Windows/RecurrenceDialog.qml" line="118"/>
-        <source>Number of weeks:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Windows/RecurrenceDialog.qml" line="120"/>
-        <source>Number of months:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Windows/RecurrenceDialog.qml" line="142"/>
         <source>Recur relative to the date when marking as done</source>
         <translation>相对于标记为完成的日期重复</translation>
@@ -1860,6 +1850,16 @@
         <location filename="../Windows/RecurrenceDialog.qml" line="72"/>
         <source>Every N Months</source>
         <translation>每 N 月</translation>
+    </message>
+    <message>
+        <location filename="../Windows/RecurrenceDialog.qml" line="118"/>
+        <source>Number of weeks:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Windows/RecurrenceDialog.qml" line="120"/>
+        <source>Number of months:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2060,21 +2060,6 @@
         <translation>主题:</translation>
     </message>
     <message>
-        <location filename="../Pages/SettingsPage.qml" line="143"/>
-        <source>Custom Primary Color:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="165"/>
-        <source>Custom Secondary Color:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="194"/>
-        <source>Monochrome Icon</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Pages/SettingsPage.qml" line="208"/>
         <source>Font Size:</source>
         <translation>字体尺寸:</translation>
@@ -2133,11 +2118,6 @@ This requires a restart of the app.</source>
         <translation>资料库项目尺寸:</translation>
     </message>
     <message>
-        <location filename="../Pages/SettingsPage.qml" line="329"/>
-        <source>Show notes excerpt in listings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Pages/SettingsPage.qml" line="189"/>
         <source>System Tray:</source>
         <translation>系统托盘:</translation>
@@ -2153,10 +2133,30 @@ This requires a restart of the app.</source>
         <translation>桌面模式</translation>
     </message>
     <message>
+        <location filename="../Pages/SettingsPage.qml" line="329"/>
+        <source>Show notes excerpt in listings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="194"/>
+        <source>Monochrome Icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="143"/>
+        <source>Custom Primary Color:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../Pages/SettingsPage.qml" line="151"/>
         <location filename="../Pages/SettingsPage.qml" line="171"/>
         <source>Select</source>
         <translation type="unfinished">选择</translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="165"/>
+        <source>Custom Secondary Color:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

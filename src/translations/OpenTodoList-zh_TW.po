@@ -17,7 +17,7 @@ msgstr "關於"
 #: ../qml/Pages/AboutPage.qml:33
 msgctxt "AboutPage|"
 msgid "OpenTodoList"
-msgstr ""
+msgstr "OpenTodoList"
 
 #: ../qml/Pages/AboutPage.qml:40
 msgctxt "AboutPage|"
@@ -303,7 +303,7 @@ msgstr "副本日誌"
 #: ../qml/Windows/MainWindow.qml:23
 msgctxt "MainWindow|"
 msgid "OpenTodoList"
-msgstr ""
+msgstr "OpenTodoList"
 
 #: ../Windows/MainWindow.qml:451
 msgctxt "MainWindow|"
@@ -503,7 +503,7 @@ msgstr "創造書庫"
 #: ../Pages/SyncLibrarySelectionPage.qml:29
 msgctxt "SyncLibrarySelectionPage|"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: ../Pages/SyncLibrarySelectionPage.qml:46
 msgctxt "SyncLibrarySelectionPage|"
@@ -528,23 +528,23 @@ msgstr "取消"
 #: ../Pages/SynchronizerBackendSelectionPage.qml:21
 msgctxt "SynchronizerBackendSelectionPage|"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: ../Pages/SynchronizerBackendSelectionPage.qml:45
 msgctxt "SynchronizerBackendSelectionPage|"
 msgid "NextCloud"
-msgstr ""
+msgstr "NextCloud"
 
 #: ../Pages/SynchronizerBackendSelectionPage.qml:52
 msgctxt "SynchronizerBackendSelectionPage|"
 msgid "ownCloud"
-msgstr ""
+msgstr "ownCloud"
 
 #: ../Pages/SynchronizerBackendSelectionPage.qml:59
 #: ../Pages/SynchronizerBackendSelectionPage.qml:60
 msgctxt "SynchronizerBackendSelectionPage|"
 msgid "WebDAV"
-msgstr ""
+msgstr "WebDAV"
 
 #: ../Pages/SynchronizerBackendSelectionPage.qml:66
 #: ../Pages/SynchronizerBackendSelectionPage.qml:67
@@ -600,7 +600,7 @@ msgstr "下載"
 #: ../Pages/WebDAVConnectionSettingsPage.qml:22
 msgctxt "WebDAVConnectionSettingsPage|"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: ../Pages/WebDAVConnectionSettingsPage.qml:22
 msgctxt "WebDAVConnectionSettingsPage|"
@@ -620,7 +620,7 @@ msgstr "伺服器網址："
 #: ../Pages/WebDAVConnectionSettingsPage.qml:92
 msgctxt "WebDAVConnectionSettingsPage|"
 msgid "https://..."
-msgstr ""
+msgstr "https://..."
 
 #: ../Pages/WebDAVConnectionSettingsPage.qml:98
 msgctxt "WebDAVConnectionSettingsPage|"
@@ -730,7 +730,7 @@ msgstr "設定"
 #: ../Windows/MainWindow.qml:444
 msgctxt "MainWindow|"
 msgid "Ctrl+,"
-msgstr ""
+msgstr "Ctrl+,"
 
 #: ../Pages/SettingsPageForm.ui.qml:33
 msgctxt "SettingsPageForm.ui|"
@@ -885,7 +885,7 @@ msgstr "法文"
 #: ../Pages/AboutPage.qml:43
 msgctxt "AboutPage|"
 msgid "(c) RPdev 2013-2020, version %1"
-msgstr ""
+msgstr "(c) RPdev 2013-2020, version %1"
 
 #: ../qml/Pages/AboutPage.qml:68
 msgctxt "AboutPage|"
@@ -911,7 +911,7 @@ msgstr "作者："
 #: ../qml/Pages/AboutPage.qml:156
 msgctxt "AboutPage|"
 msgid "<a href='%2'>%1</a>"
-msgstr ""
+msgstr "<a href='%2'>%1</a>"
 
 #: ../qml/Pages/AboutPage.qml:163
 msgctxt "AboutPage|"
@@ -921,7 +921,7 @@ msgstr "授權："
 #: ../qml/Pages/AboutPage.qml:168
 msgctxt "AboutPage|"
 msgid "<a href='%1'>%2</a>"
-msgstr ""
+msgstr "<a href='%1'>%2</a>"
 
 #: ../qml/Pages/AboutPage.qml:174
 msgctxt "AboutPage|"
@@ -931,7 +931,7 @@ msgstr "下載："
 #: ../qml/Pages/AboutPage.qml:178
 msgctxt "AboutPage|"
 msgid "<a href='%1'>%1</a>"
-msgstr ""
+msgstr "<a href='%1'>%1</a>"
 
 #: ../Pages/AccountTypeSelectionPageForm.ui.qml:17
 msgctxt "AccountTypeSelectionPageForm.ui|"
@@ -946,17 +946,17 @@ msgstr "帳號類型"
 #: ../Pages/AccountTypeSelectionPageForm.ui.qml:46
 msgctxt "AccountTypeSelectionPageForm.ui|"
 msgid "NextCloud"
-msgstr ""
+msgstr "NextCloud"
 
 #: ../Pages/AccountTypeSelectionPageForm.ui.qml:51
 msgctxt "AccountTypeSelectionPageForm.ui|"
 msgid "ownCloud"
-msgstr ""
+msgstr "ownCloud"
 
 #: ../Pages/AccountTypeSelectionPageForm.ui.qml:56
 msgctxt "AccountTypeSelectionPageForm.ui|"
 msgid "WebDAV"
-msgstr ""
+msgstr "WebDAV"
 
 #: ../Pages/AccountsPageForm.ui.qml:16 ../Pages/AccountsPageForm.ui.qml:24
 msgctxt "AccountsPageForm.ui|"
@@ -992,7 +992,7 @@ msgstr "伺服器網址："
 #: ../Pages/EditWebDAVAccountPageForm.ui.qml:65
 msgctxt "EditWebDAVAccountPageForm.ui|"
 msgid "https://myserver.example.com"
-msgstr ""
+msgstr "https://myserver.example.com"
 
 #: ../Pages/EditWebDAVAccountPageForm.ui.qml:71
 msgctxt "EditWebDAVAccountPageForm.ui|"
@@ -1178,7 +1178,7 @@ msgstr "伺服器網址："
 #: ../Pages/NewWebDAVAccountPageForm.ui.qml:55
 msgctxt "NewWebDAVAccountPageForm.ui|"
 msgid "https://myserver.example.com"
-msgstr ""
+msgstr "https://myserver.example.com"
 
 #: ../Pages/NewWebDAVAccountPageForm.ui.qml:61
 msgctxt "NewWebDAVAccountPageForm.ui|"
@@ -1243,7 +1243,7 @@ msgstr "輸出檔案……"
 #: ../qml/Widgets/ItemNotesEditor.qml:163
 msgctxt "ItemNotesEditor|"
 msgid "Markdown files"
-msgstr ""
+msgstr "Markdown文件"
 
 #: ../qml/Widgets/ItemNotesEditor.qml:163
 msgctxt "ItemNotesEditor|"
@@ -1553,17 +1553,17 @@ msgstr "帳號類型"
 #: ../qml/Pages/AccountTypeSelectionPage.qml:61
 msgctxt "AccountTypeSelectionPage|"
 msgid "NextCloud"
-msgstr ""
+msgstr "NextCloud"
 
 #: ../qml/Pages/AccountTypeSelectionPage.qml:64
 msgctxt "AccountTypeSelectionPage|"
 msgid "ownCloud"
-msgstr ""
+msgstr "ownCloud"
 
 #: ../qml/Pages/AccountTypeSelectionPage.qml:67
 msgctxt "AccountTypeSelectionPage|"
 msgid "WebDAV"
-msgstr ""
+msgstr "WebDAV"
 
 #: ../appstartup.cpp:200
 msgctxt "AppStartup|"
@@ -1573,7 +1573,7 @@ msgstr "管理你的個人資料。"
 #: ../appstartup.cpp:206
 msgctxt "AppStartup|"
 msgid "Switch on some optimizations for touchscreens."
-msgstr ""
+msgstr "開啟觸控螢幕最佳化。"
 
 #: ../appstartup.cpp:209
 msgctxt "AppStartup|"
@@ -1624,57 +1624,57 @@ msgstr ""
 #: ../qml/Pages/EditNextCloudAccountPage.qml:57
 msgctxt "EditNextCloudAccountPage|"
 msgid "Edit Account"
-msgstr ""
+msgstr "編輯帳號"
 
 #: ../qml/Pages/EditNextCloudAccountPage.qml:63
 msgctxt "EditNextCloudAccountPage|"
 msgid "Name:"
-msgstr ""
+msgstr "名稱："
 
 #: ../qml/Pages/EditNextCloudAccountPage.qml:74
 msgctxt "EditNextCloudAccountPage|"
 msgid "Server Address:"
-msgstr ""
+msgstr "伺服器地址："
 
 #: ../qml/Pages/EditNextCloudAccountPage.qml:81
 msgctxt "EditNextCloudAccountPage|"
 msgid "https://myserver.example.com"
-msgstr ""
+msgstr "https://myserver.example.com"
 
 #: ../qml/Pages/EditNextCloudAccountPage.qml:89
 msgctxt "EditNextCloudAccountPage|"
 msgid "Login"
-msgstr ""
+msgstr "登入"
 
 #: ../qml/Pages/EditNextCloudAccountPage.qml:102
 msgctxt "EditNextCloudAccountPage|"
 msgid "User:"
-msgstr ""
+msgstr "使用者："
 
 #: ../qml/Pages/EditNextCloudAccountPage.qml:109
 msgctxt "EditNextCloudAccountPage|"
 msgid "User Name"
-msgstr ""
+msgstr "使用者名稱"
 
 #: ../qml/Pages/EditNextCloudAccountPage.qml:115
 msgctxt "EditNextCloudAccountPage|"
 msgid "Password:"
-msgstr ""
+msgstr "密碼："
 
 #: ../qml/Pages/EditNextCloudAccountPage.qml:122
 msgctxt "EditNextCloudAccountPage|"
 msgid "Password"
-msgstr ""
+msgstr "密碼"
 
 #: ../qml/Pages/EditNextCloudAccountPage.qml:131
 msgctxt "EditNextCloudAccountPage|"
 msgid "Disable Certificate Checks"
-msgstr ""
+msgstr "關閉證明確認"
 
 #: ../qml/Pages/EditNextCloudAccountPage.qml:140
 msgctxt "EditNextCloudAccountPage|"
 msgid "Failed to connect to the server. Please check your user name, password and the server address and retry."
-msgstr ""
+msgstr "無法連接伺服器。請確認你的使用者名稱、密碼和伺服器網址，然後重試。"
 
 #: ../qml/Widgets/LibrariesSideBar.qml:78
 msgctxt "LibrariesSideBar|"
@@ -1704,28 +1704,28 @@ msgstr ""
 #: ../Windows/MainWindow.qml:398
 msgctxt "MainWindow|"
 msgid "Delete Completed Items"
-msgstr ""
+msgstr "刪除完成的項目"
 
 #: ../Windows/MainWindow.qml:494
 msgctxt "MainWindow|"
 msgid "Close"
-msgstr ""
+msgstr "關閉"
 
 #: ../qml/Pages/NewNextCloudAccountPage.qml:19
 #: ../qml/Pages/NewNextCloudAccountPage.qml:71
 msgctxt "NewNextCloudAccountPage|"
 msgid "Connection Settings"
-msgstr ""
+msgstr "連接設定"
 
 #: ../qml/Pages/NewNextCloudAccountPage.qml:77
 msgctxt "NewNextCloudAccountPage|"
 msgid "Server Address:"
-msgstr ""
+msgstr "伺服器地址："
 
 #: ../qml/Pages/NewNextCloudAccountPage.qml:91
 msgctxt "NewNextCloudAccountPage|"
 msgid "Login"
-msgstr ""
+msgstr "登入"
 
 #: ../qml/Pages/NewNextCloudAccountPage.qml:107
 msgctxt "NewNextCloudAccountPage|"
@@ -1750,83 +1750,83 @@ msgstr ""
 #: ../qml/Pages/NewNextCloudAccountPage.qml:141
 msgctxt "NewNextCloudAccountPage|"
 msgid "Create App Password"
-msgstr ""
+msgstr "創建應用密碼"
 
 #: ../qml/Pages/NewNextCloudAccountPage.qml:150
 msgctxt "NewNextCloudAccountPage|"
 msgid "Account Settings"
-msgstr ""
+msgstr "帳號設定"
 
 #: ../qml/Pages/NewNextCloudAccountPage.qml:160
 msgctxt "NewNextCloudAccountPage|"
 msgid "Copy Link"
-msgstr ""
+msgstr "複製連結"
 
 #: ../qml/Pages/NewNextCloudAccountPage.qml:166
 msgctxt "NewNextCloudAccountPage|"
 msgid "Copied!"
-msgstr ""
+msgstr "已複製！"
 
 #: ../qml/Pages/NewNextCloudAccountPage.qml:175
 msgctxt "NewNextCloudAccountPage|"
 msgid "User:"
-msgstr ""
+msgstr "使用者："
 
 #: ../qml/Pages/NewNextCloudAccountPage.qml:182
 msgctxt "NewNextCloudAccountPage|"
 msgid "User Name"
-msgstr ""
+msgstr "使用者名稱"
 
 #: ../qml/Pages/NewNextCloudAccountPage.qml:189
 msgctxt "NewNextCloudAccountPage|"
 msgid "Password:"
-msgstr ""
+msgstr "密碼："
 
 #: ../qml/Pages/NewNextCloudAccountPage.qml:196
 msgctxt "NewNextCloudAccountPage|"
 msgid "Password"
-msgstr ""
+msgstr "密碼"
 
 #: ../qml/Pages/NewNextCloudAccountPage.qml:206
 msgctxt "NewNextCloudAccountPage|"
 msgid "Disable Certificate Checks"
-msgstr ""
+msgstr "關閉證明確認"
 
 #: ../qml/Pages/NewNextCloudAccountPage.qml:210
 msgctxt "NewNextCloudAccountPage|"
 msgid "Name:"
-msgstr ""
+msgstr "名稱："
 
 #: ../qml/Pages/NewNextCloudAccountPage.qml:223
 msgctxt "NewNextCloudAccountPage|"
 msgid "Account Name"
-msgstr ""
+msgstr "帳號名稱"
 
 #: ../qml/Pages/NewNextCloudAccountPage.qml:233
 msgctxt "NewNextCloudAccountPage|"
 msgid "Failed to connect to the server. Please check your user name, password and the server address and retry."
-msgstr ""
+msgstr "無法連接伺服器。請確認你的使用者名稱、密碼和伺服器網址，然後重試。"
 
 #: ../qml/Pages/AccountsPage.qml:18 ../qml/Pages/AccountsPage.qml:40
 msgctxt "AccountsPage|"
 msgid "Accounts"
-msgstr ""
+msgstr "帳號"
 
 #: ../qml/Pages/EditWebDAVAccountPage.qml:32
 #: ../qml/Pages/EditWebDAVAccountPage.qml:116
 msgctxt "EditWebDAVAccountPage|"
 msgid "Edit Account"
-msgstr ""
+msgstr "編輯帳號"
 
 #: ../qml/Pages/EditWebDAVAccountPage.qml:122
 msgctxt "EditWebDAVAccountPage|"
 msgid "Name:"
-msgstr ""
+msgstr "名稱："
 
 #: ../qml/Pages/EditWebDAVAccountPage.qml:133
 msgctxt "EditWebDAVAccountPage|"
 msgid "Server Address:"
-msgstr ""
+msgstr "伺服器地址："
 
 #: ../qml/Pages/EditWebDAVAccountPage.qml:139
 msgctxt "EditWebDAVAccountPage|"
@@ -1836,32 +1836,32 @@ msgstr ""
 #: ../qml/Pages/EditWebDAVAccountPage.qml:146
 msgctxt "EditWebDAVAccountPage|"
 msgid "User:"
-msgstr ""
+msgstr "使用者："
 
 #: ../qml/Pages/EditWebDAVAccountPage.qml:152
 msgctxt "EditWebDAVAccountPage|"
 msgid "User Name"
-msgstr ""
+msgstr "使用者名稱"
 
 #: ../qml/Pages/EditWebDAVAccountPage.qml:159
 msgctxt "EditWebDAVAccountPage|"
 msgid "Password:"
-msgstr ""
+msgstr "密碼："
 
 #: ../qml/Pages/EditWebDAVAccountPage.qml:166
 msgctxt "EditWebDAVAccountPage|"
 msgid "Password"
-msgstr ""
+msgstr "密碼"
 
 #: ../qml/Pages/EditWebDAVAccountPage.qml:176
 msgctxt "EditWebDAVAccountPage|"
 msgid "Disable Certificate Checks"
-msgstr ""
+msgstr "關閉證明確認"
 
 #: ../qml/Pages/EditWebDAVAccountPage.qml:184
 msgctxt "EditWebDAVAccountPage|"
 msgid "Failed to connect to the server. Please check your user name, password and the server address and retry."
-msgstr ""
+msgstr "無法連接伺服器。請確認你的使用者名稱、密碼和伺服器網址，然後重試。"
 
 #: ../qml/Utils/ItemUtils.qml:190
 msgctxt "ItemUtils|"
@@ -1871,32 +1871,32 @@ msgstr ""
 #: ../qml/Widgets/LibrariesSideBar.qml:93
 msgctxt "LibrariesSideBar|"
 msgid "Donate"
-msgstr ""
+msgstr "贊助"
 
 #: ../Windows/MainWindow.qml:319
 msgctxt "MainWindow|"
 msgid "Move"
-msgstr ""
+msgstr "移動"
 
 #: ../qml/Actions/MoveTodo.qml:12
 msgctxt "MoveTodo|"
 msgid "Move"
-msgstr ""
+msgstr "移動"
 
 #: ../qml/Pages/NewLibraryFromAccountPage.qml:81
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Create Library in Account"
-msgstr ""
+msgstr "在帳號裡創造書庫"
 
 #: ../qml/Pages/NewLibraryFromAccountPage.qml:90
 msgctxt "NewLibraryFromAccountPage|"
 msgid "A library created in an account is synchronized with it. This allows to easily back up a library to a server and later on restore it from there. Additionally, such libraries can be shared with other users (if the server allows this)."
-msgstr ""
+msgstr "創造到一個帳號裡的一個書庫和它同步。這允許輕鬆的備份一個書庫到一個伺服器以及之後從那恢復它。此外，這樣的書庫可以被分享到其他使用者（如果伺服器允許的話）。"
 
 #: ../qml/Pages/NewLibraryFromAccountPage.qml:98
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Existing Libraries"
-msgstr ""
+msgstr "已存在的書庫"
 
 #: ../qml/Pages/NewLibraryFromAccountPage.qml:106
 msgctxt "NewLibraryFromAccountPage|"
@@ -1906,7 +1906,7 @@ msgstr ""
 #: ../qml/Pages/NewLibraryFromAccountPage.qml:112
 msgctxt "NewLibraryFromAccountPage|"
 msgid "No libraries were found on the server."
-msgstr ""
+msgstr "在伺服器上沒有找到書庫。"
 
 #: ../qml/Pages/NewLibraryFromAccountPage.qml:121
 msgctxt "NewLibraryFromAccountPage|"
@@ -1916,17 +1916,17 @@ msgstr ""
 #: ../qml/Pages/NewLibraryFromAccountPage.qml:164
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Create a New Library"
-msgstr ""
+msgstr "創造一個新書庫"
 
 #: ../qml/Pages/NewLibraryFromAccountPage.qml:172
 msgctxt "NewLibraryFromAccountPage|"
 msgid "Create a new library, which will be synchronized with the server. Such a library can be added to the app on other devices as well to synchronize data."
-msgstr ""
+msgstr "創造一個書庫，這將會被同步到伺服器。這樣的一個書庫可以被加入到在其他裝置的應用程式裡，也同步資料。"
 
 #: ../qml/Pages/NewLibraryFromAccountPage.qml:186
 msgctxt "NewLibraryFromAccountPage|"
 msgid "My new library's name"
-msgstr ""
+msgstr "我的新書庫的名稱"
 
 #: ../qml/Pages/NewLibraryInFolderPage.qml:100
 msgctxt "NewLibraryInFolderPage|"
@@ -1936,7 +1936,7 @@ msgstr ""
 #: ../qml/Pages/NewLibraryInFolderPage.qml:108
 msgctxt "NewLibraryInFolderPage|"
 msgid "You can use any folder as a location for a library.<br/><br/>This is especially useful when you want to use another tool (like a sync client of a cloud provider) to sync your data with a server."
-msgstr ""
+msgstr "你可以使用任何資料夾作為一個書庫的一個位置。<br/><br/>這尤其在當你想要用另一個工具（像是一個雲端提供者的一個同步客戶）同步你的資料到一個伺服器時有用。"
 
 #: ../qml/Pages/NewLibraryInFolderPage.qml:112
 msgctxt "NewLibraryInFolderPage|"
@@ -1946,22 +1946,22 @@ msgstr ""
 #: ../qml/Pages/NewLibraryInFolderPage.qml:117
 msgctxt "NewLibraryInFolderPage|"
 msgid "Path to a folder to use as a library"
-msgstr ""
+msgstr "用來作為書庫的資料夾路徑"
 
 #: ../qml/Pages/NewLibraryInFolderPage.qml:123
 msgctxt "NewLibraryInFolderPage|"
 msgid "Select"
-msgstr ""
+msgstr "選擇"
 
 #: ../qml/Pages/NewLibraryInFolderPage.qml:128
 msgctxt "NewLibraryInFolderPage|"
 msgid "Name:"
-msgstr ""
+msgstr "名稱："
 
 #: ../qml/Pages/NewLibraryInFolderPage.qml:133
 msgctxt "NewLibraryInFolderPage|"
 msgid "My Local Library Name"
-msgstr ""
+msgstr "我的本地書庫名稱"
 
 #: ../qml/Pages/NewLibraryPage.qml:69
 msgctxt "NewLibraryPage|"
@@ -1976,43 +1976,43 @@ msgstr ""
 #: ../qml/Pages/NewLibraryPage.qml:88
 msgctxt "NewLibraryPage|"
 msgid "Add Libraries From Your Accounts"
-msgstr ""
+msgstr "從你的帳號中加入書庫"
 
 #: ../qml/Pages/NewLibraryPage.qml:115
 msgctxt "NewLibraryPage|"
 msgid "Add Account"
-msgstr ""
+msgstr "加入帳號"
 
 #: ../qml/Pages/NewLocalLibraryPage.qml:61
 msgctxt "NewLocalLibraryPage|"
 msgid "Create a Local Library"
-msgstr ""
+msgstr "創造一個本地書庫"
 
 #: ../qml/Pages/NewLocalLibraryPage.qml:69
 msgctxt "NewLocalLibraryPage|"
 msgid "A local library is stored solely on your device - this makes it perfect for the privacy concise!<br/><br/>Use it when you want to store information only locally and back up all your data regularly via other mechanisms. If you need to access your information across several devices, create a library which is synced instead."
-msgstr ""
+msgstr "一個本地書庫被單獨的儲存在你的裝置上——這使隱私簡潔完美！<br/><br/>當你只想要在本地儲存資訊和經由其他的機制定期的備份你的全部資料時，使用它。如果你需要垮越數個裝置存取你的資訊、創造一個同步的書庫代替。"
 
 #: ../qml/Pages/NewLocalLibraryPage.qml:79
 msgctxt "NewLocalLibraryPage|"
 msgid "Name:"
-msgstr ""
+msgstr "名稱："
 
 #: ../qml/Pages/NewLocalLibraryPage.qml:84
 msgctxt "NewLocalLibraryPage|"
 msgid "My Local Library Name"
-msgstr ""
+msgstr "我的本地書庫名稱"
 
 #: ../qml/Pages/NewWebDAVAccountPage.qml:28
 #: ../qml/Pages/NewWebDAVAccountPage.qml:99
 msgctxt "NewWebDAVAccountPage|"
 msgid "Connection Settings"
-msgstr ""
+msgstr "連接設定"
 
 #: ../qml/Pages/NewWebDAVAccountPage.qml:105
 msgctxt "NewWebDAVAccountPage|"
 msgid "Server Address:"
-msgstr ""
+msgstr "伺服器地址："
 
 #: ../qml/Pages/NewWebDAVAccountPage.qml:111
 msgctxt "NewWebDAVAccountPage|"
@@ -2022,37 +2022,37 @@ msgstr ""
 #: ../qml/Pages/NewWebDAVAccountPage.qml:117
 msgctxt "NewWebDAVAccountPage|"
 msgid "User:"
-msgstr ""
+msgstr "使用者："
 
 #: ../qml/Pages/NewWebDAVAccountPage.qml:123
 msgctxt "NewWebDAVAccountPage|"
 msgid "User Name"
-msgstr ""
+msgstr "使用者名稱"
 
 #: ../qml/Pages/NewWebDAVAccountPage.qml:129
 msgctxt "NewWebDAVAccountPage|"
 msgid "Password:"
-msgstr ""
+msgstr "密碼："
 
 #: ../qml/Pages/NewWebDAVAccountPage.qml:135
 msgctxt "NewWebDAVAccountPage|"
 msgid "Password"
-msgstr ""
+msgstr "密碼"
 
 #: ../qml/Pages/NewWebDAVAccountPage.qml:144
 msgctxt "NewWebDAVAccountPage|"
 msgid "Disable Certificate Checks"
-msgstr ""
+msgstr "關閉證明確認"
 
 #: ../qml/Pages/NewWebDAVAccountPage.qml:148
 msgctxt "NewWebDAVAccountPage|"
 msgid "Name:"
-msgstr ""
+msgstr "名稱："
 
 #: ../qml/Pages/NewWebDAVAccountPage.qml:171
 msgctxt "NewWebDAVAccountPage|"
 msgid "Failed to connect to the server. Please check your user name, password and the server address and retry."
-msgstr ""
+msgstr "無法連接伺服器。請確認你的使用者名稱、密碼和伺服器網址，然後重試。"
 
 #: ../qml/Pages/ProblemsPage.qml:18 ../qml/Pages/ProblemsPage.qml:28
 msgctxt "ProblemsPage|"
@@ -2067,7 +2067,7 @@ msgstr ""
 #: ../qml/Pages/SettingsPage.qml:40
 msgctxt "SettingsPage|"
 msgid "Settings"
-msgstr ""
+msgstr "設定"
 
 #: ../qml/Pages/SettingsPage.qml:46
 msgctxt "SettingsPage|"
@@ -2077,7 +2077,7 @@ msgstr ""
 #: ../qml/Pages/SettingsPage.qml:54
 msgctxt "SettingsPage|"
 msgid "Language:"
-msgstr ""
+msgstr "語言："
 
 #: ../qml/Pages/SettingsPage.qml:118
 msgctxt "SettingsPage|"
@@ -2092,7 +2092,7 @@ msgstr ""
 #: ../Utils/Translations.qml:72
 msgctxt "Translations|"
 msgid "Japanese"
-msgstr ""
+msgstr "日語"
 
 #: ../Utils/Translations.qml:116
 msgctxt "Translations|"
@@ -2156,7 +2156,7 @@ msgstr ""
 #: ../qml/Utils/ItemUtils.qml:220
 msgctxt "ItemUtils|"
 msgid "Convert Task to Todo and Move Into..."
-msgstr ""
+msgstr "將任務轉換為待辦事項並移至..."
 
 #: ../Pages/LogViewPage.qml:28
 msgctxt "LogViewPage|"
@@ -2191,7 +2191,7 @@ msgstr ""
 #: ../qml/Pages/AboutPage.qml:92
 msgctxt "AboutPage|"
 msgid "Copy System Information"
-msgstr ""
+msgstr "複製系統訊息"
 
 #: ../appstartup.cpp:375
 msgctxt "AppStartup|"
@@ -2286,12 +2286,12 @@ msgstr ""
 #: ../qml/Windows/RecurrenceDialog.qml:67
 msgctxt "RecurrenceDialog|"
 msgid "Every N Weeks"
-msgstr ""
+msgstr "每 N 週"
 
 #: ../qml/Windows/RecurrenceDialog.qml:71
 msgctxt "RecurrenceDialog|"
 msgid "Every N Months"
-msgstr ""
+msgstr "每 N 月"
 
 #: ../qml/Pages/SettingsPage.qml:189
 msgctxt "SettingsPage|"
@@ -2316,22 +2316,22 @@ msgstr ""
 #: ../qml/Actions/CopyTodo.qml:12
 msgctxt "CopyTodo|"
 msgid "Copy"
-msgstr ""
+msgstr "複製"
 
 #: ../qml/Actions/CopyTopLevelItem.qml:12
 msgctxt "CopyTopLevelItem|"
 msgid "Copy"
-msgstr ""
+msgstr "複製"
 
 #: ../qml/Pages/LibraryPage.qml:267
 msgctxt "LibraryPage|"
 msgid "Copy"
-msgstr ""
+msgstr "複製"
 
 #: ../Windows/MainWindow.qml:330
 msgctxt "MainWindow|"
 msgid "Copy"
-msgstr ""
+msgstr "複製"
 
 #: ../qml/Windows/SelectLibraryDialog.qml:21
 msgctxt "SelectLibraryDialog|"
@@ -2346,7 +2346,7 @@ msgstr ""
 #: ../Components/ApplicationShortcuts.qml:15
 msgctxt "ApplicationShortcuts|"
 msgid "Ctrl+,"
-msgstr ""
+msgstr "Ctrl+,"
 
 #: ../Components/ApplicationToolBar.qml:164
 msgctxt "ApplicationToolBar|"
@@ -2366,28 +2366,28 @@ msgstr ""
 #: ../Components/ApplicationToolBarActions.qml:33
 msgctxt "ApplicationToolBarActions|"
 msgid "Move"
-msgstr ""
+msgstr "移動"
 
 #: ../Components/ApplicationToolBarActions.qml:43
 msgctxt "ApplicationToolBarActions|"
 msgid "Copy"
-msgstr ""
+msgstr "複製"
 
 #: ../Components/ApplicationToolBarActions.qml:53
 #: ../Components/ApplicationToolBarActions.qml:64
 msgctxt "ApplicationToolBarActions|"
 msgid "Color"
-msgstr ""
+msgstr "顏色"
 
 #: ../Components/ApplicationToolBarActions.qml:74
 msgctxt "ApplicationToolBarActions|"
 msgid "Add Tag"
-msgstr ""
+msgstr "加入標籤"
 
 #: ../Components/ApplicationToolBarActions.qml:82
 msgctxt "ApplicationToolBarActions|"
 msgid "Attach File"
-msgstr ""
+msgstr "附加檔案"
 
 #: ../Components/ApplicationToolBarActions.qml:92
 msgctxt "ApplicationToolBarActions|"
@@ -2397,22 +2397,22 @@ msgstr ""
 #: ../Components/ApplicationToolBarActions.qml:100
 msgctxt "ApplicationToolBarActions|"
 msgid "Sort"
-msgstr ""
+msgstr "分類"
 
 #: ../Components/ApplicationToolBarActions.qml:108
 msgctxt "ApplicationToolBarActions|"
 msgid "Set Due Date"
-msgstr ""
+msgstr "設定截止期限"
 
 #: ../Components/ApplicationToolBarActions.qml:116
 msgctxt "ApplicationToolBarActions|"
 msgid "Delete"
-msgstr ""
+msgstr "刪除"
 
 #: ../Components/ApplicationToolBarActions.qml:124
 msgctxt "ApplicationToolBarActions|"
 msgid "Delete Completed Items"
-msgstr ""
+msgstr "刪除完成的項目"
 
 #: ../Components/ApplicationToolBarActions.qml:132
 msgctxt "ApplicationToolBarActions|"
@@ -2422,12 +2422,12 @@ msgstr ""
 #: ../qml/Pages/SettingsPage.qml:234
 msgctxt "SettingsPage|"
 msgid "Desktop Mode"
-msgstr ""
+msgstr "桌面模式"
 
 #: ../qml/Utils/ItemUtils.qml:236
 msgctxt "ItemUtils|"
 msgid "Copy Item Into..."
-msgstr ""
+msgstr "將項目複製到..."
 
 #: ../qml/Utils/ItemUtils.qml:253
 msgctxt "ItemUtils|"
@@ -2437,12 +2437,12 @@ msgstr ""
 #: ../qml/Pages/NewLibraryInFolderPage.qml:74
 msgctxt "NewLibraryInFolderPage|"
 msgid "Select a Folder"
-msgstr ""
+msgstr "選擇資料夾"
 
 #: ../qml/Pages/LibraryPage.qml:285
 msgctxt "LibraryPage|"
 msgid "Select Image"
-msgstr ""
+msgstr "選擇圖片"
 
 #: ../qml/Pages/TodoListPage.qml:215
 msgctxt "TodoListPage|"
@@ -2472,22 +2472,22 @@ msgstr ""
 #: ../qml/Pages/AccountTypeSelectionPage.qml:70
 msgctxt "AccountTypeSelectionPage|"
 msgid "Dropbox"
-msgstr ""
+msgstr "Dropbox"
 
 #: ../../lib/application.cpp:220
 msgctxt "Application|"
 msgid "Background Sync"
-msgstr ""
+msgstr "背景同步"
 
 #: ../../lib/application.cpp:224
 msgctxt "Application|"
 msgid "App continues to sync your data in the background"
-msgstr ""
+msgstr "正在背景同步您的數據"
 
 #: ../../lib/application.cpp:228
 msgctxt "Application|"
 msgid "Quit"
-msgstr ""
+msgstr "離開"
 
 #: ../../lib/datastorage/copyitemquery.cpp:120
 msgctxt "CopyItemQuery|"
@@ -2498,7 +2498,7 @@ msgstr ""
 #: ../qml/Pages/EditDropboxAccountPage.qml:65
 msgctxt "EditDropboxAccountPage|"
 msgid "Connection Settings"
-msgstr ""
+msgstr "連接設定"
 
 #: ../qml/Pages/EditDropboxAccountPage.qml:73
 msgctxt "EditDropboxAccountPage|"
@@ -2518,7 +2518,7 @@ msgstr ""
 #: ../qml/Pages/EditDropboxAccountPage.qml:95
 msgctxt "EditDropboxAccountPage|"
 msgid "Authorize..."
-msgstr ""
+msgstr "授權..."
 
 #: ../qml/Pages/EditDropboxAccountPage.qml:104
 msgctxt "EditDropboxAccountPage|"
@@ -2528,28 +2528,28 @@ msgstr ""
 #: ../qml/Pages/EditDropboxAccountPage.qml:110
 msgctxt "EditDropboxAccountPage|"
 msgid "Copy Link"
-msgstr ""
+msgstr "複製連結"
 
 #: ../qml/Pages/EditDropboxAccountPage.qml:114
 msgctxt "EditDropboxAccountPage|"
 msgid "Copied!"
-msgstr ""
+msgstr "已複製！"
 
 #: ../qml/Pages/EditDropboxAccountPage.qml:123
 msgctxt "EditDropboxAccountPage|"
 msgid "Name:"
-msgstr ""
+msgstr "名稱："
 
 #: ../qml/Pages/EditDropboxAccountPage.qml:130
 msgctxt "EditDropboxAccountPage|"
 msgid "Dropbox"
-msgstr ""
+msgstr "Dropbox"
 
 #: ../qml/Pages/NewDropboxAccountPage.qml:20
 #: ../qml/Pages/NewDropboxAccountPage.qml:53
 msgctxt "NewDropboxAccountPage|"
 msgid "Connection Settings"
-msgstr ""
+msgstr "連接設定"
 
 #: ../qml/Pages/NewDropboxAccountPage.qml:61
 msgctxt "NewDropboxAccountPage|"
@@ -2569,7 +2569,7 @@ msgstr ""
 #: ../qml/Pages/NewDropboxAccountPage.qml:85
 msgctxt "NewDropboxAccountPage|"
 msgid "Authorize..."
-msgstr ""
+msgstr "授權..."
 
 #: ../qml/Pages/NewDropboxAccountPage.qml:94
 msgctxt "NewDropboxAccountPage|"
@@ -2579,27 +2579,27 @@ msgstr ""
 #: ../qml/Pages/NewDropboxAccountPage.qml:100
 msgctxt "NewDropboxAccountPage|"
 msgid "Copy Link"
-msgstr ""
+msgstr "複製連結"
 
 #: ../qml/Pages/NewDropboxAccountPage.qml:104
 msgctxt "NewDropboxAccountPage|"
 msgid "Copied!"
-msgstr ""
+msgstr "已複製！"
 
 #: ../qml/Pages/NewDropboxAccountPage.qml:113
 msgctxt "NewDropboxAccountPage|"
 msgid "Name:"
-msgstr ""
+msgstr "名稱："
 
 #: ../qml/Pages/NewDropboxAccountPage.qml:120
 msgctxt "NewDropboxAccountPage|"
 msgid "Dropbox"
-msgstr ""
+msgstr "Dropbox"
 
 #: ../../lib/utils/translations.cpp:91
 msgctxt "OpenTodoList::Translations|"
 msgid "System Language"
-msgstr ""
+msgstr "系統語言"
 
 #: ../Windows/EmbeddedWebViewDialog/EmbeddedWebViewDialog.qml:15
 msgctxt "EmbeddedWebViewDialog|"
@@ -2639,17 +2639,17 @@ msgstr ""
 #: ../qml/Pages/StartPage.qml:70
 msgctxt "StartPage|"
 msgid "Add a new library"
-msgstr ""
+msgstr "建立新書庫"
 
 #: ../qml/Pages/StartPage.qml:89
 msgctxt "StartPage|"
 msgid "Accounts"
-msgstr ""
+msgstr "帳號"
 
 #: ../qml/Pages/StartPage.qml:111
 msgctxt "StartPage|"
 msgid "Add an account"
-msgstr ""
+msgstr "加入帳號"
 
 #: ../qml/Pages/LogViewPage.qml:68
 msgctxt "LogViewPage|"
@@ -2659,7 +2659,7 @@ msgstr ""
 #: ../qml/Pages/LogViewPage.qml:70
 msgctxt "LogViewPage|"
 msgid "Warning"
-msgstr ""
+msgstr "警告"
 
 #: ../qml/Pages/LogViewPage.qml:72
 msgctxt "LogViewPage|"
@@ -2669,7 +2669,7 @@ msgstr ""
 #: ../qml/Pages/LogViewPage.qml:74
 msgctxt "LogViewPage|"
 msgid "Download"
-msgstr ""
+msgstr "下載"
 
 #: ../qml/Pages/LogViewPage.qml:76
 msgctxt "LogViewPage|"
@@ -2689,12 +2689,12 @@ msgstr ""
 #: ../qml/Pages/LogViewPage.qml:82
 msgctxt "LogViewPage|"
 msgid "Deleting locally"
-msgstr ""
+msgstr "本地刪除"
 
 #: ../qml/Pages/LogViewPage.qml:84
 msgctxt "LogViewPage|"
 msgid "Deleting remotely"
-msgstr ""
+msgstr "遠端刪除"
 
 #: ../qml/Pages/LogViewPage.qml:86
 msgctxt "LogViewPage|"
@@ -2744,7 +2744,7 @@ msgstr ""
 #: ../qml/Components/Tooltips/AllSubtasksDone.qml:13
 msgctxt "AllSubtasksDone|"
 msgid "Everything in %1 done! Do you want to mark it as well as done?"
-msgstr ""
+msgstr "%1 中的所有內容都已完成！是否也將其標記為已完成？"
 
 #: ../qml/Components/Tooltips/AllSubtasksDone.qml:20
 msgctxt "AllSubtasksDone|"
@@ -2764,12 +2764,12 @@ msgstr ""
 #: ../qml/Widgets/ApplicationMenu.qml:87
 msgctxt "ApplicationMenu|"
 msgid "Edit"
-msgstr ""
+msgstr "編輯"
 
 #: ../qml/Widgets/ApplicationMenu.qml:158
 msgctxt "ApplicationMenu|"
 msgid "Navigate"
-msgstr ""
+msgstr "導航"
 
 #: ../qml/Widgets/ApplicationMenu.qml:197
 msgctxt "ApplicationMenu|"
@@ -2779,42 +2779,42 @@ msgstr ""
 #: ../qml/Components/ApplicationShortcuts.qml:18
 msgctxt "ApplicationShortcuts|"
 msgid "About"
-msgstr ""
+msgstr "關於"
 
 #: ../qml/Components/ApplicationShortcuts.qml:27
 msgctxt "ApplicationShortcuts|"
 msgid "About Qt"
-msgstr ""
+msgstr "關於Qt"
 
 #: ../qml/Components/ApplicationShortcuts.qml:35
 msgctxt "ApplicationShortcuts|"
 msgid "Accounts"
-msgstr ""
+msgstr "帳號"
 
 #: ../qml/Components/ApplicationShortcuts.qml:43
 msgctxt "ApplicationShortcuts|"
 msgid "Add Tag"
-msgstr ""
+msgstr "加入標籤"
 
 #: ../qml/Components/ApplicationShortcuts.qml:51
 msgctxt "ApplicationShortcuts|"
 msgid "Attach File"
-msgstr ""
+msgstr "附加檔案"
 
 #: ../qml/Components/ApplicationShortcuts.qml:59
 msgctxt "ApplicationShortcuts|"
 msgid "Backup"
-msgstr ""
+msgstr "備份"
 
 #: ../qml/Components/ApplicationShortcuts.qml:66
 msgctxt "ApplicationShortcuts|"
 msgid "Close"
-msgstr ""
+msgstr "關閉"
 
 #: ../qml/Components/ApplicationShortcuts.qml:73
 msgctxt "ApplicationShortcuts|"
 msgid "Copy"
-msgstr ""
+msgstr "複製"
 
 #: ../qml/Components/ApplicationShortcuts.qml:81
 msgctxt "ApplicationShortcuts|"
@@ -2829,17 +2829,17 @@ msgstr ""
 #: ../qml/Components/ApplicationShortcuts.qml:159
 msgctxt "ApplicationShortcuts|"
 msgid "Delete"
-msgstr ""
+msgstr "刪除"
 
 #: ../qml/Components/ApplicationShortcuts.qml:167
 msgctxt "ApplicationShortcuts|"
 msgid "Delete Completed Items"
-msgstr ""
+msgstr "刪除完成的項目"
 
 #: ../qml/Components/ApplicationShortcuts.qml:175
 msgctxt "ApplicationShortcuts|"
 msgid "Due Date"
-msgstr ""
+msgstr "截止期限"
 
 #: ../qml/Components/ApplicationShortcuts.qml:183
 msgctxt "ApplicationShortcuts|"
@@ -2849,7 +2849,7 @@ msgstr ""
 #: ../qml/Components/ApplicationShortcuts.qml:190
 msgctxt "ApplicationShortcuts|"
 msgid "Back"
-msgstr ""
+msgstr "返回"
 
 #: ../qml/Components/ApplicationShortcuts.qml:207
 msgctxt "ApplicationShortcuts|"
@@ -2869,12 +2869,12 @@ msgstr ""
 #: ../qml/Components/ApplicationShortcuts.qml:237
 msgctxt "ApplicationShortcuts|"
 msgid "Move"
-msgstr ""
+msgstr "移動"
 
 #: ../qml/Components/ApplicationShortcuts.qml:245
 msgctxt "ApplicationShortcuts|"
 msgid "New Library"
-msgstr ""
+msgstr "新書庫"
 
 #: ../qml/Components/ApplicationShortcuts.qml:253
 msgctxt "ApplicationShortcuts|"
@@ -2894,7 +2894,7 @@ msgstr ""
 #: ../qml/Components/ApplicationShortcuts.qml:274
 msgctxt "ApplicationShortcuts|"
 msgid "Quit"
-msgstr ""
+msgstr "離開"
 
 #: ../qml/Components/ApplicationShortcuts.qml:280
 msgctxt "ApplicationShortcuts|"
@@ -2904,7 +2904,7 @@ msgstr ""
 #: ../qml/Components/ApplicationShortcuts.qml:288
 msgctxt "ApplicationShortcuts|"
 msgid "Preferences"
-msgstr ""
+msgstr "偏好設定"
 
 #: ../qml/Components/ApplicationShortcuts.qml:309
 msgctxt "ApplicationShortcuts|"
@@ -2929,22 +2929,22 @@ msgstr ""
 #: ../qml/Components/ApplicationShortcuts.qml:337
 msgctxt "ApplicationShortcuts|"
 msgid "Sort"
-msgstr ""
+msgstr "分類"
 
 #: ../qml/Components/ApplicationShortcuts.qml:345
 msgctxt "ApplicationShortcuts|"
 msgid "Sync Now"
-msgstr ""
+msgstr "現在同步"
 
 #: ../qml/Components/ApplicationShortcuts.qml:358
 msgctxt "ApplicationShortcuts|"
 msgid "Sync Log"
-msgstr ""
+msgstr "同步日誌"
 
 #: ../qml/Components/ApplicationShortcuts.qml:369
 msgctxt "ApplicationShortcuts|"
 msgid "Translate The App..."
-msgstr ""
+msgstr "翻譯此應用程式..."
 
 #: ../qml/Components/ApplicationToolBar.qml:87
 msgctxt "ApplicationToolBar|"
@@ -2954,17 +2954,17 @@ msgstr ""
 #: ../qml/Widgets/ItemNotesEditor.qml:106
 msgctxt "ItemNotesEditor|"
 msgid "Copy"
-msgstr ""
+msgstr "複製"
 
 #: ../qml/Widgets/ItemNotesEditor.qml:113
 msgctxt "ItemNotesEditor|"
 msgid "Copy Formatted Text"
-msgstr ""
+msgstr "複製格式化文字"
 
 #: ../qml/Widgets/ItemNotesEditor.qml:129
 msgctxt "ItemNotesEditor|"
 msgid "Copy Plain Text"
-msgstr ""
+msgstr "複製純文字"
 
 #: ../qml/Widgets/LibrariesSideBar.qml:293
 msgctxt "LibrariesSideBar|"
@@ -3014,7 +3014,7 @@ msgstr ""
 #: ../qml/Actions/MoveTask.qml:12
 msgctxt "MoveTask|"
 msgid "Move"
-msgstr ""
+msgstr "移動"
 
 #: ../qml/Windows/SelectTodoDialog.qml:22
 msgctxt "SelectTodoDialog|"
@@ -3039,7 +3039,7 @@ msgstr ""
 #: ../qml/Pages/SettingsPage.qml:151 ../qml/Pages/SettingsPage.qml:171
 msgctxt "SettingsPage|"
 msgid "Select"
-msgstr ""
+msgstr "選擇"
 
 #: ../qml/Pages/SettingsPage.qml:165
 msgctxt "SettingsPage|"

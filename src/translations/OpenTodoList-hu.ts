@@ -29,11 +29,6 @@
         <translation>Jelentsen egy problémát</translation>
     </message>
     <message>
-        <location filename="../Pages/AboutPage.qml" line="92"/>
-        <source>Copy System Information</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Pages/AboutPage.qml" line="114"/>
         <source>Third Party Libraries and Resources</source>
         <translation>Harmadik féltől származó könyvtárak és források</translation>
@@ -67,6 +62,11 @@
         <location filename="../Pages/AboutPage.qml" line="178"/>
         <source>&lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</source>
         <translation>&lt;a href=&apos;%1&apos;&gt;%1&lt;/a&gt;</translation>
+    </message>
+    <message>
+        <location filename="../Pages/AboutPage.qml" line="92"/>
+        <source>Copy System Information</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -175,17 +175,17 @@
 <context>
     <name>Application</name>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="223"/>
         <source>Background Sync</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="226"/>
+        <location filename="../application.cpp" line="227"/>
         <source>App continues to sync your data in the background</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="230"/>
+        <location filename="../application.cpp" line="231"/>
         <source>Quit</source>
         <translation type="unfinished">Kilépés</translation>
     </message>
@@ -624,7 +624,7 @@
         <location filename="../Pages/EditDropboxAccountPage.qml" line="26"/>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="65"/>
         <source>Connection Settings</source>
-        <translation type="unfinished">Csatlakozási beállítások</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="73"/>
@@ -762,7 +762,7 @@
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="152"/>
         <source>User Name</source>
-        <translation type="unfinished">Felhasználó neve</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="159"/>
@@ -782,7 +782,7 @@
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="184"/>
         <source>Failed to connect to the server. Please check your user name, password and the server address and retry.</source>
-        <translation type="unfinished">Nem sikerült kapcsolódni a szerverhez. Kérjük, ellenőrizze felhasználónevét, jelszavát és a szerver címét, majd próbálja újra.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -836,14 +836,14 @@
         <translation>Minden hónapban ismétlődik.</translation>
     </message>
     <message>
-        <location filename="../Widgets/ItemDueDateEditor.qml" line="96"/>
-        <source>Recurs every year.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Widgets/ItemDueDateEditor.qml" line="98"/>
         <source>Recurs every %1 days.</source>
         <translation>Minden %1 naponként megismétlődik.</translation>
+    </message>
+    <message>
+        <location filename="../Widgets/ItemDueDateEditor.qml" line="96"/>
+        <source>Recurs every year.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Widgets/ItemDueDateEditor.qml" line="101"/>
@@ -879,21 +879,6 @@
         <translation>Még nincs jegyzet hozzáadva - kattintson ide ide, ha hozzá szeretne adni.</translation>
     </message>
     <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="106"/>
-        <source>Copy</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="113"/>
-        <source>Copy Formatted Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Widgets/ItemNotesEditor.qml" line="129"/>
-        <source>Copy Plain Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Widgets/ItemNotesEditor.qml" line="160"/>
         <source>Export to File...</source>
         <translation>Exportálás a fájlba ...</translation>
@@ -908,17 +893,27 @@
         <source>All files</source>
         <translation>Minden fájl</translation>
     </message>
+    <message>
+        <location filename="../Widgets/ItemNotesEditor.qml" line="106"/>
+        <source>Copy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Widgets/ItemNotesEditor.qml" line="113"/>
+        <source>Copy Formatted Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Widgets/ItemNotesEditor.qml" line="129"/>
+        <source>Copy Plain Text</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ItemUtils</name>
     <message>
         <location filename="../Utils/ItemUtils.qml" line="189"/>
         <source>Move Todo Into...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Utils/ItemUtils.qml" line="204"/>
-        <source>Move Task Into...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -934,6 +929,11 @@
     <message>
         <location filename="../Utils/ItemUtils.qml" line="252"/>
         <source>Copy Todo Into...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Utils/ItemUtils.qml" line="204"/>
+        <source>Move Task Into...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -956,11 +956,6 @@
         <translation>Lista szerkesztése</translation>
     </message>
     <message>
-        <location filename="../Widgets/LibrariesSideBar.qml" line="93"/>
-        <source>Donate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Widgets/LibrariesSideBar.qml" line="190"/>
         <source>Hide Schedule</source>
         <translation>Ütemterv elrejtése</translation>
@@ -979,6 +974,11 @@
         <location filename="../Widgets/LibrariesSideBar.qml" line="210"/>
         <source>Move Down</source>
         <translation>Sorrendben lejebb</translation>
+    </message>
+    <message>
+        <location filename="../Widgets/LibrariesSideBar.qml" line="93"/>
+        <source>Donate</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Widgets/LibrariesSideBar.qml" line="291"/>
@@ -1047,11 +1047,6 @@
         <translation>Átnevezés</translation>
     </message>
     <message>
-        <location filename="../Pages/LibraryPage.qml" line="298"/>
-        <source>Copy</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Pages/LibraryPage.qml" line="304"/>
         <source>Delete</source>
         <translation>Töröl</translation>
@@ -1110,6 +1105,11 @@
         <location filename="../Pages/LibraryPage.qml" line="605"/>
         <source>Updated At</source>
         <translation>Frissítve</translation>
+    </message>
+    <message>
+        <location filename="../Pages/LibraryPage.qml" line="298"/>
+        <source>Copy</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Pages/LibraryPage.qml" line="318"/>
@@ -1228,7 +1228,7 @@
         <location filename="../Pages/NewDropboxAccountPage.qml" line="20"/>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="53"/>
         <source>Connection Settings</source>
-        <translation type="unfinished">Csatlakozási beállítások</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="61"/>
@@ -1314,11 +1314,6 @@
         <translation>Az új tétel címe ...</translation>
     </message>
     <message>
-        <location filename="../Windows/NewItemWithDueDateDialog.qml" line="149"/>
-        <source>Library</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Windows/NewItemWithDueDateDialog.qml" line="185"/>
         <source>Create in:</source>
         <translation>Létrehozás:</translation>
@@ -1327,6 +1322,11 @@
         <location filename="../Windows/NewItemWithDueDateDialog.qml" line="226"/>
         <source>Due on:</source>
         <translation>Esedékes:</translation>
+    </message>
+    <message>
+        <location filename="../Windows/NewItemWithDueDateDialog.qml" line="149"/>
+        <source>Library</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1602,20 +1602,20 @@
         <translation>Felhasználónév</translation>
     </message>
     <message>
-        <location filename="../Pages/NewWebDAVAccountPage.qml" line="111"/>
-        <source>https://myserver.example.com</source>
-        <translation type="unfinished">https://myserver.example.com</translation>
-    </message>
-    <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="28"/>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="99"/>
         <source>Connection Settings</source>
-        <translation type="unfinished">Csatlakozási beállítások</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="105"/>
         <source>Server Address:</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/NewWebDAVAccountPage.qml" line="111"/>
+        <source>https://myserver.example.com</source>
+        <translation type="unfinished">https://myserver.example.com</translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="117"/>
@@ -1625,7 +1625,7 @@
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="123"/>
         <source>User Name</source>
-        <translation type="unfinished">Felhasználó neve</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="129"/>
@@ -1650,7 +1650,7 @@
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="171"/>
         <source>Failed to connect to the server. Please check your user name, password and the server address and retry.</source>
-        <translation type="unfinished">Nem sikerült kapcsolódni a szerverhez. Kérjük, ellenőrizze felhasználónevét, jelszavát és a szerver címét, majd próbálja újra.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1690,6 +1690,12 @@
         <translation>Hiányoznak a fiók hozzáférési adatai</translation>
     </message>
     <message>
+        <location filename="../Pages/ProblemsPage.qml" line="18"/>
+        <location filename="../Pages/ProblemsPage.qml" line="28"/>
+        <source>Problems Detected</source>
+        <translation type="unfinished">Felismert problémák</translation>
+    </message>
+    <message>
         <location filename="../Pages/ProblemsPage.qml" line="47"/>
         <source>Synchronization failed for library</source>
         <translation type="unfinished"></translation>
@@ -1698,12 +1704,6 @@
         <location filename="../Pages/ProblemsPage.qml" line="91"/>
         <source>Retry Sync</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/ProblemsPage.qml" line="18"/>
-        <location filename="../Pages/ProblemsPage.qml" line="28"/>
-        <source>Problems Detected</source>
-        <translation type="unfinished">Felismert problémák</translation>
     </message>
 </context>
 <context>
@@ -1746,11 +1746,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Windows/QuickNoteWindow.qml" line="70"/>
-        <source>Type your notes here...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Windows/QuickNoteWindow.qml" line="121"/>
         <source>Save</source>
         <translation type="unfinished"></translation>
@@ -1766,11 +1761,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Windows/QuickNoteWindow.qml" line="152"/>
-        <source>Quick Note</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Windows/QuickNoteWindow.qml" line="161"/>
         <source>Save as Todo List</source>
         <translation type="unfinished"></translation>
@@ -1778,6 +1768,16 @@
     <message>
         <location filename="../Windows/QuickNoteWindow.qml" line="165"/>
         <source>Quick Todo List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Windows/QuickNoteWindow.qml" line="152"/>
+        <source>Quick Note</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Windows/QuickNoteWindow.qml" line="70"/>
+        <source>Type your notes here...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1817,24 +1817,9 @@
         <translation>Havi</translation>
     </message>
     <message>
-        <location filename="../Windows/RecurrenceDialog.qml" line="60"/>
-        <source>Yearly</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Windows/RecurrenceDialog.qml" line="64"/>
         <source>Every N Days</source>
         <translation>Minden N nap</translation>
-    </message>
-    <message>
-        <location filename="../Windows/RecurrenceDialog.qml" line="68"/>
-        <source>Every N Weeks</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Windows/RecurrenceDialog.qml" line="72"/>
-        <source>Every N Months</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Windows/RecurrenceDialog.qml" line="98"/>
@@ -1847,6 +1832,26 @@
         <translation>Napok száma:</translation>
     </message>
     <message>
+        <location filename="../Windows/RecurrenceDialog.qml" line="142"/>
+        <source>Recur relative to the date when marking as done</source>
+        <translation>Ismételje meg a dátumhoz képest, amikor megjelölés befejeződött</translation>
+    </message>
+    <message>
+        <location filename="../Windows/RecurrenceDialog.qml" line="60"/>
+        <source>Yearly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Windows/RecurrenceDialog.qml" line="68"/>
+        <source>Every N Weeks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Windows/RecurrenceDialog.qml" line="72"/>
+        <source>Every N Months</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../Windows/RecurrenceDialog.qml" line="118"/>
         <source>Number of weeks:</source>
         <translation type="unfinished"></translation>
@@ -1855,11 +1860,6 @@
         <location filename="../Windows/RecurrenceDialog.qml" line="120"/>
         <source>Number of months:</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Windows/RecurrenceDialog.qml" line="142"/>
-        <source>Recur relative to the date when marking as done</source>
-        <translation>Ismételje meg a dátumhoz képest, amikor megjelölés befejeződött</translation>
     </message>
 </context>
 <context>
@@ -2060,31 +2060,6 @@
         <translation type="unfinished">Külalak:</translation>
     </message>
     <message>
-        <location filename="../Pages/SettingsPage.qml" line="143"/>
-        <source>Custom Primary Color:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="165"/>
-        <source>Custom Secondary Color:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="189"/>
-        <source>System Tray:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="194"/>
-        <source>Monochrome Icon</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="202"/>
-        <source>Open Quick Notes Editor on Click</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Pages/SettingsPage.qml" line="208"/>
         <source>Font Size:</source>
         <translation type="unfinished">Betűnagyság</translation>
@@ -2092,11 +2067,6 @@
     <message>
         <location filename="../Pages/SettingsPage.qml" line="225"/>
         <source>Use custom font size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/SettingsPage.qml" line="234"/>
-        <source>Desktop Mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2144,8 +2114,33 @@ This requires a restart of the app.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../Pages/SettingsPage.qml" line="189"/>
+        <source>System Tray:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="202"/>
+        <source>Open Quick Notes Editor on Click</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="234"/>
+        <source>Desktop Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../Pages/SettingsPage.qml" line="329"/>
         <source>Show notes excerpt in listings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="194"/>
+        <source>Monochrome Icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="143"/>
+        <source>Custom Primary Color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2153,6 +2148,11 @@ This requires a restart of the app.</source>
         <location filename="../Pages/SettingsPage.qml" line="171"/>
         <source>Select</source>
         <translation type="unfinished">Választ</translation>
+    </message>
+    <message>
+        <location filename="../Pages/SettingsPage.qml" line="165"/>
+        <source>Custom Secondary Color:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2215,14 +2215,14 @@ This requires a restart of the app.</source>
 <context>
     <name>TodoListItem</name>
     <message>
-        <location filename="../Widgets/TodoListItem.qml" line="77"/>
-        <source>Due on %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../Widgets/TodoListItem.qml" line="134"/>
         <source>✔ No open todos - everything done</source>
         <translation>✔ Nincs nyitott todos - minden kész</translation>
+    </message>
+    <message>
+        <location filename="../Widgets/TodoListItem.qml" line="77"/>
+        <source>Due on %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2231,16 +2231,6 @@ This requires a restart of the app.</source>
         <location filename="../Pages/TodoListPage.qml" line="164"/>
         <source>Search term 1, search term 2, ...</source>
         <translation>1. keresési kifejezés, 2. keresési kifejezés, ...</translation>
-    </message>
-    <message>
-        <location filename="../Pages/TodoListPage.qml" line="213"/>
-        <source>Show Completed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Pages/TodoListPage.qml" line="221"/>
-        <source>Show At The End</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Pages/TodoListPage.qml" line="251"/>
@@ -2276,6 +2266,16 @@ This requires a restart of the app.</source>
         <location filename="../Pages/TodoListPage.qml" line="200"/>
         <source>Updated At</source>
         <translation>Frissítve</translation>
+    </message>
+    <message>
+        <location filename="../Pages/TodoListPage.qml" line="213"/>
+        <source>Show Completed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Pages/TodoListPage.qml" line="221"/>
+        <source>Show At The End</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

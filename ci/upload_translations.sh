@@ -15,4 +15,4 @@ rm -rf .venv-upload-translations
 python3 -m venv .venv-upload-translations
 . .venv-upload-translations/bin/activate
 pip install poeditor fire
-./bin/poeditor-client.py upload $POEDITOR_TOKEN
+python3 ./bin/poeditor-client.py upload $POEDITOR_TOKEN

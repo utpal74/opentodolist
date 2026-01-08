@@ -166,7 +166,7 @@ msgstr "اختر مجلد"
 #: ../qml/Widgets/ItemCreatedNotification.qml:68
 msgctxt "ItemCreatedNotification|"
 msgid "<strong>%1</strong> has been created."
-msgstr "<strong>%1</strong> has been created."
+msgstr " تم أنشاء <strong>%1</strong> ."
 
 #: ../qml/Widgets/ItemCreatedNotification.qml:74
 msgctxt "ItemCreatedNotification|"
@@ -176,7 +176,7 @@ msgstr "فتح"
 #: ../qml/Widgets/ItemDueDateEditor.qml:31
 msgctxt "ItemDueDateEditor|"
 msgid "Due on"
-msgstr "واجب فى"
+msgstr "استحقاق"
 
 #: ../qml/Widgets/ItemNotesEditor.qml:28
 msgctxt "ItemNotesEditor|"
@@ -207,7 +207,7 @@ msgstr "احمر"
 #: ../qml/Pages/LibraryPage.qml:217
 msgctxt "LibraryPage|"
 msgid "Green"
-msgstr "أخر"
+msgstr "أخضر"
 
 #: ../qml/Pages/LibraryPage.qml:224
 msgctxt "LibraryPage|"
@@ -252,7 +252,7 @@ msgstr "عنوان الملاحظة"
 #: ../qml/Pages/LibraryPage.qml:368
 msgctxt "LibraryPage|"
 msgid "Todo List Title"
-msgstr "عنوان قائمة المهام "
+msgstr "عنوان قائمة المهام"
 
 #: ../qml/Pages/LibraryPage.qml:381
 msgctxt "LibraryPage|"
@@ -267,17 +267,17 @@ msgstr "لا شيء هنا بعد! ابدأ بإضافة <a href='#note'> ملا
 #: ../Menues/LibraryPageMenu.qml:18
 msgctxt "LibraryPageMenu|"
 msgid "Edit Sync Settings"
-msgstr ""
+msgstr "تعديل إعدادات المزامنة"
 
 #: ../Menues/LibraryPageMenu.qml:20
 msgctxt "LibraryPageMenu|"
 msgid "Sync Now"
-msgstr ""
+msgstr "المزامنة الآن"
 
 #: ../Menues/LibraryPageMenu.qml:29
 msgctxt "LibraryPageMenu|"
 msgid "Sync Log"
-msgstr ""
+msgstr "سجل المزامنة"
 
 #: ../Widgets/LibrarySecretsMissingNotificationBar.qml:36
 msgctxt "LibrarySecretsMissingNotificationBar|"
@@ -287,27 +287,27 @@ msgstr ""
 #: ../Widgets/LibrarySecretsMissingNotificationBar.qml:41
 msgctxt "LibrarySecretsMissingNotificationBar|"
 msgid "Ignore"
-msgstr ""
+msgstr "تجاهل"
 
 #: ../Widgets/LibrarySecretsMissingNotificationBar.qml:45
 msgctxt "LibrarySecretsMissingNotificationBar|"
 msgid "Enter Secrets"
-msgstr ""
+msgstr "إضافة أسرار"
 
 #: ../qml/Pages/LogViewPage.qml:13
 msgctxt "LogViewPage|"
 msgid "Synchronization Log"
-msgstr ""
+msgstr "سجل المزامنة"
 
 #: ../Pages/LogViewPage.qml:22
 msgctxt "LogViewPage|"
 msgid "Copy Log"
-msgstr ""
+msgstr "نسخ السجل"
 
 #: ../qml/Windows/MainWindow.qml:23
 msgctxt "MainWindow|"
 msgid "OpenTodoList"
-msgstr ""
+msgstr "فتح قائمة المهام"
 
 #: ../Windows/MainWindow.qml:451
 msgctxt "MainWindow|"
@@ -352,122 +352,122 @@ msgstr ""
 #: ../qml/Windows/MainWindow.qml:197
 msgctxt "MainWindow|"
 msgid "Start by <a href='#newLibrary'>creating a new library</a>. Libraries are used to store different kinds of items like notes, todo lists and images."
-msgstr ""
+msgstr "إبدأ بإنشاء مكتبة جديدة. استخدم المكتبات للاحتفاظ بكل الأشياء مثل الملاحظات والمهمات والصور."
 
 #: ../qml/Pages/NewLibraryPage.qml:22 ../qml/Pages/NewLibraryPage.qml:62
 msgctxt "NewLibraryPage|"
 msgid "Create Library"
-msgstr ""
+msgstr "إنشاء مكتبة"
 
 #: ../Pages/NewLibraryPage.qml:23
 msgctxt "NewLibraryPage|"
 msgid "Create"
-msgstr ""
+msgstr "إنشاء"
 
 #: ../Pages/NewLibraryPage.qml:39
 msgctxt "NewLibraryPage|"
 msgid "Cancel"
-msgstr ""
+msgstr "إلغاء"
 
 #: ../Pages/NewLibraryPage.qml:58
 msgctxt "NewLibraryPage|"
 msgid "Library Name:"
-msgstr ""
+msgstr "إسم المكتبة:"
 
 #: ../Pages/NewLibraryPage.qml:66
 msgctxt "NewLibraryPage|"
 msgid "My New Library"
-msgstr ""
+msgstr "مكتبتي الجديدة"
 
 #: ../Pages/NewLibraryPage.qml:73
 msgctxt "NewLibraryPage|"
 msgid "Create Library in Default Location"
-msgstr ""
+msgstr "إنشاء مكتبة في المكان الافتراضي"
 
 #: ../Pages/NewLibraryPage.qml:80
 msgctxt "NewLibraryPage|"
 msgid "The items you add to the library will be stored in the default location for libraries."
-msgstr ""
+msgstr "الأشياء التي تضيفها للمكتبة سيتم تخزينها في المكان الافتراضي للمكتبات."
 
 #: ../Pages/NewLibraryPage.qml:82
 msgctxt "NewLibraryPage|"
 msgid "Please select a directory into which the library items shall be saved. You can also select an existing library directory. In this case, the library will be imported."
-msgstr ""
+msgstr "فضلاً اختر مكان حفظ أشياء المكتبة. بإمكانك أيضاً تحديد مكتبة موجودة بالفعل، وسيتم استيرادها مباشرة للبرنامج."
 
 #: ../Pages/NewLibraryPage.qml:110
 msgctxt "NewLibraryPage|"
 msgid "Please select a library location"
-msgstr ""
+msgstr "فضلاً اختر مكان المكتبة"
 
 #: ../qml/Widgets/NewTopLevelItemButton.qml:52
 msgctxt "NewTopLevelItemButton|"
 msgid "Note"
-msgstr ""
+msgstr "ملاحظة"
 
 #: ../qml/Widgets/NewTopLevelItemButton.qml:41
 msgctxt "NewTopLevelItemButton|"
 msgid "Todo List"
-msgstr ""
+msgstr "قائمة مهام"
 
 #: ../qml/Widgets/NewTopLevelItemButton.qml:56
 msgctxt "NewTopLevelItemButton|"
 msgid "Image"
-msgstr ""
+msgstr "صورة"
 
 #: ../Windows/OpenFileDialog.qml:18
 msgctxt "OpenFileDialog|"
 msgid "Select a File"
-msgstr ""
+msgstr "أضف ملف"
 
 #: ../Windows/+ios/OpenImageDialog.qml:19 ../Windows/OpenImageDialog.qml:19
 msgctxt "OpenImageDialog|"
 msgid "Select Image"
-msgstr ""
+msgstr "حدد صورة"
 
 #: ../qml/Windows/RenameItemDialog.qml:21
 msgctxt "RenameItemDialog|"
 msgid "Rename Item"
-msgstr ""
+msgstr "إعادة تسمية"
 
 #: ../qml/Windows/RenameItemDialog.qml:32
 msgctxt "RenameItemDialog|"
 msgid "Enter item title..."
-msgstr ""
+msgstr "اكتب الاسم…"
 
 #: ../qml/Windows/RenameLibraryDialog.qml:19
 msgctxt "RenameLibraryDialog|"
 msgid "Rename Library"
-msgstr ""
+msgstr "إعادة تسمية المكتبة"
 
 #: ../qml/Windows/RenameLibraryDialog.qml:36
 msgctxt "RenameLibraryDialog|"
 msgid "Enter library title..."
-msgstr ""
+msgstr "اسم المكتبة…"
 
 #: ../qml/Pages/ScheduleViewPage.qml:147
 msgctxt "ScheduleViewPage|"
 msgid "Today"
-msgstr ""
+msgstr "اليوم"
 
 #: ../qml/Pages/ScheduleViewPage.qml:148
 msgctxt "ScheduleViewPage|"
 msgid "Tomorrow"
-msgstr ""
+msgstr "غداً"
 
 #: ../qml/Pages/ScheduleViewPage.qml:184
 msgctxt "ScheduleViewPage|"
 msgid "Later This Week"
-msgstr ""
+msgstr "لاحقاً هذا الأسبوع"
 
 #: ../qml/Pages/ScheduleViewPage.qml:186
 msgctxt "ScheduleViewPage|"
 msgid "Next Week"
-msgstr ""
+msgstr "الأسبوع القادم"
 
 #: ../qml/Pages/ScheduleViewPage.qml:187
 msgctxt "ScheduleViewPage|"
 msgid "Coming Next"
-msgstr ""
+msgstr "المهمات القادمة"
 
 #: ../qml/Pages/ScheduleViewPage.qml:266
 msgctxt "ScheduleViewPage|"
