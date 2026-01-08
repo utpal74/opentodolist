@@ -107,6 +107,7 @@ const QString& DropboxAccount::accessToken() const
  * tokensVerified() signal. If the outcome is that the tokens stored are no
  * longer valid, the user has to grant access again via the oAuth flow.
  */
+// cppcheck-suppress functionStatic
 void DropboxAccount::verifyTokens() {}
 
 void DropboxAccount::setAccessToken(const QString& newAccessToken)

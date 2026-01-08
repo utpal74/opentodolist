@@ -184,6 +184,7 @@ void Application::initialize()
 }
 
 #ifndef Q_OS_IOS
+// cppcheck-suppress functionStatic
 void Application::disableIOSBackup() {}
 #endif
 
