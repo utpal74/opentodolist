@@ -13,7 +13,7 @@ python3 -m venv .venv-download-translations
 . .venv-download-translations/bin/activate
 
 pip install poeditor fire
-python ./bin/poeditor-client.py download $POEDITOR_TOKEN app/translations
+python ./bin/poeditor-client.py download $POEDITOR_TOKEN src/translations
 
 if [ -z "$QT_PATH" ]; then
     QT_PATH=/usr/lib64/qt6/bin
@@ -36,7 +36,7 @@ if [ -n "$CI" ]; then
     ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
     git config --global user.name "Martin Hoeher"
     git config --global user.email "martin@rpdev.net"
-    git add app/translations
+    git add src/translations
     git commit -m "Downloaded Translations from POEditor"
     git push "git@gitlab.com:rpdev/opentodolist.git" HEAD:development
 fi

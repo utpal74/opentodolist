@@ -17,4 +17,4 @@ fi
 
 python3 ./3rdparty/run-clang-format/run-clang-format.py \
     -r src test \
-    --exclude lib/qmake/kf5-syntax-highlighting
+    --exclude src/qmake/kf5-syntax-highlighting
