@@ -1,0 +1,240 @@
+/*
+ * Copyright 2020-2026 Martin Hoeher <martin@rpdev.net>
+ +
+ * This file is part of OpenTodoList.
+ *
+ * OpenTodoList is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation, either version 3 of
+ * the License, or (at your option) any later version.
+ *
+ * OpenTodoList is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#ifndef MODELS_ITEMSMODEL_H_
+#define MODELS_ITEMSMODEL_H_
+
+#include <QAbstractListModel>
+#include <QDateTime>
+#include <QHash>
+#include <QObject>
+#include <QPointer>
+#include <QTimer>
+#include <QtCore/qabstractitemmodel.h>
+#include <QtQml/qqmlregistration.h>
+#include <qqmlintegration.h>
+
+#include <algorithm>
+#include <functional>
+
+#include "datamodel/item.h"
+#include "datastorage/cache.h"
+
+class GetItemsQuery;
+
+struct ForeignQAbstractItemModel
+{
+    Q_GADGET
+    QML_FOREIGN(QAbstractItemModel)
+    QML_NAMED_ELEMENT(QAbstractItemModel)
+    QML_UNCREATABLE("This is an abstract base type - it shall be be created directly")
+};
+
+/**
+ * @brief A model working on a Cache.
+ *
+ * This class allows to access items stored in a Cache. It allows some
+ * basic filtering to limit the amount of data shown, e.g. only
+ * direkt children of a particular item or from a library can be
+ * shown.
+ */
+class ItemsModel : public QAbstractListModel
+{
+    Q_OBJECT
+    Q_PROPERTY(Cache* cache READ cache WRITE setCache NOTIFY cacheChanged)
+    Q_PROPERTY(int count READ count NOTIFY countChanged)
+    Q_PROPERTY(QUuid parentItem READ parentItem WRITE setParentItem NOTIFY parentItemChanged)
+    Q_PROPERTY(
+            QString searchString READ searchString WRITE setSearchString NOTIFY searchStringChanged)
+    Q_PROPERTY(QString tag READ tag WRITE setTag NOTIFY tagChanged)
+    Q_PROPERTY(bool onlyDone READ onlyDone WRITE setOnlyDone NOTIFY onlyDoneChanged)
+    Q_PROPERTY(bool onlyUndone READ onlyUndone WRITE setOnlyUndone NOTIFY onlyUndoneChanged)
+    Q_PROPERTY(bool onlyWithDueDate READ onlyWithDueDate WRITE setOnlyWithDueDate NOTIFY
+                       onlyWithDueDateChanged)
+    Q_PROPERTY(bool defaultSearchResult READ defaultSearchResult WRITE setDefaultSearchResult NOTIFY
+                       defaultSearchResultChanged)
+    Q_PROPERTY(bool recursive READ recursive WRITE setRecursive NOTIFY recursiveChanged)
+    Q_PROPERTY(
+            QString overdueLabel READ overdueLabel WRITE setOverdueLabel NOTIFY overdueLabelChanged)
+    Q_PROPERTY(QVariantMap timeSpans READ timeSpans WRITE setTimeSpans NOTIFY timeSpansChanged)
+    Q_PROPERTY(QString itemType READ itemType WRITE setItemType NOTIFY itemTypeChanged)
+    Q_PROPERTY(bool untaggedOnly READ untaggedOnly WRITE setUntaggedOnly NOTIFY untaggedOnlyChanged
+                       FINAL)
+    Q_PROPERTY(QList<QUuid> itemsToExclude READ itemsToExclude WRITE setItemsToExclude NOTIFY
+                       itemsToExcludeChanged)
+    Q_PROPERTY(int sortRole READ sortRole WRITE setSortRole NOTIFY sortRoleChanged)
+    Q_PROPERTY(bool groupDone READ groupDone WRITE setGroupDone NOTIFY groupDoneChanged)
+    QML_ELEMENT
+public:
+    enum Roles {
+        ItemRole = Qt::UserRole,
+        WeightRole,
+        DueToRole,
+        DueToSpanRole,
+        TitleRole,
+        CreatedAtRole,
+        UpdatedAtRole,
+        EffectiveDueToRole,
+        EffectiveDueToSpanRole,
+        UidRole,
+        DoneRole,
+        EffectiveUpdatedAtRole,
+    };
+
+    Q_ENUM(Roles)
+
+    explicit ItemsModel(QObject* parent = nullptr);
+
+    Cache* cache() const;
+    void setCache(Cache* cache);
+
+    int count() const;
+
+    // QAbstractItemModel interface
+    int rowCount(const QModelIndex& parent = QModelIndex()) const override;
+    QVariant data(const QModelIndex& index, int role) const override;
+    QHash<int, QByteArray> roleNames() const override;
+
+    QUuid parentItem() const;
+    void setParentItem(const QUuid& parent);
+
+    const QString& searchString() const;
+    void setSearchString(const QString& searchString);
+
+    const QString& tag() const;
+    void setTag(const QString& tag);
+
+    bool onlyDone() const;
+    void setOnlyDone(bool value);
+
+    bool onlyUndone() const;
+    void setOnlyUndone(bool value);
+
+    bool onlyWithDueDate() const;
+    void setOnlyWithDueDate(bool value);
+
+    bool defaultSearchResult() const;
+    void setDefaultSearchResult(bool defaultSearchResult);
+
+    bool recursive() const;
+    void setRecursive(bool recursive);
+
+    const QString& overdueLabel() const;
+    void setOverdueLabel(const QString& overdueLabel);
+
+    QVariantMap timeSpans() const;
+    void setTimeSpans(const QVariantMap& timeSpans);
+
+    Q_INVOKABLE int roleFromName(const QString& roleName) const;
+
+    const QString& itemType() const;
+    void setItemType(const QString& itemType);
+
+    const QList<QUuid>& itemsToExclude() const;
+    void setItemsToExclude(const QList<QUuid>& newItemsToExclude);
+
+    bool untaggedOnly() const;
+    void setUntaggedOnly(bool newUntaggedOnly);
+
+    int sortRole() const;
+    void setSortRole(int sortRole);
+
+    bool groupDone() const;
+    void setGroupDone(bool groupDone);
+
+    std::function<bool(ItemPtr item, GetItemsQuery* query)> getFilterFn() const;
+
+    void sort(int column, Qt::SortOrder order = Qt::AscendingOrder) override;
+
+signals:
+
+    void cacheChanged();
+    void countChanged();
+    void parentItemChanged();
+    void searchStringChanged();
+    void tagChanged();
+    void onlyDoneChanged();
+    void onlyUndoneChanged();
+    void onlyWithDueDateChanged();
+    void defaultSearchResultChanged();
+    void recursiveChanged();
+    void overdueLabelChanged();
+    void timeSpansChanged();
+    void itemTypeChanged();
+
+    void itemsToExcludeChanged();
+
+    void untaggedOnlyChanged();
+
+    /**
+     * @brief Indicates that the model was just updated.
+     *
+     * This signal is emitted after the model has been updated, i.e. after it has loaded its data
+     * from the database.
+     */
+    void updateFinished();
+
+    // Notifier signals for sortRole and groupDone
+    void sortRoleChanged();
+    void groupDoneChanged();
+
+public slots:
+
+private:
+    QPointer<Cache> m_cache;
+    QUuid m_currentItemsQuery;
+    QHash<QUuid, Item*> m_items;
+    QList<QUuid> m_ids;
+    QTimer m_fetchTimer;
+    QUuid m_parentItem;
+    QList<QUuid> m_itemsToExclude;
+
+    QString m_searchString;
+    QString m_tag;
+    QString m_itemType;
+    int m_sortRole;
+    bool m_groupDone;
+    bool m_onlyDone;
+    bool m_onlyUndone;
+    bool m_onlyWithDueDate;
+    bool m_defaultSearchResult;
+    bool m_recursive;
+    bool m_untaggedOnly;
+
+    bool m_updating;
+
+    QString m_overdueLabel;
+    QVariantMap m_timeSpans;
+
+    static bool itemMatches(ItemPtr item, const QStringList& words);
+
+    QString timeSpanLabel(Item* item, int role) const;
+
+    bool lessThan(const QModelIndex& source_left, const QModelIndex& source_right) const;
+
+private slots:
+
+    void reset();
+    void fetch();
+    void triggerFetch();
+    void update(const QVariantList& items, const QUuid& queryUid);
+    void itemChanged();
+};
+
+#endif // MODELS_ITEMSMODEL_H_

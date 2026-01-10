@@ -1,10 +1,10 @@
 # yaml-language-server: $schema=https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json
 
 variables:
-  QT_VERSION: "6.8.1"
+  QT_VERSION: "6.10.0"
   UBUNTU_IMAGE: registry.gitlab.com/rpdev/docker/qt6-ubuntu:$QT_VERSION
   ANDROID_IMAGE: registry.gitlab.com/rpdev/docker/qt6-android:$QT_VERSION
-  FLATPAK_IMAGE: registry.gitlab.com/rpdev/docker/flatpak-builder-kde-qt6:6.8
+  FLATPAK_IMAGE: registry.gitlab.com/rpdev/docker/flatpak-builder-kde-qt6:6.9
   DOCKER_IMAGE: docker
   DOCKER_DIND_IMAGE: docker:dind
   SNAPCRAFT_IMAGE: ghcr.io/canonical/snapcraft:7_core22
@@ -183,7 +183,7 @@ macos:
     - ci/macos-build.sh
   artifacts:
     paths:
-      - build-macos/app/OpenTodoList.dmg
+      - build-macos/src/OpenTodoList.dmg
       - build-macos/dist-store/OpenTodoList-signed.pkg
     expire_in: 1 week
 
@@ -313,7 +313,7 @@ github:
         - cp deploy-win64/OpenTodoList-*-Windows-64bit.exe uploads
         - cp deploy-win64/OpenTodoList-*-Windows-64bit.zip uploads
         - cp build-android/*.apk uploads
-        - cp build-macos/app/OpenTodoList.dmg uploads
+        - cp build-macos/src/OpenTodoList.dmg uploads
         - cp OpenTodoList-Source-*.zip uploads
         - cp OpenTodoList-Source-*.tar.gz uploads
         - cp *.snap uploads || /bin/true # Snap docker image is currently broken - allow this to fail

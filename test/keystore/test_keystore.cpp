@@ -22,7 +22,7 @@
 #include <QTemporaryDir>
 #include <QTest>
 
-#include "utils/keystore.h"
+#include "utilities/keystore.h"
 
 class KeyStoreTest : public QObject
 {

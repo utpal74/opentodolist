@@ -25,7 +25,7 @@ fi
 
 success=0
 
-for dir in app lib test; do
+for dir in src test; do
     pushd $dir
     if ! cpplint \
         --recursive \

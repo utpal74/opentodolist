@@ -22,4 +22,6 @@ cppcheck  \
     --std=c++11 \
     --quiet \
     --check-level=exhaustive \
-    app lib
+    -DQML_NAMED_ELEMENT\(x\)= \
+    -DQ_MOC_INCLUDE\(x\)= \
+    src

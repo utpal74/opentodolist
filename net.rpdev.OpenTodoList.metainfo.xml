@@ -48,6 +48,21 @@
 
   <releases>
     <!-- Format releases according to this: https://www.freedesktop.org/software/appstream/docs/sect-Metadata-Releases.html#spec-releases-example -->
+    <release version="3.50.0" date="2025-01-09">
+        <description>
+            <p>This release mainly brings lots of code refactoring under the hood. Additionally,
+                two contributions are pulled in:
+            </p>
+            <p>First, some documentation updates are included adding some information about a workaround on Wayland.</p>
+            <p>And second, an initial Fastlane config to publish the app to F-Droid is included.</p>
+            <p>Additionally, this release of the app contains the following changes:</p>
+        </description>
+        <issues>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/681">#681: Fix disabling of certificate checks.</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/678">#678: Fix the "Save Notes" button to finish editing notes of an item.</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/679">#679: Fix links to screenshots in the README.md file.</issue>
+        </issues>
+    </release>
     <release version="3.49.0" date="2025-01-09">
         <description>
             <p>This release of the app contains the following changes:</p>

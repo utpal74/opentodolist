@@ -1,0 +1,107 @@
+/*
+ * Copyright 2020 Martin Hoeher <martin@rpdev.net>
+ +
+ * This file is part of OpenTodoList.
+ *
+ * OpenTodoList is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation, either version 3 of
+ * the License, or (at your option) any later version.
+ *
+ * OpenTodoList is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#ifndef UTILITIES_PROBLEM_H_
+#define UTILITIES_PROBLEM_H_
+
+#include <QObject>
+#include <QSharedPointer>
+#include <QUuid>
+#include <QtQml/qqmlregistration.h>
+
+/**
+ * @brief Represents a problem detected by the application.
+ *
+ * This class is used to encapsulate information related to a specific problem/issue detected in
+ * the app. An example is e.g. that a password for an account is missing and hence the user
+ * needs to enter the credentials again.
+ */
+class Problem
+{
+    Q_GADGET
+
+    Q_PROPERTY(QUuid id READ id CONSTANT)
+    Q_PROPERTY(Problem::ProblemType type READ type CONSTANT)
+    Q_PROPERTY(QObject* contextObject READ getContextObject CONSTANT)
+    Q_PROPERTY(QString message READ message CONSTANT)
+    QML_VALUE_TYPE(problem)
+
+public:
+    /**
+     * @brief The type of problem detected.
+     */
+    enum ProblemType {
+        InvalidProblem, //!< Indicates that the problem instance is not valid.
+        AccountSecretsMissing, //!< Secrets for an account are missing.
+        SyncFailed //!< Synchronization of a library failed.
+    };
+
+    Q_ENUM(ProblemType)
+
+    Problem();
+    virtual ~Problem();
+
+    QUuid id() const;
+
+    ProblemType type() const;
+    void setType(const ProblemType& type);
+
+    QString typeName() const;
+
+    QSharedPointer<QObject> contextObject() const;
+    void setContextObject(const QSharedPointer<QObject>& contextObject);
+
+    QObject* getContextObject() const;
+
+    QVariantMap problemTypes() const;
+
+    const QString& message() const;
+    void setMessage(const QString& message);
+
+private:
+    QUuid m_id;
+    ProblemType m_type;
+    QSharedPointer<QObject> m_contextObject;
+    QString m_message;
+};
+
+/**
+ * @brief Expose enums from Problem.
+ *
+ * This class is needed to expose enums to the QML world (as Problem is a value
+ * type).
+ */
+class ProblemDerived : public Problem
+{
+    Q_GADGET
+};
+
+/**
+ * @brief Expose Enums of Problem to QML.
+ *
+ * This namespace is used to expose enums defined within the Problem
+ * value class to QML.
+ */
+namespace ProblemDerivedForeign {
+Q_NAMESPACE
+QML_NAMED_ELEMENT(Problem)
+QML_FOREIGN_NAMESPACE(ProblemDerived)
+}
+
+#endif // UTILITIES_PROBLEM_H_

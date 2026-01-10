@@ -69,11 +69,11 @@ rm -rf dist-web
 
 for i in initial retry; do
     mkdir -p dist-web
-    cp -r app/OpenTodoList.app dist-web
+    cp -r src/OpenTodoList.app dist-web
     pushd dist-web
     $QT_DIR/bin/macdeployqt \
         OpenTodoList.app/ \
-        -qmldir=../../app \
+        -qmldir=../../src \
         -appstore-compliant \
         -sign-for-notarization="Developer ID Application: Martin Hoeher (786Z636JV9)"
     find OpenTodoList.app -name "*.dSYM" -type d | xargs rm -rf
@@ -138,7 +138,7 @@ while [ $i -lt 5 ]; do
 done
 
 cd ..
-cp dist-web/OpenTodoList.dmg app/
+cp dist-web/OpenTodoList.dmg src/
 
 
 #################################################
@@ -149,12 +149,12 @@ cp dist-web/OpenTodoList.dmg app/
 exit 0
 
 mkdir -p dist-store
-cp -r app/OpenTodoList.app dist-store
+cp -r src/OpenTodoList.app dist-store
 
 pushd dist-store
 $QT_DIR/bin/macdeployqt \
     OpenTodoList.app/ \
-    -qmldir=../../app \
+    -qmldir=../../src \
     -appstore-compliant \
     -sign-for-notarization="Apple Distribution: Martin Hoeher (786Z636JV9)"
 find OpenTodoList.app -name "*.dSYM" -type d | xargs rm -rf
@@ -163,7 +163,7 @@ xcrun codesign \
     -s "Apple Distribution: Martin Hoeher (786Z636JV9)" \
     -v -f \
     -o runtime \
-    --entitlements ../app/OpenTodoList.entitlements \
+    --entitlements ../src/OpenTodoList.entitlements \
     "dist-store/OpenTodoList.app"
 
 # Upload the App Bundle:

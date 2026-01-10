@@ -1,0 +1,137 @@
+import QtQuick
+import QtQml
+
+import OpenTodoList 1.0 as OTL
+
+import OpenTodoList.Utils
+import OpenTodoList.Style as C
+
+Item {
+    id: root
+
+    property var model
+    property int layout: Qt.Vertical
+    property OTL.LibraryItem item
+    property ItemDragTile dragTile
+
+    QtObject {
+        id: d
+
+        readonly property var dropKeys: {
+            let result = []
+            if (root.dragTile) {
+                for (let key in root.dragTile.Drag.mimeData) {
+                    result.push(key)
+                }
+            }
+            return result
+        }
+
+        function applyWeight(item, weight) {
+            let copy = OTL.Application.cloneItem(item)
+            copy.weight = weight
+        }
+    }
+
+    C.Pane {
+        id: itemBackground
+        visible: root.dragTile && root.dragTile.item == root.item && root.dragTile.dragging
+        anchors.fill: parent
+        // palette.window: palette.button
+        opacity: 0.2
+        z: 9
+    }
+
+    C.Pane {
+        width: root.layout === Qt.Vertical ? parent.width : 3
+        height: root.layout === Qt.Vertical ? 3 : parent.height
+        // palette.window: palette.window
+        visible: upperDropArea.containsDrag
+        z: 10
+        y: -1
+    }
+
+    Rectangle {
+        width: root.layout === Qt.Vertical ? parent.width : 3
+        y: root.layout === Qt.Vertical ? parent.height - 1 : 0
+        x: root.layout === Qt.Vertical ? 0 : parent.width - 1
+        height: root.layout === Qt.Vertical ? 3 : parent.height
+        // palette.window: palette.button
+        visible: lowerDropArea.containsDrag
+        z: 10
+    }
+
+    DropArea {
+        id: upperDropArea
+        anchors {
+            left: parent.left
+            right: root.layout === Qt.Vertical ? parent.right : parent.horizontalCenter
+            top: parent.top
+            bottom: root.layout === Qt.Vertical ? parent.verticalCenter : parent.bottom
+        }
+        keys: d.dropKeys
+        onDropped: drop => {
+                       drop.accept()
+                       var item = drag.source.item
+                       if (item === root.item) {
+                           return
+                       }
+                       var thisWeight = root.item.weight
+                       if (index === 0) {
+                           var diff = Math.abs(
+                               thisWeight) * (Math.random() * 0.1 + 0.01)
+                           if (diff === 0) {
+                               diff = Math.random() + 0.1
+                           }
+                           d.applyWeight(item, thisWeight - diff)
+                       } else {
+                           var prevWeight = root.model.data(
+                               root.model.index(index - 1, 0),
+                               OTL.ItemsModel.ItemRole).weight
+                           diff = thisWeight - prevWeight
+                           if (diff === 0) {
+                               diff = Math.random()
+                           }
+                           var diffFactor = (0.4 + 0.2 * Math.random())
+                           d.applyWeight(item, thisWeight - diff * diffFactor)
+                       }
+                   }
+    }
+
+    DropArea {
+        id: lowerDropArea
+        anchors {
+            left: root.layout === Qt.Vertical ? parent.left : parent.horizontalCenter
+            right: parent.right
+            bottom: parent.bottom
+            top: root.layout === Qt.Vertical ? parent.verticalCenter : parent.top
+        }
+        keys: d.dropKeys
+        onDropped: drop => {
+                       drop.accept()
+                       var item = drag.source.item
+                       if (item === root.item) {
+                           return
+                       }
+                       var thisWeight = root.item.weight
+                       if (index === root.model.count - 1) {
+                           var diff = Math.abs(
+                               thisWeight) * (Math.random() * 0.1 + 0.01)
+                           if (diff === 0) {
+                               diff = Math.random() + 0.1
+                           }
+                           d.applyWeight(item, thisWeight + diff)
+                       } else {
+                           var nextWeight = root.model.data(
+                               root.model.index(index + 1, 0),
+                               OTL.ItemsModel.ItemRole).weight
+                           diff = nextWeight - thisWeight
+                           if (diff === 0) {
+                               diff = Math.random()
+                           }
+                           var diffFactor = (0.4 + 0.2 * Math.random())
+                           d.applyWeight(item, thisWeight + diff * diffFactor)
+                       }
+                   }
+    }
+}

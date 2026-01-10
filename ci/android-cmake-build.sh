@@ -120,7 +120,7 @@ eval $deploycmd
 popd
 
 OTL_VERSION="$(git describe --tags)"
-cp app/android-build/OpenTodoList.apk \
+cp src/android-build/OpenTodoList.apk \
     OpenTodoList-${ANDROID_ABIS}-${OTL_VERSION}.apk
-cp app/android-build/build/outputs/bundle/release/android-build-release.aab \
+cp src/android-build/build/outputs/bundle/release/android-build-release.aab \
     OpenTodoList-${ANDROID_ABIS}-${OTL_VERSION}.aab

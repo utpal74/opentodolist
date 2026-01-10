@@ -23,7 +23,7 @@
 #include <QTemporaryDir>
 #include <QTest>
 
-#include "utils/jsonutils.h"
+#include "utilities/jsonutils.h"
 
 using JsonUtils::loadMap;
 using JsonUtils::patchJsonFile;
