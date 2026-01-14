@@ -9,7 +9,7 @@ if [ -z "$1" ]; then
 fi
 
 cd "$(dirname "$(dirname "$(readlink -f "$0")")")"
-cd app/translations
+cd src/translations
 
 for file in *.ts; do
     rm -f $(basename $file .ts).po
