@@ -48,6 +48,14 @@
 
   <releases>
     <!-- Format releases according to this: https://www.freedesktop.org/software/appstream/docs/sect-Metadata-Releases.html#spec-releases-example -->
+     <release version="3.50.1" date="2025-01-19">
+        <description>
+            <p>This release of the app contains the following changes:</p>
+        </description>
+        <issues>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/692">#692: Bring back translations.</issue>
+        </issues>
+    </release>
     <release version="3.50.0" date="2025-01-09">
         <description>
             <p>This release mainly brings lots of code refactoring under the hood. Additionally,
