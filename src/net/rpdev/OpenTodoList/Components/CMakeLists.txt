@@ -1,0 +1,20 @@
+qt_add_qml_module(opentodolist_components_module
+    STATIC
+    URI net.rpdev.OpenTodoList.Components
+    QML_FILES
+        ApplicationShortcuts.qml
+        ApplicationToolBar.qml
+        AutoScrollOverlay.qml
+        Empty.qml
+        Heading.qml
+        ItemAction.qml
+        ItemActionMenu.qml
+        PullToRefreshOverlay.qml
+        ToolBarAction.qml
+        Tooltips/ActionableToolTip.qml
+        Tooltips/AllSubtasksDone.qml
+        Tooltips/MarkFutureInstanceAsDone.qml
+    IMPORTS
+        QtQuick
+        QtQuick.Controls.Basic
+)

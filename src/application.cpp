@@ -1143,7 +1143,7 @@ QString Application::loadFile(const QUrl& filename) const
  */
 QVariant Application::find3rdPartyInfos() const
 {
-    QDirIterator it(":/qt/qml/OpenTodoList/", { "3rdpartyinfo.json" }, QDir::Files,
+    QDirIterator it(":/qt/qml/net/rpdev/OpenTodoList/", { "3rdpartyinfo.json" }, QDir::Files,
                     QDirIterator::Subdirectories);
     QVariantList result;
     while (it.hasNext()) {

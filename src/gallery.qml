@@ -1,5 +1,5 @@
 import QtQuick 2.10
-import OpenTodoList.Style
+import net.rpdev.OpenTodoList.Style
 
 ApplicationWindow {
     id: window

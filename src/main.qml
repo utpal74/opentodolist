@@ -1,9 +1,9 @@
 import QtQuick
 
-import OpenTodoList.Windows as Windows
-import OpenTodoList.Style as C
+import net.rpdev.OpenTodoList.Windows as Windows
+import net.rpdev.OpenTodoList.Style as C
 
-import OpenTodoList as OTL
+import net.rpdev.OpenTodoList as OTL
 
 QtObject {
     id: rootObject
