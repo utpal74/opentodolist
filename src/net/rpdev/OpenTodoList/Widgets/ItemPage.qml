@@ -26,15 +26,7 @@ C.Page {
         rootObject.newStackViewWindow(page, props)
     }
 
-    palette.button: d.accentColor
-    palette.light: C.ColorTheme.getLightColorFromButtonColor(
-                       palette.button, C.ColorTheme.isDarkColorScheme)
-    palette.midlight: C.ColorTheme.getMidColorFromButtonColor(
-                          palette.button, C.ColorTheme.isDarkColorScheme)
-    palette.dark: C.ColorTheme.getDarkColorFromButtonColor(
-                      palette.button, C.ColorTheme.isDarkColorScheme)
-    palette.mid: C.ColorTheme.getMidColorFromButtonColor(
-                     palette.button, C.ColorTheme.isDarkColorScheme)
+    palette: C.ColorTheme.getAccentedPalette(d.accentColor, C.ColorTheme.selectedPalette, page)
 
     QtObject {
         id: d
@@ -42,34 +34,6 @@ C.Page {
         property color accentColor: page.topLevelItem && page.topLevelItem.color
                                     !== OTL.TopLevelItem.White ? Utils.Colors.itemColor(
                                                                      page.topLevelItem) : C.ColorTheme.selectedPalette.button
-
-        function createPageSpecificColorPalette(basePalette, item, itemColor) {
-            accentedPalette.basePalette = basePalette
-            if (itemColor === OTL.TopLevelItem.White) {
-                accentedPalette.accentColor = C.ColorTheme.selectedPalette.button
-            } else {
-                accentedPalette.accentColor = Utils.Colors.itemColor(item)
-            }
-            return accentedPalette
-        }
-
-        function updateColorPalette() {
-            page.palette = C.ColorTheme.selectedPalette
-
-            if (!page.topLevelItem) {
-                return
-            }
-
-            if (page.topLevelItem.color === OTL.TopLevelItem.White) {
-                return
-            }
-
-            accentedPalette.basePalette = C.ColorTheme.selectedPalette
-            accentedPalette.accentColor = Utils.Colors.itemColor(
-                        page.topLevelItem, C.ColorTheme.isDarkColorScheme)
-
-            page.palette = accentedPalette
-        }
     }
 
     Menues.ColorMenu {

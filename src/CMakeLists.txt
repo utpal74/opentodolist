@@ -440,6 +440,15 @@ if(DESKTOP_MODE)
             Qt::Qml
             Qt::Quick
             opentodolist-common
+            opentodolist_actions_moduleplugin
+            opentodolist_components_moduleplugin
+            opentodolist_dialogs_moduleplugin
+            opentodolist_menues_moduleplugin
+            opentodolist_style_moduleplugin
+            opentodolist_utils_moduleplugin
+            opentodolist_widgets_moduleplugin
+            opentodolist_windows_moduleplugin
+            opentodolist_pages_moduleplugin
     )
     target_compile_definitions(
         gallery

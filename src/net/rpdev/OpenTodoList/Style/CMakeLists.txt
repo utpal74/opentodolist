@@ -1,11 +1,22 @@
+set_source_files_properties(
+        ColorTheme.qml
+        Fonts.qml
+        Icons.qml
+        StyleSettings.qml
+    PROPERTIES
+        QT_QML_SINGLETON_TYPE TRUE
+)
+
 qt_add_qml_module(opentodolist_style_module
     STATIC
     URI net.rpdev.OpenTodoList.Style
     QML_FILES
+        AccentedPalette.qml
         Action.qml
         ApplicationWindow.qml
         BusyIndicator.qml
         Button.qml
+        ButtonPalette.qml
         ButtonGroup.qml
         CheckBox.qml
         CheckDelegate.qml
@@ -90,13 +101,4 @@ qt_add_qml_module(opentodolist_style_module
     IMPORTS
         QtQuick
         QtQuick.Controls.Basic
-)
-
-set_source_files_properties(
-        ColorTheme.qml
-        Fonts.qml
-        Icons.qml
-        StyleSettings.qml
-    PROPERTIES
-        QT_QML_SINGLETON_TYPE TRUE
 )

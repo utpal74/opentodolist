@@ -158,7 +158,7 @@ Column {
     FileDialog {
         id: saveNotesDialog
         title: qsTr("Export to File...")
-        currentFolder: StandardPaths.writableLocation(StandardPaths.DocumentsLocation)
+        currentFile: StandardPaths.writableLocation(StandardPaths.DocumentsLocation) + "/notes.md"
         defaultSuffix: ".md"
         nameFilters: [qsTr("Markdown files") + " (*.md)", qsTr(
                 "All files") + " (*)"]

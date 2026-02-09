@@ -6,7 +6,6 @@ ApplicationWindow {
 
     width: 800
     height: 600
-    palette: ColorTheme.selectedPalette
     font.family: Fonts.regularFont
     font.weight: 500
 
@@ -41,7 +40,9 @@ ApplicationWindow {
         }
     }
 
-    Component.onCompleted: show()
+    Component.onCompleted: {
+        show();
+    }
 
     component DemoColumn: Column {
         spacing: 16

@@ -103,7 +103,6 @@ C.ToolBar {
                         title: modelData.title
                         modal: true
                         y: applicationToolBar.height
-                        palette: C.ColorTheme.selectedPalette
 
                         Repeater {
                             model: menuFromAppMenu.appMenuEntry.items

@@ -186,7 +186,7 @@ Item {
         // A text color used for unvisited hyperlinks. By default, the link color is Qt::blue.
         link: colorPalette.lightThemeSecondary
 
-        // A text color used for already visited hyperlinks. By default, the linkvisited color
+        // A text color used for already visited hyperlinks. By default, the linkVisited color
         // is Qt::magenta.
         linkVisited: colorPalette.lightThemeSecondary
     }
@@ -287,7 +287,7 @@ Item {
         // A text color used for unvisited hyperlinks. By default, the link color is Qt::blue.
         link: colorPalette.darkThemeSecondary
 
-        // A text color used for already visited hyperlinks. By default, the linkvisited color
+        // A text color used for already visited hyperlinks. By default, the linkVisited color
         // is Qt::magenta.
         linkVisited: colorPalette.darkThemeSecondary
     }
@@ -336,6 +336,21 @@ Item {
         } else {
             return Qt.darker(color, 1.5)
         }
+    }
+
+    function getAccentedPalette(accentColor, basePalette, parent) {
+        let component = Qt.createComponent("AccentedPalette.qml")
+        return component.createObject(parent, {
+            accentColor: accentColor,
+            basePalette: basePalette
+        })
+    }
+
+    function getButtonPalette(basePalette, parent) {
+        let component = Qt.createComponent("ButtonPalette.qml")
+        return component.createObject(parent, {
+            basePalette: basePalette
+        })
     }
 
     readonly property var selectedPalette: {

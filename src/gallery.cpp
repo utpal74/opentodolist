@@ -18,8 +18,22 @@
  */
 
 #include <QQmlApplicationEngine>
+#include <QQmlExtensionPlugin>
 #include <QGuiApplication>
 #include <QUrl>
+
+// Explicitly link against sub-qml plugin modules to ensure they are
+// not eliminated by the linker (see
+// https://www.basyskom.de/en/how-to-use-modern-qml-tooling-in-practice/):)
+Q_IMPORT_QML_PLUGIN(net_rpdev_OpenTodoList_ActionsPlugin)
+Q_IMPORT_QML_PLUGIN(net_rpdev_OpenTodoList_ComponentsPlugin)
+Q_IMPORT_QML_PLUGIN(net_rpdev_OpenTodoList_DialogsPlugin)
+Q_IMPORT_QML_PLUGIN(net_rpdev_OpenTodoList_MenuesPlugin)
+Q_IMPORT_QML_PLUGIN(net_rpdev_OpenTodoList_StylePlugin)
+Q_IMPORT_QML_PLUGIN(net_rpdev_OpenTodoList_UtilsPlugin)
+Q_IMPORT_QML_PLUGIN(net_rpdev_OpenTodoList_WidgetsPlugin)
+Q_IMPORT_QML_PLUGIN(net_rpdev_OpenTodoList_WindowsPlugin)
+Q_IMPORT_QML_PLUGIN(net_rpdev_OpenTodoList_PagesPlugin)
 
 int main(int argc, char** argv)
 {
