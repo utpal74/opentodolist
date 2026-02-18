@@ -18,6 +18,7 @@
  */
 #include "recipe.h"
 
+#include <QVariant>
 #include <utility>
 
 /**
@@ -25,7 +26,7 @@
  *
  * Constructs a new RecipeIngredient object with amount initialized to 0.0.
  */
-RecipeIngredient::RecipeIngredient() : m_amount(0.0) {}
+RecipeIngredient::RecipeIngredient() {}
 
 /**
  * @brief Constructs a new RecipeIngredient object.
@@ -47,7 +48,10 @@ RecipeIngredient::RecipeIngredient(double amount, const QString& unit, const QSt
  * @param other The RecipeIngredient instance to copy from.
  */
 RecipeIngredient::RecipeIngredient(const RecipeIngredient& other)
-    : m_amount(other.m_amount), m_unit(other.m_unit), m_name(other.m_name)
+    : m_amount(other.m_amount),
+      m_unit(other.m_unit),
+      m_name(other.m_name),
+      m_additionalProperties(other.m_additionalProperties)
 {
 }
 
@@ -67,6 +71,7 @@ RecipeIngredient& RecipeIngredient::operator=(const RecipeIngredient& other)
         m_amount = other.m_amount;
         m_unit = other.m_unit;
         m_name = other.m_name;
+        m_additionalProperties = other.m_additionalProperties;
     }
     return *this;
 }
@@ -82,7 +87,10 @@ RecipeIngredient& RecipeIngredient::operator=(const RecipeIngredient& other)
  * After the move, the source object remains in a valid but unspecified state.
  */
 RecipeIngredient::RecipeIngredient(RecipeIngredient&& other) noexcept
-    : m_amount(other.m_amount), m_unit(std::move(other.m_unit)), m_name(std::move(other.m_name))
+    : m_amount(other.m_amount),
+      m_unit(std::move(other.m_unit)),
+      m_name(std::move(other.m_name)),
+      m_additionalProperties(std::move(other.m_additionalProperties))
 {
 }
 
@@ -102,6 +110,7 @@ RecipeIngredient& RecipeIngredient::operator=(RecipeIngredient&& other) noexcept
         m_amount = other.m_amount;
         m_unit = std::move(other.m_unit);
         m_name = std::move(other.m_name);
+        m_additionalProperties = std::move(other.m_additionalProperties);
     }
     return *this;
 }
@@ -145,7 +154,7 @@ bool RecipeIngredient::operator!=(const RecipeIngredient& other) const
  */
 QVariantMap RecipeIngredient::toMap() const
 {
-    QVariantMap map;
+    QVariantMap map = m_additionalProperties;
     map["amount"] = m_amount;
     map["unit"] = m_unit;
     map["name"] = m_name;
@@ -164,10 +173,13 @@ QVariantMap RecipeIngredient::toMap() const
  */
 RecipeIngredient RecipeIngredient::fromMap(const QVariantMap& map)
 {
-    double amount_ = map.value("amount").toDouble();
-    QString unit_ = map.value("unit").toString();
-    QString name_ = map.value("name").toString();
-    return RecipeIngredient(amount_, unit_, name_);
+    QVariantMap m_additionalProperties = map;
+    double amount_ = m_additionalProperties.take("amount").toDouble();
+    QString unit_ = m_additionalProperties.take("unit").toString();
+    QString name_ = m_additionalProperties.take("name").toString();
+    auto result = RecipeIngredient(amount_, unit_, name_);
+    result.m_additionalProperties = m_additionalProperties;
+    return result;
 }
 
 /**
@@ -193,7 +205,8 @@ RecipeStep::RecipeStep(const QString& description, const RecipeIngredients& ingr
 RecipeStep::RecipeStep(const RecipeStep& other)
     : m_description(other.m_description),
       m_ingredients(other.m_ingredients),
-      m_utilities(other.m_utilities)
+      m_utilities(other.m_utilities),
+      m_additionalProperties(other.m_additionalProperties)
 {
 }
 
@@ -212,6 +225,7 @@ RecipeStep& RecipeStep::operator=(const RecipeStep& other)
         m_description = other.m_description;
         m_ingredients = other.m_ingredients;
         m_utilities = other.m_utilities;
+        m_additionalProperties = other.m_additionalProperties;
     }
     return *this;
 }
@@ -227,7 +241,8 @@ RecipeStep& RecipeStep::operator=(const RecipeStep& other)
 RecipeStep::RecipeStep(RecipeStep&& other) noexcept
     : m_description(std::move(other.m_description)),
       m_ingredients(std::move(other.m_ingredients)),
-      m_utilities(std::move(other.m_utilities))
+      m_utilities(std::move(other.m_utilities)),
+      m_additionalProperties(std::move(other.m_additionalProperties))
 {
 }
 
@@ -248,6 +263,7 @@ RecipeStep& RecipeStep::operator=(RecipeStep&& other) noexcept
         m_description = std::move(other.m_description);
         m_ingredients = std::move(other.m_ingredients);
         m_utilities = std::move(other.m_utilities);
+        m_additionalProperties = std::move(other.m_additionalProperties);
     }
     return *this;
 }
@@ -292,7 +308,7 @@ bool RecipeStep::operator!=(const RecipeStep& other) const
  */
 QVariantMap RecipeStep::toMap() const
 {
-    QVariantMap map;
+    QVariantMap map = m_additionalProperties;
     map["description"] = m_description;
 
     QVariantList ingredientsList;
@@ -324,22 +340,26 @@ QVariantMap RecipeStep::toMap() const
  */
 RecipeStep RecipeStep::fromMap(const QVariantMap& map)
 {
-    QString description_ = map.value("description").toString();
+    QVariantMap additionalProperties = map;
+
+    QString description_ = additionalProperties.take("description").toString();
 
     RecipeIngredients ingredients_;
-    QVariantList ingredientsList = map.value("ingredients").toList();
+    QVariantList ingredientsList = additionalProperties.take("ingredients").toList();
     for (const QVariant& ingredientVar : ingredientsList) {
         QVariantMap ingredientMap = ingredientVar.toMap();
         ingredients_.append(RecipeIngredient::fromMap(ingredientMap));
     }
 
     RecipeUtilities utilities_;
-    QVariantList utilitiesList = map.value("utilities").toList();
+    QVariantList utilitiesList = additionalProperties.take("utilities").toList();
     for (const QVariant& utilityVar : utilitiesList) {
         utilities_.append(utilityVar.toString());
     }
 
-    return RecipeStep(description_, ingredients_, utilities_);
+    auto result = RecipeStep(description_, ingredients_, utilities_);
+    result.m_additionalProperties = additionalProperties;
+    return result;
 }
 
 /**

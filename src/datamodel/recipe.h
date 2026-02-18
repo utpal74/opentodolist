@@ -60,9 +60,10 @@ public:
     static RecipeIngredient fromMap(const QVariantMap& map);
 
 private:
-    double m_amount;
-    QString m_unit;
-    QString m_name;
+    double m_amount = 0.0;
+    QString m_unit = QString();
+    QString m_name = QString();
+    QVariantMap m_additionalProperties = QVariantMap();
 };
 
 using RecipeIngredients = QList<RecipeIngredient>;
@@ -104,9 +105,10 @@ public:
     static RecipeStep fromMap(const QVariantMap& map);
 
 private:
-    QString m_description;
-    RecipeIngredients m_ingredients;
-    RecipeUtilities m_utilities;
+    QString m_description = QString();
+    RecipeIngredients m_ingredients = RecipeIngredients();
+    RecipeUtilities m_utilities = RecipeUtilities();
+    QVariantMap m_additionalProperties = QVariantMap();
 };
 
 using RecipeSteps = QList<RecipeStep>;

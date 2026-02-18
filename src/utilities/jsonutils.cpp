@@ -38,7 +38,7 @@ static Q_LOGGING_CATEGORY(log, "OpenTodoList.JsonUtils", QtWarningMsg);
  * as well. Otherwise, it will overwrite the value in the target map with the value from
  * the patch map.
  */
-void patchMap(QVariantMap& target, const QVariantMap& patch)
+static void patchMap(QVariantMap& target, const QVariantMap& patch)
 {
     for (auto it = patch.constBegin(); it != patch.constEnd(); ++it) {
         if (target.contains(it.key())
