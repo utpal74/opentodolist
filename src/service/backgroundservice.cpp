@@ -121,16 +121,24 @@ void BackgroundService::syncLibrary(const QUuid& libraryUid)
         if (!m_syncDirs.contains(library->directory())) {
             QScopedPointer<Synchronizer> sync(library->createSynchronizer());
             if (!sync) {
+                qCWarning(log) << "Library" << libraryUid << "is not syncable";
                 return;
             }
             QSharedPointer<Account> account(m_appSettings->loadAccount(sync->accountUid()));
-            if (!account || !m_appSettings->hasSecretsForAccount(account.data())) {
+            if (!account) {
+                qCWarning(log) << "Library" << libraryUid << "has no associated account";
+                return;
+            }
+            if (!m_appSettings->hasSecretsForAccount(account.data())) {
+                qCWarning(log) << "Account of library" << libraryUid << "is missing secrets";
                 return;
             }
             if (account->needConnectivityCheck()) {
                 // The account indicated that we need to run a connectitivty check.
                 // In this case, don't sync and instead trigger the check. It will
                 // cause credentials to be renewed and in turn trigger a sync later.
+                qCWarning(log) << "Account of library" << libraryUid
+                               << "requires connectivity check - triggering it now";
                 checkConnectivityOfAccount(m_appSettings->loadAccount(account->uid()));
                 return;
             }
@@ -148,6 +156,8 @@ void BackgroundService::syncLibrary(const QUuid& libraryUid)
             m_threadPool->start(runner);
             emit librarySyncStarted(libraryUid);
             qCDebug(log) << "Sync of library with uid" << libraryUid << "triggered";
+        } else {
+            qCWarning(log) << "Library" << libraryUid << "is already syncing";
         }
     } else {
         qCWarning(log) << "Library" << libraryUid << "not found";
