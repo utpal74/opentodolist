@@ -17,9 +17,9 @@
  * along with OpenTodoList.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "appstartup.h"
-
 #include <QQmlExtensionPlugin>
+
+#include "appstartup.h"
 
 // Explicitly link against sub-qml plugin modules to ensure they are
 // not eliminated by the linker (see
