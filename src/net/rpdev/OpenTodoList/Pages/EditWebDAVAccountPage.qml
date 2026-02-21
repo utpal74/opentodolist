@@ -4,7 +4,7 @@ import QtQuick.Layouts 1.0
 import net.rpdev.OpenTodoList.Components as Components
 import net.rpdev.OpenTodoList.Utils as Utils
 import net.rpdev.OpenTodoList.Style as C
-import net.rpdev.OpenTodoList.Windows 1.0 as Windows
+import net.rpdev.OpenTodoList.Windows as Windows
 
 import net.rpdev.OpenTodoList as OTL
 
