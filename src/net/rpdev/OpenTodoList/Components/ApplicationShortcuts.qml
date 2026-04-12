@@ -126,9 +126,36 @@ Item {
                                         "done": true
                                     })
 
+            let recipe = OTL.Application.addRecipe(lib, {
+                    "title": "Chocolate Brownies",
+                    "notes": "This is a super easy recipe for delicious chocolate brownies. It is so easy, you don't even need to write down the instructions - just add the ingredients and you are good to go! 😉",
+                    "yieldCount": 1,
+                    "yieldUnit": "pan of brownies",
+                    "color": OTL.TopLevelItem.Red
+                },
+                [
+                    OTL.Application.createRecipeIngredient("Butter", "g", 100),
+                    OTL.Application.createRecipeIngredient("Bitter Chocolate", "g", 100),
+                    OTL.Application.createRecipeIngredient("Eggs", "", 4),
+                    OTL.Application.createRecipeIngredient("Sugar", "g", 200),
+                    OTL.Application.createRecipeIngredient("Flour", "g", 100)
+                ],
+                [
+                    "Mixing Bowl",
+                    "Hand Mixer",
+                    "Oven"
+                ],
+                [
+                    OTL.Application.createRecipeStep("Preheat the oven to 180-200°C."),
+                    OTL.Application.createRecipeStep("Melt the butter and chocolate together - either in a microwave or in a water bath on the stove."),
+                    OTL.Application.createRecipeStep("Add the egg, sugar and flour and mix everything together until you have a smooth batter."),
+                    OTL.Application.createRecipeStep("Pour the batter into a suitable baking dish and bake for about 20-30 minutes - the exact time depends on your oven and how gooey you like your brownies 😉. Just check after 20 minutes and then every few minutes until they are done.")
+                ]
+            )
+
             var image = OTL.Application.addImage(lib, {
                                                      "title": "An image",
-                                                     "image": ":/sample.png",
+                                                     "image": ":/qt/qml/net/rpdev/OpenTodoList/sample.png",
                                                      "notes": ["* This is an image", "* Images wrap a single image which is prominently shown within a library.", "* As with other top level items, you can add arbitrary notes to them 😉"].join(
                                                          "\n"),
                                                      "color": OTL.TopLevelItem.Lilac
@@ -281,6 +308,14 @@ Item {
         symbol: C.Icons.mdiEdit
         enabled: typeof (stackView?.currentItem?.renameItem) === "function"
         onTriggered: stackView.currentItem.renameItem()
+    }
+
+    property C.Action editYield: C.Action {
+        text: qsTr("Edit Yield")
+        shortcut: "Ctrl+Shift+R"
+        symbol: C.Icons.mdiEdit
+        enabled: typeof (stackView?.currentItem?.editYield) === "function"
+        onTriggered: stackView.currentItem.editYield()
     }
 
     property C.Action settings: C.Action {

@@ -27,8 +27,137 @@
 #include <QString>
 #include <QStringList>
 #include <QtQml/qqmlregistration.h>
+#include <QUrl>
 
 #include "item.h"
+
+/**
+ * @brief Represents the result of an attachment operation.
+ *
+ * This class is used to represent the result of an attachment operation, i.e. attaching a file to
+ * an item. It contains information about the original file and the name of the attachment file.
+ */
+class AttachmentResult
+{
+    Q_GADGET
+    QML_VALUE_TYPE(attachmentResult)
+    Q_PROPERTY(QString originalFilePath READ originalFilePath WRITE setOriginalFilePath)
+    Q_PROPERTY(QUrl originalFileUrl READ originalFileUrl WRITE setOriginalFileUrl)
+    Q_PROPERTY(QString originalFileName READ originalFileName WRITE setOriginalFileName)
+    Q_PROPERTY(QString attachmentFileName READ attachmentFileName WRITE setAttachmentFileName)
+    Q_PROPERTY(bool valid READ isValid WRITE setValid)
+    Q_PROPERTY(bool isImage READ isImage WRITE setIsImage)
+
+public:
+    AttachmentResult() = default;
+    AttachmentResult(const QString& originalFilePath, const QUrl& originalFileUrl,
+                     const QString& originalFileName, const QString& attachmentFileName)
+        : m_originalFilePath(originalFilePath),
+          m_originalFileUrl(originalFileUrl),
+          m_originalFileName(originalFileName),
+          m_attachmentFileName(attachmentFileName),
+          m_valid(false),
+          m_isImage(false)
+    {
+    }
+    AttachmentResult(const AttachmentResult& other) = default;
+    AttachmentResult& operator=(const AttachmentResult& other) = default;
+    ~AttachmentResult() = default;
+    AttachmentResult(AttachmentResult&& other) noexcept = default;
+    AttachmentResult& operator=(AttachmentResult&& other) noexcept = default;
+
+    /**
+     * @brief The file path to the original file that was attached.
+     */
+    const QString& originalFilePath() const { return m_originalFilePath; }
+
+    /**
+     * @brief The URL to the original file that was attached.
+     */
+    const QUrl& originalFileUrl() const { return m_originalFileUrl; }
+
+    /**
+     * @brief The file name of the original file that was attached.
+     */
+    const QString& originalFileName() const { return m_originalFileName; }
+
+    /**
+     * @brief The file name of the attachment file.
+     */
+    const QString& attachmentFileName() const { return m_attachmentFileName; }
+
+    /**
+     * @brief Indicates if the attachment process was valid.
+     *
+     * @return true Attachment process was successful and the attachment file is available.
+     * @return false There was an issue during the attachment process and the attachment file is not
+     * available.
+     */
+    bool isValid() const { return m_valid; }
+
+    /**
+     * @brief Indicates if the attachment is an image.
+     *
+     * @return true The attachment is an image.
+     * @return false The attachment is not an image.
+     */
+    bool isImage() const { return m_isImage; }
+
+    /**
+     * @brief Sets the file name of the attachment file.
+     * @param attachmentFileName The file name of the attachment file.
+     */
+    void setAttachmentFileName(const QString& attachmentFileName)
+    {
+        m_attachmentFileName = attachmentFileName;
+    }
+
+    /**
+     * @brief Sets the file path to the original file that was attached.
+     * @param originalFilePath The file path to the original file that was attached.
+     */
+    void setOriginalFilePath(const QString& originalFilePath)
+    {
+        m_originalFilePath = originalFilePath;
+    }
+
+    /**
+     * @brief Sets the URL to the original file that was attached.
+     * @param originalFileUrl The URL to the original file that was attached.
+     */
+    void setOriginalFileUrl(const QUrl& originalFileUrl) { m_originalFileUrl = originalFileUrl; }
+
+    /**
+     * @brief Sets the file name of the original file that was attached.
+     * @param originalFileName The file name of the original file that was attached.
+     */
+    void setOriginalFileName(const QString& originalFileName)
+    {
+        m_originalFileName = originalFileName;
+    }
+
+    /**
+     * @brief Set if the attachment is valid.
+     *
+     * @param valid Indicates if the attachment process was valid.
+     */
+    void setValid(bool valid) { m_valid = valid; }
+
+    /**
+     * @brief Set if the attachment is an image.
+     *
+     * @param isImage Indicates if the attachment is an image.
+     */
+    void setIsImage(bool isImage) { m_isImage = isImage; }
+
+private:
+    QString m_originalFilePath = QString();
+    QUrl m_originalFileUrl = QUrl();
+    QString m_originalFileName = QString();
+    QString m_attachmentFileName = QString();
+    bool m_valid = false;
+    bool m_isImage = false;
+};
 
 /**
  * @brief Complex items.
@@ -44,6 +173,7 @@ class ComplexItem : public Item
     Q_PROPERTY(QDateTime dueTo READ dueTo WRITE setDueTo NOTIFY dueToChanged)
     Q_PROPERTY(QString notes READ notes WRITE setNotes NOTIFY notesChanged)
     Q_PROPERTY(QStringList attachments READ attachments NOTIFY attachmentsChanged)
+    Q_PROPERTY(QStringList attachedImages READ attachedImages NOTIFY attachmentsChanged)
     Q_PROPERTY(RecurrencePattern recurrencePattern READ recurrencePattern WRITE setRecurrencePattern
                        NOTIFY recurrencePatternChanged)
     Q_PROPERTY(RecurrenceSchedule recurrenceSchedule READ recurrenceSchedule WRITE
@@ -101,7 +231,9 @@ public:
     void setNotes(const QString& notes);
 
     const QStringList& attachments() const;
-    Q_INVOKABLE QString attachmentFileName(const QString& filename);
+    QStringList attachedImages() const;
+    Q_INVOKABLE QString attachmentFileName(const QString& filename) const;
+    Q_INVOKABLE QString attachmentFileMarkdownLink(const QString& filename) const;
 
     // Item interface
     bool deleteItem() override;
@@ -135,6 +267,9 @@ public:
 
     bool newRecurrenceCreated() const;
 
+    Q_INVOKABLE AttachmentResult attachFile(const QString& filename);
+    Q_INVOKABLE AttachmentResult attachFile(const QUrl& url);
+
 signals:
 
     void dueToChanged();
@@ -153,8 +288,6 @@ signals:
 
 public slots:
 
-    void attachFile(const QString& filename);
-    void attachFile(const QUrl& url);
     void detachFile(const QString& filename);
     void markCurrentOccurrenceAsDone(const QDateTime& today = QDateTime());
 
@@ -176,6 +309,7 @@ private:
     void setupConnections();
     void setAttachments(const QStringList& attachments);
     void setNewRecurrenceCreated(bool newNewRecurrenceCreated);
+    bool isImage(const QString& filename) const;
 
 protected:
     // Item interface

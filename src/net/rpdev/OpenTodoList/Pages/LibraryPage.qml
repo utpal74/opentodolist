@@ -372,7 +372,7 @@ C.Page {
         }
 
         sortRole: effectiveSortRole
-        cache: OTL.Application.cache
+        cache: page.library ? OTL.Application.cache : null
         parentItem: page.library?.uid ?? ""
         searchString: filterBar.text
         tag: page.tag

@@ -65,6 +65,7 @@ Column {
 
         C.TextArea {
             id: textEdit
+            item: root.item
             readOnly: true
             width: parent.width
             textFormat: Text.RichText
@@ -76,6 +77,9 @@ Column {
             text: Markdown.markdownToHtml(root.item?.notes ?? "", palette)
 
             onLinkActivated: link => {
+                                 if (link.indexOf("://") < 0) {
+                                    link = OTL.Application.localFileToUrl(root.item?.attachmentFileName(link)).toString();
+                                 }
                                  shareUtils.openLink(link)
                                  startEditingTimer.stop()
                              }
@@ -145,7 +149,7 @@ Column {
     Component {
         id: notesEditor
 
-        MarkdownEditor {
+        ItemNotesTextArea {
             id: editor
 
             item: root.item

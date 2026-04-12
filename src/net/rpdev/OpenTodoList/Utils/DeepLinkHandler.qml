@@ -46,6 +46,14 @@ Item {
         stackView.push(Qt.resolvedUrl("../Pages/ImagePage.qml"), properties)
     }
 
+    function openRecipe(url, recipe, library) {
+        let properties = {
+            "library": library,
+            "item": recipe
+        }
+        stackView.push(Qt.resolvedUrl("../Pages/RecipePage.qml"), properties)
+    }
+
     function warnLinkTargetNotFound() {
         notFoundDialog.open()
     }

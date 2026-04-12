@@ -24,6 +24,7 @@
 #include <QList>
 #include <QString>
 #include <QtCore/qcontainerfwd.h>
+#include <QtCore/qtmetamacros.h>
 #include <qqmlregistration.h>
 
 #include "datamodel/toplevelitem.h"
@@ -35,6 +36,7 @@ class RecipeIngredient
     Q_PROPERTY(double amount READ amount WRITE setAmount)
     Q_PROPERTY(QString unit READ unit WRITE setUnit)
     Q_PROPERTY(QString name READ name WRITE setName)
+    Q_PROPERTY(bool isHeading READ isHeading WRITE setIsHeading)
 
 public:
     RecipeIngredient();
@@ -56,13 +58,19 @@ public:
     const QString& name() const { return m_name; }
     void setName(const QString& name) { m_name = name; }
 
+    const bool& isHeading() const { return m_isHeading; }
+    void setIsHeading(const bool& isHeading) { m_isHeading = isHeading; }
+
     QVariantMap toMap() const;
     static RecipeIngredient fromMap(const QVariantMap& map);
+
+    static RecipeIngredient makeHeading(const QString& heading);
 
 private:
     double m_amount = 0.0;
     QString m_unit = QString();
     QString m_name = QString();
+    bool m_isHeading = false;
     QVariantMap m_additionalProperties = QVariantMap();
 };
 
@@ -123,6 +131,8 @@ public:
     Q_PROPERTY(QList<RecipeIngredient> ingredients READ ingredients WRITE setIngredients NOTIFY
                        ingredientsChanged)
     Q_PROPERTY(QList<QString> utilities READ utilities WRITE setUtilities NOTIFY utilitiesChanged)
+    Q_PROPERTY(int yieldCount READ yieldCount WRITE setYieldCount NOTIFY yieldCountChanged)
+    Q_PROPERTY(QString yieldUnit READ yieldUnit WRITE setYieldUnit NOTIFY yieldUnitChanged)
 
 public:
     explicit Recipe(QObject* parent = nullptr);
@@ -141,18 +151,33 @@ public:
     const RecipeUtilities& utilities() const;
     void setUtilities(const RecipeUtilities& utilities);
 
+    int yieldCount() const;
+    void setYieldCount(int yieldCount);
+
+    const QString& yieldUnit() const;
+    void setYieldUnit(const QString& yieldUnit);
+
     QVariantMap toMap() const override;
     void fromMap(QVariantMap map) override;
+
+    Q_INVOKABLE RecipeIngredient createIngredient(const QString& name = QString(),
+                                                  const QString& unit = QString(),
+                                                  double amount = 0) const;
+    Q_INVOKABLE RecipeStep createStep(const QString& description = QString()) const;
 
 signals:
     void stepsChanged();
     void ingredientsChanged();
     void utilitiesChanged();
+    void yieldCountChanged();
+    void yieldUnitChanged();
 
 private:
     RecipeSteps m_steps;
     RecipeIngredients m_ingredients;
     RecipeUtilities m_utilities;
+    int m_yieldCount = 0;
+    QString m_yieldUnit = QString();
 };
 
 #endif // DATAMODEL_RECIPE_H_

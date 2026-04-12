@@ -56,10 +56,13 @@ void RecipeTest::testPersistence()
     QCOMPARE(recipe.ingredients(), {});
     QCOMPARE(recipe.utilities(), {});
     QCOMPARE(recipe.steps(), {});
+    QCOMPARE(recipe.yieldCount(), 0);
+    QCOMPARE(recipe.yieldUnit(), QString());
 
     recipe.setTitle("Test Recipe");
     recipe.setNotes("Mix ingredients and bake.");
-    recipe.setIngredients({ RecipeIngredient(500, "g", "Flour"),
+    recipe.setIngredients({ RecipeIngredient::makeHeading("Dry ingredients"),
+                            RecipeIngredient(500, "g", "Flour"),
                             RecipeIngredient(100, "g", "Sugar"), RecipeIngredient(1, "", "Eggs") });
 
     recipe.setUtilities({ "Oven", "Bowl" });
@@ -68,6 +71,8 @@ void RecipeTest::testPersistence()
                                    RecipeIngredient(100, "g", "Sugar") },
                                  { "Bowl" }),
                       RecipeStep("Bake", {}, { "Oven" }) });
+    recipe.setYieldCount(4);
+    recipe.setYieldUnit("servings");
 
     // Persist into a variant and restore from it
     Recipe loadedRecipe;
@@ -75,11 +80,15 @@ void RecipeTest::testPersistence()
 
     // Check properties
     QCOMPARE(loadedRecipe.title(), QString("Test Recipe"));
-    RecipeIngredients expectedIngredients = { RecipeIngredient(500, "g", "Flour"),
+    RecipeIngredients expectedIngredients = { RecipeIngredient::makeHeading("Dry ingredients"),
+                                              RecipeIngredient(500, "g", "Flour"),
                                               RecipeIngredient(100, "g", "Sugar"),
                                               RecipeIngredient(1, "", "Eggs") };
     QCOMPARE(loadedRecipe.ingredients(), expectedIngredients);
+    QCOMPARE(loadedRecipe.ingredients().first().isHeading(), true);
     QCOMPARE(loadedRecipe.notes(), QString("Mix ingredients and bake."));
+    QCOMPARE(loadedRecipe.yieldCount(), 4);
+    QCOMPARE(loadedRecipe.yieldUnit(), QString("servings"));
 }
 
 void RecipeTest::testProperties()
@@ -91,6 +100,8 @@ void RecipeTest::testProperties()
     QCOMPARE(recipe.ingredients(), RecipeIngredients {});
     QCOMPARE(recipe.utilities(), QStringList {});
     QCOMPARE(recipe.steps(), RecipeSteps {});
+    QCOMPARE(recipe.yieldCount(), 0);
+    QCOMPARE(recipe.yieldUnit(), QString());
 
     // Test setting and getting title, and signal emission
     QSignalSpy titleSpy(&recipe, SIGNAL(titleChanged()));
@@ -127,6 +138,18 @@ void RecipeTest::testProperties()
     recipe.setSteps(steps);
     QCOMPARE(recipe.steps(), steps);
     QCOMPARE(stepsSpy.count(), 1);
+
+    // Test setting and getting yieldCount, and signal emission
+    QSignalSpy yieldCountSpy(&recipe, SIGNAL(yieldCountChanged()));
+    recipe.setYieldCount(6);
+    QCOMPARE(recipe.yieldCount(), 6);
+    QCOMPARE(yieldCountSpy.count(), 1);
+
+    // Test setting and getting yieldUnit, and signal emission
+    QSignalSpy yieldUnitSpy(&recipe, SIGNAL(yieldUnitChanged()));
+    recipe.setYieldUnit("portions");
+    QCOMPARE(recipe.yieldUnit(), QString("portions"));
+    QCOMPARE(yieldUnitSpy.count(), 1);
 }
 
 QTEST_MAIN(RecipeTest)

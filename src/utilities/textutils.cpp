@@ -128,7 +128,7 @@ void TextUtils::fixFormatting(QTextDocument& doc) const
 /**
  * @brief Highlight code blocks.
  *
- * This searches all code blocks in the given @p doc and applies syntaxt highlighting on them
+ * This searches all code blocks in the given @p doc and applies syntax highlighting on them
  * using the given @p highlighter.
  */
 void TextUtils::highlightCodeBlocks(QTextDocument& doc, SyntaxHighlighter* highlighter) const

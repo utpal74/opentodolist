@@ -33,6 +33,7 @@ qt_add_qml_module(opentodolist_style_module
         GroupBox.qml
         Icons.qml
         ItemDelegate.qml
+        ItemDelegateSeparator.qml
         Label.qml
         Menu.qml
         MenuBar.qml

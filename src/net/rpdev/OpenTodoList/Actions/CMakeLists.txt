@@ -6,6 +6,7 @@ qt_add_qml_module(opentodolist_actions_module
         CopyTopLevelItem.qml
         DeleteCompletedChildren.qml
         DeleteItem.qml
+        EditYield.qml
         MoveTask.qml
         MoveTodo.qml
         PromoteTask.qml

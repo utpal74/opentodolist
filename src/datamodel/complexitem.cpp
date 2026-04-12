@@ -150,7 +150,7 @@ const QStringList& ComplexItem::attachments() const
     return m_attachments;
 }
 
-QString ComplexItem::attachmentFileName(const QString& filename)
+QString ComplexItem::attachmentFileName(const QString& filename) const
 {
     QString result;
     if (isValid()) {
@@ -166,8 +166,13 @@ QString ComplexItem::attachmentFileName(const QString& filename)
  * This attaches the file (itentified by its @p filename) to the item.
  * Attaching means that the file is copied next to the item's main file.
  */
-void ComplexItem::attachFile(const QString& filename)
+AttachmentResult ComplexItem::attachFile(const QString& filename)
 {
+    AttachmentResult result;
+    result.setOriginalFileName(filename);
+    result.setOriginalFileUrl(QUrl::fromLocalFile(filename));
+    result.setOriginalFileName(QFileInfo(filename).fileName());
+
     if (isValid()) {
         QFileInfo fi(filename);
         if (fi.exists() && fi.isFile() && fi.isReadable()) {
@@ -176,27 +181,33 @@ void ComplexItem::attachFile(const QString& filename)
                 if (!dir.mkpath(".")) {
                     qCWarning(log)
                             << "Failed to create item directory" << dir << "for attaching file";
-                    return;
+                    return result;
                 }
             }
             QString targetFileName = fi.fileName();
             int i = 0;
             auto completeSuffix = fi.completeSuffix();
+            auto targetBaseName = fi.baseName();
+            targetBaseName = targetBaseName.replace(QRegularExpression("[^a-zA-Z0-9_-]"), "_");
             if (completeSuffix.isEmpty()) {
                 // Could happen, e.g. on Android, due to content:// URLs. Try to guess from mimetype
                 QMimeDatabase mdb;
                 auto mimetype = mdb.mimeTypeForFile(filename);
                 if (mimetype.isValid()) {
                     completeSuffix = mimetype.preferredSuffix();
-                    targetFileName = fi.baseName() + "." + completeSuffix;
+                    targetFileName = targetBaseName + "." + completeSuffix;
                 }
             }
             while (dir.exists(targetFileName)) {
                 ++i;
-                targetFileName = fi.baseName() + "-" + QString::number(i) + "." + completeSuffix;
+                targetFileName = targetBaseName + "-" + QString::number(i) + "." + completeSuffix;
             }
-            QFile::copy(filename, dir.absoluteFilePath(targetFileName)); // NOLINT
+            auto targetFilePath = dir.absoluteFilePath(targetFileName);
+            QFile::copy(filename, targetFilePath); // NOLINT
             m_attachments.append(targetFileName);
+            result.setAttachmentFileName(targetFileName);
+            result.setValid(true);
+            result.setIsImage(isImage(targetFilePath));
             std::stable_sort(m_attachments.begin(), m_attachments.end());
             emit attachmentsChanged();
         } else {
@@ -204,17 +215,21 @@ void ComplexItem::attachFile(const QString& filename)
                            << ": File does not exist or cannot be read.";
         }
     }
+    return result;
 }
 
-void ComplexItem::attachFile(const QUrl& url)
+AttachmentResult ComplexItem::attachFile(const QUrl& url)
 {
+    AttachmentResult result;
     if (url.scheme() == "content") {
         // On Android, pass-thru the content:// URL as is, see
         // https://www.volkerkrause.eu/2019/02/16/qt-open-files-on-android.html
-        attachFile(url.toString());
+        result = attachFile(url.toString());
     } else {
-        attachFile(url.toLocalFile());
+        result = attachFile(url.toLocalFile());
     }
+    result.setOriginalFileUrl(url);
+    return result;
 }
 
 /**
@@ -791,6 +806,51 @@ Item* ComplexItem::copyTo(const QDir& targetDirectory, const QUuid& targetLibrar
         }
         qCWarning(log) << "Attachments of" << complexItem->uid() << ":"
                        << complexItem->attachments();
+    }
+    return result;
+}
+
+/**
+ * @brief Indicates if the given file is an image.
+ *
+ * @param filename The filename to check.
+ * @return true if the file is an image, false otherwise.
+ */
+bool ComplexItem::isImage(const QString& filename) const
+{
+    QMimeDatabase mimeDatabase;
+    QMimeType mimeType = mimeDatabase.mimeTypeForFile(filename);
+    return mimeType.name().startsWith("image/");
+}
+
+/**
+ * @brief Generates a markdown link for the given attachment file.
+ *
+ * If the file is an image, the markdown link will be in the format `![filename](filename)`, which
+ * will display the image in the markdown viewer. If the file is not an image, the markdown link
+ * will be in the format `[filename](filename)`, which will display a link to the file in the
+ * markdown viewer.
+ *
+ * @param filename The filename of the attachment.
+ * @return The markdown link for the attachment file.
+ */
+QString ComplexItem::attachmentFileMarkdownLink(const QString& filename) const
+{
+    auto absoluteFilename = attachmentFileName(filename);
+    if (isImage(absoluteFilename)) {
+        return QString("![%1](%2)").arg(filename, filename);
+    } else {
+        return QString("[%1](%2)").arg(filename, filename);
+    }
+}
+QStringList ComplexItem::attachedImages() const
+{
+    QStringList result;
+    for (const auto& attachment : m_attachments) {
+        auto absoluteFilename = attachmentFileName(attachment);
+        if (isImage(absoluteFilename)) {
+            result.append(absoluteFilename);
+        }
     }
     return result;
 }

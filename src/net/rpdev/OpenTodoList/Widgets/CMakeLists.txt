@@ -7,11 +7,14 @@ qt_add_qml_module(opentodolist_widgets_module
         BackgroundLabel.qml
         BackgroundSymbol.qml
         ImageItem.qml
+        IngredientsEditor.qml
+        IngredientsEditorItem.qml
         ItemCreatedNotification.qml
         ItemDragButton.qml
         ItemDragTile.qml
         ItemDueDateEditor.qml
         ItemNotesEditor.qml
+        ItemNotesTextArea.qml
         ItemPage.qml
         ItemPageHeader.qml
         ItemPane.qml
@@ -20,12 +23,15 @@ qt_add_qml_module(opentodolist_widgets_module
         LibrariesSideBar.qml
         LibrarySideBarButton.qml
         MarkdownEditor.qml
+        MarkdownViewer.qml
         NewItemButton.qml
         NewTopLevelItemButton.qml
         NoteItem.qml
         ProgressItemOverlay.qml
         RecipeItem.qml
         ReorderableListViewOverlay.qml
+        StepsEditor.qml
+        StepsEditorItem.qml
         SyncErrorNotificationBar.qml
         TagsEditor.qml
         TextInputBar.qml
@@ -33,6 +39,8 @@ qt_add_qml_module(opentodolist_widgets_module
         TodosWidget.qml
         TodosWidgetDelegate.qml
         UpdateNotificationBar.qml
+        UtilitiesEditor.qml
+        UtilitiesEditorItem.qml
     IMPORTS
         QtQuick
         QtQuick.Controls.Basic

@@ -40,6 +40,8 @@
 #include <QTimer>
 #include <QUuid>
 
+#include "recipe.h"
+
 #ifdef Q_OS_ANDROID
 #    include <private/qandroidextras_p.h>
 #    include <QJniEnvironment>
@@ -661,7 +663,9 @@ Note* Application::addNote(Library* library, QVariantMap properties)
  * @param properties Properties to set on the new recipe.
  * @return Recipe* The created recipe, or nullptr on failure.
  */
-Recipe* Application::addRecipe(Library* library, QVariantMap properties)
+Recipe* Application::addRecipe(Library* library, QVariantMap properties,
+                               const QList<RecipeIngredient>& ingredients,
+                               const QStringList& utilities, const QList<RecipeStep>& steps)
 {
     Recipe* recipe = nullptr;
     if (library != nullptr) {
@@ -675,6 +679,9 @@ Recipe* Application::addRecipe(Library* library, QVariantMap properties)
         for (auto it = properties.constBegin(); it != properties.constEnd(); ++it) {
             recipe->setProperty(it.key().toUtf8(), it.value());
         }
+        recipe->setIngredients(ingredients);
+        recipe->setUtilities(utilities);
+        recipe->setSteps(steps);
         recipe->setLibraryId(library->uid());
         auto q = new InsertOrUpdateItemsQuery();
         q->add(recipe, InsertOrUpdateItemsQuery::CreateNewItem);
@@ -1694,4 +1701,53 @@ void Application::runSyncForLibrary(T library)
             }
         }
     }
+}
+
+/**
+ * @brief Get the URLs from the clipboard.
+ *
+ * This method returns a list of URLs which are currently stored in the clipboard.
+ *
+ * @return QList<QUrl> The list of URLs from the clipboard, or an empty list if there are no URLs in
+ * the clipboard.
+ */
+QList<QUrl> Application::urlsFromClipboard() const
+{
+    QList<QUrl> result;
+    auto app = qobject_cast<QGuiApplication*>(qApp);
+    if (app != nullptr) {
+        auto clipboard = app->clipboard();
+        auto mimeData = clipboard->mimeData();
+        if (mimeData->hasUrls()) {
+            result = mimeData->urls();
+        }
+    }
+    return result;
+}
+
+/**
+ * @brief Create a new recipe ingredient.
+ *
+ * @param name The name of the ingredient.
+ * @param unit The unit of the ingredient.
+ * @param amount The amount of the ingredient.
+ * @return RecipeIngredient The created recipe ingredient.
+ */
+RecipeIngredient Application::createRecipeIngredient(const QString& name, const QString& unit,
+                                                     double amount) const
+{
+    return RecipeIngredient(amount, unit, name);
+}
+
+/**
+ * @brief Create a new recipe step.
+ *
+ * @param description The description of the step.
+ * @return RecipeStep The created recipe step.
+ */
+RecipeStep Application::createRecipeStep(const QString& description) const
+{
+    RecipeStep step;
+    step.setDescription(description);
+    return step;
 }

@@ -123,6 +123,9 @@ QtObject {
                 case "Image":
                     window.deepLinkHandler.openImage(transaction.url, item, lib);
                     break;
+                case "Recipe":
+                    window.deepLinkHandler.openRecipe(transaction.url, item, lib);
+                    break;
                 default:
                     console.error("Unhandled item type:", item.itemType);
                     window.deepLinkHandler.warnLinkTargetNotFound();

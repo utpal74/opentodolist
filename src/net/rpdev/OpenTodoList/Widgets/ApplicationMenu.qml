@@ -117,6 +117,10 @@ P.MenuBar {
             action: menuBar.shortcuts.rename
         }
 
+        ActionMenuItem {
+            action: menuBar.shortcuts.editYield
+        }
+
         Separator {}
 
         ActionMenuItem {

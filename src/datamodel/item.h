@@ -90,6 +90,8 @@ class Item : public QObject
     Q_PROPERTY(QString filename READ filename NOTIFY filenameChanged)
     Q_PROPERTY(double weight READ weight WRITE setWeight NOTIFY weightChanged)
     Q_PROPERTY(bool isValid READ isValid NOTIFY filenameChanged)
+    Q_PROPERTY(QUrl baseUrl READ baseUrl NOTIFY filenameChanged)
+    Q_PROPERTY(QString basePath READ basePath NOTIFY filenameChanged)
     Q_PROPERTY(QDateTime createdAt READ createdAt NOTIFY createdAtChanged)
     Q_PROPERTY(QDateTime updatedAt READ updatedAt NOTIFY updatedAtChanged)
     Q_PROPERTY(QDateTime effectiveUpdatedAt READ effectiveUpdatedAt NOTIFY updatedAtChanged)
@@ -161,6 +163,10 @@ public:
 
     double weight() const;
     void setWeight(double weight);
+
+    QUrl baseUrl() const;
+
+    QString basePath() const;
 
     QString directory() const;
 

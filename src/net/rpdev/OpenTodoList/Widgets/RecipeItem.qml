@@ -1,4 +1,5 @@
 import QtQuick 2.0
+import QtQuick.Layouts
 
 import net.rpdev.OpenTodoList as OTL
 
@@ -98,22 +99,47 @@ MouseArea {
                 color: contentPane.textColor
             }
 
-            C.Label {
+            StackLayout {
+                id: imageStack
+
                 anchors.fill: parent
                 anchors.topMargin: {
                     if (dueToLabel.visible) {
-                        dueToLabel.height + AppSettings.smallSpace
+                        return dueToLabel.height + AppSettings.smallSpace
                     } else {
                         return 0
                     }
                 }
-                text: Markdown.markdownToHtml(item.libraryItem.notes, palette,
-                                              contentPane.textColor)
-                textFormat: Text.RichText
-                wrapMode: Text.NoWrap
-                elide: Text.ElideRight
-                clip: true
-                color: contentPane.textColor
+
+                Repeater {
+                    model: item.libraryItem.attachedImages
+                    delegate: Image {
+                        required property string modelData
+
+                        source: OTL.Application.localFileToUrl(modelData)
+                        fillMode: Image.PreserveAspectFit
+                        width: parent.width
+                        height: implicitHeight
+                    }
+                }
+            }
+
+            C.Symbol {
+                symbol: C.Icons.mdiFlatware
+                anchors.fill: imageStack
+                visible: imageStack.count === 0
+                font.pixelSize: Math.min(width, height) / 2
+                textColor: contentPane.textColor
+            }
+
+            Timer {
+                id: startEditingTimer
+                interval: Math.random() * 100 + 5000
+                repeat: true
+                running: imageStack.count > 0
+                onTriggered: {
+                    imageStack.currentIndex = (imageStack.currentIndex + 1) % imageStack.count
+                }
             }
         }
 

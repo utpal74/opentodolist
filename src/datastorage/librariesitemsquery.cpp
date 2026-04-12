@@ -77,7 +77,7 @@ void LibrariesItemsQuery::run()
                 result << QVariant::fromValue(entry);
             }
         } else {
-            qCWarning(log) << "Failed to find item" << item.value() << "in item cache!";
+            qCDebug(log) << "Failed to find item" << item.value() << "in item cache!";
             items()->remove(t, Cache::RootId, item.key());
         }
         it = childrenCursor.nextForCurrentKey();

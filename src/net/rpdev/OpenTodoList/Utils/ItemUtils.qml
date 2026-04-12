@@ -136,6 +136,13 @@ Item {
         }
     }
 
+    function editYield(item) {
+        if (d.editYieldDialog === null) {
+            d.editYieldDialog = editYieldDialogComponent.createObject(window)
+        }
+        d.editYieldDialog.editYield(item)
+    }
+
     QtObject {
         id: d
 
@@ -148,6 +155,7 @@ Item {
         property Windows.SelectTodoListDialog promoteTaskDialog: null
         property Windows.SelectLibraryDialog selectLibraryDialog: null
         property Windows.SelectTopLevelItemDialog selectTodoListAndLibraryDialog: null
+        property Windows.EditYieldDialog editYieldDialog: null
     }
 
     Component {
@@ -256,5 +264,11 @@ Item {
                 }
             }
         }
+    }
+
+    Component {
+        id: editYieldDialogComponent
+
+        Windows.EditYieldDialog {}
     }
 }

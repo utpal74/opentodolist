@@ -79,6 +79,10 @@ Item {
         Repeater {
             model: item.item?.attachments ?? []
             delegate: MouseArea {
+                id: attachmentItem
+
+                required property string modelData
+
                 width: parent.width
                 height: childrenRect.height
                 onClicked: shareUtils.openFile(item.item.attachmentFileName(
@@ -88,14 +92,22 @@ Item {
                     width: parent.width
 
                     C.Label {
-                        text: modelData
+                        text: attachmentItem.modelData
                         Layout.fillWidth: true
+                    }
+
+                    C.Symbol {
+                        symbol: C.Icons.mdiLink
+                        onClicked: {
+                            let link = item.item.attachmentFileMarkdownLink(attachmentItem.modelData);
+                            OTL.Application.copyToClipboard(link);
+                        }
                     }
 
                     C.Symbol {
                         symbol: C.Icons.mdiDelete
                         onClicked: {
-                            confirmDeleteAttachmentDialog.attachment = modelData
+                            confirmDeleteAttachmentDialog.attachment = attachmentItem.modelData
                             confirmDeleteAttachmentDialog.open()
                         }
                     }

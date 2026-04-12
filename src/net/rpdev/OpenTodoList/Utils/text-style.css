@@ -30,3 +30,8 @@ td, th {
     padding-left: 0.4em;
     padding-right: 0.4em;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}

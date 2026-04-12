@@ -10,7 +10,11 @@ qt_add_qml_module(opentodolist_windows_module
         DeleteCompletedItemsDialog.qml
         DeleteItemDialog.qml
         DeleteLibraryDialog.qml
+        EditYieldDialog.qml
+        IngredientEditorDialog.qml
         MainWindow.qml
+        MarkdownEditorDialog.qml
+        MessageDialog.qml
         NewItemWithDueDateDialog.qml
         QuickNoteWindow.qml
         RecurrenceDialog.qml
@@ -21,6 +25,7 @@ qt_add_qml_module(opentodolist_windows_module
         SelectTodoListDialog.qml
         SelectTopLevelItemDialog.qml
         StackViewWindow.qml
+        UtilityEditorDialog.qml
         WebViewDialog.qml
     IMPORTS
         QtQuick

@@ -1,6 +1,6 @@
 pragma Singleton
 
-import QtQuick 2.10
+import QtQuick
 import QtCore
 
 import net.rpdev.OpenTodoList as OTL
@@ -16,6 +16,18 @@ Item {
     property bool showNotesExcepts: false // Show first line of notes in item listings
     readonly property int effectiveFontSize: useCustomFontSize ? customFontSize : defaultFontSize
     property int libraryItemWidthScaleFactor: 40
+    property int virtualKeyboardHeight: {
+        if (Qt.inputMethod.visible) {
+            let keyboardHeight = Qt.inputMethod.keyboardRectangle.height
+            if (Qt.platform.os === "android") {
+                // On Android, the keyboard rectangle is in physical pixels, so we need to convert it to logical pixels
+                keyboardHeight /= Screen.devicePixelRatio
+            }
+            return keyboardHeight
+        } else {
+            return 0
+        }
+    }
 
     property bool desktopMode: {
         switch (Qt.platform.os) {

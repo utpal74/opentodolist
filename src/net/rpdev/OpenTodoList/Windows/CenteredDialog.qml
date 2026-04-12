@@ -2,6 +2,7 @@ import QtQuick 2.10
 
 import net.rpdev.OpenTodoList.Components
 import net.rpdev.OpenTodoList.Style as C
+import net.rpdev.OpenTodoList.Utils as U
 
 C.Dialog {
     id: dialog
@@ -14,7 +15,10 @@ C.Dialog {
                                                  Qt.application.font.pixelSize * 60,
                                                  parent.height - Qt.application.font.pixelSize * 5)
 
-    anchors.centerIn: parent
     parent: C.ApplicationWindow.contentItem
+    x: (parent.width - width) / 2
+    y: Math.max(
+           (parent.height - height - U.AppSettings.virtualKeyboardHeight) / 2,
+           0)
     modal: true
 }
