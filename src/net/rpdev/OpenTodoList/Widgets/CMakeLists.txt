@@ -1,0 +1,47 @@
+qt_add_qml_module(opentodolist_widgets_module
+    STATIC
+    URI net.rpdev.OpenTodoList.Widgets
+    QML_FILES
+        ApplicationMenu.qml
+        Attachments.qml
+        BackgroundLabel.qml
+        BackgroundSymbol.qml
+        ImageItem.qml
+        IngredientsEditor.qml
+        IngredientsEditorItem.qml
+        ItemCreatedNotification.qml
+        ItemDragButton.qml
+        ItemDragTile.qml
+        ItemDueDateEditor.qml
+        ItemNotesEditor.qml
+        ItemNotesTextArea.qml
+        ItemPage.qml
+        ItemPageHeader.qml
+        ItemPane.qml
+        ItemProgressEditor.qml
+        ItemScrollView.qml
+        LibrariesSideBar.qml
+        LibrarySideBarButton.qml
+        MarkdownEditor.qml
+        MarkdownViewer.qml
+        NewItemButton.qml
+        NewTopLevelItemButton.qml
+        NoteItem.qml
+        ProgressItemOverlay.qml
+        RecipeItem.qml
+        ReorderableListViewOverlay.qml
+        StepsEditor.qml
+        StepsEditorItem.qml
+        SyncErrorNotificationBar.qml
+        TagsEditor.qml
+        TextInputBar.qml
+        TodoListItem.qml
+        TodosWidget.qml
+        TodosWidgetDelegate.qml
+        UpdateNotificationBar.qml
+        UtilitiesEditor.qml
+        UtilitiesEditorItem.qml
+    IMPORTS
+        QtQuick
+        QtQuick.Controls.Basic
+)

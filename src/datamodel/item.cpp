@@ -794,3 +794,33 @@ QDebug operator<<(QDebug debug, const Item* item)
     }
     return debug;
 }
+
+/**
+ * @brief Get the base URL of the item.
+ *
+ * This property holds the base URL for the item, which is used to resolve relative URLs. This is
+ * used e.g. to look up resources like attachments, that are stored relative to the item in the
+ * local store.
+ */
+QUrl Item::baseUrl() const
+{
+    if (isValid()) {
+        return QUrl::fromLocalFile(filename());
+    }
+    return QUrl();
+}
+
+/**
+ * @brief Get the base path of the item.
+ *
+ * This property holds the base path for the item, which is used to resolve relative paths. This is
+ * used e.g. to look up resources like attachments, that are stored relative to the item in the
+ * local store.
+ */
+QString Item::basePath() const
+{
+    if (isValid()) {
+        return directory();
+    }
+    return QString();
+}

@@ -18,6 +18,7 @@
  */
 #include "recipe.h"
 
+#include <QVariant>
 #include <utility>
 
 /**
@@ -25,7 +26,7 @@
  *
  * Constructs a new RecipeIngredient object with amount initialized to 0.0.
  */
-RecipeIngredient::RecipeIngredient() : m_amount(0.0) {}
+RecipeIngredient::RecipeIngredient() {}
 
 /**
  * @brief Constructs a new RecipeIngredient object.
@@ -47,7 +48,11 @@ RecipeIngredient::RecipeIngredient(double amount, const QString& unit, const QSt
  * @param other The RecipeIngredient instance to copy from.
  */
 RecipeIngredient::RecipeIngredient(const RecipeIngredient& other)
-    : m_amount(other.m_amount), m_unit(other.m_unit), m_name(other.m_name)
+    : m_amount(other.m_amount),
+      m_unit(other.m_unit),
+      m_name(other.m_name),
+      m_isHeading(other.m_isHeading),
+      m_additionalProperties(other.m_additionalProperties)
 {
 }
 
@@ -67,6 +72,8 @@ RecipeIngredient& RecipeIngredient::operator=(const RecipeIngredient& other)
         m_amount = other.m_amount;
         m_unit = other.m_unit;
         m_name = other.m_name;
+        m_isHeading = other.m_isHeading;
+        m_additionalProperties = other.m_additionalProperties;
     }
     return *this;
 }
@@ -82,7 +89,11 @@ RecipeIngredient& RecipeIngredient::operator=(const RecipeIngredient& other)
  * After the move, the source object remains in a valid but unspecified state.
  */
 RecipeIngredient::RecipeIngredient(RecipeIngredient&& other) noexcept
-    : m_amount(other.m_amount), m_unit(std::move(other.m_unit)), m_name(std::move(other.m_name))
+    : m_amount(other.m_amount),
+      m_unit(std::move(other.m_unit)),
+      m_name(std::move(other.m_name)),
+      m_isHeading(std::move(other.m_isHeading)),
+      m_additionalProperties(std::move(other.m_additionalProperties))
 {
 }
 
@@ -102,6 +113,8 @@ RecipeIngredient& RecipeIngredient::operator=(RecipeIngredient&& other) noexcept
         m_amount = other.m_amount;
         m_unit = std::move(other.m_unit);
         m_name = std::move(other.m_name);
+        m_isHeading = std::move(other.m_isHeading);
+        m_additionalProperties = std::move(other.m_additionalProperties);
     }
     return *this;
 }
@@ -117,7 +130,8 @@ RecipeIngredient& RecipeIngredient::operator=(RecipeIngredient&& other) noexcept
  */
 bool RecipeIngredient::operator==(const RecipeIngredient& other) const
 {
-    return m_amount == other.m_amount && m_unit == other.m_unit && m_name == other.m_name;
+    return m_amount == other.m_amount && m_unit == other.m_unit && m_name == other.m_name
+            && m_isHeading == other.m_isHeading;
 }
 
 /**
@@ -142,13 +156,15 @@ bool RecipeIngredient::operator!=(const RecipeIngredient& other) const
  *         - "amount": The quantity of the ingredient
  *         - "unit": The unit of measurement
  *         - "name": The name of the ingredient
+ *        - "isHeading": Whether this ingredient is a heading
  */
 QVariantMap RecipeIngredient::toMap() const
 {
-    QVariantMap map;
+    QVariantMap map = m_additionalProperties;
     map["amount"] = m_amount;
     map["unit"] = m_unit;
     map["name"] = m_name;
+    map["isHeading"] = m_isHeading;
     return map;
 }
 
@@ -159,15 +175,22 @@ QVariantMap RecipeIngredient::toMap() const
  *            - "amount": Double value representing the quantity of the ingredient
  *            - "unit": String value representing the unit of measurement
  *            - "name": String value representing the name of the ingredient
+ *           - "isHeading": Boolean value indicating if this ingredient is a heading
  *
  * @return RecipeIngredient A new RecipeIngredient instance initialized with the map data
  */
 RecipeIngredient RecipeIngredient::fromMap(const QVariantMap& map)
 {
-    double amount_ = map.value("amount").toDouble();
-    QString unit_ = map.value("unit").toString();
-    QString name_ = map.value("name").toString();
-    return RecipeIngredient(amount_, unit_, name_);
+    QVariantMap m_additionalProperties = map;
+    double amount_ = m_additionalProperties.take("amount").toDouble();
+    QString unit_ = m_additionalProperties.take("unit").toString();
+    QString name_ = m_additionalProperties.take("name").toString();
+    bool isHeading_ = m_additionalProperties.take("isHeading").toBool();
+
+    auto result = RecipeIngredient(amount_, unit_, name_);
+    result.m_isHeading = isHeading_;
+    result.m_additionalProperties = m_additionalProperties;
+    return result;
 }
 
 /**
@@ -193,7 +216,8 @@ RecipeStep::RecipeStep(const QString& description, const RecipeIngredients& ingr
 RecipeStep::RecipeStep(const RecipeStep& other)
     : m_description(other.m_description),
       m_ingredients(other.m_ingredients),
-      m_utilities(other.m_utilities)
+      m_utilities(other.m_utilities),
+      m_additionalProperties(other.m_additionalProperties)
 {
 }
 
@@ -212,6 +236,7 @@ RecipeStep& RecipeStep::operator=(const RecipeStep& other)
         m_description = other.m_description;
         m_ingredients = other.m_ingredients;
         m_utilities = other.m_utilities;
+        m_additionalProperties = other.m_additionalProperties;
     }
     return *this;
 }
@@ -227,7 +252,8 @@ RecipeStep& RecipeStep::operator=(const RecipeStep& other)
 RecipeStep::RecipeStep(RecipeStep&& other) noexcept
     : m_description(std::move(other.m_description)),
       m_ingredients(std::move(other.m_ingredients)),
-      m_utilities(std::move(other.m_utilities))
+      m_utilities(std::move(other.m_utilities)),
+      m_additionalProperties(std::move(other.m_additionalProperties))
 {
 }
 
@@ -248,6 +274,7 @@ RecipeStep& RecipeStep::operator=(RecipeStep&& other) noexcept
         m_description = std::move(other.m_description);
         m_ingredients = std::move(other.m_ingredients);
         m_utilities = std::move(other.m_utilities);
+        m_additionalProperties = std::move(other.m_additionalProperties);
     }
     return *this;
 }
@@ -292,7 +319,7 @@ bool RecipeStep::operator!=(const RecipeStep& other) const
  */
 QVariantMap RecipeStep::toMap() const
 {
-    QVariantMap map;
+    QVariantMap map = m_additionalProperties;
     map["description"] = m_description;
 
     QVariantList ingredientsList;
@@ -324,22 +351,26 @@ QVariantMap RecipeStep::toMap() const
  */
 RecipeStep RecipeStep::fromMap(const QVariantMap& map)
 {
-    QString description_ = map.value("description").toString();
+    QVariantMap additionalProperties = map;
+
+    QString description_ = additionalProperties.take("description").toString();
 
     RecipeIngredients ingredients_;
-    QVariantList ingredientsList = map.value("ingredients").toList();
+    QVariantList ingredientsList = additionalProperties.take("ingredients").toList();
     for (const QVariant& ingredientVar : ingredientsList) {
         QVariantMap ingredientMap = ingredientVar.toMap();
         ingredients_.append(RecipeIngredient::fromMap(ingredientMap));
     }
 
     RecipeUtilities utilities_;
-    QVariantList utilitiesList = map.value("utilities").toList();
+    QVariantList utilitiesList = additionalProperties.take("utilities").toList();
     for (const QVariant& utilityVar : utilitiesList) {
         utilities_.append(utilityVar.toString());
     }
 
-    return RecipeStep(description_, ingredients_, utilities_);
+    auto result = RecipeStep(description_, ingredients_, utilities_);
+    result.m_additionalProperties = additionalProperties;
+    return result;
 }
 
 /**
@@ -367,6 +398,8 @@ Recipe::Recipe(const QString& filename, QObject* parent)
     connect(this, &Recipe::stepsChanged, this, &TopLevelItem::changed);
     connect(this, &Recipe::ingredientsChanged, this, &TopLevelItem::changed);
     connect(this, &Recipe::utilitiesChanged, this, &TopLevelItem::changed);
+    connect(this, &Recipe::yieldCountChanged, this, &TopLevelItem::changed);
+    connect(this, &Recipe::yieldUnitChanged, this, &TopLevelItem::changed);
 }
 
 /**
@@ -534,6 +567,8 @@ QVariantMap Recipe::toMap() const
     }
     map["ingredients"] = ingredientsList;
     map["utilities"] = QVariant::fromValue(m_utilities);
+    map["yieldUnit"] = m_yieldUnit;
+    map["yieldCount"] = m_yieldCount;
     return map;
 }
 
@@ -567,4 +602,98 @@ void Recipe::fromMap(QVariantMap map)
     }
 
     m_utilities = map.value("utilities").toStringList();
+    m_yieldUnit = map.value("yieldUnit").toString();
+    m_yieldCount = map.value("yieldCount").toInt();
+}
+
+/**
+ * @brief Get the yield unit of the recipe.
+ *
+ * @return const QString& The unit used for the recipe yield (e.g., "servings", "portions")
+ */
+const QString& Recipe::yieldUnit() const
+{
+    return m_yieldUnit;
+}
+
+/**
+ * @brief Set the yield unit of the recipe.
+ *
+ * Updates the recipe's yield unit and emits a yieldUnitChanged signal to notify
+ * listeners about the modification.
+ *
+ * @param yieldUnit The new yield unit for the recipe
+ */
+void Recipe::setYieldUnit(const QString& yieldUnit)
+{
+    if (m_yieldUnit != yieldUnit) {
+        m_yieldUnit = yieldUnit;
+        emit yieldUnitChanged();
+    }
+}
+
+/**
+ * @brief Get the yield count of the recipe.
+ *
+ * @return int The number of yields the recipe produces
+ */
+int Recipe::yieldCount() const
+{
+    return m_yieldCount;
+}
+
+/**
+ * @brief Set the yield count of the recipe.
+ *
+ * Updates the recipe's yield count and emits a yieldCountChanged signal to notify
+ * listeners about the modification.
+ *
+ * @param yieldCount The new yield count for the recipe
+ */
+void Recipe::setYieldCount(int yieldCount)
+{
+    if (m_yieldCount != yieldCount) {
+        m_yieldCount = yieldCount;
+        emit yieldCountChanged();
+    }
+}
+
+/**
+ * @brief Create a new RecipeIngredient instance.
+ *
+ * @return RecipeIngredient
+ */
+RecipeIngredient Recipe::createIngredient(const QString& name, const QString& unit,
+                                          double amount) const
+{
+    return RecipeIngredient(amount, unit, name);
+}
+
+/**
+ * @brief Create a new RecipeStep instance.
+ *
+ * @return RecipeStep
+ */
+RecipeStep Recipe::createStep(const QString& description) const
+{
+    RecipeStep result;
+    result.setDescription(description);
+    return result;
+}
+
+/**
+ * @brief Creates a heading RecipeIngredient.
+ *
+ * This method creates a special RecipeIngredient that serves as a heading. Such "ingredients" are
+ * specially rendered and serve as heading to group several ingredients together.
+ *
+ * @param heading The name of the ingredient.
+ * @return RecipeIngredient An ingredient that is marked as heading.
+ */
+RecipeIngredient RecipeIngredient::makeHeading(const QString& heading)
+{
+    RecipeIngredient result;
+    result.setName(heading);
+    result.setIsHeading(true);
+    return result;
 }

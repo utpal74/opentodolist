@@ -1,9 +1,9 @@
 import QtQuick
 
-import OpenTodoList.Windows as Windows
-import OpenTodoList.Style as C
+import net.rpdev.OpenTodoList.Windows as Windows
+import net.rpdev.OpenTodoList.Style as C
 
-import OpenTodoList as OTL
+import net.rpdev.OpenTodoList as OTL
 
 QtObject {
     id: rootObject
@@ -122,6 +122,9 @@ QtObject {
                     break;
                 case "Image":
                     window.deepLinkHandler.openImage(transaction.url, item, lib);
+                    break;
+                case "Recipe":
+                    window.deepLinkHandler.openRecipe(transaction.url, item, lib);
                     break;
                 default:
                     console.error("Unhandled item type:", item.itemType);

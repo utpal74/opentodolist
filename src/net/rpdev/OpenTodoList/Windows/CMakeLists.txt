@@ -1,0 +1,33 @@
+qt_add_qml_module(opentodolist_windows_module
+    STATIC
+    URI net.rpdev.OpenTodoList.Windows
+    QML_FILES
+        AppWindow.qml
+        CenteredDialog.qml
+        ColorSelectionDialog.qml
+        DateSelectionDialog.qml
+        DeleteAccountDialog.qml
+        DeleteCompletedItemsDialog.qml
+        DeleteItemDialog.qml
+        DeleteLibraryDialog.qml
+        EditYieldDialog.qml
+        IngredientEditorDialog.qml
+        MainWindow.qml
+        MarkdownEditorDialog.qml
+        MessageDialog.qml
+        NewItemWithDueDateDialog.qml
+        QuickNoteWindow.qml
+        RecurrenceDialog.qml
+        RenameItemDialog.qml
+        RenameLibraryDialog.qml
+        SelectLibraryDialog.qml
+        SelectTodoDialog.qml
+        SelectTodoListDialog.qml
+        SelectTopLevelItemDialog.qml
+        StackViewWindow.qml
+        UtilityEditorDialog.qml
+        WebViewDialog.qml
+    IMPORTS
+        QtQuick
+        QtQuick.Controls.Basic
+)

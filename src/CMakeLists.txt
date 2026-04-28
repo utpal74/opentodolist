@@ -440,6 +440,15 @@ if(DESKTOP_MODE)
             Qt::Qml
             Qt::Quick
             opentodolist-common
+            opentodolist_actions_moduleplugin
+            opentodolist_components_moduleplugin
+            opentodolist_dialogs_moduleplugin
+            opentodolist_menues_moduleplugin
+            opentodolist_style_moduleplugin
+            opentodolist_utils_moduleplugin
+            opentodolist_widgets_moduleplugin
+            opentodolist_windows_moduleplugin
+            opentodolist_pages_moduleplugin
     )
     target_compile_definitions(
         gallery
@@ -459,20 +468,6 @@ endif()
 #
 ################################################################################
 
-# Mark modules that are singletons as such:
-set_source_files_properties(
-        Style/ColorTheme.qml
-        Style/Fonts.qml
-        Style/Icons.qml
-        Style/StyleSettings.qml
-        Utils/AppSettings.qml
-        Utils/Colors.qml
-        Utils/DateUtils.qml
-        Utils/Markdown.qml
-    PROPERTIES
-        QT_QML_SINGLETON_TYPE TRUE
-)
-
 # Add aliases for some resources:
 set_source_files_properties(
     ../3rdparty/ral-json/ral.json
@@ -484,185 +479,17 @@ set_source_files_properties(
 qt_add_qml_module(
     OpenTodoList
     URI
-        OpenTodoList
-    VERSION
-        1.0
+        net.rpdev.OpenTodoList
     IMPORTS
         QtQuick.Controls.Basic
-    OUTPUT_DIRECTORY
-        # Store QML related files in a dedicated sub-folder of the build folder.
-        # Otherwise, we have file name conflicts on some platforms (such as
-        # Linux), where the executable name would be equal to the OpenTodoList
-        # qml folder name.
-        ${CMAKE_CURRENT_BINARY_DIR}/qml/OpenTodoList
+    # OUTPUT_DIRECTORY
+    #     # Store QML related files in a dedicated sub-folder of the build folder.
+    #     # Otherwise, we have file name conflicts on some platforms (such as
+    #     # Linux), where the executable name would be equal to the OpenTodoList
+    #     # qml folder name.
+    #     ${CMAKE_CURRENT_BINARY_DIR}/qml/OpenTodoList
     QML_FILES
-        Actions/CopyTodo.qml
-        Actions/CopyTopLevelItem.qml
-        Actions/DeleteCompletedChildren.qml
-        Actions/DeleteItem.qml
-        Actions/MoveTask.qml
-        Actions/MoveTodo.qml
-        Actions/PromoteTask.qml
-        Actions/RenameItem.qml
-        Actions/ResetDueTo.qml
-        Actions/SetDueNextWeek.qml
-        Actions/SetDueThisWeek.qml
-        Actions/SetDueTo.qml
-        Actions/SetDueToday.qml
-        Actions/SetDueTomorrow.qml
-        Actions/SetManualProgressAction.qml
-        Components/ApplicationShortcuts.qml
-        Components/ApplicationToolBar.qml
-        Components/AutoScrollOverlay.qml
-        Components/Empty.qml
-        Components/Heading.qml
-        Components/ItemAction.qml
-        Components/ItemActionMenu.qml
-        Components/PullToRefreshOverlay.qml
-        Components/ToolBarAction.qml
-        Components/Tooltips/ActionableToolTip.qml
-        Components/Tooltips/AllSubtasksDone.qml
-        Components/Tooltips/MarkFutureInstanceAsDone.qml
-        Dialogs/FileDialog.qml
-        Dialogs/FilesDialog.qml
         main.qml
-        Menues/ColorMenu.qml
-        Pages/AboutPage.qml
-        Pages/AccountsPage.qml
-        Pages/AccountTypeSelectionPage.qml
-        Pages/EditDropboxAccountPage.qml
-        Pages/EditNextCloudAccountPage.qml
-        Pages/EditOwnCloudAccountPage.qml
-        Pages/EditWebDAVAccountPage.qml
-        Pages/ImagePage.qml
-        Pages/LibraryPage.qml
-        Pages/LogViewPage.qml
-        Pages/NewDropboxAccountPage.qml
-        Pages/NewLibraryFromAccountPage.qml
-        Pages/NewLibraryInFolderPage.qml
-        Pages/NewLibraryPage.qml
-        Pages/NewLocalLibraryPage.qml
-        Pages/NewNextCloudAccountPage.qml
-        Pages/NewOwnCloudAccountPage.qml
-        Pages/NewWebDAVAccountPage.qml
-        Pages/NotePage.qml
-        Pages/ProblemsPage.qml
-        Pages/ScheduleViewPage.qml
-        Pages/SettingsPage.qml
-        Pages/StartPage.qml
-        Pages/SyncErrorViewPage.qml
-        Pages/TodoListPage.qml
-        Pages/TodoPage.qml
-        Style/Action.qml
-        Style/ApplicationWindow.qml
-        Style/BusyIndicator.qml
-        Style/Button.qml
-        Style/ButtonGroup.qml
-        Style/CheckBox.qml
-        Style/CheckDelegate.qml
-        Style/ColorTheme.qml
-        Style/ComboBox.qml
-        Style/DayOfWeekRow.qml
-        Style/Dialog.qml
-        Style/DialogButtonBox.qml
-        Style/Drawer.qml
-        Style/DropShadow.qml
-        Style/ErrorLabel.qml
-        Style/Fonts.qml
-        Style/Frame.qml
-        Style/GroupBox.qml
-        Style/Icons.qml
-        Style/ItemDelegate.qml
-        Style/Label.qml
-        Style/Menu.qml
-        Style/MenuBar.qml
-        Style/MenuItem.qml
-        Style/MenuSeparator.qml
-        Style/MonthGrid.qml
-        Style/Page.qml
-        Style/Pane.qml
-        Style/PasswordField.qml
-        Style/Popup.qml
-        Style/ProgressBar.qml
-        Style/RadioButton.qml
-        Style/RoundButton.qml
-        Style/ScrollBar.qml
-        Style/ScrollIndicator.qml
-        Style/ScrollView.qml
-        Style/Slider.qml
-        Style/SpinBox.qml
-        Style/StackView.qml
-        Style/StyleSettings.qml
-        Style/SwipeDelegate.qml
-        Style/SwitchDelegate.qml
-        Style/Symbol.qml
-        Style/TabBar.qml
-        Style/TabButton.qml
-        Style/TextArea.qml
-        Style/TextField.qml
-        Style/ToolBar.qml
-        Style/ToolButton.qml
-        Style/ToolTip.qml
-        Style/WeekNumberColumn.qml
-        Utils/Accounts.qml
-        Utils/AppSettings.qml
-        Utils/Colors.qml
-        Utils/DateUtils.qml
-        Utils/DeepLinkHandler.qml
-        Utils/ItemUtils.qml
-        Utils/Markdown.qml
-        Utils/SortFilterModel.qml
-        Widgets/ApplicationMenu.qml
-        Widgets/Attachments.qml
-        Widgets/BackgroundLabel.qml
-        Widgets/BackgroundSymbol.qml
-        Widgets/ImageItem.qml
-        Widgets/ItemCreatedNotification.qml
-        Widgets/ItemDragButton.qml
-        Widgets/ItemDragTile.qml
-        Widgets/ItemDueDateEditor.qml
-        Widgets/ItemNotesEditor.qml
-        Widgets/ItemPage.qml
-        Widgets/ItemPageHeader.qml
-        Widgets/ItemPane.qml
-        Widgets/ItemProgressEditor.qml
-        Widgets/ItemScrollView.qml
-        Widgets/LibrariesSideBar.qml
-        Widgets/LibrarySideBarButton.qml
-        Widgets/MarkdownEditor.qml
-        Widgets/NewItemButton.qml
-        Widgets/NewTopLevelItemButton.qml
-        Widgets/NoteItem.qml
-        Widgets/ProgressItemOverlay.qml
-        Widgets/RecipeItem.qml
-        Widgets/ReorderableListViewOverlay.qml
-        Widgets/SyncErrorNotificationBar.qml
-        Widgets/TagsEditor.qml
-        Widgets/TextInputBar.qml
-        Widgets/TodoListItem.qml
-        Widgets/TodosWidget.qml
-        Widgets/TodosWidgetDelegate.qml
-        Widgets/UpdateNotificationBar.qml
-        Windows/AppWindow.qml
-        Windows/CenteredDialog.qml
-        Windows/ColorSelectionDialog.qml
-        Windows/DateSelectionDialog.qml
-        Windows/DeleteAccountDialog.qml
-        Windows/DeleteCompletedItemsDialog.qml
-        Windows/DeleteItemDialog.qml
-        Windows/DeleteLibraryDialog.qml
-        Windows/MainWindow.qml
-        Windows/NewItemWithDueDateDialog.qml
-        Windows/QuickNoteWindow.qml
-        Windows/RecurrenceDialog.qml
-        Windows/RenameItemDialog.qml
-        Windows/RenameLibraryDialog.qml
-        Windows/SelectLibraryDialog.qml
-        Windows/SelectTodoDialog.qml
-        Windows/SelectTodoListDialog.qml
-        Windows/SelectTopLevelItemDialog.qml
-        Windows/StackViewWindow.qml
-        Windows/WebViewDialog.qml
     RESOURCES
         ../3rdparty/ral-json/ral.json
         3rdpartyinfo/comfortaa/3rdpartyinfo.json
@@ -692,48 +519,40 @@ qt_add_qml_module(
         res/OpenTodoList.icns
         res/OpenTodoList.ico
         sample.png
-        Style/Comfortaa/Comfortaa-VariableFont_wght.ttf
-        Style/Comfortaa/OFL.txt
-        Style/Comfortaa/README.txt
-        Style/Comfortaa/static/Comfortaa-Bold.ttf
-        Style/Comfortaa/static/Comfortaa-Light.ttf
-        Style/Comfortaa/static/Comfortaa-Medium.ttf
-        Style/Comfortaa/static/Comfortaa-Regular.ttf
-        Style/Comfortaa/static/Comfortaa-SemiBold.ttf
-        Style/material-design-icons/font/MaterialIcons-Regular.codepoints
-        Style/material-design-icons/font/MaterialIcons-Regular.ttf
-        Style/material-design-icons/font/MaterialIconsOutlined-Regular.codepoints
-        Style/material-design-icons/font/MaterialIconsOutlined-Regular.otf
-        Style/material-design-icons/font/MaterialIconsRound-Regular.codepoints
-        Style/material-design-icons/font/MaterialIconsRound-Regular.otf
-        Style/material-design-icons/font/MaterialIconsSharp-Regular.codepoints
-        Style/material-design-icons/font/MaterialIconsSharp-Regular.otf
-        Style/material-design-icons/font/MaterialIconsTwoTone-Regular.codepoints
-        Style/material-design-icons/font/MaterialIconsTwoTone-Regular.otf
-        Style/material-design-icons/font/README.md
-        Style/material-design-icons/LICENSE
-        Style/material-design-icons/README.md
-        Style/NotoColorEmoji-unhinted/LICENSE_OFL.txt
-        Style/NotoColorEmoji-unhinted/NotoColorEmoji.ttf
-        Style/NotoColorEmoji-unhinted/README
-        Style/Oxygen/OFL.txt
-        Style/Oxygen/Oxygen-Bold.ttf
-        Style/Oxygen/Oxygen-Light.ttf
-        Style/Oxygen/Oxygen-Regular.ttf
-        Style/Oxygen/OxygenMono-Regular.ttf
-        Style/Roboto/LICENSE.txt
-        Style/Roboto/Roboto-Bold.ttf
-        Style/Roboto/Roboto-Italic.ttf
-        Style/Roboto/Roboto-Regular.ttf
         translations/languages.json
         translations/languages.json
         translations/languages.json
         translations/update-info.json
         translations/update-info.json
-        Utils/text-style.css
 )
 
+# Sub-modules are split into their own plugins - link against them here
+# (see https://www.basyskom.de/en/how-to-use-modern-qml-tooling-in-practice/)
+# for background):
 
+target_link_libraries(
+    OpenTodoList
+    PRIVATE
+        opentodolist_actions_moduleplugin
+        opentodolist_components_moduleplugin
+        opentodolist_dialogs_moduleplugin
+        opentodolist_menues_moduleplugin
+        opentodolist_style_moduleplugin
+        opentodolist_utils_moduleplugin
+        opentodolist_widgets_moduleplugin
+        opentodolist_windows_moduleplugin
+        opentodolist_pages_moduleplugin
+)
+
+add_subdirectory(net/rpdev/OpenTodoList/Actions)
+add_subdirectory(net/rpdev/OpenTodoList/Components)
+add_subdirectory(net/rpdev/OpenTodoList/Dialogs)
+add_subdirectory(net/rpdev/OpenTodoList/Menues)
+add_subdirectory(net/rpdev/OpenTodoList/Style)
+add_subdirectory(net/rpdev/OpenTodoList/Utils)
+add_subdirectory(net/rpdev/OpenTodoList/Widgets)
+add_subdirectory(net/rpdev/OpenTodoList/Windows)
+add_subdirectory(net/rpdev/OpenTodoList/Pages)
 
 ################################################################################
 #

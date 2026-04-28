@@ -1,0 +1,35 @@
+qt_add_qml_module(opentodolist_pages_module
+    STATIC
+    URI net.rpdev.OpenTodoList.Pages
+    QML_FILES
+        AboutPage.qml
+        AccountsPage.qml
+        AccountTypeSelectionPage.qml
+        EditDropboxAccountPage.qml
+        EditNextCloudAccountPage.qml
+        EditOwnCloudAccountPage.qml
+        EditWebDAVAccountPage.qml
+        ImagePage.qml
+        LibraryPage.qml
+        LogViewPage.qml
+        NewDropboxAccountPage.qml
+        NewLibraryFromAccountPage.qml
+        NewLibraryInFolderPage.qml
+        NewLibraryPage.qml
+        NewLocalLibraryPage.qml
+        NewNextCloudAccountPage.qml
+        NewOwnCloudAccountPage.qml
+        NewWebDAVAccountPage.qml
+        NotePage.qml
+        ProblemsPage.qml
+        RecipePage.qml
+        ScheduleViewPage.qml
+        SettingsPage.qml
+        StartPage.qml
+        SyncErrorViewPage.qml
+        TodoListPage.qml
+        TodoPage.qml
+    IMPORTS
+        QtQuick
+        QtQuick.Controls.Basic
+)

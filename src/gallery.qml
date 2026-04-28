@@ -1,12 +1,11 @@
 import QtQuick 2.10
-import OpenTodoList.Style
+import net.rpdev.OpenTodoList.Style
 
 ApplicationWindow {
     id: window
 
     width: 800
     height: 600
-    palette: ColorTheme.selectedPalette
     font.family: Fonts.regularFont
     font.weight: 500
 
@@ -41,7 +40,9 @@ ApplicationWindow {
         }
     }
 
-    Component.onCompleted: show()
+    Component.onCompleted: {
+        show();
+    }
 
     component DemoColumn: Column {
         spacing: 16

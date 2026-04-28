@@ -90,7 +90,7 @@ QVariantList Translations::availableLanguages() const
     QVariantList result;
     result << QVariantMap { { "code", "" }, { "name", tr("System Language") } };
 
-    QFile languageFile(":/qt/qml/OpenTodoList/translations/languages.json");
+    QFile languageFile(":/qt/qml/net/rpdev/OpenTodoList/translations/languages.json");
     if (languageFile.open(QIODevice::ReadOnly)) {
         auto list = QJsonDocument::fromJson(languageFile.readAll()).toVariant().toList();
         result.append(list);
@@ -121,7 +121,8 @@ void Translations::apply()
     if (!m_language.isEmpty()) {
         auto language = m_language;
         language.replace("-", "_");
-        QString filename = ":/qt/qml/OpenTodoList/translations/OpenTodoList-" + language + ".qm";
+        QString filename =
+                ":/qt/qml/net/rpdev/OpenTodoList/translations/OpenTodoList-" + language + ".qm";
         if (QFile::exists(filename)) {
             if (m_translator->load(filename)) {
                 qCDebug(log) << "Loaded translations from file" << filename;
@@ -143,7 +144,7 @@ void Translations::apply()
     for (const auto& uiLang : uiLanguages) {
 
         // Check 1: Is there a file matching exactly the user locale?
-        auto path = ":/qt/qml/OpenTodoList/translations/OpenTodoList-"
+        auto path = ":/qt/qml/net/rpdev/OpenTodoList/translations/OpenTodoList-"
                 + QString(uiLang).replace("-", "_") + ".qm";
         if (QFile::exists(path)) {
             qCDebug(log) << "Found directly matching translation file for UI language" << uiLang;
@@ -164,7 +165,7 @@ void Translations::apply()
             lang = "zh_Hant";
         }
         if (!lang.isEmpty()) {
-            path = ":/qt/qml/OpenTodoList/translations/OpenTodoList-" + lang + ".qm";
+            path = ":/qt/qml/net/rpdev/OpenTodoList/translations/OpenTodoList-" + lang + ".qm";
             if (QFile::exists(path)) {
                 qCDebug(log) << "Special matching for Chinese yielded translation file for"
                              << uiLang;
@@ -175,7 +176,7 @@ void Translations::apply()
 
         // Check 2: Is there a file with the language part only:
         lang = uiLang.split("-")[0];
-        path = ":/qt/qml/OpenTodoList/translations/OpenTodoList-" + lang + ".qm";
+        path = ":/qt/qml/net/rpdev/OpenTodoList/translations/OpenTodoList-" + lang + ".qm";
         if (QFile::exists(path)) {
             qCDebug(log) << "Language part " << lang << " of" << uiLang
                          << "yielded matching translations";
@@ -185,12 +186,12 @@ void Translations::apply()
 
         // Check 3: Last resort: Use any translation which is at least related:
         lang = uiLang.split("-")[0];
-        QDir translationsDir(":/qt/qml/OpenTodoList/translations");
+        QDir translationsDir(":/qt/qml/net/rpdev/OpenTodoList/translations");
         auto entries = translationsDir.entryList({ "OpenTodoList-" + lang + "_*.qm" }, QDir::Files);
         if (!entries.isEmpty()) {
             qCDebug(log) << "Wildcard matching of language" << lang << "of UI language" << uiLang
                          << "yielded translations";
-            langFile = ":/qt/qml/OpenTodoList/translations/" + entries[0];
+            langFile = ":/qt/qml/net/rpdev/OpenTodoList/translations/" + entries[0];
             break;
         }
     }

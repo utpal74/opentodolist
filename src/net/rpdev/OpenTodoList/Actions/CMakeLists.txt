@@ -1,0 +1,24 @@
+qt_add_qml_module(opentodolist_actions_module
+    STATIC
+    URI net.rpdev.OpenTodoList.Actions
+    QML_FILES
+        CopyTodo.qml
+        CopyTopLevelItem.qml
+        DeleteCompletedChildren.qml
+        DeleteItem.qml
+        EditYield.qml
+        MoveTask.qml
+        MoveTodo.qml
+        PromoteTask.qml
+        RenameItem.qml
+        ResetDueTo.qml
+        SetDueNextWeek.qml
+        SetDueThisWeek.qml
+        SetDueTo.qml
+        SetDueToday.qml
+        SetDueTomorrow.qml
+        SetManualProgressAction.qml
+    IMPORTS
+        QtQuick
+        QtQuick.Controls.Basic
+)

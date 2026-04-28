@@ -131,7 +131,14 @@ public:
     Q_INVOKABLE void deleteItem(Item* item);
     Q_INVOKABLE void deleteDoneTodos(TodoList* todoList);
     Q_INVOKABLE void deleteDoneTasks(Todo* todo);
-    Q_INVOKABLE Recipe* addRecipe(Library* library, QVariantMap properties);
+    Q_INVOKABLE Recipe*
+    addRecipe(Library* library, QVariantMap properties,
+              const QList<RecipeIngredient>& ingredients = QList<RecipeIngredient>(),
+              const QStringList& utilities = QStringList(),
+              const QList<RecipeStep>& steps = QList<RecipeStep>());
+    Q_INVOKABLE RecipeIngredient createRecipeIngredient(const QString& name, const QString& unit,
+                                                        double amount) const;
+    Q_INVOKABLE RecipeStep createRecipeStep(const QString& description) const;
     Q_INVOKABLE QUuid loadLibrary(const QUuid& uid);
     Q_INVOKABLE Library* libraryFromData(const QVariant& data);
     Q_INVOKABLE QUuid loadItem(const QUuid& uid);
@@ -186,6 +193,8 @@ public:
     Q_INVOKABLE void syncAllLibraries();
 
     Q_INVOKABLE void aboutQt() const;
+
+    Q_INVOKABLE QList<QUrl> urlsFromClipboard() const;
 
 #ifdef Q_OS_ANDROID
     Q_INVOKABLE void finishActivity();

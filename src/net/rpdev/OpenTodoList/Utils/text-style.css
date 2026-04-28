@@ -1,0 +1,37 @@
+a, a:visited {
+    color: %1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h6 {
+    font-style: italic;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "%3";
+}
+
+code {
+    color: %2;
+    white-space: pre-wrap;
+    font-family: "%4";
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+table {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+td, th {
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
