@@ -244,15 +244,16 @@ void WebDAVAccount::login()
 
     auto factory = createWebDAVJobFactory(this);
     factory->setWorkarounds(SynqClient::WebDAVWorkaround::NoWorkarounds); // clear workarounds
-    connect(factory, &SynqClient::WebDAVJobFactory::serverTestFinished, this, [=](bool success) {
-        factory->deleteLater();
-        if (success) {
-            m_backendSpecificData["workarounds"] = static_cast<int>(factory->workarounds());
-            setOnline(true);
-        }
-        setLoggingIn(false);
-        emit loginFinished(success);
-    });
+    connect(factory, &SynqClient::WebDAVJobFactory::serverTestFinished, this,
+            [this, factory](bool success) {
+                factory->deleteLater();
+                if (success) {
+                    m_backendSpecificData["workarounds"] = static_cast<int>(factory->workarounds());
+                    setOnline(true);
+                }
+                setLoggingIn(false);
+                emit loginFinished(success);
+            });
     factory->testServer();
 }
 
@@ -277,41 +278,48 @@ void WebDAVAccount::findExistingLibraries()
         auto listFilesJob = factory->listFiles(compositeJob);
         listFilesJob->setPath(dir);
         compositeJob->addJob(listFilesJob);
-        connect(listFilesJob, &SynqClient::ListFilesJob::finished, this, [=]() {
-            if (listFilesJob->error() == SynqClient::JobError::NoError) {
-                const auto entries = listFilesJob->entries();
-                for (const auto& entry : entries) {
-                    if (entry.isDirectory() && entry.name().endsWith(".otl")) {
-                        // The entry is a folder, most likely containing OpenTodoList data. Try to
-                        // download the contained "library.json" file:
-                        auto downloadJob = factory->downloadFile(compositeJob);
-                        downloadJob->setRemoteFilename(listFilesJob->path() + "/" + entry.name()
-                                                       + "/" + Library::LibraryFileName);
-                        connect(downloadJob, &SynqClient::DownloadFileJob::finished, this, [=]() {
-                            if (downloadJob->error() == SynqClient::JobError::NoError) {
-                                auto doc = QJsonDocument::fromJson(downloadJob->data());
-                                if (doc.isObject()) {
-                                    auto map = doc.toVariant().toMap();
-                                    RemoteLibraryInfo library;
-                                    library.setName(map.value("name").toString());
-                                    QFileInfo fi(QDir::cleanPath(downloadJob->remoteFilename()));
-                                    library.setPath(fi.path());
-                                    library.setUid(map.value("uid").toUuid());
-                                    existingLibraries->append(library);
-                                }
+        connect(listFilesJob, &SynqClient::ListFilesJob::finished, this,
+                [this, listFilesJob, factory, compositeJob, existingLibraries]() {
+                    if (listFilesJob->error() == SynqClient::JobError::NoError) {
+                        const auto entries = listFilesJob->entries();
+                        for (const auto& entry : entries) {
+                            if (entry.isDirectory() && entry.name().endsWith(".otl")) {
+                                // The entry is a folder, most likely containing OpenTodoList data.
+                                // Try to download the contained "library.json" file:
+                                auto downloadJob = factory->downloadFile(compositeJob);
+                                downloadJob->setRemoteFilename(listFilesJob->path() + "/"
+                                                               + entry.name() + "/"
+                                                               + Library::LibraryFileName);
+                                connect(downloadJob, &SynqClient::DownloadFileJob::finished, this,
+                                        [downloadJob, existingLibraries]() {
+                                            if (downloadJob->error()
+                                                == SynqClient::JobError::NoError) {
+                                                auto doc = QJsonDocument::fromJson(
+                                                        downloadJob->data());
+                                                if (doc.isObject()) {
+                                                    auto map = doc.toVariant().toMap();
+                                                    RemoteLibraryInfo library;
+                                                    library.setName(map.value("name").toString());
+                                                    QFileInfo fi(QDir::cleanPath(
+                                                            downloadJob->remoteFilename()));
+                                                    library.setPath(fi.path());
+                                                    library.setUid(map.value("uid").toUuid());
+                                                    existingLibraries->append(library);
+                                                }
+                                            }
+                                        });
+                                compositeJob->addJob(downloadJob);
                             }
-                        });
-                        compositeJob->addJob(downloadJob);
+                        }
                     }
-                }
-            }
-        });
+                });
     }
-    connect(compositeJob, &SynqClient::CompositeJob::finished, this, [=]() {
-        setRemoteLibraries(*existingLibraries);
-        setFindingRemoteLibraries(false);
-        compositeJob->deleteLater();
-    });
+    connect(compositeJob, &SynqClient::CompositeJob::finished, this,
+            [this, compositeJob, existingLibraries]() {
+                setRemoteLibraries(*existingLibraries);
+                setFindingRemoteLibraries(false);
+                compositeJob->deleteLater();
+            });
 
     compositeJob->start();
 }

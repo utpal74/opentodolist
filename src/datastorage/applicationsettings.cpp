@@ -215,7 +215,7 @@ void ApplicationSettings::initialize()
 {
     if (m_keyStore) {
         connect(m_keyStore, &KeyStore::credentialsLoaded, this,
-                [=](const QString& key, const QString& value, bool success) {
+                [this](const QString& key, const QString& value, bool success) {
                     if (success) {
                         if (!m_secrets.contains(key)) {
                             m_secrets.insert(key, value);

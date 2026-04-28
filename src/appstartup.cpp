@@ -275,7 +275,7 @@ void AppStartup::startBackgroundService()
     tcpServer->listen(QHostAddress(QStringLiteral("127.0.0.1")), 14782);
     m_srcNode = new QRemoteObjectHost();
     tcpServer->setParent(m_srcNode);
-    connect(tcpServer, &QTcpServer::newConnection, m_srcNode, [=]() {
+    connect(tcpServer, &QTcpServer::newConnection, m_srcNode, [this, tcpServer]() {
         qDebug() << "New connection from client to QtRO TCP server";
         m_srcNode->addHostSideConnection(tcpServer->nextPendingConnection());
         m_srcNode->enableRemoting(m_backgroundService);
@@ -347,7 +347,7 @@ void AppStartup::startGUI()
     auto guiApp = qobject_cast<QGuiApplication*>(m_app);
     if (guiApp) {
         connect(guiApp, &QGuiApplication::applicationStateChanged, this,
-                [=](Qt::ApplicationState state) {
+                [this](Qt::ApplicationState state) {
                     qCDebug(log) << "Application state changed to" << state;
                     switch (state) {
                     case Qt::ApplicationActive:
@@ -392,7 +392,7 @@ void AppStartup::showTrayIcon()
     m_statusNotifierItem->setIconByName(getIconName());
     m_statusNotifierItem->setContextMenu(m_trayMenu);
     connect(m_statusNotifierItem, &KStatusNotifierItem::activateRequested, this,
-            [=](bool active, QPoint) {
+            [this](bool active, QPoint) {
                 if (active) {
                     if (m_backgroundService) {
                         emit m_backgroundService->systemTrayIconClicked();
@@ -408,13 +408,13 @@ void AppStartup::showTrayIcon()
                 }
             });
     connect(m_application, &Application::useMonochromeTrayIconChanged, m_statusNotifierItem,
-            [=]() { m_statusNotifierItem->setIconByName(getIconName()); });
+            [this]() { m_statusNotifierItem->setIconByName(getIconName()); });
 #else
     m_trayIcon = new QSystemTrayIcon(this);
     m_trayIcon->setIcon(loadIcon());
     m_trayIcon->setContextMenu(m_trayMenu);
     connect(m_trayIcon, &QSystemTrayIcon::activated, this,
-            [=](QSystemTrayIcon::ActivationReason reason) {
+            [this](QSystemTrayIcon::ActivationReason reason) {
                 switch (reason) {
                 case QSystemTrayIcon::Trigger:
                     if (m_backgroundService) {
@@ -428,7 +428,7 @@ void AppStartup::showTrayIcon()
                 }
             });
     connect(m_application, &Application::useMonochromeTrayIconChanged, m_trayIcon,
-            [=]() { m_trayIcon->setIcon(loadIcon()); });
+            [this]() { m_trayIcon->setIcon(loadIcon()); });
     m_trayIcon->show();
 
     if (m_trayIcon->isSystemTrayAvailable()) {

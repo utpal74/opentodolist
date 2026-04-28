@@ -36,10 +36,10 @@ PlatformShareUtils::PlatformShareUtils(QObject* parent) : QObject { parent }, m_
     auto timer = new QTimer { this };
     timer->setInterval(10000);
     timer->setSingleShot(false);
-    connect(timer, &QTimer::timeout, this, [=]() {
+    connect(timer, &QTimer::timeout, this, [this]() {
         // remove all observers that "got out of scope":
         auto files = m_watchedFiles.keys(); // Remember watched files
-        m_watchedFiles.removeIf([=](QMultiHash<QUrl, QPointer<FileEditObserver>>::Iterator it) {
+        m_watchedFiles.removeIf([](QMultiHash<QUrl, QPointer<FileEditObserver>>::Iterator it) {
             return it.value().isNull();
         });
         auto newWatched = m_watchedFiles.keys(); // New list of all watched files

@@ -93,7 +93,7 @@ void NetworkAccessManager::setupNetworkAccessManager()
     setRedirectPolicy(QNetworkRequest::NoLessSafeRedirectPolicy);
 
     connect(this, &QNetworkAccessManager::sslErrors, this,
-            [=](QNetworkReply* reply, const QList<QSslError>& errors) {
+            [this](QNetworkReply* reply, const QList<QSslError>& errors) {
                 if (m_ignoreSslErrors) {
                     reply->ignoreSslErrors(errors);
                 }

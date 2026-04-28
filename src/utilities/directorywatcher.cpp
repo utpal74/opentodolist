@@ -71,14 +71,14 @@ void DirectoryWatcherWorker::setDirectory(const QString& directory)
         if (m_watcher == nullptr) {
             m_watcher = new QFileSystemWatcher(this);
             connect(m_watcher, &QFileSystemWatcher::directoryChanged, this,
-                    [=](const QString& dir) {
+                    [this](const QString& dir) {
                         emit directoryChanged();
                         if (!m_directory.isEmpty()) {
                             this->watchDir(dir);
                         }
                     });
             connect(m_watcher, &QFileSystemWatcher::fileChanged, this,
-                    [=](const QString&) { emit directoryChanged(); });
+                    [this](const QString&) { emit directoryChanged(); });
         }
 
         auto items = m_watcher->files() + m_watcher->directories();

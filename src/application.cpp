@@ -920,9 +920,11 @@ QUuid Application::loadLibrary(const QUuid& uid)
         auto q = new GetLibraryQuery();
         q->setUid(uid);
         connect(q, &GetLibraryQuery::libraryLoaded, this,
-                [=](const QVariant& data) { emit this->libraryLoaded(uid, data, transactionId); });
+                [this, uid, transactionId](const QVariant& data) {
+                    emit this->libraryLoaded(uid, data, transactionId);
+                });
         connect(q, &GetLibraryQuery::libraryNotFound, this,
-                [=]() { emit this->libraryNotFound(uid, transactionId); });
+                [this, uid, transactionId]() { emit this->libraryNotFound(uid, transactionId); });
         m_cache->run(q);
     }
     return transactionId;
@@ -964,11 +966,12 @@ QUuid Application::loadItem(const QUuid& uid)
         auto q = new GetItemQuery();
         q->setUid(uid);
         connect(q, &GetItemQuery::itemLoaded, this,
-                [=](const QVariant& data, const QVariantList& parents, const QVariant& library) {
+                [this, uid, transactionId](const QVariant& data, const QVariantList& parents,
+                                           const QVariant& library) {
                     emit this->itemLoaded(uid, data, parents, library, transactionId);
                 });
         connect(q, &GetItemQuery::itemNotFound, this,
-                [=]() { emit this->itemNotFound(uid, transactionId); });
+                [this, uid, transactionId]() { emit this->itemNotFound(uid, transactionId); });
         m_cache->run(q);
     }
     return transactionId;
@@ -1526,7 +1529,7 @@ Cache* Application::cache() const
 /**
  * @brief Get the location where libraries are stored by default.
  */
-QString Application::librariesLocation() const
+QString Application::librariesLocation()
 {
     return Library::defaultLibrariesLocation();
 }

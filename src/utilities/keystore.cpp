@@ -223,34 +223,36 @@ void KeyStore::saveCredentials(const QString& key, const QString& value,
         job->setSettings(m_settings);
     }
     job->setAutoDelete(true);
-    connect(job, &QKeychain::WritePasswordJob::finished, this, [=](QKeychain::Job*) {
-        qCDebug(log) << "Writing secret for" << key << "finished" << job->error()
-                     << job->errorString();
-        bool success = true;
-        if (job->error() != QKeychain::NoError) {
-            if (removeCopyFromInsecureFallbackOnSuccess) {
-                qCWarning(log) << "Failed to write secret for" << key
-                               << "to the secret store - giving up";
-            } else {
-                qCWarning(log) << "Failed to save credentials for" << key << ":"
-                               << job->errorString() << "- using fallback";
-                m_settings->beginGroup("Fallback");
-                m_settings->setValue(key, value);
-                m_settings->endGroup();
-            }
-        } else {
-            qCDebug(log) << "Successfully saved credentials for" << key;
-            if (removeCopyFromInsecureFallbackOnSuccess) {
-                m_settings->beginGroup("Fallback");
-                if (m_settings->contains(key)) {
-                    m_settings->remove(key);
-                    qCWarning(log) << "Removed secret for" << key << "from the insecure fallback";
+    connect(job, &QKeychain::WritePasswordJob::finished, this,
+            [this, job, key, value, removeCopyFromInsecureFallbackOnSuccess](QKeychain::Job*) {
+                qCDebug(log) << "Writing secret for" << key << "finished" << job->error()
+                             << job->errorString();
+                bool success = true;
+                if (job->error() != QKeychain::NoError) {
+                    if (removeCopyFromInsecureFallbackOnSuccess) {
+                        qCWarning(log) << "Failed to write secret for" << key
+                                       << "to the secret store - giving up";
+                    } else {
+                        qCWarning(log) << "Failed to save credentials for" << key << ":"
+                                       << job->errorString() << "- using fallback";
+                        m_settings->beginGroup("Fallback");
+                        m_settings->setValue(key, value);
+                        m_settings->endGroup();
+                    }
+                } else {
+                    qCDebug(log) << "Successfully saved credentials for" << key;
+                    if (removeCopyFromInsecureFallbackOnSuccess) {
+                        m_settings->beginGroup("Fallback");
+                        if (m_settings->contains(key)) {
+                            m_settings->remove(key);
+                            qCWarning(log)
+                                    << "Removed secret for" << key << "from the insecure fallback";
+                        }
+                        m_settings->endGroup();
+                    }
                 }
-                m_settings->endGroup();
-            }
-        }
-        emit credentialsSaved(key, success);
-    });
+                emit credentialsSaved(key, success);
+            });
     job->start();
 #endif
 }
@@ -330,7 +332,7 @@ void KeyStore::loadCredentials(const QString& key)
         job->setSettings(m_settings);
     }
     job->setAutoDelete(true);
-    connect(job, &QKeychain::ReadPasswordJob::finished, this, [=](QKeychain::Job*) {
+    connect(job, &QKeychain::ReadPasswordJob::finished, this, [this, job, key](QKeychain::Job*) {
         qCDebug(log) << "Reading secrets for" << key << "finished:" << job->error()
                      << job->errorString();
         bool success = true;
@@ -412,7 +414,7 @@ void KeyStore::deleteCredentials(const QString& key)
         job->setSettings(m_settings);
     }
     job->setAutoDelete(true);
-    connect(job, &QKeychain::DeletePasswordJob::finished, this, [=](QKeychain::Job*) {
+    connect(job, &QKeychain::DeletePasswordJob::finished, this, [this, job, key](QKeychain::Job*) {
         bool success = true;
         if (job->error() != QKeychain::NoError) {
             qCWarning(log) << "Failed to delete credentials for" << key << ":"

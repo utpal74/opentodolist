@@ -235,7 +235,7 @@ void Cache::run(ItemsQuery* query)
             connect(query, &ItemsQuery::finished, this, &Cache::finished, Qt::QueuedConnection);
             connect(
                     query, &ItemsQuery::finished, this,
-                    [=]() { setNumberOfRunningTransactions(numberOfRunningTransactions() - 1); },
+                    [this]() { setNumberOfRunningTransactions(numberOfRunningTransactions() - 1); },
                     Qt::QueuedConnection);
             if (query->isNonDBQuery()) {
                 m_nonDBThreadPool->start(new ItemsQueryRunnable(query));
