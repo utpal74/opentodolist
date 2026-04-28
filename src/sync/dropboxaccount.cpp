@@ -177,7 +177,7 @@ QOAuth2AuthorizationCodeFlow* DropboxAccount::createOAuthAuthFlow(QObject* paren
 #endif
 
     result->setReplyHandler(replyHandler);
-    result->setModifyParametersFunction([=](auto stage, auto parameters) {
+    result->setModifyParametersFunction([this](auto stage, auto parameters) {
         switch (stage) {
         case QOAuth2AuthorizationCodeFlow::Stage::RequestingAuthorization:
             // Include code challenge and method in auth request, see
@@ -257,7 +257,7 @@ void DropboxAccount::login()
     auto oauth = createOAuthAuthFlow(this);
     connect(oauth, &QOAuth2AuthorizationCodeFlow::authorizeWithBrowser, this,
             &DropboxAccount::authorizationUrlReceived);
-    connect(oauth, &QOAuth2AuthorizationCodeFlow::granted, this, [=]() {
+    connect(oauth, &QOAuth2AuthorizationCodeFlow::granted, this, [this, oauth]() {
         qCDebug(log) << "Access has been granted";
         oauth->deleteLater();
         m_refreshToken = oauth->refreshToken();
@@ -273,7 +273,7 @@ void DropboxAccount::login()
     auto errorSignal = &QOAuth2AuthorizationCodeFlow::error;
 #endif
     connect(oauth, errorSignal, this,
-            [=](const QString& error, const QString& errorDescription, const QUrl& url) {
+            [this, oauth](const QString& error, const QString& errorDescription, const QUrl& url) {
                 qCWarning(log) << "oAuth error:" << error << ":" << errorDescription << url;
 
                 if (oauth->property("refreshingTokens").toBool()) {
@@ -304,14 +304,14 @@ void DropboxAccount::login()
         qCDebug(log) << "Starting refresh";
         oauth->setProperty("refreshingTokens", true);
         connect(oauth->networkAccessManager(), &QNetworkAccessManager::finished, this,
-                [=](QNetworkReply* reply) {
+                [this, oauth](QNetworkReply* reply) {
                     if (reply->error() != QNetworkReply::NoError) {
                         qCWarning(log) << "Failed to refresh tokens - trying to re-login";
                         m_refreshToken.clear();
                         m_accessToken.clear();
                         setLoggingIn(false);
                         connect(oauth->replyHandler(), &QObject::destroyed, this,
-                                [=](QObject*) { login(); });
+                                [this](QObject*) { login(); });
                         oauth->deleteLater();
                     }
                 });
@@ -341,41 +341,48 @@ void DropboxAccount::findExistingLibraries()
         auto listFilesJob = factory->listFiles(compositeJob);
         listFilesJob->setPath(dir);
         compositeJob->addJob(listFilesJob);
-        connect(listFilesJob, &SynqClient::ListFilesJob::finished, this, [=]() {
-            if (listFilesJob->error() == SynqClient::JobError::NoError) {
-                const auto entries = listFilesJob->entries();
-                for (const auto& entry : entries) {
-                    if (entry.isDirectory() && entry.name().endsWith(".otl")) {
-                        // The entry is a folder, most likely containing OpenTodoList data.
-                        // Try to download the contained "library.json" file:
-                        auto downloadJob = factory->downloadFile(compositeJob);
-                        downloadJob->setRemoteFilename(listFilesJob->path() + "/" + entry.name()
-                                                       + "/" + Library::LibraryFileName);
-                        connect(downloadJob, &SynqClient::DownloadFileJob::finished, this, [=]() {
-                            if (downloadJob->error() == SynqClient::JobError::NoError) {
-                                auto doc = QJsonDocument::fromJson(downloadJob->data());
-                                if (doc.isObject()) {
-                                    auto map = doc.toVariant().toMap();
-                                    RemoteLibraryInfo library;
-                                    library.setName(map.value("name").toString());
-                                    QFileInfo fi(QDir::cleanPath(downloadJob->remoteFilename()));
-                                    library.setPath(fi.path());
-                                    library.setUid(map.value("uid").toUuid());
-                                    existingLibraries->append(library);
-                                }
+        connect(listFilesJob, &SynqClient::ListFilesJob::finished, this,
+                [this, listFilesJob, factory, compositeJob, existingLibraries]() {
+                    if (listFilesJob->error() == SynqClient::JobError::NoError) {
+                        const auto entries = listFilesJob->entries();
+                        for (const auto& entry : entries) {
+                            if (entry.isDirectory() && entry.name().endsWith(".otl")) {
+                                // The entry is a folder, most likely containing OpenTodoList data.
+                                // Try to download the contained "library.json" file:
+                                auto downloadJob = factory->downloadFile(compositeJob);
+                                downloadJob->setRemoteFilename(listFilesJob->path() + "/"
+                                                               + entry.name() + "/"
+                                                               + Library::LibraryFileName);
+                                connect(downloadJob, &SynqClient::DownloadFileJob::finished, this,
+                                        [downloadJob, existingLibraries]() {
+                                            if (downloadJob->error()
+                                                == SynqClient::JobError::NoError) {
+                                                auto doc = QJsonDocument::fromJson(
+                                                        downloadJob->data());
+                                                if (doc.isObject()) {
+                                                    auto map = doc.toVariant().toMap();
+                                                    RemoteLibraryInfo library;
+                                                    library.setName(map.value("name").toString());
+                                                    QFileInfo fi(QDir::cleanPath(
+                                                            downloadJob->remoteFilename()));
+                                                    library.setPath(fi.path());
+                                                    library.setUid(map.value("uid").toUuid());
+                                                    existingLibraries->append(library);
+                                                }
+                                            }
+                                        });
+                                compositeJob->addJob(downloadJob);
                             }
-                        });
-                        compositeJob->addJob(downloadJob);
+                        }
                     }
-                }
-            }
-        });
+                });
     }
-    connect(compositeJob, &SynqClient::CompositeJob::finished, this, [=]() {
-        setRemoteLibraries(*existingLibraries);
-        setFindingRemoteLibraries(false);
-        compositeJob->deleteLater();
-    });
+    connect(compositeJob, &SynqClient::CompositeJob::finished, this,
+            [this, compositeJob, existingLibraries]() {
+                setRemoteLibraries(*existingLibraries);
+                setFindingRemoteLibraries(false);
+                compositeJob->deleteLater();
+            });
 
     compositeJob->start();
 }
@@ -404,7 +411,7 @@ void DropboxAccount::checkConnectivity()
         job->setNetworkAccessManager(nam);
         job->setUserAgent(Synchronizer::HTTPUserAgent);
         job->setPath("");
-        connect(job, &SynqClient::DropboxListFilesJob::finished, this, [=]() {
+        connect(job, &SynqClient::DropboxListFilesJob::finished, this, [this, job]() {
             auto success = job->error() == SynqClient::JobError::NoError;
             qCDebug(log) << "Account" << uid() << "finished connectivity check with" << success;
             if (!success) {
@@ -420,7 +427,7 @@ void DropboxAccount::checkConnectivity()
     // Try to refresh the token:
     qCDebug(log) << "Need to refresh access token for account" << uid();
     auto oauth = createOAuthAuthFlow(this);
-    connect(oauth, &QOAuth2AuthorizationCodeFlow::granted, this, [=]() {
+    connect(oauth, &QOAuth2AuthorizationCodeFlow::granted, this, [this, oauth]() {
         qCDebug(log) << "Token for account" << uid() << "has been refreshed";
         oauth->deleteLater();
         m_refreshToken = oauth->refreshToken();
@@ -436,7 +443,7 @@ void DropboxAccount::checkConnectivity()
     auto errorSignal = &QOAuth2AuthorizationCodeFlow::error;
 #endif
     connect(oauth, errorSignal, this,
-            [=](const QString& error, const QString& errorDescription, const QUrl& url) {
+            [this, oauth](const QString& error, const QString& errorDescription, const QUrl& url) {
                 qCWarning(log) << "Failed to refresh tokens for account" << uid();
                 qCWarning(log) << "oAuth error:" << error << ":" << errorDescription << url;
                 emit connectivityCheckFinished(false);

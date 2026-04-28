@@ -66,7 +66,7 @@ BackgroundService::BackgroundService(Cache* cache, QObject* parent)
     // Check if we need to sync every 5 min
     syncTimer->setInterval(1000 * 60 * 5);
     syncTimer->setSingleShot(false);
-    connect(syncTimer, &QTimer::timeout, this, [=]() {
+    connect(syncTimer, &QTimer::timeout, this, [this]() {
         for (const auto& lib : m_appSettings->librariesFromConfig()) {
             QScopedPointer<Synchronizer> sync(lib->createSynchronizer());
             if (sync) {
@@ -269,7 +269,7 @@ void BackgroundService::doDeleteLibrary(const QUuid& libraryUid)
         q->deleteLibrary(library.data(), library->isInDefaultLocation());
         m_cache->run(q);
         auto libs = m_appSettings->librariesFromConfig();
-        libs.removeIf([=](auto lib) { return lib->directory() == library->directory(); });
+        libs.removeIf([library](auto lib) { return lib->directory() == library->directory(); });
         m_appSettings->librariesToConfig(libs);
         emit libraryDeleted(libraryUid, library->directory());
     } else {
@@ -286,7 +286,7 @@ void BackgroundService::watchLibraryForChanges(QSharedPointer<Library> library)
         auto uid = library->uid();
         watcher->setDirectory(library->directory());
         m_watchedDirectories[library->directory()] = watcher;
-        connect(watcher, &DirectoryWatcher::directoryChanged, this, [=]() {
+        connect(watcher, &DirectoryWatcher::directoryChanged, this, [this, directory, uid]() {
             auto q = new LoadLibraryQuery;
             q->setDirectory(directory);
             q->setLibraryId(uid);
@@ -328,13 +328,13 @@ void BackgroundService::checkConnectivityOfAccount(Account* account)
     }
 
     qCDebug(log) << "Checking connectivity for account" << account;
-    connect(account, &Account::connectivityCheckFinished, this, [=](bool connected) {
+    connect(account, &Account::connectivityCheckFinished, this, [this, account](bool connected) {
         // TODO: Do something useful with the connected state ;-)
         qCDebug(log) << "Account" << account->uid() << "connected:" << connected;
         m_accountsCheckingConnectivity.remove(account->uid());
         account->deleteLater();
     });
-    connect(account, &Account::accountSecretsChanged, this, [=]() {
+    connect(account, &Account::accountSecretsChanged, this, [this, account]() {
         // The secrets of the account changed - e.g. access tokens. Propagate to GUI
         qCDebug(log) << "Secrets of account" << account->uid() << "changed - need to save them";
         m_appSettings->saveAccount(account);
@@ -353,7 +353,7 @@ void BackgroundService::checkConnectivityOfAccount(Account* account)
     auto timer = new QTimer(account);
     timer->setInterval(60000); // Wait at most 1min
     timer->setSingleShot(true);
-    connect(timer, &QTimer::timeout, account, [=]() {
+    connect(timer, &QTimer::timeout, account, [account]() {
         qCDebug(log) << "Watchdog expired for online check for account" << account->uid();
         emit account->connectivityCheckFinished(false);
     });

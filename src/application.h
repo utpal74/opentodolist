@@ -180,7 +180,7 @@ public:
     Q_INVOKABLE QUuid uuidFromString(const QString& text) const;
     Q_INVOKABLE QString uuidToString(const QUuid& uid) const;
 
-    QString librariesLocation() const;
+    static QString librariesLocation();
 
     Q_INVOKABLE QUrl homeLocation() const;
     Q_INVOKABLE bool folderExists(const QUrl& url) const;

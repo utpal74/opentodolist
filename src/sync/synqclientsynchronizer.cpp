@@ -61,7 +61,7 @@ void SynqClientSynchronizer::setupDirectorySynchronizer(SynqClient::DirectorySyn
     sync.setLocalDirectoryPath(directory());
     sync.setSyncConflictStrategy(SynqClient::SyncConflictStrategy::RemoteWins);
     connect(&sync, &SynqClient::DirectorySynchronizer::logMessageAvailable, this,
-            [=](SynqClient::SynchronizerLogEntryType type, const QString& message) {
+            [this](SynqClient::SynchronizerLogEntryType type, const QString& message) {
                 switch (type) {
                 case SynqClient::SynchronizerLogEntryType::Information:
                     writeLog(Synchronizer::Debug) << message;

@@ -75,6 +75,10 @@ android {
         noCompress 'rcc'
     }
 
+    packagingOptions {
+        jniLibs.useLegacyPackaging = true
+    }
+
     defaultConfig {
         resConfig "en"
         minSdkVersion qtMinSdkVersion
