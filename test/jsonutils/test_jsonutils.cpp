@@ -18,6 +18,7 @@
  */
 
 #include <QFile>
+#include <QJsonParseError>
 #include <QObject>
 #include <QRegularExpression>
 #include <QTemporaryDir>
@@ -78,7 +79,12 @@ void JsonUtilsTest::testLoadMapWithInvalidFile()
     file.write(QString("{\"Foo\": Hello World, \"Bar\": 10").toUtf8());
     file.close();
     bool ok;
-    QTest::ignoreMessage(QtWarningMsg, QRegularExpression(".*Failed to parse.*illegal number.*"));
+    QJsonParseError parseError;
+    parseError.error = QJsonParseError::IllegalNumber;
+    const auto expectedError = QRegularExpression::escape(parseError.errorString());
+    QTest::ignoreMessage(QtWarningMsg,
+                         QRegularExpression(QStringLiteral(".*Failed to parse.*") + expectedError
+                                            + QStringLiteral(".*")));
     auto map = loadMap(filename, &ok);
     QVERIFY(!ok);
     QCOMPARE(map.size(), 0);
