@@ -152,22 +152,12 @@ windows-mingw-w64:
   tags:
     - saas-windows-medium-amd64
   script:
-    - Start-Process -FilePath powershell -ArgumentList .\\ci\\win-build.ps1 -Wait -NoNewWindow
+    - powershell -NoProfile -ExecutionPolicy Bypass -File .\ci\win-build.ps1
   artifacts:
     paths:
       - deploy-win64/OpenTodoList-*-Windows-64bit.exe
       - deploy-win64/OpenTodoList-*-Windows-64bit.zip
     expire_in: 1 week
-
-# Sanity check to ensure the Windows build successfully produced its artifacts:
-windows-mingw-w64-filecheck:
-    image: fedora
-    needs:
-        - windows-mingw-w64
-    stage: build
-    script:
-        - test -f deploy-win64/OpenTodoList-*-Windows-64bit.exe
-        - test -f deploy-win64/OpenTodoList-*-Windows-64bit.zip
 
 # macOS build:
 macos:

@@ -1,5 +1,108 @@
 $ErrorActionPreference = "Stop"
 
+function Invoke-NativeCommand {
+    param(
+        [Parameter(Mandatory=$true)]
+        [string]$FilePath,
+        [Parameter(ValueFromRemainingArguments=$true)]
+        [string[]]$Arguments
+    )
+
+    Write-Output "Running: $FilePath $Arguments"
+    & $FilePath @Arguments
+    if ($LASTEXITCODE -ne 0) {
+        throw "Command failed with exit code ${LASTEXITCODE}: $FilePath $Arguments"
+    }
+}
+
+function Assert-PathExists {
+    param(
+        [Parameter(Mandatory=$true)]
+        [string]$Path,
+        [Parameter(Mandatory=$true)]
+        [string]$Message
+    )
+
+    if (-Not (Test-Path -Path $Path)) {
+        throw $Message
+    }
+}
+
+function Assert-CommandExists {
+    param(
+        [Parameter(Mandatory=$true)]
+        [string]$Command,
+        [Parameter(Mandatory=$true)]
+        [string]$Message
+    )
+
+    if (-Not (Get-Command $Command -ErrorAction SilentlyContinue)) {
+        throw $Message
+    }
+}
+
+function Install-ChocolateyPackage {
+    param(
+        [Parameter(Mandatory=$true)]
+        [string]$PackageName,
+        [Parameter(Mandatory=$true)]
+        [string]$ValidationPath
+    )
+
+    if (Test-Path -Path $ValidationPath) {
+        return
+    }
+
+    for ($attempt = 1; $attempt -le 3; $attempt++) {
+        Write-Output "Installing $PackageName via Chocolatey (attempt $attempt of 3)"
+        choco install -y --no-progress $PackageName
+        if (($LASTEXITCODE -eq 0) -and (Test-Path -Path $ValidationPath)) {
+            return
+        }
+        Write-Warning "Installation of $PackageName failed or did not create $ValidationPath."
+        Start-Sleep -Seconds (10 * $attempt)
+    }
+
+    throw "Failed to install $PackageName or installation did not create $ValidationPath."
+}
+
+function Install-Qt {
+    param(
+        [Parameter(Mandatory=$true)]
+        [string]$ArchiveUrl,
+        [Parameter(Mandatory=$true)]
+        [string]$ArchivePath,
+        [Parameter(Mandatory=$true)]
+        [string]$DestinationPath
+    )
+
+    if (Test-Path -Path $ArchivePath) {
+        Remove-Item -Path $ArchivePath -Force
+    }
+
+    New-Item -Path $DestinationPath -ItemType Directory -Force | Out-Null
+
+    for ($attempt = 1; $attempt -le 3; $attempt++) {
+        Write-Output "Downloading Qt archive (attempt $attempt of 3)"
+        try {
+            Invoke-WebRequest -Uri $ArchiveUrl -OutFile $ArchivePath -UseBasicParsing -ErrorAction Stop
+            Add-Type -AssemblyName System.IO.Compression.FileSystem
+            $zip = [System.IO.Compression.ZipFile]::OpenRead((Resolve-Path $ArchivePath))
+            $zip.Dispose()
+            Expand-Archive -Path $ArchivePath -DestinationPath $DestinationPath -Force -ErrorAction Stop
+            return
+        } catch {
+            Write-Warning "Failed to download or unpack Qt: $($_.Exception.Message)"
+            if (Test-Path -Path $ArchivePath) {
+                Remove-Item -Path $ArchivePath -Force
+            }
+            Start-Sleep -Seconds (15 * $attempt)
+        }
+    }
+
+    throw "Failed to download and unpack Qt from $ArchiveUrl."
+}
+
 if(-not $env:QT_INSTALL_ROOT) {
     $qt_root = "C:\Qt"
 } else {
@@ -26,40 +129,26 @@ $QT_ARCHIVE_URL="https://gitlab.com/api/v4/projects/46171955/packages/generic/Qt
 if(-Not (Test-Path -Path "$QT_PATH")) {
     # Install Qt
     Write-Output "Qt installation not found in $QT_PATH - downloading and installing Qt $env:QT_VERSION"
-    Invoke-WebRequest -o "Qt-mingw-w64.zip" $QT_ARCHIVE_URL
-    New-Item -Path '$qt_root' -ItemType Directory
-    Expand-Archive -Path "Qt-mingw-w64.zip" -DestinationPath "$qt_root"
+    Install-Qt -ArchiveUrl $QT_ARCHIVE_URL -ArchivePath "Qt-mingw-w64.zip" -DestinationPath $qt_root
 }
 
-if(-Not (Test-Path -Path "$PERL_PATH")) {
-    # Install Strawberry Perl (needed for KDE Syntax Highlighting)
-    choco install -y strawberryperl
-
-    if (-not $?) {
-        Write-Error -Message "Failed to install Perl."
-    }
-    if(-Not (Test-Path -Path "$PERL_PATH")) {
-        Write-Error -Message "Installation of Perl did not yield desired installation folder."
-    }
-}
-
-if(-Not (Test-Path -Path "$NSIS_PATH")) {
-    # Install NSIS installer framework:
-    choco install -y nsis
-
-    if (-not $?) {
-        Write-Error -Message "Failed to install NSIS."
-    }
-    if(-Not (Test-Path -Path "$PERL_PATH")) {
-        Write-Error -Message "Installation of NSIS did not yield desired installation folder."
-    }
-}
+# Install Strawberry Perl (needed for KDE Syntax Highlighting) and NSIS installer framework:
+Install-ChocolateyPackage -PackageName "strawberryperl" -ValidationPath $PERL_PATH
+Install-ChocolateyPackage -PackageName "nsis" -ValidationPath $NSIS_PATH
 
 # Setup search paths (important - order matters!):
 $env:Path="$QT_PATH\bin;$CMAKE_PATH;$NINJA_PATH;$MINGW_PATH;$PERL_PATH;$NSIS_PATH;$env:Path"
 
+Assert-PathExists -Path "$QT_PATH\bin" -Message "Qt bin directory not found in $QT_PATH."
+Assert-PathExists -Path "$MINGW_PATH\clang++.exe" -Message "LLVM MinGW compiler not found in $MINGW_PATH."
+Assert-CommandExists -Command "cmake" -Message "CMake not found in PATH."
+Assert-CommandExists -Command "ninja" -Message "Ninja not found in PATH."
+Assert-CommandExists -Command "perl" -Message "Perl not found in PATH."
+Assert-CommandExists -Command "makensis" -Message "NSIS makensis not found in PATH."
+Assert-CommandExists -Command "windeployqt" -Message "windeployqt not found in PATH."
+
 # Build OpenTodoList:
-cmake `
+Invoke-NativeCommand cmake `
     -S . -B build-win64 `
     -GNinja `
     -DCMAKE_PREFIX_PATH=$QT_PATH `
@@ -67,27 +156,9 @@ cmake `
     -DOPENTODOLIST_WITH_UPDATE_SERVICE=ON `
     --fresh
 
-if (-not $?) {
-    Write-Error -Message "Failed to configure OpenTodoList."
-}
-
-cmake --build build-win64 --target OpenTodoList
-
-if (-not $?) {
-    Write-Error -Message "Failed to build OpenTodoList."
-}
-
-cmake --install build-win64
-
-if (-not $?) {
-    Write-Error -Message "Failed to install OpenTodoList."
-}
-
-windeployqt --qmldir src deploy-win64\bin
-
-if (-not $?) {
-    Write-Error -Message "Failed to deploy Qt binaries for OpenTodoList."
-}
+Invoke-NativeCommand cmake --build build-win64 --target OpenTodoList
+Invoke-NativeCommand cmake --install build-win64
+Invoke-NativeCommand windeployqt --qmldir src deploy-win64\bin
 
 Copy-Item -Path "$MINGW_PATH/libc++.dll" -Destination deploy-win64\bin
 Copy-Item -Path "$MINGW_PATH/libunwind.dll" -Destination deploy-win64\bin
@@ -106,11 +177,7 @@ Copy-Item -Path templates\nsis\win64-installer.nsis -Destination deploy-win64
 
 Set-Location -Path deploy-win64
 
-makensis win64-installer.nsis
-
-if (-not $?) {
-    Write-Error -Message "Failed to create installer."
-}
+Invoke-NativeCommand makensis win64-installer.nsis
 
 Rename-Item OpenTodoList-Windows-64bit.exe OpenTodoList-$OPENTODOLIST_VERSION-Windows-64bit.exe
 
@@ -119,8 +186,8 @@ Rename-Item OpenTodoList-Windows-64bit.exe OpenTodoList-$OPENTODOLIST_VERSION-Wi
 # In this case, as a last resort, check if we were able to build
 # our desired deployables and - if not - error out.
 if(-Not (Test-Path -Path "OpenTodoList-$OPENTODOLIST_VERSION-Windows-64bit.zip")) {
-    Write-Error -Message "No portable OpenTodoList found - the build probably failed!"
+    throw "No portable OpenTodoList found - the build probably failed!"
 }
 if(-Not (Test-Path -Path "OpenTodoList-$OPENTODOLIST_VERSION-Windows-64bit.exe")) {
-    Write-Error -Message "No OpenTodoList installer found - the build probably failed!"
+    throw "No OpenTodoList installer found - the build probably failed!"
 }
