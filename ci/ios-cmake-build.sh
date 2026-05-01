@@ -2,14 +2,12 @@
 
 set -e
 
-# Workaround for https://gitlab.com/gitlab-org/ci-cd/shared-runners/infrastructure/-/issues/244
-# Until this is solved, we have to build locally:
-# # Install secrets when running in CI:
-# . ci/apple/get-secrets.sh
+# Install secrets when running in CI:
+. ci/apple/get-secrets.sh
 
-# # Install Qt in CI if needed
-# export QT_INSTALL_IOS="1"
-# bash ci/apple/macos-install-qt.sh
+# Install Qt in CI if needed
+export QT_INSTALL_IOS="1"
+bash ci/apple/macos-install-qt.sh
 
 if [ ! -d "$QT_INSTALLATION_DIR" ]; then
     if [ -d "$HOME/Qt" ]; then
