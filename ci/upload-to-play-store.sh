@@ -34,4 +34,8 @@ fastlane run upload_to_play_store \
     package_name:net.rpdev.opentodolist \
     json_key:"$JSON_KEY" \
     aab_paths:"$AAB_FILES" \
-    track:"internal"
+    track:"internal" \
+    skip_upload_metadata:true \
+    skip_upload_changelogs:true \
+    skip_upload_images:true \
+    skip_upload_screenshots:true
