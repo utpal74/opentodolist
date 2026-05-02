@@ -27,7 +27,28 @@ echo "Using Qt $QT_VERSION"
 QT_DIR_IOS=$QT_INSTALLATION_DIR/$QT_VERSION/ios
 QT_DIR=$QT_INSTALLATION_DIR/$QT_VERSION/macos
 
-export PATH=$QT_INSTALLATION_DIR/Tools/Ninja:$QT_INSTALLATION_DIR/Tools/CMake/CMake.app/Contents/bin:$PATH
+"$QT_DIR_IOS/bin/qmake" -query QT_VERSION
+"$QT_DIR_IOS/bin/moc" -v
+"$QT_DIR_IOS/bin/rcc" -v
+"$QT_DIR_IOS/bin/macdeployqt" -h >/dev/null || true
+
+"$QT_DIR/bin/qmake" -query QT_VERSION
+"$QT_DIR/bin/moc" -v
+"$QT_DIR/bin/rcc" -v
+"$QT_DIR/bin/macdeployqt" -h >/dev/null || true
+
+
+
+HOST_CMAKE=$(command -v cmake || true)
+if [ -n "$HOST_CMAKE" ]; then
+    CMAKE_BIN=$HOST_CMAKE
+else
+    CMAKE_BIN=cmake
+    export PATH=$QT_INSTALLATION_DIR/Tools/CMake/CMake.app/Contents/bin:$PATH
+fi
+
+echo "Using CMake: $CMAKE_BIN"
+file "$CMAKE_BIN"
 
 
 # The iOS build is currently a bit unstable... as setting up the environment
@@ -41,7 +62,7 @@ do
     mkdir -p build-ios-cmake
     cd build-ios-cmake
 
-    cmake \
+    "$CMAKE_BIN" \
         -S .. \
         -B . \
         -GXcode \

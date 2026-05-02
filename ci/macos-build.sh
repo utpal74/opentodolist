@@ -32,21 +32,35 @@ fi
 
 export QT_DIR=$QT_INSTALLATION_DIR/$QT_VERSION/macos
 
+"$QT_DIR/bin/qmake" -query QT_VERSION
+"$QT_DIR/bin/moc" -v
+"$QT_DIR/bin/rcc" -v
+"$QT_DIR/bin/macdeployqt" -h >/dev/null || true
+
+
 #rm -rf $BUILD_DIR
 mkdir -p $BUILD_DIR
 cd $BUILD_DIR
 
-export PATH=$QT_INSTALLATION_DIR/Tools/Ninja:$QT_INSTALLATION_DIR/Tools/CMake/CMake.app/Contents/bin:$PATH
+HOST_CMAKE=$(command -v cmake || true)
+HOST_NINJA=$(command -v ninja || true)
+if [ -n "$HOST_CMAKE" ] && [ -n "$HOST_NINJA" ]; then
+    CMAKE_BIN=$HOST_CMAKE
+    export PATH="$(dirname "$HOST_NINJA"):$PATH"
+else
+    CMAKE_BIN=cmake
+    export PATH=$QT_INSTALLATION_DIR/Tools/Ninja:$QT_INSTALLATION_DIR/Tools/CMake/CMake.app/Contents/bin:$PATH
+fi
 
 ls $QT_DIR/bin
 file $QT_DIR/bin/qt-cmake
-command -v cmake
-file "$(command -v cmake)"
-command -v ninja
+echo "Using CMake: $CMAKE_BIN"
+file "$CMAKE_BIN"
+echo "Using Ninja: $(command -v ninja)"
 file "$(command -v ninja)"
 df -h
 
-cmake \
+"$CMAKE_BIN" \
     -GNinja \
     -DCMAKE_TOOLCHAIN_FILE=$QT_DIR/lib/cmake/Qt6/qt.toolchain.cmake \
     -DCMAKE_PREFIX_PATH=$QT_DIR \
@@ -55,10 +69,10 @@ cmake \
     -DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" \
     --fresh \
     ..
-cmake --build .
+"$CMAKE_BIN" --build .
 # TODO: Tests on macos currently fail sometimes - this probably is a race condition that we should urgently fix!
 # For now, try up to 3 times to repeat.
-cmake --build . --target test || cmake --build . --target test || cmake --build . --target test
+"$CMAKE_BIN" --build . --target test || "$CMAKE_BIN" --build . --target test || "$CMAKE_BIN" --build . --target test
 
 
 ###########################################
