@@ -181,47 +181,31 @@ file "$RESOLVED_CMAKE_BIN"
 codesign --verify --verbose=2 "$RESOLVED_CMAKE_BIN" || true
 
 
-# The iOS build is currently a bit unstable... as setting up the environment
-# is quite costly, we rather retry the actual build several times (cleaning up
-# in between) rather than giving up immediately.
-i=0
-while [[ $i -lt 5 ]]
-do
-    ((i++))
-    rm -rf build-ios-cmake
-    mkdir -p build-ios-cmake
-    cd build-ios-cmake
+rm -rf build-ios-cmake
+mkdir -p build-ios-cmake
+cd build-ios-cmake
 
-    "$CMAKE_BIN" \
-        -S .. \
-        -B . \
-        -GXcode \
-        -DCMAKE_TOOLCHAIN_FILE=$QT_DIR_IOS/lib/cmake/Qt6/qt.toolchain.cmake \
-        -DCMAKE_BUILD_TYPE=Release \
-        -DQT_QMAKE_EXECUTABLE:FILEPATH=$QT_DIR_IOS/bin/qmake \
-        -DCMAKE_PREFIX_PATH:PATH=$QT_DIR_IOS \
-        -DCMAKE_OSX_ARCHITECTURES:STRING=arm64 \
-        -DCMAKE_OSX_SYSROOT:STRING=iphoneos \
-        -DQT_HOST_PATH=$QT_DIR \
-        -DOPENTODOLIST_APPLE_TEAM_ID="$IOS_TEAM_ID" \
-        -DOPENTODOLIST_APPLE_CODE_SIGN_IDENTITY="$IOS_CODE_SIGN_IDENTITY" \
-        -DOPENTODOLIST_APPLE_CODE_SIGN_STYLE=Manual \
-        -DOPENTODOLIST_IOS_PROVISIONING_PROFILE_SPECIFIER="$IOS_PROVISIONING_PROFILE_SPECIFIER"
+"$CMAKE_BIN" \
+    -S .. \
+    -B . \
+    -GXcode \
+    -DCMAKE_TOOLCHAIN_FILE=$QT_DIR_IOS/lib/cmake/Qt6/qt.toolchain.cmake \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DQT_QMAKE_EXECUTABLE:FILEPATH=$QT_DIR_IOS/bin/qmake \
+    -DCMAKE_PREFIX_PATH:PATH=$QT_DIR_IOS \
+    -DCMAKE_OSX_ARCHITECTURES:STRING=arm64 \
+    -DCMAKE_OSX_SYSROOT:STRING=iphoneos \
+    -DQT_HOST_PATH=$QT_DIR \
+    -DOPENTODOLIST_APPLE_TEAM_ID="$IOS_TEAM_ID" \
+    -DOPENTODOLIST_APPLE_CODE_SIGN_IDENTITY="$IOS_CODE_SIGN_IDENTITY" \
+    -DOPENTODOLIST_APPLE_CODE_SIGN_STYLE=Manual \
+    -DOPENTODOLIST_IOS_PROVISIONING_PROFILE_SPECIFIER="$IOS_PROVISIONING_PROFILE_SPECIFIER"
 
-    if [ -n "$CONFIGURE_ONLY" ]; then
-        exit 0
-    fi
+if [ -n "$CONFIGURE_ONLY" ]; then
+    exit 0
+fi
 
-    # cmake --build . --config Release -- "$XCODEBUILD_FLAGS" ## Leads to "Archive Failed" errors in next step - but we need at least CMake 3.25.0
+# cmake --build . --config Release -- "$XCODEBUILD_FLAGS" ## Leads to "Archive Failed" errors in next step - but we need at least CMake 3.25.0
 
-    if xcodebuild -scheme OpenTodoList -sdk iphoneos -configuration Release archive -archivePath OpenTodoList.xcarchive && \
-        xcodebuild -exportArchive -archivePath OpenTodoList.xcarchive -exportOptionsPlist "$EXPORT_OPTIONS_PLIST" -exportPath OpenTodoList.ipa; then
-        exit 0
-    else
-        echo "Build attempt $i failed"
-    fi
-    cd ..
-done
-
-# Still here? Then we didn't get a succesful build!
-exit 1
+xcodebuild -scheme OpenTodoList -sdk iphoneos -configuration Release archive -archivePath OpenTodoList.xcarchive
+xcodebuild -exportArchive -archivePath OpenTodoList.xcarchive -exportOptionsPlist "$EXPORT_OPTIONS_PLIST" -exportPath OpenTodoList.ipa
