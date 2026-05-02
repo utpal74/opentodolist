@@ -15,13 +15,11 @@ if [ -n "$CI" ]; then
 
     QT_ARCHIVE_MACOS="/tmp/Qt-MacOS.zip"
     QT_ARCHIVE_IOS="/tmp/Qt-iOS.zip"
-    QT_ARCHIVE_TOOLS="/tmp/Qt-Tools.zip"
     # 46171955 == Project ID of https://gitlab.com/rpdev/packages/qt6
     GITLAB_API_V4_URL="${CI_API_V4_URL:-https://gitlab.com/api/v4}"
     QT_PACKAGE_PROJECT_ID="${QT_PACKAGE_PROJECT_ID:-46171955}"
     QT_URL_MACOS="$GITLAB_API_V4_URL/projects/$QT_PACKAGE_PROJECT_ID/packages/generic/Qt6/$QT_VERSION/Qt-MacOS.zip"
     QT_URL_IOS="$GITLAB_API_V4_URL/projects/$QT_PACKAGE_PROJECT_ID/packages/generic/Qt6/$QT_VERSION/Qt-iOS.zip"
-    QT_URL_TOOLS="$GITLAB_API_V4_URL/projects/$QT_PACKAGE_PROJECT_ID/packages/generic/Qt6/$QT_VERSION/Qt-Tools.zip"
 
     CURL_AUTH_HEADER=()
     if [ -n "$QT_PACKAGE_REGISTRY_TOKEN" ]; then
@@ -44,8 +42,6 @@ if [ -n "$CI" ]; then
     mkdir -p Qt
 
     download_and_extract_qt_archive "$QT_URL_MACOS" "$QT_ARCHIVE_MACOS"
-
-    download_and_extract_qt_archive "$QT_URL_TOOLS" "$QT_ARCHIVE_TOOLS"
 
     if [ -n "$QT_INSTALL_IOS" ]; then
         download_and_extract_qt_archive "$QT_URL_IOS" "$QT_ARCHIVE_IOS"

@@ -9,6 +9,9 @@ set -e
 export QT_INSTALL_IOS="1"
 bash ci/apple/macos-install-qt.sh
 
+# Install CMake/Ninja in CI:
+. ci/apple/install-build-tools.sh
+
 if [ ! -d "$QT_INSTALLATION_DIR" ]; then
     if [ -d "$HOME/Qt" ]; then
         QT_INSTALLATION_DIR="$HOME/Qt"
@@ -65,7 +68,9 @@ run_qt_tool_smoke_tests() {
                 "$tool_path" -v
                 ;;
             *)
-                if ! "$tool_path" -h >/dev/null; then
+                if "$tool_path" -h >/dev/null; then
+                    :
+                else
                     local status=$?
                     echo "Qt tool $tool returned status $status while printing help"
                     if [ "$status" -eq 137 ]; then
@@ -82,15 +87,17 @@ run_qt_tool_smoke_tests "$QT_DIR" macos
 
 
 HOST_CMAKE=$(command -v cmake || true)
-if [ -n "$HOST_CMAKE" ]; then
-    CMAKE_BIN=$HOST_CMAKE
-else
-    CMAKE_BIN=cmake
-    export PATH=$QT_INSTALLATION_DIR/Tools/CMake/CMake.app/Contents/bin:$PATH
+if [ -z "$HOST_CMAKE" ]; then
+    echo "CMake is required"
+    exit 1
 fi
+CMAKE_BIN=$HOST_CMAKE
+RESOLVED_CMAKE_BIN=$(command -v "$CMAKE_BIN")
 
 echo "Using CMake: $CMAKE_BIN"
-file "$CMAKE_BIN"
+echo "Resolved CMake: $RESOLVED_CMAKE_BIN"
+file "$RESOLVED_CMAKE_BIN"
+codesign --verify --verbose=2 "$RESOLVED_CMAKE_BIN" || true
 
 
 # The iOS build is currently a bit unstable... as setting up the environment

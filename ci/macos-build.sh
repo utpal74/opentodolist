@@ -8,6 +8,9 @@ set -e
 # Install Qt in CI if needed
 bash ci/apple/macos-install-qt.sh
 
+# Install CMake/Ninja in CI:
+. ci/apple/install-build-tools.sh
+
 BUILD_DIR=$PWD/build-macos
 
 if [ ! -d "$QT_INSTALLATION_DIR" ]; then
@@ -70,7 +73,9 @@ run_qt_tool_smoke_tests() {
                 "$tool_path" -v
                 ;;
             *)
-                if ! "$tool_path" -h >/dev/null; then
+                if "$tool_path" -h >/dev/null; then
+                    :
+                else
                     local status=$?
                     echo "Qt tool $tool returned status $status while printing help"
                     if [ "$status" -eq 137 ]; then
@@ -91,18 +96,20 @@ cd $BUILD_DIR
 
 HOST_CMAKE=$(command -v cmake || true)
 HOST_NINJA=$(command -v ninja || true)
-if [ -n "$HOST_CMAKE" ] && [ -n "$HOST_NINJA" ]; then
-    CMAKE_BIN=$HOST_CMAKE
-    export PATH="$(dirname "$HOST_NINJA"):$PATH"
-else
-    CMAKE_BIN=cmake
-    export PATH=$QT_INSTALLATION_DIR/Tools/Ninja:$QT_INSTALLATION_DIR/Tools/CMake/CMake.app/Contents/bin:$PATH
+if [ -z "$HOST_CMAKE" ] || [ -z "$HOST_NINJA" ]; then
+    echo "CMake and Ninja are required"
+    exit 1
 fi
+CMAKE_BIN=$HOST_CMAKE
+export PATH="$(dirname "$HOST_NINJA"):$PATH"
+RESOLVED_CMAKE_BIN=$(command -v "$CMAKE_BIN")
 
 ls $QT_DIR/bin
 file $QT_DIR/bin/qt-cmake
 echo "Using CMake: $CMAKE_BIN"
-file "$CMAKE_BIN"
+echo "Resolved CMake: $RESOLVED_CMAKE_BIN"
+file "$RESOLVED_CMAKE_BIN"
+codesign --verify --verbose=2 "$RESOLVED_CMAKE_BIN" || true
 echo "Using Ninja: $(command -v ninja)"
 file "$(command -v ninja)"
 df -h
