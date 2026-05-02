@@ -29,6 +29,8 @@ if [ -n "$CI" ]; then
 
     KEYCHAIN_PATH=$PWD/$SECURE_FILES_DOWNLOAD_PATH/app-signing.keychain-db
     KEYCHAIN_PASSWORD="temporary-1234" # Gets discarded anyway - hence, this is as good as a generated one
+    LOGIN_KEYCHAIN_PATH="$HOME/Library/Keychains/login.keychain-db"
+    SYSTEM_KEYCHAIN_PATH="/Library/Keychains/System.keychain"
 
     # create temporary keychain
     security create-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
@@ -75,7 +77,8 @@ if [ -n "$CI" ]; then
         security import $cert -P "$APPLE_CERTIFICATES_PASSWORD" -A -t cert -f pkcs12 -k $KEYCHAIN_PATH
     done
     security set-key-partition-list -S apple-tool:,apple: -s -k "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
-    security list-keychain -d user -s $KEYCHAIN_PATH
+    security default-keychain -d user -s $KEYCHAIN_PATH
+    security list-keychain -d user -s $KEYCHAIN_PATH $LOGIN_KEYCHAIN_PATH $SYSTEM_KEYCHAIN_PATH
     security find-identity -v -p codesigning $KEYCHAIN_PATH || true
 
     # apply provisioning profile
