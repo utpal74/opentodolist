@@ -29,6 +29,87 @@ echo "Using Qt $QT_VERSION"
 
 QT_DIR_IOS=$QT_INSTALLATION_DIR/$QT_VERSION/ios
 QT_DIR=$QT_INSTALLATION_DIR/$QT_VERSION/macos
+IOS_BUNDLE_IDENTIFIER="${IOS_BUNDLE_IDENTIFIER:-net.rpdev.OpenTodoList}"
+IOS_TEAM_ID="${IOS_TEAM_ID:-786Z636JV9}"
+IOS_CODE_SIGN_IDENTITY="${IOS_CODE_SIGN_IDENTITY:-Apple Distribution}"
+
+find_ios_provisioning_profile() {
+    local bundle_identifier="$1"
+    local profile
+
+    for profile in "$HOME"/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision; do
+        if [ ! -f "$profile" ]; then
+            continue
+        fi
+
+        local plist
+        plist=$(mktemp)
+        if ! security cms -D -i "$profile" -o "$plist" >/dev/null 2>&1; then
+            rm -f "$plist"
+            continue
+        fi
+
+        local app_identifier
+        local profile_name
+        app_identifier=$(plutil -extract Entitlements.application-identifier raw -o - "$plist" 2>/dev/null || true)
+        profile_name=$(plutil -extract Name raw -o - "$plist" 2>/dev/null || true)
+        rm -f "$plist"
+
+        case "$app_identifier" in
+            *."$bundle_identifier"|"$IOS_TEAM_ID.$bundle_identifier")
+                if [ -n "$profile_name" ]; then
+                    echo "$profile_name"
+                    return 0
+                fi
+                ;;
+        esac
+    done
+
+    return 1
+}
+
+if [ -z "$IOS_PROVISIONING_PROFILE_SPECIFIER" ]; then
+    IOS_PROVISIONING_PROFILE_SPECIFIER=$(find_ios_provisioning_profile "$IOS_BUNDLE_IDENTIFIER" || true)
+fi
+
+echo "Available code signing identities:"
+security find-identity -v -p codesigning || true
+echo "Using iOS bundle identifier: $IOS_BUNDLE_IDENTIFIER"
+echo "Using iOS team ID: $IOS_TEAM_ID"
+echo "Using iOS code signing identity: $IOS_CODE_SIGN_IDENTITY"
+echo "Using iOS provisioning profile: $IOS_PROVISIONING_PROFILE_SPECIFIER"
+
+if [ -z "$IOS_PROVISIONING_PROFILE_SPECIFIER" ]; then
+    echo "No provisioning profile found for $IOS_BUNDLE_IDENTIFIER"
+    exit 1
+fi
+
+EXPORT_OPTIONS_PLIST=$(mktemp)
+cat > "$EXPORT_OPTIONS_PLIST" <<EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>method</key>
+    <string>app-store</string>
+    <key>provisioningProfiles</key>
+    <dict>
+        <key>$IOS_BUNDLE_IDENTIFIER</key>
+        <string>$IOS_PROVISIONING_PROFILE_SPECIFIER</string>
+    </dict>
+    <key>signingCertificate</key>
+    <string>$IOS_CODE_SIGN_IDENTITY</string>
+    <key>signingStyle</key>
+    <string>manual</string>
+    <key>stripSwiftSymbols</key>
+    <true/>
+    <key>teamID</key>
+    <string>$IOS_TEAM_ID</string>
+    <key>uploadSymbols</key>
+    <true/>
+</dict>
+</plist>
+EOF
 
 run_qt_tool_smoke_tests() {
     local qt_dir="$1"
@@ -121,7 +202,11 @@ do
         -DCMAKE_PREFIX_PATH:PATH=$QT_DIR_IOS \
         -DCMAKE_OSX_ARCHITECTURES:STRING=arm64 \
         -DCMAKE_OSX_SYSROOT:STRING=iphoneos \
-        -DQT_HOST_PATH=$QT_DIR
+        -DQT_HOST_PATH=$QT_DIR \
+        -DOPENTODOLIST_APPLE_TEAM_ID="$IOS_TEAM_ID" \
+        -DOPENTODOLIST_APPLE_CODE_SIGN_IDENTITY="$IOS_CODE_SIGN_IDENTITY" \
+        -DOPENTODOLIST_APPLE_CODE_SIGN_STYLE=Manual \
+        -DOPENTODOLIST_IOS_PROVISIONING_PROFILE_SPECIFIER="$IOS_PROVISIONING_PROFILE_SPECIFIER"
 
     if [ -n "$CONFIGURE_ONLY" ]; then
         exit 0
@@ -129,8 +214,8 @@ do
 
     # cmake --build . --config Release -- "$XCODEBUILD_FLAGS" ## Leads to "Archive Failed" errors in next step - but we need at least CMake 3.25.0
 
-    if xcodebuild -scheme OpenTodoList -sdk iphoneos -configuration Release archive -archivePath OpenTodoList.xcarchive -allowProvisioningUpdates && \
-        xcodebuild -exportArchive -archivePath OpenTodoList.xcarchive -exportOptionsPlist ../src/ExportOptions.plist -exportPath OpenTodoList.ipa -allowProvisioningUpdates; then
+    if xcodebuild -scheme OpenTodoList -sdk iphoneos -configuration Release archive -archivePath OpenTodoList.xcarchive && \
+        xcodebuild -exportArchive -archivePath OpenTodoList.xcarchive -exportOptionsPlist "$EXPORT_OPTIONS_PLIST" -exportPath OpenTodoList.ipa; then
         exit 0
     else
         echo "Build attempt $i failed"

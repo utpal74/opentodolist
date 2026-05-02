@@ -21,6 +21,10 @@ set(OPENTODOLIST_APPLE_CODE_SIGN_STYLE
     "Automatic" CACHE STRING
     "Code signing style when building with Xcode."
 )
+set(OPENTODOLIST_IOS_PROVISIONING_PROFILE_SPECIFIER
+    "" CACHE STRING
+    "Provisioning profile specifier to use when building for iOS with Xcode."
+)
 
 # Control of build specific features:
 option(OPENTODOLIST_WITH_UPDATE_SERVICE

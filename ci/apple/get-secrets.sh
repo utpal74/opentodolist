@@ -39,7 +39,9 @@ if [ -n "$CI" ]; then
     for cert in $PWD/$SECURE_FILES_DOWNLOAD_PATH/*.p12; do
         security import $cert -P "$APPLE_CERTIFICATES_PASSWORD" -A -t cert -f pkcs12 -k $KEYCHAIN_PATH
     done
+    security set-key-partition-list -S apple-tool:,apple: -s -k "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
     security list-keychain -d user -s $KEYCHAIN_PATH
+    security find-identity -v -p codesigning $KEYCHAIN_PATH || true
 
     # apply provisioning profile
     mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
