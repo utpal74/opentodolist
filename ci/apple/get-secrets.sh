@@ -43,8 +43,11 @@ if [ -n "$CI" ]; then
 
     # apply provisioning profile
     mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-    cp $PWD/$SECURE_FILES_DOWNLOAD_PATH/*.provisionprofile ~/Library/MobileDevice/Provisioning\ Profiles || true
-    cp $PWD/$SECURE_FILES_DOWNLOAD_PATH/*.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles || true
+    for profile in "$PWD/$SECURE_FILES_DOWNLOAD_PATH"/*.provisionprofile "$PWD/$SECURE_FILES_DOWNLOAD_PATH"/*.mobileprovision; do
+        if [ -f "$profile" ]; then
+            cp "$profile" ~/Library/MobileDevice/Provisioning\ Profiles
+        fi
+    done
 else
     XCODEBUILD_FLAGS=""
 fi
