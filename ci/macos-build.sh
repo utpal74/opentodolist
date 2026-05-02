@@ -40,6 +40,10 @@ export PATH=$QT_INSTALLATION_DIR/Tools/Ninja:$QT_INSTALLATION_DIR/Tools/CMake/CM
 
 ls $QT_DIR/bin
 file $QT_DIR/bin/qt-cmake
+command -v cmake
+file "$(command -v cmake)"
+command -v ninja
+file "$(command -v ninja)"
 df -h
 
 cmake \

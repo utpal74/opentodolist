@@ -50,4 +50,8 @@ if [ -n "$CI" ]; then
     if [ -n "$QT_INSTALL_IOS" ]; then
         download_and_extract_qt_archive "$QT_URL_IOS" "$QT_ARCHIVE_IOS"
     fi
+
+    if command -v xattr >/dev/null 2>&1; then
+        xattr -cr Qt || true
+    fi
 fi
