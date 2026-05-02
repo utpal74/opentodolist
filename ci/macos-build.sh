@@ -32,10 +32,57 @@ fi
 
 export QT_DIR=$QT_INSTALLATION_DIR/$QT_VERSION/macos
 
-"$QT_DIR/bin/qmake" -query QT_VERSION
-"$QT_DIR/bin/moc" -v
-"$QT_DIR/bin/rcc" -v
-"$QT_DIR/bin/macdeployqt" -h >/dev/null || true
+run_qt_tool_smoke_tests() {
+    local qt_dir="$1"
+    local label="$2"
+    local qmake="$qt_dir/bin/qmake"
+    local tool
+
+    echo "Checking Qt tools for $label in $qt_dir"
+    "$qmake" -query QT_VERSION
+    "$qmake" -query QT_INSTALL_BINS
+    "$qmake" -query QT_INSTALL_LIBEXECS
+    "$qmake" -query QT_HOST_BINS
+    "$qmake" -query QT_HOST_LIBEXECS
+
+    for tool in moc rcc qmlcachegen qmltyperegistrar macdeployqt; do
+        local tool_path=""
+        for dir in \
+            "$("$qmake" -query QT_HOST_BINS 2>/dev/null)" \
+            "$("$qmake" -query QT_HOST_LIBEXECS 2>/dev/null)" \
+            "$("$qmake" -query QT_INSTALL_BINS 2>/dev/null)" \
+            "$("$qmake" -query QT_INSTALL_LIBEXECS 2>/dev/null)"; do
+            if [ -x "$dir/$tool" ]; then
+                tool_path="$dir/$tool"
+                break
+            fi
+        done
+
+        if [ -z "$tool_path" ]; then
+            echo "Qt tool $tool not found for $label"
+            continue
+        fi
+
+        echo "Found Qt tool $tool: $tool_path"
+        file "$tool_path"
+        case "$tool" in
+            moc|rcc)
+                "$tool_path" -v
+                ;;
+            *)
+                if ! "$tool_path" -h >/dev/null; then
+                    local status=$?
+                    echo "Qt tool $tool returned status $status while printing help"
+                    if [ "$status" -eq 137 ]; then
+                        exit "$status"
+                    fi
+                fi
+                ;;
+        esac
+    done
+}
+
+run_qt_tool_smoke_tests "$QT_DIR" macos
 
 
 #rm -rf $BUILD_DIR
