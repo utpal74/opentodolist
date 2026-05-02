@@ -4,6 +4,7 @@ variables:
   QT_VERSION: "6.10.0"
   UBUNTU_IMAGE: registry.gitlab.com/rpdev/docker/qt6-ubuntu:$QT_VERSION
   ANDROID_IMAGE: registry.gitlab.com/rpdev/docker/qt6-android:$QT_VERSION
+  WINDOWS_IMAGE: registry.gitlab.com/rpdev/docker/qt6-windows:$QT_VERSION
   FLATPAK_IMAGE: registry.gitlab.com/rpdev/docker/flatpak-builder-kde-qt6:6.9
   DOCKER_IMAGE: docker
   DOCKER_DIND_IMAGE: docker:dind
@@ -13,6 +14,7 @@ variables:
   CTEST_OUTPUT_ON_FAILURE: 1
   GIT_SUBMODULE_STRATEGY: recursive
   CCACHE_DIR: $CI_PROJECT_DIR/ccache
+  WINDOWS_DOCKER_CONFIG: $CI_PROJECT_DIR\\.docker
   ANDROID_MIN_SDK_INT: 23
   OPENTODOLIST_WEBDAV_TEST_SERVERS_TEMPLATE: "nextcloud://admin:admin@nextcloud/;owncloud://admin:admin@owncloud/;generic://admin:admin@nextcloud/remote.php/webdav/;generic://admin:admin@owncloud/remote.php/webdav/"
   # Exit PowerShell scripts with an error when an error occurs:
@@ -151,8 +153,22 @@ windows-mingw-w64:
   stage: build
   tags:
     - saas-windows-medium-amd64
+  before_script:
+    - $ErrorActionPreference = "Stop"
+    - Start-Service -Name "docker"
+    - New-Item -ItemType Directory -Force -Path $env:WINDOWS_DOCKER_CONFIG | Out-Null
+    - Set-Content -Path (Join-Path $env:WINDOWS_DOCKER_CONFIG "config.json") -Value "{}"
   script:
-    - powershell -NoProfile -ExecutionPolicy Bypass -File .\ci\win-build.ps1
+    - $env:DOCKER_CONFIG = $env:WINDOWS_DOCKER_CONFIG
+    - docker version
+    - docker info
+    - Set-Content -NoNewline -Encoding ascii -Path registry-password.txt -Value $env:CI_REGISTRY_PASSWORD
+    - cmd /c "type registry-password.txt | docker login %CI_REGISTRY% --username %CI_REGISTRY_USER% --password-stdin"
+    - Remove-Item -Force registry-password.txt
+    - docker pull $env:WINDOWS_IMAGE
+    - docker run --rm --isolation=process -v "${env:CI_PROJECT_DIR}:C:\work" -w C:\work -e QT_VERSION="$env:QT_VERSION" -e CTEST_OUTPUT_ON_FAILURE="$env:CTEST_OUTPUT_ON_FAILURE" -e OPENTODOLIST_WEBDAV_TEST_SERVERS="$env:OPENTODOLIST_WEBDAV_TEST_SERVERS_TEMPLATE" $env:WINDOWS_IMAGE powershell -NoProfile -ExecutionPolicy Bypass -File .\ci\win-build.ps1
+  after_script:
+    - if (Test-Path -Path registry-password.txt) { Remove-Item -Force registry-password.txt }
   artifacts:
     paths:
       - deploy-win64/OpenTodoList-*-Windows-64bit.exe
