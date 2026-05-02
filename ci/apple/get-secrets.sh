@@ -35,6 +35,26 @@ if [ -n "$CI" ]; then
     security set-keychain-settings -lut 21600 $KEYCHAIN_PATH
     security unlock-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
 
+    import_apple_intermediate_certificate() {
+        local url="$1"
+        local cert_path="$RUNNER_TEMP/$(basename "$url")"
+
+        if curl --fail --location --show-error --silent -o "$cert_path" "$url"; then
+            security import "$cert_path" -k "$KEYCHAIN_PATH" -T /usr/bin/codesign -T /usr/bin/security || true
+        else
+            echo "Could not download Apple intermediate certificate from $url"
+        fi
+    }
+
+    # Code signing identities need the Apple intermediate certificates to build
+    # a trust chain on fresh CI runners.
+    import_apple_intermediate_certificate "https://www.apple.com/certificateauthority/AppleWWDRCAG2.cer"
+    import_apple_intermediate_certificate "https://www.apple.com/certificateauthority/AppleWWDRCAG3.cer"
+    import_apple_intermediate_certificate "https://www.apple.com/certificateauthority/AppleWWDRCAG4.cer"
+    import_apple_intermediate_certificate "https://www.apple.com/certificateauthority/AppleWWDRCAG5.cer"
+    import_apple_intermediate_certificate "https://www.apple.com/certificateauthority/AppleWWDRCAG6.cer"
+    import_apple_intermediate_certificate "https://www.apple.com/certificateauthority/DeveloperIDG2CA.cer"
+
     # import certificate to keychain
     for cert in $PWD/$SECURE_FILES_DOWNLOAD_PATH/*.p12; do
         security import $cert -P "$APPLE_CERTIFICATES_PASSWORD" -A -t cert -f pkcs12 -k $KEYCHAIN_PATH

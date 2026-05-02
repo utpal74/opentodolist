@@ -32,6 +32,16 @@ if [ -z "$MACOS_TEAM_ID" ]; then
     # Default Team ID to use:
     MACOS_TEAM_ID="786Z636JV9"
 fi
+if [ -z "$MACOS_CODE_SIGN_IDENTITY" ]; then
+    MACOS_CODE_SIGN_IDENTITY="Developer ID Application: Martin Hoeher ($MACOS_TEAM_ID)"
+fi
+
+echo "Using macOS code signing identity: $MACOS_CODE_SIGN_IDENTITY"
+security find-identity -v -p codesigning || true
+if ! security find-identity -v -p codesigning | grep -F "$MACOS_CODE_SIGN_IDENTITY"; then
+    echo "The macOS code signing identity was not found: $MACOS_CODE_SIGN_IDENTITY"
+    exit 1
+fi
 
 export QT_DIR=$QT_INSTALLATION_DIR/$QT_VERSION/macos
 
@@ -145,7 +155,7 @@ for i in initial retry; do
         OpenTodoList.app/ \
         -qmldir=../../src \
         -appstore-compliant \
-        -sign-for-notarization="Developer ID Application: Martin Hoeher (786Z636JV9)"
+        -sign-for-notarization="$MACOS_CODE_SIGN_IDENTITY"
     find OpenTodoList.app -name "*.dSYM" -type d | xargs rm -rf
     popd
 
