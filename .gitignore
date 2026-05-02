@@ -37,3 +37,4 @@ __pycache__
 .cache
 /OpenTodoList-*-Windows-64bit/
 **/.qmlls.ini
+/opentodolist-website

@@ -718,7 +718,7 @@
     <message>
         <location filename="../Pages/EditNextCloudAccountPage.qml" line="122"/>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Palavra-chave</translation>
     </message>
     <message>
         <location filename="../Pages/EditNextCloudAccountPage.qml" line="131"/>
@@ -767,12 +767,12 @@
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="159"/>
         <source>Password:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Palavra-chave:</translation>
     </message>
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="166"/>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Palavra-chave</translation>
     </message>
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="176"/>
@@ -1620,7 +1620,7 @@
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="117"/>
         <source>User:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Utilizador:</translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="123"/>
@@ -1630,12 +1630,12 @@
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="129"/>
         <source>Password:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Palavra-chave:</translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="135"/>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Palavra-chave</translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="144"/>

@@ -268,7 +268,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="158"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Suprimeix</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="166"/>
@@ -338,7 +338,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="279"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Reanomena</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="287"/>
@@ -624,7 +624,7 @@
         <location filename="../Pages/EditDropboxAccountPage.qml" line="26"/>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="65"/>
         <source>Connection Settings</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ajusts de connexió</translation>
     </message>
     <message>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="73"/>
@@ -1228,7 +1228,7 @@
         <location filename="../Pages/NewDropboxAccountPage.qml" line="20"/>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="53"/>
         <source>Connection Settings</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ajusts de connexió</translation>
     </message>
     <message>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="61"/>

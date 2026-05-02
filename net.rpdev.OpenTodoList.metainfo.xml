@@ -48,7 +48,23 @@
 
   <releases>
     <!-- Format releases according to this: https://www.freedesktop.org/software/appstream/docs/sect-Metadata-Releases.html#spec-releases-example -->
-     <release version="3.50.1" date="2025-01-19">
+    <release version="3.51.0" date="2026-05-02">
+        <description>
+            <p>This release of the app adds support for recipes, allowing you to keep ingredients, utilities, steps and yields together with your other items.</p>
+            <p>Besides this new feature, synchronization is now more robust when WebDAV servers report transient errors. This release also contains several improvements to Android, Windows, macOS and iOS builds and release automation.</p>
+            <p>Additionally, this release of the app contains the following changes:</p>
+        </description>
+        <issues>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/588">#588: Add support for recipes.</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/695">#695: Handle transient errors during synchronization with WebDAV servers.</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/696">#696: Reduce the APK size.</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/691">#691: Fix the automatic release to the Play Store.</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/694">#694: Fix JsonUtilsTest failures caused by localized QJsonDocument error messages.</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/698">#698: Fix occasional Windows build failures.</issue>
+            <issue url="https://gitlab.com/rpdev/opentodolist/-/issues/699">#699: Re-activate the macOS shared runner.</issue>
+        </issues>
+    </release>
+    <release version="3.50.1" date="2025-01-19">
         <description>
             <p>This release of the app contains the following changes:</p>
         </description>

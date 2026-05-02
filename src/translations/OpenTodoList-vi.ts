@@ -664,7 +664,7 @@
     <message>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="123"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tên</translation>
     </message>
     <message>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="130"/>
@@ -737,17 +737,17 @@
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="32"/>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="116"/>
         <source>Edit Account</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Chỉnh sửa</translation>
     </message>
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="122"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tên</translation>
     </message>
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="133"/>
         <source>Server Address:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Địa chỉ server</translation>
     </message>
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="139"/>
@@ -782,7 +782,7 @@
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="184"/>
         <source>Failed to connect to the server. Please check your user name, password and the server address and retry.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Không thể kết nối đến server. Bạn hãy thử kiểm tra lại tên người dùng/mật khẩu  hoặc địa chỉ server và sau đó thử lại.</translation>
     </message>
 </context>
 <context>
@@ -1269,7 +1269,7 @@
     <message>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="113"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tên</translation>
     </message>
     <message>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="120"/>
@@ -1408,7 +1408,7 @@
     <message>
         <location filename="../Pages/NewLibraryInFolderPage.qml" line="129"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tên</translation>
     </message>
     <message>
         <location filename="../Pages/NewLibraryInFolderPage.qml" line="134"/>
@@ -1465,7 +1465,7 @@
     <message>
         <location filename="../Pages/NewLocalLibraryPage.qml" line="79"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tên</translation>
     </message>
     <message>
         <location filename="../Pages/NewLocalLibraryPage.qml" line="84"/>
@@ -1484,7 +1484,7 @@
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="77"/>
         <source>Server Address:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Địa chỉ server</translation>
     </message>
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="91"/>
@@ -1559,7 +1559,7 @@
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="210"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tên</translation>
     </message>
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="223"/>
@@ -1569,7 +1569,7 @@
     <message>
         <location filename="../Pages/NewNextCloudAccountPage.qml" line="233"/>
         <source>Failed to connect to the server. Please check your user name, password and the server address and retry.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Không thể kết nối đến server. Bạn hãy thử kiểm tra lại tên người dùng/mật khẩu  hoặc địa chỉ server và sau đó thử lại.</translation>
     </message>
 </context>
 <context>
@@ -1611,7 +1611,7 @@
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="105"/>
         <source>Server Address:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Địa chỉ server</translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="111"/>
@@ -1646,12 +1646,12 @@
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="148"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tên</translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="171"/>
         <source>Failed to connect to the server. Please check your user name, password and the server address and retry.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Không thể kết nối đến server. Bạn hãy thử kiểm tra lại tên người dùng/mật khẩu  hoặc địa chỉ server và sau đó thử lại.</translation>
     </message>
 </context>
 <context>

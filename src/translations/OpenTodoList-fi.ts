@@ -363,7 +363,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="329"/>
         <source>Set Progress</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Aseta edistyminen</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="336"/>

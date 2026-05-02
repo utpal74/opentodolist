@@ -238,7 +238,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="50"/>
         <source>Attach File</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Lisa fail</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="58"/>

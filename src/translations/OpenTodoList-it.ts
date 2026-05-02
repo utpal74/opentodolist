@@ -238,7 +238,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="50"/>
         <source>Attach File</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Allega file</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="58"/>
@@ -268,12 +268,12 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="158"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cancellare</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="166"/>
         <source>Delete Completed Items</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cancella gli elementi completati</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="174"/>
@@ -308,7 +308,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="236"/>
         <source>Move</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Sposta</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="244"/>
@@ -338,7 +338,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="279"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Rinominare</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="287"/>
@@ -363,7 +363,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="329"/>
         <source>Set Progress</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Seleziona progresso</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="336"/>
@@ -1211,7 +1211,7 @@
     <message>
         <location filename="../Actions/MoveTask.qml" line="12"/>
         <source>Move</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Sposta</translation>
     </message>
 </context>
 <context>
@@ -2150,7 +2150,7 @@ Richiesto riavvio della app.</translation>
         <location filename="../Pages/SettingsPage.qml" line="151"/>
         <location filename="../Pages/SettingsPage.qml" line="171"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Seleziona</translation>
     </message>
     <message>
         <location filename="../Pages/SettingsPage.qml" line="165"/>

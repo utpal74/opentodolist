@@ -238,7 +238,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="50"/>
         <source>Attach File</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">첨부 파일</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="58"/>
@@ -338,7 +338,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="279"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">다른 이름으로</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="287"/>
@@ -1867,7 +1867,7 @@
     <message>
         <location filename="../Actions/RenameItem.qml" line="10"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">다른 이름으로</translation>
     </message>
 </context>
 <context>

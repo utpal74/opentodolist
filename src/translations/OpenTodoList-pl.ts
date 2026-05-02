@@ -238,7 +238,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="50"/>
         <source>Attach File</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Dołącz plik</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="58"/>
@@ -308,7 +308,7 @@
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="236"/>
         <source>Move</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ruszaj się</translation>
     </message>
     <message>
         <location filename="../Components/ApplicationShortcuts.qml" line="244"/>
@@ -624,7 +624,7 @@
         <location filename="../Pages/EditDropboxAccountPage.qml" line="26"/>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="65"/>
         <source>Connection Settings</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ustawienia połączenia</translation>
     </message>
     <message>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="73"/>
@@ -1211,7 +1211,7 @@
     <message>
         <location filename="../Actions/MoveTask.qml" line="12"/>
         <source>Move</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ruszaj się</translation>
     </message>
 </context>
 <context>
@@ -1228,7 +1228,7 @@
         <location filename="../Pages/NewDropboxAccountPage.qml" line="20"/>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="53"/>
         <source>Connection Settings</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ustawienia połączenia</translation>
     </message>
     <message>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="61"/>

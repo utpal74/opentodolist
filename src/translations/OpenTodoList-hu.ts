@@ -624,7 +624,7 @@
         <location filename="../Pages/EditDropboxAccountPage.qml" line="26"/>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="65"/>
         <source>Connection Settings</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Csatlakozási beállítások</translation>
     </message>
     <message>
         <location filename="../Pages/EditDropboxAccountPage.qml" line="73"/>
@@ -762,7 +762,7 @@
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="152"/>
         <source>User Name</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Felhasználó neve</translation>
     </message>
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="159"/>
@@ -782,7 +782,7 @@
     <message>
         <location filename="../Pages/EditWebDAVAccountPage.qml" line="184"/>
         <source>Failed to connect to the server. Please check your user name, password and the server address and retry.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nem sikerült kapcsolódni a szerverhez. Kérjük, ellenőrizze felhasználónevét, jelszavát és a szerver címét, majd próbálja újra.</translation>
     </message>
 </context>
 <context>
@@ -1228,7 +1228,7 @@
         <location filename="../Pages/NewDropboxAccountPage.qml" line="20"/>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="53"/>
         <source>Connection Settings</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Csatlakozási beállítások</translation>
     </message>
     <message>
         <location filename="../Pages/NewDropboxAccountPage.qml" line="61"/>
@@ -1605,7 +1605,7 @@
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="28"/>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="99"/>
         <source>Connection Settings</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Csatlakozási beállítások</translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="105"/>
@@ -1625,7 +1625,7 @@
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="123"/>
         <source>User Name</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Felhasználó neve</translation>
     </message>
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="129"/>
@@ -1650,7 +1650,7 @@
     <message>
         <location filename="../Pages/NewWebDAVAccountPage.qml" line="171"/>
         <source>Failed to connect to the server. Please check your user name, password and the server address and retry.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Nem sikerült kapcsolódni a szerverhez. Kérjük, ellenőrizze felhasználónevét, jelszavát és a szerver címét, majd próbálja újra.</translation>
     </message>
 </context>
 <context>
