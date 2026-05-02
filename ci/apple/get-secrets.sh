@@ -46,8 +46,23 @@ if [ -n "$CI" ]; then
         fi
     }
 
+    import_apple_root_certificate() {
+        local url="$1"
+        local cert_path="$RUNNER_TEMP/$(basename "$url")"
+
+        if curl --fail --location --show-error --silent -o "$cert_path" "$url"; then
+            security import "$cert_path" -k "$KEYCHAIN_PATH" -T /usr/bin/codesign -T /usr/bin/security || true
+            security add-trusted-cert -d -r trustRoot -k "$KEYCHAIN_PATH" "$cert_path" || true
+        else
+            echo "Could not download Apple root certificate from $url"
+        fi
+    }
+
     # Code signing identities need the Apple intermediate certificates to build
     # a trust chain on fresh CI runners.
+    import_apple_root_certificate "https://www.apple.com/certificateauthority/AppleIncRootCertificate.cer"
+    import_apple_root_certificate "https://www.apple.com/certificateauthority/AppleRootCA-G2.cer"
+    import_apple_root_certificate "https://www.apple.com/certificateauthority/AppleRootCA-G3.cer"
     import_apple_intermediate_certificate "https://www.apple.com/certificateauthority/AppleWWDRCAG2.cer"
     import_apple_intermediate_certificate "https://www.apple.com/certificateauthority/AppleWWDRCAG3.cer"
     import_apple_intermediate_certificate "https://www.apple.com/certificateauthority/AppleWWDRCAG4.cer"
