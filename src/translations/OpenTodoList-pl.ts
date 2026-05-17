@@ -99,7 +99,7 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/AccountTypeSelectionPage.qml" line="70"/>
         <source>Dropbox</source>
-        <translation type="unfinished"></translation>
+        <translation>Dropbox</translation>
     </message>
 </context>
 <context>
@@ -121,7 +121,7 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/Tooltips/AllSubtasksDone.qml" line="20"/>
         <source>Mark as Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Oznacz jako Zakończone</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/Tooltips/AllSubtasksDone.qml" line="30"/>
@@ -177,12 +177,12 @@
     <message>
         <location filename="../application.cpp" line="225"/>
         <source>Background Sync</source>
-        <translation type="unfinished"></translation>
+        <translation>Synchronizacja w tle</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="229"/>
         <source>App continues to sync your data in the background</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplikacja kontynuuje synchronizację twoich danych w tle</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="233"/>
@@ -205,7 +205,7 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Widgets/ApplicationMenu.qml" line="162"/>
         <source>Navigate</source>
-        <translation type="unfinished"></translation>
+        <translation>Nawiguj</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Widgets/ApplicationMenu.qml" line="201"/>
@@ -218,37 +218,37 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/ApplicationShortcuts.qml" line="17"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>O aplikacji</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/ApplicationShortcuts.qml" line="26"/>
         <source>About Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Informacje o Qt</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/ApplicationShortcuts.qml" line="34"/>
         <source>Accounts</source>
-        <translation type="unfinished">Konta</translation>
+        <translation>Konta</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/ApplicationShortcuts.qml" line="42"/>
         <source>Add Tag</source>
-        <translation type="unfinished">Dodaj Tag</translation>
+        <translation>Dodaj Etykietę</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/ApplicationShortcuts.qml" line="50"/>
         <source>Attach File</source>
-        <translation type="unfinished"></translation>
+        <translation>Załącz plik</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/ApplicationShortcuts.qml" line="58"/>
         <source>Backup</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopia Zapasowa</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/ApplicationShortcuts.qml" line="65"/>
         <source>Close</source>
-        <translation type="unfinished">Zamknij</translation>
+        <translation>Zamknij</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/ApplicationShortcuts.qml" line="72"/>
@@ -263,17 +263,17 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/ApplicationShortcuts.qml" line="88"/>
         <source>Create Sample Library</source>
-        <translation type="unfinished"></translation>
+        <translation>Utwórz Bibliotekę Testową</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/ApplicationShortcuts.qml" line="185"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuń</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/ApplicationShortcuts.qml" line="193"/>
         <source>Delete Completed Items</source>
-        <translation type="unfinished">Usuń zakończone pozycje</translation>
+        <translation>Usuń Zadania Zrealizowane</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/ApplicationShortcuts.qml" line="201"/>
@@ -288,7 +288,7 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/ApplicationShortcuts.qml" line="216"/>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Wstecz</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/ApplicationShortcuts.qml" line="233"/>
@@ -298,22 +298,22 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/ApplicationShortcuts.qml" line="239"/>
         <source>Mark all items as done</source>
-        <translation type="unfinished"></translation>
+        <translation>Oznacz wszystkie elementy jako zakończone</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/ApplicationShortcuts.qml" line="251"/>
         <source>Mark all items as undone</source>
-        <translation type="unfinished"></translation>
+        <translation>Oznacz wszystkie elementy jako niezakończone</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/ApplicationShortcuts.qml" line="263"/>
         <source>Move</source>
-        <translation type="unfinished"></translation>
+        <translation>Przenieś</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/ApplicationShortcuts.qml" line="271"/>
         <source>New Library</source>
-        <translation type="unfinished">Nowa biblioteka</translation>
+        <translation>Nowa Biblioteka</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/ApplicationShortcuts.qml" line="279"/>
@@ -629,7 +629,7 @@
         <location filename="../net/rpdev/OpenTodoList/Pages/EditDropboxAccountPage.qml" line="26"/>
         <location filename="../net/rpdev/OpenTodoList/Pages/EditDropboxAccountPage.qml" line="65"/>
         <source>Connection Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ustawienia Połączenia</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/EditDropboxAccountPage.qml" line="73"/>
@@ -644,17 +644,17 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/EditDropboxAccountPage.qml" line="91"/>
         <source>Didn&apos;t your browser open? You can retry opening it or copy the required URL manually to your browser.</source>
-        <translation type="unfinished"></translation>
+        <translation>Przeglądarka się nie otworzyła? Możesz spróbować ponownie lub ręcznie skopiować link i wkleić go do paska URL.</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/EditDropboxAccountPage.qml" line="95"/>
         <source>Authorize...</source>
-        <translation type="unfinished"></translation>
+        <translation>Autoryzuj...</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/EditDropboxAccountPage.qml" line="104"/>
         <source>Open Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Otwórz Przeglądarkę</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/EditDropboxAccountPage.qml" line="110"/>
@@ -669,12 +669,12 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/EditDropboxAccountPage.qml" line="123"/>
         <source>Name:</source>
-        <translation type="unfinished">Nazwa:</translation>
+        <translation>Nazwa:</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/EditDropboxAccountPage.qml" line="130"/>
         <source>Dropbox</source>
-        <translation type="unfinished"></translation>
+        <translation>Dropbox</translation>
     </message>
 </context>
 <context>
@@ -1024,7 +1024,7 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Utils/ItemUtils.qml" line="212"/>
         <source>Move Task Into...</source>
-        <translation type="unfinished"></translation>
+        <translation>Przenieś Zadanie Do...</translation>
     </message>
 </context>
 <context>
@@ -1217,7 +1217,7 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/LogViewPage.qml" line="68"/>
         <source>Debugging information</source>
-        <translation type="unfinished"></translation>
+        <translation>Informacje do debugowania</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/LogViewPage.qml" line="70"/>
@@ -1232,7 +1232,7 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/LogViewPage.qml" line="74"/>
         <source>Download</source>
-        <translation type="unfinished">Pobierz</translation>
+        <translation>Pobierz</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/LogViewPage.qml" line="76"/>
@@ -1242,22 +1242,22 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/LogViewPage.qml" line="78"/>
         <source>Create local folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Utwórz Folder Lokalny</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/LogViewPage.qml" line="80"/>
         <source>Create remote folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Utwórz Folder Zdalny</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/LogViewPage.qml" line="82"/>
         <source>Deleting locally</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuwanie lokalnie</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/LogViewPage.qml" line="84"/>
         <source>Deleting remotely</source>
-        <translation type="unfinished"></translation>
+        <translation>usuwanie zdalnie</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/LogViewPage.qml" line="86"/>
@@ -1288,7 +1288,7 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/Tooltips/MarkFutureInstanceAsDone.qml" line="20"/>
         <source>Mark as Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Oznacz jako Zakończone</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Components/Tooltips/MarkFutureInstanceAsDone.qml" line="29"/>
@@ -1327,7 +1327,7 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Actions/MoveTask.qml" line="12"/>
         <source>Move</source>
-        <translation type="unfinished"></translation>
+        <translation>Przenieś</translation>
     </message>
 </context>
 <context>
@@ -1359,17 +1359,17 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/NewDropboxAccountPage.qml" line="79"/>
         <source>Didn&apos;t your browser open? You can retry opening it or copy the required URL manually to your browser.</source>
-        <translation type="unfinished"></translation>
+        <translation>Przeglądarka się nie otworzyła? Możesz spróbować ponownie lub ręcznie skopiować link i wkleić go do paska URL.</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/NewDropboxAccountPage.qml" line="85"/>
         <source>Authorize...</source>
-        <translation type="unfinished"></translation>
+        <translation>Autoryzuj...</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/NewDropboxAccountPage.qml" line="94"/>
         <source>Open Browser</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Otwórz Przeglądarkę</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/NewDropboxAccountPage.qml" line="100"/>
@@ -1384,12 +1384,12 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/NewDropboxAccountPage.qml" line="113"/>
         <source>Name:</source>
-        <translation type="unfinished">Nazwa:</translation>
+        <translation>Nazwa:</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/NewDropboxAccountPage.qml" line="120"/>
         <source>Dropbox</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Dropbox</translation>
     </message>
 </context>
 <context>
@@ -1442,7 +1442,7 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Windows/NewItemWithDueDateDialog.qml" line="149"/>
         <source>Library</source>
-        <translation type="unfinished"></translation>
+        <translation>Biblioteka</translation>
     </message>
 </context>
 <context>
@@ -1869,7 +1869,7 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Windows/QuickNoteWindow.qml" line="121"/>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Zapisz</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Windows/QuickNoteWindow.qml" line="126"/>
@@ -1988,12 +1988,12 @@
     <message>
         <location filename="../net/rpdev/OpenTodoList/Windows/RecurrenceDialog.qml" line="118"/>
         <source>Number of weeks:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ilość tygodni:</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Windows/RecurrenceDialog.qml" line="120"/>
         <source>Number of months:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ilość miesięcy:</translation>
     </message>
 </context>
 <context>
@@ -2249,7 +2249,7 @@ Wymaga restartu aplikacji.</translation>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/SettingsPage.qml" line="313"/>
         <source>Library Item Size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozmiar elementu biblioteki:</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/SettingsPage.qml" line="189"/>
@@ -2264,7 +2264,7 @@ Wymaga restartu aplikacji.</translation>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/SettingsPage.qml" line="234"/>
         <source>Desktop Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Tryb Pulpitu</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/SettingsPage.qml" line="329"/>
@@ -2279,7 +2279,7 @@ Wymaga restartu aplikacji.</translation>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/SettingsPage.qml" line="143"/>
         <source>Custom Primary Color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Niestandardowy Kolor Podstawowy:</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/SettingsPage.qml" line="151"/>
@@ -2290,7 +2290,7 @@ Wymaga restartu aplikacji.</translation>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/SettingsPage.qml" line="165"/>
         <source>Custom Secondary Color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Niestandardowy Kolor Drugorzędny</translation>
     </message>
 </context>
 <context>
@@ -2311,17 +2311,17 @@ Wymaga restartu aplikacji.</translation>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/StartPage.qml" line="70"/>
         <source>Add a new library</source>
-        <translation type="unfinished"></translation>
+        <translation>Dodaj nową&#xa0;bibliotekę</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/StartPage.qml" line="89"/>
         <source>Accounts</source>
-        <translation type="unfinished">Konta</translation>
+        <translation>Konta</translation>
     </message>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Pages/StartPage.qml" line="111"/>
         <source>Add an account</source>
-        <translation type="unfinished"></translation>
+        <translation>Dodaj konto</translation>
     </message>
 </context>
 <context>
@@ -2488,7 +2488,7 @@ Wymaga restartu aplikacji.</translation>
     <message>
         <location filename="../net/rpdev/OpenTodoList/Widgets/TodosWidgetDelegate.qml" line="238"/>
         <source>More Actions...</source>
-        <translation type="unfinished"></translation>
+        <translation>Więcej opcji...</translation>
     </message>
 </context>
 <context>

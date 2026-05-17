@@ -2185,7 +2185,7 @@ msgstr ""
 #: ../qml/Pages/SettingsPage.qml:313
 msgctxt "SettingsPage|"
 msgid "Library Item Size:"
-msgstr ""
+msgstr "Rozmiar elementu biblioteki:"
 
 #: ../../lib/sync/webdavsynchronizer.cpp:177
 msgctxt "WebDAVSynchronizer|"
@@ -2250,7 +2250,7 @@ msgstr ""
 #: ../qml/Windows/QuickNoteWindow.qml:121
 msgctxt "QuickNoteWindow|"
 msgid "Save"
-msgstr ""
+msgstr "Zapisz"
 
 #: ../qml/Windows/QuickNoteWindow.qml:126
 msgctxt "QuickNoteWindow|"
@@ -2350,7 +2350,7 @@ msgstr ""
 #: ../Components/ApplicationShortcuts.qml:15
 msgctxt "ApplicationShortcuts|"
 msgid "Ctrl+,"
-msgstr ""
+msgstr "Ctrl+,"
 
 #: ../Components/ApplicationToolBar.qml:164
 msgctxt "ApplicationToolBar|"
@@ -2370,7 +2370,7 @@ msgstr ""
 #: ../Components/ApplicationToolBarActions.qml:33
 msgctxt "ApplicationToolBarActions|"
 msgid "Move"
-msgstr ""
+msgstr "Przenieś"
 
 #: ../Components/ApplicationToolBarActions.qml:43
 msgctxt "ApplicationToolBarActions|"
@@ -2381,17 +2381,17 @@ msgstr ""
 #: ../Components/ApplicationToolBarActions.qml:64
 msgctxt "ApplicationToolBarActions|"
 msgid "Color"
-msgstr ""
+msgstr "Kolor"
 
 #: ../Components/ApplicationToolBarActions.qml:74
 msgctxt "ApplicationToolBarActions|"
 msgid "Add Tag"
-msgstr ""
+msgstr "Dodaj Etykietę"
 
 #: ../Components/ApplicationToolBarActions.qml:82
 msgctxt "ApplicationToolBarActions|"
 msgid "Attach File"
-msgstr ""
+msgstr "Załącz plik"
 
 #: ../Components/ApplicationToolBarActions.qml:92
 msgctxt "ApplicationToolBarActions|"
@@ -2411,12 +2411,12 @@ msgstr ""
 #: ../Components/ApplicationToolBarActions.qml:116
 msgctxt "ApplicationToolBarActions|"
 msgid "Delete"
-msgstr ""
+msgstr "Usuń"
 
 #: ../Components/ApplicationToolBarActions.qml:124
 msgctxt "ApplicationToolBarActions|"
 msgid "Delete Completed Items"
-msgstr ""
+msgstr "Usuń Zadania Zrealizowane"
 
 #: ../Components/ApplicationToolBarActions.qml:132
 msgctxt "ApplicationToolBarActions|"
@@ -2426,7 +2426,7 @@ msgstr ""
 #: ../qml/Pages/SettingsPage.qml:234
 msgctxt "SettingsPage|"
 msgid "Desktop Mode"
-msgstr ""
+msgstr "Tryb Pulpitu"
 
 #: ../qml/Utils/ItemUtils.qml:236
 msgctxt "ItemUtils|"
@@ -2476,17 +2476,17 @@ msgstr ""
 #: ../qml/Pages/AccountTypeSelectionPage.qml:70
 msgctxt "AccountTypeSelectionPage|"
 msgid "Dropbox"
-msgstr ""
+msgstr "Dropbox"
 
 #: ../../lib/application.cpp:220
 msgctxt "Application|"
 msgid "Background Sync"
-msgstr ""
+msgstr "Synchronizacja w tle"
 
 #: ../../lib/application.cpp:224
 msgctxt "Application|"
 msgid "App continues to sync your data in the background"
-msgstr ""
+msgstr "Aplikacja kontynuuje synchronizację twoich danych w tle"
 
 #: ../../lib/application.cpp:228
 msgctxt "Application|"
@@ -2502,7 +2502,7 @@ msgstr ""
 #: ../qml/Pages/EditDropboxAccountPage.qml:65
 msgctxt "EditDropboxAccountPage|"
 msgid "Connection Settings"
-msgstr ""
+msgstr "Ustawienia Połączenia"
 
 #: ../qml/Pages/EditDropboxAccountPage.qml:73
 msgctxt "EditDropboxAccountPage|"
@@ -2517,17 +2517,17 @@ msgstr ""
 #: ../qml/Pages/EditDropboxAccountPage.qml:91
 msgctxt "EditDropboxAccountPage|"
 msgid "Didn't your browser open? You can retry opening it or copy the required URL manually to your browser."
-msgstr ""
+msgstr "Przeglądarka się nie otworzyła? Możesz spróbować ponownie lub ręcznie skopiować link i wkleić go do paska URL."
 
 #: ../qml/Pages/EditDropboxAccountPage.qml:95
 msgctxt "EditDropboxAccountPage|"
 msgid "Authorize..."
-msgstr ""
+msgstr "Autoryzuj..."
 
 #: ../qml/Pages/EditDropboxAccountPage.qml:104
 msgctxt "EditDropboxAccountPage|"
 msgid "Open Browser"
-msgstr ""
+msgstr "Otwórz Przeglądarkę"
 
 #: ../qml/Pages/EditDropboxAccountPage.qml:110
 msgctxt "EditDropboxAccountPage|"
@@ -2542,12 +2542,12 @@ msgstr ""
 #: ../qml/Pages/EditDropboxAccountPage.qml:123
 msgctxt "EditDropboxAccountPage|"
 msgid "Name:"
-msgstr ""
+msgstr "Nazwa:"
 
 #: ../qml/Pages/EditDropboxAccountPage.qml:130
 msgctxt "EditDropboxAccountPage|"
 msgid "Dropbox"
-msgstr ""
+msgstr "Dropbox"
 
 #: ../qml/Pages/NewDropboxAccountPage.qml:20
 #: ../qml/Pages/NewDropboxAccountPage.qml:53
@@ -2568,12 +2568,12 @@ msgstr ""
 #: ../qml/Pages/NewDropboxAccountPage.qml:79
 msgctxt "NewDropboxAccountPage|"
 msgid "Didn't your browser open? You can retry opening it or copy the required URL manually to your browser."
-msgstr ""
+msgstr "Przeglądarka się nie otworzyła? Możesz spróbować ponownie lub ręcznie skopiować link i wkleić go do paska URL."
 
 #: ../qml/Pages/NewDropboxAccountPage.qml:85
 msgctxt "NewDropboxAccountPage|"
 msgid "Authorize..."
-msgstr ""
+msgstr "Autoryzuj..."
 
 #: ../qml/Pages/NewDropboxAccountPage.qml:94
 msgctxt "NewDropboxAccountPage|"
@@ -2593,7 +2593,7 @@ msgstr ""
 #: ../qml/Pages/NewDropboxAccountPage.qml:113
 msgctxt "NewDropboxAccountPage|"
 msgid "Name:"
-msgstr ""
+msgstr "Nazwa:"
 
 #: ../qml/Pages/NewDropboxAccountPage.qml:120
 msgctxt "NewDropboxAccountPage|"
@@ -2608,7 +2608,7 @@ msgstr ""
 #: ../Windows/EmbeddedWebViewDialog/EmbeddedWebViewDialog.qml:15
 msgctxt "EmbeddedWebViewDialog|"
 msgid "Loading..."
-msgstr ""
+msgstr "Ładowanie..."
 
 #: ../qml/Pages/SettingsPage.qml:329
 msgctxt "SettingsPage|"
@@ -2628,7 +2628,7 @@ msgstr ""
 #: ../qml/Windows/NewItemWithDueDateDialog.qml:149
 msgctxt "NewItemWithDueDateDialog|"
 msgid "Library"
-msgstr ""
+msgstr "Biblioteka"
 
 #: ../qml/Pages/ScheduleViewPage.qml:52
 msgctxt "ScheduleViewPage|"
@@ -2643,22 +2643,22 @@ msgstr ""
 #: ../qml/Pages/StartPage.qml:70
 msgctxt "StartPage|"
 msgid "Add a new library"
-msgstr ""
+msgstr "Dodaj nową bibliotekę"
 
 #: ../qml/Pages/StartPage.qml:89
 msgctxt "StartPage|"
 msgid "Accounts"
-msgstr ""
+msgstr "Konta"
 
 #: ../qml/Pages/StartPage.qml:111
 msgctxt "StartPage|"
 msgid "Add an account"
-msgstr ""
+msgstr "Dodaj konto"
 
 #: ../qml/Pages/LogViewPage.qml:68
 msgctxt "LogViewPage|"
 msgid "Debugging information"
-msgstr ""
+msgstr "Informacje do debugowania"
 
 #: ../qml/Pages/LogViewPage.qml:70
 msgctxt "LogViewPage|"
@@ -2673,7 +2673,7 @@ msgstr ""
 #: ../qml/Pages/LogViewPage.qml:74
 msgctxt "LogViewPage|"
 msgid "Download"
-msgstr ""
+msgstr "Pobierz"
 
 #: ../qml/Pages/LogViewPage.qml:76
 msgctxt "LogViewPage|"
@@ -2683,22 +2683,22 @@ msgstr ""
 #: ../qml/Pages/LogViewPage.qml:78
 msgctxt "LogViewPage|"
 msgid "Create local folder"
-msgstr ""
+msgstr "Utwórz Folder Lokalny"
 
 #: ../qml/Pages/LogViewPage.qml:80
 msgctxt "LogViewPage|"
 msgid "Create remote folder"
-msgstr ""
+msgstr "Utwórz Folder Zdalny"
 
 #: ../qml/Pages/LogViewPage.qml:82
 msgctxt "LogViewPage|"
 msgid "Deleting locally"
-msgstr ""
+msgstr "Usuwanie lokalnie"
 
 #: ../qml/Pages/LogViewPage.qml:84
 msgctxt "LogViewPage|"
 msgid "Deleting remotely"
-msgstr ""
+msgstr "usuwanie zdalnie"
 
 #: ../qml/Pages/LogViewPage.qml:86
 msgctxt "LogViewPage|"
@@ -2708,7 +2708,7 @@ msgstr ""
 #: ../qml/Widgets/TodosWidgetDelegate.qml:238
 msgctxt "TodosWidgetDelegate|"
 msgid "More Actions..."
-msgstr ""
+msgstr "Więcej opcji..."
 
 #: ../Menues/LibraryPageActions.qml:66
 msgctxt "LibraryPageActions|"
@@ -2728,12 +2728,12 @@ msgstr ""
 #: ../qml/Windows/RecurrenceDialog.qml:117
 msgctxt "RecurrenceDialog|"
 msgid "Number of weeks:"
-msgstr ""
+msgstr "Ilość tygodni:"
 
 #: ../qml/Windows/RecurrenceDialog.qml:119
 msgctxt "RecurrenceDialog|"
 msgid "Number of months:"
-msgstr ""
+msgstr "Ilość miesięcy:"
 
 #: ../qml/Utils/DeepLinkHandler.qml:56
 msgctxt "DeepLinkHandler|"
@@ -2753,7 +2753,7 @@ msgstr ""
 #: ../qml/Components/Tooltips/AllSubtasksDone.qml:20
 msgctxt "AllSubtasksDone|"
 msgid "Mark as Done"
-msgstr ""
+msgstr "Oznacz jako Zakończone"
 
 #: ../qml/Components/Tooltips/AllSubtasksDone.qml:30
 msgctxt "AllSubtasksDone|"
@@ -2773,7 +2773,7 @@ msgstr ""
 #: ../qml/Widgets/ApplicationMenu.qml:158
 msgctxt "ApplicationMenu|"
 msgid "Navigate"
-msgstr ""
+msgstr "Nawiguj"
 
 #: ../qml/Widgets/ApplicationMenu.qml:197
 msgctxt "ApplicationMenu|"
@@ -2783,37 +2783,37 @@ msgstr ""
 #: ../qml/Components/ApplicationShortcuts.qml:18
 msgctxt "ApplicationShortcuts|"
 msgid "About"
-msgstr ""
+msgstr "O aplikacji"
 
 #: ../qml/Components/ApplicationShortcuts.qml:27
 msgctxt "ApplicationShortcuts|"
 msgid "About Qt"
-msgstr ""
+msgstr "Informacje o Qt"
 
 #: ../qml/Components/ApplicationShortcuts.qml:35
 msgctxt "ApplicationShortcuts|"
 msgid "Accounts"
-msgstr ""
+msgstr "Konta"
 
 #: ../qml/Components/ApplicationShortcuts.qml:43
 msgctxt "ApplicationShortcuts|"
 msgid "Add Tag"
-msgstr ""
+msgstr "Dodaj Etykietę"
 
 #: ../qml/Components/ApplicationShortcuts.qml:51
 msgctxt "ApplicationShortcuts|"
 msgid "Attach File"
-msgstr ""
+msgstr "Załącz plik"
 
 #: ../qml/Components/ApplicationShortcuts.qml:59
 msgctxt "ApplicationShortcuts|"
 msgid "Backup"
-msgstr ""
+msgstr "Kopia Zapasowa"
 
 #: ../qml/Components/ApplicationShortcuts.qml:66
 msgctxt "ApplicationShortcuts|"
 msgid "Close"
-msgstr ""
+msgstr "Zamknij"
 
 #: ../qml/Components/ApplicationShortcuts.qml:73
 msgctxt "ApplicationShortcuts|"
@@ -2828,17 +2828,17 @@ msgstr ""
 #: ../qml/Components/ApplicationShortcuts.qml:89
 msgctxt "ApplicationShortcuts|"
 msgid "Create Sample Library"
-msgstr ""
+msgstr "Utwórz Bibliotekę Testową"
 
 #: ../qml/Components/ApplicationShortcuts.qml:159
 msgctxt "ApplicationShortcuts|"
 msgid "Delete"
-msgstr ""
+msgstr "Usuń"
 
 #: ../qml/Components/ApplicationShortcuts.qml:167
 msgctxt "ApplicationShortcuts|"
 msgid "Delete Completed Items"
-msgstr ""
+msgstr "Usuń Zadania Zrealizowane"
 
 #: ../qml/Components/ApplicationShortcuts.qml:175
 msgctxt "ApplicationShortcuts|"
@@ -2853,7 +2853,7 @@ msgstr ""
 #: ../qml/Components/ApplicationShortcuts.qml:190
 msgctxt "ApplicationShortcuts|"
 msgid "Back"
-msgstr ""
+msgstr "Wstecz"
 
 #: ../qml/Components/ApplicationShortcuts.qml:207
 msgctxt "ApplicationShortcuts|"
@@ -2863,22 +2863,22 @@ msgstr ""
 #: ../qml/Components/ApplicationShortcuts.qml:213
 msgctxt "ApplicationShortcuts|"
 msgid "Mark all items as done"
-msgstr ""
+msgstr "Oznacz wszystkie elementy jako zakończone"
 
 #: ../qml/Components/ApplicationShortcuts.qml:225
 msgctxt "ApplicationShortcuts|"
 msgid "Mark all items as undone"
-msgstr ""
+msgstr "Oznacz wszystkie elementy jako niezakończone"
 
 #: ../qml/Components/ApplicationShortcuts.qml:237
 msgctxt "ApplicationShortcuts|"
 msgid "Move"
-msgstr ""
+msgstr "Przenieś"
 
 #: ../qml/Components/ApplicationShortcuts.qml:245
 msgctxt "ApplicationShortcuts|"
 msgid "New Library"
-msgstr ""
+msgstr "Nowa Biblioteka"
 
 #: ../qml/Components/ApplicationShortcuts.qml:253
 msgctxt "ApplicationShortcuts|"
@@ -2998,7 +2998,7 @@ msgstr ""
 #: ../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml:20
 msgctxt "MarkFutureInstanceAsDone|"
 msgid "Mark as Done"
-msgstr ""
+msgstr "Oznacz jako Zakończone"
 
 #: ../qml/Components/Tooltips/MarkFutureInstanceAsDone.qml:29
 msgctxt "MarkFutureInstanceAsDone|"
@@ -3013,12 +3013,12 @@ msgstr ""
 #: ../qml/Utils/ItemUtils.qml:205
 msgctxt "ItemUtils|"
 msgid "Move Task Into..."
-msgstr ""
+msgstr "Przenieś Zadanie Do..."
 
 #: ../qml/Actions/MoveTask.qml:12
 msgctxt "MoveTask|"
 msgid "Move"
-msgstr ""
+msgstr "Przenieś"
 
 #: ../qml/Windows/SelectTodoDialog.qml:22
 msgctxt "SelectTodoDialog|"
@@ -3038,7 +3038,7 @@ msgstr ""
 #: ../qml/Pages/SettingsPage.qml:143
 msgctxt "SettingsPage|"
 msgid "Custom Primary Color:"
-msgstr ""
+msgstr "Niestandardowy Kolor Podstawowy:"
 
 #: ../qml/Pages/SettingsPage.qml:151 ../qml/Pages/SettingsPage.qml:171
 msgctxt "SettingsPage|"
@@ -3048,5 +3048,5 @@ msgstr ""
 #: ../qml/Pages/SettingsPage.qml:165
 msgctxt "SettingsPage|"
 msgid "Custom Secondary Color:"
-msgstr ""
+msgstr "Niestandardowy Kolor Drugorzędny"
 
