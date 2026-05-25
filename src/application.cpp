@@ -267,6 +267,8 @@ QSharedPointer<BackgroundServiceReplica> Application::getBackgroundService()
                     this, &Application::onLibrarySyncFinished);
             connect(m_backgroundService.data(), &BackgroundServiceReplica::librarySyncError, this,
                     &Application::onLibrarySyncError);
+            connect(m_backgroundService.data(), &BackgroundServiceReplica::librarySyncProblem, this,
+                    &Application::onLibrarySyncProblem);
             connect(m_backgroundService.data(), &BackgroundServiceReplica::libraryDeleted, this,
                     &Application::onLibraryDeleted);
             connect(m_backgroundService.data(), &BackgroundServiceReplica::librarySyncProgress,
@@ -1444,6 +1446,11 @@ void Application::syncLibrary(Library* library)
     runSyncForLibrary(library);
 }
 
+void Application::syncLibraryWithAllowedMassDeletion(Library* library)
+{
+    runSyncForLibrary(library, true);
+}
+
 /**
  * @brief Copy the @p text to the clipboard.
  */
@@ -1473,6 +1480,7 @@ void Application::clearSyncErrors(Library* library)
         m_syncErrors.remove(library->directory());
         emit syncErrorsChanged();
         m_problemManager->removeProblemsFor(library->uid(), Problem::SyncFailed);
+        m_problemManager->removeProblemsFor(library->uid(), Problem::SuspiciousRemoteDeletion);
     }
 }
 
@@ -1570,10 +1578,35 @@ void Application::onLibrarySyncError(const QUuid& libraryUid, const QString& err
         emit syncErrorsChanged();
 
         m_problemManager->removeProblemsFor(libraryUid, Problem::SyncFailed);
+        m_problemManager->removeProblemsFor(libraryUid, Problem::SuspiciousRemoteDeletion);
         Problem problem;
         problem.setContextObject(lib);
         problem.setMessage(error);
         problem.setType(Problem::SyncFailed);
+        m_problemManager->addProblem(problem);
+    }
+}
+
+void Application::onLibrarySyncProblem(const QUuid& libraryUid, const QString& error, int type)
+{
+    auto lib = m_appSettings->libraryById(libraryUid);
+    if (lib) {
+        auto errors = m_syncErrors.value(lib->directory(), QStringList()).toStringList();
+        errors.append(error);
+        m_syncErrors[lib->directory()] = errors;
+        emit syncErrorsChanged();
+
+        auto problemType = Problem::SyncFailed;
+        if (type == static_cast<int>(Synchronizer::SuspiciousRemoteDeletion)) {
+            problemType = Problem::SuspiciousRemoteDeletion;
+        }
+
+        m_problemManager->removeProblemsFor(libraryUid, Problem::SyncFailed);
+        m_problemManager->removeProblemsFor(libraryUid, Problem::SuspiciousRemoteDeletion);
+        Problem problem;
+        problem.setContextObject(lib);
+        problem.setMessage(error);
+        problem.setType(problemType);
         m_problemManager->addProblem(problem);
     }
 }
@@ -1688,7 +1721,7 @@ void Application::onAccountSecretsChanged(const QUuid& accountUid, const QString
 }
 
 template<typename T>
-void Application::runSyncForLibrary(T library)
+void Application::runSyncForLibrary(T library, bool allowMassRemoteDeletion)
 {
     if (library != nullptr && library->isValid()
         && !m_librariesRequestedForDeletion.contains(library->uid())) {
@@ -1698,7 +1731,13 @@ void Application::runSyncForLibrary(T library)
                 m_syncErrors.remove(library->directory());
                 emit syncErrorsChanged();
                 m_problemManager->removeProblemsFor(library->uid(), Problem::SyncFailed);
-                backgroundService->syncLibrary(library->uid());
+                m_problemManager->removeProblemsFor(library->uid(),
+                                                    Problem::SuspiciousRemoteDeletion);
+                if (allowMassRemoteDeletion) {
+                    backgroundService->syncLibraryWithAllowedMassDeletion(library->uid());
+                } else {
+                    backgroundService->syncLibrary(library->uid());
+                }
             } else {
                 qCWarning(log) << "Cannot sync library: Failed to connect to background service";
             }

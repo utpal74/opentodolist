@@ -24,6 +24,8 @@
 #include <QSharedPointer>
 #include <QUuid>
 
+#include "synchronizer.h"
+
 class Library;
 class Account;
 
@@ -35,7 +37,7 @@ class SyncJob : public QObject
     Q_OBJECT
 public:
     explicit SyncJob(const QString& libraryDirectory, QSharedPointer<Account> account,
-                     QObject* parent = nullptr);
+                     bool allowMassRemoteDeletion = false, QObject* parent = nullptr);
 
     void execute();
 
@@ -45,6 +47,7 @@ signals:
 
     void stopRequested();
     void syncError(QString libraryDirectory, const QString& error);
+    void syncProblem(QString libraryDirectory, const QString& error, int type);
     void progress(QString libraryDirectory, int value);
 
 public slots:
@@ -54,10 +57,12 @@ public slots:
 private:
     QString m_libraryDirectory;
     QSharedPointer<Account> m_account;
+    bool m_allowMassRemoteDeletion;
 
 private slots:
 
     void onSyncError(const QString& error);
+    void onSyncProblem(const QString& error, int type);
 };
 
 #endif // SYNC_SYNCJOB_H_

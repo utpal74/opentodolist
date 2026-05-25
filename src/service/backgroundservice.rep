@@ -4,6 +4,7 @@
 class BackgroundService
 {
     SLOT(void syncLibrary(const QUuid& libraryUid));
+    SLOT(void syncLibraryWithAllowedMassDeletion(const QUuid& libraryUid));
     SLOT(void deleteLibrary(const QUuid& libraryUid));
     SLOT(void setAccountSecret(const QUuid& accountUid, const QString& password));
     SLOT(void watchLibraryDirectory(const QUuid& libraryUid));
@@ -13,6 +14,7 @@ class BackgroundService
     SIGNAL(librarySyncStarted(const QUuid& libraryUid));
     SIGNAL(librarySyncFinished(const QUuid& libraryUid));
     SIGNAL(librarySyncError(const QUuid& libraryUid, const QString& error));
+    SIGNAL(librarySyncProblem(const QUuid& libraryUid, const QString& error, int type));
     SIGNAL(librarySyncProgress(const QUuid& libraryUid, int value));
     SIGNAL(libraryDeleted(const QUuid& libraryUid, const QString& libraryDirectory));
     SIGNAL(cacheDataChanged(const QUuid& appInstanceUid));

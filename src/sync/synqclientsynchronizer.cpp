@@ -60,6 +60,11 @@ void SynqClientSynchronizer::setupDirectorySynchronizer(SynqClient::DirectorySyn
     sync.setRemoteDirectoryPath(remoteDirectory());
     sync.setLocalDirectoryPath(directory());
     sync.setSyncConflictStrategy(SynqClient::SyncConflictStrategy::RemoteWins);
+    if (allowMassRemoteDeletion()) {
+        auto flags = sync.flags();
+        flags |= SynqClient::SynchronizerFlag::AllowMassRemoteDeletion;
+        sync.setFlags(flags);
+    }
     connect(&sync, &SynqClient::DirectorySynchronizer::logMessageAvailable, this,
             [this](SynqClient::SynchronizerLogEntryType type, const QString& message) {
                 switch (type) {
@@ -121,7 +126,11 @@ void SynqClientSynchronizer::runDirectorySynchronizer(SynqClient::DirectorySynch
     loop.exec();
 
     if (sync.error() != SynqClient::SynchronizerError::NoError) {
-        emit syncError(sync.errorString());
+        auto type = Synchronizer::GenericSyncProblem;
+        if (sync.error() == SynqClient::SynchronizerError::SuspiciousRemoteDeletion) {
+            type = Synchronizer::SuspiciousRemoteDeletion;
+        }
+        emit syncProblem(sync.errorString(), static_cast<int>(type));
     }
 
     setSynchronizing(false);

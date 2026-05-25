@@ -47,6 +47,12 @@ C.Page {
                         msg = qsTr("Synchronization failed for library")
                         msg += " <strong>" + library.name + "</strong>: " + modelData.message
                         return msg
+                    case OTL.Problem.SuspiciousRemoteDeletion:
+                        let deletionLibrary = modelData.contextObject
+                        let deletionMsg = qsTr("Sync would delete many remote items in library")
+                        deletionMsg += " <strong>" + deletionLibrary.name + "</strong>: "
+                                + modelData.message
+                        return deletionMsg
                     default:
                         console.warn("Unknown problem type", modelData.type)
                         return "Unknown Problem"
@@ -72,6 +78,7 @@ C.Page {
                                     })
                         break
                     case OTL.Problem.SyncFailed:
+                    case OTL.Problem.SuspiciousRemoteDeletion:
                         page.openPage(Qt.resolvedUrl("./LibraryPage.qml"), {
                                           "library": modelData.contextObject
                                       })
@@ -89,6 +96,8 @@ C.Page {
                         switch (modelData.type) {
                         case OTL.Problem.SyncFailed:
                             return qsTr("Retry Sync")
+                        case OTL.Problem.SuspiciousRemoteDeletion:
+                            return qsTr("Allow Deletion")
                         case OTL.Problem.AccountSecretsMissing:
                             return "Load Secrets"
                         default:
@@ -103,6 +112,10 @@ C.Page {
                             break
                         case OTL.Problem.SyncFailed:
                             OTL.Application.syncLibrary(modelData.contextObject)
+                            break
+                        case OTL.Problem.SuspiciousRemoteDeletion:
+                            OTL.Application.syncLibraryWithAllowedMassDeletion(
+                                        modelData.contextObject)
                             break
                         }
                     }

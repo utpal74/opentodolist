@@ -43,6 +43,7 @@ public:
 public slots:
     // BackgroundServiceSource interface
     void syncLibrary(const QUuid& libraryUid) override;
+    void syncLibraryWithAllowedMassDeletion(const QUuid& libraryUid) override;
     void deleteLibrary(const QUuid& libraryUid) override;
     void setAccountSecret(const QUuid& accountUid, const QString& password) override;
     void watchLibraryDirectory(const QUuid& libraryUid) override;
@@ -75,6 +76,7 @@ private:
 
     void onSyncFinished(const QString& libraryDirectory);
     void onSyncError(const QString& libraryDirectory, const QString& error);
+    void onSyncProblem(const QString& libraryDirectory, const QString& error, int type);
     void onSyncProgress(const QString& libraryDirectory, int value);
     void doDeleteLibrary(const QUuid& libraryUid);
     void watchLibraryForChanges(QSharedPointer<Library> library);
@@ -83,6 +85,7 @@ private:
 
     void checkConnectivityOfAccount(Account* account);
     void syncLibrariesOfAccount(const QUuid& uid);
+    void syncLibrary(const QUuid& libraryUid, bool allowMassRemoteDeletion);
 
 private slots:
 
