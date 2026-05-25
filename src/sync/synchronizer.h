@@ -65,6 +65,10 @@ public:
 
     Q_ENUM(LogType);
 
+    enum SyncProblemType { GenericSyncProblem, SuspiciousRemoteDeletion };
+
+    Q_ENUM(SyncProblemType);
+
     static const QString HTTPUserAgent;
 
     struct LogEntry
@@ -126,6 +130,9 @@ public:
     bool createDirs() const;
     void setCreateDirs(bool createDirs);
 
+    bool allowMassRemoteDeletion() const;
+    void setAllowMassRemoteDeletion(bool allowMassRemoteDeletion);
+
     QUuid uid() const;
 
     QDateTime lastSync() const;
@@ -154,6 +161,7 @@ signals:
     void remoteDirectoryChanged();
     void secretChanged();
     void syncError(const QString& message);
+    void syncProblem(const QString& message, int type);
     void progress(int value);
 
 public slots:
@@ -167,6 +175,7 @@ private:
     bool m_synchronizing;
     bool m_creatingDirectory;
     bool m_createDirs;
+    bool m_allowMassRemoteDeletion;
     QString m_directory;
     QString m_remoteDirectory;
     QDateTime m_lastSync;

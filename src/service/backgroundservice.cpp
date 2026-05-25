@@ -50,7 +50,8 @@ BackgroundService::BackgroundService(Cache* cache, QObject* parent)
 {
     qCDebug(log) << "Creating OpenTodoList BackgroundService object";
     connect(m_appSettings, &ApplicationSettings::libraryLoaded, this,
-            &BackgroundService::syncLibrary);
+            static_cast<void (BackgroundService::*)(const QUuid&)>(
+                    &BackgroundService::syncLibrary));
     connect(m_cache, &Cache::dataChanged, this, &BackgroundService::propagateCacheDataChanged);
     connect(m_cache, &Cache::librariesChanged, this,
             &BackgroundService::propagateCacheLibrariesChanged);
@@ -115,6 +116,16 @@ BackgroundService::~BackgroundService()
 
 void BackgroundService::syncLibrary(const QUuid& libraryUid)
 {
+    syncLibrary(libraryUid, false);
+}
+
+void BackgroundService::syncLibraryWithAllowedMassDeletion(const QUuid& libraryUid)
+{
+    syncLibrary(libraryUid, true);
+}
+
+void BackgroundService::syncLibrary(const QUuid& libraryUid, bool allowMassRemoteDeletion)
+{
     qCDebug(log) << "Sync of library with uid" << libraryUid << "requested";
     auto library = m_appSettings->libraryById(libraryUid);
     if (library != nullptr && library->isValid()) {
@@ -142,13 +153,16 @@ void BackgroundService::syncLibrary(const QUuid& libraryUid)
                 checkConnectivityOfAccount(m_appSettings->loadAccount(account->uid()));
                 return;
             }
-            QSharedPointer<SyncJob> job(new SyncJob(library->directory(), account));
+            QSharedPointer<SyncJob> job(
+                    new SyncJob(library->directory(), account, allowMassRemoteDeletion));
             m_syncDirs[library->directory()] = { job, libraryUid, NoSyncInfoFlags };
             connect(QCoreApplication::instance(), &QCoreApplication::aboutToQuit, job.data(),
                     &SyncJob::stop);
             connect(job.data(), &SyncJob::syncFinished, this, &BackgroundService::onSyncFinished,
                     Qt::QueuedConnection);
             connect(job.data(), &SyncJob::syncError, this, &BackgroundService::onSyncError,
+                    Qt::QueuedConnection);
+            connect(job.data(), &SyncJob::syncProblem, this, &BackgroundService::onSyncProblem,
                     Qt::QueuedConnection);
             connect(job.data(), &SyncJob::progress, this, &BackgroundService::onSyncProgress,
                     Qt::QueuedConnection);
@@ -250,6 +264,16 @@ void BackgroundService::onSyncError(const QString& libraryDirectory, const QStri
     if (m_syncDirs.contains(libraryDirectory)) {
         const auto& entry = m_syncDirs[libraryDirectory];
         emit librarySyncError(entry.libraryUid, error);
+    }
+}
+
+void BackgroundService::onSyncProblem(const QString& libraryDirectory, const QString& error,
+                                      int type)
+{
+    qCDebug(log) << "Problem syncing" << libraryDirectory << ":" << error << type;
+    if (m_syncDirs.contains(libraryDirectory)) {
+        const auto& entry = m_syncDirs[libraryDirectory];
+        emit librarySyncProblem(entry.libraryUid, error, type);
     }
 }
 

@@ -49,7 +49,8 @@ public:
     enum ProblemType {
         InvalidProblem, //!< Indicates that the problem instance is not valid.
         AccountSecretsMissing, //!< Secrets for an account are missing.
-        SyncFailed //!< Synchronization of a library failed.
+        SyncFailed, //!< Synchronization of a library failed.
+        SuspiciousRemoteDeletion //!< Sync would delete a suspicious amount of remote data.
     };
 
     Q_ENUM(ProblemType)

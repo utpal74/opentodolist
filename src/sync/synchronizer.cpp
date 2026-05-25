@@ -57,6 +57,7 @@ Synchronizer::Synchronizer(QObject* parent)
       m_synchronizing(false),
       m_creatingDirectory(false),
       m_createDirs(false),
+      m_allowMassRemoteDeletion(false),
       m_directory(),
       m_remoteDirectory(),
       m_lastSync(),
@@ -103,6 +104,16 @@ QUuid Synchronizer::accountUid() const
 void Synchronizer::setAccountUid(const QUuid& accountUid)
 {
     m_accountUid = accountUid;
+}
+
+bool Synchronizer::allowMassRemoteDeletion() const
+{
+    return m_allowMassRemoteDeletion;
+}
+
+void Synchronizer::setAllowMassRemoteDeletion(bool allowMassRemoteDeletion)
+{
+    m_allowMassRemoteDeletion = allowMassRemoteDeletion;
 }
 
 /**

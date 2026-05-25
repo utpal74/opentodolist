@@ -191,6 +191,7 @@ public:
     createNextCloudLoginFlow(bool ignoreSslErrors) const;
 
     Q_INVOKABLE void syncAllLibraries();
+    Q_INVOKABLE void syncLibraryWithAllowedMassDeletion(Library* library);
 
     Q_INVOKABLE void aboutQt() const;
 
@@ -357,7 +358,7 @@ private:
     void connectItemToCache(Item* item);
 
     template<typename T>
-    void runSyncForLibrary(T library);
+    void runSyncForLibrary(T library, bool allowMassRemoteDeletion = false);
 
     template<typename T>
     void watchLibraryForChanges(T library);
@@ -377,6 +378,7 @@ private slots:
     void onLibrarySyncStarted(const QUuid& libraryUid);
     void onLibrarySyncFinished(const QUuid& libraryUid);
     void onLibrarySyncError(const QUuid& libraryUid, const QString& error);
+    void onLibrarySyncProblem(const QUuid& libraryUid, const QString& error, int type);
     void onLibrarySyncProgress(const QUuid& libraryUid, int value);
     void onLibraryDeleted(const QUuid& libraryUid);
     void onLibrariesChanged(QVariantList librariesUids);

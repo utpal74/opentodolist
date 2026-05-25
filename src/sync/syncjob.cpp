@@ -21,8 +21,6 @@
 
 #include <QLoggingCategory>
 
-#include "synchronizer.h"
-
 static Q_LOGGING_CATEGORY(log, "OpenTodoList.SyncJob", QtWarningMsg);
 
 /**
@@ -38,8 +36,12 @@ static Q_LOGGING_CATEGORY(log, "OpenTodoList.SyncJob", QtWarningMsg);
  * are called, as it might get deleted while the sync is running
  * in the background.
  */
-SyncJob::SyncJob(const QString& libraryDirectory, QSharedPointer<Account> account, QObject* parent)
-    : QObject(parent), m_libraryDirectory(libraryDirectory), m_account(account)
+SyncJob::SyncJob(const QString& libraryDirectory, QSharedPointer<Account> account,
+                 bool allowMassRemoteDeletion, QObject* parent)
+    : QObject(parent),
+      m_libraryDirectory(libraryDirectory),
+      m_account(account),
+      m_allowMassRemoteDeletion(allowMassRemoteDeletion)
 {
 }
 
@@ -56,11 +58,13 @@ void SyncJob::execute()
             sync->loadLog();
             qCDebug(log) << "Setting account data";
             sync->setAccount(m_account.data());
+            sync->setAllowMassRemoteDeletion(m_allowMassRemoteDeletion);
             qCDebug(log) << "Setting up stop requested";
             connect(this, &SyncJob::stopRequested, sync.data(), &Synchronizer::stopSync,
                     Qt::QueuedConnection);
             qCDebug(log) << "Setting up error reporting";
             connect(sync.data(), &Synchronizer::syncError, this, &SyncJob::onSyncError);
+            connect(sync.data(), &Synchronizer::syncProblem, this, &SyncJob::onSyncProblem);
             connect(sync.data(), &Synchronizer::progress, this,
                     [this](int value) { emit progress(m_libraryDirectory, value); });
             qCDebug(log) << "Start sync";
@@ -82,4 +86,9 @@ void SyncJob::stop()
 void SyncJob::onSyncError(const QString& error)
 {
     emit syncError(m_libraryDirectory, error);
+}
+
+void SyncJob::onSyncProblem(const QString& error, int type)
+{
+    emit syncProblem(m_libraryDirectory, error, type);
 }
