@@ -1,6 +1,7 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
 site_name: OpenTodoList User Manual
+site_url: !ENV [READTHEDOCS_CANONICAL_URL, "https://opentodolist.readthedocs.io/en/latest/"]
 
 extra_css:
   - stylesheets/extra.css
