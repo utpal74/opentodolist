@@ -1,113 +1,113 @@
-# Welcome
+# OpenTodoList
 
-This is the user manual for OpenTodoList - a free and Open Source todo and
-note keeping app that runs on a variety of platforms and hence, allows to
-keep your precise information synchronized across all of your devices.
+OpenTodoList is a simple, open source app for keeping track of the things you
+want to remember: tasks, notes, images, recipes, and the little bits of everyday
+life that otherwise end up scattered everywhere.
 
-!!! note
+It runs on phones, tablets, and desktop systems, and it is built around one
+important idea: your data should stay yours.
 
-    This documentation is heavily *work in progress*. OpenTodoList is
-    already quite old (in terms of software) and provides a relatively
-    big set of features. We will keep extending this documentation over
-    time, documenting new features *on the fly* and one by one also add
-    documentation for existing ones.
+[Get OpenTodoList](#get-opentodolist){ .md-button .md-button--primary }
+[Read the manual](./basics/index.md){ .md-button }
 
-## About
+![OpenTodoList library view on a tablet](assets/screenshots/Android Tablet/library.png){: width=260}
+![OpenTodoList todo list view on a tablet](assets/screenshots/Android Tablet/todolist.png){: width=260}
+![OpenTodoList note view on a tablet](assets/screenshots/Android Tablet/note.png){: width=260}
 
-OpenTodoList is a cross platform tool which allows you to maintain the following
-*items*:
+## A Place For The Lists You Actually Use
 
-- **Todo Lists** which in turn contain **Todos** which finally contain
-  **Tasks**.
-- **Notes**, which consist of text and can contain additional **Pages**.
-- **Images**, which combine an image file with some text.
+OpenTodoList helps you organize information in **libraries**. A library can hold
+todo lists, notes, images, and recipes, so you can keep related things together
+instead of splitting them across several apps.
 
-These items are organized in **Libraries** - think of them as a kind of folder
-which can be configured for synchronization (or not!) and also be shared with
-other people.
+Use it for shopping lists, project notes, household tasks, travel plans, meal
+ideas, or whatever else needs a calm little home. Nothing about it forces you
+into one particular workflow.
 
-![Libraries are used to organize items](assets/screenshots/iPhone 15 Pro Max/library.png){: width=200}
-![Todo lists group several tasks together](assets/screenshots/iPhone 15 Pro Max/todolist.png){: width=200}
-![Todos represent a single item of work](assets/screenshots/iPhone 15 Pro Max/todo.png){: width=200}
-![Notes are collections of text](assets/screenshots/iPhone 15 Pro Max/note.png){: width=200}
-![Images prominently render a picture](assets/screenshots/iPhone 15 Pro Max/image.png){: width=200}
+## Why People Choose OpenTodoList
 
-See the [Features](#features) section for a brief overview of all supported
-features that the app provides.
+- **Local-first by default.** You can keep a library only on your device.
+- **File-based storage.** Libraries are stored as regular folders and files, so
+  they are easy to back up and inspect.
+- **Sync when you want it.** Synchronize libraries via Nextcloud, ownCloud,
+  generic WebDAV servers, or Dropbox.
+- **Useful item types.** Manage todo lists, tasks, notes, images, and recipes in
+  one place.
+- **Cross-platform.** Use it on Android, iOS, Linux, macOS, and Windows.
+- **Open source.** The app is licensed under the GNU GPL and developed in the
+  open.
 
-OpenTodoList originally dates back all the way to the year 2013 - in July that
-year, a first announcement was made about the first version of the app. Frankly,
-the app started as a playground to learn about the (back then) pretty new
-QML and Quick stack within the [Qt framework](https://qt.io) - the cross
-platform toolkit that backs the app and allows easily building it for a wide
-range of operating systems and devices.
+## Stay In Control
 
-![Initial GUI of OpenTodoList - Todo List](assets/initial-01.png){: width=300}
-![Initial GUI of OpenTodoList - Todo](assets/initial-02.png){: width=300}
-![Initial GUI of OpenTodoList - Date Picker](assets/initial-03.png){: width=300}
+Many productivity apps ask you to trust one specific service with everything.
+OpenTodoList takes a different route.
 
-Over time, though, the app evolved quite a bit, incorporating ideas from other
-applications. Notably:
+You can create a fully local library, use your own Nextcloud or ownCloud server,
+connect to another WebDAV storage provider, or sync a local library with a tool
+you already trust. That makes the app especially useful when your notes and
+tasks should not quietly wander off to a service you did not choose.
 
-- Wunderlist: This app was - for a long time - the main inspiration for
-  OpenTodoList. Wunderlist was a *pure* todo list app, concentrating on
-  managing work.
-- Google Keep: This app had an interesting approach, allowing other types of
-  items next to your todo lists.
+## Built For Everyday Devices
 
-Of course, it didn't stop there: Due to suggestions of users, new features
-where added that eventually made OpenTodoList a quite unique application.
+OpenTodoList is available for mobile and desktop systems:
 
-## Installation
+- Android
+- iOS
+- Linux
+- macOS
+- Windows
 
-OpenTodoList is available on various operating systems and device types - thanks
-to the wonderful [Qt](https://qt.io) framework! Qt allows us to maintain a
-single code base for the app and simply build and deploy for a lot
-of targets with relatively low effort.
+Because it is built with Qt and released as open source software, adventurous
+users can also build it for other systems.
 
-For this reason, we are able to provide you with pre-built, ready to install
-and use packages of the app. But: Even if your system is not directly
-supported, this doesn't mean you cannot use the app. Both Qt and OpenTodoList
-are Open Source, so you can try to compile the app yourself for your system.
+## Get OpenTodoList
 
-Check out the [Installation](./installation/index.md) for details about
-various options for getting the app.
+Choose the option that fits your device:
 
-## Features
+<div class="download-badges" markdown>
+<a href="https://play.google.com/store/apps/details?id=net.rpdev.opentodolist">
+  <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
+</a>
+<a href="https://apt.izzysoft.de/fdroid/index/apk/net.rpdev.opentodolist">
+  <img alt="Get it on IzzyOnDroid" src="assets/IzzyOnDroid-Badge.svg">
+</a>
+<a href="https://apps.apple.com/us/app/opentodolist/id1490013766">
+  <img alt="Download on the App Store" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg">
+</a>
+<a href="https://flathub.org/apps/details/net.rpdev.OpenTodoList">
+  <img alt="Download on Flathub" src="https://flathub.org/assets/badges/flathub-badge-en.png">
+</a>
+<a href="https://snapcraft.io/opentodolist">
+  <img alt="Get it from the Snap Store" src="https://snapcraft.io/static/images/badges/en/snap-store-black.svg">
+</a>
+<a href="https://aur.archlinux.org/packages/opentodolist/">
+  <img alt="Install from the AUR" src="assets/AUR.svg">
+</a>
+</div>
 
-Over the years, a lot of features have been added to the app. We cannot
-describe all of them here in detail, so please refer to the
-[Features](./features/index.md) section for details. The list of features
-that the app implements includes (but is not limited) to the following:
+- **Android:** Install from
+  [Google Play](https://play.google.com/store/apps/details?id=net.rpdev.opentodolist)
+  or
+  [IzzyOnDroid](https://apt.izzysoft.de/fdroid/index/apk/net.rpdev.opentodolist).
+- **iOS:** Install from the
+  [App Store](https://apps.apple.com/us/app/opentodolist/id1490013766).
+- **Linux, macOS, and Windows:** Download packages from
+  [GitHub Releases](https://github.com/mhoeher/opentodolist/releases).
+- **Linux stores:** Install from
+  [Flathub](https://flathub.org/apps/details/net.rpdev.OpenTodoList),
+  [Snapcraft](https://snapcraft.io/opentodolist), or the
+  [AUR](https://aur.archlinux.org/packages/opentodolist/).
 
-### Data Model
+[Installation details](./installation/index.md){ .md-button .md-button--primary }
 
-- The app structures items in [Libraries](./basics/data_model/library.md).
-  These can contain the following types of items:
-  - [Todo Lists](./basics/data_model/todolist.md), which in turn contain
-    [Todos](./basics/data_model/todo.md). Todos can further be broken down
-    into [Tasks](./basics/data_model/task.md).
-  - [Notes](./basics/data_model/note.md), which are text containers and
-    which can optionally include further [Pages](./basics/data_model/page.md).
-  - [Images](./basics/data_model/image.md), which combine an image file with
-    additional meta information like a title and notes.
+## Learn More
 
-### Sync
+- New to the app? Start with the [Basics](./basics/index.md).
+- Want to understand libraries and item types? Read about the
+  [data model](./basics/data_model/index.md).
+- Setting up sync? Head to the [sync guide](./features/sync/index.md).
+- Want to keep a copy of your data? See [Backup](./features/backup/index.md).
 
-The app allows to synchronize libraries across your devices using the following
-services:
-
-- [NextCloud](./features/sync/nextcloud.md)
-- [ownCloud](./features/sync/owncloud.md)
-- [Generic WebDAV servers](./features/sync/webdav.md)
-- [Dropbox](./features/sync/dropbox.md)
-
-Besides, you can always add [local libraries](./features/sync/local_library.md),
-which stay on the device you create them on.
-
-## Further Reading
-
-Over the years, we repeatedly received some questions on how the app works
-and why some features cannot be implemented as some users wished while others
-can. To shed some light on these aspects of the app, please feel encouraged to
-continue reading in the [Basics](./basics/index.md) section.
+OpenTodoList is intentionally a little different from many modern productivity
+apps. It gives you a useful place to organize your day, and then gets out of the
+way. Honestly, that is the whole trick.
