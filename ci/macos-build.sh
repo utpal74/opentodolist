@@ -185,9 +185,9 @@ done
 xcrun notarytool submit \
     "dist-web/OpenTodoList.zip" \
     --wait \
-    --apple-id "martin@rpdev.net" \
+    --apple-id $APPSTORE_USER \
     --team-id "$MACOS_TEAM_ID" \
-    --password "$OPENTODOLIST_STORE_KEY"
+    --password $APPSTORE_PASSWORD
 
 # Include the notarization ticket in the app bundle:
 xcrun stapler staple "dist-web/OpenTodoList.app"
@@ -255,5 +255,5 @@ xcrun productsign \
 xcrun altool --validate-app \
     -f "dist-store/OpenTodoList-signed.pkg" \
     -t macos \
-    -u "martin@rpdev.net" \
-    -p "$OPENTODOLIST_STORE_KEY"
+    -u $APPSTORE_USER \
+    -p $APPSTORE_PASSWORD

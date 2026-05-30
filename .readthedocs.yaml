@@ -29,9 +29,9 @@ build:
       - ./git-lfs checkout
 
 mkdocs:
-  configuration: doc/user-manual/mkdocs.yml
+  configuration: doc/site/mkdocs.yml
 
 # Optionally declare the Python requirements required to build your docs
 python:
   install:
-  - requirements: doc/user-manual/requirements.txt
+  - requirements: doc/site/requirements.txt
