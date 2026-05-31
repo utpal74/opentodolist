@@ -1822,9 +1822,19 @@
         <translation>同步失败项目至资料库</translation>
     </message>
     <message>
-        <location filename="../net/rpdev/OpenTodoList/Pages/ProblemsPage.qml" line="91"/>
+        <location filename="../net/rpdev/OpenTodoList/Pages/ProblemsPage.qml" line="52"/>
+        <source>Sync would delete many remote items in library</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../net/rpdev/OpenTodoList/Pages/ProblemsPage.qml" line="98"/>
         <source>Retry Sync</source>
         <translation>重试同步</translation>
+    </message>
+    <message>
+        <location filename="../net/rpdev/OpenTodoList/Pages/ProblemsPage.qml" line="100"/>
+        <source>Allow Deletion</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

@@ -1822,8 +1822,18 @@
         <translation>Synchronizacja biblioteki nie powiodła się</translation>
     </message>
     <message>
-        <location filename="../net/rpdev/OpenTodoList/Pages/ProblemsPage.qml" line="91"/>
+        <location filename="../net/rpdev/OpenTodoList/Pages/ProblemsPage.qml" line="52"/>
+        <source>Sync would delete many remote items in library</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../net/rpdev/OpenTodoList/Pages/ProblemsPage.qml" line="98"/>
         <source>Retry Sync</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../net/rpdev/OpenTodoList/Pages/ProblemsPage.qml" line="100"/>
+        <source>Allow Deletion</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
