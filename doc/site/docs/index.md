@@ -8,7 +8,7 @@ It runs on phones, tablets, and desktop systems, and it is built around one
 important idea: your data should stay yours.
 
 [Get OpenTodoList](#get-opentodolist){ .md-button .md-button--primary }
-[Read the manual](./basics/index.md){ .md-button }
+[Read the manual](./manual/getting-started.md){ .md-button }
 
 ![OpenTodoList library view on a tablet](assets/screenshots/Android Tablet/library.png){: width=260}
 ![OpenTodoList todo list view on a tablet](assets/screenshots/Android Tablet/todolist.png){: width=260}
@@ -62,7 +62,8 @@ users can also build it for other systems.
 
 ## Get OpenTodoList
 
-Choose the option that fits your device:
+Choose the store or package source that fits your device, or open the download
+page for platform-specific details.
 
 <div class="download-badges" markdown>
 <a href="https://play.google.com/store/apps/details?id=net.rpdev.opentodolist">
@@ -85,28 +86,15 @@ Choose the option that fits your device:
 </a>
 </div>
 
-- **Android:** Install from
-  [Google Play](https://play.google.com/store/apps/details?id=net.rpdev.opentodolist)
-  or
-  [IzzyOnDroid](https://apt.izzysoft.de/fdroid/index/apk/net.rpdev.opentodolist).
-- **iOS:** Install from the
-  [App Store](https://apps.apple.com/us/app/opentodolist/id1490013766).
-- **Linux, macOS, and Windows:** Download packages from
-  [GitHub Releases](https://github.com/mhoeher/opentodolist/releases).
-- **Linux stores:** Install from
-  [Flathub](https://flathub.org/apps/details/net.rpdev.OpenTodoList),
-  [Snapcraft](https://snapcraft.io/opentodolist), or the
-  [AUR](https://aur.archlinux.org/packages/opentodolist/).
-
-[Installation details](./installation/index.md){ .md-button .md-button--primary }
+[Download options](./home/download/index.md){ .md-button .md-button--primary }
 
 ## Learn More
 
-- New to the app? Start with the [Basics](./basics/index.md).
+- New to the app? Start with the [getting started guide](./manual/getting-started.md).
 - Want to understand libraries and item types? Read about the
-  [data model](./basics/data_model/index.md).
-- Setting up sync? Head to the [sync guide](./features/sync/index.md).
-- Want to keep a copy of your data? See [Backup](./features/backup/index.md).
+  [data model](./manual/data-model.md).
+- Setting up sync? Head to the [sync guide](./sync/index.md).
+- Want to keep a copy of your data? See [Backup](./manual/backup.md).
 
 OpenTodoList is intentionally a little different from many modern productivity
 apps. It gives you a useful place to organize your day, and then gets out of the

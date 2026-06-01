@@ -1,0 +1,5 @@
+title: Help
+nav:
+    - troubleshooting.md
+    - faq.md
+    - ...

@@ -1,0 +1,15 @@
+title: User Manual
+nav:
+    - getting-started.md
+    - features.md
+    - data-model.md
+    - libraries.md
+    - todo-lists.md
+    - todos.md
+    - tasks.md
+    - notes.md
+    - pages.md
+    - images.md
+    - recipes.md
+    - backup.md
+    - ...

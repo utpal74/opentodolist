@@ -1,0 +1,9 @@
+title: Download
+nav:
+    - index.md
+    - installation.md
+    - android.md
+    - ios.md
+    - linux.md
+    - macos.md
+    - windows.md

@@ -1,6 +1,8 @@
 nav:
     - index.md
-    - installation
-    - basics
-    - features
+    - home
+    - manual
+    - sync
+    - help
+    - project
     - ...

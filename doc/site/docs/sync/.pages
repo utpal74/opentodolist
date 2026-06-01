@@ -1,8 +1,9 @@
+title: Sync
 nav:
     - index.md
+    - webdav.md
     - nextcloud.md
     - owncloud.md
-    - webdav.md
     - dropbox.md
-    - local_library.md
+    - local-libraries.md
     - ...
