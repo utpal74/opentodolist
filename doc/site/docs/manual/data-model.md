@@ -18,16 +18,16 @@ erDiagram
   Note ||--o{ Page : contains
 ```
 
-- A [Library](./library.md) is a container for a set of top level items. These
+- A [Library](./libraries.md) is a container for a set of top level items. These
   are:
-  - [Todo Lists](./todolist.md) - lists of todos which can be worked on.
-    - Todos in turn can contain [Tasks](./task.md), which allow to further break
+  - [Todo Lists](./todo-lists.md) - lists of todos which can be worked on.
+    - Todos in turn can contain [Tasks](./tasks.md), which allow to further break
       down the necessary work.
-  - [Notes](./note.md) are simple text containers - at least you can use them
+  - [Notes](./notes.md) are simple text containers - at least you can use them
     like this.
-    - However, it is possible to add additional [Pages](./page.md) to a note,
+    - However, it is possible to add additional [Pages](./pages.md) to a note,
       which effectively makes a note a _Note Book_.
-  - [Images](./image.md) are items which combine an image file (a photo,
+  - [Images](./images.md) are items which combine an image file (a photo,
     diagram, ...) with other attributes like a title and description.
 
 Some properties of the various types of items are shared among most of them -

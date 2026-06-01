@@ -15,4 +15,4 @@ If you need the app on another system, you still can give it a try. As
 OpenTodoList is available as Open Source, you can build it on your own -
 the only prerequisite is that the [Qt](https://qt.io) framework is available
 for your target system. If you want to try that path, continue reading in the
-[Building from Source](./source.md) section.
+[Building from Source](../../project/build-from-source.md) section.

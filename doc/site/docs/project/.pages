@@ -1,0 +1,6 @@
+title: Project
+nav:
+    - release-notes.md
+    - contributing.md
+    - build-from-source.md
+    - ...
