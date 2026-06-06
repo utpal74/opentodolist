@@ -93,6 +93,15 @@ static bool DEFAULT_USE_MONOCHROME_TRAY_ICON = false;
 
 Application* Application::s_applicationInstance { nullptr };
 
+static bool ensureDirectoryExists(const QDir& dir)
+{
+    if (dir.exists() || dir.mkpath(".")) {
+        return true;
+    }
+    qCWarning(log) << "Failed to create directory" << dir.absolutePath();
+    return false;
+}
+
 /**
  * @brief Constructor.
  *
@@ -641,7 +650,9 @@ Note* Application::addNote(Library* library, QVariantMap properties)
     if (library != nullptr) {
         if (library->isValid()) {
             QDir dir(library->newItemLocation());
-            dir.mkpath(".");
+            if (!ensureDirectoryExists(dir)) {
+                return nullptr;
+            }
             note = new Note(dir);
         } else {
             note = new Note();
@@ -673,7 +684,9 @@ Recipe* Application::addRecipe(Library* library, QVariantMap properties,
     if (library != nullptr) {
         if (library->isValid()) {
             QDir dir(library->newItemLocation());
-            dir.mkpath(".");
+            if (!ensureDirectoryExists(dir)) {
+                return nullptr;
+            }
             recipe = new Recipe(dir);
         } else {
             recipe = new Recipe();
@@ -699,7 +712,9 @@ NotePage* Application::addNotePage(Library* library, Note* note, QVariantMap pro
     if (library != nullptr && note != nullptr) {
         if (library->isValid()) {
             QDir dir(library->newItemLocation());
-            dir.mkpath(".");
+            if (!ensureDirectoryExists(dir)) {
+                return nullptr;
+            }
             page = new NotePage(dir);
         } else {
             page = new NotePage();
@@ -722,7 +737,9 @@ Image* Application::addImage(Library* library, QVariantMap properties)
     if (library != nullptr) {
         if (library->isValid()) {
             QDir dir(library->newItemLocation());
-            dir.mkpath(".");
+            if (!ensureDirectoryExists(dir)) {
+                return nullptr;
+            }
             image = new Image(dir);
         } else {
             image = new Image();
@@ -745,7 +762,9 @@ TodoList* Application::addTodoList(Library* library, QVariantMap properties)
     if (library != nullptr) {
         if (library->isValid()) {
             QDir dir(library->newItemLocation());
-            dir.mkpath(".");
+            if (!ensureDirectoryExists(dir)) {
+                return nullptr;
+            }
             todoList = new TodoList(dir);
         } else {
             todoList = new TodoList();
@@ -768,7 +787,9 @@ Todo* Application::addTodo(Library* library, TodoList* todoList, QVariantMap pro
     if (library != nullptr && todoList != nullptr) {
         if (library->isValid()) {
             QDir dir(library->newItemLocation());
-            dir.mkpath(".");
+            if (!ensureDirectoryExists(dir)) {
+                return nullptr;
+            }
             todo = new Todo(dir);
         } else {
             todo = new Todo();
@@ -832,7 +853,9 @@ Task* Application::addTask(Library* library, Todo* todo, QVariantMap properties)
     if (library != nullptr && todo != nullptr) {
         if (library->isValid()) {
             QDir dir(library->newItemLocation());
-            dir.mkpath(".");
+            if (!ensureDirectoryExists(dir)) {
+                return nullptr;
+            }
             task = new Task(dir);
         } else {
             task = new Task();
