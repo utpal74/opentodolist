@@ -1,7 +1,8 @@
 # Download
 
 OpenTodoList is available for Android, iOS, Linux, macOS, and Windows.
-Pick the store or package source that fits your device.
+Pick the store or package source that fits your device. If you are not sure
+which option to choose, start with your platform below.
 
 <div class="download-badges" markdown>
 <a href="https://play.google.com/store/apps/details?id=net.rpdev.opentodolist">
@@ -24,23 +25,43 @@ Pick the store or package source that fits your device.
 </a>
 </div>
 
-## Mobile
+## Choose Your Platform
 
 - **Android:** Install from
   [Google Play](https://play.google.com/store/apps/details?id=net.rpdev.opentodolist)
   or the
   [IzzyOnDroid F-Droid repository](https://apt.izzysoft.de/fdroid/index/apk/net.rpdev.opentodolist).
+  See [Android](./android.md) for details.
 - **iOS:** Install from the
   [App Store](https://apps.apple.com/us/app/opentodolist/id1490013766).
-
-## Desktop
-
-- **Linux, macOS, and Windows:** Download installers and packages from
-  [GitHub Releases](https://github.com/mhoeher/opentodolist/releases).
-- **Linux package sources:** Install from
+  See [iOS](./ios.md) for details.
+- **Linux:** Install from
+  [GitHub Releases](https://github.com/mhoeher/opentodolist/releases),
   [Flathub](https://flathub.org/apps/details/net.rpdev.OpenTodoList),
   [Snapcraft](https://snapcraft.io/opentodolist), or the
   [AUR](https://aur.archlinux.org/packages/opentodolist/).
+  See [Linux](./linux.md) for details.
+- **macOS:** Download the macOS package from
+  [GitHub Releases](https://github.com/mhoeher/opentodolist/releases).
+  See [macOS](./macos.md) for details.
+- **Windows:** Download the Windows installer or archive from
+  [GitHub Releases](https://github.com/mhoeher/opentodolist/releases).
+  See [Windows](./windows.md) for details.
 
-Need a platform-specific note? See the existing
-[installation guide](./installation.md).
+## First Run
+
+After installing OpenTodoList, open the app and create your first library. A
+library is the place where OpenTodoList stores your todo lists, notes, images,
+recipes, and other items.
+
+You can start with a local library and set up synchronization later. If you
+already know that you want your data to follow you across devices, create a
+library that uses one of the supported sync providers.
+
+New to the app? Continue with [Getting Started](../../manual/getting-started.md).
+
+## Need More Detail?
+
+For a compact overview of all platform pages, see
+[Installation](./installation.md). If your platform is not covered by a ready
+made package, see [Build From Source](../../project/build-from-source.md).
