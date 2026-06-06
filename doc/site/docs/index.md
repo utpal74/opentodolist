@@ -94,6 +94,8 @@ page for platform-specific details.
 - Want to understand libraries and item types? Read about the
   [data model](./manual/data-model.md).
 - Setting up sync? Head to the [sync guide](./sync/index.md).
+- Wondering where your data lives? Read
+  [Privacy and Data Ownership](./help/privacy.md).
 - Want to keep a copy of your data? See [Backup](./manual/backup.md).
 
 OpenTodoList is intentionally a little different from many modern productivity

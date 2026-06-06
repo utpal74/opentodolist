@@ -115,6 +115,7 @@ content is useful, but it overlaps heavily with the README and MkDocs index.
 - Contribution/support links:
   - `README.md`
   - `opentodolist-website/donate.md`
+  - `doc/site/docs/project/contributing.md`
 - Privacy explanation:
   - `README.md` and user manual cover local-first positioning.
   - `opentodolist-website/privacy_policy.md` contains the fuller legal/user
@@ -317,13 +318,17 @@ Other URLs to preserve because external platforms may link to them:
    - installation pages
    - sync pages
    - privacy page
-   - support/donate/contribute page
+   - one combined support/contribute/donate page
 3. Reduce the top-level README to project overview, build/contribution links,
    and pointers to the canonical manual/site.
 4. Migrate or preserve the release archive:
    - either import release posts into a MkDocs news/archive section,
    - or keep static generated pages and redirect from the new site.
 5. Add redirects for all public Jekyll URLs that move.
+   - Redirect old `/donate/` to the canonical support/contribute page:
+     `project/contributing.md`.
+   - Redirect the temporary MkDocs support page path, `/project/support/`, to
+     `/project/contributing/`.
 6. Only after redirects and canonical pages exist, remove or retire the old
    Jekyll source.
 
@@ -346,3 +351,7 @@ Other URLs to preserve because external platforms may link to them:
   be deployed elsewhere?
   - We will host the documentation at opentodolist.rpdev.net. We will also keep
     readthedocs - as it nicely allows going back in time (aka versions).
+- Should support/donate and contribution information live on separate pages?
+  - No. Keep one canonical project page at `project/contributing.md`. Redirect
+    the old Jekyll `/donate/` URL and the removed temporary MkDocs
+    `/project/support/` path to it.

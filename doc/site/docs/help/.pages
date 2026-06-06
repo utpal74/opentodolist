@@ -1,5 +1,6 @@
 title: Help
 nav:
+    - privacy.md
     - troubleshooting.md
     - faq.md
     - ...
