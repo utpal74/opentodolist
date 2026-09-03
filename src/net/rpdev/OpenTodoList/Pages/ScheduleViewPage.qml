@@ -124,6 +124,8 @@ C.Page {
         recursive: true
         cache: OTL.Application.cache
         sortRole: OTL.ItemsModel.EffectiveDueToRole
+        onCountChanged: d.rebuildTagList()
+        onModelReset: d.rebuildTagList()
     }
 
     QtObject {
@@ -131,9 +133,28 @@ C.Page {
 
         property int hasScheduledItems: items.count > 0
         property var locale: Qt.locale()
+        property var uniqueTags: []
 
         property var restoreLibraryUid
         property var loadLibraryTransactionId
+
+        function rebuildTagList() {
+            var seen = {}
+            var result = []
+            for (var i = 0; i < items.count; ++i) {
+                var idx = items.index(i, 0)
+                var rowTags = items.data(idx, OTL.ItemsModel.TagsRole) ?? []
+                for (var j = 0; j < rowTags.length; ++j) {
+                    var t = rowTags[j]
+                    if (!seen[t]) {
+                        seen[t] = true
+                        result.push(t)
+                    }
+                }
+            }
+            result.sort()
+            uniqueTags = result
+        }
 
         function d2s(date) {
             return date.toLocaleDateString(locale, "yyyy-MM-dd")
@@ -257,6 +278,31 @@ C.Page {
         }
     }
 
+    Row {
+        id: tagFilterBar
+        anchors {
+            left: parent.left
+            right: parent.right
+            top: parent.top
+        }
+        padding: AppSettings.smallSpace
+        spacing: AppSettings.smallSpace
+        visible: d.uniqueTags.length > 0
+
+        C.Label {
+            anchors.verticalCenter: parent.verticalCenter
+            text: qsTr("Tag:")
+        }
+
+        C.ComboBox {
+            id: tagComboBox
+            model: [qsTr("All tags")].concat(d.uniqueTags)
+            onActivated: {
+                items.tag = (currentIndex === 0) ? "" : currentText
+            }
+        }
+    }
+
     BackgroundLabel {
         text: Markdown.generateStylesheet(palette, true) + qsTr(
                   "Nothing scheduled... Add a due date to items for them to " + "appear here.")
@@ -265,7 +311,12 @@ C.Page {
 
     TodosWidget {
         id: listView
-        anchors.fill: parent
+        anchors {
+            left: parent.left
+            right: parent.right
+            top: tagFilterBar.visible ? tagFilterBar.bottom : parent.top
+            bottom: parent.bottom
+        }
         header: null
         allowReordering: false
         showParentItemInformation: true

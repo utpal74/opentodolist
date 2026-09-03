@@ -25,6 +25,7 @@
 #include <QDir>
 #include <QFileInfo>
 #include <QJsonDocument>
+#include <QRegularExpression>
 #include <QVariant>
 #include <QVariantMap>
 #include <QtGlobal>
@@ -355,6 +356,9 @@ QVariantMap Item::toMap() const
     }
     result["title"] = m_title;
     result["weight"] = m_weight;
+    if (!m_tags.isEmpty()) {
+        result["tags"] = m_tags;
+    }
     return result;
 }
 
@@ -368,6 +372,13 @@ void Item::fromMap(QVariantMap map)
     m_updatedAt = QDateTime::fromString(map.value("updatedAt").toString(), Qt::ISODate);
     setTitle(map.value("title", m_title).toString());
     setWeight(map.value("weight", m_weight).toDouble());
+    if (map.contains("tags")) {
+        auto sanitized = sanitizeTagsOnLoad(map.value("tags").toStringList());
+        if (sanitized != m_tags) {
+            m_tags = sanitized;
+            emit tagsChanged();
+        }
+    }
 }
 
 /**
@@ -732,6 +743,122 @@ void Item::setupChangedSignal()
     connect(this, &Item::uidChanged, this, &Item::changed);
     connect(this, &Item::filenameChanged, this, &Item::changed);
     connect(this, &Item::weightChanged, this, &Item::changed);
+    connect(this, &Item::tagsChanged, this, &Item::changed);
+}
+
+QStringList Item::tags() const
+{
+    return m_tags;
+}
+
+void Item::setTags(const QStringList& tags)
+{
+    QStringList normalized;
+    normalized.reserve(tags.size());
+    for (const auto& t : tags) {
+        auto n = normalizeTag(t);
+        if (n.isEmpty()) {
+            continue;
+        }
+        if (!isValidTag(n)) {
+            setTagsLastError(tr("Tag \"%1\" contains invalid characters. "
+                                "Only a-z, 0-9, _ and - are allowed.")
+                                     .arg(t));
+            return;
+        }
+        if (!normalized.contains(n)) {
+            normalized.append(n);
+        }
+    }
+    if (normalized.size() > 20) {
+        setTagsLastError(tr("Maximum 20 tags per item."));
+        return;
+    }
+    if (m_tags != normalized) {
+        m_tags = normalized;
+        setTagsLastError(QString());
+        emit tagsChanged();
+    }
+}
+
+bool Item::addTag(const QString& tag)
+{
+    auto n = normalizeTag(tag);
+    if (n.isEmpty()) {
+        setTagsLastError(tr("Tag must not be empty."));
+        return false;
+    }
+    if (!isValidTag(n)) {
+        setTagsLastError(tr("Tag \"%1\" contains invalid characters. "
+                            "Only a-z, 0-9, _ and - are allowed.")
+                                 .arg(tag));
+        return false;
+    }
+    if (m_tags.contains(n)) {
+        setTagsLastError(QString());
+        return true;
+    }
+    if (m_tags.size() >= 20) {
+        setTagsLastError(tr("Maximum 20 tags per item."));
+        return false;
+    }
+    m_tags.append(n);
+    setTagsLastError(QString());
+    emit tagsChanged();
+    return true;
+}
+
+bool Item::removeTag(const QString& tag)
+{
+    auto n = normalizeTag(tag);
+    auto before = m_tags.size();
+    m_tags.removeAll(n);
+    if (m_tags.size() != before) {
+        emit tagsChanged();
+    }
+    return true;
+}
+
+QString Item::tagsLastError() const
+{
+    return m_tagsLastError;
+}
+
+QString Item::normalizeTag(const QString& in)
+{
+    return in.trimmed().toLower();
+}
+
+bool Item::isValidTag(const QString& normalized)
+{
+    if (normalized.isEmpty()) {
+        return false;
+    }
+    static const QRegularExpression re(QStringLiteral("^[a-z0-9_-]+$"));
+    return re.match(normalized).hasMatch();
+}
+
+QStringList Item::sanitizeTagsOnLoad(const QStringList& in)
+{
+    QStringList result;
+    for (const auto& t : in) {
+        auto n = normalizeTag(t);
+        if (!n.isEmpty() && isValidTag(n) && !result.contains(n)) {
+            result.append(n);
+            if (result.size() >= 20) {
+                break;
+            }
+        }
+    }
+    return result;
+}
+
+void Item::setTagsLastError(const QString& msg)
+{
+    if (m_tagsLastError != msg) {
+        m_tagsLastError = msg;
+        emit tagsLastErrorChanged();
+    }
 }
 
 void Item::onCacheChanged()

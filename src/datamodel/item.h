@@ -24,8 +24,10 @@
 #include <QLoggingCategory>
 #include <QObject>
 #include <QPointer>
+#include <QRegularExpression>
 #include <QSharedPointer>
 #include <QString>
+#include <QStringList>
 #include <QUuid>
 #include <QVariantMap>
 #include <QDateTime>
@@ -96,6 +98,8 @@ class Item : public QObject
     Q_PROPERTY(QDateTime updatedAt READ updatedAt NOTIFY updatedAtChanged)
     Q_PROPERTY(QDateTime effectiveUpdatedAt READ effectiveUpdatedAt NOTIFY updatedAtChanged)
     Q_PROPERTY(QVector<QUuid> parents READ parents NOTIFY parentsChanged)
+    Q_PROPERTY(QStringList tags READ tags WRITE setTags NOTIFY tagsChanged)
+    Q_PROPERTY(QString tagsLastError READ tagsLastError NOTIFY tagsLastErrorChanged)
     QML_NAMED_ELEMENT(LibraryItem)
 
     friend class ItemChangedInhibitor;
@@ -124,6 +128,12 @@ public:
     Q_INVOKABLE QVariant toVariant() const;
     Q_INVOKABLE void fromVariant(QVariant data);
     Q_INVOKABLE Item* clone();
+
+    QStringList tags() const;
+    void setTags(const QStringList& tags);
+    Q_INVOKABLE bool addTag(const QString& tag);
+    Q_INVOKABLE bool removeTag(const QString& tag);
+    QString tagsLastError() const;
 
     virtual Item* copyTo(const QDir& targetDirectory, const QUuid& targetLibraryUuid,
                          const QUuid& targetItemUid = QUuid());
@@ -214,6 +224,8 @@ signals:
     void weightChanged();
     void createdAtChanged();
     void updatedAtChanged();
+    void tagsChanged();
+    void tagsLastErrorChanged();
 
     /**
      * @brief The item has been deleted.
@@ -254,9 +266,16 @@ private:
     QUuid m_uid;
     double m_weight;
     bool m_loading;
+    QStringList m_tags;
+    QString m_tagsLastError;
 
     // Calculated props
     QVector<QUuid> m_parents;
+
+    static QString normalizeTag(const QString& in);
+    static bool isValidTag(const QString& normalized);
+    static QStringList sanitizeTagsOnLoad(const QStringList& in);
+    void setTagsLastError(const QString& msg);
 
     void setFilename(const QString& filename);
 

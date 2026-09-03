@@ -241,6 +241,85 @@ ItemPage {
                     width: parent.width
                 }
 
+                Column {
+                    id: tagSection
+                    width: parent.width
+                    spacing: AppSettings.smallSpace
+
+                    C.Label {
+                        text: qsTr("Tags")
+                        font.bold: true
+                        visible: page.item.tags.length > 0 || tagField.text.length > 0
+                    }
+
+                    Flow {
+                        width: parent.width
+                        spacing: AppSettings.smallSpace
+
+                        Repeater {
+                            model: page.item.tags
+                            delegate: C.Frame {
+                                leftPadding: 8
+                                rightPadding: 0
+                                topPadding: 2
+                                bottomPadding: 2
+                                background: Rectangle {
+                                    color: palette.button
+                                    border.width: 1
+                                    border.color: palette.mid
+                                    radius: height / 3
+                                }
+                                Row {
+                                    C.Label {
+                                        text: modelData
+                                        verticalAlignment: Text.AlignVCenter
+                                    }
+                                    C.Symbol {
+                                        symbol: C.Icons.mdiClose
+                                        onClicked: page.item.removeTag(modelData)
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    Row {
+                        width: parent.width
+                        spacing: AppSettings.smallSpace
+
+                        C.TextField {
+                            id: tagField
+                            placeholderText: qsTr("New tag...")
+                            width: parent.width - addTagButton.width - AppSettings.smallSpace
+                            onAccepted: {
+                                if (text !== "") {
+                                    page.item.addTag(text)
+                                    text = ""
+                                }
+                            }
+                        }
+
+                        C.Button {
+                            id: addTagButton
+                            text: qsTr("Add")
+                            onClicked: {
+                                if (tagField.text !== "") {
+                                    page.item.addTag(tagField.text)
+                                    tagField.text = ""
+                                }
+                            }
+                        }
+                    }
+
+                    C.Label {
+                        text: page.item.tagsLastError
+                        visible: page.item.tagsLastError !== ""
+                        color: palette.negative ?? "red"
+                        wrapMode: Text.Wrap
+                        width: parent.width
+                    }
+                }
+
                 ItemNotesEditor {
                     id: itemNotesEditor
                     item: page.item

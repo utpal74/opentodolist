@@ -116,6 +116,26 @@ ItemPage {
         property var loadTodoListTransactionId
 
         property bool editingNotes: false
+        property string activeTagFilter: ""
+        property var uniqueTags: []
+
+        function rebuildTagList() {
+            var seen = {}
+            var result = []
+            for (var i = 0; i < todosModel.count; ++i) {
+                var idx = todosModel.index(i, 0)
+                var rowTags = todosModel.data(idx, OTL.ItemsModel.TagsRole) ?? []
+                for (var j = 0; j < rowTags.length; ++j) {
+                    var t = rowTags[j]
+                    if (!seen[t]) {
+                        seen[t] = true
+                        result.push(t)
+                    }
+                }
+            }
+            result.sort()
+            uniqueTags = result
+        }
 
         signal attach
         signal attachFiles(var fileUrls)
@@ -157,6 +177,14 @@ ItemPage {
         parentItem: page.item?.uid ?? ""
         searchString: filterBar.text
         onlyUndone: !AppSettings.todoListPageSettings.showUndone
+        onCountChanged: d.rebuildTagList()
+        onModelReset: d.rebuildTagList()
+    }
+
+    OTL.ItemsSortFilterModel {
+        id: todosProxy
+        sourceModel: todosModel
+        filterTag: d.activeTagFilter
     }
 
     TextInputBar {
@@ -165,6 +193,45 @@ ItemPage {
         symbol: C.Icons.mdiClose
         showWhenNonEmpty: true
         closeOnButtonClick: true
+    }
+
+    Flickable {
+        id: tagFilterBar
+        anchors {
+            left: parent.left
+            right: parent.right
+            top: filterBar.bottom
+        }
+        height: tagFilterRow.height + AppSettings.smallSpace * 2
+        visible: d.uniqueTags.length > 0
+        contentWidth: tagFilterRow.width
+        clip: true
+        flickableDirection: Flickable.HorizontalFlick
+
+        Row {
+            id: tagFilterRow
+            spacing: AppSettings.smallSpace
+            padding: AppSettings.smallSpace
+
+            C.Button {
+                flat: d.activeTagFilter === ""
+                highlighted: d.activeTagFilter === ""
+                text: qsTr("All")
+                onClicked: d.activeTagFilter = ""
+            }
+
+            Repeater {
+                model: d.uniqueTags
+                delegate: C.Button {
+                    flat: d.activeTagFilter !== modelData
+                    highlighted: d.activeTagFilter === modelData
+                    text: modelData
+                    onClicked: {
+                        d.activeTagFilter = (d.activeTagFilter === modelData) ? "" : modelData
+                    }
+                }
+            }
+        }
     }
 
     C.Menu {
@@ -234,7 +301,7 @@ ItemPage {
         anchors {
             left: parent.left
             right: parent.right
-            top: filterBar.bottom
+            top: tagFilterBar.visible ? tagFilterBar.bottom : filterBar.bottom
             bottom: parent.bottom
         }
         item: page.item
@@ -246,7 +313,7 @@ ItemPage {
             width: scrollView.availableWidth
             height: scrollView.availableHeight
             contentWidth: scrollView.availableWidth
-            itemsModel: todosModel
+            itemsModel: todosProxy
             library: page.library
             title: qsTr("Todos")
             symbol: {

@@ -36,7 +36,6 @@ class TopLevelItem : public ComplexItem
     Q_OBJECT
 
     Q_PROPERTY(Color color READ color WRITE setColor NOTIFY colorChanged)
-    Q_PROPERTY(QStringList tags READ tags WRITE setTags NOTIFY tagsChanged)
     Q_PROPERTY(QUuid libraryId READ libraryId WRITE setLibraryId NOTIFY libraryIdChanged)
     QML_ELEMENT
 public:
@@ -55,11 +54,7 @@ public:
     void setColor(const Color& color);
     void setColor(const QString& color);
 
-    const QStringList& tags() const;
-    void setTags(const QStringList& tags);
-    Q_INVOKABLE void addTag(const QString& tag);
     Q_INVOKABLE void removeTagAt(int index);
-    Q_INVOKABLE void removeTag(const QString& tag);
     Q_INVOKABLE bool hasTag(const QString& tag) const;
 
     QUuid libraryId() const;
@@ -72,7 +67,6 @@ public:
 signals:
 
     void colorChanged();
-    void tagsChanged();
     void libraryIdChanged();
 
 public slots:
@@ -81,7 +75,6 @@ protected:
 private:
     QUuid m_libraryId;
     Color m_color;
-    QStringList m_tags;
 
     // Item interface
 protected:
