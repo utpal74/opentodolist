@@ -30,7 +30,7 @@
 #include "datamodel/todolist.h"
 
 ItemsSortFilterModel::ItemsSortFilterModel(QObject* parent)
-    : QSortFilterProxyModel(parent), m_groupDone(false)
+    : QSortFilterProxyModel(parent), m_groupDone(false), m_filterTag()
 {
     setSortRole(ItemsModel::WeightRole);
     sort(0); // NOLINT
@@ -114,4 +114,37 @@ void ItemsSortFilterModel::setGroupDone(bool newGroupDone)
     m_groupDone = newGroupDone;
     emit groupDoneChanged();
     invalidate();
+}
+
+QString ItemsSortFilterModel::filterTag() const
+{
+    return m_filterTag;
+}
+
+void ItemsSortFilterModel::setFilterTag(const QString& tag)
+{
+    auto normalized = tag.trimmed().toLower();
+    if (m_filterTag == normalized) {
+        return;
+    }
+    m_filterTag = normalized;
+    emit filterTagChanged();
+    invalidateFilter();
+}
+
+bool ItemsSortFilterModel::filterAcceptsRow(int sourceRow,
+                                             const QModelIndex& sourceParent) const
+{
+    bool baseAccept = QSortFilterProxyModel::filterAcceptsRow(sourceRow, sourceParent);
+    if (!baseAccept) {
+        return false;
+    }
+    if (!m_filterTag.isEmpty()) {
+        auto idx = sourceModel()->index(sourceRow, 0, sourceParent);
+        auto rowTags = sourceModel()->data(idx, ItemsModel::TagsRole).toStringList();
+        if (!rowTags.contains(m_filterTag)) {
+            return false;
+        }
+    }
+    return true;
 }

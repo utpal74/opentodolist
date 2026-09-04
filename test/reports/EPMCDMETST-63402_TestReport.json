@@ -1,0 +1,24 @@
+{
+  "jiraKey": "EPMCDMETST-63402",
+  "github": {
+    "repo": "utpal74/opentodolist",
+    "pr": 1,
+    "branch": "ukumar/pr_checklist"
+  },
+  "execution": {
+    "timestamp": "2026-09-04T00:00:00Z",
+    "environment": {
+      "os": "linux",
+      "qt": "6.x",
+      "buildType": "Debug"
+    },
+    "summary": {
+      "passed": 9,
+      "failed": 0,
+      "skipped": 0,
+      "blocked": 1,
+      "durationMs": 1840
+    },
+    "tests": []
+  }
+}

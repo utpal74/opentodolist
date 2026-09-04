@@ -32,6 +32,7 @@ class ItemsSortFilterModel : public QSortFilterProxyModel
     Q_OBJECT
     Q_PROPERTY(int count READ count NOTIFY countChanged)
     Q_PROPERTY(bool groupDone READ groupDone WRITE setGroupDone NOTIFY groupDoneChanged)
+    Q_PROPERTY(QString filterTag READ filterTag WRITE setFilterTag NOTIFY filterTagChanged)
     QML_ELEMENT
 public:
     explicit ItemsSortFilterModel(QObject* parent = nullptr);
@@ -43,18 +44,24 @@ public:
     bool groupDone() const;
     void setGroupDone(bool newGroupDone);
 
+    QString filterTag() const;
+    void setFilterTag(const QString& tag);
+
 signals:
 
     void countChanged();
 
     // QSortFilterProxyModel interface
     void groupDoneChanged();
+    void filterTagChanged();
 
 protected:
     bool lessThan(const QModelIndex& source_left, const QModelIndex& source_right) const override;
+    bool filterAcceptsRow(int sourceRow, const QModelIndex& sourceParent) const override;
 
 private:
     bool m_groupDone;
+    QString m_filterTag;
 };
 
 #endif // MODELS_ITEMSSORTFILTERMODEL_H_

@@ -48,6 +48,8 @@ target_sources(
         datastorage/getitemquery.h
         datastorage/getitemsquery.cpp
         datastorage/getitemsquery.h
+        datastorage/getitemsbytagquery.cpp
+        datastorage/getitemsbytagquery.h
         datastorage/getlibraryitemsuidsitemsquery.cpp
         datastorage/getlibraryitemsuidsitemsquery.h
         datastorage/getlibraryquery.cpp

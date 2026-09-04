@@ -95,6 +95,7 @@ public:
         UidRole,
         DoneRole,
         EffectiveUpdatedAtRole,
+        TagsRole,
     };
 
     Q_ENUM(Roles)

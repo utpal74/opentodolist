@@ -145,6 +145,8 @@ QVariant ItemsModel::data(const QModelIndex& index, int role) const
             return item->updatedAt();
         case EffectiveUpdatedAtRole:
             return item->effectiveUpdatedAt();
+        case TagsRole:
+            return QVariant::fromValue(item->tags());
         default:
             break;
         }
@@ -167,6 +169,7 @@ QHash<int, QByteArray> ItemsModel::roleNames() const
     result.insert(UidRole, "uid");
     result.insert(DoneRole, "done");
     result.insert(EffectiveUpdatedAtRole, "effectiveUpdatedAt");
+    result.insert(TagsRole, "tags");
     return result;
 }
 
